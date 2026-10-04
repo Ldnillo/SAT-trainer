@@ -5,9 +5,14 @@ import { createSession, deleteSession, userForSession, type User } from "./accou
 
 const COOKIE = "sat_session";
 
+/** The raw token in the session cookie, if any. */
+export async function currentSessionToken(): Promise<string | undefined> {
+  return (await cookies()).get(COOKIE)?.value;
+}
+
 /** The signed-in student, or undefined. Usable in pages and server actions. */
 export async function currentUser(): Promise<User | undefined> {
-  const token = (await cookies()).get(COOKIE)?.value;
+  const token = await currentSessionToken();
   if (!token) return undefined;
   return userForSession(await getDb(), token);
 }

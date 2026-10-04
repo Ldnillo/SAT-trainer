@@ -198,6 +198,15 @@ th {
   max-width: 640px;
 }
 
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
 .who {
   color: var(--muted);
 }
@@ -295,7 +304,16 @@ select:focus {
     gap: 12px;
   }
 
-  .site-header .who {
+  .site-header .footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
+.who {
     display: none;
   }
 

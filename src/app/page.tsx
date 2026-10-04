@@ -44,7 +44,8 @@ const PREVIEW_SKILLS = [
   { name: "Nonlinear functions", pct: 38 },
 ];
 
-export default function Home() {
+export default async function Home({ searchParams }: PageProps<"/">) {
+  const params = await searchParams;
   const config = passConfig();
   const price = formatPrice(config.priceCents, config.currency).replace(/\.00$/, "");
   const freeSets =
@@ -52,6 +53,7 @@ export default function Home() {
 
   return (
     <main className={styles.home}>
+      {params.deleted && <p className={styles.deleted}>Your account and its data have been deleted.</p>}
       <section className={styles.hero}>
         <div className={styles.heroText}>
           <p className={styles.eyebrow}>Digital SAT practice</p>

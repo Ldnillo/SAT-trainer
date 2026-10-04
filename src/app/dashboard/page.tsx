@@ -39,6 +39,9 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   return (
     <main>
       <h1>Hi, {user.name}</h1>
+      {params.notice === "password-reset" && (
+        <p className={styles.notice}>Your new password is saved. You&apos;ve been signed out on your other devices.</p>
+      )}
       {params.error === "no-questions" && (
         <p className={styles.error}>There are no practice questions for that yet. Try tailored practice instead.</p>
       )}

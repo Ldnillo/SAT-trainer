@@ -36,6 +36,23 @@
   color: var(--bad);
 }
 
+.small {
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.agree {
+  flex-direction: row !important;
+  align-items: flex-start;
+  gap: 8px !important;
+  font-weight: 400 !important;
+  font-size: 14px;
+}
+
+.agree input {
+  margin-top: 4px;
+}
+
 .muted {
   color: var(--muted);
 }

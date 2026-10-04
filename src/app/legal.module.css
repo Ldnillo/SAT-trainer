@@ -1,0 +1,28 @@
+.page {
+  max-width: 720px;
+}
+
+.page h1 {
+  margin-bottom: 4px;
+}
+
+.page h2 {
+  margin-top: 32px;
+  font-size: 20px;
+}
+
+.page li {
+  margin-bottom: 6px;
+}
+
+.updated {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.summary {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 4px 20px;
+}

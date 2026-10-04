@@ -1,7 +1,7 @@
 import { createHash, randomBytes } from "node:crypto";
-import { and, eq, gt, lt } from "drizzle-orm";
+import { and, eq, gt, lt, ne } from "drizzle-orm";
 import type { Db } from "../db/client";
-import { authSessions, users } from "../db/schema";
+import { attempts, authSessions, practiceSets, seasonPasses, users } from "../db/schema";
 import { hashPassword, MIN_PASSWORD_LENGTH, verifyPassword } from "./password";
 
 export interface User {
@@ -18,7 +18,10 @@ export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
 }
 
-export async function createUser(db: Db, input: { email: string; name: string; password: string }): Promise<SignUpResult> {
+export async function createUser(
+  db: Db,
+  input: { email: string; name: string; password: string; termsAcceptedAt?: Date },
+): Promise<SignUpResult> {
   const email = normalizeEmail(input.email);
   const name = input.name.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { ok: false, error: "invalid-email" };
@@ -28,7 +31,7 @@ export async function createUser(db: Db, input: { email: string; name: string; p
   const passwordHash = await hashPassword(input.password);
   const [row] = await db
     .insert(users)
-    .values({ email, name, passwordHash })
+    .values({ email, name, passwordHash, termsAcceptedAt: input.termsAcceptedAt })
     .onConflictDoNothing({ target: users.email })
     .returning({ id: users.id, email: users.email, name: users.name });
   return row ? { ok: true, user: row } : { ok: false, error: "email-taken" };
@@ -41,7 +44,7 @@ export async function checkCredentials(db: Db, email: string, password: string):
   return { id: row.id, email: row.email, name: row.name };
 }
 
-function hashToken(token: string): string {
+export function hashToken(token: string): string {
   return createHash("sha256").update(token).digest("hex");
 }
 
@@ -65,4 +68,80 @@ export async function userForSession(db: Db, token: string, now = new Date()): P
 
 export async function deleteSession(db: Db, token: string): Promise<void> {
   await db.delete(authSessions).where(eq(authSessions.tokenHash, hashToken(token)));
+}
+
+/** Signs the student out everywhere, except the session whose token is given (the device they're using). */
+export async function deleteOtherSessions(db: Db, userId: string, keepToken?: string): Promise<void> {
+  await db
+    .delete(authSessions)
+    .where(
+      keepToken
+        ? and(eq(authSessions.userId, userId), ne(authSessions.tokenHash, hashToken(keepToken)))
+        : eq(authSessions.userId, userId),
+    );
+}
+
+export type ChangePasswordResult = { ok: true } | { ok: false; error: "wrong-password" | "short-password" };
+
+/** Changes the password after checking the current one, and signs out every other device. */
+export async function changePassword(
+  db: Db,
+  userId: string,
+  input: { current: string; next: string; keepToken?: string },
+): Promise<ChangePasswordResult> {
+  const [row] = await db.select({ passwordHash: users.passwordHash }).from(users).where(eq(users.id, userId));
+  if (!row || !(await verifyPassword(input.current, row.passwordHash))) return { ok: false, error: "wrong-password" };
+  if (input.next.length < MIN_PASSWORD_LENGTH) return { ok: false, error: "short-password" };
+  await db.update(users).set({ passwordHash: await hashPassword(input.next) }).where(eq(users.id, userId));
+  await deleteOtherSessions(db, userId, input.keepToken);
+  return { ok: true };
+}
+
+/**
+ * Deletes the account and everything stored with it (sessions, practice sets,
+ * answers, season pass records), after checking the password. Payment records
+ * kept by Stripe are not affected.
+ */
+export async function deleteAccount(db: Db, userId: string, password: string): Promise<boolean> {
+  const [row] = await db.select({ passwordHash: users.passwordHash }).from(users).where(eq(users.id, userId));
+  if (!row || !(await verifyPassword(password, row.passwordHash))) return false;
+  await db.delete(users).where(eq(users.id, userId));
+  return true;
+}
+
+/** Everything stored about a student, for the "download my data" link. */
+export async function exportUserData(db: Db, userId: string) {
+  const [account] = await db
+    .select({
+      id: users.id,
+      email: users.email,
+      name: users.name,
+      createdAt: users.createdAt,
+      termsAcceptedAt: users.termsAcceptedAt,
+    })
+    .from(users)
+    .where(eq(users.id, userId));
+  if (!account) return undefined;
+  const [sets, answers, passes] = await Promise.all([
+    db.select().from(practiceSets).where(eq(practiceSets.userId, userId)).orderBy(practiceSets.createdAt),
+    db.select().from(attempts).where(eq(attempts.userId, userId)).orderBy(attempts.createdAt),
+    db
+      .select({
+        startsAt: seasonPasses.startsAt,
+        expiresAt: seasonPasses.expiresAt,
+        amountCents: seasonPasses.amountCents,
+        currency: seasonPasses.currency,
+        revokedAt: seasonPasses.revokedAt,
+        createdAt: seasonPasses.createdAt,
+      })
+      .from(seasonPasses)
+      .where(eq(seasonPasses.userId, userId))
+      .orderBy(seasonPasses.createdAt),
+  ]);
+  return {
+    account,
+    practiceSets: sets,
+    answers,
+    seasonPasses: passes,
+  };
 }
