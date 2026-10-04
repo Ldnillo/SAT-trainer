@@ -389,7 +389,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "For two acute angles, the sine of one equals the cosine of the other exactly when the angles are complementary (they are the two acute angles of the same right triangle). So $x + (2x - 30) = 90$, which gives $3x = 120$ and $x = 40$. Check: $\\sin 40^\\circ = \\cos 50^\\circ$, and $2(40) - 30 = 50$.",
+        "explanation": "For two acute angles, the sine of one equals the cosine of the other exactly when the angles are complementary (they are the two acute angles of the same right triangle). So $x + (2x - 30) = 90$. Combining like terms gives $3x - 30 = 90$, and adding $30$ to both sides gives $3x = 120$. Dividing both sides by $3$ simplifies this to $x = 40$. Check: $\\sin 40^\\circ = \\cos 50^\\circ$, and $2(40) - 30 = 50$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -420,6 +420,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "Asked for the explanation to show how 3x = 120 simplifies to x = 40. Explanation now shows each step."
           }
         ]
       }

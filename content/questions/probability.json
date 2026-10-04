@@ -585,7 +585,7 @@
           ".4285",
           ".4286"
         ],
-        "explanation": "Let $s$ be the number of seniors. The $18$ seniors who own a car are $45\\%$ of the seniors, so $0.45s = 18$ and $s = 40$. The council has $30 + 40 = 70$ members, and $12 + 18 = 30$ of them own a car. The probability is $\\frac{30}{70} = \\frac{3}{7} \\approx 0.4286$.",
+        "explanation": "Let $s$ be the number of seniors. The $18$ seniors who own a car are $45\\%$ of the seniors, which gives the equation $0.45s = 18$. Divide both sides by $0.45$ to get $s = \\frac{18}{0.45}$, which simplifies to $s = 40$. (As a check, $0.45 \\cdot 40 = 18$.) The council has $30 + 40 = 70$ members, and $12 + 18 = 30$ of them own a car. The probability is $\\frac{30}{70}$, which simplifies to $\\frac{3}{7} \\approx 0.4286$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -603,6 +603,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "Asked for the step from 0.45s = 18 to s = 40 to be explained. Explanation now shows dividing both sides by 0.45."
           }
         ]
       }
