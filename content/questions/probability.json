@@ -1,6 +1,5 @@
 {
   "skill": "probability",
-  "author": "Claude (project session, 2026-10-04)",
   "questions": [
     {
       "id": "probability-001",
@@ -46,8 +45,25 @@
           "0.625"
         ],
         "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80} = \\frac{5}{8}$, or $0.625$.",
-        "distractorRationales": [],
-        "publicDomainSource": null
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
       }
     }
   ]

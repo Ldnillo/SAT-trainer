@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
-import { GeneratedBatchSchema, type QuestionContent } from "../sat/question";
+import { GeneratedBatchSchema, type GeneratedQuestion, type QuestionContent } from "../sat/question";
 import { DIFFICULTIES, type SkillRef } from "../sat/taxonomy";
 import {
   buildGenerationPrompt,
@@ -21,7 +21,7 @@ export type SolverResult = z.infer<typeof SolverResultSchema>;
 /** The two model calls the pipeline makes. Tests swap in a fake. */
 export interface QuestionModel {
   readonly model: string;
-  generate(req: GenerationRequest): Promise<{ questions: QuestionContent[]; servedModel: string }>;
+  generate(req: GenerationRequest): Promise<{ questions: GeneratedQuestion[]; servedModel: string }>;
   solve(q: QuestionContent, ref: SkillRef): Promise<SolverResult & { servedModel: string }>;
 }
 

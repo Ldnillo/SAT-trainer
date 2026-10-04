@@ -1,6 +1,5 @@
 {
   "skill": "right-triangles-trigonometry",
-  "author": "Claude (project session, 2026-10-04)",
   "questions": [
     {
       "id": "right-triangles-trigonometry-001",
@@ -18,8 +17,25 @@
           "0.8"
         ],
         "explanation": "The hypotenuse is opposite the right angle: $PR = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15} = \\frac{4}{5}$, or $0.8$.",
-        "distractorRationales": [],
-        "publicDomainSource": null
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
       }
     }
   ]

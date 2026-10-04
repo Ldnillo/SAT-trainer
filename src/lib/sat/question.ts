@@ -47,17 +47,54 @@ export const QuestionContentSchema = z.object({
   distractorRationales: z
     .array(z.object({ label: z.enum(CHOICE_LABELS), text: z.string() }))
     .describe("For each wrong choice, why it is wrong or what mistake leads to it. Empty for student-produced response."),
-  publicDomainSource: z
-    .string()
-    .nullable()
-    .describe("Citation (author, title, year) if any text is quoted from a public-domain work; null if fully original."),
 });
 
 export type QuestionContent = z.infer<typeof QuestionContentSchema>;
 
-export const GeneratedBatchSchema = z.object({
-  questions: z.array(QuestionContentSchema),
+export const PublicDomainWorkSchema = z.object({
+  title: z.string().min(1),
+  author: z.string().min(1),
+  year: z.number().int(),
 });
+export type PublicDomainWork = z.infer<typeof PublicDomainWorkSchema>;
+
+/** What the API generator returns: the question plus the source of any adapted passage. */
+export const GeneratedQuestionSchema = QuestionContentSchema.extend({
+  publicDomainSource: PublicDomainWorkSchema.nullable().describe(
+    "The public-domain work (title, author, publication year) a passage quotes or adapts; null if every passage is original.",
+  ),
+});
+export type GeneratedQuestion = z.infer<typeof GeneratedQuestionSchema>;
+
+export const GeneratedBatchSchema = z.object({
+  questions: z.array(GeneratedQuestionSchema),
+});
+
+const DATE = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "dates are written YYYY-MM-DD");
+
+/**
+ * The authorship record every question carries, so its originality can be
+ * shown if ever challenged. Required on every question file entry and filled
+ * automatically by the API generator.
+ */
+export const AuthorshipSchema = z.object({
+  /** Who wrote the question: the Claude model id (or a person's name) and the date. */
+  writer: z.object({ name: z.string().min(1), date: DATE }),
+  /** What the writer worked from. */
+  inputs: z.object({
+    /** The instructions or prompt used, or where to find them. */
+    instructions: z.string().min(1),
+    /** Example questions the writer was shown. Always our own, never College Board's. Empty if none. */
+    examples: z.array(z.string().min(1)),
+  }),
+  /** "original", or the public-domain work a passage is adapted from. */
+  passageSource: z.union([z.literal("original"), PublicDomainWorkSchema]),
+  /** Who checked the question and when, and any edits they made ("none" if none). */
+  reviews: z
+    .array(z.object({ reviewer: z.string().min(1), date: DATE, edits: z.string().min(1) }))
+    .min(1, "every question needs at least one review"),
+});
+export type Authorship = z.infer<typeof AuthorshipSchema>;
 
 export type QuestionStatus =
   /** Passed structural checks and the independent answer check. Ready for practice. */
@@ -93,7 +130,11 @@ export interface Provenance {
   batchId?: string;
   /** For authored questions: the file it was imported from. */
   sourceFile?: string;
-  publicDomainSource: string | null;
+  /**
+   * Writer, inputs, passage source and reviews. Generated questions that were
+   * rejected before any check may have no reviews yet.
+   */
+  authorship: Authorship;
 }
 
 export interface QuestionRecord {

@@ -1,5 +1,5 @@
 import { and, asc, count, desc, eq, inArray, notInArray, sql, type SQL } from "drizzle-orm";
-import type { QuestionRecord, QuestionStatus } from "../sat/question";
+import type { Authorship, QuestionRecord, QuestionStatus } from "../sat/question";
 import type { Difficulty, SectionId } from "../sat/taxonomy";
 import type { Db } from "./client";
 import { questions } from "./schema";
@@ -73,4 +73,12 @@ export async function countQuestions(db: Db): Promise<BankCount[]> {
     .from(questions)
     .groupBy(questions.skill, questions.difficulty, questions.status)
     .orderBy(asc(questions.skill));
+}
+
+/** Appends a review to a question's authorship record. */
+export async function addReview(db: Db, id: string, review: Authorship["reviews"][number]): Promise<void> {
+  const q = await getQuestion(db, id);
+  if (!q) throw new Error(`No question ${id}`);
+  const authorship = { ...q.provenance.authorship, reviews: [...q.provenance.authorship.reviews, review] };
+  await db.update(questions).set({ provenance: { ...q.provenance, authorship } }).where(eq(questions.id, id));
 }

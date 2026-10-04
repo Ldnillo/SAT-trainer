@@ -1,4 +1,4 @@
-import { CHOICE_LABELS, type QuestionContent } from "./question";
+import { CHOICE_LABELS, type Authorship, type QuestionContent } from "./question";
 import type { QuestionFormat, SkillRef } from "./taxonomy";
 
 export interface ValidationIssue {
@@ -141,4 +141,43 @@ export function validateQuestion(
 
 export function hasErrors(issues: ValidationIssue[]): boolean {
   return issues.some((i) => i.severity === "error");
+}
+
+/**
+ * In the U.S., works published 95 or more years ago are in the public domain
+ * (on January 1, 2026, works from 1930 entered it).
+ */
+export function latestPublicDomainYear(today = new Date()): number {
+  return today.getFullYear() - 96;
+}
+
+/** Sources that must never be used as examples or inputs. */
+const FORBIDDEN_INPUTS = [/college\s*board/i, /bluebook/i, /khan\s*academy/i, /\bofficial\b/i, /\bpsat\b/i];
+
+/** Checks the authorship record against the question and the originality rules. */
+export function validateAuthorship(a: Authorship, q: QuestionContent, today = new Date()): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  if (a.passageSource !== "original") {
+    if (q.passages.length === 0) {
+      issues.push({ severity: "error", message: "Passage source names a public-domain work, but the question has no passage." });
+    }
+    const latest = latestPublicDomainYear(today);
+    if (a.passageSource.year > latest) {
+      issues.push({
+        severity: "error",
+        message: `"${a.passageSource.title}" (${a.passageSource.year}) may still be under copyright; public-domain works must be from ${latest} or earlier.`,
+      });
+    }
+  }
+  for (const example of a.inputs.examples) {
+    const hit = FORBIDDEN_INPUTS.find((p) => p.test(example));
+    if (hit) {
+      issues.push({ severity: "error", message: `Example "${example}" looks like official test material; examples must be our own questions.` });
+    }
+  }
+  if (a.reviews.length === 0) issues.push({ severity: "error", message: "No review recorded." });
+  for (const r of a.reviews) {
+    if (r.date < a.writer.date) issues.push({ severity: "error", message: `Review by ${r.reviewer} is dated before the question was written.` });
+  }
+  return issues;
 }
