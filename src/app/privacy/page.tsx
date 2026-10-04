@@ -37,7 +37,7 @@ export default function PrivacyPage() {
           one-way scrambled form (a hash), so nobody at NextScore can read them.
         </li>
         <li>
-          <strong>Practice activity:</strong> the practice sets you start, each answer you give, whether it was right,
+          <strong>Practice activity:</strong> the practice sets and practice tests you take, each answer you give, whether it was right,
           and when. We use these to work out your skill levels and estimated scores.
         </li>
         <li>

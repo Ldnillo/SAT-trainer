@@ -1,4 +1,4 @@
-import { boolean, index, integer, jsonb, pgTable, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
+import { boolean, index, integer, jsonb, pgTable, primaryKey, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
 import type { Provenance, QuestionContent, QuestionStatus, VerificationResult } from "../sat/question";
 import type { Difficulty, QuestionFormat, SectionId } from "../sat/taxonomy";
 
@@ -104,6 +104,69 @@ export const practiceSets = pgTable(
 export type PracticeFocus = { kind: "tailored" } | { kind: "section"; section: SectionId } | { kind: "skill"; skill: string };
 
 /**
+ * Full-length timed practice tests (src/lib/test). A test holds up to four
+ * modules: Reading and Writing 1 and 2, then Math 1 and 2. Each second module
+ * is assembled when the first is submitted, easier or harder depending on how
+ * the student did, as on the digital SAT.
+ */
+export const practiceTests = pgTable(
+  "practice_tests",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    modules: jsonb("modules").$type<TestModule[]>().notNull(),
+    /** Section scores, set when the last module is submitted. */
+    scores: jsonb("scores").$type<TestScores | null>(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    completedAt: timestamp("completed_at", { withTimezone: true }),
+  },
+  (t) => [index("practice_tests_user_idx").on(t.userId, t.createdAt)],
+);
+
+export type ModuleTier = "standard" | "easier" | "harder";
+
+export interface TestModule {
+  section: SectionId;
+  stage: 1 | 2;
+  tier: ModuleTier;
+  /** In the order the student sees them. */
+  questionIds: string[];
+  /** ISO times. The clock starts when the student starts the module. */
+  startedAt: string | null;
+  submittedAt: string | null;
+}
+
+export interface TestScores {
+  readingWriting: number;
+  math: number;
+  total: number;
+}
+
+/**
+ * A student's current answers during a test. They can change answers and flag
+ * questions until the module is submitted; then `correct` is filled in and the
+ * answered questions are copied to `attempts`, so tests count toward mastery.
+ */
+export const testAnswers = pgTable(
+  "test_answers",
+  {
+    practiceTestId: uuid("practice_test_id")
+      .notNull()
+      .references(() => practiceTests.id, { onDelete: "cascade" }),
+    questionId: uuid("question_id")
+      .notNull()
+      .references(() => questions.id),
+    answer: text("answer").notNull().default(""),
+    flagged: boolean("flagged").notNull().default(false),
+    correct: boolean("correct"),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.practiceTestId, t.questionId] })],
+);
+
+/**
  * Every answer a student submits. This is the single source of truth for skill
  * mastery and score estimates, which are recomputed from it (src/lib/trainer/mastery.ts).
  * Skill and difficulty are copied from the question so history stays stable if a question is edited.
@@ -115,9 +178,9 @@ export const attempts = pgTable(
     userId: uuid("user_id")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
-    practiceSetId: uuid("practice_set_id")
-      .notNull()
-      .references(() => practiceSets.id, { onDelete: "cascade" }),
+    /** The practice set or the practice test the answer was given in; exactly one is set. */
+    practiceSetId: uuid("practice_set_id").references(() => practiceSets.id, { onDelete: "cascade" }),
+    practiceTestId: uuid("practice_test_id").references(() => practiceTests.id, { onDelete: "cascade" }),
     questionId: uuid("question_id")
       .notNull()
       .references(() => questions.id),
@@ -130,6 +193,7 @@ export const attempts = pgTable(
   (t) => [
     index("attempts_user_idx").on(t.userId, t.createdAt),
     uniqueIndex("attempts_set_question_idx").on(t.practiceSetId, t.questionId),
+    uniqueIndex("attempts_test_question_idx").on(t.practiceTestId, t.questionId),
   ],
 );
 
