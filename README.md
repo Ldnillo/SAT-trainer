@@ -1,6 +1,6 @@
 # SAT Trainer
 
-A paid SAT practice site built on **original** SAT-style questions. This repository holds the question generator, the question bank and the tailored practice trainer; season-pass payments come next.
+A paid SAT practice site built on **original** SAT-style questions. This repository holds the question generator, the question bank, the tailored practice trainer and season pass payments.
 
 > SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.
 
@@ -71,11 +71,26 @@ Math expressions are written in LaTeX inside `$...$`; the trainer UI should rend
 
 Students sign up with a name, email and password (`/signup`), then practice from `/dashboard`.
 
-- **Accounts** (`src/lib/auth`): passwords are hashed with scrypt; sign-in sets an httpOnly session cookie whose SHA-256 is stored in `auth_sessions` (30 days). No outside service or API key is needed. A season pass will attach to the `users` table.
+- **Accounts** (`src/lib/auth`): passwords are hashed with scrypt; sign-in sets an httpOnly session cookie whose SHA-256 is stored in `auth_sessions` (30 days). No outside service or API key is needed. Season passes attach to the `users` table (see below).
 - **Mastery** (`src/lib/trainer/mastery.ts`): every answer is stored in `attempts`. Each skill gets an ability rating, updated Elo-style after each answer (easy, medium and hard questions sit at -1, 0 and +1 on the same scale, so a correct hard answer counts for more). Ratings are recomputed from the attempts, so there is no derived state to drift. Levels shown to students: Not started, Needs work, Developing, Strong.
 - **Targeted practice** (`src/lib/trainer/plan.ts`): a 10-question set draws skills at random weighted by priority, which is how much the skill counts on the test (its domain weight) times how much room the student has to improve, plus a bonus for skills with little evidence. Each question is picked at the difficulty that suits the student's rating, preferring questions they haven't seen, then ones they missed. Students can also practice one section or one skill. Only verified questions are served.
 - **Score progress**: the dashboard shows an estimated 200-800 score per section (shown after 10 answers in that section), a chart of the estimates after each set, the five skills with the most to gain, every skill's level, and recent sets. The estimate maps the expected share of correct answers, weighted by domain, onto 200-800; the page says it is a guide, not a prediction of an official score.
 - Math is rendered with KaTeX on the server (`src/components/MathText.tsx`).
+
+## Season pass
+
+Students get one free practice set (`FREE_PRACTICE_SETS`), then need a season pass to start new sets. A pass is a single Stripe Checkout payment, not a subscription: by default **$39 for 90 days** (`SEASON_PASS_PRICE_CENTS`, `SEASON_PASS_DAYS`, `SEASON_PASS_CURRENCY` in `.env.local`). Buying again while a pass is active adds the days after the current pass ends. Dashboards and past results stay visible without a pass.
+
+- **Enforcement** is server-side in `startPractice` (`src/app/practice/actions.ts`) via `practiceAccess` (`src/lib/billing/pass.ts`); the dashboard and `/pass` show the same status.
+- **Payments** (`src/lib/billing/stripe.ts`): `/pass` creates a Checkout session with the price inline, so nothing has to be set up in the Stripe dashboard first. The session carries the user id and pass length. A pass is recorded in `season_passes` when Stripe calls the webhook (`/api/stripe/webhook`, signature checked) or when the student lands back on `/pass`, whichever comes first; the checkout session id makes it happen only once. A full refund (`charge.refunded`) ends the pass.
+
+### Setting up Stripe
+
+1. Create a free account at [stripe.com](https://dashboard.stripe.com/register). Test mode works straight away, before any business details are filled in.
+2. In test mode, copy the secret key (Developers > API keys, `sk_test_...`) into `STRIPE_SECRET_KEY` in `.env.local`.
+3. Webhook, locally: install the [Stripe CLI](https://docs.stripe.com/stripe-cli), run `stripe listen --forward-to localhost:3000/api/stripe/webhook`, and put the `whsec_...` it prints in `STRIPE_WEBHOOK_SECRET`. In production: add an endpoint at `https://<your-site>/api/stripe/webhook` (Developers > Webhooks) for `checkout.session.completed`, `checkout.session.async_payment_succeeded` and `charge.refunded`, and use its signing secret.
+4. Pay with test card `4242 4242 4242 4242`, any future date and any CVC.
+5. To take real payments, activate the account in Stripe (business and bank details), then swap in the live `sk_live_...` key and a live webhook secret.
 
 ## Commands
 

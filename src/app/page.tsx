@@ -13,6 +13,7 @@ export default function Home() {
         <li>Each practice set focuses on your weakest, most heavily tested skills, at the right difficulty.</li>
         <li>Your estimated section scores update after every set, so you can see your progress.</li>
       </ul>
+      <p>Your first practice set is free. After that, a season pass unlocks unlimited practice.</p>
       <p>
         <Link href="/signup" className="button">
           Start practicing
