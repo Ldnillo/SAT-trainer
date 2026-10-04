@@ -80,6 +80,11 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
         ))}
       </section>
 
+      <p className={styles.muted}>
+        Ready to try the whole thing? <Link href="/test">Take a full-length practice test</Link>: timed, adaptive, and scored
+        out of 1600.
+      </p>
+
       <h2>Estimated scores</h2>
       <div className={styles.tiles}>
         {scores.map((s) => (

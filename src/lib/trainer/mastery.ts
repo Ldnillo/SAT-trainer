@@ -18,7 +18,8 @@ export interface AttemptLike {
   difficulty: Difficulty;
   correct: boolean;
   createdAt: Date;
-  practiceSetId?: string;
+  practiceSetId?: string | null;
+  practiceTestId?: string | null;
 }
 
 export interface SkillMastery {
@@ -123,6 +124,7 @@ export function estimateScores(mastery: ReadonlyMap<string, SkillMastery>): Scor
 }
 
 export interface ProgressPoint {
+  /** The practice set or practice test these answers came from. */
   practiceSetId: string;
   at: Date;
   answered: number;
@@ -131,7 +133,12 @@ export interface ProgressPoint {
   math: number | null;
 }
 
-/** Score estimates after each practice set, for the progress chart. */
+/** The practice set or test an answer belongs to, for grouping. */
+function sessionOf(a: AttemptLike): string {
+  return a.practiceSetId ?? a.practiceTestId ?? "";
+}
+
+/** Score estimates after each practice set or test, for the progress chart. */
 export function progressHistory(attempts: readonly AttemptLike[]): ProgressPoint[] {
   const ordered = chronological(attempts);
   const points: ProgressPoint[] = [];
@@ -141,14 +148,14 @@ export function progressHistory(attempts: readonly AttemptLike[]): ProgressPoint
     const m = map.get(a.skill);
     if (m) map.set(a.skill, applyAttempt(m, a));
     let point = points.at(-1);
-    if (!point || point.practiceSetId !== a.practiceSetId) {
-      point = { practiceSetId: a.practiceSetId ?? "", at: a.createdAt, answered: 0, correct: 0, readingWriting: null, math: null };
+    if (!point || point.practiceSetId !== sessionOf(a)) {
+      point = { practiceSetId: sessionOf(a), at: a.createdAt, answered: 0, correct: 0, readingWriting: null, math: null };
       points.push(point);
     }
     point.answered++;
     if (a.correct) point.correct++;
     point.at = a.createdAt;
-    if (ordered[i + 1]?.practiceSetId !== a.practiceSetId) {
+    if (!ordered[i + 1] || sessionOf(ordered[i + 1]) !== sessionOf(a)) {
       const [rw, math] = estimateScores(map);
       point.readingWriting = rw.score;
       point.math = math.score;
