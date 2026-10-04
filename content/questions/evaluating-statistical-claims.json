@@ -1,0 +1,68 @@
+{
+  "skill": "evaluating-statistical-claims",
+  "questions": [
+    {
+      "id": "evaluating-statistical-claims-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher recruited $300$ adults who responded to an online ad for a sleep study. The volunteers were randomly assigned to two groups of equal size: one group used a phone app that dims the screen at night, and the other did not. After a month, the app group reported significantly better sleep quality, on average. Which conclusion is best supported by the study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Using the app likely causes better sleep quality for adults in general."
+          },
+          {
+            "label": "B",
+            "text": "Using the app likely causes better sleep quality for adults similar to the study's volunteers."
+          },
+          {
+            "label": "C",
+            "text": "Better sleep quality likely causes people to use the app."
+          },
+          {
+            "label": "D",
+            "text": "No conclusion about cause and effect can be drawn, because the participants were volunteers."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Random assignment to groups lets the researcher conclude that the app likely caused the difference. But the participants weren't randomly selected from all adults (they answered an online ad), so the result can only be generalized to people similar to the volunteers.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Generalizing to all adults requires a random sample of all adults; these participants volunteered."
+          },
+          {
+            "label": "C",
+            "text": "Participants were assigned to use the app, so sleep quality couldn't have caused app use."
+          },
+          {
+            "label": "D",
+            "text": "Random assignment, not random selection, is what supports cause-and-effect conclusions; volunteering limits who the result applies to."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

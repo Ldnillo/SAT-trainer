@@ -1,0 +1,68 @@
+{
+  "skill": "percentages",
+  "questions": [
+    {
+      "id": "percentages-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A store raised the price of a jacket by $20\\%$. Later, during a sale, the new price was lowered by $25\\%$. The sale price is what percent of the original price?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$95\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$90\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$105\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$75\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Raising by $20\\%$ multiplies the price by $1.20$; lowering by $25\\%$ multiplies by $0.75$. Overall the price is multiplied by $1.20 \\cdot 0.75 = 0.90$, so the sale price is $90\\%$ of the original.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This adds the percents ($+20\\% - 25\\% = -5\\%$), but successive percent changes multiply."
+          },
+          {
+            "label": "C",
+            "text": "This treats the overall change as $+5\\%$, getting the sign wrong."
+          },
+          {
+            "label": "D",
+            "text": "This applies only the $25\\%$ decrease and ignores the earlier increase."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

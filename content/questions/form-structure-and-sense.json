@@ -1,0 +1,73 @@
+{
+  "skill": "form-structure-and-sense",
+  "questions": [
+    {
+      "id": "form-structure-and-sense-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Local historians were thrilled by a recent donation. The collection of handwritten letters given to the town library last spring ______ a rare look at daily life in the 1890s, from the price of flour to the arrival of the town's first telephone."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "offers"
+          },
+          {
+            "label": "B",
+            "text": "offer"
+          },
+          {
+            "label": "C",
+            "text": "are offering"
+          },
+          {
+            "label": "D",
+            "text": "have offered"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the sentence is the singular noun \"collection\" (\"of handwritten letters\" is a phrase describing it). A singular subject takes the singular verb \"offers.\"",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Offer\" is plural and doesn't agree with the singular subject \"collection.\""
+          },
+          {
+            "label": "C",
+            "text": "\"Are offering\" is plural; it agrees with \"letters,\" which is not the subject."
+          },
+          {
+            "label": "D",
+            "text": "\"Have offered\" is plural and doesn't agree with \"collection.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

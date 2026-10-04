@@ -1,0 +1,40 @@
+{
+  "skill": "linear-equations-two-variables",
+  "questions": [
+    {
+      "id": "linear-equations-two-variables-001",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school club sells small candles for $\\$4$ each and large candles for $\\$7$ each. Last month, the club earned $\\$157$ from candle sales, and it sold $11$ large candles. How many small candles did the club sell?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Let $s$ be the number of small candles. Total earnings are $4s + 7(11) = 157$, so $4s + 77 = 157$. Then $4s = 80$ and $s = 20$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

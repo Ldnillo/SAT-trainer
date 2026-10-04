@@ -1,0 +1,68 @@
+{
+  "skill": "nonlinear-equations-and-systems",
+  "questions": [
+    {
+      "id": "nonlinear-equations-and-systems-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The equation $2x^2 - 14x + k = 0$, where $k$ is a constant less than $24$, has two real solutions. What is the sum of the solutions?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-7$"
+          },
+          {
+            "label": "B",
+            "text": "$7$"
+          },
+          {
+            "label": "C",
+            "text": "$14$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{k}{2}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "For $ax^2 + bx + c = 0$, the sum of the solutions is $-\\frac{b}{a}$. Here that is $-\\frac{-14}{2} = 7$, whatever the value of $k$. (Equivalently, the solutions are symmetric about the vertex at $x = \\frac{14}{4} = 3.5$, so they add to $2 \\cdot 3.5 = 7$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This gives $\\frac{b}{a}$ and misses the negative sign in $-\\frac{b}{a}$."
+          },
+          {
+            "label": "C",
+            "text": "This uses $-b$ without dividing by $a = 2$."
+          },
+          {
+            "label": "D",
+            "text": "This is $\\frac{c}{a}$, the product of the solutions, not their sum."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

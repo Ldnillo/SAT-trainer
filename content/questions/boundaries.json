@@ -1,0 +1,73 @@
+{
+  "skill": "boundaries",
+  "questions": [
+    {
+      "id": "boundaries-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Atacama Desert in northern Chile is one of the driest places on Earth. Parts of it go years without measurable rain. This extreme dryness, along with high altitude and clear skies, makes the region ideal for ______ several of the world's most powerful telescopes have been built on its mountains."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "astronomy,"
+          },
+          {
+            "label": "B",
+            "text": "astronomy;"
+          },
+          {
+            "label": "C",
+            "text": "astronomy"
+          },
+          {
+            "label": "D",
+            "text": "astronomy, which"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "\"This extreme dryness ... makes the region ideal for astronomy\" and \"several of the world's most powerful telescopes have been built on its mountains\" are both independent clauses. A semicolon correctly joins two independent clauses without a conjunction.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "C",
+            "text": "With no punctuation, the two independent clauses run together."
+          },
+          {
+            "label": "D",
+            "text": "\"Which\" would need to refer to something the second clause describes, but \"which several ... telescopes have been built on its mountains\" is ungrammatical."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

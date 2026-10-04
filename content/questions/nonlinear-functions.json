@@ -1,0 +1,40 @@
+{
+  "skill": "nonlinear-functions",
+  "questions": [
+    {
+      "id": "nonlinear-functions-001",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = x^2 - 10x + c$, where $c$ is a constant. If the minimum value of $f(x)$ is $-7$, what is the value of $f(1)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "9"
+        ],
+        "explanation": "The minimum of a parabola that opens upward is at its vertex, $x = -\\frac{-10}{2(1)} = 5$. So $f(5) = 25 - 50 + c = -7$, which gives $c = 18$. Then $f(1) = 1 - 10 + 18 = 9$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

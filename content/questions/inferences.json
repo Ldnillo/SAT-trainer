@@ -1,0 +1,73 @@
+{
+  "skill": "inferences",
+  "questions": [
+    {
+      "id": "inferences-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Archaeologists excavating a 4,000-year-old settlement found grinding stones coated with residue from wild grasses but none from domesticated wheat, even though wheat was being farmed at the same time in villages less than a day's walk away. The settlement's storage pits held large quantities of acorns and wild seeds. Because shells and obsidian traded from those farming villages turned up throughout the settlement, the absence of wheat residue suggests that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the settlement's residents did not know that wheat could be farmed."
+          },
+          {
+            "label": "B",
+            "text": "the residents were in contact with farming villages but continued to rely on wild plant foods."
+          },
+          {
+            "label": "C",
+            "text": "the farming villages were founded after the settlement had been abandoned."
+          },
+          {
+            "label": "D",
+            "text": "the residents used their grinding stones only to process acorns."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Traded goods from the farming villages show the residents were in contact with farmers, so they likely knew about wheat. Yet the grinding stones and storage pits show only wild foods. The most logical conclusion is that they kept relying on wild plants despite that contact.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The trade goods show regular contact with wheat-farming villages, which makes it unlikely the residents were unaware of farming."
+          },
+          {
+            "label": "C",
+            "text": "The text says the villages were farming wheat at the same time the settlement was occupied."
+          },
+          {
+            "label": "D",
+            "text": "The grinding stones had residue from wild grasses, so they weren't used only for acorns."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

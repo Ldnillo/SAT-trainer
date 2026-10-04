@@ -1,0 +1,97 @@
+{
+  "skill": "command-of-evidence-quantitative",
+  "questions": [
+    {
+      "id": "command-of-evidence-quantitative-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A student investigated whether covering soil with mulch helps it hold water. She filled four identical trays with the same soil, covered three of them with different materials, left one uncovered, watered all four equally, and measured the soil's moisture five days later. She concluded that the benefit of mulch depends greatly on the material used, noting that ______"
+          }
+        ],
+        "table": {
+          "title": "Soil moisture after five days",
+          "columns": [
+            "Covering",
+            "Soil moisture (%)"
+          ],
+          "rows": [
+            [
+              "None",
+              "12"
+            ],
+            [
+              "Straw",
+              "24"
+            ],
+            [
+              "Wood chips",
+              "21"
+            ],
+            [
+              "Gravel",
+              "13"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the tray covered with straw held about twice as much moisture as the uncovered tray."
+          },
+          {
+            "label": "B",
+            "text": "the tray covered with gravel held only slightly more moisture than the uncovered tray, while the tray covered with straw held about twice as much."
+          },
+          {
+            "label": "C",
+            "text": "the trays covered with straw and with wood chips both held more moisture than the uncovered tray."
+          },
+          {
+            "label": "D",
+            "text": "the uncovered tray held less moisture than any of the covered trays."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The conclusion is that the benefit depends on the material, so the evidence must contrast materials with very different effects. Gravel raised moisture only from 12% to 13%, while straw raised it to 24%, about twice the uncovered tray. Choice B shows that contrast.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is accurate but describes only one material, so it shows mulch can help, not that the benefit depends on the material."
+          },
+          {
+            "label": "C",
+            "text": "This is accurate but shows two materials that both helped a lot, which doesn't show a large difference between materials."
+          },
+          {
+            "label": "D",
+            "text": "This is accurate but supports only the general claim that covering soil helps."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

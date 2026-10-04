@@ -1,0 +1,73 @@
+{
+  "skill": "text-structure-and-purpose",
+  "questions": [
+    {
+      "id": "text-structure-and-purpose-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Most people picture glaciers as slow, silent masses of ice. Yet scientists who lower microphones into the water near glacier fronts record a constant stream of sound: sharp cracks as the ice fractures, crackling pops as air bubbles trapped in the ice burst while it melts, and deep rumbles as huge blocks break away. Some researchers now use these recordings to estimate how quickly a glacier is losing ice."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It presents a common view of glaciers, then describes findings that challenge that view and explains how those findings are being used."
+          },
+          {
+            "label": "B",
+            "text": "It describes a method for recording sound, then argues that the method produces unreliable results."
+          },
+          {
+            "label": "C",
+            "text": "It compares two kinds of glaciers, then explains why one kind loses ice faster than the other."
+          },
+          {
+            "label": "D",
+            "text": "It explains how glaciers form, then lists the sounds that accompany their formation."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence gives the common view (glaciers are silent). The word \"Yet\" introduces recordings showing glaciers are actually noisy, and the last sentence explains that researchers use the recordings to estimate ice loss. Choice A follows that order.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text never questions the recordings; it says researchers use them to make estimates."
+          },
+          {
+            "label": "C",
+            "text": "Only one kind of glacier is discussed, and no comparison is made."
+          },
+          {
+            "label": "D",
+            "text": "The text does not explain how glaciers form; the sounds it lists come from glaciers breaking and melting."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

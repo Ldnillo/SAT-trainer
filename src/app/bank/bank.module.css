@@ -1,0 +1,71 @@
+.muted {
+  color: var(--muted);
+}
+
+.grid {
+  margin-bottom: 24px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+.passage {
+  white-space: pre-wrap;
+}
+
+.stem {
+  font-weight: 600;
+}
+
+.choices {
+  list-style: none;
+  padding: 0;
+}
+
+.correct {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.notes {
+  color: var(--warn);
+  font-size: 14px;
+}
+
+.verified {
+  color: var(--ok);
+}
+
+.needs-review {
+  color: var(--warn);
+}
+
+.rejected {
+  color: var(--bad);
+}
+
+.authorship {
+  font-size: 14px;
+}
+
+.authorship dt {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.authorship dd {
+  margin: 0 0 0 12px;
+}

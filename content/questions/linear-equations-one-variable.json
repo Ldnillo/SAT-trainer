@@ -1,0 +1,68 @@
+{
+  "skill": "linear-equations-one-variable",
+  "questions": [
+    {
+      "id": "linear-equations-one-variable-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $3x + 8 = 29$, what is the value of $x$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{29}{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$7$"
+          },
+          {
+            "label": "C",
+            "text": "$21$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{37}{3}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Subtract 8 from both sides: $3x = 21$. Divide both sides by 3: $x = 7$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides 29 by 3 without first subtracting 8."
+          },
+          {
+            "label": "C",
+            "text": "This is the value of $3x$, not $x$."
+          },
+          {
+            "label": "D",
+            "text": "This adds 8 to 29 instead of subtracting it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

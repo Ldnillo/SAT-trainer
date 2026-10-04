@@ -1,0 +1,40 @@
+{
+  "skill": "ratios-rates-proportions-units",
+  "questions": [
+    {
+      "id": "ratios-rates-proportions-units-001",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A pancake recipe uses $3$ cups of flour for every $2$ cups of milk. A cook making a large batch uses $12$ cups of flour. How many cups of milk should the cook use to keep the same ratio?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "8"
+        ],
+        "explanation": "The ratio of flour to milk is $3 : 2$. Since $12 = 3 \\cdot 4$, the batch is 4 times the recipe, so the milk is $2 \\cdot 4 = 8$ cups.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

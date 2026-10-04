@@ -1,0 +1,73 @@
+{
+  "skill": "central-ideas-and-details",
+  "questions": [
+    {
+      "id": "central-ideas-and-details-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Before electric refrigerators, many households in the northern United States relied on ice cut from frozen lakes in winter. Workers sawed the ice into large blocks, packed them in sawdust inside insulated icehouses, and sold the ice throughout the summer. By the mid-1800s, the trade had grown so large that ships carried New England ice as far as the Caribbean and India."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Before refrigeration, cutting and storing natural ice was a large industry that supplied ice year-round and even overseas."
+          },
+          {
+            "label": "B",
+            "text": "Sawdust was the most effective insulating material available in the 1800s."
+          },
+          {
+            "label": "C",
+            "text": "Most of the ice shipped from New England melted before it reached India."
+          },
+          {
+            "label": "D",
+            "text": "Electric refrigerators were invented because the ice trade could not meet demand."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text describes how ice was harvested and stored so it could be sold all summer, then stresses how big the trade became, reaching the Caribbean and India. Choice A captures both points.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Sawdust is one detail of how ice was stored; the text doesn't compare it with other materials."
+          },
+          {
+            "label": "C",
+            "text": "The text says nothing about how much ice melted on the way."
+          },
+          {
+            "label": "D",
+            "text": "The text doesn't explain why refrigerators were invented."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "skill": "systems-of-linear-equations",
+  "questions": [
+    {
+      "id": "systems-of-linear-equations-001",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$ax + 3y = 12$$ $$4x + 6y = 15$$ In the given system of equations, $a$ is a constant. If the system has no solution, what is the value of $a$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2"
+        ],
+        "explanation": "A system of two linear equations has no solution when the lines are parallel and distinct, which means the $x$ and $y$ coefficients are proportional but the constants are not. The $y$ coefficients have ratio $\\frac{3}{6} = \\frac{1}{2}$, so $\\frac{a}{4} = \\frac{1}{2}$ and $a = 2$. Check: the constants have ratio $\\frac{12}{15} = \\frac{4}{5} \\ne \\frac{1}{2}$, so the lines are distinct and the system has no solution.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "skill": "rhetorical-synthesis",
+  "questions": [
+    {
+      "id": "rhetorical-synthesis-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Tardigrades are microscopic animals, most about half a millimeter long.\n• They live in many habitats, including moss, soil, and ocean sediment.\n• When their surroundings dry out, they can enter a state called cryptobiosis.\n• In cryptobiosis, a tardigrade's metabolism slows to less than 0.01% of its normal rate.\n• Tardigrades in this state have survived for years and revived when water returned."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to explain how tardigrades survive when their surroundings dry out. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Tardigrades, most of which are about half a millimeter long, live in moss, soil, and ocean sediment."
+          },
+          {
+            "label": "B",
+            "text": "When their surroundings dry out, tardigrades enter cryptobiosis, slowing their metabolism to less than 0.01% of its normal rate; in this state, they can survive for years until water returns."
+          },
+          {
+            "label": "C",
+            "text": "Tardigrades are microscopic animals that live in many different habitats, including ocean sediment."
+          },
+          {
+            "label": "D",
+            "text": "Cryptobiosis is a state that tardigrades are able to enter."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to explain how tardigrades survive drying out. Choice B says what happens (they enter cryptobiosis), how it works (metabolism slows drastically), and the result (they survive for years and revive).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This describes the animals' size and habitats but not how they survive drying out."
+          },
+          {
+            "label": "C",
+            "text": "This describes the animals and their habitats but not how they survive drying out."
+          },
+          {
+            "label": "D",
+            "text": "This names cryptobiosis but doesn't connect it to drying out or explain how it helps them survive."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

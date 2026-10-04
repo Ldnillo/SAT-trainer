@@ -1,0 +1,68 @@
+{
+  "skill": "one-variable-data",
+  "questions": [
+    {
+      "id": "one-variable-data-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A data set consists of the values $4$, $7$, $7$, $9$, and $13$. If the value $40$ is added to the data set, which statement about the mean and median of the data set is true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The mean and the median both increase, but the mean increases by more."
+          },
+          {
+            "label": "B",
+            "text": "The median increases, but the mean stays the same."
+          },
+          {
+            "label": "C",
+            "text": "The mean increases, but the median stays the same."
+          },
+          {
+            "label": "D",
+            "text": "The mean and the median both increase by the same amount."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Originally the mean is $\\frac{40}{5} = 8$ and the median is $7$. With $40$ added, the values are $4, 7, 7, 9, 13, 40$: the mean is $\\frac{80}{6} \\approx 13.3$ and the median is $\\frac{7 + 9}{2} = 8$. Both increase, the mean by about $5.3$ and the median by $1$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Adding a value much larger than the others raises the mean."
+          },
+          {
+            "label": "C",
+            "text": "With six values, the median becomes the average of the 3rd and 4th values, $8$, which is more than $7$."
+          },
+          {
+            "label": "D",
+            "text": "An outlier pulls the mean much more than the median."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "skill": "lines-angles-triangles",
+  "questions": [
+    {
+      "id": "lines-angles-triangles-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, the measure of angle $A$ is $48^\\circ$ and the measure of angle $B$ is $77^\\circ$. What is the measure of angle $C$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$29^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$55^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$125^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$235^\\circ$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The angles of a triangle add to $180^\\circ$, so angle $C$ measures $180^\\circ - 48^\\circ - 77^\\circ = 55^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the difference between angles $B$ and $A$."
+          },
+          {
+            "label": "C",
+            "text": "This is the sum of angles $A$ and $B$."
+          },
+          {
+            "label": "D",
+            "text": "This subtracts the sum of angles $A$ and $B$ from $360^\\circ$, the angle sum of a quadrilateral."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

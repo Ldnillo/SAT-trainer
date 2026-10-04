@@ -1,0 +1,73 @@
+{
+  "skill": "words-in-context",
+  "questions": [
+    {
+      "id": "words-in-context-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In 1676, the Danish astronomer Ole Rømer noticed that eclipses of Io, one of Jupiter's moons, arrived a little earlier or later than predicted depending on where Earth was in its orbit. Many of his contemporaries dismissed the differences as observational error. Rømer, however, found them too ______ to ignore: the delays rose and fell in a regular pattern over months of records, which led him to conclude that light travels at a finite speed."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "systematic"
+          },
+          {
+            "label": "B",
+            "text": "minor"
+          },
+          {
+            "label": "C",
+            "text": "sudden"
+          },
+          {
+            "label": "D",
+            "text": "obscure"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text says the delays \"rose and fell in a regular pattern over months of records.\" A regular, repeating pattern is what \"systematic\" means, and a systematic difference is exactly what can't be dismissed as random observational error. So Rømer found the differences too systematic to ignore.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Minor\" works against the logic of the sentence: being small would be a reason to ignore the differences, not a reason they couldn't be ignored."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text says the differences appeared suddenly; it stresses that they followed a pattern over months."
+          },
+          {
+            "label": "D",
+            "text": "\"Obscure\" means hard to notice or understand, but the text says Rømer noticed the differences and found a clear pattern in them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

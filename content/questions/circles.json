@@ -1,0 +1,68 @@
+{
+  "skill": "circles",
+  "questions": [
+    {
+      "id": "circles-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has the equation $x^2 + y^2 - 6x + 10y = 2$. What is the radius of the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\sqrt{2}$"
+          },
+          {
+            "label": "B",
+            "text": "$6$"
+          },
+          {
+            "label": "C",
+            "text": "$36$"
+          },
+          {
+            "label": "D",
+            "text": "$\\sqrt{34}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Complete the square in $x$ and in $y$: $(x^2 - 6x + 9) + (y^2 + 10y + 25) = 2 + 9 + 25$, so $(x - 3)^2 + (y + 5)^2 = 36$. The radius is $\\sqrt{36} = 6$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes the square root of the constant $2$ without completing the square."
+          },
+          {
+            "label": "C",
+            "text": "This is the radius squared, $r^2$, not the radius."
+          },
+          {
+            "label": "D",
+            "text": "This leaves out the $2$ on the right side, giving $9 + 25 = 34$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

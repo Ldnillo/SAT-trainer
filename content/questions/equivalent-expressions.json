@@ -1,0 +1,68 @@
+{
+  "skill": "equivalent-expressions",
+  "questions": [
+    {
+      "id": "equivalent-expressions-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which expression is equivalent to $(2x - 5)^2 - (x^2 - 25)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3x^2 - 20x + 50$"
+          },
+          {
+            "label": "B",
+            "text": "$3x^2 - 20x$"
+          },
+          {
+            "label": "C",
+            "text": "$3x^2 + 50$"
+          },
+          {
+            "label": "D",
+            "text": "$3x^2 - 10x + 50$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Expand: $(2x - 5)^2 = 4x^2 - 20x + 25$. Subtracting $(x^2 - 25)$ means subtracting $x^2$ and adding $25$: $4x^2 - 20x + 25 - x^2 + 25 = 3x^2 - 20x + 50$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This subtracts 25 instead of adding it when distributing the minus sign."
+          },
+          {
+            "label": "C",
+            "text": "This squares $2x - 5$ as $4x^2 + 25$, leaving out the middle term $-20x$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $-10x$ as the middle term, forgetting to double $2x \\cdot 5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}

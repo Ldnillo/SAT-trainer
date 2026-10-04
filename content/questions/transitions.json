@@ -1,0 +1,73 @@
+{
+  "skill": "transitions",
+  "questions": [
+    {
+      "id": "transitions-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The first telegraph cable laid across the Atlantic Ocean, completed in 1858, carried signals so weakly that a message of fewer than one hundred words took about sixteen hours to send. ______ the cable stopped working entirely after only about three weeks."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Moreover,"
+          },
+          {
+            "label": "B",
+            "text": "In other words,"
+          },
+          {
+            "label": "C",
+            "text": "For example,"
+          },
+          {
+            "label": "D",
+            "text": "Instead,"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence describes one problem with the cable (it was extremely slow). The second adds a further problem (it soon stopped working). \"Moreover\" signals that additional, related information follows.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"In other words\" introduces a restatement, but failing after three weeks is a new point, not a rewording of the slow signals."
+          },
+          {
+            "label": "C",
+            "text": "\"For example\" introduces an instance of a general claim, but the cable's failure isn't an example of its slowness."
+          },
+          {
+            "label": "D",
+            "text": "\"Instead\" signals a replacement or alternative, which doesn't fit two problems that both occurred."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    }
+  ]
+}
