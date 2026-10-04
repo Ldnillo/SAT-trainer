@@ -29,7 +29,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Complete the square in $x$ and in $y$: $(x^2 - 6x + 9) + (y^2 + 10y + 25) = 2 + 9 + 25$, so $(x - 3)^2 + (y + 5)^2 = 36$. The radius is $\\sqrt{36} = 6$.",
+        "explanation": "Complete the square in $x$ and in $y$. Half of $-6$ is $-3$, and $(-3)^2 = 9$; half of $10$ is $5$, and $5^2 = 25$. Grouping the terms and adding $9$ and $25$ to both sides gives $(x^2 - 6x + 9) + (y^2 + 10y + 25) = 2 + 9 + 25$. Factoring each group as a perfect square and adding the numbers on the right gives $(x - 3)^2 + (y + 5)^2 = 36$. So $r^2 = 36$, and taking the square root of both sides gives a radius of $r = 6$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -60,6 +60,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -92,7 +97,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "A circle with center $(h, k)$ and radius $r$ has equation $(x - h)^2 + (y - k)^2 = r^2$. Writing $(y + 1)$ as $(y - (-1))$ shows $h = 4$ and $k = -1$, and $r^2 = 49$ gives $r = 7$.",
+        "explanation": "A circle with center $(h, k)$ and radius $r$ has equation $(x - h)^2 + (y - k)^2 = r^2$. Writing $(y + 1)$ as $(y - (-1))$ shows $h = 4$ and $k = -1$, and $r^2 = 49$. Taking the square root of both sides (a radius is positive) gives $r = 7$.",
         "distractorRationales": [
           {
             "label": "B",
@@ -123,6 +128,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -140,7 +150,7 @@
         "acceptedAnswers": [
           "81"
         ],
-        "explanation": "The circumference is $2\\pi r = 18\\pi$, so the radius is $r = 9$ inches. The area is $\\pi r^2 = \\pi(9)^2 = 81\\pi$ square inches, so $k = 81$.",
+        "explanation": "The circumference is $2\\pi r = 18\\pi$. Dividing both sides by $2\\pi$ gives a radius of $r = 9$ inches. The area is $\\pi r^2 = \\pi(9)^2 = 81\\pi$ square inches, so $k = 81$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -158,6 +168,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -302,7 +317,7 @@
           "5/2",
           "2.5"
         ],
-        "explanation": "For an angle measured in radians, arc length $= r\\theta$. So $15 = 6\\theta$, and $\\theta = \\frac{15}{6} = \\frac{5}{2} = 2.5$ radians.",
+        "explanation": "For an angle measured in radians, arc length $= r\\theta$. So $15 = 6\\theta$. Dividing both sides by $6$ gives $\\theta = \\frac{15}{6}$, which simplifies to $\\frac{5}{2} = 2.5$ radians.",
         "distractorRationales": []
       },
       "authorship": {
@@ -320,6 +335,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -478,7 +498,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "A tangent line is perpendicular to the radius at the point of tangency, so triangle $OTP$ has a right angle at $T$. Then $OP = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The closest point on the circle to $P$ lies on segment $OP$, one radius from $O$, so the shortest distance is $15 - 9 = 6$.",
+        "explanation": "A tangent line is perpendicular to the radius at the point of tangency, so triangle $OTP$ has a right angle at $T$. By the Pythagorean theorem, $OP^2 = 9^2 + 12^2 = 81 + 144 = 225$, and taking the square root of both sides gives $OP = 15$. The closest point on the circle to $P$ lies on segment $OP$, one radius from $O$, so the shortest distance is $15 - 9 = 6$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -509,6 +529,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -526,7 +551,7 @@
         "acceptedAnswers": [
           "-8"
         ],
-        "explanation": "Complete the square in $x$ and in $y$. Since $x^2 + 8x = (x + 4)^2 - 16$ and $y^2 - 2y = (y - 1)^2 - 1$, the equation becomes $(x + 4)^2 + (y - 1)^2 - 17 + k = 0$, or $(x + 4)^2 + (y - 1)^2 = 17 - k$. The right side is $r^2 = 25$, so $17 - k = 25$ and $k = -8$.",
+        "explanation": "Complete the square in $x$ and in $y$. Since $x^2 + 8x = (x + 4)^2 - 16$ and $y^2 - 2y = (y - 1)^2 - 1$, substituting these into the equation gives $(x + 4)^2 - 16 + (y - 1)^2 - 1 + k = 0$. Combining the constants gives $(x + 4)^2 + (y - 1)^2 - 17 + k = 0$, and adding $17$ to both sides and subtracting $k$ from both sides gives $(x + 4)^2 + (y - 1)^2 = 17 - k$. The right side is $r^2 = 5^2 = 25$, so $17 - k = 25$. Subtracting $17$ from both sides gives $-k = 8$, and multiplying both sides by $-1$ gives $k = -8$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -544,6 +569,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

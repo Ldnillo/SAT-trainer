@@ -253,7 +253,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "Let $p$ be the number of cans. The total cost is $4(3) + 6.5p \\le 85$, so $12 + 6.5p \\le 85$. Subtract 12: $6.5p \\le 73$. Divide by 6.5: $p \\le 11.23\\ldots$ She can buy only whole cans, so the greatest number is 11. (Twelve cans would cost $\\$78$ plus $\\$12$ for brushes, which is $\\$90$.)",
+        "explanation": "Let $p$ be the number of cans. The total cost is $4(3) + 6.5p \\le 85$. Multiplying $4(3) = 12$ gives $12 + 6.5p \\le 85$. Subtract 12 from both sides: $6.5p \\le 73$. Divide both sides by 6.5: $p \\le 11.23\\ldots$ She can buy only whole cans, so the greatest number is 11. (Twelve cans would cost $\\$78$ plus $\\$12$ for brushes, which is $\\$90$.)",
         "distractorRationales": [
           {
             "label": "B",
@@ -284,6 +284,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -351,7 +356,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "The line through $(0, 2)$ and $(3, 0)$ has slope $-\\frac{2}{3}$ and $y$-intercept 2, so it is $y = -\\frac{2}{3}x + 2$, or $2x + 3y = 6$. The region below the line contains the origin, and $2(0) + 3(0) = 0 < 6$, so the shaded side is $2x + 3y < 6$. The line is dashed, so the inequality is strict.",
+        "explanation": "The line through $(0, 2)$ and $(3, 0)$ has slope $\\frac{0 - 2}{3 - 0} = -\\frac{2}{3}$ and $y$-intercept 2, so it is $y = -\\frac{2}{3}x + 2$. Multiplying both sides by 3 gives $3y = -2x + 6$, and adding $2x$ to both sides gives $2x + 3y = 6$. The region below the line contains the origin, and $2(0) + 3(0) = 0 < 6$, so the shaded side is $2x + 3y < 6$. The line is dashed, so the inequality is strict.",
         "distractorRationales": [
           {
             "label": "B",
@@ -382,6 +387,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -414,7 +424,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Let $s$ be the number of sandwiches and $d$ the number of salads. The conditions are $4s + 6d \\le 300$ and $s + d \\ge 60$. To fit as many salads as possible, use the fewest sandwiches allowed: $s = 60 - d$. Then $4(60 - d) + 6d \\le 300$, so $240 + 2d \\le 300$, $2d \\le 60$, and $d \\le 30$. With 30 salads and 30 sandwiches, the time is $120 + 180 = 300$ minutes and the total is 60 items, so 30 works.",
+        "explanation": "Let $s$ be the number of sandwiches and $d$ the number of salads. The conditions are $4s + 6d \\le 300$ and $s + d \\ge 60$. To fit as many salads as possible, use the fewest sandwiches allowed: $s = 60 - d$. Substitute this into the time condition: $4(60 - d) + 6d \\le 300$. Distribute the 4: $240 - 4d + 6d \\le 300$. Combining like terms gives $240 + 2d \\le 300$. Subtracting 240 from both sides gives $2d \\le 60$. Dividing both sides by 2 gives $d \\le 30$. With 30 salads and 30 sandwiches, the time is $4(30) + 6(30) = 120 + 180 = 300$ minutes and the total is 60 items, so 30 works.",
         "distractorRationales": [
           {
             "label": "A",
@@ -445,6 +455,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -462,7 +477,7 @@
         "acceptedAnswers": [
           "8"
         ],
-        "explanation": "Substitute $x = k$ and $y = 2k$. First inequality: $2k \\le -3k + 20$, so $5k \\le 20$ and $k \\le 4$. Second inequality: $2k > k - 4$, so $k > -4$. Together, $-4 < k \\le 4$. The integers in this range are $-3, -2, -1, 0, 1, 2, 3, 4$, which is 8 values.",
+        "explanation": "Substitute $x = k$ and $y = 2k$. First inequality: $2k \\le -3k + 20$. Adding $3k$ to both sides gives $5k \\le 20$. Dividing both sides by 5 gives $k \\le 4$. Second inequality: $2k > k - 4$. Subtracting $k$ from both sides gives $k > -4$. Together, $-4 < k \\le 4$. The integers in this range are $-3, -2, -1, 0, 1, 2, 3, 4$, which is 8 values.",
         "distractorRationales": []
       },
       "authorship": {
@@ -480,6 +495,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -512,7 +532,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "Subtract 4: $-\\frac{2}{3}x \\ge 6$. Multiply both sides by $-\\frac{3}{2}$ and reverse the inequality: $x \\le -9$. Since $x$ is at most $-9$, $-x$ is at least 9, so $6 - x \\ge 15$. The least possible value of $6 - x$ is 15, when $x = -9$.",
+        "explanation": "Subtract 4 from both sides: $-\\frac{2}{3}x \\ge 6$. Multiply both sides by $-\\frac{3}{2}$ and reverse the inequality, since you are multiplying by a negative number: $x \\le -9$. Multiplying both sides of $x \\le -9$ by $-1$ reverses the inequality again: $-x \\ge 9$. Adding 6 to both sides gives $6 - x \\ge 15$. The least possible value of $6 - x$ is 15, when $x = -9$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -543,6 +563,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

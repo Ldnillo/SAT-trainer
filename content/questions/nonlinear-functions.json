@@ -14,7 +14,7 @@
         "acceptedAnswers": [
           "9"
         ],
-        "explanation": "The minimum of a parabola that opens upward is at its vertex, $x = -\\frac{-10}{2(1)} = 5$. So $f(5) = 25 - 50 + c = -7$, which gives $c = 18$. Then $f(1) = 1 - 10 + 18 = 9$.",
+        "explanation": "The minimum of a parabola that opens upward is at its vertex, $x = -\\frac{b}{2a} = -\\frac{-10}{2(1)} = 5$. Substitute $x = 5$ and set the result equal to the minimum: $f(5) = 5^2 - 10(5) + c = 25 - 50 + c = -7$. Combine the numbers: $-25 + c = -7$. Adding $25$ to both sides gives $c = 18$. Then substitute $x = 1$: $f(1) = 1^2 - 10(1) + 18 = 1 - 10 + 18 = 9$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -32,6 +32,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -127,7 +132,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "A product is zero when one of its factors is zero. $x - 5 = 0$ gives $x = 5$, and $x + 1 = 0$ gives $x = -1$.",
+        "explanation": "A product is zero when one of its factors is zero, so set each factor equal to $0$. Adding $5$ to both sides of $x - 5 = 0$ gives $x = 5$, and subtracting $1$ from both sides of $x + 1 = 0$ gives $x = -1$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -158,6 +163,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -410,7 +420,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The ball hits the ground when $h(t) = 0$: $-16t^2 + 64t + 80 = 0$. Divide by $-16$: $t^2 - 4t - 5 = 0$, so $(t - 5)(t + 1) = 0$. Time cannot be negative, so $t = 5$ seconds.",
+        "explanation": "The ball hits the ground when $h(t) = 0$: $-16t^2 + 64t + 80 = 0$. Divide both sides by $-16$: $t^2 - 4t - 5 = 0$. Factor, using two numbers that multiply to $-5$ and add to $-4$ ($-5$ and $1$): $(t - 5)(t + 1) = 0$. Set each factor equal to $0$: $t - 5 = 0$ gives $t = 5$, and $t + 1 = 0$ gives $t = -1$. Time cannot be negative, so $t = 5$ seconds.",
         "distractorRationales": [
           {
             "label": "A",
@@ -441,6 +451,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -458,7 +473,7 @@
         "acceptedAnswers": [
           "-7"
         ],
-        "explanation": "A parabola is symmetric about the vertical line through its vertex, $x = 5$. The two $x$-intercepts are $8$ units apart, so each is $4$ units from $x = 5$: they are $x = 1$ and $x = 9$. Because the leading coefficient is $1$, $y = (x - 1)(x - 9) = x^2 - 10x + 9$, so $c = 9$. The vertex height is $k = 5^2 - 10(5) + 9 = -16$. So $c + k = 9 + (-16) = -7$.",
+        "explanation": "A parabola is symmetric about the vertical line through its vertex, $x = 5$. The two $x$-intercepts are $8$ units apart, so each is $4$ units from $x = 5$: they are $x = 5 - 4 = 1$ and $x = 5 + 4 = 9$. Because the leading coefficient is $1$, $y = (x - 1)(x - 9)$. Multiply using FOIL: $x^2 - 9x - x + 9$, and combining like terms gives $x^2 - 10x + 9$, so $c = 9$. To find the vertex height, substitute $x = 5$: $k = 5^2 - 10(5) + 9 = 25 - 50 + 9 = -16$. So $c + k = 9 + (-16) = -7$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -476,6 +491,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

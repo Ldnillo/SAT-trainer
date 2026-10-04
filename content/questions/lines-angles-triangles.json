@@ -77,7 +77,7 @@
         "acceptedAnswers": [
           "20"
         ],
-        "explanation": "Vertical angles are equal, so $3x + 10 = 5x - 30$. Subtracting $3x$ from both sides and adding $30$ gives $40 = 2x$, so $x = 20$. (Check: each angle measures $70^\\circ$.)",
+        "explanation": "Vertical angles are equal, so $3x + 10 = 5x - 30$. Subtracting $3x$ from both sides gives $10 = 2x - 30$, and adding $30$ to both sides gives $40 = 2x$. Dividing both sides by $2$ simplifies this to $x = 20$. (Check: each angle measures $70^\\circ$.)",
         "distractorRationales": []
       },
       "authorship": {
@@ -95,6 +95,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -190,7 +195,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "Angles between two parallel lines on the same side of a transversal (same-side interior angles) are supplementary. So $(2x + 15) + (3x - 5) = 180$, which gives $5x + 10 = 180$ and $x = 34$. The angles measure $2(34) + 15 = 83^\\circ$ and $3(34) - 5 = 97^\\circ$, so the larger is $97^\\circ$.",
+        "explanation": "Angles between two parallel lines on the same side of a transversal (same-side interior angles) are supplementary. So $(2x + 15) + (3x - 5) = 180$. Combining like terms gives $5x + 10 = 180$. Subtracting $10$ from both sides gives $5x = 170$, and dividing both sides by $5$ simplifies this to $x = 34$. Substituting $x = 34$, the angles measure $2(34) + 15 = 83^\\circ$ and $3(34) - 5 = 97^\\circ$, so the larger is $97^\\circ$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -198,7 +203,7 @@
           },
           {
             "label": "B",
-            "text": "This sets the two angles equal ($x = 20$), but same-side interior angles are supplementary, not equal."
+            "text": "This sets the two angles equal, $2x + 15 = 3x - 5$. Subtracting $2x$ from both sides and adding $5$ to both sides gives $x = 20$, so each angle would be $55^\\circ$. But same-side interior angles are supplementary, not equal."
           },
           {
             "label": "C",
@@ -221,6 +226,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -288,7 +298,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "An exterior angle of a triangle equals the sum of the two interior angles that are not next to it. Angle $ACD$ is exterior at $C$, so $m\\angle A + m\\angle B = 126^\\circ$. With $m\\angle A = 2\\,m\\angle B$, this gives $3\\,m\\angle B = 126^\\circ$, so $m\\angle B = 42^\\circ$ and $m\\angle A = 84^\\circ$.",
+        "explanation": "An exterior angle of a triangle equals the sum of the two interior angles that are not next to it. Angle $ACD$ is exterior at $C$, so $m\\angle A + m\\angle B = 126^\\circ$. Substituting $m\\angle A = 2\\,m\\angle B$ gives $2\\,m\\angle B + m\\angle B = 126^\\circ$, and combining like terms gives $3\\,m\\angle B = 126^\\circ$. Dividing both sides by $3$ gives $m\\angle B = 42^\\circ$, so $m\\angle A = 2(42^\\circ) = 84^\\circ$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -319,6 +329,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -414,7 +429,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The altitude $QS$ splits triangle $PQR$ into two triangles, $PSQ$ and $QSR$, that are similar to each other (each has a right angle at $S$, and angle $P$ in one matches angle $SQR$ in the other). Matching sides gives $\\frac{PS}{QS} = \\frac{QS}{SR}$, so $QS^2 = 4 \\times 9 = 36$ and $QS = 6$. The hypotenuse is $PR = 4 + 9 = 13$, and $QS$ is the height to it, so the area is $\\frac{1}{2} \\times 13 \\times 6 = 39$.",
+        "explanation": "The altitude $QS$ splits triangle $PQR$ into two triangles, $PSQ$ and $QSR$, that are similar to each other (each has a right angle at $S$, and angle $P$ in one matches angle $SQR$ in the other). Matching sides gives $\\frac{PS}{QS} = \\frac{QS}{SR}$. Cross-multiplying (multiplying both sides by $QS \\cdot SR$) gives $QS^2 = PS \\cdot SR = 4 \\times 9 = 36$, and taking the square root of both sides gives $QS = 6$. The hypotenuse is $PR = 4 + 9 = 13$, and $QS$ is the height to it, so the area is $\\frac{1}{2} \\times 13 \\times 6 = 39$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -445,6 +460,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -512,7 +532,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "Since $DE \\parallel BC$, triangle $ADE$ is similar to triangle $ABC$ with $\\frac{AD}{AB} = \\frac{2}{2 + 3} = \\frac{2}{5}$. Areas of similar figures scale by the square of the ratio, so triangle $ADE$ has $\\frac{4}{25}$ of the area of triangle $ABC$, and quadrilateral $DBCE$ has the other $\\frac{21}{25}$. Then $\\frac{21}{25}\\,[ABC] = 84$ gives $[ABC] = 100$, and $[ADE] = \\frac{4}{25} \\times 100 = 16$.",
+        "explanation": "Since $DE \\parallel BC$, triangle $ADE$ is similar to triangle $ABC$ with $\\frac{AD}{AB} = \\frac{2}{2 + 3} = \\frac{2}{5}$. Areas of similar figures scale by the square of the ratio, so triangle $ADE$ has $\\frac{4}{25}$ of the area of triangle $ABC$, and quadrilateral $DBCE$ has the other $\\frac{21}{25}$. Then $\\frac{21}{25}\\,[ABC] = 84$. Multiplying both sides by $\\frac{25}{21}$ gives $[ABC] = 84 \\times \\frac{25}{21} = 100$, and $[ADE] = \\frac{4}{25} \\times 100 = 16$.",
         "distractorRationales": [
           {
             "label": "B",
@@ -543,6 +563,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

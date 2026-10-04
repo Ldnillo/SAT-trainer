@@ -16,7 +16,7 @@
           ".8",
           "0.8"
         ],
-        "explanation": "The hypotenuse is opposite the right angle: $PR = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15} = \\frac{4}{5}$, or $0.8$.",
+        "explanation": "The hypotenuse is $PR$, opposite the right angle. By the Pythagorean theorem, $PR^2 = 9^2 + 12^2 = 81 + 144 = 225$, and taking the square root of both sides gives $PR = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15}$. Dividing the numerator and denominator by $3$ simplifies this to $\\frac{4}{5}$, or $0.8$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -34,6 +34,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -66,7 +71,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "The wall, the ground and the ladder form a right triangle with the right angle where the wall meets the ground, and the ladder is the hypotenuse. If the height is $h$, then $h^2 + 5^2 = 13^2$, so $h^2 = 169 - 25 = 144$ and $h = 12$ feet.",
+        "explanation": "The wall, the ground and the ladder form a right triangle with the right angle where the wall meets the ground, and the ladder is the hypotenuse. If the height is $h$, then $h^2 + 5^2 = 13^2$, which is $h^2 + 25 = 169$. Subtracting $25$ from both sides gives $h^2 = 144$, and taking the square root of both sides (a height is positive) gives $h = 12$ feet.",
         "distractorRationales": [
           {
             "label": "A",
@@ -97,6 +102,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -177,7 +187,7 @@
         "acceptedAnswers": [
           "10"
         ],
-        "explanation": "In a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle, the hypotenuse is $\\sqrt{2}$ times a leg. So each leg is $\\frac{10\\sqrt{2}}{\\sqrt{2}} = 10$. (Check: $10^2 + 10^2 = 200 = (10\\sqrt{2})^2$.)",
+        "explanation": "In a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle, the hypotenuse is $\\sqrt{2}$ times a leg. If each leg has length $\\ell$, then $\\ell\\sqrt{2} = 10\\sqrt{2}$. Dividing both sides by $\\sqrt{2}$ gives $\\ell = 10$. (Check: $10^2 + 10^2 = 200 = (10\\sqrt{2})^2$.)",
         "distractorRationales": []
       },
       "authorship": {
@@ -195,6 +205,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -227,7 +242,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "Angle $L$ measures $180^\\circ - 90^\\circ - 60^\\circ = 30^\\circ$, so this is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle. Side $JK$ is opposite the $30^\\circ$ angle, so it is the short leg. The long leg, $KL$, is opposite the $60^\\circ$ angle and is $\\sqrt{3}$ times the short leg: $KL = 7\\sqrt{3}$. (Equivalently, $\\tan(J) = \\frac{KL}{JK}$, so $KL = 7\\tan 60^\\circ = 7\\sqrt{3}$.)",
+        "explanation": "Angle $L$ measures $180^\\circ - 90^\\circ - 60^\\circ = 30^\\circ$, so this is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle. Side $JK$ is opposite the $30^\\circ$ angle, so it is the short leg. The long leg, $KL$, is opposite the $60^\\circ$ angle and is $\\sqrt{3}$ times the short leg: $KL = 7\\sqrt{3}$. (Equivalently, $\\tan(J) = \\frac{KL}{JK}$, so $\\tan 60^\\circ = \\frac{KL}{7}$. Multiplying both sides by $7$ gives $KL = 7\\tan 60^\\circ = 7\\sqrt{3}$.)",
         "distractorRationales": [
           {
             "label": "A",
@@ -258,6 +273,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -276,7 +296,7 @@
           "12/5",
           "2.4"
         ],
-        "explanation": "$\\sin(D)$ is the side opposite $D$ over the hypotenuse, so we can take $EF = 5$ and $DE = 13$. By the Pythagorean theorem, $DF = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$. For angle $E$, the opposite side is $DF = 12$ and the adjacent leg is $EF = 5$, so $\\tan(E) = \\frac{12}{5} = 2.4$.",
+        "explanation": "$\\sin(D)$ is the side opposite $D$ over the hypotenuse, so we can take $EF = 5$ and $DE = 13$. By the Pythagorean theorem, $DF^2 + 5^2 = 13^2$, which is $DF^2 + 25 = 169$. Subtracting $25$ from both sides gives $DF^2 = 144$, and taking the square root of both sides gives $DF = 12$. For angle $E$, the opposite side is $DF = 12$ and the adjacent leg is $EF = 5$, so $\\tan(E) = \\frac{12}{5} = 2.4$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -294,6 +314,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -326,7 +351,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "The ground, the tower and the line of sight form a right triangle with the right angle at the base of the tower. The tower's height $h$ is opposite the $30^\\circ$ angle and the $40$-meter distance is adjacent to it, so $\\tan 30^\\circ = \\frac{h}{40}$. Since $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}$, $h = \\frac{40\\sqrt{3}}{3}$ meters (about $23.1$ meters).",
+        "explanation": "The ground, the tower and the line of sight form a right triangle with the right angle at the base of the tower. The tower's height $h$ is opposite the $30^\\circ$ angle and the $40$-meter distance is adjacent to it, so $\\tan 30^\\circ = \\frac{h}{40}$. Multiplying both sides by $40$ gives $h = 40\\tan 30^\\circ$. Since $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$, which is $\\frac{\\sqrt{3}}{3}$ after multiplying the numerator and denominator by $\\sqrt{3}$, substituting gives $h = 40 \\cdot \\frac{\\sqrt{3}}{3} = \\frac{40\\sqrt{3}}{3}$ meters (about $23.1$ meters).",
         "distractorRationales": [
           {
             "label": "A",
@@ -357,6 +382,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -505,7 +535,7 @@
         "acceptedAnswers": [
           "216"
         ],
-        "explanation": "Since $\\sin(A) = \\frac{3}{5}$, the side opposite $A$ and the hypotenuse are in the ratio $3 : 5$, and by the Pythagorean theorem the three sides are $3k$, $4k$ and $5k$ for some $k > 0$. The perimeter is $12k = 72$, so $k = 6$ and the legs are $18$ and $24$. The area is $\\frac{1}{2} \\times 18 \\times 24 = 216$.",
+        "explanation": "Since $\\sin(A) = \\frac{3}{5}$, the side opposite $A$ and the hypotenuse are in the ratio $3 : 5$, and by the Pythagorean theorem the three sides are $3k$, $4k$ and $5k$ for some $k > 0$. The perimeter is $3k + 4k + 5k = 72$, and combining like terms gives $12k = 72$. Dividing both sides by $12$ gives $k = 6$, so the legs are $3(6) = 18$ and $4(6) = 24$. The area is $\\frac{1}{2} \\times 18 \\times 24 = 216$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -523,6 +553,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

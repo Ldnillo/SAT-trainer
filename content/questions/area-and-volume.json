@@ -14,7 +14,7 @@
         "acceptedAnswers": [
           "3375"
         ],
-        "explanation": "A cube has 6 square faces, so each face of the first cube has area $\\frac{150}{6} = 25$ and each edge is $5$ inches. The second cube's edges are $3 \\cdot 5 = 15$ inches, so its volume is $15^3 = 3{,}375$ cubic inches.",
+        "explanation": "A cube has 6 square faces, so each face of the first cube has area $\\frac{150}{6} = 25$ square inches. Each face is a square, so its edge length $s$ satisfies $s^2 = 25$. Taking the square root of both sides gives $s = 5$ inches. The second cube's edges are $3 \\cdot 5 = 15$ inches, so its volume is $15^3 = 3{,}375$ cubic inches.",
         "distractorRationales": []
       },
       "authorship": {
@@ -32,6 +32,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -210,7 +215,7 @@
         "acceptedAnswers": [
           "496"
         ],
-        "explanation": "Let the width be $w$, so the length is $2w$. The volume is $(2w)(w)(5) = 10w^2 = 640$, so $w^2 = 64$ and $w = 8$. The box is $16$ by $8$ by $5$. It has two faces of each size: $16 \\times 8 = 128$, $16 \\times 5 = 80$ and $8 \\times 5 = 40$. The surface area is $2(128 + 80 + 40) = 2(248) = 496$ square centimeters.",
+        "explanation": "Let the width be $w$, so the length is $2w$. The volume is $(2w)(w)(5)$, and multiplying the factors gives $10w^2$, so $10w^2 = 640$. Dividing both sides by $10$ gives $w^2 = 64$, and taking the square root of both sides (a width is positive) gives $w = 8$. The length is $2(8) = 16$, so the box is $16$ by $8$ by $5$. It has two faces of each size: $16 \\times 8 = 128$, $16 \\times 5 = 80$ and $8 \\times 5 = 40$. The surface area is $2(128 + 80 + 40) = 2(248) = 496$ square centimeters.",
         "distractorRationales": []
       },
       "authorship": {
@@ -228,6 +233,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -449,7 +459,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "Let the sphere's radius be $r$. Because the sphere touches the curved side, the cylinder's radius is also $r$, and because it touches the top and bottom, the cylinder's height is $2r$. So the cylinder's volume is $\\pi r^2(2r) = 2\\pi r^3 = 54\\pi$, which gives $r^3 = 27$ and $r = 3$. The sphere's volume is $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi$ cubic centimeters.",
+        "explanation": "Let the sphere's radius be $r$. Because the sphere touches the curved side, the cylinder's radius is also $r$, and because it touches the top and bottom, the cylinder's height is $2r$. So the cylinder's volume is $\\pi r^2(2r) = 2\\pi r^3$. Setting this equal to $54\\pi$ gives $2\\pi r^3 = 54\\pi$. Dividing both sides by $2\\pi$ gives $r^3 = 27$, and taking the cube root of both sides gives $r = 3$. The sphere's volume is $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi$ cubic centimeters.",
         "distractorRationales": [
           {
             "label": "A",
@@ -480,6 +490,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -497,7 +512,7 @@
         "acceptedAnswers": [
           "10"
         ],
-        "explanation": "The water's volume stays the same: $30 \\times 40 \\times 9 = 10{,}800$ cubic centimeters. With the block standing in the tank, the water can only fill the space around it, whose floor area is $1{,}200 - 10 \\times 12 = 1{,}080$ square centimeters. If the block is not fully covered, the depth $h$ satisfies $1{,}080h = 10{,}800$, so $h = 10$ centimeters. This is less than the block's height of $20$ centimeters, so the block is indeed not fully covered and the answer is $10$. (Adding the block's whole volume, $2{,}400$, to the water would wrongly give a depth of $9 + 2 = 11$, but the top part of the block sits above the water.)",
+        "explanation": "The water's volume stays the same: $30 \\times 40 \\times 9 = 10{,}800$ cubic centimeters. With the block standing in the tank, the water can only fill the space around it, whose floor area is $1{,}200 - 10 \\times 12 = 1{,}080$ square centimeters. If the block is not fully covered, the depth $h$ satisfies $1{,}080h = 10{,}800$. Dividing both sides by $1{,}080$ gives $h = 10$ centimeters. This is less than the block's height of $20$ centimeters, so the block is indeed not fully covered and the answer is $10$. (Adding the block's whole volume, $2{,}400$, to the water would wrongly give a depth of $9 + 2 = 11$, but the top part of the block sits above the water.)",
         "distractorRationales": []
       },
       "authorship": {
@@ -515,6 +530,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

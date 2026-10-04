@@ -77,7 +77,7 @@
         "acceptedAnswers": [
           "10"
         ],
-        "explanation": "Take the square root of both sides: $x - 4 = 6$ or $x - 4 = -6$. So $x = 10$ or $x = -2$. The positive solution is $10$.",
+        "explanation": "Take the square root of both sides, remembering both the positive and negative roots: $x - 4 = 6$ or $x - 4 = -6$. Adding $4$ to both sides of each equation gives $x = 10$ or $x = -2$. The positive solution is $10$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -95,6 +95,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -127,7 +132,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Find two numbers that multiply to $-14$ and add to $-5$: they are $-7$ and $2$. So $x^2 - 5x - 14 = (x - 7)(x + 2) = 0$, which gives $x = 7$ or $x = -2$.",
+        "explanation": "Find two numbers that multiply to $-14$ and add to $-5$: they are $-7$ and $2$. So the equation factors as $(x - 7)(x + 2) = 0$. A product is zero when one of its factors is zero, so set each factor equal to $0$: $x - 7 = 0$ or $x + 2 = 0$. Adding $7$ to both sides of the first gives $x = 7$, and subtracting $2$ from both sides of the second gives $x = -2$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -158,6 +163,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -190,7 +200,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "An absolute value equals $8$ when the inside equals $8$ or $-8$. If $x - 3 = 8$, then $x = 11$. If $x - 3 = -8$, then $x = -5$. Both check: $|11 - 3| = 8$ and $|-5 - 3| = 8$.",
+        "explanation": "An absolute value equals $8$ when the inside equals $8$ or $-8$. If $x - 3 = 8$, adding $3$ to both sides gives $x = 11$. If $x - 3 = -8$, adding $3$ to both sides gives $x = -5$. Both check: $|11 - 3| = 8$ and $|-5 - 3| = 8$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -221,6 +231,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -253,7 +268,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "Square both sides: $2x + 15 = x^2$, so $x^2 - 2x - 15 = 0$ and $(x - 5)(x + 3) = 0$, giving $x = 5$ or $x = -3$. Squaring can create false solutions, so check each one. For $x = 5$: $\\sqrt{25} = 5$, which works. For $x = -3$: $\\sqrt{9} = 3$, but the right side is $-3$, so it fails. The only solution is $5$.",
+        "explanation": "Square both sides: $2x + 15 = x^2$. Subtract $2x$ and $15$ from both sides to get $x^2 - 2x - 15 = 0$. Factor: two numbers that multiply to $-15$ and add to $-2$ are $-5$ and $3$, so $(x - 5)(x + 3) = 0$. Set each factor equal to $0$: $x - 5 = 0$ gives $x = 5$, and $x + 3 = 0$ gives $x = -3$. Squaring can create false solutions, so check each one. For $x = 5$: $\\sqrt{25} = 5$, which works. For $x = -3$: $\\sqrt{9} = 3$, but the right side is $-3$, so it fails. The only solution is $5$.",
         "distractorRationales": [
           {
             "label": "B",
@@ -284,6 +299,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -301,7 +321,7 @@
         "acceptedAnswers": [
           "4"
         ],
-        "explanation": "Set the two expressions for $y$ equal: $x^2 - 4x + 7 = 2x - 2$. Move everything to one side: $x^2 - 6x + 9 = 0$, which is $(x - 3)^2 = 0$, so $x = 3$. Then $y = 2(3) - 2 = 4$.",
+        "explanation": "Set the two expressions for $y$ equal: $x^2 - 4x + 7 = 2x - 2$. Subtract $2x$ from both sides and add $2$ to both sides to get $x^2 - 6x + 9 = 0$. Factor the left side as a perfect square: $(x - 3)^2 = 0$. Taking the square root of both sides gives $x - 3 = 0$, and adding $3$ to both sides gives $x = 3$. Substitute $x = 3$ into $y = 2x - 2$: $y = 2(3) - 2 = 6 - 2 = 4$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -319,6 +339,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -351,7 +376,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "Multiply both sides by $x - 4$ (with $x \\neq 4$): $2x = 8 + 3(x - 4) = 3x - 4$, so $x = 4$. But $x = 4$ makes the denominators zero, so it is not allowed. There are no solutions.",
+        "explanation": "Multiply both sides by $x - 4$ (with $x \\neq 4$): $2x = 8 + 3(x - 4)$. Distribute the $3$: $2x = 8 + 3x - 12$, and combining like terms gives $2x = 3x - 4$. Subtract $3x$ from both sides to get $-x = -4$. Multiplying both sides by $-1$ gives $x = 4$. But $x = 4$ makes the denominators zero, so it is not allowed. There are no solutions.",
         "distractorRationales": [
           {
             "label": "B",
@@ -382,6 +407,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -414,7 +444,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "Write $27$ as $3^3$: $27^{x - 3} = 3^{3(x - 3)} = 3^{3x - 9}$. With equal bases, the exponents must be equal: $2x - 1 = 3x - 9$, so $x = 8$. Check: $3^{15}$ and $27^5 = 3^{15}$.",
+        "explanation": "Write $27$ as $3^3$: $27^{x - 3} = (3^3)^{x - 3} = 3^{3(x - 3)}$, and distributing the $3$ gives $3^{3x - 9}$. With equal bases, the exponents must be equal: $2x - 1 = 3x - 9$. Subtract $3x$ from both sides and add $1$ to both sides to get $-x = -8$. Multiplying both sides by $-1$ gives $x = 8$. Check: $3^{2(8) - 1} = 3^{15}$ and $27^{8 - 3} = 27^5 = 3^{15}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -445,6 +475,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -462,7 +497,7 @@
         "acceptedAnswers": [
           "-1"
         ],
-        "explanation": "Set the right sides equal: $-2x^2 + 8x + c = 4x + 1$, so $-2x^2 + 4x + (c - 1) = 0$. Multiply by $-1$: $2x^2 - 4x + (1 - c) = 0$. There is exactly one real solution when the discriminant is $0$: $(-4)^2 - 4(2)(1 - c) = 0$, so $16 - 8 + 8c = 0$, which gives $8 + 8c = 0$ and $c = -1$. (Check: with $c = -1$ the equation is $2x^2 - 4x + 2 = 2(x - 1)^2 = 0$, so $x = 1$ only.)",
+        "explanation": "Set the right sides equal: $-2x^2 + 8x + c = 4x + 1$. Subtract $4x$ and $1$ from both sides: $-2x^2 + 4x + (c - 1) = 0$. Multiply both sides by $-1$: $2x^2 - 4x + (1 - c) = 0$. There is exactly one real solution when the discriminant $b^2 - 4ac$ is $0$: $(-4)^2 - 4(2)(1 - c) = 0$. Simplify: $16 - 8(1 - c) = 0$, and distributing the $-8$ gives $16 - 8 + 8c = 0$. Combine like terms: $8 + 8c = 0$. Subtract $8$ from both sides to get $8c = -8$, and dividing both sides by $8$ gives $c = -1$. (Check: with $c = -1$ the equation is $2x^2 - 4x + 2 = 2(x - 1)^2 = 0$, so $x = 1$ only.)",
         "distractorRationales": []
       },
       "authorship": {
@@ -480,6 +515,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -512,7 +552,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "The equation means $x^2 - 6x = 8$ or $x^2 - 6x = -8$. First case: $x^2 - 6x - 8 = 0$ has discriminant $36 + 32 = 68 > 0$, so two real solutions, and their sum is $-\\frac{-6}{1} = 6$. Second case: $x^2 - 6x + 8 = 0$ factors as $(x - 2)(x - 4) = 0$, giving $2$ and $4$, which also sum to $6$. The four solutions are all different (the first case gives $3 \\pm \\sqrt{17}$), so the total is $6 + 6 = 12$.",
+        "explanation": "The equation means $x^2 - 6x = 8$ or $x^2 - 6x = -8$. First case: subtracting $8$ from both sides gives $x^2 - 6x - 8 = 0$. Its discriminant is $(-6)^2 - 4(1)(-8) = 36 + 32 = 68 > 0$, so it has two real solutions, and their sum is $-\\frac{b}{a} = -\\frac{-6}{1} = 6$. Second case: adding $8$ to both sides gives $x^2 - 6x + 8 = 0$, which factors as $(x - 2)(x - 4) = 0$. Setting each factor equal to $0$ gives $2$ and $4$, which also sum to $6$. The four solutions are all different (the first case gives $3 \\pm \\sqrt{17}$), so the total is $6 + 6 = 12$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -543,6 +583,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

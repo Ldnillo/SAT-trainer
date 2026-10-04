@@ -29,7 +29,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "A random sample estimates the whole population, and the margin of error gives a range of plausible values for it: $62\\% \\pm 5\\%$, or $57\\%$ to $67\\%$ of all residents.",
+        "explanation": "A random sample estimates the whole population, and the margin of error gives a range of plausible values for it. Subtracting and adding the margin of error gives $62\\% - 5\\% = 57\\%$ to $62\\% + 5\\% = 67\\%$ of all residents.",
         "distractorRationales": [
           {
             "label": "B",
@@ -60,6 +60,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -344,7 +349,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The plausible values for Town A's mean are $21$ to $27$ minutes, and for Town B's mean, $25$ to $31$ minutes. These ranges overlap from $25$ to $27$, so it's possible that the two population means are equal (or even that Town A's is greater). The surveys don't support concluding that they differ.",
+        "explanation": "Subtracting and adding the margin of error, the plausible values for Town A's mean are $24 - 3 = 21$ to $24 + 3 = 27$ minutes, and for Town B's mean, $28 - 3 = 25$ to $28 + 3 = 31$ minutes. These ranges overlap from $25$ to $27$, so it's possible that the two population means are equal (or even that Town A's is greater). The surveys don't support concluding that they differ.",
         "distractorRationales": [
           {
             "label": "A",
@@ -380,6 +385,11 @@
             "reviewer": "Justine",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -412,7 +422,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "A random sample represents the population it was drawn from. The students were chosen from all high school students in the county, so the estimate ($66\\%$ to $74\\%$) applies to that group.",
+        "explanation": "A random sample represents the population it was drawn from. The students were chosen from all high school students in the county, so the estimate (from $70\\% - 4\\% = 66\\%$ to $70\\% + 4\\% = 74\\%$) applies to that group.",
         "distractorRationales": [
           {
             "label": "B",
@@ -443,6 +453,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -601,7 +616,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The plausible percent of all households with solar panels runs from $30\\% - 5.5\\% = 24.5\\%$ to $30\\% + 5.5\\% = 35.5\\%$. For $8{,}000$ households, that is $0.245 \\times 8{,}000 = 1{,}960$ to $0.355 \\times 8{,}000 = 2{,}840$ households. Only $2{,}600$ (which is $32.5\\%$) is in this range.",
+        "explanation": "The plausible percent of all households with solar panels runs from $30\\% - 5.5\\% = 24.5\\%$ to $30\\% + 5.5\\% = 35.5\\%$. For $8{,}000$ households, that is $0.245 \\times 8{,}000 = 1{,}960$ to $0.355 \\times 8{,}000 = 2{,}840$ households. Only $2{,}600$ is in this range. (As a percent, $\\frac{2{,}600}{8{,}000} = 0.325$, or $32.5\\%$.)",
         "distractorRationales": [
           {
             "label": "A",
@@ -632,6 +647,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

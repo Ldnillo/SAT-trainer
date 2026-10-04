@@ -44,7 +44,7 @@
           ".625",
           "0.625"
         ],
-        "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80} = \\frac{5}{8}$, or $0.625$.",
+        "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80}$. Dividing the numerator and denominator by $10$ simplifies this to $\\frac{5}{8}$, or $0.625$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -62,6 +62,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -171,7 +176,7 @@
           ".27",
           "0.27"
         ],
-        "explanation": "The person must be in the \"40 or older\" row and the \"Cats\" column: $54$ people. Out of all $200$ people, the probability is $\\frac{54}{200} = \\frac{27}{100} = 0.27$.",
+        "explanation": "The person must be in the \\\"40 or older\\\" row and the \\\"Cats\\\" column: $54$ people. Out of all $200$ people, the probability is $\\frac{54}{200}$. Dividing the numerator and denominator by $2$ simplifies this to $\\frac{27}{100}$, which is $0.27$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -189,6 +194,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -249,7 +259,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "The student is chosen only from those who play an instrument, so use the \"Plays an instrument\" column: $60$ students. Of these, $36$ are in 12th grade. The probability is $\\frac{36}{60} = \\frac{3}{5}$.",
+        "explanation": "The student is chosen only from those who play an instrument, so use the \\\"Plays an instrument\\\" column: $60$ students. Of these, $36$ are in 12th grade. The probability is $\\frac{36}{60}$. Dividing the numerator and denominator by $12$ simplifies this to $\\frac{3}{5}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -280,6 +290,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -331,7 +346,7 @@
           ".5",
           "0.5"
         ],
-        "explanation": "Count everyone in the \"Bike\" column or the \"Less than 5 miles\" row, without counting anyone twice. The \"Less than 5 miles\" row has $120$ employees. The only bikers not already counted are the $5$ who live $5$ miles or more away. That gives $120 + 5 = 125$ employees, so the probability is $\\frac{125}{250} = \\frac{1}{2}$.",
+        "explanation": "Count everyone in the \\\"Bike\\\" column or the \\\"Less than 5 miles\\\" row, without counting anyone twice. The \\\"Less than 5 miles\\\" row has $120$ employees. The only bikers not already counted are the $5$ who live $5$ miles or more away. That gives $120 + 5 = 125$ employees, so the probability is $\\frac{125}{250}$. Dividing the numerator and denominator by $125$ simplifies this to $\\frac{1}{2}$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -349,6 +364,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -381,7 +401,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "There are $6 \\times 6 = 36$ equally likely ordered outcomes. The ones with a sum of $10$ or more are $(4,6)$, $(5,5)$, $(6,4)$, $(5,6)$, $(6,5)$, and $(6,6)$: $6$ outcomes. The probability is $\\frac{6}{36} = \\frac{1}{6}$.",
+        "explanation": "There are $6 \\times 6 = 36$ equally likely ordered outcomes. The ones with a sum of $10$ or more are $(4,6)$, $(5,5)$, $(6,4)$, $(5,6)$, $(6,5)$, and $(6,6)$: $6$ outcomes. The probability is $\\frac{6}{36}$. Dividing the numerator and denominator by $6$ simplifies this to $\\frac{1}{6}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -412,6 +432,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -444,7 +469,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "$5$ of the $8$ batteries work. The probability that the first battery works is $\\frac{5}{8}$. If it does, $4$ working batteries remain among $7$, so the probability that the second also works is $\\frac{4}{7}$. Multiply: $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$.",
+        "explanation": "$5$ of the $8$ batteries work. The probability that the first battery works is $\\frac{5}{8}$. If it does, $4$ working batteries remain among $7$, so the probability that the second also works is $\\frac{4}{7}$. Multiply the two probabilities: $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{5 \\times 4}{8 \\times 7} = \\frac{20}{56}$. Dividing the numerator and denominator by $4$ simplifies this to $\\frac{5}{14}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -452,7 +477,7 @@
           },
           {
             "label": "C",
-            "text": "This is the probability that exactly one of the two batteries works: $2 \\times \\frac{5}{8} \\times \\frac{3}{7} = \\frac{15}{28}$."
+            "text": "This is the probability that exactly one of the two batteries works: $2 \\times \\frac{5}{8} \\times \\frac{3}{7} = \\frac{30}{56}$. Dividing the numerator and denominator by $2$ simplifies this to $\\frac{15}{28}$."
           },
           {
             "label": "D",
@@ -475,6 +500,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -507,7 +537,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "First find the share of households that own at least one of the pets. Adding $40\\% + 25\\%$ counts the $10\\%$ that own both twice, so subtract it once: $40\\% + 25\\% - 10\\% = 55\\%$. All $40\\%$ of dog owners are in this group. The probability is $\\frac{40}{55} = \\frac{8}{11}$.",
+        "explanation": "First find the share of households that own at least one of the pets. Adding $40\\% + 25\\%$ counts the $10\\%$ that own both twice, so subtract it once: $40\\% + 25\\% - 10\\% = 55\\%$. All $40\\%$ of dog owners are in this group. The probability is $\\frac{40}{55}$. Dividing the numerator and denominator by $5$ simplifies this to $\\frac{8}{11}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -538,6 +568,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -674,7 +709,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Only items from Factories B and C count: $400 + 500 = 900$ items. Of these, $18 + 15 = 33$ are defective. The probability is $\\frac{33}{900} = \\frac{11}{300}$.",
+        "explanation": "Only items from Factories B and C count: $400 + 500 = 900$ items. Of these, $18 + 15 = 33$ are defective. The probability is $\\frac{33}{900}$. Dividing the numerator and denominator by $3$ simplifies this to $\\frac{11}{300}$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -705,6 +740,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

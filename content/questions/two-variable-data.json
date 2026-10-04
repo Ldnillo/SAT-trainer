@@ -29,7 +29,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "Substitute $x = 6$: $y = 4.5(6) + 62 = 27 + 62 = 89$.",
+        "explanation": "Substitute $x = 6$ into the equation of the line: $y = 4.5(6) + 62$. Multiplying $4.5$ by $6$ gives $y = 27 + 62$, and adding gives $y = 89$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -60,6 +60,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -140,7 +145,7 @@
         "acceptedAnswers": [
           "10"
         ],
-        "explanation": "Set $h = 30$ and solve: $30 = 1.8t + 12$, so $1.8t = 18$ and $t = \\frac{18}{1.8} = 10$ weeks.",
+        "explanation": "Set $h = 30$ to get the equation $30 = 1.8t + 12$. Subtracting $12$ from both sides gives $18 = 1.8t$. Dividing both sides by $1.8$ gives $t = \\frac{18}{1.8}$, which simplifies to $t = 10$ weeks.",
         "distractorRationales": []
       },
       "authorship": {
@@ -158,6 +163,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -253,7 +263,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "The predicted value at $x = 8$ is $2.5(8) + 10 = 30$. The actual value is $27$. The residual is actual minus predicted: $27 - 30 = -3$. The point lies $3$ units below the line.",
+        "explanation": "Substitute $x = 8$ into the equation of the line to find the predicted value: $2.5(8) + 10$. Multiplying gives $20 + 10$, and adding gives $30$. The actual value is $27$. The residual is actual minus predicted: $27 - 30 = -3$. The point lies $3$ units below the line.",
         "distractorRationales": [
           {
             "label": "B",
@@ -284,6 +294,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -540,7 +555,7 @@
         ],
         "correctChoice": "A",
         "acceptedAnswers": [],
-        "explanation": "The graph of $R$ is a parabola that opens downward (the coefficient of $p^2$ is negative), so its maximum is at the vertex, $p = -\\frac{b}{2a} = -\\frac{48}{2(-2)} = 12$. This price is in the allowed range $5 \\le p \\le 20$. Then $R = -2(12)^2 + 48(12) + 50 = -288 + 576 + 50 = 338$.",
+        "explanation": "The graph of $R$ is a parabola that opens downward (the coefficient of $p^2$ is negative), so its maximum is at the vertex. Here $a = -2$ and $b = 48$, so the vertex is at $p = -\\frac{b}{2a} = -\\frac{48}{2(-2)} = -\\frac{48}{-4} = 12$. This price is in the allowed range $5 \\le p \\le 20$. Substitute $p = 12$ into the equation: $R = -2(12)^2 + 48(12) + 50$. Squaring first, $(12)^2 = 144$, so $R = -2(144) + 48(12) + 50$. Multiplying gives $R = -288 + 576 + 50$, and adding gives $R = 338$.",
         "distractorRationales": [
           {
             "label": "B",
@@ -571,6 +586,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

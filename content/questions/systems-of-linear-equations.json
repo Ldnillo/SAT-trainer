@@ -14,7 +14,7 @@
         "acceptedAnswers": [
           "2"
         ],
-        "explanation": "A system of two linear equations has no solution when the lines are parallel and distinct, which means the $x$ and $y$ coefficients are proportional but the constants are not. The $y$ coefficients have ratio $\\frac{3}{6} = \\frac{1}{2}$, so $\\frac{a}{4} = \\frac{1}{2}$ and $a = 2$. Check: the constants have ratio $\\frac{12}{15} = \\frac{4}{5} \\ne \\frac{1}{2}$, so the lines are distinct and the system has no solution.",
+        "explanation": "A system of two linear equations has no solution when the lines are parallel and distinct, which means the $x$ and $y$ coefficients are proportional but the constants are not. The $y$ coefficients have ratio $\\frac{3}{6} = \\frac{1}{2}$, so the $x$ coefficients must have the same ratio: $\\frac{a}{4} = \\frac{1}{2}$. Multiplying both sides by 4 gives $a = 2$. Check: the constants have ratio $\\frac{12}{15} = \\frac{4}{5} \\ne \\frac{1}{2}$, so the lines are distinct and the system has no solution.",
         "distractorRationales": []
       },
       "authorship": {
@@ -32,6 +32,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -64,7 +69,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Substitute $y = 2x - 1$ into the second equation: $x + (2x - 1) = 11$, so $3x = 12$ and $x = 4$. Then $y = 2(4) - 1 = 7$. Check: $4 + 7 = 11$.",
+        "explanation": "Substitute $y = 2x - 1$ into the second equation: $x + (2x - 1) = 11$. Combining like terms gives $3x - 1 = 11$. Adding 1 to both sides gives $3x = 12$. Dividing both sides by 3 gives $x = 4$. Substitute $x = 4$ into the first equation: $y = 2(4) - 1 = 7$. Check: $4 + 7 = 11$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -95,6 +100,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -112,7 +122,7 @@
         "acceptedAnswers": [
           "19"
         ],
-        "explanation": "Add the two equations to eliminate $y$: $(x + y) + (x - y) = 30 + 8$, so $2x = 38$ and $x = 19$. (Then $y = 11$.)",
+        "explanation": "Add the two equations to eliminate $y$: $(x + y) + (x - y) = 30 + 8$. Combining like terms gives $2x = 38$. Dividing both sides by 2 gives $x = 19$. (Substituting $x = 19$ into $x + y = 30$ and subtracting 19 from both sides gives $y = 11$.)",
         "distractorRationales": []
       },
       "authorship": {
@@ -130,6 +140,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -225,7 +240,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "Add the equations to eliminate $y$: $8x = 24$, so $x = 3$. Substitute into the first equation: $9 + 2y = 7$, so $2y = -2$ and $y = -1$. Then $x + y = 3 + (-1) = 2$.",
+        "explanation": "Add the equations to eliminate $y$: $(3x + 2y) + (5x - 2y) = 7 + 17$, which simplifies to $8x = 24$. Dividing both sides by 8 gives $x = 3$. Substitute $x = 3$ into the first equation: $3(3) + 2y = 7$, or $9 + 2y = 7$. Subtracting 9 from both sides gives $2y = -2$. Dividing both sides by 2 gives $y = -1$. Then $x + y = 3 + (-1) = 2$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -256,6 +271,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -273,7 +293,7 @@
         "acceptedAnswers": [
           "20"
         ],
-        "explanation": "Let $a$ be the liters of 10% solution and $b$ the liters of 25% solution. The total volume gives $a + b = 30$. The amount of salt gives $0.10a + 0.25b = 0.20(30) = 6$. Substitute $a = 30 - b$: $0.10(30 - b) + 0.25b = 6$, so $3 + 0.15b = 6$, $0.15b = 3$, and $b = 20$. The chemist uses 20 liters of the 25% solution (and 10 liters of the 10% solution).",
+        "explanation": "Let $a$ be the liters of 10% solution and $b$ the liters of 25% solution. The total volume gives $a + b = 30$. The amount of salt gives $0.10a + 0.25b = 0.20(30) = 6$. Subtracting $b$ from both sides of the first equation gives $a = 30 - b$. Substitute this into the salt equation: $0.10(30 - b) + 0.25b = 6$. Distribute the 0.10: $3 - 0.10b + 0.25b = 6$. Combining like terms gives $3 + 0.15b = 6$. Subtracting 3 from both sides gives $0.15b = 3$. Dividing both sides by 0.15 gives $b = \\frac{3}{0.15}$, which simplifies to $b = 20$. The chemist uses 20 liters of the 25% solution (and 10 liters of the 10% solution).",
         "distractorRationales": []
       },
       "authorship": {
@@ -291,6 +311,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -323,7 +348,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "Solve the second equation for $y$: $-3y = -2x - 12$, so $y = \\frac{2}{3}x + 4$. This is the same as the first equation, so the two equations describe the same line. Every point on that line is a solution, so there are infinitely many solutions.",
+        "explanation": "Solve the second equation for $y$. Subtract $2x$ from both sides: $-3y = -2x - 12$. Divide both sides by $-3$: $y = \\frac{2}{3}x + 4$. This is the same as the first equation, so the two equations describe the same line. Every point on that line is a solution, so there are infinitely many solutions.",
         "distractorRationales": [
           {
             "label": "A",
@@ -354,6 +379,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
@@ -386,7 +416,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "After $m$ months, Gym A costs $45 + 30m$ and Gym B costs $39m$. Set them equal: $45 + 30m = 39m$, so $45 = 9m$ and $m = 5$. The total cost is $39(5) = 195$ dollars. Check Gym A: $45 + 30(5) = 195$.",
+        "explanation": "After $m$ months, Gym A costs $45 + 30m$ and Gym B costs $39m$. Set them equal: $45 + 30m = 39m$. Subtracting $30m$ from both sides gives $45 = 9m$. Dividing both sides by 9 gives $m = 5$. Substitute $m = 5$ to find the total cost: $39(5) = 195$ dollars. Check Gym A: $45 + 30(5) = 45 + 150 = 195$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -417,6 +447,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
