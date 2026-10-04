@@ -1,6 +1,6 @@
 # SAT Trainer
 
-A paid SAT practice site built on **original** SAT-style questions. This repository currently holds the question generator and question bank; the tailored practice trainer and season-pass payments come next.
+A paid SAT practice site built on **original** SAT-style questions. This repository holds the question generator, the question bank and the tailored practice trainer; season-pass payments come next.
 
 > SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.
 
@@ -16,7 +16,7 @@ A paid SAT practice site built on **original** SAT-style questions. This reposit
 npm install
 npm run import                   # load content/questions into the bank
 npm run bank -- stats
-npm run dev                      # then open http://localhost:3000/bank
+npm run dev                      # then open http://localhost:3000 and sign up (or /bank to review questions)
 ```
 
 ## Two ways to add questions
@@ -77,6 +77,16 @@ From the sourcing research (`research/question-sourcing.md` in the project files
 The practice trainer should read questions through `findQuestions` in `src/lib/db/questions.ts`, which filters by section, domain, skills, difficulties and status (verified only by default), can exclude questions a student has already seen, and can return them in random order.
 
 Math expressions are written in LaTeX inside `$...$`; the trainer UI should render them (for example with KaTeX). Figures are described in words or tables, since questions have no images yet.
+
+## Practice trainer
+
+Students sign up with a name, email and password (`/signup`), then practice from `/dashboard`.
+
+- **Accounts** (`src/lib/auth`): passwords are hashed with scrypt; sign-in sets an httpOnly session cookie whose SHA-256 is stored in `auth_sessions` (30 days). No outside service or API key is needed. A season pass will attach to the `users` table.
+- **Mastery** (`src/lib/trainer/mastery.ts`): every answer is stored in `attempts`. Each skill gets an ability rating, updated Elo-style after each answer (easy, medium and hard questions sit at -1, 0 and +1 on the same scale, so a correct hard answer counts for more). Ratings are recomputed from the attempts, so there is no derived state to drift. Levels shown to students: Not started, Needs work, Developing, Strong.
+- **Targeted practice** (`src/lib/trainer/plan.ts`): a 10-question set draws skills at random weighted by priority, which is how much the skill counts on the test (its domain weight) times how much room the student has to improve, plus a bonus for skills with little evidence. Each question is picked at the difficulty that suits the student's rating, preferring questions they haven't seen, then ones they missed. Students can also practice one section or one skill. Only verified questions are served.
+- **Score progress**: the dashboard shows an estimated 200-800 score per section (shown after 10 answers in that section), a chart of the estimates after each set, the five skills with the most to gain, every skill's level, and recent sets. The estimate maps the expected share of correct answers, weighted by domain, onto 200-800; the page says it is a guide, not a prediction of an official score.
+- Math is rendered with KaTeX on the server (`src/components/MathText.tsx`).
 
 ## Commands
 

@@ -7,6 +7,8 @@
   --ok: #15803d;
   --warn: #b45309;
   --bad: #b91c1c;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +21,8 @@
     --ok: #4ade80;
     --warn: #fbbf24;
     --bad: #f87171;
+    --series-1: #3987e5;
+    --series-2: #d95926;
   }
 }
 
@@ -66,4 +70,74 @@ td {
   border: 1px solid var(--border);
   padding: 4px 8px;
   text-align: left;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header nav,
+.site-header form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.who {
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--background);
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.link-button {
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
 }
