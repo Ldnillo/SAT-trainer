@@ -1,0 +1,55 @@
+.muted {
+  color: var(--muted);
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: var(--accent);
+}
+
+.results {
+  padding-left: 20px;
+}
+
+.results li {
+  margin-bottom: 8px;
+}
+
+.results summary {
+  cursor: pointer;
+}
+
+.reviewCard {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px 0 16px;
+}
+
+.right {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.wrong {
+  color: var(--bad);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 24px;
+}

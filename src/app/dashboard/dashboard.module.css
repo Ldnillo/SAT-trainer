@@ -1,0 +1,82 @@
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.error {
+  color: var(--bad);
+}
+
+.start {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 8px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.tileLabel {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.tileValue {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.tileEmpty {
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.focus li {
+  margin-bottom: 4px;
+}
+
+.inline {
+  display: inline;
+}
+
+.skills {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.domainRow td {
+  font-weight: 600;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--border) 40%, transparent);
+}
+
+.level {
+  white-space: nowrap;
+}
+
+.not-started {
+  color: var(--muted);
+}
+
+.needs-work {
+  color: var(--bad);
+}
+
+.developing {
+  color: var(--warn);
+}
+
+.strong {
+  color: var(--ok);
+}

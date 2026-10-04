@@ -1,0 +1,41 @@
+.figure {
+  margin: 0 0 24px;
+}
+
+.figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.axis {
+  fill: var(--muted);
+  font-size: 11px;
+}
+
+.label {
+  fill: var(--foreground);
+  font-size: 12px;
+  font-weight: 600;
+}

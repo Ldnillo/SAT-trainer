@@ -1,4 +1,4 @@
-import { index, jsonb, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { boolean, index, jsonb, pgTable, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
 import type { Provenance, QuestionContent, QuestionStatus, VerificationResult } from "../sat/question";
 import type { Difficulty, QuestionFormat, SectionId } from "../sat/taxonomy";
 
@@ -28,5 +28,79 @@ export const questions = pgTable(
   (t) => [
     index("questions_skill_difficulty_status_idx").on(t.skill, t.difficulty, t.status),
     index("questions_domain_idx").on(t.domain),
+  ],
+);
+
+/** Student accounts. A season pass will attach to a user later. */
+export const users = pgTable("users", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  /** Stored lowercased. */
+  email: text("email").notNull().unique(),
+  name: text("name").notNull(),
+  /** scrypt$<salt>$<hash>, see src/lib/auth/password.ts. */
+  passwordHash: text("password_hash").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+/** Sign-in sessions. Only a SHA-256 of the cookie token is stored. */
+export const authSessions = pgTable(
+  "auth_sessions",
+  {
+    tokenHash: text("token_hash").primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("auth_sessions_user_idx").on(t.userId)],
+);
+
+/** One practice set: the questions picked for it, in order. */
+export const practiceSets = pgTable(
+  "practice_sets",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    /** What the student asked for: tailored, one section, or one skill. */
+    focus: jsonb("focus").$type<PracticeFocus>().notNull(),
+    questionIds: jsonb("question_ids").$type<string[]>().notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    completedAt: timestamp("completed_at", { withTimezone: true }),
+  },
+  (t) => [index("practice_sets_user_idx").on(t.userId, t.createdAt)],
+);
+
+export type PracticeFocus = { kind: "tailored" } | { kind: "section"; section: SectionId } | { kind: "skill"; skill: string };
+
+/**
+ * Every answer a student submits. This is the single source of truth for skill
+ * mastery and score estimates, which are recomputed from it (src/lib/trainer/mastery.ts).
+ * Skill and difficulty are copied from the question so history stays stable if a question is edited.
+ */
+export const attempts = pgTable(
+  "attempts",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    practiceSetId: uuid("practice_set_id")
+      .notNull()
+      .references(() => practiceSets.id, { onDelete: "cascade" }),
+    questionId: uuid("question_id")
+      .notNull()
+      .references(() => questions.id),
+    skill: text("skill").notNull(),
+    difficulty: text("difficulty").$type<Difficulty>().notNull(),
+    answer: text("answer").notNull(),
+    correct: boolean("correct").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("attempts_user_idx").on(t.userId, t.createdAt),
+    uniqueIndex("attempts_set_question_idx").on(t.practiceSetId, t.questionId),
   ],
 );
