@@ -17,6 +17,7 @@ describe("pass config", () => {
       priceCents: 2500,
       days: 120,
       freeSets: 0,
+      freeTests: 0,
       currency: "eur",
     });
     expect(() => passConfig({ SEASON_PASS_PRICE_CENTS: "39.99" })).toThrow();

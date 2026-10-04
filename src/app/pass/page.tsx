@@ -43,8 +43,13 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
         <h1 className={styles.title}>Unlimited practice for the whole season</h1>
         {notice && <p className="notice ok">{notice}</p>}
         {params.canceled && <p className="notice info">Checkout was canceled. You haven&apos;t been charged.</p>}
-        {params.required && !access.allowed && (
-          <p className="notice warn">You&apos;ve used your free practice. Get a season pass to keep practicing.</p>
+        {params.required === "test" && !access.pass.active ? (
+          <p className="notice warn">Full-length practice tests come with the season pass.</p>
+        ) : (
+          params.required &&
+          !access.allowed && (
+            <p className="notice warn">You&apos;ve used your free practice. Get a season pass to keep practicing.</p>
+          )
         )}
         {params.error === "not-configured" && <p className="notice bad">Payments aren&apos;t set up on this site yet.</p>}
         {params.error === "checkout" && <p className="notice bad">We couldn&apos;t start checkout. Please try again.</p>}
@@ -68,6 +73,7 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
         </p>
         <ul className="check-list">
           <li>Unlimited tailored practice sets across all 30 SAT skills</li>
+          <li>Full-length timed practice tests with adaptive second modules</li>
           <li>Skill mastery tracking and estimated section scores</li>
           <li>Explanations for every answer</li>
         </ul>

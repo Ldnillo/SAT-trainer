@@ -102,6 +102,16 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
         </div>
       </section>
 
+      <section className={`${styles.testCard} surface`}>
+        <div>
+          <h2 className={styles.testTitle}>Full-length practice test</h2>
+          <p className={styles.muted}>Ready to try the whole thing? Timed, adaptive, and scored out of 1600.</p>
+        </div>
+        <Link href="/test" className="button secondary">
+          Take a practice test
+        </Link>
+      </section>
+
       <h2>Estimated scores</h2>
       <div className={styles.tiles}>
         {scores.map((s) => (

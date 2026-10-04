@@ -47,6 +47,26 @@
   gap: 12px;
 }
 
+.testCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 16px 28px;
+  margin-top: 12px;
+  box-shadow: none;
+}
+
+.testCard p {
+  margin: 0;
+}
+
+.testTitle {
+  margin: 0 0 2px;
+  font-size: 17px;
+}
+
 /* Score tiles */
 .tiles {
   display: grid;
@@ -276,8 +296,13 @@
   .startActions,
   .startActions form,
   .startActions button,
-  .sectionButtons {
+  .sectionButtons,
+  .testCard :global(.button) {
     width: 100%;
+  }
+
+  .testCard {
+    padding: 16px 20px;
   }
 
   .sectionButtons form {

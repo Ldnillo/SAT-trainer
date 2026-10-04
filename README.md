@@ -88,6 +88,15 @@ Students sign up with a name, email and password (`/signup`), then practice from
 - **Score progress**: the dashboard shows an estimated 200-800 score per section (shown after 10 answers in that section), a chart of the estimates after each set, the five skills with the most to gain, every skill's level, and recent sets. The estimate maps the expected share of correct answers, weighted by domain, onto 200-800; the page says it is a guide, not a prediction of an official score.
 - Math is rendered with KaTeX on the server (`src/components/MathText.tsx`).
 
+## Full-length practice test
+
+`/test` runs a timed, adaptive mock exam laid out like the digital SAT (`src/lib/test`): Reading and Writing in two 32-minute modules of 27 questions, a suggested 10-minute break, then Math in two 35-minute modules of 22 questions. Our questions are all scored (the real test adds a few unscored pretest items).
+
+- **Assembly** (`assemble.ts`): each module follows the section's domain counts. Module 1 mixes easy, medium and hard evenly; module 2 is built when module 1 is submitted, harder if the student got at least 60% right, easier otherwise. Questions the student hasn't seen come first and none repeats within a test. Reading and Writing is grouped by domain, each group easiest to hardest; Math runs easiest to hardest.
+- **Timing**: a module's clock starts when the student opens it and is enforced on the server (answers after time plus 15 seconds are refused, and an expired module is submitted the next time the test is loaded). Within a module students can skip, flag and change answers; answers save as they go. No answer key reaches the browser until the test ends.
+- **Scoring** (`scoring.ts`): an ability estimate from every answer in the section (one-parameter IRT, easy/medium/hard at -1/0/+1), mapped onto 200-800, so harder questions count for more and only the harder module 2 reaches the top. It is labelled an estimate, not an official score. Answered questions are also written to `attempts`, so tests update skill mastery.
+- **Access**: needs a season pass (`testAccess` in `src/lib/billing/pass.ts`, checked in `startPracticeTest`). `FREE_PRACTICE_TESTS` (default 0) allows free tests before paying.
+
 ## Season pass
 
 Students get one free practice set (`FREE_PRACTICE_SETS`), then need a season pass to start new sets. A pass is a single Stripe Checkout payment, not a subscription: by default **$39 for 90 days** (`SEASON_PASS_PRICE_CENTS`, `SEASON_PASS_DAYS`, `SEASON_PASS_CURRENCY` in `.env.local`). Buying again while a pass is active adds the days after the current pass ends. Dashboards and past results stay visible without a pass.
