@@ -1,12 +1,12 @@
 import { randomUUID } from "node:crypto";
 import type { Db } from "../db/client";
 import { findQuestions, insertQuestions, type NewQuestion } from "../db/questions";
-import type { QuestionContent, QuestionRecord, QuestionStatus, VerificationResult } from "../sat/question";
+import type { Authorship, QuestionContent, QuestionRecord, QuestionStatus, VerificationResult } from "../sat/question";
 import { findNearDuplicate } from "../sat/similarity";
 import { DIFFICULTIES, getSkill, type Difficulty, type QuestionFormat, type SkillRef } from "../sat/taxonomy";
-import { gridInValue, hasErrors, isValidGridInAnswer, validateQuestion } from "../sat/validate";
+import { gridInValue, hasErrors, isValidGridInAnswer, validateAuthorship, validateQuestion } from "../sat/validate";
 import type { QuestionModel, SolverResult } from "./claude";
-import { pickTopicAreas, PROMPT_VERSION, summarize } from "./prompts";
+import { buildGenerationPrompt, pickTopicAreas, PROMPT_VERSION, summarize, type GenerationRequest } from "./prompts";
 
 export interface GenerateOptions {
   skillId: string;
@@ -49,13 +49,19 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
     .slice(0, 30)
     .map((q) => summarize(q.content));
 
-  const { questions, servedModel } = await model.generate({
+  const request: GenerationRequest = {
     ref,
     difficulty: opts.difficulty,
     format,
     count: opts.count,
     avoid,
     topicAreas: ref.section === "reading-writing" ? pickTopicAreas(opts.count) : undefined,
+  };
+  const { questions: generated, servedModel } = await model.generate(request);
+  const questions: QuestionContent[] = generated.map((g) => {
+    const content: Partial<typeof g> = { ...g };
+    delete content.publicDomainSource;
+    return content as QuestionContent;
   });
 
   const batchId = randomUUID();
@@ -64,7 +70,20 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
 
   const rows = await Promise.all(
     questions.map(async (content, i): Promise<NewQuestion> => {
-      const issues = validateQuestion(content, ref, format);
+      const authorship: Authorship = {
+        writer: { name: servedModel, date: createdAt.slice(0, 10) },
+        inputs: {
+          instructions: `Generator system prompt version ${PROMPT_VERSION} (src/lib/generator/prompts.ts), with this request:\n${buildGenerationPrompt(request)}`,
+          examples: ["The Transitions example built into the generator system prompt (original, written for this project)"],
+        },
+        passageSource: generated[i].publicDomainSource ?? "original",
+        reviews: [],
+      };
+      const issues = [
+        ...validateQuestion(content, ref, format),
+        // Reviews are added below, after the solve check.
+        ...validateAuthorship({ ...authorship, reviews: [{ reviewer: "-", date: authorship.writer.date, edits: "-" }] }, content),
+      ];
       const messages = issues.map((x) => `${x.severity}: ${x.message}`);
       let status: QuestionStatus;
       let verification: VerificationResult | null = null;
@@ -80,6 +99,11 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
         status = "rejected";
       } else {
         verification = await verify(model, content, ref, opts.difficulty);
+        authorship.reviews.push({
+          reviewer: `${verification.model} (automated independent solve, without the answer key)`,
+          date: verification.checkedAt.slice(0, 10),
+          edits: "none",
+        });
         const clean = verification.matchesKey && verification.issues.length === 0 && issues.length === 0;
         status = clean ? "verified" : "needs-review";
       }
@@ -102,7 +126,7 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
           promptVersion: PROMPT_VERSION,
           createdAt,
           batchId,
-          publicDomainSource: content.publicDomainSource,
+          authorship,
         },
       };
     }),

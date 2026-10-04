@@ -169,7 +169,7 @@ describe("accounts and practice (database)", () => {
       content,
       validationIssues: [],
       verification: null,
-      provenance: { generator: "authored", promptVersion: "test", createdAt: "2026-01-01", publicDomainSource: null },
+      provenance: { generator: "authored", promptVersion: "test", createdAt: "2026-01-01", authorship: { writer: { name: "test", date: "2026-01-01" }, inputs: { instructions: "test", examples: [] }, passageSource: "original", reviews: [{ reviewer: "test", date: "2026-01-01", edits: "none" }] } },
     };
   }
 
