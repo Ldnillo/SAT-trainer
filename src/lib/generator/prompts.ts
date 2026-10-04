@@ -1,8 +1,9 @@
-import type { QuestionContent } from "../sat/question";
+import type { GeneratedQuestion, QuestionContent } from "../sat/question";
+import { latestPublicDomainYear } from "../sat/validate";
 import { SECTION_NAMES, type Difficulty, type QuestionFormat, type SkillRef } from "../sat/taxonomy";
 
 /** Bump when prompts change, so provenance shows which prompt wrote each question. */
-export const PROMPT_VERSION = "2026-10-04.1";
+export const PROMPT_VERSION = "2026-10-04.2";
 
 /**
  * Stable system prompt for generation. Kept identical across requests so it can
@@ -12,7 +13,7 @@ export const GENERATOR_SYSTEM_PROMPT = `You write original practice questions fo
 
 ## Originality rules (these protect the business legally, so follow them exactly)
 - Write every passage, question and answer choice from scratch. Never reproduce, paraphrase or "reskin" a question you may have seen from the College Board, Khan Academy, Bluebook, a published prep book or an online forum. If an idea feels like a remembered test item, discard it and write something different.
-- Reading and Writing passages are either fully original or quote a public-domain work (published before 1929, or a U.S. government publication). When quoting, quote accurately and fill in publicDomainSource. Never excerpt modern copyrighted books, articles or poems.
+- Reading and Writing passages are either fully original or quote or adapt a public-domain work (published in ${latestPublicDomainYear()} or earlier). When you do, quote accurately and fill in publicDomainSource with its title, author and year. Never excerpt modern copyrighted books, articles or poems.
 - Factual passages about real science, history or people must be accurate. When in doubt, describe a plausible hypothetical study or a fictional researcher instead of inventing facts about real ones.
 - Never mention the College Board, and never call a question "official".
 
@@ -68,7 +69,7 @@ ${JSON.stringify(
       { label: "D", text: "\"For example\" introduces an illustration of a general claim, but the sentence states an outcome, not an instance." },
     ],
     publicDomainSource: null,
-  } satisfies QuestionContent,
+  } satisfies GeneratedQuestion,
   null,
   2,
 )}`;

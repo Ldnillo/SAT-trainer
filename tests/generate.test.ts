@@ -16,7 +16,7 @@ class FakeModel implements QuestionModel {
   ) {}
   async generate(req: GenerationRequest) {
     this.requests.push(req);
-    return { questions: this.questions, servedModel: "fake-model" };
+    return { questions: this.questions.map((q) => ({ ...q, publicDomainSource: null })), servedModel: "fake-model" };
   }
   async solve(q: QuestionContent) {
     return { ...this.solve_(q), servedModel: "fake-model" };
@@ -49,8 +49,18 @@ describe("generateQuestions", () => {
       difficulty: "medium",
       format: "multiple-choice",
       status: "verified",
-      provenance: { generator: "claude-api", requestedModel: "fake-model", publicDomainSource: null },
+      provenance: {
+        generator: "claude-api",
+        requestedModel: "fake-model",
+        authorship: {
+          writer: { name: "fake-model" },
+          inputs: { examples: [expect.stringMatching(/Transitions example/)] },
+          passageSource: "original",
+          reviews: [{ reviewer: expect.stringMatching(/^fake-model \(automated independent solve/), edits: "none" }],
+        },
+      },
     });
+    expect(saved[0].provenance.authorship.inputs.instructions).toMatch(/Skill: Transitions/);
     expect(model.requests[0].topicAreas).toHaveLength(1);
   });
 

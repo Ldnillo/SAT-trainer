@@ -1,6 +1,5 @@
 {
   "skill": "linear-equations-two-variables",
-  "author": "Claude (project session, 2026-10-04)",
   "questions": [
     {
       "id": "linear-equations-two-variables-001",
@@ -16,8 +15,25 @@
           "20"
         ],
         "explanation": "Let $s$ be the number of small candles. Total earnings are $4s + 7(11) = 157$, so $4s + 77 = 157$. Then $4s = 80$ and $s = 20$.",
-        "distractorRationales": [],
-        "publicDomainSource": null
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
       }
     }
   ]

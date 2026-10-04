@@ -24,7 +24,6 @@ export function rwQuestion(overrides: Partial<QuestionContent> = {}): QuestionCo
       { label: "C", text: "Not simultaneous events." },
       { label: "D", text: "No contrast." },
     ],
-    publicDomainSource: null,
     ...overrides,
   };
 }
@@ -39,7 +38,6 @@ export function sprQuestion(overrides: Partial<QuestionContent> = {}): QuestionC
     acceptedAnswers: ["7/4", "1.75"],
     explanation: "Add 5 to both sides to get $4x = 7$, then divide by 4.",
     distractorRationales: [],
-    publicDomainSource: null,
     ...overrides,
   };
 }

@@ -31,14 +31,23 @@ Both paths go through the same checks and end up in the same bank.
 ```json
 {
   "skill": "transitions",
-  "author": "Who wrote these",
   "questions": [
-    { "id": "transitions-001", "difficulty": "easy", "format": "multiple-choice", "content": { "passages": [], "table": null, "stem": "...", "choices": [], "correctChoice": "A", "acceptedAnswers": [], "explanation": "...", "distractorRationales": [], "publicDomainSource": null } }
+    {
+      "id": "transitions-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": { "passages": [], "table": null, "stem": "...", "choices": [], "correctChoice": "A", "acceptedAnswers": [], "explanation": "...", "distractorRationales": [] },
+      "authorship": { "writer": {}, "inputs": {}, "passageSource": "original", "reviews": [] }
+    }
   ]
 }
 ```
 
-`content` has the same shape as `QuestionContentSchema` in `src/lib/sat/question.ts`. Ids are never reused or renumbered; to retire a question, delete it from the file and run `npm run bank -- reject <uuid>` (the import lists such orphans).
+`content` has the same shape as `QuestionContentSchema` in `src/lib/sat/question.ts`. The rules for writing questions, and the required `authorship` record, are in [`content/AUTHORING.md`](content/AUTHORING.md).
+
+### Authorship record
+
+Every question carries a record of who wrote it (model and date), what they worked from (instructions and any example questions, always our own), where any passage came from (`"original"` or a public-domain work's title, author and year), and who reviewed it and what they changed. The import rejects questions without it, and rejects passages from works that may still be under copyright and examples that look like official test material. The API generator fills it in automatically, recording its prompt and the solver check as the first review. `npm run bank -- approve <id> "Your name"` adds a review to a generated question; for question files, add the review to the file. Ids are never reused or renumbered; to retire a question, delete it from the file and run `npm run bank -- reject <uuid>` (the import lists such orphans).
 
 ## How generation works
 
@@ -53,7 +62,7 @@ Both paths go through the same checks and end up in the same bank.
    - `needs-review`: well-formed, but the solver disagreed, raised an issue, or the difficulty looked two levels off. Review at `/bank?status=review` and run `npm run bank -- approve <id>` or `reject <id>`.
    - `rejected`: failed structural or duplicate checks. Kept for the record, never served.
 
-Each question stores its provenance (model requested and served, prompt version, batch id, timestamp, any public-domain source) so authorship can be shown if ever challenged.
+Each question stores its provenance (model requested and served, prompt version, batch id, timestamp) and the authorship record described above.
 
 ### Rules the generator follows
 
@@ -75,7 +84,7 @@ Math expressions are written in LaTeX inside `$...$`; the trainer UI should rend
 | `npm run check:questions` | Validate the question files without a database. |
 | `npm run generate -- --skill <id> [--difficulty easy\|medium\|hard] [--count N] [--format mc\|spr]` | Generate questions for one skill (all three difficulties if none given). |
 | `npm run generate -- --all --count N` | Generate N questions for every skill and difficulty. |
-| `npm run bank -- stats \| show <id> \| approve <id> \| reject <id> \| export` | Inspect and curate the bank. |
+| `npm run bank -- stats \| show <id> \| approve <id> "Name" \| reject <id> "Name" \| export` | Inspect and curate the bank. |
 | `npm test` | Unit and pipeline tests (no API calls; uses an in-memory database). |
 | `npm run typecheck`, `npm run lint`, `npm run build` | Checks. |
 | `npm run db:generate` | Create a migration after changing `src/lib/db/schema.ts`. Migrations run automatically on startup. |

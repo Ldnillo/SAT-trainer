@@ -141,8 +141,8 @@ function QuestionCard({ q }: { q: QuestionRecord }) {
             <strong>{r.label}:</strong> {r.text}
           </p>
         ))}
-        {content.publicDomainSource && <p className={styles.muted}>Source: {content.publicDomainSource}</p>}
       </details>
+      <AuthorshipDetails q={q} />
       {notes.length > 0 && (
         <ul className={styles.notes}>
           {notes.map((n, i) => (
@@ -151,5 +151,39 @@ function QuestionCard({ q }: { q: QuestionRecord }) {
         </ul>
       )}
     </article>
+  );
+}
+
+function AuthorshipDetails({ q }: { q: QuestionRecord }) {
+  const a = q.provenance.authorship;
+  if (!a) return <p className={styles.notes}>No authorship record.</p>;
+  const source =
+    a.passageSource === "original" ? "original" : `${a.passageSource.title}, ${a.passageSource.author} (${a.passageSource.year})`;
+  return (
+    <details>
+      <summary>Authorship</summary>
+      <dl className={styles.authorship}>
+        <dt>Writer</dt>
+        <dd>
+          {a.writer.name}, {a.writer.date}
+        </dd>
+        <dt>Inputs</dt>
+        <dd className={styles.passage}>{a.inputs.instructions}</dd>
+        <dt>Examples shown</dt>
+        <dd>{a.inputs.examples.length ? a.inputs.examples.join("; ") : "none"}</dd>
+        <dt>Passage source</dt>
+        <dd>{source}</dd>
+        <dt>Review</dt>
+        <dd>
+          {a.reviews.length
+            ? a.reviews.map((r, i) => (
+                <div key={i}>
+                  {r.reviewer}, {r.date}. Edits: {r.edits}
+                </div>
+              ))
+            : "not reviewed"}
+        </dd>
+      </dl>
+    </details>
   );
 }

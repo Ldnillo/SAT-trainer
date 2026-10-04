@@ -1,6 +1,5 @@
 {
   "skill": "area-and-volume",
-  "author": "Claude (project session, 2026-10-04)",
   "questions": [
     {
       "id": "area-and-volume-001",
@@ -16,8 +15,25 @@
           "3375"
         ],
         "explanation": "A cube has 6 square faces, so each face of the first cube has area $\\frac{150}{6} = 25$ and each edge is $5$ inches. The second cube's edges are $3 \\cdot 5 = 15$ inches, so its volume is $15^3 = 3{,}375$ cubic inches.",
-        "distractorRationales": [],
-        "publicDomainSource": null
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "Originality rules in research/question-sourcing.md (project files, now also in content/AUTHORING.md) and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for questions without the Claude API (project thread, 2026-10-04); batch of one question per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
       }
     }
   ]
