@@ -37,7 +37,7 @@ export function checkoutParams(
           currency: config.currency,
           unit_amount: config.priceCents,
           product_data: {
-            name: `SAT Trainer season pass (${config.days} days)`,
+            name: `NextScore season pass (${config.days} days)`,
             description: "Unlimited tailored SAT practice sets and score tracking.",
           },
         },

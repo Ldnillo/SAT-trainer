@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { MIN_PASSWORD_LENGTH } from "@/lib/auth/password";
@@ -12,34 +13,44 @@ const ERRORS: Record<string, string> = {
   "email-taken": "There is already an account with that email. Sign in instead.",
 };
 
+export const metadata: Metadata = { title: "Create your account" };
+
 export default async function SignUpPage({ searchParams }: PageProps<"/signup">) {
   const params = await searchParams;
   if (await currentUser()) redirect("/dashboard");
   const error = typeof params.error === "string" ? ERRORS[params.error] : undefined;
   return (
-    <main>
-      <h1>Create your account</h1>
-      {error && <p className={styles.error}>{error}</p>}
-      <form action={signUp} className={styles.form}>
-        <label>
-          Name
-          <input type="text" name="name" autoComplete="given-name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" autoComplete="email" required />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" autoComplete="new-password" minLength={MIN_PASSWORD_LENGTH} required />
-        </label>
-        <button type="submit" className="button">
-          Create account
-        </button>
-      </form>
-      <p className={styles.muted}>
-        Already have an account? <Link href="/login">Sign in</Link>
-      </p>
+    <main className={styles.page}>
+      <div className={`${styles.card} surface`}>
+        <h1>Create your account</h1>
+        {error && <p className={styles.error}>{error}</p>}
+        <form action={signUp} className={styles.form}>
+          <label>
+            Name
+            <input type="text" name="name" autoComplete="given-name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autoComplete="email" required />
+          </label>
+          <label>
+            Password
+            <input
+              type="password"
+              name="password"
+              autoComplete="new-password"
+              minLength={MIN_PASSWORD_LENGTH}
+              required
+            />
+          </label>
+          <button type="submit" className="button">
+            Create account
+          </button>
+        </form>
+        <p className={styles.muted}>
+          Already have an account? <Link href="/login">Sign in</Link>
+        </p>
+      </div>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-# SAT Trainer
+# NextScore
 
 A paid SAT practice site built on **original** SAT-style questions. This repository holds the question generator, the question bank, the tailored practice trainer and season pass payments.
 

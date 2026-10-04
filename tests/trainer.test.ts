@@ -234,6 +234,17 @@ describe("splitMath", () => {
     ]);
     expect(splitMath("a $b")).toEqual([{ kind: "text", value: "a " }, { kind: "text", value: "$b" }]);
   });
+
+  it("reads $$...$$ as display math", () => {
+    expect(splitMath("$$x + y = 2$$ $$x - y = 0$$ Find $x$.")).toEqual([
+      { kind: "display", value: "x + y = 2" },
+      { kind: "text", value: " " },
+      { kind: "display", value: "x - y = 0" },
+      { kind: "text", value: " Find " },
+      { kind: "math", value: "x" },
+      { kind: "text", value: "." },
+    ]);
+  });
 });
 
 describe("committed questions render", () => {

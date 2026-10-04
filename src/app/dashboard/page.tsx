@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ProgressChart } from "@/components/ProgressChart";
 import { requireUser } from "@/lib/auth/session";
@@ -17,6 +18,8 @@ import { skillPriority } from "@/lib/trainer/plan";
 import { DEFAULT_SET_SIZE, loadAttempts, recentPracticeSets } from "@/lib/trainer/practice";
 import { startPractice } from "../practice/actions";
 import styles from "./dashboard.module.css";
+
+export const metadata: Metadata = { title: "Dashboard" };
 
 export default async function DashboardPage({ searchParams }: PageProps<"/dashboard">) {
   const params = await searchParams;
