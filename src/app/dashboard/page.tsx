@@ -17,6 +17,7 @@ import {
 } from "@/lib/trainer/mastery";
 import { skillPriority } from "@/lib/trainer/plan";
 import { DEFAULT_SET_SIZE, loadAttempts, recentPracticeSets } from "@/lib/trainer/practice";
+import { latestScoreReport, priorsFromReport, REPORT_KINDS, reportTotal } from "@/lib/trainer/score-report";
 import { startPractice } from "../practice/actions";
 import styles from "./dashboard.module.css";
 
@@ -26,13 +27,17 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets, access] = await Promise.all([
+  const [history, sets, access, report] = await Promise.all([
     loadAttempts(db, user.id),
     recentPracticeSets(db, user.id),
     practiceAccess(db, user.id),
+    latestScoreReport(db, user.id),
   ]);
-  const mastery = computeMastery(history);
-  const scores = estimateScores(mastery);
+  // Targeting and skill levels start from the student's score report, if they added one;
+  // the estimated scores come from practice answers alone.
+  const mastery = computeMastery(history, report ? priorsFromReport(report) : undefined);
+  const scores = estimateScores(computeMastery(history));
+  const reportScore = report ? reportTotal(report) : null;
   const progress = progressHistory(history);
   const focusSkills = [...mastery.values()].sort((a, b) => skillPriority(b) - skillPriority(a)).slice(0, 5);
   const total = scores.every((s) => s.score !== null) ? scores.reduce((n, s) => n + s.score!, 0) : null;
@@ -115,6 +120,28 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
         </Link>
       </section>
 
+      <section className={`${styles.testCard} surface`}>
+        {report ? (
+          <div>
+            <h2 className={styles.testTitle}>
+              Tuned to your {REPORT_KINDS[report.kind].replace("Official SAT", "official SAT")}
+              {reportScore !== null && <> ({reportScore})</>}
+            </h2>
+            <p className={styles.muted}>
+              Tailored practice starts from the scores you added and adjusts as you answer questions.
+            </p>
+          </div>
+        ) : (
+          <div>
+            <h2 className={styles.testTitle}>Took the SAT or a Bluebook practice test?</h2>
+            <p className={styles.muted}>Add your scores and practice will start with the areas that cost you the most points.</p>
+          </div>
+        )}
+        <Link href="/scores" className="button secondary">
+          {report ? "Your scores" : "Add your scores"}
+        </Link>
+      </section>
+
       <h2>Estimated scores</h2>
       <div className={styles.tiles}>
         {scores.map((s) => (
@@ -162,7 +189,7 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
         </>
       )}
 
-      {history.length > 0 && (
+      {(history.length > 0 || report) && (
         <>
           <h2>Where you can gain the most</h2>
           <ol className={styles.focus}>
@@ -173,7 +200,11 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
                   <SkillPracticeButton skill={m.skill} label={getSkill(m.skill).skill.name} />
                   <span className={styles.muted}>
                     {getSkill(m.skill).domain.name}
-                    {m.attempts > 0 && ` · ${m.correct} of ${m.attempts} correct`}
+                    {m.attempts > 0
+                      ? ` · ${m.correct} of ${m.attempts} correct`
+                      : m.priorWeight
+                        ? " · from your score report"
+                        : ""}
                   </span>
                 </div>
                 {levelBadge(m)}

@@ -9,6 +9,10 @@ import { allSkills, DOMAINS, type Difficulty, type SectionId } from "../sat/taxo
  * answer the rating moves toward the result, by less as attempts accumulate.
  * Everything is recomputed from the attempt history, so there is no stored
  * state to drift.
+ *
+ * A skill can start from a prior instead of 0: a rating read off an official
+ * score report, worth a few answers' evidence. Practice answers then move the
+ * rating on from there, so the report fades as real practice builds up.
  */
 
 export const DIFFICULTY_LEVEL: Record<Difficulty, number> = { easy: -1, medium: 0, hard: 1 };
@@ -27,6 +31,15 @@ export interface SkillMastery {
   rating: number;
   attempts: number;
   correct: number;
+  /** Evidence carried in from a score report, counted like this many answers. 0 when there is none. */
+  priorWeight?: number;
+}
+
+/** A starting rating for a skill, from outside practice (a score report). */
+export interface SkillPrior {
+  rating: number;
+  /** How many answers' worth of evidence the prior is. */
+  weight: number;
 }
 
 export function sigmoid(x: number): number {
@@ -43,19 +56,29 @@ function stepSize(previousAttempts: number): number {
   return Math.max(0.3, 1.2 / Math.sqrt(1 + previousAttempts));
 }
 
-export function emptyMastery(skill: string): SkillMastery {
-  return { skill, rating: 0, attempts: 0, correct: 0 };
+export function emptyMastery(skill: string, prior?: SkillPrior): SkillMastery {
+  return prior
+    ? { skill, rating: clamp(prior.rating, -3, 3), attempts: 0, correct: 0, priorWeight: prior.weight }
+    : { skill, rating: 0, attempts: 0, correct: 0 };
+}
+
+/** Answers plus any prior evidence: how much the rating is based on. */
+export function evidence(m: SkillMastery): number {
+  return m.attempts + (m.priorWeight ?? 0);
 }
 
 export function applyAttempt(m: SkillMastery, a: Pick<AttemptLike, "difficulty" | "correct">): SkillMastery {
   const expected = chanceCorrect(m.rating, a.difficulty);
-  const rating = m.rating + stepSize(m.attempts) * ((a.correct ? 1 : 0) - expected);
-  return { skill: m.skill, rating: clamp(rating, -3, 3), attempts: m.attempts + 1, correct: m.correct + (a.correct ? 1 : 0) };
+  const rating = m.rating + stepSize(evidence(m)) * ((a.correct ? 1 : 0) - expected);
+  return { ...m, rating: clamp(rating, -3, 3), attempts: m.attempts + 1, correct: m.correct + (a.correct ? 1 : 0) };
 }
 
-/** Mastery for every skill in the taxonomy (unpracticed skills start at rating 0). */
-export function computeMastery(attempts: readonly AttemptLike[]): Map<string, SkillMastery> {
-  const map = new Map(allSkills().map((s) => [s.skill.id, emptyMastery(s.skill.id)]));
+/** Mastery for every skill in the taxonomy (unpracticed skills start at their prior, or rating 0). */
+export function computeMastery(
+  attempts: readonly AttemptLike[],
+  priors: ReadonlyMap<string, SkillPrior> = new Map(),
+): Map<string, SkillMastery> {
+  const map = new Map(allSkills().map((s) => [s.skill.id, emptyMastery(s.skill.id, priors.get(s.skill.id))]));
   for (const a of chronological(attempts)) {
     const m = map.get(a.skill);
     if (m) map.set(a.skill, applyAttempt(m, a));
@@ -74,7 +97,7 @@ export const MASTERY_LABELS: Record<MasteryLevel, string> = {
 
 /** Level shown to the student, judged by the chance of getting a medium question right. */
 export function masteryLevel(m: SkillMastery): MasteryLevel {
-  if (m.attempts === 0) return "not-started";
+  if (evidence(m) === 0) return "not-started";
   const p = chanceCorrect(m.rating, "medium");
   return p < 0.5 ? "needs-work" : p < 0.75 ? "developing" : "strong";
 }

@@ -7,6 +7,7 @@ import { allSkills } from "../sat/taxonomy";
 import { isCorrect } from "./answers";
 import { computeMastery } from "./mastery";
 import { planPracticeSet, type SeenQuestion } from "./plan";
+import { loadPriors } from "./score-report";
 
 export const DEFAULT_SET_SIZE = 10;
 
@@ -36,12 +37,12 @@ export async function startPracticeSet(
   size = DEFAULT_SET_SIZE,
   random: () => number = Math.random,
 ): Promise<PracticeSet | undefined> {
-  const history = await loadAttempts(db, userId);
+  const [history, priors] = await Promise.all([loadAttempts(db, userId), loadPriors(db, userId)]);
   const seen = new Map<string, SeenQuestion>();
   for (const a of history) seen.set(a.questionId, { correct: a.correct, at: a.createdAt });
 
   const candidates = await findQuestions(db, { skills: skillsFor(focus), limit: 5000 });
-  const picked = planPracticeSet({ candidates, mastery: computeMastery(history), seen, size, random });
+  const picked = planPracticeSet({ candidates, mastery: computeMastery(history, priors), seen, size, random });
   if (picked.length === 0) return undefined;
 
   const [set] = await db
