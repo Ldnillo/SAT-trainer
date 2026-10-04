@@ -11,7 +11,9 @@
     "test": "vitest run",
     "generate": "tsx --env-file-if-exists=.env.local scripts/generate.ts",
     "bank": "tsx --env-file-if-exists=.env.local scripts/bank.ts",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "import": "tsx --env-file-if-exists=.env.local scripts/import.ts",
+    "check:questions": "tsx scripts/check-questions.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",

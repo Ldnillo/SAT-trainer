@@ -1,0 +1,52 @@
+{
+  "skill": "linear-functions",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "linear-functions-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For the linear function $f$, $f(2) = 11$ and $f(6) = 23$. What is the value of $f(0)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$5$"
+          },
+          {
+            "label": "C",
+            "text": "$8$"
+          },
+          {
+            "label": "D",
+            "text": "$17$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The slope is $\\frac{23 - 11}{6 - 2} = \\frac{12}{4} = 3$. Going from $x = 2$ back to $x = 0$ decreases $x$ by 2, so $f$ decreases by $2 \\cdot 3 = 6$: $f(0) = 11 - 6 = 5$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the slope of $f$, not $f(0)$."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts the slope only once, as if going back 1 unit instead of 2."
+          },
+          {
+            "label": "D",
+            "text": "This adds 6 instead of subtracting it."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

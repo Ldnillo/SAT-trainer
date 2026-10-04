@@ -1,0 +1,24 @@
+{
+  "skill": "linear-equations-two-variables",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "linear-equations-two-variables-001",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school club sells small candles for $\\$4$ each and large candles for $\\$7$ each. Last month, the club earned $\\$157$ from candle sales, and it sold $11$ large candles. How many small candles did the club sell?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Let $s$ be the number of small candles. Total earnings are $4s + 7(11) = 157$, so $4s + 77 = 157$. Then $4s = 80$ and $s = 20$.",
+        "distractorRationales": [],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

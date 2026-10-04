@@ -1,0 +1,24 @@
+{
+  "skill": "nonlinear-functions",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "nonlinear-functions-001",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = x^2 - 10x + c$, where $c$ is a constant. If the minimum value of $f(x)$ is $-7$, what is the value of $f(1)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "9"
+        ],
+        "explanation": "The minimum of a parabola that opens upward is at its vertex, $x = -\\frac{-10}{2(1)} = 5$. So $f(5) = 25 - 50 + c = -7$, which gives $c = 18$. Then $f(1) = 1 - 10 + 18 = 9$.",
+        "distractorRationales": [],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

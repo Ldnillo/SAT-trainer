@@ -1,0 +1,57 @@
+{
+  "skill": "boundaries",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "boundaries-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Atacama Desert in northern Chile is one of the driest places on Earth. Parts of it go years without measurable rain. This extreme dryness, along with high altitude and clear skies, makes the region ideal for ______ several of the world's most powerful telescopes have been built on its mountains."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "astronomy,"
+          },
+          {
+            "label": "B",
+            "text": "astronomy;"
+          },
+          {
+            "label": "C",
+            "text": "astronomy"
+          },
+          {
+            "label": "D",
+            "text": "astronomy, which"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "\"This extreme dryness ... makes the region ideal for astronomy\" and \"several of the world's most powerful telescopes have been built on its mountains\" are both independent clauses. A semicolon correctly joins two independent clauses without a conjunction.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "C",
+            "text": "With no punctuation, the two independent clauses run together."
+          },
+          {
+            "label": "D",
+            "text": "\"Which\" would need to refer to something the second clause describes, but \"which several ... telescopes have been built on its mountains\" is ungrammatical."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

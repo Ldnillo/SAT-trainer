@@ -1,0 +1,54 @@
+{
+  "skill": "probability",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "probability-001",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Lunch choices by grade",
+          "columns": [
+            "Grade",
+            "Hot lunch",
+            "Packed lunch",
+            "Total"
+          ],
+          "rows": [
+            [
+              "9th",
+              "45",
+              "35",
+              "80"
+            ],
+            [
+              "10th",
+              "30",
+              "50",
+              "80"
+            ],
+            [
+              "Total",
+              "75",
+              "85",
+              "160"
+            ]
+          ]
+        },
+        "stem": "The table shows the lunch choices of the 9th- and 10th-grade students at a school. If a 10th-grade student is selected at random, what is the probability that the student chose a packed lunch?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5/8",
+          ".625",
+          "0.625"
+        ],
+        "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80} = \\frac{5}{8}$, or $0.625$.",
+        "distractorRationales": [],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

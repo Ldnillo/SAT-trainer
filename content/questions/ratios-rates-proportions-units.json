@@ -1,0 +1,24 @@
+{
+  "skill": "ratios-rates-proportions-units",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "ratios-rates-proportions-units-001",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A pancake recipe uses $3$ cups of flour for every $2$ cups of milk. A cook making a large batch uses $12$ cups of flour. How many cups of milk should the cook use to keep the same ratio?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "8"
+        ],
+        "explanation": "The ratio of flour to milk is $3 : 2$. Since $12 = 3 \\cdot 4$, the batch is 4 times the recipe, so the milk is $2 \\cdot 4 = 8$ cups.",
+        "distractorRationales": [],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "skill": "cross-text-connections",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "cross-text-connections-001",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "For decades, ecologists assumed that the loss of large predators mainly affected the animals those predators ate. Research on \"trophic cascades\" suggests the effects reach much further. After wolves were reintroduced to parts of the western United States, some researchers reported that elk grazed less along streams, allowing willows to recover and riverbanks to stabilize. On this view, a single predator can reshape an entire landscape."
+          },
+          {
+            "label": "Text 2",
+            "text": "Studies of trophic cascades are compelling, but ecologist Rosa Delgado cautions against crediting predators alone. In several valleys where willows recovered, she notes, elk numbers had also fallen because of hunting and harsh winters, and beavers had become more active. Untangling these overlapping causes, Delgado argues, requires long-term data from sites where only one factor changed."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Delgado (Text 2) most likely respond to the researchers' conclusion described in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would argue that the recovery of willows was caused by hunting rather than by wolves."
+          },
+          {
+            "label": "B",
+            "text": "She would caution that the conclusion may overstate the role of wolves, since other changes happened at the same time."
+          },
+          {
+            "label": "C",
+            "text": "She would agree that wolves reshaped the landscape but doubt that willows were affected."
+          },
+          {
+            "label": "D",
+            "text": "She would claim that trophic cascades cannot occur in places where beavers live."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Text 1 concludes that wolves alone reshaped the landscape. Delgado \"cautions against crediting predators alone\" because hunting, harsh winters and beavers changed at the same time, and she says separating these causes needs better data. She doesn't deny wolves played a role; she says the conclusion may give them too much credit. That is choice B.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This goes too far. Delgado says the causes are hard to untangle; she doesn't name hunting as the cause instead of wolves."
+          },
+          {
+            "label": "C",
+            "text": "Delgado accepts that willows recovered; her point is about what caused the recovery."
+          },
+          {
+            "label": "D",
+            "text": "Delgado mentions beavers as one more change to account for, not as something that prevents trophic cascades."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

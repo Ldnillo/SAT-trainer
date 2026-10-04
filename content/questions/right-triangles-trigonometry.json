@@ -1,0 +1,26 @@
+{
+  "skill": "right-triangles-trigonometry",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "right-triangles-trigonometry-001",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In right triangle $PQR$, angle $Q$ is the right angle, $PQ = 9$, and $QR = 12$. What is the value of $\\sin(P)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "4/5",
+          ".8",
+          "0.8"
+        ],
+        "explanation": "The hypotenuse is opposite the right angle: $PR = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15} = \\frac{4}{5}$, or $0.8$.",
+        "distractorRationales": [],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

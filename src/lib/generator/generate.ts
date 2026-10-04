@@ -85,6 +85,7 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
       }
 
       return {
+        sourceId: null,
         section: ref.section,
         domain: ref.domain.id,
         skill: ref.skill.id,
@@ -95,7 +96,7 @@ export async function generateQuestions(db: Db, model: QuestionModel, opts: Gene
         validationIssues: messages,
         verification,
         provenance: {
-          generator: "claude",
+          generator: "claude-api",
           requestedModel: model.model,
           servedModel,
           promptVersion: PROMPT_VERSION,

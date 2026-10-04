@@ -78,17 +78,28 @@ export interface VerificationResult {
 
 /** Record of how a question was made, kept so originality can be shown if challenged. */
 export interface Provenance {
-  generator: "claude";
-  requestedModel: string;
-  servedModel: string;
+  /**
+   * claude-api: written by the automated generator (npm run generate).
+   * authored: written into a question file and loaded with npm run import
+   * (by a person, or by Claude in a project session without the API).
+   */
+  generator: "claude-api" | "authored";
+  /** Who or what wrote it, e.g. a model id or a person's name. */
+  author?: string;
+  requestedModel?: string;
+  servedModel?: string;
   promptVersion: string;
   createdAt: string;
-  batchId: string;
+  batchId?: string;
+  /** For authored questions: the file it was imported from. */
+  sourceFile?: string;
   publicDomainSource: string | null;
 }
 
 export interface QuestionRecord {
   id: string;
+  /** Stable id from a question file (e.g. "transitions-001"); null for generated questions. */
+  sourceId: string | null;
   section: SectionId;
   domain: string;
   skill: string;

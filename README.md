@@ -14,12 +14,31 @@ A paid SAT practice site built on **original** SAT-style questions. This reposit
 
 ```bash
 npm install
-cp .env.example .env.local      # add your ANTHROPIC_API_KEY
-npm run generate -- --list-skills
-npm run generate -- --skill transitions --difficulty medium --count 3
+npm run import                   # load content/questions into the bank
 npm run bank -- stats
 npm run dev                      # then open http://localhost:3000/bank
 ```
+
+## Two ways to add questions
+
+1. **Question files (no API needed).** Questions live as JSON in `content/questions/<skill-id>.json`, one file per skill, reviewed in pull requests like code. Write them by hand, or ask Claude in the project to write a batch. `npm run import` validates them and loads them into the bank, matching each one by its stable id (`transitions-001`), so re-running it updates edited questions instead of duplicating them. `npm run check:questions` validates every file without a database and runs in CI.
+2. **Automated generator (needs an Anthropic API key).** `npm run generate` writes and checks questions with the Claude API, described below. Use it when you want volume.
+
+Both paths go through the same checks and end up in the same bank.
+
+### Question file format
+
+```json
+{
+  "skill": "transitions",
+  "author": "Who wrote these",
+  "questions": [
+    { "id": "transitions-001", "difficulty": "easy", "format": "multiple-choice", "content": { "passages": [], "table": null, "stem": "...", "choices": [], "correctChoice": "A", "acceptedAnswers": [], "explanation": "...", "distractorRationales": [], "publicDomainSource": null } }
+  ]
+}
+```
+
+`content` has the same shape as `QuestionContentSchema` in `src/lib/sat/question.ts`. Ids are never reused or renumbered; to retire a question, delete it from the file and run `npm run bank -- reject <uuid>` (the import lists such orphans).
 
 ## How generation works
 
@@ -52,6 +71,8 @@ Math expressions are written in LaTeX inside `$...$`; the trainer UI should rend
 
 | Command | What it does |
 | --- | --- |
+| `npm run import` | Load `content/questions/*.json` into the bank (add or update by id). |
+| `npm run check:questions` | Validate the question files without a database. |
 | `npm run generate -- --skill <id> [--difficulty easy\|medium\|hard] [--count N] [--format mc\|spr]` | Generate questions for one skill (all three difficulties if none given). |
 | `npm run generate -- --all --count N` | Generate N questions for every skill and difficulty. |
 | `npm run bank -- stats \| show <id> \| approve <id> \| reject <id> \| export` | Inspect and curate the bank. |
@@ -61,4 +82,4 @@ Math expressions are written in LaTeX inside `$...$`; the trainer UI should rend
 
 ## Cost
 
-Each question costs one generation share plus one solver call on Claude Opus 5.5 at `high` effort. Set `SAT_GENERATOR_EFFORT=medium` to spend less, and compare the share of `verified` questions before switching for good.
+Question files cost nothing to load. For the generator, each question costs one generation share plus one solver call on Claude Opus 5.5 at `high` effort. Set `SAT_GENERATOR_EFFORT=medium` to spend less, and compare the share of `verified` questions before switching for good.

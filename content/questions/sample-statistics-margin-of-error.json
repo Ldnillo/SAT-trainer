@@ -1,0 +1,52 @@
+{
+  "skill": "sample-statistics-margin-of-error",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "sample-statistics-margin-of-error-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A random sample of $400$ residents of a city was surveyed, and $62\\%$ of them said they support building a new public library. The margin of error for this estimate is $5$ percentage points. Which conclusion is most appropriate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It is plausible that between $57\\%$ and $67\\%$ of all city residents support building the library."
+          },
+          {
+            "label": "B",
+            "text": "Exactly $62\\%$ of all city residents support building the library."
+          },
+          {
+            "label": "C",
+            "text": "Between $57\\%$ and $67\\%$ of the $400$ surveyed residents support building the library."
+          },
+          {
+            "label": "D",
+            "text": "It is likely that fewer than half of all city residents support building the library."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "A random sample estimates the whole population, and the margin of error gives a range of plausible values for it: $62\\% \\pm 5\\%$, or $57\\%$ to $67\\%$ of all residents.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A sample gives an estimate with uncertainty, not an exact value for the population."
+          },
+          {
+            "label": "C",
+            "text": "The percent for the 400 surveyed residents is known exactly, $62\\%$; the margin of error applies to the whole population."
+          },
+          {
+            "label": "D",
+            "text": "The entire plausible range, $57\\%$ to $67\\%$, is above $50\\%$."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

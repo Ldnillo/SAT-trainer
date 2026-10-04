@@ -11,6 +11,8 @@ export const questions = pgTable(
   "questions",
   {
     id: uuid("id").primaryKey().defaultRandom(),
+    /** Stable id for questions imported from content/questions files; null for generated ones. */
+    sourceId: text("source_id").unique(),
     section: text("section").$type<SectionId>().notNull(),
     domain: text("domain").notNull(),
     skill: text("skill").notNull(),

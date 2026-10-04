@@ -1,0 +1,57 @@
+{
+  "skill": "command-of-evidence-textual",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "command-of-evidence-textual-001",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Traffic noise in cities is concentrated at low frequencies. Urban ecologist Priya Nair hypothesizes that, as a result, songbirds living in cities sing at a higher pitch than rural members of the same species, because higher notes are less likely to be drowned out by the rumble of traffic."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Nair's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Within the same city, birds of one species that live near busy roads sing at a higher pitch than birds of that species living near quiet parks."
+          },
+          {
+            "label": "B",
+            "text": "Songbirds in cities begin singing earlier in the morning than songbirds in rural areas do."
+          },
+          {
+            "label": "C",
+            "text": "Rural songbirds sing a greater variety of songs than city songbirds do."
+          },
+          {
+            "label": "D",
+            "text": "Traffic noise in cities is loudest during weekday rush hours."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Nair's hypothesis links higher pitch to low-frequency traffic noise. If birds of the same species sing higher near busy roads than near quiet parks in the same city, pitch rises where traffic noise is greater, which directly supports the hypothesis.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is about the timing of songs, not their pitch."
+          },
+          {
+            "label": "C",
+            "text": "This is about the variety of songs, not their pitch."
+          },
+          {
+            "label": "D",
+            "text": "This describes traffic noise but says nothing about how birds respond to it."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

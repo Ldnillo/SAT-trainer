@@ -1,0 +1,52 @@
+{
+  "skill": "two-variable-data",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "two-variable-data-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A line of best fit for data relating hours spent studying, $x$, and test score, $y$, for a group of students is $y = 4.5x + 62$. Based on this line, what is the predicted test score for a student who studied for $6$ hours?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$62$"
+          },
+          {
+            "label": "B",
+            "text": "$66.5$"
+          },
+          {
+            "label": "C",
+            "text": "$68$"
+          },
+          {
+            "label": "D",
+            "text": "$89$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $x = 6$: $y = 4.5(6) + 62 = 27 + 62 = 89$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the predicted score for $0$ hours of studying, the $y$-intercept."
+          },
+          {
+            "label": "B",
+            "text": "This is the predicted score for $1$ hour of studying."
+          },
+          {
+            "label": "C",
+            "text": "This adds $6$ to $62$ instead of multiplying $6$ by the slope."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

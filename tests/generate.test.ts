@@ -49,7 +49,7 @@ describe("generateQuestions", () => {
       difficulty: "medium",
       format: "multiple-choice",
       status: "verified",
-      provenance: { generator: "claude", requestedModel: "fake-model", publicDomainSource: null },
+      provenance: { generator: "claude-api", requestedModel: "fake-model", publicDomainSource: null },
     });
     expect(model.requests[0].topicAreas).toHaveLength(1);
   });

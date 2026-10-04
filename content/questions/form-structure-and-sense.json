@@ -1,0 +1,57 @@
+{
+  "skill": "form-structure-and-sense",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "form-structure-and-sense-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Local historians were thrilled by a recent donation. The collection of handwritten letters given to the town library last spring ______ a rare look at daily life in the 1890s, from the price of flour to the arrival of the town's first telephone."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "offers"
+          },
+          {
+            "label": "B",
+            "text": "offer"
+          },
+          {
+            "label": "C",
+            "text": "are offering"
+          },
+          {
+            "label": "D",
+            "text": "have offered"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the sentence is the singular noun \"collection\" (\"of handwritten letters\" is a phrase describing it). A singular subject takes the singular verb \"offers.\"",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Offer\" is plural and doesn't agree with the singular subject \"collection.\""
+          },
+          {
+            "label": "C",
+            "text": "\"Are offering\" is plural; it agrees with \"letters,\" which is not the subject."
+          },
+          {
+            "label": "D",
+            "text": "\"Have offered\" is plural and doesn't agree with \"collection.\""
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "linear-inequalities",
+  "author": "Claude (project session, 2026-10-04)",
+  "questions": [
+    {
+      "id": "linear-inequalities-001",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A delivery van can carry at most $1{,}200$ pounds. The driver weighs $180$ pounds, and each package weighs $40$ pounds. Which inequality represents the number of packages, $p$, the van can carry along with the driver?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$180 + 40p \\le 1{,}200$"
+          },
+          {
+            "label": "B",
+            "text": "$180 + 40p \\ge 1{,}200$"
+          },
+          {
+            "label": "C",
+            "text": "$40 + 180p \\le 1{,}200$"
+          },
+          {
+            "label": "D",
+            "text": "$180p + 40p \\le 1{,}200$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The total weight is the driver's weight plus $40$ pounds per package: $180 + 40p$. \"At most $1{,}200$\" means the total must be less than or equal to $1{,}200$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"At most\" means less than or equal to, not greater than or equal to."
+          },
+          {
+            "label": "C",
+            "text": "This switches the weights: it treats each package as weighing 180 pounds."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies the driver's weight by the number of packages."
+          }
+        ],
+        "publicDomainSource": null
+      }
+    }
+  ]
+}
