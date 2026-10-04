@@ -49,8 +49,8 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
             </p>
           </div>
         )}
-        <p className={styles.muted}>Module {index + 1} of 4</p>
-        <h1>{title}</h1>
+        <p className="eyebrow">Module {index + 1} of 4</p>
+        <h1 className={styles.title}>{title}</h1>
         <ul className={styles.notes}>
           <li>
             {m.questionIds.length} questions, {format.minutesPerModule} minutes. The clock starts when you press Start and keeps
@@ -68,7 +68,7 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
           <li>When time runs out, the module is submitted with the answers you have.</li>
         </ul>
         <form action={beginTestModule.bind(null, test.id, index)}>
-          <button type="submit" className="button">
+          <button type="submit" className="button large">
             Start module {m.stage}
           </button>
         </form>
@@ -106,15 +106,16 @@ function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] })
 
   return (
     <main>
-      <h1>Practice test results</h1>
+      <p className="eyebrow">Practice test</p>
+      <h1 className={styles.title}>Your results</h1>
       <div className={styles.scoreTiles}>
-        <div className={`${styles.scoreTile} ${styles.totalTile}`}>
+        <div className={`${styles.scoreTile} ${styles.totalTile} surface`}>
           <div className={styles.tileLabel}>Total score</div>
           <div className={styles.tileValue}>{scores.total}</div>
           <div className={styles.muted}>out of 1600</div>
         </div>
         {sections.map((s) => (
-          <div key={s} className={styles.scoreTile}>
+          <div key={s} className={`${styles.scoreTile} surface`}>
             <div className={styles.tileLabel}>{SECTION_NAMES[s]}</div>
             <div className={styles.tileValue}>{s === "math" ? scores.math : scores.readingWriting}</div>
             <div className={styles.muted}>out of 800</div>
@@ -182,14 +183,18 @@ function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] })
             {SECTION_NAMES[m.section]}, module {m.stage}
           </h3>
           <ol className={styles.reviewList}>
-            {items[i].map(({ question, answer }) => (
+            {items[i].map(({ question, answer }, n) => (
               <li key={question.id}>
-                <details>
+                <details className="surface">
                   <summary>
-                    <span className={answer?.correct ? styles.right : answer?.answer ? styles.wrong : styles.omitted}>
+                    <span className={styles.resultNumber}>{n + 1}</span>
+                    <span className={styles.resultSkill}>
+                      {getSkill(question.skill).skill.name}
+                      <span className={styles.muted}> · {question.difficulty}</span>
+                    </span>
+                    <span className={`badge ${answer?.correct ? "ok" : answer?.answer ? "bad" : "warn"}`}>
                       {answer?.correct ? "Correct" : answer?.answer ? "Missed" : "Not answered"}
-                    </span>{" "}
-                    {getSkill(question.skill).skill.name} · {question.difficulty}
+                    </span>
                   </summary>
                   <div className={styles.reviewCard}>
                     <QuestionBody content={question.content} />
@@ -203,10 +208,10 @@ function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] })
       ))}
 
       <div className={styles.actions}>
-        <Link href="/dashboard" className="button">
+        <Link href="/dashboard" className="button large">
           Back to dashboard
         </Link>
-        <Link href="/test" className="button secondary">
+        <Link href="/test" className="button large secondary">
           All practice tests
         </Link>
       </div>
