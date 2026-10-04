@@ -558,6 +558,605 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-equations-two-variables-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A concert hall sells orchestra seats for $\\$60$ each and balcony seats for $\\$40$ each. One evening, the hall earned $\\$18{,}000$ from selling $o$ orchestra seats and $b$ balcony seats. Which equation represents this situation?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$40o + 60b = 18{,}000$"
+          },
+          {
+            "label": "B",
+            "text": "$60o + 40b = 18{,}000$"
+          },
+          {
+            "label": "C",
+            "text": "$o + b = 18{,}000$"
+          },
+          {
+            "label": "D",
+            "text": "$100(o + b) = 18{,}000$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The money from orchestra seats is the price times the number sold, $60o$ dollars. The money from balcony seats is $40b$ dollars. The total of these two amounts is $\\$18{,}000$, so the equation is $60o + 40b = 18{,}000$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This switches the prices. Each orchestra seat costs $\\$60$, so $o$ must be multiplied by $60$, not $40$."
+          },
+          {
+            "label": "C",
+            "text": "This adds the numbers of seats and sets the result equal to a dollar amount. The number of seats sold is not $18{,}000$; the money earned is."
+          },
+          {
+            "label": "D",
+            "text": "This charges $\\$100$ for every seat, which adds the two prices together. Each seat is either $\\$60$ or $\\$40$, not both."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $5x + 8y = 40$ crosses the $x$-axis at the point $(a, 0)$ and crosses the $y$-axis at the point $(0, b)$. What is the value of $a + b$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$5$"
+          },
+          {
+            "label": "B",
+            "text": "$8$"
+          },
+          {
+            "label": "C",
+            "text": "$13$"
+          },
+          {
+            "label": "D",
+            "text": "$40$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "On the $x$-axis, $y = 0$. Substitute $y = 0$: $5x + 8(0) = 40$, so $5x = 40$. Divide both sides by $5$ to get $x = 8$. So $a = 8$.\n\nOn the $y$-axis, $x = 0$. Substitute $x = 0$: $5(0) + 8y = 40$, so $8y = 40$. Divide both sides by $8$ to get $y = 5$. So $b = 5$.\n\nThen $a + b = 8 + 5 = 13$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is only $b$, the $y$-coordinate of the $y$-intercept. The question asks for $a + b$."
+          },
+          {
+            "label": "B",
+            "text": "This is only $a$, the $x$-coordinate of the $x$-intercept. The question asks for $a + b$."
+          },
+          {
+            "label": "D",
+            "text": "This is the constant on the right side of the equation. It is not the sum of the intercept coordinates."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-013",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $2x + 3y = 12$, what is the value of $6x + 9y$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "36"
+        ],
+        "explanation": "Notice that $6x + 9y$ is $3$ times $2x + 3y$, because $3(2x + 3y) = 6x + 9y$. Multiply both sides of $2x + 3y = 12$ by $3$. This gives $6x + 9y = 3(12)$, which simplifies to $6x + 9y = 36$. You do not need to know $x$ or $y$ separately: for example, $x = 3, y = 2$ and $x = 0, y = 4$ both satisfy $2x + 3y = 12$, and both give $6x + 9y = 36$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A theater group spends exactly $\\$1{,}000$ on costumes. Simple costumes cost $\\$40$ each and elaborate costumes cost $\\$25$ each. The equation $40x + 25y = 1{,}000$ represents this situation, where $x$ is the number of simple costumes and $y$ is the number of elaborate costumes. The graph of this equation in the $xy$-plane has a $y$-intercept at $(0, 40)$. Which choice is the best interpretation of this point?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Each elaborate costume costs $\\$40$."
+          },
+          {
+            "label": "B",
+            "text": "If the group buys no elaborate costumes, it can buy $40$ simple costumes."
+          },
+          {
+            "label": "C",
+            "text": "For each simple costume the group buys, it can buy $40$ fewer elaborate costumes."
+          },
+          {
+            "label": "D",
+            "text": "If the group buys no simple costumes, it can buy $40$ elaborate costumes."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "At the point $(0, 40)$, $x = 0$ and $y = 40$. Since $x$ is the number of simple costumes and $y$ is the number of elaborate costumes, this point means the group buys $0$ simple costumes and $40$ elaborate costumes. Check: $40(0) + 25(40) = 0 + 1{,}000 = 1{,}000$, so spending all $\\$1{,}000$ on elaborate costumes buys $40$ of them.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Each elaborate costume costs $\\$25$, the coefficient of $y$. The $40$ in the point $(0, 40)$ is a number of costumes, not a price."
+          },
+          {
+            "label": "B",
+            "text": "This describes the $x$-intercept, where $y = 0$. Setting $y = 0$ gives $40x = 1{,}000$, so $x = 25$: buying only simple costumes gives $25$ of them, not $40$."
+          },
+          {
+            "label": "C",
+            "text": "An intercept is a single point, not a rate of change. Also, buying one more simple costume ($\\$40$) means $\\frac{40}{25} = 1.6$ fewer elaborate costumes, not $40$ fewer."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Priya burns $11$ calories per minute when running and $7.5$ calories per minute when cycling. The equation $11r + 7.5c = 600$ represents a workout in which she burns $600$ calories by running for $r$ minutes and cycling for $c$ minutes. Which equation represents the same workout if $r$ and $c$ are instead measured in hours?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$11r + 7.5c = 600$"
+          },
+          {
+            "label": "B",
+            "text": "$11r + 450c = 600$"
+          },
+          {
+            "label": "C",
+            "text": "$660r + 450c = 600$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{11}{60}r + \\frac{7.5}{60}c = 600$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "There are $60$ minutes in an hour, so each rate must be changed from calories per minute to calories per hour by multiplying by $60$.\n\nRunning: $11 \\times 60 = 660$ calories per hour. Cycling: $7.5 \\times 60 = 450$ calories per hour. The total is still $600$ calories, so the new equation is $660r + 450c = 600$.\n\nCheck with one workout: running $30$ minutes and cycling $36$ minutes gives $11(30) + 7.5(36) = 330 + 270 = 600$ calories. In hours, that is $r = 0.5$ and $c = 0.6$, and $660(0.5) + 450(0.6) = 330 + 270 = 600$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This keeps the per-minute rates. If $r$ is in hours, $11r$ would count only $11$ calories for a whole hour of running instead of $660$."
+          },
+          {
+            "label": "B",
+            "text": "This converts only the cycling rate to calories per hour. The running rate must also be multiplied by $60$."
+          },
+          {
+            "label": "D",
+            "text": "This divides the rates by $60$ instead of multiplying. An hour is longer than a minute, so the number of calories burned per hour must be larger than per minute, not smaller."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-016",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What is the slope of the graph of $2x - 5y = 20$ in the $xy$-plane?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2/5",
+          ".4",
+          "0.4"
+        ],
+        "explanation": "Rewrite the equation in slope-intercept form, $y = mx + b$, where $m$ is the slope. Subtract $2x$ from both sides of $2x - 5y = 20$. This gives $-5y = -2x + 20$. Divide every term by $-5$ to get $y = \\frac{-2}{-5}x + \\frac{20}{-5}$, which simplifies to $y = \\frac{2}{5}x - 4$. The coefficient of $x$ is the slope, so the slope is $\\frac{2}{5}$, or $0.4$.\n\nCheck with two points: when $x = 0$, $-5y = 20$, so $y = -4$. When $x = 5$, $10 - 5y = 20$, so $-5y = 10$ and $y = -2$. The slope is $\\frac{-2 - (-4)}{5 - 0} = \\frac{2}{5}$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-017",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $ax + by = 30$, where $a$ and $b$ are constants, passes through the points $(2, 9)$ and $(6, 3)$. What is the value of $a$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "15/4",
+          "3.75"
+        ],
+        "explanation": "Each point on the graph makes the equation true, so substitute both points.\n\nPoint $(2, 9)$: $2a + 9b = 30$.\n\nPoint $(6, 3)$: $6a + 3b = 30$. Divide both sides by $3$ to get $2a + b = 10$. Subtract $2a$ from both sides to get $b = 10 - 2a$.\n\nSubstitute $b = 10 - 2a$ into $2a + 9b = 30$. This gives $2a + 9(10 - 2a) = 30$. Distribute the $9$ to get $2a + 90 - 18a = 30$. Combine like terms to get $-16a + 90 = 30$. Subtract $90$ from both sides to get $-16a = -60$. Divide both sides by $-16$ to get $a = \\frac{-60}{-16}$, which simplifies to $a = \\frac{15}{4}$, or $3.75$.\n\nCheck: $b = 10 - 2(3.75) = 10 - 7.5 = 2.5$. Then $2(3.75) + 9(2.5) = 7.5 + 22.5 = 30$ and $6(3.75) + 3(2.5) = 22.5 + 7.5 = 30$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graphs of $6x - 9y = 27$ and $ax + 3y = c$, where $a$ and $c$ are constants, are the same line. What is the value of $a + c$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-11$"
+          },
+          {
+            "label": "B",
+            "text": "$-7$"
+          },
+          {
+            "label": "C",
+            "text": "$7$"
+          },
+          {
+            "label": "D",
+            "text": "$11$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Two equations have the same graph when one is a constant multiple of the other. The second equation has $3y$, and the first has $-9y$. Since $-9 \\div 3 = -3$, divide every term of the first equation by $-3$.\n\n$6x \\div (-3) = -2x$, $-9y \\div (-3) = 3y$, and $27 \\div (-3) = -9$. So $6x - 9y = 27$ is equivalent to $-2x + 3y = -9$.\n\nMatching this with $ax + 3y = c$ gives $a = -2$ and $c = -9$. Then $a + c = -2 + (-9) = -11$.\n\nCheck with a point: $(0, -3)$ is on the first line because $6(0) - 9(-3) = 27$, and it is on the second because $-2(0) + 3(-3) = -9$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This uses $a = 2$ and $c = -9$. Dividing $6x$ by $-3$ gives $-2x$, so the sign of $a$ must also change."
+          },
+          {
+            "label": "C",
+            "text": "This uses $a = -2$ and $c = 9$. Dividing $27$ by $-3$ gives $-9$, so the sign of $c$ must also change."
+          },
+          {
+            "label": "D",
+            "text": "This uses $a = 2$ and $c = 9$, which comes from dividing by $3$ instead of $-3$. That gives $2x - 3y = 9$, whose $y$-term is $-3y$, not $3y$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A gardener fills planters with soil. Each large planter takes $1.5$ cubic feet of soil and each small planter takes $0.5$ cubic foot. The gardener uses exactly $30$ cubic feet of soil to fill $L$ large planters and $S$ small planters, as shown by the equation $1.5L + 0.5S = 30$. Which equation gives $S$ in terms of $L$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$S = 60 - 3L$"
+          },
+          {
+            "label": "B",
+            "text": "$S = 30 - 1.5L$"
+          },
+          {
+            "label": "C",
+            "text": "$S = 60 - 1.5L$"
+          },
+          {
+            "label": "D",
+            "text": "$S = 30 - 3L$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Subtract $1.5L$ from both sides of $1.5L + 0.5S = 30$. This gives $0.5S = 30 - 1.5L$. Divide every term on both sides by $0.5$ (which is the same as multiplying by $2$). This gives $S = \\frac{30}{0.5} - \\frac{1.5L}{0.5}$, which simplifies to $S = 60 - 3L$.\n\nCheck: if $L = 10$, then $S = 60 - 30 = 30$, and $1.5(10) + 0.5(30) = 15 + 15 = 30$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This stops after subtracting $1.5L$ and forgets to divide by $0.5$. The equation $0.5S = 30 - 1.5L$ gives $0.5S$, not $S$."
+          },
+          {
+            "label": "C",
+            "text": "This divides only the $30$ by $0.5$ and leaves $1.5L$ unchanged. Every term on the right side must be divided by $0.5$."
+          },
+          {
+            "label": "D",
+            "text": "This divides only the $1.5L$ by $0.5$ and leaves the $30$ unchanged. Every term on the right side must be divided by $0.5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-020",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Mila spends exactly $\\$40$ on pens that cost $\\$2$ each and notebooks that cost $\\$5$ each. The equation $2p + 5n = 40$ represents this situation, where $p$ is the number of pens and $n$ is the number of notebooks. Which of the following could be the numbers of pens and notebooks Mila bought?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4$ pens and $7$ notebooks"
+          },
+          {
+            "label": "B",
+            "text": "$8$ pens and $5$ notebooks"
+          },
+          {
+            "label": "C",
+            "text": "$12$ pens and $3$ notebooks"
+          },
+          {
+            "label": "D",
+            "text": "$15$ pens and $2$ notebooks"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Substitute each pair into $2p + 5n$ and look for a total of $40$. For $15$ pens and $2$ notebooks: $2(15) + 5(2) = 30 + 10 = 40$. This matches, so Mila could have bought $15$ pens and $2$ notebooks.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$2(4) + 5(7) = 8 + 35 = 43$, which is $\\$3$ more than $\\$40$."
+          },
+          {
+            "label": "B",
+            "text": "$2(8) + 5(5) = 16 + 25 = 41$, which is $\\$1$ more than $\\$40$."
+          },
+          {
+            "label": "C",
+            "text": "$2(12) + 5(3) = 24 + 15 = 39$, which is $\\$1$ less than $\\$40$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

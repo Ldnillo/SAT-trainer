@@ -725,6 +725,776 @@
           }
         ]
       }
+    },
+    {
+      "id": "cross-text-connections-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Many art museums now allow visitors to photograph the works on display. Curators at one museum report that since lifting their ban on cameras, visitors have stayed longer and shared thousands of images of the collection online. The curators see photography as a way to deepen visitors' engagement with art."
+          },
+          {
+            "label": "Text 2",
+            "text": "Psychologist Hannah Odum asked museum visitors either to photograph a set of paintings or simply to look at them. The next day, those who had taken photos remembered fewer details of the paintings than those who had only looked. Odum suggests that relying on a camera may lead people to pay less attention to what is in front of them."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Odum (Text 2) most likely respond to the curators' view described in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would agree that photography deepens engagement, since visitors who take photos stay in museums longer."
+          },
+          {
+            "label": "B",
+            "text": "She would question whether photographing artworks truly deepens engagement, since it may reduce how closely visitors look at the art."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that museums should forbid visitors from sharing images of artworks online."
+          },
+          {
+            "label": "D",
+            "text": "She would claim that visitors who take photographs leave museums sooner than those who don't."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The curators think photography deepens engagement. Odum found that people who photographed paintings remembered fewer details, and she suggests cameras may make people pay less attention. Her finding gives reason to doubt that photography deepens engagement with the art itself. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Odum's study points the other way: photographing paintings was linked to remembering less about them. She doesn't discuss how long visitors stay."
+          },
+          {
+            "label": "C",
+            "text": "Odum says nothing about sharing images online or about what museums should forbid."
+          },
+          {
+            "label": "D",
+            "text": "Odum's study measured memory, not time spent in the museum, and Text 1 reports that visitors stayed longer."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "City forester Dale Morrow recommends that all new street trees in his city be silver lindens. A uniform canopy, he argues, gives streets a tidy appearance, and buying trees in bulk from one nursery lowers costs. Maintenance is simpler too, since crews need to learn the care of only one kind of tree."
+          },
+          {
+            "label": "Text 2",
+            "text": "In the early twentieth century, American cities lined countless streets with elms. When Dutch elm disease spread across the country from the 1930s onward, it killed most of them, leaving many neighborhoods nearly bare. Ecologists now urge cities to plant a mix of species so that no single pest or disease can strip a city of its trees."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would the ecologists described in Text 2 most likely respond to Morrow's recommendation in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "They would support it, since silver lindens are not affected by Dutch elm disease."
+          },
+          {
+            "label": "B",
+            "text": "They would accept it as long as the city bought its lindens from several different nurseries."
+          },
+          {
+            "label": "C",
+            "text": "They would recommend that the city plant elms instead of silver lindens."
+          },
+          {
+            "label": "D",
+            "text": "They would warn that planting a single species leaves the city's trees vulnerable to being wiped out by one pest or disease."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Text 2 uses the elms as a warning: when a city plants mostly one species, a single disease can kill most of its trees. That is why the ecologists urge a mix of species. Morrow recommends planting only one species, so the ecologists would warn that his plan carries the same risk. Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The elm example is a warning about relying on any one species. Lindens could face their own pest or disease, which is exactly the ecologists' concern."
+          },
+          {
+            "label": "B",
+            "text": "The ecologists' concern is a variety of species, not a variety of suppliers. Lindens from several nurseries would still be one species."
+          },
+          {
+            "label": "C",
+            "text": "Text 2 presents elms as the example of what went wrong; the ecologists would not recommend replacing one single species with another."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "When an author revises a novel late in life, editors must choose which version to print. Scholar Alan Pryce argues that the final revision should be treated as definitive: it represents the author's most considered judgment, and printing an earlier version risks giving readers a draft the author had rejected."
+          },
+          {
+            "label": "Text 2",
+            "text": "Textual scholar Mira Castellanos observes that authors who revise decades later are often, in effect, different writers, with new concerns and a new audience. A late revision, she argues, is less a corrected copy of the original than a new work in its own right, and the original version, which readers first encountered and responded to, deserves to be read on its own terms."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Castellanos (Text 2) most likely respond to Pryce's claim that an earlier version is a draft the author had rejected?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would argue that the earlier version is not simply a rejected draft but a distinct work with value of its own."
+          },
+          {
+            "label": "B",
+            "text": "She would agree that the final revision reflects the author's best judgment and should therefore replace the earlier version."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that editors should combine the strongest passages of both versions into a single text."
+          },
+          {
+            "label": "D",
+            "text": "She would point out that authors seldom revise their novels after they have been published."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Pryce treats the earlier version as a draft the author rejected. Castellanos sees a late revision as \"a new work in its own right\" by an author who has, in effect, become a different writer, and she says the original \"deserves to be read on its own terms.\" So she would reject the idea that the original is merely a rejected draft. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Castellanos says the original deserves to be read on its own terms, so she would not want the revision to replace it."
+          },
+          {
+            "label": "C",
+            "text": "Castellanos never suggests merging versions; she treats them as separate works."
+          },
+          {
+            "label": "D",
+            "text": "Castellanos's argument assumes that authors do revise, sometimes decades later. She doesn't claim revision is rare."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "When the regional transit agency raised fares by 10 percent, ridership fell by only about 3 percent over the following six months. Economist Gareth Lowe concludes that riders are largely insensitive to price, so modest fare increases are a reliable way to raise revenue without losing many passengers."
+          },
+          {
+            "label": "Text 2",
+            "text": "Transportation analyst Sun-hee Park cautions that travel habits change slowly. A commuter facing higher fares may keep riding at first but, over the next few years, buy a car, change jobs or move. Park's review of fare increases in several cities found that ridership losses typically kept growing for years after a fare hike."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Park (Text 2) most likely respond to Lowe's conclusion in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would agree with it, since a 3 percent drop in ridership is small."
+          },
+          {
+            "label": "B",
+            "text": "She would argue that the agency should lower fares to attract new riders."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that six months is too short a period to show the full effect of the fare increase on ridership."
+          },
+          {
+            "label": "D",
+            "text": "She would claim that the fare increase did not reduce ridership at all."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Lowe based his conclusion on the six months after the fare increase. Park found that ridership losses \"kept growing for years\" after fare hikes, because people change habits slowly. So she would say six months of data can't show the full effect, and the small early drop may underestimate the eventual loss. Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Park's point is that early drops understate long-term losses, so the small 3 percent figure wouldn't convince her."
+          },
+          {
+            "label": "B",
+            "text": "Park doesn't recommend lowering fares; she discusses only how to measure the effect of raising them."
+          },
+          {
+            "label": "D",
+            "text": "Park's view is that fare increases reduce ridership more than they first seem to, not that they have no effect."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Supporters of sending astronauts to Mars argue that human explorers would accomplish far more than robots. A geologist on the surface could spot an unusual rock at a glance, decide on the spot to study it, and collect samples within minutes, work that takes a rover days of careful commands sent from Earth."
+          },
+          {
+            "label": "Text 2",
+            "text": "Engineer Lucia Ferrante points out that a crewed mission to Mars would cost many times more than a robotic one, largely because astronauts need food, water, air and a way to get home. For the price of a single crewed mission, she argues, space agencies could send dozens of rovers to sites across the planet."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Ferrante (Text 2) most likely respond to the supporters' argument in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would respond that whatever astronauts could accomplish, the same money could pay for many robotic missions."
+          },
+          {
+            "label": "B",
+            "text": "She would claim that rovers can recognize unusual rocks faster than human geologists can."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that no missions of any kind should be sent to Mars."
+          },
+          {
+            "label": "D",
+            "text": "She would agree that a crewed mission is the best use of space agencies' budgets."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The supporters argue that a human explorer can do more than a robot. Ferrante doesn't dispute what an astronaut can do; she focuses on cost: one crewed mission costs as much as dozens of rovers. So she would answer that the money for astronauts could fund many robotic missions instead. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Ferrante makes no claim about how quickly rovers recognize rocks; her argument is about cost."
+          },
+          {
+            "label": "C",
+            "text": "Ferrante favors sending dozens of rovers, so she clearly supports some missions to Mars."
+          },
+          {
+            "label": "D",
+            "text": "Ferrante argues that the money for one crewed mission could pay for dozens of rovers, which suggests she does not see a crewed mission as the best use of the budget."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Great tits living in noisy cities sing at higher pitches than great tits in quiet forests. Biologist Ewa Nowak argues that city birds deliberately shift their songs upward to rise above traffic noise, which is concentrated at low pitches. On this view, the higher pitch is a strategy: the birds choose the notes most likely to be heard."
+          },
+          {
+            "label": "Text 2",
+            "text": "Researchers studying the Lombard effect, the tendency of animals to call more loudly in noisy settings, note that in many bird species, singing louder automatically raises a song's pitch. If so, the higher songs of city birds may simply be a side effect of their singing more loudly, rather than a separate adjustment aimed at avoiding low-pitched noise."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would the researchers described in Text 2 most likely respond to Nowak's argument in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "They would deny that city birds sing at higher pitches than forest birds do."
+          },
+          {
+            "label": "B",
+            "text": "They would argue that traffic noise has no effect on how birds sing."
+          },
+          {
+            "label": "C",
+            "text": "They would suggest that the higher pitch may not be a strategy at all but a byproduct of birds singing louder in response to noise."
+          },
+          {
+            "label": "D",
+            "text": "They would agree with it, since singing louder and singing higher are both ways of choosing the notes most likely to be heard."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Nowak claims the higher pitch is a deliberate strategy to avoid low-pitched traffic noise. The Text 2 researchers accept that city birds sing higher, but they note that singing louder automatically raises pitch. So the higher pitch might be \"simply a side effect\" of singing louder, not a separate choice. Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Text 2 accepts that city birds' songs are higher (\"the higher songs of city birds\"); it disputes only the reason."
+          },
+          {
+            "label": "B",
+            "text": "Text 2 says noise makes birds sing louder, so it agrees that noise affects birdsong."
+          },
+          {
+            "label": "D",
+            "text": "Text 2 separates the two: louder singing is the response to noise, and the higher pitch may follow automatically rather than being chosen. That undercuts Nowak's idea of a deliberate strategy."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Lake sediments from the Yucatán Peninsula record a series of severe droughts between about 800 and 1000 CE, the same period in which many Classic Maya cities in the southern lowlands were abandoned. Some researchers conclude that drought was the main cause of this collapse, as failing harvests left cities unable to feed their people."
+          },
+          {
+            "label": "Text 2",
+            "text": "Archaeologists studying inscriptions point out that warfare among Maya city-states intensified in the decades before many cities were abandoned, and that some cities, including Chichén Itzá in the north, flourished during these same droughts. In their view, drought may have added pressure, but political conflict did much to determine which cities fell."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would the archaeologists described in Text 2 most likely respond to the conclusion in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "They would deny that severe droughts occurred in the region between 800 and 1000 CE."
+          },
+          {
+            "label": "B",
+            "text": "They would argue that drought alone cannot explain the collapse, since some cities thrived during the droughts and warfare was also intensifying."
+          },
+          {
+            "label": "C",
+            "text": "They would agree that drought was the main cause, since the droughts and the abandonment of cities happened at the same time."
+          },
+          {
+            "label": "D",
+            "text": "They would argue that the northern cities were abandoned before the southern ones."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Text 1 concludes that drought was the main cause of the collapse. The Text 2 archaeologists accept that drought \"may have added pressure,\" but they point to two problems: warfare was increasing before the abandonments, and some cities, such as Chichén Itzá, flourished during the same droughts. So they would say drought alone can't explain which cities collapsed. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Text 2 refers to \"these same droughts\" and says drought may have added pressure, so the archaeologists accept that the droughts happened."
+          },
+          {
+            "label": "C",
+            "text": "Text 2 gives evidence against drought being the main cause, emphasizing political conflict instead."
+          },
+          {
+            "label": "D",
+            "text": "Text 2 says Chichén Itzá in the north flourished during this period; it never says northern cities were abandoned first."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Principal Gloria Haynes opposes moving her high school's start time from 7:30 to 8:30 a.m. A later start, she notes, would mean a later dismissal, cutting into practice time for sports teams and forcing the district to redraw bus routes it shares with the elementary schools."
+          },
+          {
+            "label": "Text 2",
+            "text": "Sleep researcher Marcus Bell has studied high schools that moved their start times later. Students at these schools slept more, missed fewer days of class and earned slightly higher grades. Bell acknowledges that such changes create real scheduling problems but notes that the districts he studied found ways to solve them."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Bell (Text 2) most likely respond to Haynes's position in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "He would agree that the scheduling problems make a later start time impractical."
+          },
+          {
+            "label": "B",
+            "text": "He would argue that schools should stop offering after-school sports."
+          },
+          {
+            "label": "C",
+            "text": "He would deny that a later start time affects bus schedules."
+          },
+          {
+            "label": "D",
+            "text": "He would acknowledge her concerns but argue that the benefits to students make solving these problems worthwhile."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Haynes opposes a later start because of scheduling problems (sports practice, bus routes). Bell \"acknowledges\" that such problems are real, but he found that students slept more, attended more and earned better grades, and that districts managed to solve the problems. So he would grant her concerns while arguing the change is worth it. Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Bell notes that districts found ways to solve the scheduling problems, so he would not consider them a reason to reject the change."
+          },
+          {
+            "label": "B",
+            "text": "Bell never suggests ending sports; he says scheduling problems can be solved."
+          },
+          {
+            "label": "C",
+            "text": "Bell acknowledges that later start times create \"real scheduling problems,\" so he would not deny their effects."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Architect Rolf Engel argues that decoration on buildings is a wasteful holdover from the past. A building's beauty, he insists, should come from its proportions and materials alone; carved trim, patterned brickwork and other ornament add cost without improving how a building serves the people who use it."
+          },
+          {
+            "label": "Text 2",
+            "text": "Environmental psychologist Dana Whitfield showed volunteers photographs of city streets and later asked them to recall routes along them. Volunteers retraced routes more accurately along streets with distinctive, ornamented facades than along streets of plain, similar buildings. Whitfield concludes that ornament can serve a practical purpose: it gives places identities that help people remember and navigate them."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Whitfield (Text 2) most likely respond to Engel's claim that ornament does not improve how a building serves its users?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would argue that ornament can serve people in a practical way by helping them recognize places and find their way."
+          },
+          {
+            "label": "B",
+            "text": "She would agree that ornament adds cost but argue that cost doesn't matter in architecture."
+          },
+          {
+            "label": "C",
+            "text": "She would agree that proportions and materials matter more to people than ornament does."
+          },
+          {
+            "label": "D",
+            "text": "She would claim that plain buildings cost more to construct than ornamented ones."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Engel claims ornament does nothing to help a building's users. Whitfield found that people navigated more accurately along ornamented streets and concluded that ornament \"can serve a practical purpose\" by making places memorable. That directly answers Engel's claim. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Whitfield doesn't discuss cost at all; her point is that ornament has a practical benefit."
+          },
+          {
+            "label": "C",
+            "text": "Whitfield's study doesn't compare ornament with proportions and materials, and her finding favors ornament's usefulness."
+          },
+          {
+            "label": "D",
+            "text": "Whitfield makes no claim about construction costs."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "In a study of 60 children, psychologist Arjun Mehta found that those who spoke two languages outperformed those who spoke one on tasks requiring rapid switching between rules, such as sorting cards first by color and then by shape. Mehta concludes that managing two languages strengthens the mental skills involved in shifting attention."
+          },
+          {
+            "label": "Text 2",
+            "text": "Researcher Ingrid Solberg reviewed dozens of studies comparing bilingual and monolingual speakers on attention tasks. Studies reporting an advantage for bilingual speakers, she found, were far more likely to be published than studies of similar size that found no difference, many of which were only presented at conferences. Once those unpublished studies were included, the apparent advantage largely disappeared."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Solberg (Text 2) most likely respond to Mehta's conclusion in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would argue that card-sorting tasks do not measure the ability to shift attention."
+          },
+          {
+            "label": "B",
+            "text": "She would caution that one study's finding of an advantage should be weighed against the broader evidence, which suggests the advantage may be small or absent."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that bilingual children perform worse than monolingual children on attention tasks."
+          },
+          {
+            "label": "D",
+            "text": "She would accept Mehta's conclusion, since a published study meets standards that conference presentations do not."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Mehta draws a general conclusion from one study that found a bilingual advantage. Solberg found that such positive studies get published more often than studies finding no difference, and that when all studies are counted, the advantage \"largely disappeared.\" So she would warn that a single positive study can give a misleading picture and should be judged against the full body of evidence. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Solberg doesn't criticize the tasks used to measure attention; her concern is which studies get published."
+          },
+          {
+            "label": "C",
+            "text": "Solberg found that the advantage largely disappeared, meaning little or no difference, not that bilingual speakers do worse."
+          },
+          {
+            "label": "D",
+            "text": "Solberg's point is that publication favors studies that find an advantage, so a published study finding one is not, on its own, convincing to her."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

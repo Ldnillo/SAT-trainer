@@ -571,6 +571,602 @@
           }
         ]
       }
+    },
+    {
+      "id": "percentages-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A sunflower seedling was $32$ centimeters tall on Monday and $44$ centimeters tall exactly one week later. By what percent did the seedling's height increase during that week?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$37.5\\%$"
+          },
+          {
+            "label": "C",
+            "text": "about $27.3\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$137.5\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "First find the amount of increase: $44 - 32 = 12$ centimeters. Percent increase compares this change to the starting height, so divide by $32$: $\\frac{12}{32} = 0.375$. To write a decimal as a percent, multiply by $100$: $0.375 \\cdot 100 = 37.5$. The height increased by $37.5\\%$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the increase in centimeters, $44 - 32 = 12$, not the increase as a percent of the starting height."
+          },
+          {
+            "label": "C",
+            "text": "This divides the increase by the new height, $\\frac{12}{44}$. Percent increase compares the change to the starting value, $32$."
+          },
+          {
+            "label": "D",
+            "text": "This is the new height as a percent of the old height, $\\frac{44}{32} = 1.375$. The increase is the part above $100\\%$, which is $37.5\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A gardener planted $250$ seeds, and $215$ of them sprouted. What percent of the seeds sprouted?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$14\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$35\\%$"
+          },
+          {
+            "label": "C",
+            "text": "about $116\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$86\\%$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A percent of a group is the part divided by the whole, times $100$. Here the part is the $215$ seeds that sprouted and the whole is the $250$ seeds planted. Dividing gives $\\frac{215}{250} = 0.86$. Multiplying by $100$ gives $86$. So $86\\%$ of the seeds sprouted.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the percent of seeds that did not sprout, $\\frac{35}{250} = 0.14$. The question asks about the seeds that did sprout."
+          },
+          {
+            "label": "B",
+            "text": "This is the number of seeds that did not sprout, $250 - 215 = 35$, written with a percent sign. It is a count, not a percent."
+          },
+          {
+            "label": "C",
+            "text": "This divides the whole by the part, $\\frac{250}{215} \\approx 1.16$. A percent of a group is the part divided by the whole."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The number of seabirds nesting on an island decreased by $20\\%$ from one year to the next, and then increased by $15\\%$ the following year. After these two changes, $7{,}360$ seabirds were nesting on the island. How many seabirds were nesting on the island before the two changes?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "8000"
+        ],
+        "explanation": "Let $b$ be the number of seabirds before the changes. A $20\\%$ decrease leaves $100\\% - 20\\% = 80\\%$ of the birds, so after the first year there were $0.80b$ birds. A $15\\%$ increase multiplies that amount by $1 + 0.15 = 1.15$, so after the second year there were $1.15 \\cdot 0.80b$ birds. Multiplying the decimals, $1.15 \\cdot 0.80 = 0.92$, so there were $0.92b$ birds. Set this equal to the final count: $0.92b = 7{,}360$. Dividing both sides by $0.92$ gives $b = \\frac{7{,}360}{0.92}$, which simplifies to $b = 8{,}000$. (Check: $8{,}000 \\cdot 0.80 = 6{,}400$, and $6{,}400 \\cdot 1.15 = 7{,}360$.) Note that the two changes cannot simply be combined as $-20\\% + 15\\% = -5\\%$, because the $15\\%$ increase is taken of a smaller number than the $20\\%$ decrease.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $30\\%$ of $n$ is $54$, what is $45\\%$ of $n$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$81$"
+          },
+          {
+            "label": "B",
+            "text": "$24.3$"
+          },
+          {
+            "label": "C",
+            "text": "$69$"
+          },
+          {
+            "label": "D",
+            "text": "$180$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Write the first statement as an equation. Since $30\\% = 0.30$, it says $0.30n = 54$. Dividing both sides by $0.30$ gives $n = \\frac{54}{0.30}$, which simplifies to $n = 180$. Now find $45\\%$ of $180$: write $45\\%$ as $0.45$ and multiply, $0.45 \\cdot 180 = 81$. (A shortcut: $45\\%$ is $1.5$ times $30\\%$, so $45\\%$ of $n$ is $1.5 \\cdot 54 = 81$.)",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This finds $45\\%$ of $54$. The question asks for $45\\%$ of $n$, and $n$ is not $54$; $54$ is only $30\\%$ of $n$."
+          },
+          {
+            "label": "C",
+            "text": "This adds $15$ to $54$ because $45\\%$ is $15$ percentage points more than $30\\%$. But $15\\%$ of $n$ is $27$, not $15$."
+          },
+          {
+            "label": "D",
+            "text": "This is the value of $n$ itself. The question asks for $45\\%$ of $n$, so one more step is needed: $0.45 \\cdot 180 = 81$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-015",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A museum ticket costs $\\$18.00$ before tax. The sales tax is $6.5\\%$ of the ticket price. What is the amount of the sales tax, in dollars?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "1.17"
+        ],
+        "explanation": "To find a percent of a number, first write the percent as a decimal by dividing by $100$: $6.5\\% = \\frac{6.5}{100} = 0.065$. Then multiply by the ticket price: $0.065 \\cdot 18 = 1.17$. The sales tax is $\\$1.17$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A quantity is increased by $p\\%$, and the result is then decreased by $p\\%$, where $p > 0$. The final value is $91\\%$ of the original quantity. What is the value of $p$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$4.5$"
+          },
+          {
+            "label": "C",
+            "text": "$30$"
+          },
+          {
+            "label": "D",
+            "text": "$9$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "An increase of $p\\%$ multiplies the quantity by $1 + \\frac{p}{100}$, and a decrease of $p\\%$ multiplies the result by $1 - \\frac{p}{100}$. So the final value is $\\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{p}{100}\\right)$ times the original. This product is a difference of squares, so it equals $1 - \\left(\\frac{p}{100}\\right)^2$. The final value is $91\\%$ of the original, so set the product equal to $0.91$: $1 - \\left(\\frac{p}{100}\\right)^2 = 0.91$. Subtracting $1$ from both sides gives $-\\left(\\frac{p}{100}\\right)^2 = -0.09$, and multiplying both sides by $-1$ gives $\\left(\\frac{p}{100}\\right)^2 = 0.09$. Since $p > 0$, take the positive square root: $\\frac{p}{100} = 0.3$. Multiplying both sides by $100$ gives $p = 30$. (Check: $1.30 \\cdot 0.70 = 0.91$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes the square root of $9$ instead of $0.09$. The equation is $\\left(\\frac{p}{100}\\right)^2 = 0.09$, so $\\frac{p}{100} = 0.3$ and $p = 30$. (Check: $1.03 \\cdot 0.97 = 0.9991$, not $0.91$.)"
+          },
+          {
+            "label": "B",
+            "text": "This splits the overall $9\\%$ loss evenly between the two changes. But the changes are an increase and a decrease of the same percent, and they combine by multiplying, not adding."
+          },
+          {
+            "label": "D",
+            "text": "This is the overall percent decrease, $100\\% - 91\\% = 9\\%$. That loss equals $\\left(\\frac{p}{100}\\right)^2$ written as a percent, so a square root is still needed. (Check: $1.09 \\cdot 0.91 \\approx 0.99$, not $0.91$.)"
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A store pays $\\$40$ for a lamp and sets the lamp's selling price $35\\%$ higher than what it paid. Store employees get a $20\\%$ discount off the selling price. What price does an employee pay for the lamp?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\$10.80$"
+          },
+          {
+            "label": "B",
+            "text": "$\\$46.00$"
+          },
+          {
+            "label": "C",
+            "text": "$\\$43.20$"
+          },
+          {
+            "label": "D",
+            "text": "$\\$54.00$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "First find the selling price. It is $35\\%$ more than $\\$40$, so multiply by $1 + 0.35 = 1.35$: $40 \\cdot 1.35 = 54$. The selling price is $\\$54$. A $20\\%$ discount means the employee pays $100\\% - 20\\% = 80\\%$ of the selling price, so multiply by $0.80$: $54 \\cdot 0.80 = 43.20$. The employee pays $\\$43.20$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the amount of the discount, $0.20 \\cdot 54 = 10.80$, not the price the employee pays."
+          },
+          {
+            "label": "B",
+            "text": "This combines the changes as $35\\% - 20\\% = 15\\%$ and adds $15\\%$ to $\\$40$. The $20\\%$ discount is taken from the $\\$54$ selling price, not from $\\$40$, so the percents cannot simply be subtracted."
+          },
+          {
+            "label": "D",
+            "text": "This is the selling price before the employee discount is applied."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-018",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The annual interest rate on a savings account increased from $2.5\\%$ to $3\\%$. By what percent did the interest rate increase? (Enter your answer as a number without the percent sign; for example, enter $15$ for $15\\%$.)",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "The rate rose from $2.5\\%$ to $3\\%$, a change of $3 - 2.5 = 0.5$ percentage point. A percent increase compares the change to the original value, so divide the change by the original rate: $\\frac{0.5}{2.5} = 0.2$. Multiplying by $100$ to write this as a percent gives $0.2 \\cdot 100 = 20$. The interest rate increased by $20\\%$. (The answer is not $0.5$: the rate went up by $0.5$ percentage point, and that change is $20\\%$ of the original $2.5\\%$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A town used $4{,}500$ megawatt-hours of electricity in one month, and $12\\%$ of that electricity came from wind turbines. How many megawatt-hours of the town's electricity came from wind turbines that month?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$540$"
+          },
+          {
+            "label": "B",
+            "text": "$375$"
+          },
+          {
+            "label": "C",
+            "text": "$3{,}960$"
+          },
+          {
+            "label": "D",
+            "text": "$5{,}400$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "To find $12\\%$ of $4{,}500$, write the percent as a decimal by dividing by $100$: $12\\% = \\frac{12}{100} = 0.12$. Then multiply: $0.12 \\cdot 4{,}500 = 540$. So $540$ megawatt-hours came from wind turbines.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This divides $4{,}500$ by $12$. To find $12\\%$ of a number, multiply by $0.12$ instead."
+          },
+          {
+            "label": "C",
+            "text": "This is the amount that did not come from wind turbines, $88\\%$ of $4{,}500$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies by $1.2$ instead of $0.12$. Writing $12\\%$ as a decimal means dividing $12$ by $100$, which gives $0.12$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The positive number $m$ is $60\\%$ greater than the positive number $n$. The value of $n$ is what percent less than the value of $m$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$40\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$37.5\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$60\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$62.5\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Since $m$ is $60\\%$ greater than $n$, $m = (1 + 0.60)n$, which is $m = 1.60n$. Dividing both sides by $1.60$ gives $n = \\frac{m}{1.60}$, and $\\frac{1}{1.60} = 0.625$, so $n = 0.625m$. That means $n$ is $62.5\\%$ of $m$. Subtracting from $100\\%$ gives $100\\% - 62.5\\% = 37.5\\%$, so $n$ is $37.5\\%$ less than $m$. Check with numbers: if $n = 100$, then $m = 160$. The difference is $60$, and compared with $m$ it is $\\frac{60}{160} = 0.375$, or $37.5\\%$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts $60\\%$ from $100\\%$, which does not describe either number. Since $m = 1.60n$, $n$ is $62.5\\%$ of $m$, which is $37.5\\%$ less than $m$."
+          },
+          {
+            "label": "C",
+            "text": "This assumes the percent difference is the same in both directions. The difference between the numbers is $60\\%$ of $n$, but it is a smaller percent of the larger number $m$."
+          },
+          {
+            "label": "D",
+            "text": "This is $n$ as a percent of $m$. The question asks how much less $n$ is, so subtract from $100\\%$: $100\\% - 62.5\\% = 37.5\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

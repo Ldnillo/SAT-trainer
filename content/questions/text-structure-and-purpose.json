@@ -680,6 +680,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "text-structure-and-purpose-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In the Riverside neighborhood, residents who need a ladder, a drill or a pressure washer no longer have to buy one. For a small yearly fee, they can borrow these and hundreds of other items from the neighborhood tool library, a converted garage staffed by volunteers. Members say the library saves them money and storage space, and volunteers often show first-time borrowers how to use the tools safely."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To argue that every neighborhood should open its own tool library"
+          },
+          {
+            "label": "B",
+            "text": "To compare the cost of borrowing tools with the cost of renting them from hardware stores"
+          },
+          {
+            "label": "C",
+            "text": "To describe a service available to neighborhood residents and some of its benefits"
+          },
+          {
+            "label": "D",
+            "text": "To explain how volunteers converted a garage into a tool library"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The text explains what the tool library is (a place where residents borrow tools for a yearly fee) and then lists its benefits: it saves members money and storage space, and volunteers teach safe tool use. Describing a service and its benefits is the text's main purpose. Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text describes one neighborhood's tool library but never says other neighborhoods should open one. This overstates the author's stance."
+          },
+          {
+            "label": "B",
+            "text": "The text mentions saving money but never brings up hardware store rentals or compares any costs."
+          },
+          {
+            "label": "D",
+            "text": "The text mentions that the library is in a converted garage, but it says nothing about how the conversion happened. This is a small detail, not the purpose."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Sea otters are among the few mammals other than primates known to use tools: floating on their backs, they crack open clams and snails by striking them against stones. Not all otters do this equally often, however. Biologist Mara Lindqvist found that otters in areas where most prey have thin shells rarely use stones, whereas otters that eat mostly hard-shelled snails use them at nearly every meal."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the second sentence in the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It introduces a difference in otters' tool use that the final sentence then connects to their diets."
+          },
+          {
+            "label": "B",
+            "text": "It raises doubts about whether otters truly use tools, as the first sentence claims."
+          },
+          {
+            "label": "C",
+            "text": "It summarizes the conclusion of Lindqvist's research before the text describes her methods."
+          },
+          {
+            "label": "D",
+            "text": "It contrasts the tool use of otters with that of primates."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence says otters use stones as tools. The second sentence adds that \"not all otters do this equally often\" — it points out a variation. The third sentence then explains that variation: otters with thin-shelled prey rarely use stones, while those eating hard-shelled snails use them constantly. So the second sentence introduces a difference that the final sentence links to diet. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The second sentence doesn't question whether otters use tools; it accepts that they do and says only that some use them more often than others."
+          },
+          {
+            "label": "C",
+            "text": "The second sentence doesn't summarize Lindqvist's conclusion, and the text never describes her methods. Her finding appears only in the final sentence."
+          },
+          {
+            "label": "D",
+            "text": "Primates are mentioned only in passing in the first sentence. The second sentence compares otters with other otters, not with primates."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Every Sunday, Nadia's grandfather repaired something that did not need repairing. He oiled hinges that never squeaked and tightened chair legs that never wobbled. Nadia once asked him why. He considered the question for so long that she thought he had forgotten it, and then he handed her the screwdriver. That was the year after her grandmother died, when the house had grown very quiet."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the final sentence in the text as a whole?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It suggests that the grandfather's long pause before answering was a sign that he had become forgetful."
+          },
+          {
+            "label": "B",
+            "text": "It establishes that Nadia's question upset her grandfather by reminding him of a recent loss."
+          },
+          {
+            "label": "C",
+            "text": "It shifts the focus of the text from the grandfather's routine to a description of the house itself."
+          },
+          {
+            "label": "D",
+            "text": "It provides a context that hints at a reason for the grandfather's unnecessary repairs, a reason he never states."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text sets up a puzzle: the grandfather fixes things that aren't broken, and when Nadia asks why, he never answers in words; he just hands her the screwdriver. The final sentence places all this in time: it was the year after the grandmother died, when the house was quiet. That detail hints at why he keeps busy with repairs (grief, loneliness, a need for something to do or to share with Nadia) without his saying so. Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Nadia only \"thought he had forgotten\" the question; he then responded by handing her the screwdriver. The final sentence is about the grandmother's death, not about the grandfather's memory."
+          },
+          {
+            "label": "B",
+            "text": "This goes further than the text. The final sentence links the time period to a loss, but nothing shows that the question itself upset him; he answered calmly by sharing the work with her."
+          },
+          {
+            "label": "C",
+            "text": "The mention of the quiet house is brief and serves to explain the grandfather's situation; the text doesn't go on to describe the house."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In 1854, as cholera spread through London's Soho district, physician John Snow mapped where victims had lived and found that many cases clustered around a single water pump on Broad Street. At his urging, local officials removed the pump's handle. The episode is often retold as the moment one bold act ended an epidemic. Snow himself, however, acknowledged that the outbreak was already declining by the time the handle was removed, partly because many residents had fled the area."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It describes a scientific method and then explains why later researchers abandoned it."
+          },
+          {
+            "label": "B",
+            "text": "It recounts a historical episode, notes a popular interpretation of it, and then presents a detail that complicates that interpretation."
+          },
+          {
+            "label": "C",
+            "text": "It presents two competing theories about how cholera spreads and then argues in favor of one of them."
+          },
+          {
+            "label": "D",
+            "text": "It describes an epidemic and then criticizes local officials for responding too slowly."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first two sentences recount what happened: Snow mapped cases and officials removed the pump handle. The third sentence gives the popular version (one bold act ended the epidemic). The fourth, beginning with \"however,\" adds a detail that complicates that version: the outbreak was already declining. Choice B follows this order. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text never says Snow's mapping method was abandoned; it questions only the popular story about the pump handle."
+          },
+          {
+            "label": "C",
+            "text": "The text doesn't present or compare theories about how cholera spreads."
+          },
+          {
+            "label": "D",
+            "text": "The text doesn't criticize the officials; they removed the handle at Snow's urging, and nothing says they were slow."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many people store bread in the refrigerator, believing that the cold will keep it fresh longer. In fact, refrigeration usually speeds up staling. Bread goes stale mainly because its starch molecules slowly rearrange into a firm, crystal-like structure, and this process happens faster at refrigerator temperatures than at room temperature."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the second sentence in the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It describes the method most bakers use to store bread."
+          },
+          {
+            "label": "B",
+            "text": "It corrects the common belief described in the first sentence."
+          },
+          {
+            "label": "C",
+            "text": "It offers an example that supports the belief described in the first sentence."
+          },
+          {
+            "label": "D",
+            "text": "It explains the chemical process that causes bread to go stale."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence gives a common belief: refrigerating bread keeps it fresh. The second sentence, starting with \"In fact,\" says the opposite is true: refrigeration speeds up staling. So it corrects the belief. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Bakers aren't mentioned, and the second sentence says what refrigeration does, not how anyone stores bread."
+          },
+          {
+            "label": "C",
+            "text": "The second sentence contradicts the belief rather than supporting it."
+          },
+          {
+            "label": "D",
+            "text": "The chemical process (starch rearranging into crystals) is explained in the third sentence, not the second."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Standard economic models assume that people act to benefit themselves, which makes tipping hard to explain. Economist Priya Raman surveyed travelers at highway rest stops and found that most tip at roadside diners they never expect to visit again at nearly the same rates as at their neighborhood restaurants. Fear of a server's disapproval can't fully explain this, Raman notes, since many travelers leave cash on the table and are gone before it is found. The behavior, she concludes, remains a genuine puzzle."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To present a behavior that a common assumption about human motivation has difficulty explaining"
+          },
+          {
+            "label": "B",
+            "text": "To explain how Raman's survey resolved a long-standing debate about why people tip"
+          },
+          {
+            "label": "C",
+            "text": "To argue that travelers tip more generously than people dining near home"
+          },
+          {
+            "label": "D",
+            "text": "To show that fear of disapproval is the main reason people leave tips"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text opens with an assumption (people act to benefit themselves) and says it makes tipping \"hard to explain.\" Raman's survey shows travelers tip even where they gain nothing, one possible explanation is ruled out, and the text ends by calling the behavior \"a genuine puzzle.\" The text's purpose is to present a behavior the self-interest assumption struggles to explain. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Raman's survey doesn't resolve anything; she concludes that the behavior \"remains a genuine puzzle.\""
+          },
+          {
+            "label": "C",
+            "text": "The survey found that travelers tip at \"nearly the same rates\" as at home, not more generously."
+          },
+          {
+            "label": "D",
+            "text": "The text says fear of disapproval \"can't fully explain\" the behavior, so it does not present it as the main reason."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the Hollins Theater was renovated, its designers faced a problem: the building hosted both intimate plays and large concerts, which call for very different seating arrangements. Their solution was a floor built in sections that motors can raise, lower or remove, letting staff convert the hall in a single afternoon. The flexibility came at a price, however: the machinery made the renovation nearly twice as expensive as a conventional design."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It praises a theater's design and then urges other theaters to adopt it."
+          },
+          {
+            "label": "B",
+            "text": "It compares two theaters that use different seating arrangements."
+          },
+          {
+            "label": "C",
+            "text": "It traces the history of a theater from its construction to its renovation."
+          },
+          {
+            "label": "D",
+            "text": "It identifies a design challenge, describes how it was solved, and then notes a drawback of the solution."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence names a problem (plays and concerts need different seating). The second gives the solution (a motorized floor in movable sections). The third, with \"however,\" points out a downside (it nearly doubled the cost). Choice D matches this problem-solution-drawback order. Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text points out a drawback and never urges other theaters to do anything."
+          },
+          {
+            "label": "B",
+            "text": "Only one theater is discussed; the plays and concerts both take place in the Hollins Theater."
+          },
+          {
+            "label": "C",
+            "text": "The text says nothing about when or how the theater was first built; it focuses only on the renovation."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "At the station, Imogen kissed her brother on both cheeks and told him, briskly, that six months would pass in no time. She reminded him to write, checked twice that he had his ticket, and waved until the train had rounded the bend. Then she sat down on a bench on the empty platform and did not move for a long while, though her own train home was due in ten minutes."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the final sentence in the text as a whole?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It reveals that Imogen doubts her brother will actually write to her."
+          },
+          {
+            "label": "B",
+            "text": "It indicates that Imogen is relieved that her brother has finally left."
+          },
+          {
+            "label": "C",
+            "text": "It suggests that the brisk confidence Imogen showed her brother concealed feelings she did not express to him."
+          },
+          {
+            "label": "D",
+            "text": "It explains why Imogen checked twice that her brother had his ticket."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In front of her brother, Imogen is brisk and practical: six months will \"pass in no time,\" and she checks his ticket and waves. Once he is gone, she sits motionless on the empty platform for a long while, even though her own train is due. This contrast suggests that her cheerful efficiency hid sadness or worry that she kept from him. Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Nothing in the final sentence concerns letters. Her sitting still reflects her feelings about his leaving, not doubt about whether he'll write."
+          },
+          {
+            "label": "B",
+            "text": "Someone relieved would be unlikely to sit motionless for a long time; the final sentence suggests sorrow, not relief."
+          },
+          {
+            "label": "D",
+            "text": "The final sentence describes what Imogen did after the train left; it doesn't explain any earlier action, such as checking his ticket."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In the 1800s, many Americans observed a holiday tradition called the \"side hunt,\" in which teams competed to shoot the most birds and other animals in a single day. In 1900, ornithologist Frank Chapman proposed a new tradition: counting birds instead of shooting them. That first Christmas Bird Count drew 27 participants. Today, tens of thousands of volunteers take part each winter, and their records help scientists track changes in bird populations."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To explain how a bird-counting tradition began and how it has grown"
+          },
+          {
+            "label": "B",
+            "text": "To argue that hunting should be banned during the holiday season"
+          },
+          {
+            "label": "C",
+            "text": "To describe the methods scientists use to identify bird species"
+          },
+          {
+            "label": "D",
+            "text": "To compare the number of birds in the United States in 1900 with the number today"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text describes the older \"side hunt,\" then Chapman's 1900 proposal to count birds instead, then how the count grew from 27 participants to tens of thousands and how scientists use it. That is the story of how a tradition began and grew. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text describes the side hunt as history but never argues for banning hunting."
+          },
+          {
+            "label": "C",
+            "text": "The text says volunteers' records help scientists, but it never describes how birds are identified."
+          },
+          {
+            "label": "D",
+            "text": "The text compares numbers of participants (27 then, tens of thousands now), not numbers of birds."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The cliffs along Marren Bay expose dozens of rock layers, each laid down as sediment over thousands of years. Geologist Tomas Ferreira noticed that one thin layer, unlike those around it, contains tiny glassy beads. Such beads form when molten rock is flung into the air and cools rapidly, as happens during a volcanic eruption or an asteroid impact. Ferreira is now testing the layer's chemistry to determine which of these events produced it."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the third sentence in the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It reports the results of the chemical tests Ferreira carried out on the layer."
+          },
+          {
+            "label": "B",
+            "text": "It explains why the beads Ferreira found are significant and sets up the question his tests are meant to answer."
+          },
+          {
+            "label": "C",
+            "text": "It argues that the beads in the layer were most likely produced by an asteroid impact."
+          },
+          {
+            "label": "D",
+            "text": "It describes how the other rock layers in the cliffs were formed."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence reports that Ferreira found glassy beads in one layer. The third sentence explains what such beads mean: they form during a volcanic eruption or an asteroid impact. That makes the find significant and raises the question of which event produced them, which the fourth sentence says Ferreira is now testing. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The tests are still under way (\"Ferreira is now testing\"); no results are reported."
+          },
+          {
+            "label": "C",
+            "text": "The third sentence names two possible causes and doesn't favor either one."
+          },
+          {
+            "label": "D",
+            "text": "How the other layers formed (as sediment over thousands of years) is described in the first sentence, not the third."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

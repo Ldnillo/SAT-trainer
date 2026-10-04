@@ -572,6 +572,627 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-functions-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A botanist measures a sunflower once a week. The function $h(t) = 1.8t + 14$ gives the sunflower's height, in centimeters, $t$ weeks after the first measurement. What is the best interpretation of $14$ in this context?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The sunflower grows $14$ centimeters each week."
+          },
+          {
+            "label": "B",
+            "text": "The sunflower is $14$ centimeters tall after $1.8$ weeks."
+          },
+          {
+            "label": "C",
+            "text": "The botanist measures the sunflower for $14$ weeks."
+          },
+          {
+            "label": "D",
+            "text": "The sunflower is $14$ centimeters tall at the first measurement."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first measurement happens when $t = 0$. Substitute $t = 0$: $h(0) = 1.8(0) + 14 = 0 + 14 = 14$. So $14$ is the height, in centimeters, at the first measurement. (The $1.8$ is the number of centimeters the sunflower grows each week.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The growth each week is the slope, $1.8$ centimeters, the number multiplied by $t$. The $14$ is a starting height, not a weekly change."
+          },
+          {
+            "label": "B",
+            "text": "After $1.8$ weeks the height would be $h(1.8) = 1.8(1.8) + 14 = 17.24$ centimeters, not $14$. The $14$ is the height when $t = 0$."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the function tells how long the botanist keeps measuring. The $14$ is a height in centimeters, not a number of weeks."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-012",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = 4x - 9$. For what value of $x$ is $f(x) = 31$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "10"
+        ],
+        "explanation": "Set the function equal to $31$: $4x - 9 = 31$. Add $9$ to both sides. This gives $4x = 40$. Divide both sides by $4$ to get $x = 10$. Check: $f(10) = 4(10) - 9 = 40 - 9 = 31$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-013",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": null,
+          "columns": [
+            "$x$",
+            "$y$"
+          ],
+          "rows": [
+            [
+              "$2$",
+              "$1$"
+            ],
+            [
+              "$5$",
+              "$7$"
+            ],
+            [
+              "$8$",
+              "$13$"
+            ],
+            [
+              "$11$",
+              "$19$"
+            ]
+          ]
+        },
+        "stem": "The table shows four values of $x$ and their corresponding values of $y$ for a linear relationship. Which equation represents this relationship?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$y = 6x - 11$"
+          },
+          {
+            "label": "B",
+            "text": "$y = 2x - 3$"
+          },
+          {
+            "label": "C",
+            "text": "$y = 2x + 1$"
+          },
+          {
+            "label": "D",
+            "text": "$y = 3x - 5$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Find the slope from two rows of the table. From $(2, 1)$ to $(5, 7)$, $y$ increases by $7 - 1 = 6$ while $x$ increases by $5 - 2 = 3$. The slope is $\\frac{6}{3} = 2$. The other rows agree: each time $x$ increases by $3$, $y$ increases by $6$.\n\nSo the equation has the form $y = 2x + b$. Substitute the point $(2, 1)$: $1 = 2(2) + b$, which gives $1 = 4 + b$. Subtract $4$ from both sides to get $b = -3$. The equation is $y = 2x - 3$.\n\nCheck another row: when $x = 11$, $y = 2(11) - 3 = 22 - 3 = 19$, which matches the table.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses $6$ as the slope, treating the change in $y$ from one row to the next as if $x$ went up by $1$. But $x$ goes up by $3$ between rows, so the slope is $\\frac{6}{3} = 2$. This equation fits $(2, 1)$ but gives $y = 19$, not $7$, when $x = 5$."
+          },
+          {
+            "label": "C",
+            "text": "This uses the first $y$-value in the table, $1$, as the $y$-intercept. The $y$-intercept is the value of $y$ when $x = 0$, and $0$ is not in the table. When $x = 2$ this equation gives $y = 5$, not $1$."
+          },
+          {
+            "label": "D",
+            "text": "This equation fits the first row, since $3(2) - 5 = 1$, but not the others: when $x = 5$ it gives $y = 10$, not $7$. A correct equation must fit every row."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "While a video plays, a phone's battery level, in percent, is modeled by $B(h) = 92 - 1.5h$, where $h$ is the number of hours since the video started. According to the model, what is the battery level, in percent, $6$ hours after the video started?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$83$"
+          },
+          {
+            "label": "B",
+            "text": "$86$"
+          },
+          {
+            "label": "C",
+            "text": "$90.5$"
+          },
+          {
+            "label": "D",
+            "text": "$101$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $h = 6$ into the function: $B(6) = 92 - 1.5(6)$. Multiply first: $1.5(6) = 9$. Then subtract: $92 - 9 = 83$. The battery level is $83$ percent.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is $92 - 6$, which subtracts the number of hours instead of $1.5$ times the number of hours."
+          },
+          {
+            "label": "C",
+            "text": "This is $92 - 1.5$, the battery level after $1$ hour, not after $6$ hours."
+          },
+          {
+            "label": "D",
+            "text": "This is $92 + 1.5(6)$. The model subtracts $1.5h$, because the battery level goes down while the video plays."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, line $\\ell$ is parallel to the graph of $y = -\\frac{2}{3}x + 5$ and passes through the point $(-3, 4)$. Which equation defines line $\\ell$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$y = \\frac{3}{2}x + \\frac{17}{2}$"
+          },
+          {
+            "label": "B",
+            "text": "$y = -\\frac{2}{3}x + 5$"
+          },
+          {
+            "label": "C",
+            "text": "$y = -\\frac{2}{3}x + 6$"
+          },
+          {
+            "label": "D",
+            "text": "$y = -\\frac{2}{3}x + 2$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Parallel lines have the same slope, so line $\\ell$ has slope $-\\frac{2}{3}$. Its equation has the form $y = -\\frac{2}{3}x + b$.\n\nSubstitute the point $(-3, 4)$: $4 = -\\frac{2}{3}(-3) + b$. Multiply: $-\\frac{2}{3} \\times (-3) = 2$, so the equation becomes $4 = 2 + b$. Subtract $2$ from both sides to get $b = 2$.\n\nThe equation of line $\\ell$ is $y = -\\frac{2}{3}x + 2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This line has slope $\\frac{3}{2}$, the negative reciprocal of $-\\frac{2}{3}$. That makes it perpendicular to the given line, not parallel. (It does pass through $(-3, 4)$.)"
+          },
+          {
+            "label": "B",
+            "text": "This is the given line itself. It does not pass through $(-3, 4)$: when $x = -3$, it gives $y = 2 + 5 = 7$, not $4$."
+          },
+          {
+            "label": "C",
+            "text": "This comes from a sign error: treating $-\\frac{2}{3}(-3)$ as $-2$, so that $4 = -2 + b$ and $b = 6$. When $x = -3$, this line gives $y = 2 + 6 = 8$, not $4$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-016",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The graph of the linear function $f$ in the $xy$-plane has a slope of $4$. For a constant $k$, $f(3) = 2k$ and $f(k) = 6$. What is the value of $f(0)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-6"
+        ],
+        "explanation": "Because the slope is $4$, the function has the form $f(x) = 4x + b$, and $f(0) = b$. So the goal is to find $b$.\n\nFrom $f(3) = 2k$: $4(3) + b = 2k$, so $12 + b = 2k$.\n\nFrom $f(k) = 6$: $4k + b = 6$.\n\nSolve the first equation for $b$ by subtracting $12$ from both sides: $b = 2k - 12$. Substitute this into the second equation: $4k + (2k - 12) = 6$. Combine like terms to get $6k - 12 = 6$. Add $12$ to both sides to get $6k = 18$. Divide both sides by $6$ to get $k = 3$.\n\nThen $b = 2(3) - 12 = 6 - 12 = -6$. So $f(x) = 4x - 6$ and $f(0) = -6$.\n\nCheck: $f(3) = 12 - 6 = 6$, which equals $2k = 2(3) = 6$, and $f(k) = f(3) = 6$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The fare for a ride with a certain taxi company is a linear function of the distance traveled. A $3$-mile ride costs $\\$11.85$, and an $8$-mile ride costs $\\$23.10$. Which function gives the fare $F(d)$, in dollars, for a ride of $d$ miles?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$F(d) = 2.25d + 5.10$"
+          },
+          {
+            "label": "B",
+            "text": "$F(d) = 2.25d + 11.85$"
+          },
+          {
+            "label": "C",
+            "text": "$F(d) = 3.95d$"
+          },
+          {
+            "label": "D",
+            "text": "$F(d) = 5.10d + 2.25$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The slope is the change in fare divided by the change in distance: $\\frac{23.10 - 11.85}{8 - 3} = \\frac{11.25}{5} = 2.25$. So the fare goes up $\\$2.25$ for each mile, and $F(d) = 2.25d + b$.\n\nSubstitute the $3$-mile ride: $11.85 = 2.25(3) + b$. Multiply to get $11.85 = 6.75 + b$. Subtract $6.75$ from both sides to get $b = 5.10$. So $F(d) = 2.25d + 5.10$.\n\nCheck the $8$-mile ride: $2.25(8) + 5.10 = 18 + 5.10 = 23.10$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This uses the $3$-mile fare, $\\$11.85$, as the starting amount. The starting amount is the fare when $d = 0$. This function gives $F(3) = 6.75 + 11.85 = 18.60$, not $11.85$."
+          },
+          {
+            "label": "C",
+            "text": "This assumes the fare is proportional to distance, using $\\frac{11.85}{3} = 3.95$ dollars per mile. It fits the $3$-mile ride but gives $F(8) = 31.60$, not $23.10$."
+          },
+          {
+            "label": "D",
+            "text": "This switches the slope and the starting amount. The fare increases by $\\$2.25$ per mile, not $\\$5.10$. This function gives $F(3) = 15.30 + 2.25 = 17.55$, not $11.85$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = 3x - 1$. The function $g$ is defined by $g(x) = f(x - 2) + 5$. What is the $y$-intercept of the graph of $y = g(x)$ in the $xy$-plane?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(0, -12)$"
+          },
+          {
+            "label": "B",
+            "text": "$(0, -2)$"
+          },
+          {
+            "label": "C",
+            "text": "$(0, 4)$"
+          },
+          {
+            "label": "D",
+            "text": "$(0, 10)$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "To find $f(x - 2)$, replace $x$ with $x - 2$ in $f(x) = 3x - 1$. This gives $f(x - 2) = 3(x - 2) - 1$. Distribute the $3$ to get $3x - 6 - 1$, which simplifies to $3x - 7$.\n\nThen $g(x) = f(x - 2) + 5 = (3x - 7) + 5 = 3x - 2$.\n\nThe $y$-intercept is where $x = 0$: $g(0) = 3(0) - 2 = -2$. So the $y$-intercept is $(0, -2)$.\n\nYou can also compute directly: $g(0) = f(0 - 2) + 5 = f(-2) + 5$. Since $f(-2) = 3(-2) - 1 = -7$, $g(0) = -7 + 5 = -2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This comes from subtracting $5$ instead of adding it: $3(x - 2) - 1 - 5 = 3x - 12$. The definition of $g$ adds $5$ to $f(x - 2)$."
+          },
+          {
+            "label": "C",
+            "text": "This ignores the $x - 2$ inside $f$ and uses $g(x) = f(x) + 5 = 3x + 4$. Replacing $x$ with $x - 2$ changes the constant term by $3(-2) = -6$."
+          },
+          {
+            "label": "D",
+            "text": "This replaces $x$ with $x + 2$ instead of $x - 2$: $3(x + 2) - 1 + 5 = 3x + 10$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-019",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a line has a slope of $-3$ and passes through the point $(4, -2)$. What is the $x$-coordinate of the line's $x$-intercept?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "10/3",
+          "3.333"
+        ],
+        "explanation": "The line has the form $y = -3x + b$. Substitute the point $(4, -2)$: $-2 = -3(4) + b$, which gives $-2 = -12 + b$. Add $12$ to both sides to get $b = 10$. The line is $y = -3x + 10$.\n\nAt the $x$-intercept, $y = 0$. Substitute $y = 0$: $0 = -3x + 10$. Add $3x$ to both sides to get $3x = 10$. Divide both sides by $3$ to get $x = \\frac{10}{3}$, which is about $3.333$.\n\nCheck: $-3\\left(\\frac{10}{3}\\right) + 10 = -10 + 10 = 0$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A student invents a temperature scale, degrees X, that is a linear function of degrees Celsius. On her scale, water freezes at $20^\\circ\\text{X}$ and boils at $270^\\circ\\text{X}$. Water freezes at $0^\\circ\\text{C}$ and boils at $100^\\circ\\text{C}$. What Celsius temperature corresponds to $0^\\circ\\text{X}$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-50^\\circ\\text{C}$"
+          },
+          {
+            "label": "B",
+            "text": "$-20^\\circ\\text{C}$"
+          },
+          {
+            "label": "C",
+            "text": "$-8^\\circ\\text{C}$"
+          },
+          {
+            "label": "D",
+            "text": "$8^\\circ\\text{C}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Write $X$ as a linear function of $C$: $X = mC + b$. Freezing gives the point $(C, X) = (0, 20)$, so $b = 20$. Boiling gives $(100, 270)$.\n\nThe slope is $m = \\frac{270 - 20}{100 - 0} = \\frac{250}{100} = 2.5$. So $X = 2.5C + 20$: each Celsius degree is $2.5$ degrees X.\n\nSet $X = 0$: $0 = 2.5C + 20$. Subtract $20$ from both sides to get $-20 = 2.5C$. Divide both sides by $2.5$ to get $C = \\frac{-20}{2.5}$, which simplifies to $C = -8$. So $0^\\circ\\text{X}$ corresponds to $-8^\\circ\\text{C}$.\n\nCheck: $2.5(-8) + 20 = -20 + 20 = 0$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses the slope upside down, $\\frac{100}{250} = 0.4$, which gives $X = 0.4C + 20$. Then $0 = 0.4C + 20$ leads to $C = -50$. But $X$ rises $250$ degrees while $C$ rises $100$, so the slope of $X$ in terms of $C$ is $2.5$."
+          },
+          {
+            "label": "B",
+            "text": "This is $0 - 20$, which assumes one degree X is the same size as one degree Celsius. The X scale has $250$ degrees between freezing and boiling, compared with $100$ for Celsius."
+          },
+          {
+            "label": "D",
+            "text": "This has the wrong sign. $0^\\circ\\text{X}$ is below the freezing point of water ($20^\\circ\\text{X}$), so the Celsius temperature must be below $0^\\circ\\text{C}$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

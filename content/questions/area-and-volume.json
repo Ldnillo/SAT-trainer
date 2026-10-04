@@ -538,6 +538,602 @@
           }
         ]
       }
+    },
+    {
+      "id": "area-and-volume-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A garden bed is shaped like a trapezoid. Its two parallel sides are $9$ meters and $15$ meters long, and the perpendicular distance between those sides is $4$ meters. What is the area, in square meters, of the garden bed?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$60$"
+          },
+          {
+            "label": "B",
+            "text": "$96$"
+          },
+          {
+            "label": "C",
+            "text": "$48$"
+          },
+          {
+            "label": "D",
+            "text": "$540$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The area of a trapezoid is $\\frac{1}{2}(b_1 + b_2)h$, where $b_1$ and $b_2$ are the parallel sides and $h$ is the perpendicular distance between them. Adding the parallel sides gives $9 + 15 = 24$. Half of that is $\\frac{24}{2} = 12$. Multiplying by the height gives $12 \\cdot 4 = 48$. The area is $48$ square meters.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $15 \\cdot 4$, the area of a rectangle using only the longer parallel side, which counts space that is not part of the trapezoid."
+          },
+          {
+            "label": "B",
+            "text": "This is $(9 + 15) \\cdot 4$, which forgets to take half of the sum of the parallel sides."
+          },
+          {
+            "label": "D",
+            "text": "This is $9 \\cdot 15 \\cdot 4$, which multiplies all three measurements together instead of using the trapezoid area formula."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-012",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A rectangular photograph that is $8$ inches wide and $10$ inches tall is mounted on a mat. The mat extends $2$ inches beyond the photograph on all four sides, forming a border of uniform width. What is the area, in square inches, of the border (the part of the mat not covered by the photograph)?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "88"
+        ],
+        "explanation": "The border adds $2$ inches on the left and $2$ inches on the right, so the mat's width is $8 + 2 + 2 = 12$ inches. It also adds $2$ inches on the top and $2$ inches on the bottom, so the mat's height is $10 + 2 + 2 = 14$ inches. The whole mat has area $12 \\cdot 14 = 168$ square inches. The photograph covers $8 \\cdot 10 = 80$ square inches. Subtracting the photograph's area from the mat's area gives the border's area: $168 - 80 = 88$ square inches.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A spherical weather balloon is inflated until its surface area is $44\\%$ greater than it was before. By what percent does the volume of the balloon increase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$44\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$72.8\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$66\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$107.36\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The surface area of a sphere is $4\\pi r^2$, so surface area is proportional to the square of the radius. Let $k$ be the factor by which the radius is multiplied. Then the surface area is multiplied by $k^2$. A $44\\%$ increase means the surface area is multiplied by $1.44$, so $k^2 = 1.44$. Taking the positive square root of both sides gives $k = 1.2$. The volume of a sphere is $\\frac{4}{3}\\pi r^3$, so volume is proportional to the cube of the radius, and the volume is multiplied by $k^3 = 1.2^3$. Computing this, $1.2 \\cdot 1.2 = 1.44$, and $1.44 \\cdot 1.2 = 1.728$. The new volume is $1.728$ times the old volume. Subtracting $1$ gives an increase of $0.728$, which is $72.8\\%$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This assumes the volume grows by the same percent as the surface area, but volume depends on the cube of the radius while surface area depends on the square."
+          },
+          {
+            "label": "C",
+            "text": "This multiplies $44\\%$ by $\\frac{3}{2}$, treating the change in volume as a simple multiple of the percent change in area. Percent changes in powers do not scale that way."
+          },
+          {
+            "label": "D",
+            "text": "This squares the area factor, $1.44^2 = 2.0736$, as if volume were proportional to the fourth power of the radius. The correct factor is the radius factor $1.2$ cubed."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A raised planter box is shaped like a rectangular prism. Its inside measurements are $6$ feet long, $2$ feet wide and $1.5$ feet deep. How many cubic feet of soil are needed to fill the box completely?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$9.5$"
+          },
+          {
+            "label": "B",
+            "text": "$12$"
+          },
+          {
+            "label": "C",
+            "text": "$36$"
+          },
+          {
+            "label": "D",
+            "text": "$18$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The volume of a rectangular prism is length times width times depth. First, $6 \\cdot 2 = 12$. Then $12 \\cdot 1.5 = 18$. The box holds $18$ cubic feet of soil.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $6 + 2 + 1.5$, which adds the three measurements instead of multiplying them."
+          },
+          {
+            "label": "B",
+            "text": "This is $6 \\cdot 2$, the area of the bottom of the box, which leaves out the depth."
+          },
+          {
+            "label": "C",
+            "text": "This is $6 \\cdot 2 \\cdot 3$, which uses $3$ feet for the depth (double $1.5$) instead of $1.5$ feet."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A square pyramid has a base with edges of length $6$ centimeters. The volume of the pyramid is $96$ cubic centimeters. What is the height, in centimeters, of the pyramid?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$8$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{8}{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$12$"
+          },
+          {
+            "label": "D",
+            "text": "$48$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The volume of a pyramid is $V = \\frac{1}{3}Bh$, where $B$ is the area of the base and $h$ is the height. The base is a square with edges of $6$ centimeters, so $B = 6^2 = 36$ square centimeters. Substituting $V = 96$ and $B = 36$ gives $96 = \\frac{1}{3}(36)h$. Since $\\frac{1}{3} \\cdot 36 = 12$, this simplifies to $96 = 12h$. Dividing both sides by $12$ gives $h = 8$. The height is $8$ centimeters.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This comes from solving $96 = 36h$, which leaves out the $\\frac{1}{3}$ in the pyramid volume formula (that formula would be for a prism)."
+          },
+          {
+            "label": "C",
+            "text": "This uses the base's perimeter, $4 \\cdot 6 = 24$, instead of its area: $96 = \\frac{1}{3}(24)h$ gives $96 = 8h$, so $h = 12$."
+          },
+          {
+            "label": "D",
+            "text": "This uses the edge length $6$ in place of the base area: $96 = \\frac{1}{3}(6)h$ gives $96 = 2h$, so $h = 48$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-016",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A paper cup is shaped like a right circular cone with its point at the bottom. The cup is $12$ centimeters tall, and the radius of its circular top is $4$ centimeters. Water is poured into the cup to a depth of $9$ centimeters, measured from the point. The volume of the water is $k\\pi$ cubic centimeters. What is the value of $k$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "27"
+        ],
+        "explanation": "The water forms a smaller cone with the same point and the same shape as the cup, so the two cones are similar. For the full cup, the radius is $\\frac{4}{12} = \\frac{1}{3}$ of the height. The water cone has height $9$, so its top radius is $\\frac{1}{3} \\cdot 9 = 3$ centimeters. The volume of a cone is $\\frac{1}{3}\\pi r^2 h$. Substituting $r = 3$ and $h = 9$ gives $\\frac{1}{3}\\pi (3^2)(9) = \\frac{1}{3}\\pi \\cdot 9 \\cdot 9 = \\frac{1}{3}\\pi \\cdot 81$. Dividing $81$ by $3$ gives $27\\pi$. So $k = 27$. (Using the full radius $4$ with depth $9$ would give $48\\pi$, which is wrong because the water surface is narrower than the top of the cup.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school's practice field is a rectangle that is $100$ feet long and $60$ feet wide, with a semicircle attached to each of the two $60$-foot sides. Each semicircle has the $60$-foot side as its diameter. What is the total area, in square feet, of the field?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6{,}000 + 900\\pi$"
+          },
+          {
+            "label": "B",
+            "text": "$6{,}000 + 450\\pi$"
+          },
+          {
+            "label": "C",
+            "text": "$6{,}000 + 1{,}800\\pi$"
+          },
+          {
+            "label": "D",
+            "text": "$6{,}000 + 3{,}600\\pi$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The rectangle has area $100 \\cdot 60 = 6{,}000$ square feet. Each semicircle has diameter $60$ feet, so its radius is $\\frac{60}{2} = 30$ feet. A full circle with radius $30$ has area $\\pi(30^2) = 900\\pi$. Each semicircle is half of that circle, or $450\\pi$. There are two semicircles, so together they have area $2 \\cdot 450\\pi = 900\\pi$. Adding the rectangle gives a total area of $6{,}000 + 900\\pi$ square feet.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This counts only one of the two semicircles."
+          },
+          {
+            "label": "C",
+            "text": "This treats each semicircle as a full circle of area $900\\pi$, then adds two of them."
+          },
+          {
+            "label": "D",
+            "text": "This uses $60$ feet as the radius instead of the diameter: two semicircles of radius $60$ have total area $\\pi(60^2) = 3{,}600\\pi$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-018",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A floor tile is shaped like a parallelogram. One side of the tile, used as the base, is $12$ centimeters long, and the perpendicular distance from that side to the opposite side is $7$ centimeters. Each of the two slanted sides is $9$ centimeters long. What is the area, in square centimeters, of the tile?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "84"
+        ],
+        "explanation": "The area of a parallelogram is base times height, where the height is the perpendicular distance between the base and the opposite side. The slanted side length of $9$ centimeters is not the height, so it is not used. Multiplying the base by the height gives $12 \\cdot 7 = 84$. The area is $84$ square centimeters.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A rectangular sheet of cardboard measures $20$ inches by $14$ inches. A square with sides of length $x$ inches is cut from each of the four corners, and the remaining flaps are folded up to make an open-top box. The area of the bottom of the box is $160$ square inches. What is the volume, in cubic inches, of the box?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$160$"
+          },
+          {
+            "label": "B",
+            "text": "$640$"
+          },
+          {
+            "label": "C",
+            "text": "$800$"
+          },
+          {
+            "label": "D",
+            "text": "$320$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Cutting a square of side $x$ from both ends of each side shortens each side by $2x$. So the bottom of the box measures $(20 - 2x)$ by $(14 - 2x)$ inches, and the box's height is $x$ inches. Setting the bottom's area equal to $160$ gives $(20 - 2x)(14 - 2x) = 160$. Expanding the left side gives $280 - 40x - 28x + 4x^2 = 160$, which is $4x^2 - 68x + 280 = 160$. Subtracting $160$ from both sides gives $4x^2 - 68x + 120 = 0$. Dividing both sides by $4$ gives $x^2 - 17x + 30 = 0$. This factors as $(x - 2)(x - 15) = 0$, so $x = 2$ or $x = 15$. A cut of $15$ inches is impossible, since $14 - 2(15)$ is negative, so $x = 2$. The bottom is then $20 - 4 = 16$ inches by $14 - 4 = 10$ inches, and the height is $2$ inches. The volume is $16 \\cdot 10 \\cdot 2 = 320$ cubic inches.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the area of the bottom of the box, which leaves out the height $x = 2$."
+          },
+          {
+            "label": "B",
+            "text": "This comes from subtracting only $x$ from each side (one corner instead of two): $(20 - x)(14 - x) = 160$ gives $x = 4$, and $160 \\cdot 4 = 640$."
+          },
+          {
+            "label": "C",
+            "text": "This sets $20 - 2x = 10$, matching the $10$-inch side of the bottom to the $20$-inch side of the sheet, which gives $x = 5$; then $160 \\cdot 5 = 800$. With $x = 5$ the bottom would actually be $10$ by $4$ inches, not area $160$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "area-and-volume-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A camping tent is shaped like a triangular prism. Each triangular end is an isosceles triangle with a base of $6$ feet and a height of $4$ feet, and each of its two equal sides is $5$ feet long. The tent is $10$ feet long. The tent's fabric covers both triangular ends, both slanted rectangular sides and the rectangular floor. What is the total area, in square feet, of the fabric?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$160$"
+          },
+          {
+            "label": "B",
+            "text": "$172$"
+          },
+          {
+            "label": "C",
+            "text": "$184$"
+          },
+          {
+            "label": "D",
+            "text": "$208$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Each triangular end has area $\\frac{1}{2} \\cdot 6 \\cdot 4 = 12$ square feet, so the two ends together have area $2 \\cdot 12 = 24$ square feet. The floor is a rectangle $6$ feet by $10$ feet, with area $60$ square feet. Each slanted side is a rectangle $5$ feet by $10$ feet, with area $50$ square feet, so the two slanted sides have area $2 \\cdot 50 = 100$ square feet. Adding all the pieces gives $24 + 60 + 100 = 184$ square feet.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $60 + 100$, the floor and the two slanted sides, which leaves out both triangular ends."
+          },
+          {
+            "label": "B",
+            "text": "This includes only one triangular end: $12 + 60 + 100 = 172$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $6 \\cdot 4 = 24$ for each end, forgetting the $\\frac{1}{2}$ in the triangle area formula: $48 + 60 + 100 = 208$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

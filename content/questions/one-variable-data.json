@@ -609,6 +609,659 @@
           }
         ]
       }
+    },
+    {
+      "id": "one-variable-data-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Siblings per student",
+          "columns": [
+            "Number of siblings",
+            "Number of students"
+          ],
+          "rows": [
+            [
+              "0",
+              "4"
+            ],
+            [
+              "1",
+              "11"
+            ],
+            [
+              "2",
+              "8"
+            ],
+            [
+              "3",
+              "5"
+            ],
+            [
+              "4",
+              "2"
+            ]
+          ]
+        },
+        "stem": "The frequency table shows the number of siblings reported by each of $30$ students in a class. What is the median number of siblings?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1$"
+          },
+          {
+            "label": "B",
+            "text": "about $1.67$"
+          },
+          {
+            "label": "C",
+            "text": "$1.5$"
+          },
+          {
+            "label": "D",
+            "text": "$5$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "First find how many values there are: $4 + 11 + 8 + 5 + 2 = 30$. With $30$ values (an even number), the median is the mean of the two middle values, the 15th and 16th, when the values are listed in order. Count through the table: the value $0$ fills positions $1$ through $4$. The value $1$ fills the next $11$ positions, $5$ through $15$. The value $2$ fills the next $8$ positions, $16$ through $23$. So the 15th value is $1$ and the 16th value is $2$. Their mean is $\\frac{1 + 2}{2} = \\frac{3}{2} = 1.5$. The median is $1.5$ siblings.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the mode, and also the 15th value alone. With $30$ values, the median is the mean of the 15th and 16th values, which are $1$ and $2$."
+          },
+          {
+            "label": "B",
+            "text": "This is the mean number of siblings, $\\frac{50}{30} \\approx 1.67$, not the median."
+          },
+          {
+            "label": "D",
+            "text": "This is the median of the numbers in the frequency column ($2$, $4$, $5$, $8$, $11$). Those numbers count students; the data values are the numbers of siblings."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A soccer team scored the following numbers of goals in its $9$ games of a season: $2$, $0$, $3$, $1$, $2$, $4$, $2$, $1$, $5$. What is the range of these numbers of goals?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2$"
+          },
+          {
+            "label": "B",
+            "text": "$4$"
+          },
+          {
+            "label": "C",
+            "text": "$9$"
+          },
+          {
+            "label": "D",
+            "text": "$5$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The range is the greatest value minus the least value. In this list the greatest value is $5$ and the least value is $0$. Subtracting, $5 - 0 = 5$. The range is $5$ goals.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the most common value (and also the median). It describes the center of the data, not the spread."
+          },
+          {
+            "label": "B",
+            "text": "This uses $1$ as the least value and overlooks the game with $0$ goals. A score of $0$ is still a data value, so the range is $5 - 0$."
+          },
+          {
+            "label": "C",
+            "text": "This is the number of games, not a difference between data values."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A list contains seven different positive integers. The mean of the list is $10$, and the median is $9$. What is the greatest possible value of the largest integer in the list?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "34"
+        ],
+        "explanation": "The mean is the sum divided by the number of values, so the sum of the seven integers is $7 \\cdot 10 = 70$. Write the integers in increasing order as $a_1 < a_2 < a_3 < a_4 < a_5 < a_6 < a_7$. The median of seven values is the 4th value, so $a_4 = 9$. To make $a_7$ as large as possible, the other six integers must be as small as possible, because they all share the same total of $70$. The three integers below $9$ must be different positive integers, so the smallest they can be is $1$, $2$ and $3$. The two integers between $9$ and $a_7$ must be different integers greater than $9$, so the smallest they can be is $10$ and $11$. These six integers add to $1 + 2 + 3 + 9 + 10 + 11 = 36$. Subtracting from the total, $a_7 = 70 - 36 = 34$. Check: the list $1, 2, 3, 9, 10, 11, 34$ has seven different positive integers, its median is $9$, and its sum is $70$, so its mean is $70 \\div 7 = 10$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Eight students recorded the number of minutes they spent on homework one evening: $35$, $50$, $20$, $45$, $60$, $40$, $25$, $55$. What is the median number of minutes?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$42.5$"
+          },
+          {
+            "label": "B",
+            "text": "$41.25$"
+          },
+          {
+            "label": "C",
+            "text": "$52.5$"
+          },
+          {
+            "label": "D",
+            "text": "$40$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "First put the values in order from least to greatest: $20$, $25$, $35$, $40$, $45$, $50$, $55$, $60$. There are $8$ values, an even number, so there is no single middle value. The median is the mean of the two middle values, the 4th and 5th, which are $40$ and $45$. Adding them gives $40 + 45 = 85$, and dividing by $2$ gives $85 \\div 2 = 42.5$. The median is $42.5$ minutes.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the mean, $\\frac{330}{8} = 41.25$, not the median."
+          },
+          {
+            "label": "C",
+            "text": "This averages the two middle values of the list as it is given, $45$ and $60$. The values must be put in order before finding the middle."
+          },
+          {
+            "label": "D",
+            "text": "This is only the 4th value in order. With an even number of values, the median is the mean of the two middle values, $40$ and $45$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "At a school, one class of $12$ students has a mean height of $160$ centimeters, and another class of $18$ students has a mean height of $165$ centimeters. What is the mean height, in centimeters, of all $30$ students in the two classes?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$162$"
+          },
+          {
+            "label": "B",
+            "text": "$162.5$"
+          },
+          {
+            "label": "C",
+            "text": "$163$"
+          },
+          {
+            "label": "D",
+            "text": "$4{,}890$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The mean of a group is its total divided by the number of members, so a group's total is its mean times its size. The first class's heights total $12 \\cdot 160 = 1{,}920$ centimeters. The second class's heights total $18 \\cdot 165 = 2{,}970$ centimeters. Adding, all $30$ heights total $1{,}920 + 2{,}970 = 4{,}890$ centimeters. Dividing by the $30$ students gives $4{,}890 \\div 30 = 163$. The mean height of all $30$ students is $163$ centimeters.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This swaps the class sizes, weighting $160$ by $18$ students and $165$ by $12$ students. The larger class is the one with the greater mean, so the combined mean is closer to $165$."
+          },
+          {
+            "label": "B",
+            "text": "This is the average of the two class means. It ignores that the classes have different numbers of students; the class of $18$ counts more."
+          },
+          {
+            "label": "D",
+            "text": "This is the total of all $30$ heights. To find the mean, this total must still be divided by $30$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Data set $D$ consists of the values $12$, $15$, $18$, $21$, and $24$. Which of the following data sets has a smaller standard deviation than data set $D$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$22$, $25$, $28$, $31$, $34$"
+          },
+          {
+            "label": "B",
+            "text": "$15$, $15$, $18$, $21$, $21$"
+          },
+          {
+            "label": "C",
+            "text": "$24$, $30$, $36$, $42$, $48$"
+          },
+          {
+            "label": "D",
+            "text": "$12$, $15$, $21$, $24$, $30$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Standard deviation measures how far the values typically are from the mean. Data set $D$ has mean $\\frac{12 + 15 + 18 + 21 + 24}{5} = \\frac{90}{5} = 18$, and its values are $6$, $3$, $0$, $3$ and $6$ away from $18$. The set $15$, $15$, $18$, $21$, $21$ has sum $90$, so its mean is also $90 \\div 5 = 18$. Its values are $3$, $3$, $0$, $3$ and $3$ away from $18$. Every distance is the same as or smaller than the matching distance in $D$, and two are smaller, so this set is less spread out and has a smaller standard deviation. The other sets are shifted (same standard deviation), stretched (twice the standard deviation), or have a far-away value added (greater standard deviation).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This set adds $10$ to every value of $D$. That shifts the mean up by $10$ but leaves every distance from the mean the same, so the standard deviation is equal to that of $D$, not smaller."
+          },
+          {
+            "label": "C",
+            "text": "This set doubles every value of $D$. That doubles every distance from the mean, so the standard deviation is twice that of $D$."
+          },
+          {
+            "label": "D",
+            "text": "This set replaces the middle value $18$ with $30$, a value far from the rest. That spreads the data out more, so the standard deviation is greater than that of $D$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-017",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The masses, in kilograms, of six pumpkins at a farm stand are $4.2$, $5.8$, $3.9$, $6.1$, $5.0$, and $5.0$. What is the mean mass, in kilograms, of the six pumpkins?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5",
+          "5.0"
+        ],
+        "explanation": "The mean is the sum of the values divided by the number of values. Adding the masses: $4.2 + 5.8 = 10$, then $10 + 3.9 = 13.9$, then $13.9 + 6.1 = 20$, then $20 + 5.0 = 25$, and finally $25 + 5.0 = 30$. There are $6$ pumpkins, so divide: $30 \\div 6 = 5$. The mean mass is $5$ kilograms.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-018",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The mean of a list of $8$ numbers is $14$. When one number is removed from the list, the mean of the remaining $7$ numbers is $13$. What number was removed?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "21"
+        ],
+        "explanation": "The mean is the sum divided by the count, so the sum equals the mean times the count. The sum of the original $8$ numbers is $8 \\cdot 14 = 112$. The sum of the $7$ numbers that remain is $7 \\cdot 13 = 91$. The removed number accounts for the difference between these sums: $112 - 91 = 21$. The number $21$ was removed. (Check: $91 + 21 = 112$, and $112 \\div 8 = 14$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Data set $X$ consists of $9$ numbers and has a median of $30$. Data set $Y$ consists of $11$ numbers and has a median of $40$. The two data sets are combined into one data set of $20$ numbers. Which of the following could be the median of the combined data set?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$10$"
+          },
+          {
+            "label": "B",
+            "text": "$33$"
+          },
+          {
+            "label": "C",
+            "text": "$41$"
+          },
+          {
+            "label": "D",
+            "text": "$70$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Use what each median says about how many numbers lie on each side of it. In $X$ ($9$ numbers, median $30$), the 5th number in order is $30$, so at least $5$ numbers are $30$ or less and at least $5$ are $30$ or more. In $Y$ ($11$ numbers, median $40$), the 6th number is $40$, so at least $6$ numbers are $40$ or less and at least $6$ are $40$ or more. The combined median is the mean of the 10th and 11th of the $20$ numbers in order. At least $5 + 6 = 11$ numbers are $40$ or less (the small half of $X$, which is at most $30$, plus the small half of $Y$), so the 10th and 11th numbers are at most $40$. At least $5 + 6 = 11$ numbers are $30$ or more, so the 10th and 11th numbers are at least $30$. So the combined median must be between $30$ and $40$, inclusive, and $33$ is the only choice in that interval. It can actually happen: let $X$ be nine $30$s and let $Y$ be five $33$s and six $40$s (its 6th value is $40$). In order, the $20$ numbers are nine $30$s, five $33$s and six $40$s, so the 10th and 11th numbers are both $33$ and the median is $33$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the difference of the two medians, $40 - 30$. The combined median cannot be less than $30$, because at least $11$ of the $20$ numbers are $30$ or greater."
+          },
+          {
+            "label": "C",
+            "text": "The combined median cannot be greater than $40$: at least $5$ numbers in $X$ are at most $30$ and at least $6$ numbers in $Y$ are at most $40$, so at least $11$ of the $20$ numbers are $40$ or less."
+          },
+          {
+            "label": "D",
+            "text": "This adds the two medians. Combining data sets does not add their medians; the combined median must be between $30$ and $40$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Days to first ripe tomato",
+          "columns": [
+            "Number of days",
+            "Number of plants"
+          ],
+          "rows": [
+            [
+              "58",
+              "3"
+            ],
+            [
+              "60",
+              "7"
+            ],
+            [
+              "62",
+              "9"
+            ],
+            [
+              "64",
+              "4"
+            ],
+            [
+              "66",
+              "2"
+            ]
+          ]
+        },
+        "stem": "The frequency table shows the number of days each of $25$ tomato plants in a garden took to produce its first ripe tomato. What is the mean number of days?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$61.6$"
+          },
+          {
+            "label": "B",
+            "text": "$5$"
+          },
+          {
+            "label": "C",
+            "text": "$62$"
+          },
+          {
+            "label": "D",
+            "text": "$1{,}540$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "To find the mean from a frequency table, multiply each value by how many times it occurs, add the products, and divide by the total number of plants. The products are $58 \\cdot 3 = 174$, $60 \\cdot 7 = 420$, $62 \\cdot 9 = 558$, $64 \\cdot 4 = 256$, and $66 \\cdot 2 = 132$. Adding them: $174 + 420 + 558 + 256 + 132 = 1{,}540$. There are $3 + 7 + 9 + 4 + 2 = 25$ plants, so divide: $1{,}540 \\div 25 = 61.6$. The mean is $61.6$ days.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the mean of the numbers in the frequency column, $25 \\div 5$. Those numbers count plants, not days."
+          },
+          {
+            "label": "C",
+            "text": "This is the most common value (it is also the median, and the unweighted average of the five listed day values). The mean must weight each value by its frequency; more plants took fewer than $62$ days than took more, so the mean is less than $62$."
+          },
+          {
+            "label": "D",
+            "text": "This is the total number of days for all $25$ plants. It must still be divided by $25$ to get the mean."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

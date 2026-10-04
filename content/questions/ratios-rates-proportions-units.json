@@ -520,6 +520,604 @@
           }
         ]
       }
+    },
+    {
+      "id": "ratios-rates-proportions-units-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A fabric store sells a cotton fabric for $\\$14$ per yard. A customer buys a piece of this fabric that is $270$ inches long. What is the cost of the piece, before tax? ($1$ yard $= 36$ inches)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\$315$"
+          },
+          {
+            "label": "B",
+            "text": "$\\$1{,}260$"
+          },
+          {
+            "label": "C",
+            "text": "$\\$105$"
+          },
+          {
+            "label": "D",
+            "text": "$\\$3{,}780$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The price is given per yard, so first convert the length from inches to yards. Since $1$ yard is $36$ inches, divide by $36$: $270 \\div 36 = 7.5$. The piece is $7.5$ yards long. Each yard costs $\\$14$, so multiply the number of yards by the price per yard: $7.5 \\cdot 14 = 105$. The piece costs $\\$105$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides $270$ by $12$ to get $22.5$, which is the length in feet, not yards, and then charges the price per yard for each foot: $22.5 \\cdot 14 = 315$."
+          },
+          {
+            "label": "B",
+            "text": "This divides $270$ by $3$ (the number of feet in a yard) instead of by $36$ (the number of inches in a yard), getting $90$, and then $90 \\cdot 14 = 1{,}260$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies $270 \\cdot 14$ without converting inches to yards, so it charges the price of a whole yard for every inch."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A cyclist rides at a constant speed and covers $14$ kilometers in $40$ minutes. At this speed, how many kilometers will the cyclist cover in $100$ minutes?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$35$"
+          },
+          {
+            "label": "B",
+            "text": "$5.6$"
+          },
+          {
+            "label": "C",
+            "text": "$74$"
+          },
+          {
+            "label": "D",
+            "text": "about $286$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Find the cyclist's rate by dividing distance by time: $\\frac{14}{40} = 0.35$ kilometer per minute. At this rate, in $100$ minutes the cyclist covers $0.35 \\cdot 100 = 35$ kilometers. Another way is to set up a proportion of distance to time: $\\frac{14}{40} = \\frac{d}{100}$. Multiplying both sides by $100$ gives $d = \\frac{14 \\cdot 100}{40} = \\frac{1{,}400}{40}$, which simplifies to $d = 35$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This computes $\\frac{14 \\cdot 40}{100}$, which pairs the $14$ kilometers with the wrong time. Riding for longer than $40$ minutes should cover more than $14$ kilometers, not less."
+          },
+          {
+            "label": "C",
+            "text": "This adds the extra $100 - 40 = 60$ minutes to the $14$ kilometers, as if each minute added $1$ kilometer. The cyclist actually rides $0.35$ kilometer per minute."
+          },
+          {
+            "label": "D",
+            "text": "This flips the rate, computing $\\frac{40}{14} \\cdot 100 \\approx 286$. The ratio $\\frac{40}{14}$ is minutes per kilometer, so multiplying it by a number of minutes does not give kilometers."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "On a map, $1$ centimeter represents $2.5$ kilometers. A lake shown on the map has an area of $6$ square centimeters. What is the actual area of the lake, in square kilometers?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$0.96$"
+          },
+          {
+            "label": "B",
+            "text": "$2.4$"
+          },
+          {
+            "label": "C",
+            "text": "$15$"
+          },
+          {
+            "label": "D",
+            "text": "$37.5$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The scale is for lengths, so first work out what $1$ square centimeter on the map stands for. A square that is $1$ centimeter by $1$ centimeter on the map represents a square that is $2.5$ kilometers by $2.5$ kilometers. That square's area is $2.5 \\cdot 2.5 = 6.25$ square kilometers. So each square centimeter on the map represents $6.25$ square kilometers. The lake covers $6$ square centimeters, so multiply: $6 \\cdot 6.25 = 37.5$. The lake's actual area is $37.5$ square kilometers.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This finds the correct area scale, $6.25$ square kilometers per square centimeter, but divides $6$ by $6.25$ instead of multiplying."
+          },
+          {
+            "label": "B",
+            "text": "This divides $6$ by $2.5$. It uses the length scale instead of the area scale, and it divides when it should multiply."
+          },
+          {
+            "label": "C",
+            "text": "This multiplies $6$ by the length scale, $2.5$. Areas do not scale like lengths: each square centimeter is $2.5$ kilometers long and $2.5$ kilometers wide, so it stands for $2.5^2 = 6.25$ square kilometers."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The mass of a piece of copper wire is proportional to its length. A piece of the wire that is $350$ centimeters long has a mass of $42$ grams. What is the mass, in grams, of a piece of the same wire that is $8$ meters long? ($1$ meter $= 100$ centimeters)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$0.96$"
+          },
+          {
+            "label": "B",
+            "text": "$96$"
+          },
+          {
+            "label": "C",
+            "text": "$12$"
+          },
+          {
+            "label": "D",
+            "text": "$9{,}600$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Before comparing the pieces, write both lengths in the same unit. Since $1$ meter is $100$ centimeters, divide by $100$: $350$ centimeters is $350 \\div 100 = 3.5$ meters. Because mass is proportional to length, every meter of wire has the same mass. Dividing the mass by the length gives $\\frac{42}{3.5} = 12$ grams per meter. For an $8$-meter piece, multiply: $12 \\cdot 8 = 96$. The piece has a mass of $96$ grams.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses the rate $\\frac{42}{350} = 0.12$ gram per centimeter but multiplies it by $8$ without converting $8$ meters to $800$ centimeters."
+          },
+          {
+            "label": "C",
+            "text": "This is the mass of $1$ meter of the wire. The question asks about a piece that is $8$ meters long, so this rate must still be multiplied by $8$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies the rate of $12$ grams per meter by $800$, the length in centimeters. The units must match: grams per meter times meters, which is $12 \\cdot 8$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-015",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a school band, the ratio of woodwind players to brass players is $5 : 2$. The band has $35$ players, and every player is either a woodwind player or a brass player. How many brass players are in the band?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "10"
+        ],
+        "explanation": "The ratio $5 : 2$ means that for every $5$ woodwind players there are $2$ brass players. So the band can be split into groups of $5 + 2 = 7$ players, and each group has $2$ brass players. Dividing the $35$ players into groups of $7$ gives $35 \\div 7 = 5$ groups. Each group has $2$ brass players, so the band has $2 \\cdot 5 = 10$ brass players. (Check: there are $5 \\cdot 5 = 25$ woodwind players, and $25 + 10 = 35$ players in all.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-016",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A car uses fuel at a rate of $6$ liters per $100$ kilometers driven. Fuel costs $\\$1.50$ per liter. What is the cost, in dollars, of the fuel the car uses on a $250$-mile trip? (Use $1$ mile $= 1.6$ kilometers.)",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "36",
+          "36.0"
+        ],
+        "explanation": "The fuel rate is given per kilometer, so first convert the trip length from miles to kilometers. Each mile is $1.6$ kilometers, so multiply: $250 \\cdot 1.6 = 400$ kilometers. The car uses $6$ liters for every $100$ kilometers. Dividing, $400 \\div 100 = 4$, so the trip is $4$ of those $100$-kilometer stretches. The fuel used is $6 \\cdot 4 = 24$ liters. Each liter costs $\\$1.50$, so the cost is $24 \\cdot 1.50 = 36$. The fuel for the trip costs $\\$36$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A craft kit contains only red beads and blue beads, in the ratio $4 : 7$. The kit has $88$ beads in all. How many red beads must be added to the kit so that the number of red beads equals the number of blue beads?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$32$"
+          },
+          {
+            "label": "C",
+            "text": "$24$"
+          },
+          {
+            "label": "D",
+            "text": "$56$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The ratio $4 : 7$ splits the beads into groups of $4 + 7 = 11$ beads, each with $4$ red and $7$ blue. Dividing, $88 \\div 11 = 8$, so there are $8$ such groups. That means there are $4 \\cdot 8 = 32$ red beads and $7 \\cdot 8 = 56$ blue beads. For the numbers to be equal, the kit needs $56$ red beads. Subtracting the red beads it already has, $56 - 32 = 24$. So $24$ red beads must be added.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts the ratio parts, $7 - 4 = 3$. The ratio parts are not the actual numbers of beads: each part stands for $8$ beads, so the difference is $3 \\cdot 8 = 24$."
+          },
+          {
+            "label": "B",
+            "text": "This is the number of red beads already in the kit, not the number that must be added."
+          },
+          {
+            "label": "D",
+            "text": "This is the number of blue beads, which is the total number of red beads needed. Since the kit already has $32$ red beads, only $56 - 32 = 24$ must be added."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "During flight, a hummingbird's heart can beat at a rate of $1{,}200$ beats per minute. What is this rate in beats per second?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$20$"
+          },
+          {
+            "label": "B",
+            "text": "$0.05$"
+          },
+          {
+            "label": "C",
+            "text": "$1{,}140$"
+          },
+          {
+            "label": "D",
+            "text": "$72{,}000$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "There are $60$ seconds in $1$ minute, so $1{,}200$ beats per minute means $1{,}200$ beats every $60$ seconds. To find the number of beats in $1$ second, divide the beats by the seconds: $\\frac{1{,}200}{60} = 20$. The heart beats $20$ times per second.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This computes $\\frac{60}{1{,}200}$, which is the number of seconds per beat, not the number of beats per second."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts $60$ from $1{,}200$. Changing minutes to seconds means dividing by $60$, not subtracting $60$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies by $60$ instead of dividing. A second is much shorter than a minute, so there are fewer beats in a second than in a minute."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A machine makes $p$ parts every $m$ minutes. At this rate, which expression gives the number of hours the machine takes to make $N$ parts?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{60Nm}{p}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{Nm}{60p}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{Np}{60m}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{60p}{Nm}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The machine makes $p$ parts in $m$ minutes, so each part takes $\\frac{m}{p}$ minutes. Making $N$ parts takes $N$ times as long: $N \\cdot \\frac{m}{p} = \\frac{Nm}{p}$ minutes. There are $60$ minutes in an hour, so divide by $60$ to change minutes to hours: $\\frac{Nm}{p} \\div 60 = \\frac{Nm}{60p}$ hours. Check with numbers: if the machine makes $p = 10$ parts every $m = 6$ minutes, then $N = 100$ parts take $10$ batches of $6$ minutes, which is $60$ minutes, or $1$ hour. The expression gives $\\frac{100 \\cdot 6}{60 \\cdot 10} = \\frac{600}{600} = 1$, which matches.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This correctly finds the time in minutes, $\\frac{Nm}{p}$, but then multiplies by $60$. An hour is longer than a minute, so changing minutes to hours means dividing by $60$."
+          },
+          {
+            "label": "C",
+            "text": "This uses $\\frac{p}{m}$, which is parts per minute, as if it were minutes per part. Multiplying a number of parts by parts per minute does not give a time."
+          },
+          {
+            "label": "D",
+            "text": "This is the reciprocal of the correct expression. It gives the number of batches of $N$ parts made per hour, not the number of hours for one batch."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-020",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A computer downloads a $1.8$-gigabyte file at a constant rate of $12$ megabytes per second. How many minutes does the download take? ($1$ gigabyte $= 1{,}000$ megabytes)",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2.5",
+          "5/2"
+        ],
+        "explanation": "The rate is in megabytes, so first convert the file size to megabytes. Since $1$ gigabyte is $1{,}000$ megabytes, multiply: $1.8 \\cdot 1{,}000 = 1{,}800$ megabytes. At $12$ megabytes per second, the time in seconds is the size divided by the rate: $1{,}800 \\div 12 = 150$ seconds. The question asks for minutes, and there are $60$ seconds in a minute, so divide by $60$: $150 \\div 60 = 2.5$. The download takes $2.5$ minutes.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

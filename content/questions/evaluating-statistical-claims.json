@@ -630,6 +630,686 @@
           }
         ]
       }
+    },
+    {
+      "id": "evaluating-statistical-claims-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A teacher asked each of the $80$ students in her classes whether they listen to music while doing homework. She then compared the average test scores of the students who said yes with the average test scores of the students who said no. Which of the following best describes this study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "An experiment, because the teacher compared two groups"
+          },
+          {
+            "label": "B",
+            "text": "An observational study, because the teacher recorded the students' existing habits without assigning them"
+          },
+          {
+            "label": "C",
+            "text": "An experiment, because the teacher collected test scores"
+          },
+          {
+            "label": "D",
+            "text": "A random sample of all high school students"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "In an experiment, the researcher assigns the treatment, for example by deciding which students listen to music. Here the teacher did not assign anything; she only recorded whether students already listen to music and compared their scores. A study that observes and records existing characteristics without assigning treatments is an observational study.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Comparing two groups happens in both kinds of study. What makes a study an experiment is that the researcher assigns the treatment, and the teacher did not."
+          },
+          {
+            "label": "C",
+            "text": "Collecting data such as test scores does not make a study an experiment. The students chose their own habits, so this is observational."
+          },
+          {
+            "label": "D",
+            "text": "The teacher studied only the students in her own classes; she did not randomly select them from all high school students."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A botanist grew $40$ seedlings of a single species of basil under identical conditions, except that $20$ seedlings, chosen at random, were grown under blue light and the other $20$ were grown under red light. After four weeks, the seedlings under blue light were significantly taller, on average. Which conclusion is best supported by the study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Blue light causes greater growth than red light for all kinds of plants."
+          },
+          {
+            "label": "B",
+            "text": "Blue light is associated with greater growth in basil seedlings, but no cause-and-effect conclusion can be drawn."
+          },
+          {
+            "label": "C",
+            "text": "Taller basil seedlings cause the light around them to appear blue."
+          },
+          {
+            "label": "D",
+            "text": "Blue light likely causes greater growth than red light for basil seedlings like those in the study."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The botanist randomly assigned the seedlings to blue or red light and kept the other conditions the same. Random assignment makes the two groups similar apart from the light color, so the difference in height can be attributed to the light. That supports a cause-and-effect conclusion. However, every seedling was the same species of basil, so the conclusion should be limited to basil seedlings like the ones studied, not extended to all plants.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Only one species of basil was studied, so the results cannot be extended to all kinds of plants."
+          },
+          {
+            "label": "B",
+            "text": "Because the seedlings were randomly assigned to the two light colors, the study can support a cause-and-effect conclusion, not just an association."
+          },
+          {
+            "label": "C",
+            "text": "This reverses cause and effect. The light color was assigned before the seedlings grew, so the height could not have caused the light color."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-013",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A clinic gave a new vitamin supplement to all $50$ of its patients who have frequent leg cramps. After two months, $38$ of the $50$ patients reported fewer leg cramps than before. The clinic concluded that the supplement reduces leg cramps. Which statement best describes a flaw in the clinic's reasoning?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "There was no comparison group that did not take the supplement, so the improvement could have happened without it."
+          },
+          {
+            "label": "B",
+            "text": "The patients were randomly assigned to take the supplement, so the results apply only to these patients."
+          },
+          {
+            "label": "C",
+            "text": "$38$ out of $50$ patients is too few to show any improvement."
+          },
+          {
+            "label": "D",
+            "text": "The study should have measured the patients' leg cramps for longer than two months before giving them the supplement."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Every patient took the supplement, so there is nothing to compare the results with. Leg cramps can improve over time for many reasons, such as changes in weather, activity or other habits, or simply because people often seek help when their symptoms are at their worst. Without a group that did not take the supplement, the clinic cannot tell whether the improvement in $\\frac{38}{50} = 76\\%$ of patients was caused by the supplement. A sound study would randomly assign patients to the supplement or to a comparison treatment.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The patients were not randomly assigned to anything; all of them took the supplement. That lack of a comparison group is the real flaw."
+          },
+          {
+            "label": "C",
+            "text": "Many patients did report improvement ($\\frac{38}{50} = 76\\%$). The problem is not the number of patients but that there was no group without the supplement to compare with."
+          },
+          {
+            "label": "D",
+            "text": "Measuring cramps longer beforehand would not fix the main problem: without a comparison group, the study cannot show that the supplement caused the improvement."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher wants to estimate the average number of hours per week that all adults in a state spend volunteering. Which feature of a study would most help the researcher apply the study's results to all adults in the state?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Randomly assigning participants to volunteer or not volunteer"
+          },
+          {
+            "label": "B",
+            "text": "Surveying as many adults as possible at volunteer events in the state"
+          },
+          {
+            "label": "C",
+            "text": "Selecting the participants at random from all adults in the state"
+          },
+          {
+            "label": "D",
+            "text": "Allowing adults in the state to sign up for the survey online"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Results from a sample can be applied to a population when the sample is selected at random from that population. Random selection gives every adult in the state a chance to be chosen, so the sample tends to represent the whole state. Random assignment, by contrast, is used to show cause and effect, which is not what this researcher needs.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Random assignment helps show cause and effect in an experiment. It does not make a sample represent all adults in the state."
+          },
+          {
+            "label": "B",
+            "text": "People at volunteer events are likely to volunteer more than typical adults, so this sample would overestimate the state's average."
+          },
+          {
+            "label": "D",
+            "text": "People who choose to sign up may differ from other adults, for example by being more interested in volunteering, so this sample may not represent the state."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Researchers selected $600$ adults at random from a large city's adult population. They randomly assigned half of them to walk for $30$ minutes each day and the other half to keep their usual routine. After eight weeks, the walking group's average resting heart rate had decreased significantly more than the other group's. Which conclusion is best supported by the study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Every adult in the city who walks $30$ minutes each day will have a lower resting heart rate after eight weeks."
+          },
+          {
+            "label": "B",
+            "text": "Walking $30$ minutes each day is associated with a lower resting heart rate for adults in the city, but it cannot be shown to cause the decrease."
+          },
+          {
+            "label": "C",
+            "text": "Walking $30$ minutes each day likely causes a greater decrease in resting heart rate, on average, for adults everywhere."
+          },
+          {
+            "label": "D",
+            "text": "Walking $30$ minutes each day likely causes a greater decrease in resting heart rate, on average, for adults in the city."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Two features of the study matter. First, the participants were randomly selected from the city's adults, so the results can be generalized to all adults in the city. Second, the participants were randomly assigned to walk or not, so the difference between the groups can be attributed to walking, which supports a cause-and-effect conclusion. Together these support the conclusion that walking likely causes a greater average decrease for adults in the city. Note that the result is about an average: it does not say what will happen to every individual.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The study compared group averages. A significant difference in averages does not mean that every individual will see a decrease."
+          },
+          {
+            "label": "B",
+            "text": "Because the participants were randomly assigned to walk or not, the study can support a cause-and-effect conclusion, not just an association."
+          },
+          {
+            "label": "C",
+            "text": "The participants were selected only from one city's adults, so the results can be generalized to that city, not to adults everywhere."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-016",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school district compared the math scores of students who chose to attend an after-school tutoring program with the scores of students who did not attend. The students who attended had higher average scores. Which change to the study would best allow the district to conclude that the tutoring program causes higher math scores?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Including twice as many students in the comparison"
+          },
+          {
+            "label": "B",
+            "text": "Randomly assigning students to either attend the tutoring program or not attend it, and then comparing their scores"
+          },
+          {
+            "label": "C",
+            "text": "Selecting the students at random from all the schools in the district, while still letting them choose whether to attend"
+          },
+          {
+            "label": "D",
+            "text": "Comparing the students' scores over two school years instead of one"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "In the original study, students chose whether to attend tutoring. Students who choose to attend might already be more motivated or have more support at home, and those differences could explain the higher scores. Randomly assigning students to attend or not attend tends to balance such differences between the groups, so any remaining difference in scores can be attributed to the program. That makes a cause-and-effect conclusion possible.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A larger study is more precise, but if students still choose whether to attend, the groups can still differ in motivation and other ways, so cause and effect still cannot be shown."
+          },
+          {
+            "label": "C",
+            "text": "Random selection helps the results represent the district, but because students would still choose whether to attend, the study would still be observational."
+          },
+          {
+            "label": "D",
+            "text": "A longer study does not solve the problem that students who chose tutoring may differ from those who did not."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A science teacher wanted to know whether a new lab-based teaching method improves test scores. She used the new method with her $8{:}00$ a.m. class and her usual method with her $2{:}00$ p.m. class. At the end of the unit, the $8{:}00$ a.m. class had a significantly higher average test score. Which statement best evaluates the teacher's study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The study shows that the new method causes higher test scores, because the difference was statistically significant."
+          },
+          {
+            "label": "B",
+            "text": "The study shows that the new method causes higher test scores, but only for students in $8{:}00$ a.m. classes."
+          },
+          {
+            "label": "C",
+            "text": "The study cannot show that the new method causes higher scores, because the method was not randomly assigned and the two classes may differ in other ways, such as time of day."
+          },
+          {
+            "label": "D",
+            "text": "The study cannot show anything about the new method, because the teacher did not survey a random sample of all science students."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "For a study to show cause and effect, the groups being compared should be alike except for the treatment, which is usually achieved by random assignment. Here the method was not randomly assigned to students; instead, one whole class received each method. The two classes differ in other ways too: they meet at different times of day, and different kinds of students may sign up for early or afternoon classes. Any of those differences could explain the higher scores, so the study cannot show that the new method caused them. A statistically significant difference tells us the gap is unlikely to be due to chance alone, but not what caused it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Statistical significance shows that the difference is unlikely to be due to chance, but it cannot rule out other explanations, such as differences between the two classes."
+          },
+          {
+            "label": "B",
+            "text": "Because the method was not randomly assigned, the study cannot show cause and effect for any group, including students in $8{:}00$ a.m. classes."
+          },
+          {
+            "label": "D",
+            "text": "Random sampling affects which population the results can be generalized to. The main problem here is the lack of random assignment, which prevents a cause-and-effect conclusion even for these students."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A professional association obtained the state's list of all licensed electricians and selected $300$ electricians from the list at random. The association surveyed them about how many hours per week they work. To which group can the survey results most appropriately be generalized?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "All licensed electricians in the state"
+          },
+          {
+            "label": "B",
+            "text": "All workers in the state"
+          },
+          {
+            "label": "C",
+            "text": "All electricians in the country"
+          },
+          {
+            "label": "D",
+            "text": "Only the $300$ electricians who were surveyed"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Survey results can be generalized to the population the sample was randomly selected from. The $300$ electricians were chosen at random from a list of all the licensed electricians in the state, so the results apply to all licensed electricians in the state.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Only electricians were sampled. Other workers may work very different hours, so the results cannot be applied to all workers."
+          },
+          {
+            "label": "C",
+            "text": "The sample came only from one state's electricians, so the results cannot be applied to electricians in other states."
+          },
+          {
+            "label": "D",
+            "text": "Because the $300$ electricians were randomly selected from all licensed electricians in the state, the results can be generalized beyond the sample to that population."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "stem reworded so the sampling frame is clearly the state's list of all licensed electricians (blind checker found 'member electricians' ambiguous)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A city council randomly selected $500$ residents and asked them, \"Don't you agree that the city should stop wasting money on unnecessary repairs to the old downtown fountain?\" Of the residents surveyed, $81\\%$ answered yes. A council member concluded that about $81\\%$ of the city's residents oppose spending money on the fountain. Which statement best explains why this conclusion may be unreliable?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The sample was not randomly selected from the city's residents."
+          },
+          {
+            "label": "B",
+            "text": "A sample of $500$ residents is too small to estimate a percent for a city."
+          },
+          {
+            "label": "C",
+            "text": "The survey should have been an experiment rather than an observational study."
+          },
+          {
+            "label": "D",
+            "text": "The question was worded in a way that encourages people to answer yes."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The question uses loaded words such as \"wasting money\" and \"unnecessary,\" and it begins \"Don't you agree,\" which pushes people toward answering yes. Even with a random sample, a leading question can produce answers that do not reflect people's true opinions. So the $81\\%$ may overstate how many residents actually oppose spending on the fountain.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The council did randomly select the $500$ residents, so the sampling method is not the problem here."
+          },
+          {
+            "label": "B",
+            "text": "A random sample of $500$ residents is large enough to give a reasonable estimate; the problem is how the question was worded."
+          },
+          {
+            "label": "C",
+            "text": "Estimating the percent of residents who hold an opinion is a job for a survey, not an experiment. The flaw is the biased wording of the question."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two studies examined whether daily meditation lowers stress. In Study 1, researchers selected $400$ adults at random from a city and found that those who already meditated daily reported significantly lower stress, on average, than those who did not. In Study 2, researchers recruited $400$ volunteers through a newspaper ad and randomly assigned half of them to meditate daily for six weeks and the other half not to; the meditation group reported significantly lower stress, on average. Which statement is best supported?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Only Study 2 supports the conclusion that meditation causes lower stress, and that conclusion applies to people similar to the volunteers."
+          },
+          {
+            "label": "B",
+            "text": "Only Study 1 supports the conclusion that meditation causes lower stress, because its participants were selected at random."
+          },
+          {
+            "label": "C",
+            "text": "Together, the studies show that daily meditation causes lower stress for all adults in the city."
+          },
+          {
+            "label": "D",
+            "text": "Neither study supports any conclusion, because neither one used both random selection and random assignment."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Look at each study's design. Study 1 used random selection, so its results can be generalized to the city's adults, but the adults chose for themselves whether to meditate. That makes it an observational study, which can show only an association: people who meditate may differ in other ways, such as having less stressful jobs. Study 2 used random assignment, so the groups were alike except for meditation, and the difference in stress can be attributed to meditation. But Study 2's participants were volunteers who answered an ad, not a random sample of the city, so its cause-and-effect conclusion applies only to people similar to those volunteers. Only Study 2 supports cause and effect, and only for people like its volunteers.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This mixes up the two kinds of randomness. Random selection lets results be generalized to a population, but only random assignment supports a cause-and-effect conclusion, and Study 1 did not use it."
+          },
+          {
+            "label": "C",
+            "text": "Combining the studies does not fix their limits. Study 1 cannot show cause and effect, and Study 2's cause-and-effect result applies only to people like the volunteers, not to all adults in the city."
+          },
+          {
+            "label": "D",
+            "text": "A study does not need both kinds of randomness to support some conclusion. Study 1 supports an association for the city's adults, and Study 2 supports cause and effect for people like the volunteers."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }
