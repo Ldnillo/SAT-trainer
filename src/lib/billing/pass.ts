@@ -1,6 +1,6 @@
 import { and, count, desc, eq, gt, isNull } from "drizzle-orm";
 import type { Db } from "../db/client";
-import { practiceSets, seasonPasses } from "../db/schema";
+import { practiceSets, practiceTests, seasonPasses } from "../db/schema";
 import { passConfig } from "./config";
 
 export type SeasonPass = typeof seasonPasses.$inferSelect;
@@ -42,6 +42,21 @@ export async function practiceAccess(db: Db, userId: string, now = new Date(), f
   const [{ n }] = await db.select({ n: count() }).from(practiceSets).where(eq(practiceSets.userId, userId));
   const freeSetsLeft = Math.max(0, freeSets - n);
   return { allowed: pass.active || freeSetsLeft > 0, pass, freeSetsLeft };
+}
+
+export interface TestAccess {
+  allowed: boolean;
+  pass: PassStatus;
+  /** Free full-length tests the student can still start without a pass. */
+  freeTestsLeft: number;
+}
+
+/** Whether the student may start a full-length practice test: an active pass, or free tests left. */
+export async function testAccess(db: Db, userId: string, now = new Date(), freeTests = passConfig().freeTests): Promise<TestAccess> {
+  const pass = await passStatus(db, userId, now);
+  const [{ n }] = await db.select({ n: count() }).from(practiceTests).where(eq(practiceTests.userId, userId));
+  const freeTestsLeft = Math.max(0, freeTests - n);
+  return { allowed: pass.active || freeTestsLeft > 0, pass, freeTestsLeft };
 }
 
 export interface GrantInput {

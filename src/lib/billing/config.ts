@@ -10,9 +10,11 @@ export interface PassConfig {
   days: number;
   /** Practice sets a student can start before buying a pass. */
   freeSets: number;
+  /** Full-length practice tests a student can take before buying a pass. */
+  freeTests: number;
 }
 
-export const DEFAULT_PASS_CONFIG: PassConfig = { priceCents: 3900, currency: "usd", days: 90, freeSets: 1 };
+export const DEFAULT_PASS_CONFIG: PassConfig = { priceCents: 3900, currency: "usd", days: 90, freeSets: 1, freeTests: 0 };
 
 function intFrom(value: string | undefined, fallback: number, min: number): number {
   if (value === undefined || value.trim() === "") return fallback;
@@ -30,6 +32,7 @@ export function passConfig(env: Record<string, string | undefined> = process.env
     currency,
     days: intFrom(env.SEASON_PASS_DAYS, DEFAULT_PASS_CONFIG.days, 1),
     freeSets: intFrom(env.FREE_PRACTICE_SETS, DEFAULT_PASS_CONFIG.freeSets, 0),
+    freeTests: intFrom(env.FREE_PRACTICE_TESTS, DEFAULT_PASS_CONFIG.freeTests, 0),
   };
 }
 
