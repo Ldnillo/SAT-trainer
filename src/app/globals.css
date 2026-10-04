@@ -303,3 +303,14 @@ select:focus {
     font-size: 18px;
   }
 }
+
+.math-display {
+  display: block;
+  font-weight: 400;
+}
+
+.math-display .katex-display,
+.math-display .katex-display > .katex {
+  margin: 8px 0;
+  text-align: left;
+}
