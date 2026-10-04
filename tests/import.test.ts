@@ -18,13 +18,22 @@ beforeEach(async () => {
 });
 afterEach(async () => close());
 
-async function writeFileFor(skill: string, questions: { id: string; content: QuestionContent; difficulty?: string }[]) {
+const authorship = {
+  writer: { name: "test-writer", date: "2026-10-04" },
+  inputs: { instructions: "content/AUTHORING.md", examples: [] },
+  passageSource: "original",
+  reviews: [{ reviewer: "test-reviewer", date: "2026-10-04", edits: "none" }],
+};
+
+async function writeFileFor(
+  skill: string,
+  questions: { id: string; content: QuestionContent; difficulty?: string; authorship?: unknown }[],
+) {
   await writeFile(
     path.join(dir, `${skill}.json`),
     JSON.stringify({
       skill,
-      author: "test",
-      questions: questions.map((q) => ({ difficulty: "medium", format: "multiple-choice", ...q })),
+      questions: questions.map((q) => ({ difficulty: "medium", format: "multiple-choice", authorship, ...q })),
     }),
   );
 }
@@ -36,10 +45,20 @@ describe("importQuestionFiles", () => {
     const first = await importQuestionFiles(db, dir);
     expect(first.added).toEqual(["transitions-001"]);
     const [row] = await findQuestions(db, { skills: ["transitions"] });
-    expect(row).toMatchObject({ sourceId: "transitions-001", status: "verified", provenance: { generator: "authored", author: "test" } });
+    expect(row).toMatchObject({ sourceId: "transitions-001", status: "verified", provenance: { generator: "authored", author: "test-writer", authorship } });
 
     const second = await importQuestionFiles(db, dir);
     expect(second).toMatchObject({ added: [], unchanged: ["transitions-001"] });
+  });
+
+  it("updates a question when only its review record changes", async () => {
+    await writeFileFor("transitions", [{ id: "transitions-001", content: rwQuestion() }]);
+    await importQuestionFiles(db, dir);
+    const reviewed = { ...authorship, reviews: [...authorship.reviews, { reviewer: "Justine", date: "2026-10-05", edits: "none" }] };
+    await writeFileFor("transitions", [{ id: "transitions-001", content: rwQuestion(), authorship: reviewed }]);
+    expect((await importQuestionFiles(db, dir)).updated).toEqual(["transitions-001"]);
+    const [row] = await findQuestions(db, { skills: ["transitions"] });
+    expect(row.provenance.authorship.reviews).toHaveLength(2);
   });
 
   it("updates a question in place when its file changes", async () => {
@@ -66,13 +85,53 @@ describe("importQuestionFiles", () => {
     expect(r.failed[0].problems.join()).toMatch(/Near-duplicate of transitions-001/);
   });
 
+  it("rejects questions without a complete authorship record", async () => {
+    const noReviews: Partial<typeof authorship> = { ...authorship };
+    delete noReviews.reviews;
+    await writeFileFor("transitions", [
+      { id: "transitions-001", content: rwQuestion(), authorship: undefined },
+      { id: "transitions-002", content: rwQuestion({ stem: "Which transition fits best?" }), authorship: { ...authorship, reviews: [] } },
+      { id: "transitions-003", content: rwQuestion({ stem: "Pick the transition." }), authorship: noReviews },
+    ]);
+    const r = await importQuestionFiles(db, dir);
+    expect(r.added).toEqual([]);
+    expect(r.failed.map((f) => f.id)).toEqual(["transitions-001", "transitions-002", "transitions-003"]);
+    expect(r.failed[0].problems.join()).toMatch(/authorship/);
+    expect(r.failed[1].problems.join()).toMatch(/at least one review/);
+  });
+
+  it("enforces the originality rules in the authorship record", async () => {
+    await writeFileFor("transitions", [
+      {
+        id: "transitions-001",
+        content: rwQuestion(),
+        authorship: { ...authorship, passageSource: { title: "A Recent Novel", author: "Someone", year: 1990 } },
+      },
+      {
+        id: "transitions-002",
+        content: rwQuestion({ stem: "Which transition fits best?" }),
+        authorship: { ...authorship, inputs: { instructions: "x", examples: ["Bluebook practice test 4, question 12"] } },
+      },
+      {
+        id: "transitions-003",
+        content: rwQuestion({ stem: "Pick the transition." }),
+        authorship: { ...authorship, passageSource: { title: "Walden", author: "Henry David Thoreau", year: 1854 } },
+      },
+    ]);
+    const r = await importQuestionFiles(db, dir);
+    expect(r.failed.map((f) => f.id)).toEqual(["transitions-001", "transitions-002"]);
+    expect(r.failed[0].problems.join()).toMatch(/may still be under copyright/);
+    expect(r.failed[1].problems.join()).toMatch(/official test material/);
+    expect(r.added).toEqual(["transitions-003"]);
+  });
+
   it("rejects files whose name and skill disagree, and reports orphans", async () => {
     await writeFileFor("transitions", [{ id: "transitions-001", content: rwQuestion() }]);
     await importQuestionFiles(db, dir);
     await writeFileFor("transitions", []);
     expect(await orphanedSourceIds(db, dir)).toEqual(["transitions-001"]);
 
-    await writeFile(path.join(dir, "boundaries.json"), JSON.stringify({ skill: "transitions", author: "x", questions: [] }));
+    await writeFile(path.join(dir, "boundaries.json"), JSON.stringify({ skill: "transitions", questions: [] }));
     await expect(importQuestionFiles(db, dir)).rejects.toThrow(/file name says boundaries.json/);
   });
 });

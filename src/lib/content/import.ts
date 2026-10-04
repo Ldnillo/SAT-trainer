@@ -4,31 +4,39 @@ import { eq, isNotNull } from "drizzle-orm";
 import { z } from "zod";
 import type { Db } from "../db/client";
 import { questions } from "../db/schema";
-import { QuestionContentSchema, type QuestionStatus } from "../sat/question";
+import { AuthorshipSchema, QuestionContentSchema, type QuestionStatus } from "../sat/question";
 import { findNearDuplicate } from "../sat/similarity";
 import { DIFFICULTIES, getSkill, QUESTION_FORMATS } from "../sat/taxonomy";
-import { validateQuestion } from "../sat/validate";
+import { validateAuthorship, validateQuestion } from "../sat/validate";
 
 /**
  * A question file: content/questions/<skill-id>.json. Questions written by hand
  * (or by Claude in a project session, without the API) live here, are reviewed
  * like code in pull requests, and are loaded into the bank with `npm run import`.
  */
-export const QuestionFileSchema = z.object({
-  skill: z.string(),
-  /** Who wrote the questions in this file. */
-  author: z.string(),
-  questions: z.array(
-    z.object({
-      /** Stable id, unique across all files, e.g. "transitions-001". Never reuse or renumber. */
-      id: z.string().regex(/^[a-z0-9-]+-\d{3,}$/, 'ids look like "<skill-id>-001"'),
-      difficulty: z.enum(DIFFICULTIES),
-      format: z.enum(QUESTION_FORMATS),
-      content: QuestionContentSchema,
-    }),
-  ),
+export const QuestionEntrySchema = z.object({
+  /** Stable id, unique across all files, e.g. "transitions-001". Never reuse or renumber. */
+  id: z.string().regex(/^[a-z0-9-]+-\d{3,}$/, 'ids look like "<skill-id>-001"'),
+  difficulty: z.enum(DIFFICULTIES),
+  format: z.enum(QUESTION_FORMATS),
+  content: QuestionContentSchema,
+  /** Required: writer, inputs, passage source and at least one review. */
+  authorship: AuthorshipSchema,
 });
-export type QuestionFile = z.infer<typeof QuestionFileSchema>;
+export type QuestionEntry = z.infer<typeof QuestionEntrySchema>;
+
+/** Entries are checked one at a time, so one bad question doesn't block the rest of its file. */
+const QuestionFileSchema = z.object({
+  skill: z.string(),
+  questions: z.array(z.unknown()),
+});
+
+export interface QuestionFile {
+  skill: string;
+  questions: QuestionEntry[];
+  /** Entries that don't match QuestionEntrySchema (for example, missing authorship). */
+  invalid: { id: string; problems: string[] }[];
+}
 
 export interface ImportReport {
   added: string[];
@@ -51,7 +59,21 @@ export async function readQuestionFiles(dir: string): Promise<{ file: string; da
         throw new Error(`${name}: "skill" is ${parsed.data.skill}, but the file name says ${name}`);
       }
       getSkill(parsed.data.skill); // throws on unknown skills
-      return { file: name, data: parsed.data };
+
+      const data: QuestionFile = { skill: parsed.data.skill, questions: [], invalid: [] };
+      parsed.data.questions.forEach((raw, i) => {
+        const entry = QuestionEntrySchema.safeParse(raw);
+        if (entry.success) {
+          data.questions.push(entry.data);
+        } else {
+          const id = (raw as { id?: unknown })?.id;
+          data.invalid.push({
+            id: typeof id === "string" ? id : `entry ${i + 1}`,
+            problems: entry.error.issues.map((iss) => `${iss.path.join(".") || "entry"}: ${iss.message}`),
+          });
+        }
+      });
+      return { file: name, data };
     }),
   );
 }
@@ -74,9 +96,10 @@ export async function importQuestionFiles(db: Db, dir: string): Promise<ImportRe
   const pool = existing.filter((r) => r.status !== "rejected").map((r) => ({ id: r.sourceId ?? r.id, content: r.content }));
 
   for (const { file, data } of files) {
+    for (const bad of data.invalid) report.failed.push({ ...bad, file });
     const ref = getSkill(data.skill);
     for (const q of data.questions) {
-      const issues = validateQuestion(q.content, ref, q.format);
+      const issues = [...validateQuestion(q.content, ref, q.format), ...validateAuthorship(q.authorship, q.content)];
       const errors = issues.filter((i) => i.severity === "error").map((i) => i.message);
       const warnings = issues.filter((i) => i.severity === "warning").map((i) => i.message);
 
@@ -102,11 +125,11 @@ export async function importQuestionFiles(db: Db, dir: string): Promise<ImportRe
         verification: null,
         provenance: {
           generator: "authored" as const,
-          author: data.author,
+          author: q.authorship.writer.name,
           promptVersion: "n/a",
           createdAt: new Date().toISOString(),
           sourceFile: `content/questions/${file}`,
-          publicDomainSource: q.content.publicDomainSource,
+          authorship: q.authorship,
         },
       };
 
@@ -116,6 +139,7 @@ export async function importQuestionFiles(db: Db, dir: string): Promise<ImportRe
         report.added.push(q.id);
       } else if (
         canonical(current.content) === canonical(q.content) &&
+        canonical(current.provenance.authorship) === canonical(q.authorship) &&
         current.difficulty === q.difficulty &&
         current.format === q.format &&
         current.skill === ref.skill.id

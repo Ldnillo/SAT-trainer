@@ -3,15 +3,15 @@
  *
  *   npm run bank -- stats           # counts per skill, difficulty and status
  *   npm run bank -- show <id>       # print one question with its answer
- *   npm run bank -- approve <id>    # mark a needs-review question verified
- *   npm run bank -- reject <id>
+ *   npm run bank -- approve <id> "Your name" ["edits made"]   # mark verified and record the review
+ *   npm run bank -- reject <id> "Your name"
  *   npm run bank -- export > bank.json
  */
 import { openDb } from "../src/lib/db/client";
-import { countQuestions, findQuestions, getQuestion, setQuestionStatus } from "../src/lib/db/questions";
+import { addReview, countQuestions, findQuestions, getQuestion, setQuestionStatus } from "../src/lib/db/questions";
 import { allSkills, DIFFICULTIES } from "../src/lib/sat/taxonomy";
 
-const [command, arg] = process.argv.slice(2);
+const [command, arg, reviewer, edits] = process.argv.slice(2);
 const { db, close } = await openDb();
 
 try {
@@ -35,9 +35,21 @@ try {
     }
     case "approve":
     case "reject": {
-      if (!arg || !(await getQuestion(db, arg))) throw new Error(`No question ${arg}`);
-      await setQuestionStatus(db, arg, command === "approve" ? "verified" : "rejected");
-      console.log(`${arg} marked ${command === "approve" ? "verified" : "rejected"}.`);
+      const q = arg ? await getQuestion(db, arg) : undefined;
+      if (!q) throw new Error(`No question ${arg}`);
+      if (!reviewer) throw new Error(`Say who reviewed it: npm run bank -- ${command} <id> "Your name"`);
+      if (q.sourceId && command === "approve") {
+        throw new Error(
+          `${q.sourceId} comes from ${q.provenance.sourceFile}; add your review to its "reviews" in that file and run npm run import.`,
+        );
+      }
+      await setQuestionStatus(db, q.id, command === "approve" ? "verified" : "rejected");
+      await addReview(db, q.id, {
+        reviewer,
+        date: new Date().toISOString().slice(0, 10),
+        edits: command === "reject" ? "rejected" : (edits ?? "none"),
+      });
+      console.log(`${arg} marked ${command === "approve" ? "verified" : "rejected"}; review by ${reviewer} recorded.`);
       break;
     }
     case "export": {
@@ -46,7 +58,7 @@ try {
       break;
     }
     default:
-      console.log("Usage: npm run bank -- stats | show <id> | approve <id> | reject <id> | export");
+      console.log('Usage: npm run bank -- stats | show <id> | approve <id> "Your name" ["edits"] | reject <id> "Your name" | export');
   }
 } finally {
   await close();
