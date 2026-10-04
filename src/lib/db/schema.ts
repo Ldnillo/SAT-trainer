@@ -1,4 +1,4 @@
-import { boolean, index, jsonb, pgTable, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
+import { boolean, index, integer, jsonb, pgTable, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
 import type { Provenance, QuestionContent, QuestionStatus, VerificationResult } from "../sat/question";
 import type { Difficulty, QuestionFormat, SectionId } from "../sat/taxonomy";
 
@@ -31,7 +31,7 @@ export const questions = pgTable(
   ],
 );
 
-/** Student accounts. A season pass will attach to a user later. */
+/** Student accounts. Season passes attach to a user (see seasonPasses). */
 export const users = pgTable("users", {
   id: uuid("id").primaryKey().defaultRandom(),
   /** Stored lowercased. */
@@ -102,5 +102,34 @@ export const attempts = pgTable(
   (t) => [
     index("attempts_user_idx").on(t.userId, t.createdAt),
     uniqueIndex("attempts_set_question_idx").on(t.practiceSetId, t.questionId),
+  ],
+);
+
+/**
+ * Season passes bought through Stripe Checkout. One row per payment. A student
+ * has practice access while any non-revoked pass covers the current time;
+ * buying again while a pass is active starts the new one when the old one ends.
+ */
+export const seasonPasses = pgTable(
+  "season_passes",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    startsAt: timestamp("starts_at", { withTimezone: true }).notNull(),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+    /** Makes fulfilment idempotent: the webhook and the return page may both report the same payment. */
+    stripeCheckoutSessionId: text("stripe_checkout_session_id").notNull().unique(),
+    stripePaymentIntentId: text("stripe_payment_intent_id"),
+    amountCents: integer("amount_cents").notNull(),
+    currency: text("currency").notNull(),
+    /** Set when the payment is fully refunded; the pass then stops counting. */
+    revokedAt: timestamp("revoked_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("season_passes_user_idx").on(t.userId, t.expiresAt),
+    index("season_passes_payment_intent_idx").on(t.stripePaymentIntentId),
   ],
 );

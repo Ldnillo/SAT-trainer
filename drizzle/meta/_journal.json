@@ -15,6 +15,13 @@
       "when": 1791074667468,
       "tag": "0001_trainer",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791077147866,
+      "tag": "0002_season_pass",
+      "breakpoints": true
     }
   ]
 }

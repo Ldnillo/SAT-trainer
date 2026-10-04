@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/auth/session";
+import { practiceAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { getSkill, SECTIONS, type SectionId } from "@/lib/sat/taxonomy";
@@ -26,7 +27,10 @@ export async function startPractice(form: FormData) {
   const user = await requireUser("/dashboard");
   const focus = parseFocus(form);
   if (!focus) redirect("/dashboard");
-  const set = await startPracticeSet(await getDb(), user.id, focus);
+  const db = await getDb();
+  // The pass is enforced here, not just by hiding buttons: a new set needs a pass or a free set left.
+  if (!(await practiceAccess(db, user.id)).allowed) redirect("/pass?required=1");
+  const set = await startPracticeSet(db, user.id, focus);
   if (!set) redirect("/dashboard?error=no-questions");
   redirect(`/practice/${set.id}`);
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ProgressChart } from "@/components/ProgressChart";
 import { requireUser } from "@/lib/auth/session";
+import { practiceAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { DOMAINS, getSkill, SECTION_NAMES } from "@/lib/sat/taxonomy";
@@ -21,7 +22,11 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets] = await Promise.all([loadAttempts(db, user.id), recentPracticeSets(db, user.id)]);
+  const [history, sets, access] = await Promise.all([
+    loadAttempts(db, user.id),
+    recentPracticeSets(db, user.id),
+    practiceAccess(db, user.id),
+  ]);
   const mastery = computeMastery(history);
   const scores = estimateScores(mastery);
   const progress = progressHistory(history);
@@ -34,6 +39,25 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
       {params.error === "no-questions" && (
         <p className={styles.error}>There are no practice questions for that yet. Try tailored practice instead.</p>
       )}
+
+      <p className={access.allowed ? styles.muted : styles.passNeeded}>
+        {access.pass.active ? (
+          <>
+            Season pass active until {access.pass.activeUntil!.toLocaleDateString("en-US", { month: "long", day: "numeric" })}.{" "}
+            <Link href="/pass">Manage</Link>
+          </>
+        ) : access.freeSetsLeft > 0 ? (
+          <>
+            {access.freeSetsLeft} free practice {access.freeSetsLeft === 1 ? "set" : "sets"} left.{" "}
+            <Link href="/pass">Get a season pass</Link> for unlimited practice.
+          </>
+        ) : (
+          <>
+            Your free practice is used up. <Link href="/pass">Get a season pass</Link> to start new sets. Your progress
+            stays here either way.
+          </>
+        )}
+      </p>
 
       <section className={styles.start}>
         <form action={startPractice}>

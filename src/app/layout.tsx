@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const user = await currentUser();
   return (
-    <html lang="en">
+    // Browser extensions (one sec, Grammarly...) add attributes to <html> before React loads; ignore those.
+    <html lang="en" suppressHydrationWarning>
       <body>
         <header className="site-header">
           <Link href={user ? "/dashboard" : "/"} className="brand">
