@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { requireUser } from "@/lib/auth/session";
 import { formatPrice, passConfig } from "@/lib/billing/config";
 import { practiceAccess } from "@/lib/billing/pass";
@@ -7,6 +8,8 @@ import { buyPass } from "./actions";
 import styles from "./pass.module.css";
 
 const dateFormat: Intl.DateTimeFormatOptions = { month: "long", day: "numeric", year: "numeric" };
+
+export const metadata: Metadata = { title: "Season pass" };
 
 export default async function PassPage({ searchParams }: PageProps<"/pass">) {
   const params = await searchParams;

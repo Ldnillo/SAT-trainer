@@ -1,45 +1,63 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
 import "katex/dist/katex.min.css";
+import { Logo } from "@/components/Logo";
 import { currentUser } from "@/lib/auth/session";
 import { signOut } from "./auth-actions";
 import "./globals.css";
 
+const font = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
+
 export const metadata: Metadata = {
-  title: "SAT Trainer",
-  description: "Original SAT-style practice questions, tailored to the skills you need most.",
+  title: { default: "NextScore: digital SAT practice that adapts to you", template: "%s · NextScore" },
+  description: "Original digital SAT practice questions, tailored to the skills where you can gain the most points.",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const user = await currentUser();
   return (
     // Browser extensions (one sec, Grammarly...) add attributes to <html> before React loads; ignore those.
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={font.variable} suppressHydrationWarning>
       <body>
         <header className="site-header">
-          <Link href={user ? "/dashboard" : "/"} className="brand">
-            SAT Trainer
-          </Link>
-          <nav>
-            {user ? (
-              <form action={signOut}>
-                <span className="who">{user.name}</span>
-                <button type="submit" className="link-button">
-                  Sign out
-                </button>
-              </form>
-            ) : (
-              <>
-                <Link href="/login">Sign in</Link>
-                <Link href="/signup">Sign up</Link>
-              </>
-            )}
-          </nav>
+          <div className="site-header-inner">
+            <Link href={user ? "/dashboard" : "/"} className="brand" aria-label="NextScore home">
+              <Logo />
+            </Link>
+            <nav>
+              {user ? (
+                <>
+                  <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/pass">Season pass</Link>
+                  <form action={signOut}>
+                    <span className="who">{user.name}</span>
+                    <button type="submit" className="link-button">
+                      Sign out
+                    </button>
+                  </form>
+                </>
+              ) : (
+                <>
+                  <Link href="/login">Sign in</Link>
+                  <Link href="/signup" className="button small">
+                    Start free
+                  </Link>
+                </>
+              )}
+            </nav>
+          </div>
         </header>
         <div className="content">{children}</div>
-        <footer className="disclaimer">
-          SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse,
-          this product. All practice questions on this site are original.
+        <footer className="site-footer">
+          <div className="site-footer-inner">
+            <Logo />
+            <p>
+              SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse,
+              this product. All practice questions on NextScore are original.
+            </p>
+            <p>© {new Date().getFullYear()} NextScore</p>
+          </div>
         </footer>
       </body>
     </html>

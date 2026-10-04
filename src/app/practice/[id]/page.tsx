@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AnswerInputs, AnswerReview, QuestionBody } from "@/components/Question";
@@ -7,6 +8,8 @@ import { getSkill } from "@/lib/sat/taxonomy";
 import { loadSetQuestions, getPracticeSet } from "@/lib/trainer/practice";
 import { answerQuestion, startPractice } from "../actions";
 import styles from "../practice.module.css";
+
+export const metadata: Metadata = { title: "Practice" };
 
 export default async function PracticePage({ params, searchParams }: PageProps<"/practice/[id]">) {
   const [{ id }, query] = await Promise.all([params, searchParams]);
