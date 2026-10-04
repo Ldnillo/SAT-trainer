@@ -576,6 +576,602 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-equations-one-variable-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $2 - 4x = -14$, what is the value of $x$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-4$"
+          },
+          {
+            "label": "B",
+            "text": "$-3$"
+          },
+          {
+            "label": "C",
+            "text": "$3$"
+          },
+          {
+            "label": "D",
+            "text": "$4$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Subtract $2$ from both sides of $2 - 4x = -14$. This gives $-4x = -16$. Divide both sides by $-4$ to get $x = \\frac{-16}{-4}$, which simplifies to $x = 4$. Check: $2 - 4(4) = 2 - 16 = -14$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This comes from dividing $-16$ by $4$ instead of by $-4$. The coefficient of $x$ is $-4$, so dividing by it makes the answer positive."
+          },
+          {
+            "label": "B",
+            "text": "This comes from adding $2$ to both sides instead of subtracting it, which gives $-4x = -12$, and then also dividing by $4$ instead of $-4$."
+          },
+          {
+            "label": "C",
+            "text": "This comes from adding $2$ to both sides instead of subtracting it, which gives $-4x = -12$ and then $x = 3$. Check: $2 - 4(3) = -10$, not $-14$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $2x + 5 = 17$, what is the value of $6x + 15$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6$"
+          },
+          {
+            "label": "B",
+            "text": "$41$"
+          },
+          {
+            "label": "C",
+            "text": "$51$"
+          },
+          {
+            "label": "D",
+            "text": "$81$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Notice that $6x + 15$ is $3$ times $2x + 5$, because $3(2x + 5) = 6x + 15$. So multiply both sides of $2x + 5 = 17$ by $3$. This gives $6x + 15 = 3(17)$, which simplifies to $6x + 15 = 51$.\n\nYou can also solve for $x$ first. Subtract $5$ from both sides of $2x + 5 = 17$ to get $2x = 12$. Divide both sides by $2$ to get $x = 6$. Then substitute: $6(6) + 15 = 36 + 15 = 51$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $x$, not the value of the expression $6x + 15$."
+          },
+          {
+            "label": "B",
+            "text": "This is the value of $6x + 5$. It comes from multiplying only the $2x$ by $3$ and leaving the $5$ unchanged, instead of multiplying the whole expression $2x + 5$ by $3$."
+          },
+          {
+            "label": "D",
+            "text": "This comes from adding $5$ to both sides instead of subtracting it, which gives $2x = 22$ and $x = 11$, so $6(11) + 15 = 81$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-013",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A hiker starts at an elevation of $1{,}250$ meters and climbs at a steady rate of $180$ meters per hour. After how many hours will the hiker reach an elevation of $2{,}150$ meters?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5"
+        ],
+        "explanation": "Let $h$ be the number of hours. The hiker's elevation after $h$ hours is $1{,}250 + 180h$ meters, so the equation is $1{,}250 + 180h = 2{,}150$. Subtract $1{,}250$ from both sides. This gives $180h = 900$. Divide both sides by $180$ to get $h = \\frac{900}{180}$, which simplifies to $h = 5$. Check: $1{,}250 + 180(5) = 1{,}250 + 900 = 2{,}150$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which of the following equations has no solution?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3(x - 2) = 3x + 6$"
+          },
+          {
+            "label": "B",
+            "text": "$3(x - 2) = 3x - 6$"
+          },
+          {
+            "label": "C",
+            "text": "$3(x - 2) = 2x - 6$"
+          },
+          {
+            "label": "D",
+            "text": "$3(x - 2) = -3x + 6$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Distribute the $3$ on the left side of each equation: $3(x - 2) = 3x - 6$. Then compare with each right side.\n\nIn choice A, the equation becomes $3x - 6 = 3x + 6$. Subtract $3x$ from both sides. This gives $-6 = 6$, which is false no matter what $x$ is. So the equation in choice A has no solution.\n\nAn equation like this has no solution when both sides have the same coefficient of $x$ but different constants.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This equation becomes $3x - 6 = 3x - 6$. Both sides are exactly the same, so every value of $x$ is a solution. It has infinitely many solutions, not none."
+          },
+          {
+            "label": "C",
+            "text": "This equation becomes $3x - 6 = 2x - 6$. Subtracting $2x$ from both sides gives $x - 6 = -6$, and adding $6$ to both sides gives $x = 0$. It has exactly one solution."
+          },
+          {
+            "label": "D",
+            "text": "This equation becomes $3x - 6 = -3x + 6$. Adding $3x$ to both sides gives $6x - 6 = 6$, adding $6$ gives $6x = 12$, and dividing by $6$ gives $x = 2$. It has exactly one solution."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A chemist has $40$ milliliters of a solution that is $25\\%$ acid. She adds $a$ milliliters of pure acid so that the new solution is $40\\%$ acid. What is the value of $a$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6$"
+          },
+          {
+            "label": "B",
+            "text": "$10$"
+          },
+          {
+            "label": "C",
+            "text": "$15$"
+          },
+          {
+            "label": "D",
+            "text": "$16$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "First find the amount of acid in the original solution: $25\\%$ of $40$ is $0.25(40) = 10$ milliliters.\n\nAdding $a$ milliliters of pure acid adds $a$ milliliters of acid, so the new solution has $10 + a$ milliliters of acid. It also increases the total volume to $40 + a$ milliliters. The new solution is $40\\%$ acid, so the equation is $10 + a = 0.4(40 + a)$.\n\nDistribute $0.4$ on the right side. This gives $10 + a = 16 + 0.4a$. Subtract $0.4a$ from both sides to get $10 + 0.6a = 16$. Subtract $10$ from both sides to get $0.6a = 6$. Divide both sides by $0.6$ to get $a = \\frac{6}{0.6}$, which simplifies to $a = 10$.\n\nCheck: the new solution has $10 + 10 = 20$ milliliters of acid in $40 + 10 = 50$ milliliters, and $\\frac{20}{50} = 0.4$, or $40\\%$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $0.4(40) - 10 = 6$, which treats the total volume as if it stayed $40$ milliliters. Adding acid also increases the total volume, so more than $6$ milliliters is needed."
+          },
+          {
+            "label": "C",
+            "text": "This is the difference between the percents, $40 - 25 = 15$. A difference in percents is not a number of milliliters."
+          },
+          {
+            "label": "D",
+            "text": "This is $40\\%$ of $40$, the amount of acid a $40$-milliliter solution at $40\\%$ would hold. It is not the amount of acid to add."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-016",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What value of $x$ is the solution to the equation $0.4(x + 15) = 0.25x + 9$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Distribute $0.4$ on the left side: $0.4x + 0.4(15) = 0.4x + 6$. The equation becomes $0.4x + 6 = 0.25x + 9$. Subtract $0.25x$ from both sides. This gives $0.15x + 6 = 9$. Subtract $6$ from both sides to get $0.15x = 3$. Divide both sides by $0.15$ to get $x = \\frac{3}{0.15}$, which simplifies to $x = 20$.\n\nCheck: the left side is $0.4(20 + 15) = 0.4(35) = 14$, and the right side is $0.25(20) + 9 = 5 + 9 = 14$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-017",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the equations below, $c$ is a constant. $$\\begin{aligned} 5x - c &= 2x + 4 \\\\ x + c &= 10 \\end{aligned}$$ The solution to the first equation is twice the solution to the second equation. What is the value of $c$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "8"
+        ],
+        "explanation": "Solve each equation for $x$ in terms of $c$.\n\nFirst equation: subtract $2x$ from both sides of $5x - c = 2x + 4$ to get $3x - c = 4$. Add $c$ to both sides to get $3x = 4 + c$. Divide both sides by $3$ to get $x = \\frac{4 + c}{3}$.\n\nSecond equation: subtract $c$ from both sides of $x + c = 10$ to get $x = 10 - c$.\n\nThe first solution is twice the second, so $\\frac{4 + c}{3} = 2(10 - c)$. Distribute on the right to get $\\frac{4 + c}{3} = 20 - 2c$. Multiply both sides by $3$ to get $4 + c = 60 - 6c$. Add $6c$ to both sides to get $4 + 7c = 60$. Subtract $4$ from both sides to get $7c = 56$. Divide both sides by $7$ to get $c = 8$.\n\nCheck: with $c = 8$, the first equation is $5x - 8 = 2x + 4$, so $3x = 12$ and $x = 4$. The second is $x + 8 = 10$, so $x = 2$. And $4$ is twice $2$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the equation $ax - 7 = 3x + b$, $a$ and $b$ are constants and $a \\neq 3$. Which expression gives the solution for $x$ in terms of $a$ and $b$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{b + 7}{a - 3}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{b - 7}{a - 3}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{b + 7}{a + 3}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{b + 7}{3 - a}$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Collect the terms with $x$ on one side and the other terms on the other side. Subtract $3x$ from both sides of $ax - 7 = 3x + b$. This gives $ax - 3x - 7 = b$. Add $7$ to both sides to get $ax - 3x = b + 7$.\n\nFactor $x$ out of the left side: $x(a - 3) = b + 7$. Because $a \\neq 3$, $a - 3$ is not zero, so you can divide both sides by $a - 3$. This gives $x = \\frac{b + 7}{a - 3}$.\n\nCheck with numbers: if $a = 5$ and $b = 1$, the equation is $5x - 7 = 3x + 1$, so $2x = 8$ and $x = 4$. The expression gives $\\frac{1 + 7}{5 - 3} = \\frac{8}{2} = 4$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This comes from subtracting $7$ from both sides instead of adding $7$. To remove the $-7$ on the left, you add $7$, which makes the right side $b + 7$."
+          },
+          {
+            "label": "C",
+            "text": "This comes from adding $3x$ to both sides instead of subtracting it, which wrongly gives $a + 3$ as the coefficient of $x$."
+          },
+          {
+            "label": "D",
+            "text": "This has the wrong sign. Moving the $x$-terms to the right side gives $-7 - b = 3x - ax$, so $x = \\frac{-7 - b}{3 - a}$, which equals $\\frac{b + 7}{a - 3}$. Dropping the negative sign on the numerator gives this incorrect choice. With $a = 5$ and $b = 1$ it gives $-4$, not $4$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A $26$-foot rope is cut into two pieces. The longer piece is $4$ feet shorter than $3$ times the length of the shorter piece. What is the length, in feet, of the longer piece?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$5.5$"
+          },
+          {
+            "label": "B",
+            "text": "$7.5$"
+          },
+          {
+            "label": "C",
+            "text": "$18.5$"
+          },
+          {
+            "label": "D",
+            "text": "$20.5$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Let $s$ be the length, in feet, of the shorter piece. The longer piece is $4$ feet shorter than $3$ times $s$, so it is $3s - 4$ feet long. The two pieces add up to $26$ feet, so the equation is $s + (3s - 4) = 26$.\n\nCombine like terms on the left. This gives $4s - 4 = 26$. Add $4$ to both sides to get $4s = 30$. Divide both sides by $4$ to get $s = 7.5$.\n\nThe longer piece is $3s - 4 = 3(7.5) - 4 = 22.5 - 4 = 18.5$ feet. Check: $7.5 + 18.5 = 26$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This comes from subtracting $4$ from both sides of $4s - 4 = 26$ instead of adding $4$, which gives $4s = 22$ and $s = 5.5$. That value is also the shorter piece's length (under the error), not the longer piece's."
+          },
+          {
+            "label": "B",
+            "text": "This is the length of the shorter piece, $s$. The question asks for the longer piece, $3s - 4$."
+          },
+          {
+            "label": "D",
+            "text": "This is $26 - 5.5$. It comes from the sign error in $4s = 22$ (subtracting $4$ instead of adding it) and then subtracting the shorter piece from $26$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-one-variable-020",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Theo has already read $84$ pages of a $300$-page book. He plans to read $12$ pages each day until he finishes. The equation $84 + 12d = 300$ represents this situation, where $d$ is the number of days it will take Theo to finish the book. What is the value of $d$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$7$"
+          },
+          {
+            "label": "B",
+            "text": "$18$"
+          },
+          {
+            "label": "C",
+            "text": "$25$"
+          },
+          {
+            "label": "D",
+            "text": "$32$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Subtract $84$ from both sides of $84 + 12d = 300$. This gives $12d = 216$. Divide both sides by $12$ to get $d = \\frac{216}{12}$, which simplifies to $d = 18$. Check: $84 + 12(18) = 84 + 216 = 300$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $\\frac{84}{12}$, the number of days it would take to read the pages Theo has already read, not the pages he still has left."
+          },
+          {
+            "label": "C",
+            "text": "This is $\\frac{300}{12}$, the number of days to read the whole book from the beginning. It ignores the $84$ pages Theo has already read."
+          },
+          {
+            "label": "D",
+            "text": "This comes from adding $84$ to both sides instead of subtracting it, which gives $12d = 384$ and $d = 32$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

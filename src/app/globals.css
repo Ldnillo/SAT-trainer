@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --background: #f6f7fb;
   --surface: #ffffff;
   --foreground: #14172e;
@@ -22,8 +23,10 @@
   --bad-soft: color-mix(in srgb, var(--bad) 8%, var(--surface));
 }
 
+/* Dark colors: when the device is dark and the student hasn't picked light, or when they picked dark. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --background: #0b0d1a;
     --surface: #14172b;
     --foreground: #e9ebf7;
@@ -42,6 +45,27 @@
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
     --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 32px rgb(0 0 0 / 0.35);
   }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0b0d1a;
+  --surface: #14172b;
+  --foreground: #e9ebf7;
+  --muted: #9ba1c0;
+  --border: #272b47;
+  --accent: #8b8fff;
+  --accent-strong: #a5a8ff;
+  --accent-soft: #1d2045;
+  --on-accent: #0b0d1a;
+  --highlight: #34d399;
+  --ok: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 32px rgb(0 0 0 / 0.35);
 }
 
 * {
@@ -180,6 +204,108 @@ th {
 
 .site-header .link-button:hover {
   color: var(--accent);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Show the icon for the mode a click switches to: a moon while light, a sun while dark. */
+.theme-icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-icon-sun {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .theme-icon-moon {
+    display: none;
+  }
+}
+
+.theme-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.theme-picker legend {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.theme-option:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.theme-option input {
+  accent-color: var(--accent);
+  margin: 0;
+}
+
+.theme-swatch {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.theme-swatch-light {
+  background: linear-gradient(135deg, #ffffff 50%, #f6f7fb 50%);
+}
+
+.theme-swatch-dark {
+  background: linear-gradient(135deg, #14172b 50%, #0b0d1a 50%);
+}
+
+.theme-swatch-system {
+  background: linear-gradient(135deg, #ffffff 50%, #14172b 50%);
+}
+
+.theme-hint {
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .brand {
@@ -511,10 +637,18 @@ select:focus {
   }
 }
 
-/* Signed in, the nav has three links: keep only the logo mark so they fit on one line. */
+/*
+ * Signed in, the nav has three links plus the theme button: keep only the logo mark and move
+ * "Sign out" to Settings > Account so they fit on one line.
+ */
 @media (max-width: 480px) {
-  .site-header[data-signed-in] .brand .wordmark {
+  .site-header[data-signed-in] .brand .wordmark,
+  .site-header[data-signed-in] nav form {
     display: none;
+  }
+
+  .site-header nav {
+    gap: 10px;
   }
 }
 

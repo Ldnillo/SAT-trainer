@@ -680,6 +680,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "boundaries-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Greenvale Public Library recently began lending more than just books. Patrons can now borrow power drills, sewing machines, and even telescopes with their library ______ the program has been so popular that the library plans to double its collection of tools next year."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "cards,"
+          },
+          {
+            "label": "B",
+            "text": "cards;"
+          },
+          {
+            "label": "C",
+            "text": "cards"
+          },
+          {
+            "label": "D",
+            "text": "cards that"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "\"Patrons can now borrow power drills, sewing machines, and even telescopes with their library cards\" is an independent clause: it has a subject (\"Patrons\") and a verb (\"can borrow\") and could stand alone as a sentence. \"The program has been so popular that the library plans to double its collection of tools next year\" is also an independent clause. Two independent clauses with no conjunction between them can be joined by a semicolon, so \"cards;\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "C",
+            "text": "With no punctuation, the two independent clauses run together into a fused sentence."
+          },
+          {
+            "label": "D",
+            "text": "\"That\" would start a clause describing the cards, but \"cards that the program has been so popular...\" makes no grammatical sense, since the second clause is complete on its own and does not describe the cards."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Unlike whales and seals, sea otters have almost no blubber to protect them from cold ocean water. They depend instead on a single remarkable ______ their fur, the densest of any animal's, traps a layer of air that keeps cold water away from their skin."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "feature,"
+          },
+          {
+            "label": "B",
+            "text": "feature"
+          },
+          {
+            "label": "C",
+            "text": "feature which"
+          },
+          {
+            "label": "D",
+            "text": "feature:"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first part, \"They depend instead on a single remarkable feature,\" is an independent clause that points ahead to something it has not yet named. The second part, \"their fur ... traps a layer of air that keeps cold water away from their skin,\" names and explains that feature, and it is also an independent clause. A colon is used after an independent clause to introduce an explanation or example of what came before it, so \"feature:\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "B",
+            "text": "With no punctuation, the two independent clauses run together into a fused sentence."
+          },
+          {
+            "label": "C",
+            "text": "\"Which\" would begin a clause describing the feature, but \"which their fur ... traps a layer of air\" is ungrammatical, because the words after \"which\" already form a complete clause with its own subject and verb."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Researchers who study whistled languages often point to the Canary Islands. Silbo Gomero, a whistled form of Spanish that shepherds on La Gomera, one of the islands in the chain, have used for ______ can carry messages across the island's deep ravines far more clearly than shouting can."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "centuries,"
+          },
+          {
+            "label": "B",
+            "text": "centuries"
+          },
+          {
+            "label": "C",
+            "text": "centuries;"
+          },
+          {
+            "label": "D",
+            "text": "centuries—"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The main sentence is \"Silbo Gomero ... can carry messages across the island's deep ravines.\" Everything between \"Silbo Gomero,\" and the blank is extra information (an appositive) describing Silbo Gomero: \"a whistled form of Spanish that shepherds on La Gomera, one of the islands in the chain, have used for centuries.\" This appositive opens with a comma after \"Silbo Gomero,\" so it must close with a matching comma before the verb \"can carry.\" The pair of commas around \"one of the islands in the chain\" is a smaller interruption inside the appositive and does not close it. So \"centuries,\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Without a comma, the appositive that began after \"Silbo Gomero,\" is never closed, so the sentence's extra information runs straight into the verb \"can carry.\""
+          },
+          {
+            "label": "C",
+            "text": "A semicolon must join two independent clauses, but the words before it (\"Silbo Gomero, a whistled form of Spanish that ... have used for centuries\") are not a complete clause; the subject \"Silbo Gomero\" has not yet received its verb."
+          },
+          {
+            "label": "D",
+            "text": "The appositive opens with a comma after \"Silbo Gomero,\" so it must close with a comma; a dash cannot close an interruption that a comma opened."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Although the Wright brothers' first powered flight, on December 17, 1903, lasted only about twelve ______ it was the first time a piloted, heavier-than-air machine had made a controlled, sustained flight under its own power."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "seconds;"
+          },
+          {
+            "label": "B",
+            "text": "seconds."
+          },
+          {
+            "label": "C",
+            "text": "seconds,"
+          },
+          {
+            "label": "D",
+            "text": "seconds:"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The sentence opens with a dependent clause that begins with \"Although\": \"Although the Wright brothers' first powered flight ... lasted only about twelve seconds.\" A dependent clause cannot stand alone; it must attach to an independent clause, here \"it was the first time a piloted, heavier-than-air machine had made a controlled, sustained flight under its own power.\" When an introductory dependent clause comes before the main clause, a comma separates them, so \"seconds,\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A semicolon must join two independent clauses, but the clause beginning with \"Although\" is dependent and cannot stand on its own."
+          },
+          {
+            "label": "B",
+            "text": "A period would leave \"Although the Wright brothers' first powered flight ... lasted only about twelve seconds\" as a sentence fragment, because a clause beginning with \"Although\" cannot stand alone."
+          },
+          {
+            "label": "D",
+            "text": "A colon must follow an independent clause, but the clause beginning with \"Although\" is dependent."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Making maple syrup takes patience. The sap that flows from sugar maple trees in early spring is mostly water and contains only about 2 percent ______ roughly forty gallons of sap must be boiled down to make a single gallon of syrup."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "sugar, so"
+          },
+          {
+            "label": "B",
+            "text": "sugar so,"
+          },
+          {
+            "label": "C",
+            "text": "sugar, so,"
+          },
+          {
+            "label": "D",
+            "text": "sugar so"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "\"The sap ... contains only about 2 percent sugar\" and \"roughly forty gallons of sap must be boiled down to make a single gallon of syrup\" are both independent clauses. One correct way to join two independent clauses is with a comma followed by a coordinating conjunction such as \"so.\" The comma goes before \"so,\" and no comma follows it, so \"sugar, so\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The comma is in the wrong place. When a coordinating conjunction joins two independent clauses, the comma goes before the conjunction, not after it."
+          },
+          {
+            "label": "C",
+            "text": "The comma before \"so\" is correct, but the extra comma after \"so\" wrongly separates the conjunction from the clause it introduces."
+          },
+          {
+            "label": "D",
+            "text": "When \"so\" joins two independent clauses, a comma is needed before it; leaving it out runs the clauses together."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In a hypothetical study of city birds, ecologist Lena Hartmann recorded the songs of great tits living near roads with different amounts of traffic. The higher-pitched songs that birds near the busiest roads ______ easier to hear over the low rumble of engines than the lower songs of birds in quiet parks."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "produced, were"
+          },
+          {
+            "label": "B",
+            "text": "produced; were"
+          },
+          {
+            "label": "C",
+            "text": "produced—were"
+          },
+          {
+            "label": "D",
+            "text": "produced were"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the second sentence is a long noun phrase: \"The higher-pitched songs that birds near the busiest roads produced.\" The clause \"that birds near the busiest roads produced\" is essential, because it tells which songs are meant, so it is not set off by punctuation. The verb of the sentence is \"were.\" No punctuation should separate a subject from its verb, even when the subject is long, so \"produced were\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The comma wrongly separates the subject (\"The higher-pitched songs that birds near the busiest roads produced\") from its verb, \"were.\" There is no opening comma, so this is not the end of a nonessential element."
+          },
+          {
+            "label": "B",
+            "text": "A semicolon must join two independent clauses, but the words before it are only a subject with no main verb, and \"were easier to hear...\" has no subject."
+          },
+          {
+            "label": "C",
+            "text": "The dash wrongly separates the subject from its verb, \"were.\" There is no earlier dash that this one could be closing."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker picked a different answer, key re-checked and confirmed: the long subject 'The higher-pitched songs that birds near the busiest roads produced' takes no punctuation before its verb 'were'"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The new gallery of musical instruments at the Harmon Museum displays more than two hundred objects from six continents, ______ a West African kora, a Persian santur, and an Andean charango. Visitors can listen to recordings of each instrument through headphones."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "including:"
+          },
+          {
+            "label": "B",
+            "text": "including"
+          },
+          {
+            "label": "C",
+            "text": "including,"
+          },
+          {
+            "label": "D",
+            "text": "including;"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The word \"including\" leads directly into its objects: \"a West African kora, a Persian santur, and an Andean charango.\" No punctuation should come between a word like \"including\" (or \"such as\") and the items it introduces, because they belong to the same phrase. So \"including\" with no punctuation is correct. (The comma before \"including\" is already in the passage.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A colon must follow an independent clause, but \"including\" is in the middle of a phrase; the colon would wrongly separate \"including\" from its own objects."
+          },
+          {
+            "label": "C",
+            "text": "The comma wrongly separates \"including\" from the items that complete its phrase."
+          },
+          {
+            "label": "D",
+            "text": "A semicolon must join two independent clauses, but \"a West African kora, a Persian santur, and an Andean charango\" is only a list of nouns, not a clause."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker picked a different answer, key re-checked and confirmed: no punctuation belongs between 'including' and the items it introduces"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Giant pandas belong to the bear family, but their diet is unusual for a bear. A wild panda can spend as many as fourteen hours a day eating ______ This plant makes up almost everything the animal eats."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "bamboo, this"
+          },
+          {
+            "label": "B",
+            "text": "bamboo this"
+          },
+          {
+            "label": "C",
+            "text": "bamboo. This"
+          },
+          {
+            "label": "D",
+            "text": "bamboo and, this"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "\"A wild panda can spend as many as fourteen hours a day eating bamboo\" is a complete sentence. \"This plant makes up almost everything the animal eats\" is also a complete sentence. A period correctly separates two complete sentences, and the next word, \"This,\" is capitalized because it begins a new sentence. So \"bamboo. This\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "B",
+            "text": "With no punctuation, the two independent clauses run together into a fused sentence."
+          },
+          {
+            "label": "D",
+            "text": "When \"and\" joins two independent clauses, the comma belongs before \"and,\" not after it; the comma after \"and\" wrongly separates the conjunction from its clause."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Eiffel Tower was built for the 1889 World's Fair in Paris, and its original permit allowed it to stand for only twenty years. The tower survived in part because engineers found a practical use for its great ______ made it an ideal platform for radio antennas."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "height, which"
+          },
+          {
+            "label": "B",
+            "text": "height. Which"
+          },
+          {
+            "label": "C",
+            "text": "height; which"
+          },
+          {
+            "label": "D",
+            "text": "height which"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The words after the blank, \"which made it an ideal platform for radio antennas,\" form a relative clause describing \"its great height.\" This clause adds extra (nonessential) information about the tower's height, which is already clearly identified, so it is set off from the main clause with a comma. Because the relative clause comes at the end of the sentence, only one comma, before \"which,\" is needed. So \"height, which\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A period would leave \"Which made it an ideal platform for radio antennas\" as a sentence fragment, because a clause beginning with \"which\" cannot stand alone."
+          },
+          {
+            "label": "C",
+            "text": "A semicolon must join two independent clauses, but \"which made it an ideal platform for radio antennas\" is a dependent clause."
+          },
+          {
+            "label": "D",
+            "text": "A relative clause that adds nonessential information about a noun that is already identified (\"its great height\") must be set off with a comma."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Urban planner Tomás Ferreira expected that new benches along a riverside walking path would mainly benefit older visitors. The benches turned out to be popular with nearly every age ______ teenagers were the group most often found sitting on them in the evenings."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "group, in fact,"
+          },
+          {
+            "label": "B",
+            "text": "group; in fact"
+          },
+          {
+            "label": "C",
+            "text": "group in fact;"
+          },
+          {
+            "label": "D",
+            "text": "group; in fact,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "\"The benches turned out to be popular with nearly every age group\" and \"teenagers were the group most often found sitting on them in the evenings\" are both independent clauses. The phrase \"in fact\" belongs with the second clause, because it introduces a stronger point that builds on the first (not only were the benches popular with all ages, but teenagers used them most). Two independent clauses joined by a transitional phrase need a semicolon before the phrase, and an introductory phrase like \"in fact\" is followed by a comma. So \"group; in fact,\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Commas alone cannot join two independent clauses. Putting \"in fact\" between commas still leaves a comma splice between \"...every age group\" and \"teenagers were...\""
+          },
+          {
+            "label": "B",
+            "text": "The semicolon is correctly placed, but the introductory phrase \"in fact\" at the start of the second clause needs a comma after it."
+          },
+          {
+            "label": "C",
+            "text": "The semicolon placed after \"in fact\" attaches the phrase to the first clause (\"popular with nearly every age group in fact\"), but \"in fact\" introduces the stronger point in the second clause. The semicolon belongs before \"in fact.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

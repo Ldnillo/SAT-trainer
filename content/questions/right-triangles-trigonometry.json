@@ -561,6 +561,604 @@
           }
         ]
       }
+    },
+    {
+      "id": "right-triangles-trigonometry-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $XYZ$, angle $Y$ is a right angle, $XZ = 35$, and $\\cos(Z) = 0.6$. What is the length of $XY$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$14$"
+          },
+          {
+            "label": "B",
+            "text": "$21$"
+          },
+          {
+            "label": "C",
+            "text": "$28$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{175}{3}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Since angle $Y$ is the right angle, side $XZ$ is the hypotenuse. For angle $Z$, the adjacent leg is $YZ$, so $\\cos(Z) = \\frac{YZ}{XZ}$. Substituting gives $0.6 = \\frac{YZ}{35}$. Multiplying both sides by $35$ gives $YZ = 0.6 \\times 35 = 21$. Now use the Pythagorean theorem to find the other leg, $XY$: $XY^2 + YZ^2 = XZ^2$, so $XY^2 + 21^2 = 35^2$. Squaring gives $XY^2 + 441 = 1{,}225$. Subtracting $441$ from both sides gives $XY^2 = 784$. Taking the square root of both sides gives $XY = 28$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts the leg $YZ = 21$ from the hypotenuse, $35 - 21 = 14$, instead of using the Pythagorean theorem."
+          },
+          {
+            "label": "B",
+            "text": "This is $YZ$, the leg adjacent to angle $Z$, not $XY$, the leg opposite angle $Z$."
+          },
+          {
+            "label": "D",
+            "text": "This divides $35$ by $0.6$, treating $XZ$ as the adjacent leg instead of the hypotenuse."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A rectangular community garden is $20$ meters wide and $21$ meters long. A straight path runs diagonally from one corner of the garden to the opposite corner. What is the length, in meters, of the path?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$29$"
+          },
+          {
+            "label": "B",
+            "text": "$41$"
+          },
+          {
+            "label": "C",
+            "text": "$\\sqrt{41}$"
+          },
+          {
+            "label": "D",
+            "text": "$841$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The width, the length and the diagonal path form a right triangle, with the right angle at the corner between the width and the length. The path is the hypotenuse. By the Pythagorean theorem, $d^2 = 20^2 + 21^2$. Squaring each side length gives $d^2 = 400 + 441$, and adding gives $d^2 = 841$. Taking the square root of both sides gives $d = 29$, so the path is $29$ meters long.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This adds the two side lengths, $20 + 21 = 41$, instead of using the Pythagorean theorem."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts the squares, $441 - 400 = 41$, and takes the square root, which would find a leg rather than the hypotenuse."
+          },
+          {
+            "label": "D",
+            "text": "This is $d^2$, the square of the path length; it still needs a square root."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The lengths of the two legs of a right triangle are $x$ and $x + 7$, and the length of the hypotenuse is $x + 8$, where $x$ is a positive number. What is the area of the triangle?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "30"
+        ],
+        "explanation": "By the Pythagorean theorem, $x^2 + (x + 7)^2 = (x + 8)^2$. Expanding the squares gives $x^2 + x^2 + 14x + 49 = x^2 + 16x + 64$. Combining like terms on the left gives $2x^2 + 14x + 49 = x^2 + 16x + 64$. Subtracting $x^2 + 16x + 64$ from both sides gives $x^2 - 2x - 15 = 0$. Factoring gives $(x - 5)(x + 3) = 0$, so $x = 5$ or $x = -3$. A length must be positive, so $x = 5$. The legs are then $5$ and $5 + 7 = 12$ (and the hypotenuse is $5 + 8 = 13$; check: $25 + 144 = 169 = 13^2$). The area of a right triangle is half the product of its legs: $\\frac{1}{2} \\times 5 \\times 12 = \\frac{60}{2} = 30$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A lifeguard's eyes are $12$ feet above the level beach. She spots a swimmer at the water's edge at an angle of depression of $30^\\circ$ from her eyes. What is the horizontal distance, in feet, from the point on the beach directly below the lifeguard's eyes to the swimmer?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4\\sqrt{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$6$"
+          },
+          {
+            "label": "C",
+            "text": "$24$"
+          },
+          {
+            "label": "D",
+            "text": "$12\\sqrt{3}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Picture a right triangle with the right angle at the point on the beach directly below the lifeguard's eyes. The vertical leg is the $12$-foot height, and the horizontal leg is the distance $d$ to the swimmer. The angle of depression from the eyes equals the angle of elevation from the swimmer up to the eyes, so the angle at the swimmer is $30^\\circ$. From that angle, the $12$-foot side is opposite and $d$ is adjacent, so $\\tan(30^\\circ) = \\frac{12}{d}$. Since $\\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$, this gives $\\frac{1}{\\sqrt{3}} = \\frac{12}{d}$. Multiplying both sides by $d\\sqrt{3}$ gives $d = 12\\sqrt{3}$. (This also matches the $30^\\circ$-$60^\\circ$-$90^\\circ$ pattern: the side opposite $30^\\circ$ is $12$, so the side opposite $60^\\circ$ is $12\\sqrt{3}$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This computes $12 \\tan(30^\\circ)$, putting the $12$-foot height adjacent to the $30^\\circ$ angle instead of opposite it."
+          },
+          {
+            "label": "B",
+            "text": "This computes $12 \\sin(30^\\circ)$, which uses the wrong trigonometric ratio and treats $12$ as the hypotenuse."
+          },
+          {
+            "label": "C",
+            "text": "This is the length of the line of sight from the lifeguard's eyes to the swimmer (the hypotenuse), not the horizontal distance."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-015",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $RST$, angle $S$ is a right angle, $RS = 20$, and $ST = 15$. What is the value of $\\tan(R)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "3/4",
+          ".75",
+          "0.75"
+        ],
+        "explanation": "The tangent of an angle in a right triangle is the length of the opposite leg divided by the length of the adjacent leg. For angle $R$, the opposite leg is $ST = 15$ and the adjacent leg is $RS = 20$. So $\\tan(R) = \\frac{15}{20}$. Dividing the numerator and denominator by $5$ simplifies this to $\\frac{3}{4}$, which is $0.75$ as a decimal.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A student standing on level ground measures the angle of elevation to the top of a vertical flagpole as $45^\\circ$. She then walks $20$ meters directly away from the flagpole and measures the angle of elevation as $30^\\circ$. What is the height, in meters, of the flagpole?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{20\\sqrt{3}}{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$20$"
+          },
+          {
+            "label": "C",
+            "text": "$20\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$10 + 10\\sqrt{3}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Let $h$ be the height of the flagpole and $d$ be the student's first distance from its base. Each measurement makes a right triangle with the right angle at the base of the flagpole. From the first spot, $\\tan(45^\\circ) = \\frac{h}{d}$. Since $\\tan(45^\\circ) = 1$, this gives $1 = \\frac{h}{d}$, so $d = h$. From the second spot, the distance to the base is $d + 20 = h + 20$, so $\\tan(30^\\circ) = \\frac{h}{h + 20}$. Since $\\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$, this gives $\\frac{1}{\\sqrt{3}} = \\frac{h}{h + 20}$. Cross-multiplying gives $h + 20 = h\\sqrt{3}$. Subtracting $h$ from both sides gives $20 = h\\sqrt{3} - h$, and factoring out $h$ gives $20 = h(\\sqrt{3} - 1)$. Dividing both sides by $\\sqrt{3} - 1$ gives $h = \\frac{20}{\\sqrt{3} - 1}$. To simplify, multiply the numerator and denominator by $\\sqrt{3} + 1$: $h = \\frac{20(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{20(\\sqrt{3} + 1)}{3 - 1} = \\frac{20(\\sqrt{3} + 1)}{2}$. Dividing $20$ by $2$ gives $h = 10(\\sqrt{3} + 1) = 10 + 10\\sqrt{3}$, about $27.3$ meters.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses only the $20$ meters walked as the horizontal leg, solving $\\tan(30^\\circ) = \\frac{h}{20}$, and ignores the first distance $d$."
+          },
+          {
+            "label": "B",
+            "text": "This assumes the height equals the $20$ meters walked. The $45^\\circ$ angle means the height equals the first distance $d$, not the $20$ meters."
+          },
+          {
+            "label": "C",
+            "text": "This computes $20\\tan(60^\\circ)$, using the wrong angle and only the $20$ meters walked."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-017",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In right triangle $ABC$, angle $C$ is the right angle, $AC = 15$, and $BC = 20$. Point $D$ lies on side $AB$ so that segment $CD$ is perpendicular to $AB$. What is the length of $CD$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "12"
+        ],
+        "explanation": "First find the hypotenuse $AB$ with the Pythagorean theorem: $AB^2 = 15^2 + 20^2 = 225 + 400 = 625$. Taking the square root gives $AB = 25$. Next, find the area of the triangle in two ways. Using the legs as base and height, the area is $\\frac{1}{2} \\times 15 \\times 20 = 150$. Using $AB$ as the base, the height is $CD$, so the area is also $\\frac{1}{2} \\times 25 \\times CD$. Setting these equal gives $\\frac{1}{2} \\times 25 \\times CD = 150$. Multiplying both sides by $2$ gives $25 \\times CD = 300$. Dividing both sides by $25$ gives $CD = 12$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, angle $C$ is a right angle, the measure of angle $A$ is $30^\\circ$, and $AB = 18$. What is the length of $BC$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$9\\sqrt{2}$"
+          },
+          {
+            "label": "B",
+            "text": "$9$"
+          },
+          {
+            "label": "C",
+            "text": "$9\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$36$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Since angle $C$ is the right angle, $AB$ is the hypotenuse. Side $BC$ is opposite the $30^\\circ$ angle at $A$. In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, the side opposite the $30^\\circ$ angle is half the hypotenuse. Dividing $18$ by $2$ gives $BC = 9$. (Equivalently, $\\sin(30^\\circ) = \\frac{BC}{18}$; since $\\sin(30^\\circ) = \\frac{1}{2}$, multiplying both sides by $18$ gives $BC = 9$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses the $45^\\circ$-$45^\\circ$-$90^\\circ$ pattern, dividing the hypotenuse by $\\sqrt{2}$, but this triangle has a $30^\\circ$ angle."
+          },
+          {
+            "label": "C",
+            "text": "This is $AC$, the side opposite the $60^\\circ$ angle, not the side opposite the $30^\\circ$ angle."
+          },
+          {
+            "label": "D",
+            "text": "This doubles the hypotenuse instead of halving it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "An isosceles trapezoid has parallel sides of lengths $10$ and $22$. Each of the two nonparallel sides makes a $60^\\circ$ angle with the longer parallel side. What is the area of the trapezoid?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$32\\sqrt{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$96\\sqrt{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$192\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$96$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Draw a perpendicular segment from each end of the shorter side down to the longer side. This splits the trapezoid into a $10$-by-$h$ rectangle in the middle and two congruent right triangles, each with its right angle where a perpendicular meets the longer side. The two triangles share the extra length of the longer side: $22 - 10 = 12$, so each triangle's bottom leg is $\\frac{12}{2} = 6$. In each right triangle the angle on the longer side is $60^\\circ$, so the bottom leg of $6$ is the side next to that angle and the height $h$ is opposite it. Then $\\tan(60^\\circ) = \\frac{h}{6}$. Since $\\tan(60^\\circ) = \\sqrt{3}$, multiplying both sides by $6$ gives $h = 6\\sqrt{3}$. The area of a trapezoid is $\\frac{1}{2}(b_1 + b_2)h$. Substituting gives $\\frac{1}{2}(10 + 22)(6\\sqrt{3})$. Adding gives $\\frac{1}{2}(32)(6\\sqrt{3})$, and $\\frac{1}{2} \\times 32 = 16$, so the area is $16 \\times 6\\sqrt{3} = 96\\sqrt{3}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This swaps the legs of the $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, using $h = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}$, so the area comes out as $16 \\times 2\\sqrt{3}$."
+          },
+          {
+            "label": "C",
+            "text": "This forgets the $\\frac{1}{2}$ in the trapezoid area formula, computing $32 \\times 6\\sqrt{3}$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $6$, the bottom leg of each right triangle, as the height of the trapezoid."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Right triangles $ABC$ and $DEF$ are similar, with right angles at $C$ and $F$, and vertices $A$, $B$ and $C$ corresponding to $D$, $E$ and $F$, respectively. In triangle $ABC$, $\\tan(A) = \\frac{8}{15}$. In triangle $DEF$, $EF = 24$. What is the length of $DE$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$51$"
+          },
+          {
+            "label": "B",
+            "text": "$45$"
+          },
+          {
+            "label": "C",
+            "text": "$17$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{136}{5}$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Because the triangles are similar with $A$ corresponding to $D$, angle $D$ equals angle $A$, so $\\tan(D) = \\frac{8}{15}$. In triangle $DEF$ the right angle is at $F$, so for angle $D$ the opposite leg is $EF$ and the adjacent leg is $DF$. This gives $\\frac{EF}{DF} = \\frac{8}{15}$, so $\\frac{24}{DF} = \\frac{8}{15}$. Cross-multiplying gives $8 \\times DF = 24 \\times 15 = 360$. Dividing both sides by $8$ gives $DF = 45$. Side $DE$ is the hypotenuse, so by the Pythagorean theorem $DE^2 = 24^2 + 45^2 = 576 + 2{,}025 = 2{,}601$. Taking the square root gives $DE = 51$. (Check: the legs $24$ and $45$ are $3$ times $8$ and $15$, and $3 \\times 17 = 51$.)",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is $DF$, the leg adjacent to angle $D$, not the hypotenuse $DE$."
+          },
+          {
+            "label": "C",
+            "text": "This is the hypotenuse of an $8$-$15$-$17$ triangle without scaling it up to match $EF = 24$."
+          },
+          {
+            "label": "D",
+            "text": "This flips the tangent ratio, finding $DF = 24 \\times \\frac{8}{15} = \\frac{64}{5}$, and then uses that leg in the Pythagorean theorem."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

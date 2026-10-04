@@ -594,6 +594,658 @@
           }
         ]
       }
+    },
+    {
+      "id": "two-variable-data-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A driver recorded how much fuel was left in a car's tank during a long trip. A line of best fit for the data is $y = 52 - 6.5x$, where $y$ is the predicted amount of fuel left, in liters, $x$ hours after the trip began. Which statement is the best interpretation of $52$ in this context?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The car uses about $52$ liters of fuel each hour."
+          },
+          {
+            "label": "B",
+            "text": "The trip is predicted to last $52$ hours."
+          },
+          {
+            "label": "C",
+            "text": "The predicted amount of fuel in the tank when the trip began is $52$ liters."
+          },
+          {
+            "label": "D",
+            "text": "The amount of fuel left is predicted to decrease by $52$ liters each hour."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In $y = 52 - 6.5x$, the number $52$ is the $y$-intercept: it is the value of $y$ when $x = 0$. Substituting $x = 0$ gives $y = 52 - 6.5(0)$, which is $y = 52 - 0 = 52$. Since $x = 0$ means $0$ hours after the trip began, $52$ is the predicted amount of fuel, in liters, in the tank at the start of the trip.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The fuel used each hour is the rate of change, which is given by the slope $-6.5$: the model predicts about $6.5$ liters used per hour, not $52$."
+          },
+          {
+            "label": "B",
+            "text": "$52$ is a $y$-value (liters of fuel), not an $x$-value (hours), so it cannot be the length of the trip."
+          },
+          {
+            "label": "D",
+            "text": "The decrease per hour is the slope, $6.5$ liters per hour. $52$ is the starting amount, not a rate."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-012",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A gardener recorded the total number of tomatoes harvested from a garden each week of the summer. The line of best fit for a scatterplot of the data passes through the points $(0, 18)$ and $(12, 54)$, where $x$ is the number of weeks since the start of the summer and $y$ is the total number of tomatoes harvested. Based on the line of best fit, what is the predicted total number of tomatoes harvested $20$ weeks after the start of the summer?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "78"
+        ],
+        "explanation": "First find the slope of the line. The slope is the change in $y$ divided by the change in $x$: $\\frac{54 - 18}{12 - 0}$. The numerator is $54 - 18 = 36$ and the denominator is $12 - 0 = 12$, so the slope is $\\frac{36}{12} = 3$. The line passes through $(0, 18)$, so its $y$-intercept is $18$. The equation of the line is therefore $y = 3x + 18$. To predict the total at $20$ weeks, substitute $x = 20$: $y = 3(20) + 18$. Multiplying gives $y = 60 + 18$, and adding gives $y = 78$. The predicted total is $78$ tomatoes.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A scientist measured the concentration of algae cells, in thousands of cells per milliliter, in a pond sample over several days. An exponential model of the form $y = a(b)^x$, where $a$ and $b$ are positive constants, fits the data, where $y$ is the predicted concentration $x$ days after the first measurement. The model predicts a concentration of $60$ thousand cells per milliliter at $x = 1$ and $135$ thousand cells per milliliter at $x = 3$. According to the model, what was the concentration, in thousands of cells per milliliter, at $x = 0$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "40"
+        ],
+        "explanation": "The value at $x = 0$ is $a(b)^0 = a$, so the question asks for $a$. Substituting the two given points into $y = a(b)^x$ gives two equations: $ab = 60$ (from $x = 1$) and $ab^3 = 135$ (from $x = 3$). Dividing the second equation by the first gives $\\frac{ab^3}{ab} = \\frac{135}{60}$. On the left, $a$ cancels and $\\frac{b^3}{b} = b^2$, so $b^2 = \\frac{135}{60}$. Dividing $135$ by $60$ gives $2.25$, so $b^2 = 2.25$. Since $b$ is positive, take the positive square root: $b = 1.5$. Now substitute $b = 1.5$ into $ab = 60$: $1.5a = 60$. Dividing both sides by $1.5$ gives $a = \\frac{60}{1.5}$, which simplifies to $a = 40$. (Check: $40(1.5)^3 = 40 \\cdot 3.375 = 135$.) The predicted concentration at $x = 0$ is $40$ thousand cells per milliliter.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Savings account balance",
+          "columns": [
+            "$x$ (months)",
+            "$y$ (dollars)"
+          ],
+          "rows": [
+            [
+              "0",
+              "150"
+            ],
+            [
+              "1",
+              "162"
+            ],
+            [
+              "2",
+              "174"
+            ],
+            [
+              "3",
+              "186"
+            ],
+            [
+              "4",
+              "198"
+            ]
+          ]
+        },
+        "stem": "The table shows the balance in a student's savings account at the end of each month, where $x$ is the number of months after the account was opened and $y$ is the balance, in dollars. Which type of model best fits the data?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Linear, increasing"
+          },
+          {
+            "label": "B",
+            "text": "Linear, decreasing"
+          },
+          {
+            "label": "C",
+            "text": "Exponential, increasing"
+          },
+          {
+            "label": "D",
+            "text": "Exponential, decreasing"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Look at how $y$ changes each time $x$ goes up by $1$. From $150$ to $162$ the balance increases by $162 - 150 = 12$. The next changes are $174 - 162 = 12$, $186 - 174 = 12$, and $198 - 186 = 12$. The balance goes up by the same amount, $\\$12$, every month. A constant amount of change for each equal step in $x$ is the pattern of a linear model, and since the balance goes up, the model is linear and increasing.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The balance goes up each month, so a decreasing model does not fit."
+          },
+          {
+            "label": "C",
+            "text": "An exponential model would increase by the same percent each month, so the amount added would grow. Here the amount added stays at $12$ every month, which is linear."
+          },
+          {
+            "label": "D",
+            "text": "The balance increases, and it changes by a constant amount rather than a constant percent, so a decreasing exponential model does not fit."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "An agricultural researcher modeled the yield of a crop on test plots using the quadratic equation $y = -0.5x^2 + 8x + 20$, where $y$ is the predicted yield, in bushels, when $x$ kilograms of fertilizer are applied, for $0 \\le x \\le 16$. According to the model, what is the smallest amount of fertilizer, in kilograms, that gives a predicted yield of $50$ bushels?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4$"
+          },
+          {
+            "label": "B",
+            "text": "$6$"
+          },
+          {
+            "label": "C",
+            "text": "$8$"
+          },
+          {
+            "label": "D",
+            "text": "$10$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Set the model equal to $50$: $-0.5x^2 + 8x + 20 = 50$. Subtracting $50$ from both sides gives $-0.5x^2 + 8x - 30 = 0$. Multiplying both sides by $-2$ to clear the decimal gives $x^2 - 16x + 60 = 0$. To factor, look for two numbers that multiply to $60$ and add to $-16$: these are $-6$ and $-10$. So $(x - 6)(x - 10) = 0$, which means $x - 6 = 0$ or $x - 10 = 0$. Adding gives $x = 6$ or $x = 10$. Both are in the interval $0 \\le x \\le 16$, and the smaller value is $6$. (Check: $-0.5(6)^2 + 8(6) + 20 = -18 + 48 + 20 = 50$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Substituting $x = 4$ gives $-0.5(16) + 32 + 20 = -8 + 32 + 20 = 44$ bushels, not $50$."
+          },
+          {
+            "label": "C",
+            "text": "$x = 8$ is where the predicted yield is greatest (the vertex, at $-\\frac{8}{2(-0.5)} = 8$), giving $52$ bushels, not $50$."
+          },
+          {
+            "label": "D",
+            "text": "$x = 10$ does give $50$ bushels, but it is the larger of the two solutions. The question asks for the smallest amount, which is $6$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-016",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A forester measured the heights of young trees of two species over time. For species A, the line of best fit is $y = 2.4x + 30$, and for species B, the line of best fit is $y = 1.8x + 42$, where $y$ is the predicted height, in inches, of a tree that is $x$ months old. According to the two lines of best fit, at what age, in months, do trees of the two species have the same predicted height?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "The predicted heights are the same when the two expressions for $y$ are equal: $2.4x + 30 = 1.8x + 42$. Subtracting $1.8x$ from both sides gives $0.6x + 30 = 42$. Subtracting $30$ from both sides gives $0.6x = 12$. Dividing both sides by $0.6$ gives $x = \\frac{12}{0.6}$, which simplifies to $x = 20$. (Check: species A gives $2.4(20) + 30 = 48 + 30 = 78$, and species B gives $1.8(20) + 42 = 36 + 42 = 78$.) The predicted heights are equal at $20$ months.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A museum's gift shop manager found that the line of best fit $y = 0.8x + 14$ models the relationship between the number of museum visitors on a day and the gift shop's revenue that day, where $x$ is the number of visitors, in hundreds, and $y$ is the predicted revenue, in thousands of dollars. Based on the model, which statement is true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Each additional visitor is associated with an increase of $\\$0.80$ in predicted revenue."
+          },
+          {
+            "label": "B",
+            "text": "Each additional visitor is associated with an increase of $\\$80$ in predicted revenue."
+          },
+          {
+            "label": "C",
+            "text": "Each additional visitor is associated with an increase of $\\$800$ in predicted revenue."
+          },
+          {
+            "label": "D",
+            "text": "Each additional visitor is associated with an increase of $\\$8$ in predicted revenue."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The slope, $0.8$, means that when $x$ increases by $1$, the predicted $y$ increases by $0.8$. Now translate the units. An increase of $1$ in $x$ is $1$ hundred visitors, which is $100$ visitors. An increase of $0.8$ in $y$ is $0.8$ thousand dollars, which is $0.8 \\times 1{,}000 = \\$800$. So $100$ more visitors are associated with $\\$800$ more predicted revenue. To find the increase for one visitor, divide by $100$: $\\frac{800}{100} = 8$. Each additional visitor is associated with an increase of $\\$8$ in predicted revenue.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This reads the slope $0.8$ as dollars per visitor, ignoring that $y$ is in thousands of dollars and $x$ is in hundreds of visitors."
+          },
+          {
+            "label": "B",
+            "text": "$\\$80$ comes from multiplying $0.8$ by $100$, as if $y$ were in hundreds of dollars. Since $y$ is in thousands of dollars, $0.8$ is $\\$800$ for each $100$ visitors, which is $\\$8$ per visitor."
+          },
+          {
+            "label": "C",
+            "text": "$\\$800$ is the predicted increase for each additional $100$ visitors (one unit of $x$), not for each single visitor."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A soil scientist models the amount of a pesticide remaining in a field with the equation $y = 500(0.92)^x$, where $y$ is the predicted amount, in grams, remaining $x$ years after the pesticide was applied. According to the model, by what percent does the predicted amount decrease over any $2$-year period?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$8\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$15.36\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$16\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$84.64\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Each year, the amount is multiplied by $0.92$. Over $2$ years, it is multiplied by $0.92$ twice, which is $(0.92)^2$. Multiplying gives $0.92 \\times 0.92 = 0.8464$. So after any $2$-year period, $84.64\\%$ of the amount remains. The percent that is lost is $100\\% - 84.64\\% = 15.36\\%$. (Equivalently, $1 - 0.8464 = 0.1536$, which is $15.36\\%$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$8\\%$ is the decrease over a single year, since $1 - 0.92 = 0.08$. Over $2$ years the factor is applied twice."
+          },
+          {
+            "label": "C",
+            "text": "This adds the yearly decrease twice, $8\\% + 8\\% = 16\\%$. But the second year's $8\\%$ is taken from a smaller amount, so the total decrease is $15.36\\%$."
+          },
+          {
+            "label": "D",
+            "text": "$84.64\\%$ is the percent of the amount that remains after $2$ years, not the percent decrease."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Spring length",
+          "columns": [
+            "$x$ (hundreds of grams)",
+            "$y$ (centimeters)"
+          ],
+          "rows": [
+            [
+              "1",
+              "9.1"
+            ],
+            [
+              "2",
+              "12.8"
+            ],
+            [
+              "3",
+              "17.2"
+            ],
+            [
+              "4",
+              "20.9"
+            ],
+            [
+              "5",
+              "25.0"
+            ]
+          ]
+        },
+        "stem": "A physics student hung different masses from a spring and measured the spring's length. The table shows the results, where $x$ is the mass, in hundreds of grams, and $y$ is the length of the spring, in centimeters. Which equation best models the data?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$y = 5x + 4$"
+          },
+          {
+            "label": "B",
+            "text": "$y = 4x + 9$"
+          },
+          {
+            "label": "C",
+            "text": "$y = 4x + 5$"
+          },
+          {
+            "label": "D",
+            "text": "$y = -4x + 29$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Test each equation at the values in the table. For $y = 4x + 5$: when $x = 1$, $y = 4(1) + 5 = 9$; when $x = 2$, $y = 8 + 5 = 13$; when $x = 3$, $y = 12 + 5 = 17$; when $x = 4$, $y = 16 + 5 = 21$; when $x = 5$, $y = 20 + 5 = 25$. These predictions, $9$, $13$, $17$, $21$, and $25$, are each within $0.2$ of the measured lengths $9.1$, $12.8$, $17.2$, $20.9$, and $25.0$. Another way to see it: from $x = 1$ to $x = 5$ the length increases by about $25.0 - 9.1 = 15.9$ over $4$ steps, which is about $\\frac{15.9}{4} \\approx 4$ per step, so the slope is about $4$. Going back one step from $9.1$ at $x = 1$ gives a $y$-intercept of about $9.1 - 4 = 5.1$, close to $5$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "At $x = 5$, this gives $5(5) + 4 = 29$, but the measured length is $25.0$. A slope of $5$ is too steep for data that increase by about $4$ per step."
+          },
+          {
+            "label": "B",
+            "text": "The slope is right, but at $x = 1$ this gives $4(1) + 9 = 13$, while the measured length is $9.1$. The value $9$ is the length at $x = 1$, not at $x = 0$."
+          },
+          {
+            "label": "D",
+            "text": "This line has a negative slope, so it predicts the length decreases as mass increases. The data increase."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-020",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A real estate analyst used a line of best fit to predict the monthly rent of apartments in a city based on their floor area. For one apartment, the residual (the actual rent minus the rent predicted by the line of best fit) is $-85$ dollars. Which statement about this apartment must be true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Its actual rent is $\\$85$."
+          },
+          {
+            "label": "B",
+            "text": "Its actual rent is $\\$85$ more than the rent predicted by the line of best fit."
+          },
+          {
+            "label": "C",
+            "text": "Its predicted rent is $\\$85$."
+          },
+          {
+            "label": "D",
+            "text": "Its actual rent is $\\$85$ less than the rent predicted by the line of best fit."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The residual is defined as actual rent minus predicted rent. Writing this as an equation gives $\\text{actual} - \\text{predicted} = -85$. Adding $\\text{predicted}$ to both sides gives $\\text{actual} = \\text{predicted} - 85$. So the actual rent is $\\$85$ less than the predicted rent. A negative residual means the data point lies below the line of best fit.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The residual is a difference between actual and predicted rent, not the actual rent itself."
+          },
+          {
+            "label": "B",
+            "text": "This would be true for a residual of $+85$. A negative residual means the actual value is less than the predicted value."
+          },
+          {
+            "label": "C",
+            "text": "The residual is a difference between actual and predicted rent, not the predicted rent itself."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

@@ -19,7 +19,7 @@ export default function PrivacyPage() {
           <strong>The short version:</strong> we collect only what we need to run your practice: your name, email,
           password (stored scrambled) and your answers. We don&apos;t sell your data, show ads or use tracking cookies.
           Payments go through Stripe, so we never see your card number. You can download or delete your data at any time
-          from your <Link href="/account">account page</Link>.
+          from your <Link href="/settings/account">account settings</Link>.
         </p>
       </div>
 
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
       <ul>
         <li>
           <strong>See and download your data:</strong> use &quot;Download my data&quot; on your{" "}
-          <Link href="/account">account page</Link>.
+          <Link href="/settings/account">account settings</Link>.
         </li>
         <li>
           <strong>Delete your account:</strong> use &quot;Delete account&quot; on your account page, or write to us.
