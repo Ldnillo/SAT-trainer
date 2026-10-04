@@ -38,12 +38,18 @@
   align-items: baseline;
   gap: 10px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
+  background: var(--surface);
   padding: 10px 12px;
   cursor: pointer;
 }
 
+.choice:hover {
+  border-color: var(--accent);
+}
+
 .choice:has(input:checked) {
+  background: var(--accent-soft);
   border-color: var(--accent);
   outline: 1px solid var(--accent);
 }
@@ -95,7 +101,8 @@
 
 .feedbackRight,
 .feedbackWrong {
-  border-radius: 8px;
+  border-radius: var(--radius);
+  background: var(--surface);
   padding: 12px 16px;
   margin-bottom: 16px;
   border: 1px solid;
