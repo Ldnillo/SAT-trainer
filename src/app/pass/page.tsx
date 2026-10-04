@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { requireUser } from "@/lib/auth/session";
 import { formatPrice, passConfig } from "@/lib/billing/config";
 import { practiceAccess } from "@/lib/billing/pass";
@@ -89,6 +90,10 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
         </form>
         <p className={styles.muted}>
           Payments are handled securely by Stripe. Buying while a pass is active adds the days on after it ends.
+        </p>
+        <p className={styles.muted}>
+          By buying you agree to the <Link href="/terms">Terms of Service</Link>, including the{" "}
+          <Link href="/terms#refunds">refund policy</Link>. If you&apos;re under 18, ask a parent or guardian before buying.
         </p>
       </div>
     </main>

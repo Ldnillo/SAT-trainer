@@ -5,6 +5,7 @@ import "katex/dist/katex.min.css";
 import { Logo } from "@/components/Logo";
 import { NavLink } from "@/components/NavLink";
 import { currentUser } from "@/lib/auth/session";
+import { siteConfig } from "@/lib/site";
 import { signOut } from "./auth-actions";
 import "./globals.css";
 
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const user = await currentUser();
+  const { supportEmail } = siteConfig();
   return (
     // Browser extensions (one sec, Grammarly...) add attributes to <html> before React loads; ignore those.
     <html lang="en" className={font.variable} suppressHydrationWarning>
@@ -31,6 +33,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
                 <>
                   <NavLink href="/dashboard">Dashboard</NavLink>
                   <NavLink href="/pass">Season pass</NavLink>
+                  <NavLink href="/account">Account</NavLink>
                   <form action={signOut}>
                     <span className="who">{user.name}</span>
                     <button type="submit" className="link-button">
@@ -56,6 +59,11 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             <p>
               SAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse,
               this product. All practice questions on NextScore are original.
+            </p>
+            <p className="footer-links">
+              <Link href="/terms">Terms</Link>
+              <Link href="/privacy">Privacy</Link>
+              <a href={`mailto:${supportEmail}`}>Contact</a>
             </p>
             <p>© {new Date().getFullYear()} NextScore</p>
           </div>

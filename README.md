@@ -97,6 +97,24 @@ Students sign up with a name, email and password (`/signup`), then practice from
 - **Scoring** (`scoring.ts`): an ability estimate from every answer in the section (one-parameter IRT, easy/medium/hard at -1/0/+1), mapped onto 200-800, so harder questions count for more and only the harder module 2 reaches the top. It is labelled an estimate, not an official score. Answered questions are also written to `attempts`, so tests update skill mastery.
 - **Access**: needs a season pass (`testAccess` in `src/lib/billing/pass.ts`, checked in `startPracticeTest`). `FREE_PRACTICE_TESTS` (default 0) allows free tests before paying.
 
+### Account security and privacy
+
+- **Password reset** (`/forgot-password`, `src/lib/auth/reset.ts`): emails a one-time link that works for 60 minutes. Only a hash of the token is stored, the form gives the same answer whether or not the email has an account, and a reset signs the student out everywhere and emails a "password changed" notice.
+- **Emails** (`src/lib/email`): sent through [Resend](https://resend.com) when `RESEND_API_KEY` and `EMAIL_FROM` are set. Without them, in development the email (with its link) is printed in the terminal running `npm run dev`; in production nothing is sent and an error is logged.
+- **Rate limits** (`src/lib/auth/rate-limit.ts`): 10 wrong passwords per account per 15 minutes, 3 reset emails per address per hour, plus per-IP limits on sign-in, reset and sign-up. Counted in the `rate_limit_hits` table, so they hold across server instances.
+- **Account page** (`/account`): change password (signs out other devices), download all of the student's data as JSON, delete the account and everything stored with it.
+- **Sign-up** asks students to confirm they are 13 or older and agree to the terms and privacy policy (under 18: with a parent or guardian), and stores when they did.
+- **Legal pages**: `/privacy` and `/terms` (drafts; have a lawyer review them before launch). The support email, business name and governing state come from `SUPPORT_EMAIL`, `LEGAL_OPERATOR_NAME` and `LEGAL_GOVERNING_STATE`; until set, the pages show `[placeholders]`. The refund window (7 days) is `REFUND_DAYS` in `src/lib/site.ts`. Update `LEGAL_UPDATED` there whenever the wording changes.
+- **Security headers** (`next.config.ts`): no framing, no MIME sniffing, HSTS, and reset links are never sent in the Referer header. `robots.txt` keeps search engines out of private pages.
+
+### Before launch
+
+1. Have a lawyer review `/privacy` and `/terms`, and confirm the refund policy and where data is stored.
+2. Set `SUPPORT_EMAIL`, `LEGAL_OPERATOR_NAME` and `LEGAL_GOVERNING_STATE`.
+3. Create a Resend account, verify the site's domain, and set `RESEND_API_KEY` and `EMAIL_FROM`. Try a password reset on the live site.
+4. Set `APP_URL` to the site's address so links in emails always point to it.
+5. Switch Stripe to live keys and a live webhook (see Setting up Stripe below).
+
 ## Season pass
 
 Students get one free practice set (`FREE_PRACTICE_SETS`), then need a season pass to start new sets. A pass is a single Stripe Checkout payment, not a subscription: by default **$39 for 90 days** (`SEASON_PASS_PRICE_CENTS`, `SEASON_PASS_DAYS`, `SEASON_PASS_CURRENCY` in `.env.local`). Buying again while a pass is active adds the days after the current pass ends. Dashboards and past results stay visible without a pass.

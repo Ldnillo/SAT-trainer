@@ -13,6 +13,8 @@ const ERRORS: Record<string, string> = {
   "missing-name": "Enter your name.",
   "short-password": `Use a password of at least ${MIN_PASSWORD_LENGTH} characters.`,
   "email-taken": "There is already an account with that email. Sign in instead.",
+  "must-agree": "Please confirm your age and agree to the terms to create an account.",
+  "too-many": "Too many new accounts from this network. Please try again in an hour.",
 };
 
 export const metadata: Metadata = { title: "Create your account" };
@@ -56,6 +58,13 @@ export default async function SignUpPage({ searchParams }: PageProps<"/signup">)
               required
             />
             <span className={styles.hint}>At least {MIN_PASSWORD_LENGTH} characters.</span>
+          </label>
+          <label className={styles.agree}>
+            <input type="checkbox" name="agree" required />
+            <span>
+              I&apos;m 13 or older and agree to the <Link href="/terms">Terms of Service</Link> and{" "}
+              <Link href="/privacy">Privacy Policy</Link>. If I&apos;m under 18, my parent or guardian agrees too.
+            </span>
           </label>
           <button type="submit" className="button">
             Create account

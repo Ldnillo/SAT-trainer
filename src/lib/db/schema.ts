@@ -39,6 +39,8 @@ export const users = pgTable("users", {
   name: text("name").notNull(),
   /** scrypt$<salt>$<hash>, see src/lib/auth/password.ts. */
   passwordHash: text("password_hash").notNull(),
+  /** When the student agreed to the terms and privacy policy and confirmed they are 13 or older (null for accounts made before that existed). */
+  termsAcceptedAt: timestamp("terms_accepted_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
@@ -54,6 +56,32 @@ export const authSessions = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("auth_sessions_user_idx").on(t.userId)],
+);
+
+/** Password reset links. Only a SHA-256 of the emailed token is stored; a link works once, for a limited time. */
+export const passwordResets = pgTable(
+  "password_resets",
+  {
+    tokenHash: text("token_hash").primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+    usedAt: timestamp("used_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("password_resets_user_idx").on(t.userId)],
+);
+
+/** Recent sign-in, sign-up and reset requests, counted per email or IP address to slow down password guessing and email spam. */
+export const rateLimitHits = pgTable(
+  "rate_limit_hits",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    key: text("key").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("rate_limit_hits_key_idx").on(t.key, t.createdAt)],
 );
 
 /** One practice set: the questions picked for it, in order. */

@@ -23,6 +23,11 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
         {params.error === "invalid" && (
           <p className={`${styles.error} notice bad`}>That email and password don&apos;t match an account.</p>
         )}
+        {params.error === "too-many" && (
+          <p className={styles.error}>
+            Too many wrong passwords. Wait 15 minutes, or <Link href="/forgot-password">reset your password</Link>.
+          </p>
+        )}
         <form action={signIn} className={styles.form}>
           <input type="hidden" name="next" value={next} />
           <label>
@@ -33,6 +38,9 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
             Password
             <input type="password" name="password" autoComplete="current-password" required />
           </label>
+          <Link href="/forgot-password" className={styles.small}>
+            Forgot your password?
+          </Link>
           <button type="submit" className="button">
             Sign in
           </button>
