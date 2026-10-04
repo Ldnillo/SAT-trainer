@@ -680,6 +680,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "central-ideas-and-details-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When Larkfield College opened a new quadrangle in 1998, its planners did something unusual: they planted grass across the entire space and built no sidewalks at all. For the first year, students crossed the lawn however they liked, and their footsteps gradually wore bare trails into the grass. The following summer, the planners paved those trails, turning them into the quad's permanent walkways. Today the paths curve and branch in ways no drafting table would have produced, yet people almost never step off them. On other parts of campus, by contrast, neatly planned sidewalks are lined with muddy shortcuts."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The quadrangle at Larkfield College cost less to build than other parts of the campus because it was built without sidewalks at first."
+          },
+          {
+            "label": "B",
+            "text": "Larkfield's planners based the quadrangle's walkways on the routes people actually took, and those walkways have served walkers better than conventionally planned sidewalks."
+          },
+          {
+            "label": "C",
+            "text": "Students at Larkfield College generally prefer walking on grass to walking on paved paths."
+          },
+          {
+            "label": "D",
+            "text": "The walkways in Larkfield College's quadrangle follow curving and branching routes."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text describes how the planners let students wear trails into the grass for a year and then paved those trails. It then says people \"almost never step off\" these paths, while the planned sidewalks elsewhere have \"muddy shortcuts\" beside them. Together, these points show the main idea: the walkways were based on where people really walked, and they work better than sidewalks drawn up in advance. Choice B states this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text never mentions cost, so this is not supported, let alone the main idea."
+          },
+          {
+            "label": "C",
+            "text": "The text says people almost never leave the paved paths in the quadrangle, so it does not suggest that students prefer grass. The muddy shortcuts elsewhere show they prefer direct routes, not grass."
+          },
+          {
+            "label": "D",
+            "text": "This detail is in the text, but it is only one feature of the walkways. It leaves out how the walkways were created and why they work, which is the point of the text."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In parts of sub-Saharan Africa, people searching for wild honey have an unusual partner: a bird called the greater honeyguide. The bird flies ahead of the honey hunters, calling and stopping on branches, until it reaches a tree that holds a bees' nest. The people then use smoke to calm the bees and cut the nest open. They take the honey, and the honeyguide feeds on the beeswax left behind, a food the bird has trouble reaching on its own."
+          }
+        ],
+        "table": null,
+        "stem": "According to the text, what does the honeyguide get from working with honey hunters?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Honey that the hunters set aside for it"
+          },
+          {
+            "label": "B",
+            "text": "A safe place to perch while it calls"
+          },
+          {
+            "label": "C",
+            "text": "Smoke that drives away the bird's predators"
+          },
+          {
+            "label": "D",
+            "text": "Beeswax from nests that the hunters open"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The last sentence says that after the people take the honey, \"the honeyguide feeds on the beeswax left behind,\" which the bird has trouble reaching on its own. So the bird gets beeswax from the nests the hunters open, choice D.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says the people take the honey. It says the bird eats the beeswax, not honey set aside for it."
+          },
+          {
+            "label": "B",
+            "text": "The bird stops on branches while it leads the hunters, but the text does not present this as something the hunters give it."
+          },
+          {
+            "label": "C",
+            "text": "The smoke is used to calm the bees so the people can open the nest. The text never says it protects the bird from predators."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Accounts of how standard time zones came to the United States usually center on the railroads. Before 1883, towns set their clocks by the local position of the sun, so noon in one city could arrive several minutes before noon in a city just to the west, a confusion that made train schedules hard to follow. Historian Clara Venn does not dispute this account, but she argues that it stops too soon. Once railroad time was adopted, she points out, factories, schools and even churches began to open at hours fixed by distant agreement rather than by daylight. In her view, the railroads' solution to a narrow scheduling problem quietly changed how ordinary people fit their days to the natural world."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Venn accepts the usual explanation of why standard time was adopted but argues that its effects reached well beyond the railroads, changing how people organized their daily lives."
+          },
+          {
+            "label": "B",
+            "text": "Venn argues that railroads were not actually responsible for the adoption of standard time zones in the United States."
+          },
+          {
+            "label": "C",
+            "text": "Before 1883, differences in local time from one town to the next made train schedules difficult to follow."
+          },
+          {
+            "label": "D",
+            "text": "Venn argues that the adoption of standard time mattered more to factories, schools and churches than it did to the railroads that introduced it."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text first gives the usual account (railroads needed standard time to make schedules work). It then says Venn \"does not dispute this account\" but thinks it \"stops too soon,\" because standard time also changed when factories, schools and churches opened, and so changed how people fit their days to the natural world. Choice A captures both parts: she accepts the explanation and argues the effects went far beyond the railroads.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text says Venn \"does not dispute\" the railroad account, so she does not deny that railroads were responsible."
+          },
+          {
+            "label": "C",
+            "text": "This is a supporting detail from the text's background, not the main idea, and it leaves out Venn's argument entirely."
+          },
+          {
+            "label": "D",
+            "text": "Venn says the effects reached beyond the railroads, but she never compares how much standard time mattered to each group. Saying it mattered more to factories and schools than to railroads overstates her claim."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Visitors to the Harlow Museum often remark that the sky in Pieter Vaneck's 1680 landscape looks strangely gray for a summer afternoon. For years, curators assumed that Vaneck had simply painted an overcast day. A recent analysis suggests otherwise. Tiny samples taken from the sky contained smalt, a blue pigment made from ground cobalt glass that was popular at the time and that is known to lose its color over centuries. Under the microscope, the smalt particles nearest the painting's surface had turned grayish, while a few particles sealed deep within the paint layer were still bright blue."
+          }
+        ],
+        "table": null,
+        "stem": "According to the text, what did the analysis reveal about the smalt in Vaneck's painting?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It had been mixed with a gray pigment to create an overcast sky."
+          },
+          {
+            "label": "B",
+            "text": "It had faded by the same amount throughout the paint layer."
+          },
+          {
+            "label": "C",
+            "text": "Particles near the surface had faded, but some particles deep in the paint layer had kept their blue color."
+          },
+          {
+            "label": "D",
+            "text": "It had been added to the painting by a later restorer."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The last sentence reports what the microscope showed: the smalt particles \"nearest the painting's surface had turned grayish, while a few particles sealed deep within the paint layer were still bright blue.\" Choice C restates this. This finding is why the analysis suggests the sky was once blue.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text never mentions a gray pigment. The analysis actually suggests the gray look comes from faded blue smalt, not from Vaneck painting an overcast sky."
+          },
+          {
+            "label": "B",
+            "text": "The text says the fading was uneven: particles at the surface turned gray, but some deep particles stayed blue."
+          },
+          {
+            "label": "D",
+            "text": "The text says smalt was popular in Vaneck's own time and does not mention any restorer."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Most liquids become denser as they cool, and their solid forms sink. Water behaves differently. As a lake cools in autumn, its water grows denser until it reaches about 4°C, and that dense water sinks to the bottom. Water colder than that becomes lighter, so it stays near the surface, where it eventually freezes. The ice floats and acts like a lid, slowing the loss of heat from the water below. As a result, many lakes never freeze solid, and fish can survive the winter in the liquid water near the bottom."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Fish survive the winter by swimming to the bottom of lakes."
+          },
+          {
+            "label": "B",
+            "text": "An unusual property of water causes lakes to freeze from the top down, which allows fish to survive beneath the ice."
+          },
+          {
+            "label": "C",
+            "text": "Most liquids become denser as they cool."
+          },
+          {
+            "label": "D",
+            "text": "The ice on lakes grows thicker every winter."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text explains that water, unlike most liquids, becomes lighter once it is colder than about 4°C. Because of this, the coldest water stays at the surface and freezes there, and the floating ice slows heat loss so that the lake does not freeze solid. The text ends with the result: fish survive in the water below. Choice B sums up this whole chain.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text mentions fish living in the water near the bottom, but this is only the final result. It leaves out the main point, which is how water's unusual behavior makes this possible."
+          },
+          {
+            "label": "C",
+            "text": "This is a detail the text uses for contrast. The text's focus is on how water behaves differently from most liquids."
+          },
+          {
+            "label": "D",
+            "text": "The text never says the ice grows thicker every winter."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The orchestra's newest violinist, Mei, had practiced the concerto's opening for months, and on the night of the performance she played it exactly as rehearsed: every note in place, every phrase shaped just as her teacher had marked it. Afterward the conductor, a famously sparing man, said only, \"Correct.\" Mei carried the word home like a stone in her pocket. Weeks later, she heard a recording of another violinist playing the same passage with a small, unplanned hesitation before the final note, and she understood at last what the conductor had meant. She felt, to her surprise, grateful rather than wounded."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Mei is hurt by the conductor's criticism and decides that she must practice the concerto even harder."
+          },
+          {
+            "label": "B",
+            "text": "Mei discovers that the violinist on the recording is more talented than she is."
+          },
+          {
+            "label": "C",
+            "text": "A remark that at first seems to belittle Mei's performance eventually helps her see that playing every note exactly right was not enough."
+          },
+          {
+            "label": "D",
+            "text": "The conductor of Mei's orchestra rarely praises the musicians who play for him."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Mei plays the opening \"exactly as rehearsed,\" and the conductor says only \"Correct.\" The comparison to a stone in her pocket shows the word weighs on her. Later, hearing another violinist's \"small, unplanned hesitation,\" she understands what the conductor meant: her performance was accurate but lacked that kind of spontaneous life. She ends up grateful. Choice C captures this movement from hurt to understanding.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Mei is hurt at first, but the text never says she decides to practice harder. More practice would also miss the point she comes to understand, since her problem was not mistakes. This choice also ignores her later gratitude."
+          },
+          {
+            "label": "B",
+            "text": "The recording helps Mei understand the conductor's remark, but the text never says the other violinist is more talented. This overstates the text."
+          },
+          {
+            "label": "D",
+            "text": "The text calls the conductor \"famously sparing,\" but this is a detail about him, not the main idea of a passage centered on what Mei learns."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the Corvale Art Museum dropped its \\$15 admission fee in 2019, attendance rose by nearly 40 percent within a year. Museum leaders celebrated, believing they had opened the museum to people who had been kept away by the cost. But a visitor survey conducted by economist Ruth Adeyemi complicated that story. Most of the added visits, she found, came from people who had visited before the change and now simply came more often, sometimes dropping in for only twenty minutes. The share of visitors who were coming for the first time was nearly unchanged."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Although dropping the admission fee increased the museum's attendance, the increase came mostly from returning visitors rather than from new audiences."
+          },
+          {
+            "label": "B",
+            "text": "Dropping the admission fee caused fewer people to visit the museum for the first time."
+          },
+          {
+            "label": "C",
+            "text": "Museum leaders dropped the admission fee mainly to encourage visitors to make shorter visits."
+          },
+          {
+            "label": "D",
+            "text": "Adeyemi's survey shows that a \\$15 admission fee is too expensive for most museum visitors."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Attendance rose about 40 percent after the fee was dropped, and leaders thought new people were coming. Adeyemi's survey \"complicated that story\": most added visits came from people who had already visited and now came more often, and the share of first-time visitors was nearly unchanged. Choice A states this main point.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text says the share of first-time visitors was \"nearly unchanged,\" not that first-time visits fell."
+          },
+          {
+            "label": "C",
+            "text": "The text says some returning visitors made short visits, but this was a result Adeyemi observed, not the leaders' reason for dropping the fee. The leaders hoped to bring in people kept away by the cost."
+          },
+          {
+            "label": "D",
+            "text": "The survey found that dropping the fee did not change who visited much, so it does not show that the fee was too expensive for most visitors."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The public library in the town of Ferris Bend lends more than books. Since 2017, it has run a seed library: a wooden cabinet of small envelopes holding seeds for beans, tomatoes, squash and wildflowers. Patrons may take up to five envelopes each spring at no cost. In return, the library asks them to let a few of their healthiest plants go to seed in the fall and to bring some of those seeds back, so that the cabinet can be restocked for the following year."
+          }
+        ],
+        "table": null,
+        "stem": "According to the text, what does the library ask patrons to do in return for the seeds they take?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Pay a small fee each spring"
+          },
+          {
+            "label": "B",
+            "text": "Grow only beans, tomatoes, squash and wildflowers"
+          },
+          {
+            "label": "C",
+            "text": "Bring back some seeds from their healthiest plants"
+          },
+          {
+            "label": "D",
+            "text": "Donate books to the library's collection"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The last sentence says that in return, the library asks patrons to let some of their healthiest plants go to seed and \"to bring some of those seeds back.\" That is choice C.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says patrons take the seeds \"at no cost,\" so there is no fee."
+          },
+          {
+            "label": "B",
+            "text": "These are the kinds of seeds the cabinet holds, but the text does not say patrons may grow only these plants."
+          },
+          {
+            "label": "D",
+            "text": "The text says the library lends books but never asks patrons to donate them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Desert ants of the genus Cataglyphis forage far from their nests across flat, featureless sand, yet they return home in a nearly straight line. Scientists suspected that the ants keep track of distance by counting their steps. To test this, researchers glued tiny stilts onto the legs of some ants that had just walked to a feeder, lengthening their stride, and trimmed the legs of others, shortening it. On the trip home, ants on stilts walked past their nest, while ants with shortened legs stopped before reaching it. The ants had apparently taken the expected number of steps, but each step now covered a different distance."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the text, why did the ants on stilts walk past their nest?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The stilts made it harder for them to see landmarks near the nest."
+          },
+          {
+            "label": "B",
+            "text": "They moved faster on stilts and so had less time to notice the nest."
+          },
+          {
+            "label": "C",
+            "text": "They lost count of their steps while walking on stilts."
+          },
+          {
+            "label": "D",
+            "text": "They took about as many steps as usual, but each step was longer than before."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The stilts lengthened the ants' stride. The last sentence explains the result: the ants \"had apparently taken the expected number of steps, but each step now covered a different distance.\" For ants on stilts, each step was longer, so the same number of steps carried them past the nest. That is choice D.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text describes the sand as \"featureless\" and never mentions landmarks or the ants' vision."
+          },
+          {
+            "label": "B",
+            "text": "The text says nothing about speed or about the ants having time to notice the nest."
+          },
+          {
+            "label": "C",
+            "text": "The text says the opposite: the ants apparently took the expected number of steps, so they did not lose count."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Scientific journals have long favored studies that report a new effect over studies that find none. Many researchers criticize this bias because it hides failed attempts, so others waste time repeating them. Sociologist Anika Solberg agrees but argues that the deeper cost is less obvious. Because a published result is rarely followed by reports of failed attempts to reproduce it, she notes, readers cannot tell a finding that has been confirmed many times from one that has quietly failed every later test. The bias, in her view, distorts not only what scientists choose to study next but also how confident anyone can be in what is already in print."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Solberg argues that researchers waste time because journals rarely publish studies that find no effect."
+          },
+          {
+            "label": "B",
+            "text": "Solberg contends that journals' preference for studies reporting new effects also makes it hard to judge how reliable already-published findings are."
+          },
+          {
+            "label": "C",
+            "text": "Solberg claims that most published scientific findings fail when other researchers try to reproduce them."
+          },
+          {
+            "label": "D",
+            "text": "Solberg argues that journals should stop publishing studies that report new effects."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text begins with a common criticism of journals' bias (it wastes researchers' time). Solberg \"agrees but argues that the deeper cost is less obvious\": since failed attempts to reproduce a result are rarely published, readers cannot tell well-confirmed findings from ones that have failed later tests. So the bias also weakens confidence in what is already in print. Choice B states this main point.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the common criticism that Solberg agrees with, but the text presents it as background. Her own main point is the \"deeper cost\" to judging published findings."
+          },
+          {
+            "label": "C",
+            "text": "Solberg says readers cannot tell which findings have failed later tests. She does not claim that most findings fail, so this overstates her argument."
+          },
+          {
+            "label": "D",
+            "text": "Solberg criticizes the imbalance in what gets published, but she never suggests that journals stop publishing studies that report new effects."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

@@ -3,10 +3,10 @@ import Link from "next/link";
 import { MIN_PASSWORD_LENGTH } from "@/lib/auth/password";
 import { requireUser } from "@/lib/auth/session";
 import { siteConfig } from "@/lib/site";
-import { removeAccount, updatePassword } from "../auth-actions";
+import { removeAccount, signOut, updatePassword } from "../../auth-actions";
 import styles from "./account.module.css";
 
-export const metadata: Metadata = { title: "Account" };
+export const metadata: Metadata = { title: "Account settings" };
 
 const ERRORS: Record<string, string> = {
   "wrong-password": "Your current password isn't right.",
@@ -16,15 +16,14 @@ const ERRORS: Record<string, string> = {
   "delete-password": "That password isn't right, so your account wasn't deleted.",
 };
 
-export default async function AccountPage({ searchParams }: PageProps<"/account">) {
+export default async function AccountPage({ searchParams }: PageProps<"/settings/account">) {
   const params = await searchParams;
-  const user = await requireUser("/account");
+  const user = await requireUser("/settings/account");
   const error = typeof params.error === "string" ? ERRORS[params.error] : undefined;
   const { supportEmail } = siteConfig();
 
   return (
-    <main className={styles.page}>
-      <h1>Account</h1>
+    <>
       {error && <p className={styles.error}>{error}</p>}
       {params.notice === "password-changed" && (
         <p className={styles.notice}>Password changed. You&apos;ve been signed out on your other devices.</p>
@@ -41,6 +40,11 @@ export default async function AccountPage({ searchParams }: PageProps<"/account"
           To change your name or email, write to <a href={`mailto:${supportEmail}`}>{supportEmail}</a>. Your season pass
           is on the <Link href="/pass">season pass page</Link>.
         </p>
+        <form action={signOut}>
+          <button type="submit" className="button secondary">
+            Sign out
+          </button>
+        </form>
       </section>
 
       <section className={`${styles.section} surface`}>
@@ -71,7 +75,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/account"
           See the <Link href="/privacy">privacy policy</Link> for how it&apos;s used.
         </p>
         {/* A plain link: the route sends a file download, which client-side navigation can't do. */}
-        <a href="/account/export" className="button secondary" download>
+        <a href="/settings/account/export" className="button secondary" download>
           Download my data
         </a>
       </section>
@@ -96,6 +100,6 @@ export default async function AccountPage({ searchParams }: PageProps<"/account"
           </button>
         </form>
       </section>
-    </main>
+    </>
   );
 }

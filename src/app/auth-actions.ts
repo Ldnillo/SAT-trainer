@@ -99,24 +99,24 @@ export async function completePasswordReset(form: FormData) {
 }
 
 export async function updatePassword(form: FormData) {
-  const user = await requireUser("/account");
+  const user = await requireUser("/settings/account");
   const next = field(form, "next");
-  if (next !== field(form, "confirm")) redirect("/account?error=mismatch");
-  if (next.length < MIN_PASSWORD_LENGTH) redirect("/account?error=short-password");
+  if (next !== field(form, "confirm")) redirect("/settings/account?error=mismatch");
+  if (next.length < MIN_PASSWORD_LENGTH) redirect("/settings/account?error=short-password");
   const result = await changePassword(await getDb(), user.id, {
     current: field(form, "current"),
     next,
     keepToken: await currentSessionToken(),
   });
-  if (!result.ok) redirect(`/account?error=${result.error}`);
+  if (!result.ok) redirect(`/settings/account?error=${result.error}`);
   await sendEmail({ to: user.email, ...passwordChangedEmail({ name: user.name }) });
-  redirect("/account?notice=password-changed");
+  redirect("/settings/account?notice=password-changed");
 }
 
 export async function removeAccount(form: FormData) {
-  const user = await requireUser("/account");
-  if (normalizeEmail(field(form, "confirm-email")) !== user.email) redirect("/account?error=delete-confirm");
-  if (!(await deleteAccount(await getDb(), user.id, field(form, "password")))) redirect("/account?error=delete-password");
+  const user = await requireUser("/settings/account");
+  if (normalizeEmail(field(form, "confirm-email")) !== user.email) redirect("/settings/account?error=delete-confirm");
+  if (!(await deleteAccount(await getDb(), user.id, field(form, "password")))) redirect("/settings/account?error=delete-password");
   await endSession();
   redirect("/?deleted=1");
 }

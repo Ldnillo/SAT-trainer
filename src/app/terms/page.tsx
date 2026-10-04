@@ -106,7 +106,7 @@ export default function TermsPage() {
 
       <h2>9. Ending your account</h2>
       <p>
-        You can delete your account at any time from your <Link href="/account">account page</Link>. We may suspend or
+        You can delete your account at any time from your <Link href="/settings/account">account settings</Link>. We may suspend or
         close an account that breaks these terms; if we close an account without the user breaking these terms, we will
         refund the unused part of any active pass.
       </p>

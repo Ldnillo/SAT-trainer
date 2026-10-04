@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import "katex/dist/katex.min.css";
 import { Logo } from "@/components/Logo";
 import { NavLink } from "@/components/NavLink";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { currentUser } from "@/lib/auth/session";
 import { siteConfig } from "@/lib/site";
+import { parseTheme, THEME_COOKIE } from "@/lib/theme";
 import { signOut } from "./auth-actions";
 import "./globals.css";
 
@@ -19,9 +22,11 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: LayoutProps<"/">) {
   const user = await currentUser();
   const { supportEmail } = siteConfig();
+  const theme = parseTheme((await cookies()).get(THEME_COOKIE)?.value);
   return (
     // Browser extensions (one sec, Grammarly...) add attributes to <html> before React loads; ignore those.
-    <html lang="en" className={font.variable} suppressHydrationWarning>
+    // data-theme is set only for an explicit light or dark choice; without it the device setting decides.
+    <html lang="en" className={font.variable} data-theme={theme === "system" ? undefined : theme} suppressHydrationWarning>
       <body>
         <header className="site-header" data-signed-in={user ? "" : undefined}>
           <div className="site-header-inner">
@@ -29,6 +34,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
               <Logo />
             </Link>
             <nav>
+              <ThemeToggle />
               {user ? (
                 <>
                   <NavLink href="/dashboard">Dashboard</NavLink>
@@ -36,7 +42,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
                   <NavLink href="/pass" className="nav-wide-only">
                     Season pass
                   </NavLink>
-                  <NavLink href="/account">Account</NavLink>
+                  <NavLink href="/settings">Settings</NavLink>
                   <form action={signOut}>
                     <span className="who">{user.name}</span>
                     <button type="submit" className="link-button">

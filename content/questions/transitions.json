@@ -680,6 +680,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "transitions-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Honeybees that find a good source of nectar return to the hive and perform a \"waggle dance,\" a pattern of movements that tells other bees which direction to fly and how far. ______ many ant species help nestmates find food: a returning ant lays down a chemical trail that others can follow to the food source."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Instead,"
+          },
+          {
+            "label": "B",
+            "text": "For example,"
+          },
+          {
+            "label": "C",
+            "text": "Similarly,"
+          },
+          {
+            "label": "D",
+            "text": "Even so,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence describes how honeybees lead other bees to food. The second describes how ants do the same thing in their own way. Both are ways insects guide nestmates to food, so \"Similarly\" correctly signals that the second idea is like the first.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Instead\" signals that one thing replaces another, but the ants' trails don't replace the bees' dance; both behaviors exist."
+          },
+          {
+            "label": "B",
+            "text": "\"For example\" would introduce an example of the bees' waggle dance, but ant trails are a different behavior, not an example of the dance."
+          },
+          {
+            "label": "D",
+            "text": "\"Even so\" signals that something happens despite the previous point, but nothing about the bees' dance makes the ants' behavior surprising."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Last year, the Marston town council voted to make the public library easier to reach for residents who live far from downtown. ______ the council approved funding for a mobile library van that now visits four rural neighborhoods twice a week."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Specifically,"
+          },
+          {
+            "label": "B",
+            "text": "Nevertheless,"
+          },
+          {
+            "label": "C",
+            "text": "In contrast,"
+          },
+          {
+            "label": "D",
+            "text": "Previously,"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence states the council's general goal: making the library easier to reach for people far from downtown. The second sentence gives the precise action the council took to do that, a mobile library van. \"Specifically\" signals that what follows spells out the general statement in concrete detail.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Nevertheless\" signals a contrast, but funding the van supports the council's goal rather than going against it."
+          },
+          {
+            "label": "C",
+            "text": "\"In contrast\" signals a difference, but the van is a way of carrying out the goal, not something different from it."
+          },
+          {
+            "label": "D",
+            "text": "\"Previously\" places the second event before the first, but the van funding was part of carrying out the vote, and the van \"now\" makes its visits."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many medieval European world maps, such as the large Hereford Mappa Mundi made around 1300, were not designed mainly to help travelers find their way. ______ they presented a picture of the world's religious and historical meaning, placing Jerusalem near the center and filling the map with scenes from scripture and legend."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "In addition,"
+          },
+          {
+            "label": "B",
+            "text": "As a result,"
+          },
+          {
+            "label": "C",
+            "text": "For instance,"
+          },
+          {
+            "label": "D",
+            "text": "Rather,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence says what these maps were not mainly for: helping travelers navigate. The second sentence says what they were for instead: showing the world's religious and historical meaning. \"Rather\" is the transition that replaces a rejected idea with the correct one.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"In addition\" adds another point of the same kind, but the second sentence doesn't add to the first; it replaces the purpose the first sentence rejected."
+          },
+          {
+            "label": "B",
+            "text": "\"As a result\" signals an effect, but presenting religious meaning was the maps' purpose, not a consequence of their being poor guides for travelers."
+          },
+          {
+            "label": "C",
+            "text": "\"For instance\" introduces an example, but showing religious meaning is not an example of not helping travelers; it is the alternative purpose."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The trail to the top of Granite Knob climbs nearly 900 meters in just four kilometers, and much of the path is loose rock with no shade. ______ hundreds of hikers make the climb every summer weekend, drawn by the view of three lakes from the summit."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Therefore,"
+          },
+          {
+            "label": "B",
+            "text": "Nevertheless,"
+          },
+          {
+            "label": "C",
+            "text": "In other words,"
+          },
+          {
+            "label": "D",
+            "text": "Likewise,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence describes how hard the trail is, which might be expected to keep people away. The second sentence says many hikers climb it anyway. \"Nevertheless\" signals that something happens despite what was just said.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Therefore\" signals a result, but a steep, rocky, unshaded trail would not cause crowds of hikers."
+          },
+          {
+            "label": "C",
+            "text": "\"In other words\" introduces a restatement, but the popularity of the hike is new information, not a rewording of the trail's difficulty."
+          },
+          {
+            "label": "D",
+            "text": "\"Likewise\" signals a similar point, but the hikers' enthusiasm contrasts with the trail's difficulty rather than resembling it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "On weekday mornings at the Larkspur Café, the front counter staff take orders and make coffee for a steady line of commuters. ______ in the back kitchen, two bakers are already shaping dough for the pastries that will be sold that afternoon."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Consequently,"
+          },
+          {
+            "label": "B",
+            "text": "For instance,"
+          },
+          {
+            "label": "C",
+            "text": "In conclusion,"
+          },
+          {
+            "label": "D",
+            "text": "Meanwhile,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The two sentences describe two things happening at the same time in different parts of the café: the counter staff serving customers and the bakers preparing dough. \"Meanwhile\" signals that one action takes place during the other.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Consequently\" signals a result, but the bakers' work isn't caused by the line of commuters at the counter."
+          },
+          {
+            "label": "B",
+            "text": "\"For instance\" introduces an example, but the bakers' work is not an example of the counter staff taking orders."
+          },
+          {
+            "label": "C",
+            "text": "\"In conclusion\" signals a summary, but the second sentence introduces a new activity rather than summing up the first."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-016",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Economists describe demand for a product as \"inelastic\" when changes in the product's price have little effect on how much of it people buy. ______ even if the price of a product with inelastic demand rises sharply, consumers keep buying about the same amount of it."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "In contrast,"
+          },
+          {
+            "label": "B",
+            "text": "In other words,"
+          },
+          {
+            "label": "C",
+            "text": "Even so,"
+          },
+          {
+            "label": "D",
+            "text": "Similarly,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence defines inelastic demand: price changes barely affect how much people buy. The second sentence says the same thing in more concrete terms: even a sharp price rise leaves purchases about the same. \"In other words\" signals a restatement of the previous idea.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"In contrast\" signals a difference, but the second sentence agrees with the definition; it doesn't contrast with it."
+          },
+          {
+            "label": "C",
+            "text": "\"Even so\" signals something that happens despite the previous point, but consumers buying the same amount is exactly what the definition predicts."
+          },
+          {
+            "label": "D",
+            "text": "\"Similarly\" introduces a separate but comparable idea, while the second sentence restates the same idea rather than adding a parallel one."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Sunlight fades quickly with depth in the ocean, and below about 1,000 meters none of it reaches the water at all. ______ the deep sea is not a world of total darkness: a great many of the animals living there produce their own light, using it to attract prey, confuse predators, or signal to mates."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Nonetheless,"
+          },
+          {
+            "label": "B",
+            "text": "For example,"
+          },
+          {
+            "label": "C",
+            "text": "Thus,"
+          },
+          {
+            "label": "D",
+            "text": "Likewise,"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence leads readers to expect that the deep sea is completely dark, since no sunlight reaches it. The second sentence says it is not completely dark, because animals there make their own light. \"Nonetheless\" signals that the second idea holds true despite what the first might suggest.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"For example\" introduces an example of the previous point, but animals making their own light is not an example of sunlight fading; it shows the deep sea is not completely dark."
+          },
+          {
+            "label": "C",
+            "text": "\"Thus\" signals a conclusion, but the lack of sunlight would lead to darkness, not to the claim that the deep sea is not dark."
+          },
+          {
+            "label": "D",
+            "text": "\"Likewise\" signals a similar point, but the second sentence qualifies the first rather than offering a parallel example."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Most substances are denser as solids than as liquids, but water is an exception: ice is less dense than liquid water. ______ ice forms on the surface of a lake in winter rather than sinking to the bottom."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Nevertheless,"
+          },
+          {
+            "label": "B",
+            "text": "For example,"
+          },
+          {
+            "label": "C",
+            "text": "Meanwhile,"
+          },
+          {
+            "label": "D",
+            "text": "Therefore,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence gives a cause: ice is less dense than liquid water. The second gives its effect: ice floats on top of a lake instead of sinking. \"Therefore\" signals that the second idea follows from the first.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Nevertheless\" signals a contrast, but floating is exactly what we'd expect from something less dense than water."
+          },
+          {
+            "label": "B",
+            "text": "\"For example\" introduces an example, but ice forming on a lake's surface is a result of ice's lower density, not an example of other substances being denser as solids."
+          },
+          {
+            "label": "C",
+            "text": "\"Meanwhile\" signals that two things happen at the same time, but the sentences describe a cause and its effect."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For decades, linguists assumed that the distinctive vowel sounds of the Harlan Valley dialect had been brought to the region by its first settlers in the 1700s. Linguist Rosa Bianchi's study of old recordings and letters, however, found no trace of those sounds before 1900. ______ the sounds appear to have emerged in the early 1900s, when workers from several regions arrived to work in the valley's new mills."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Likewise,"
+          },
+          {
+            "label": "B",
+            "text": "For example,"
+          },
+          {
+            "label": "C",
+            "text": "Instead,"
+          },
+          {
+            "label": "D",
+            "text": "Previously,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The passage rejects the old assumption that the vowel sounds came with the first settlers in the 1700s. The last sentence gives the alternative origin Bianchi's evidence points to: the early 1900s. \"Instead\" signals that this new explanation takes the place of the rejected one.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Likewise\" signals a similar point, but the 1900s origin replaces the old assumption rather than resembling it."
+          },
+          {
+            "label": "B",
+            "text": "\"For example\" introduces an example, but the mill workers' arrival is not an example of finding no trace of the sounds; it's an alternative explanation."
+          },
+          {
+            "label": "D",
+            "text": "\"Previously\" places events earlier in time, but the final sentence describes the early 1900s, which is after the period the evidence rules out."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "During her lifetime, the poet Clara Vosk published only eleven poems, all in small regional newspapers, and after her death in 1891 she was largely forgotten. In 1962, however, a librarian discovered three of her notebooks containing more than three hundred unpublished poems, many of them strikingly experimental. ______ scholars now regard Vosk as one of the most original poets of her era."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "As a result,"
+          },
+          {
+            "label": "B",
+            "text": "Nevertheless,"
+          },
+          {
+            "label": "C",
+            "text": "In the same way,"
+          },
+          {
+            "label": "D",
+            "text": "Before then,"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The transition connects the sentence right before the blank (the discovery of hundreds of experimental poems) to Vosk's present reputation. The discovery is what led scholars to see her as highly original, so \"As a result\" correctly signals cause and effect.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Nevertheless\" would signal that her reputation rose despite the previous sentence, but the discovery of her notebooks supports her reputation. The contrast with her being forgotten was already signaled by \"however.\""
+          },
+          {
+            "label": "C",
+            "text": "\"In the same way\" signals a similarity, but the scholars' view of Vosk is a consequence of the discovery, not something similar to it."
+          },
+          {
+            "label": "D",
+            "text": "\"Before then\" would place the scholars' view earlier than 1962, but the sentence says scholars \"now\" regard her this way."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

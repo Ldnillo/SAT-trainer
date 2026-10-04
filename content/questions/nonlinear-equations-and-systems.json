@@ -591,6 +591,603 @@
           }
         ]
       }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What are the solutions to $3x^2 = 75$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$x = 5$ only"
+          },
+          {
+            "label": "B",
+            "text": "$x = 25$ only"
+          },
+          {
+            "label": "C",
+            "text": "$x = -5$ and $x = 5$"
+          },
+          {
+            "label": "D",
+            "text": "$x = -25$ and $x = 25$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Divide both sides of $3x^2 = 75$ by $3$. This gives $x^2 = 25$. Next, take the square root of both sides. Both $5$ and $-5$ square to $25$, because $5 \\cdot 5 = 25$ and $(-5)(-5) = 25$, so $x = 5$ or $x = -5$. Check: $3(5)^2 = 3 \\cdot 25 = 75$ and $3(-5)^2 = 3 \\cdot 25 = 75$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$x = 5$ works, but $x = -5$ also works because $(-5)^2 = 25$. Taking a square root gives a positive and a negative solution."
+          },
+          {
+            "label": "B",
+            "text": "$25$ is the value of $x^2$, not $x$. The square root step was skipped: $3(25)^2 = 1{,}875$, not $75$."
+          },
+          {
+            "label": "D",
+            "text": "This includes both signs but skips the square root: $x^2 = 25$ means $x = \\pm 5$, not $x = \\pm 25$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-012",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$\\begin{aligned} xy &= 12 \\\\ y &= x + 1 \\end{aligned}$$ The system of equations above has a solution $(x, y)$ with $x > 0$. What is the value of $x + y$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "7"
+        ],
+        "explanation": "The second equation says $y = x + 1$, so substitute $x + 1$ for $y$ in the first equation. This gives $x(x + 1) = 12$. Distributing the $x$ gives $x^2 + x = 12$. Subtracting $12$ from both sides gives $x^2 + x - 12 = 0$. Factor the left side: two numbers that multiply to $-12$ and add to $1$ are $4$ and $-3$, so $(x + 4)(x - 3) = 0$. Setting each factor equal to $0$ gives $x = -4$ or $x = 3$. The question says $x > 0$, so $x = 3$. Then $y = x + 1 = 3 + 1 = 4$. Check: $xy = 3 \\cdot 4 = 12$. So $x + y = 3 + 4 = 7$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-013",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What value of $x$ satisfies the equation $\\sqrt{x + 6} = 5$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-1$"
+          },
+          {
+            "label": "B",
+            "text": "$19$"
+          },
+          {
+            "label": "C",
+            "text": "$31$"
+          },
+          {
+            "label": "D",
+            "text": "$4$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "To undo the square root, square both sides of the equation. Squaring $\\sqrt{x + 6}$ gives $x + 6$, and squaring $5$ gives $25$, so $x + 6 = 25$. Subtracting $6$ from both sides gives $x = 19$. Check: $\\sqrt{19 + 6} = \\sqrt{25} = 5$, which matches.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts $6$ from $5$ without squaring first. Then $\\sqrt{-1 + 6} = \\sqrt{5}$, not $5$."
+          },
+          {
+            "label": "C",
+            "text": "This squares correctly to get $25$ but then adds $6$ instead of subtracting it. Then $\\sqrt{31 + 6} = \\sqrt{37}$, not $5$."
+          },
+          {
+            "label": "D",
+            "text": "This doubles $5$ to get $x + 6 = 10$ instead of squaring it. Then $\\sqrt{4 + 6} = \\sqrt{10}$, not $5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What is the solution set of the equation $\\frac{3}{x} = \\frac{x - 2}{5}$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\{5\\}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\{-5, 3\\}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\{17\\}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\{-3, 5\\}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Cross-multiply: multiply the numerator of each side by the denominator of the other side. This gives $3 \\cdot 5 = x(x - 2)$, which is $15 = x^2 - 2x$. Subtracting $15$ from both sides gives $0 = x^2 - 2x - 15$. Factor: two numbers that multiply to $-15$ and add to $-2$ are $-5$ and $3$, so $0 = (x - 5)(x + 3)$. Setting each factor equal to $0$ gives $x = 5$ or $x = -3$. The only value that is not allowed is $x = 0$ (it would make the denominator $x$ equal to $0$), so both solutions stand. Check $x = 5$: $\\frac{3}{5}$ and $\\frac{5 - 2}{5} = \\frac{3}{5}$. Check $x = -3$: $\\frac{3}{-3} = -1$ and $\\frac{-3 - 2}{5} = \\frac{-5}{5} = -1$. The solution set is $\\{-3, 5\\}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$x = 5$ works, but so does $x = -3$: both sides equal $-1$. A negative solution is not extraneous here; only $x = 0$ is excluded."
+          },
+          {
+            "label": "B",
+            "text": "This has the signs in the factors reversed. Factoring $x^2 - 2x - 15$ as $(x + 5)(x - 3)$ would give a middle term of $+2x$, not $-2x$."
+          },
+          {
+            "label": "C",
+            "text": "This treats the equation as $15 = x - 2$, dropping the factor of $x$ that comes from the denominator on the left side when cross-multiplying."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-015",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$\\begin{aligned} x^2 + y^2 &= 25 \\\\ y &= x + 1 \\end{aligned}$$ The system of equations above has two solutions, $(x_1, y_1)$ and $(x_2, y_2)$. What is the value of $y_1 \\cdot y_2$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-12"
+        ],
+        "explanation": "Substitute $x + 1$ for $y$ in the first equation. This gives $x^2 + (x + 1)^2 = 25$. Expanding $(x + 1)^2$ gives $x^2 + 2x + 1$, so the equation becomes $x^2 + x^2 + 2x + 1 = 25$, which is $2x^2 + 2x + 1 = 25$. Subtracting $25$ from both sides gives $2x^2 + 2x - 24 = 0$. Dividing every term by $2$ gives $x^2 + x - 12 = 0$. Factor: $4$ and $-3$ multiply to $-12$ and add to $1$, so $(x + 4)(x - 3) = 0$. This gives $x = -4$ or $x = 3$. Now find each $y$ with $y = x + 1$: when $x = -4$, $y = -3$; when $x = 3$, $y = 4$. Check: $(-4)^2 + (-3)^2 = 16 + 9 = 25$ and $3^2 + 4^2 = 9 + 16 = 25$. The product of the $y$-values is $(-3)(4) = -12$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What is the solution set of the equation $|2x + 5| = 3x$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\{5\\}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\{-1, 5\\}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\{-1\\}$"
+          },
+          {
+            "label": "D",
+            "text": "The equation has no solution."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "An absolute value equation $|A| = B$ splits into two cases, $A = B$ and $A = -B$, and every answer must be checked because an absolute value can never equal a negative number. Case 1: $2x + 5 = 3x$. Subtracting $2x$ from both sides gives $5 = x$. Case 2: $2x + 5 = -3x$. Adding $3x$ to both sides gives $5x + 5 = 0$. Subtracting $5$ gives $5x = -5$, and dividing by $5$ gives $x = -1$. Now check both. For $x = 5$: the left side is $|2(5) + 5| = |15| = 15$ and the right side is $3(5) = 15$, so it works. For $x = -1$: the left side is $|2(-1) + 5| = |3| = 3$ but the right side is $3(-1) = -3$, so it does not work. The solution set is $\\{5\\}$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This keeps both cases without checking them. For $x = -1$ the right side is $3(-1) = -3$, and an absolute value cannot equal a negative number."
+          },
+          {
+            "label": "C",
+            "text": "$x = -1$ is the value that fails the check (it gives $3 = -3$), and $x = 5$, which does work, is left out."
+          },
+          {
+            "label": "D",
+            "text": "$x = -1$ does fail, but $x = 5$ works: $|2(5) + 5| = 15$ and $3(5) = 15$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-017",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A rectangular garden has a length that is $4$ meters longer than its width. The area of the garden is $96$ square meters. What is the width of the garden, in meters?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12$"
+          },
+          {
+            "label": "B",
+            "text": "$8$"
+          },
+          {
+            "label": "C",
+            "text": "$24$"
+          },
+          {
+            "label": "D",
+            "text": "$92$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Let $w$ be the width in meters. The length is $4$ meters longer, so the length is $w + 4$. Area is width times length, so $w(w + 4) = 96$. Distributing gives $w^2 + 4w = 96$. Subtracting $96$ from both sides gives $w^2 + 4w - 96 = 0$. Factor: $12$ and $-8$ multiply to $-96$ and add to $4$, so $(w + 12)(w - 8) = 0$. This gives $w = -12$ or $w = 8$. A width cannot be negative, so $w = 8$. Check: the length is $8 + 4 = 12$, and $8 \\cdot 12 = 96$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$12$ is the length of the garden, which is $4$ meters longer than the width."
+          },
+          {
+            "label": "C",
+            "text": "This divides the area by $4$. The $4$ is how much longer the length is, not a side length: $24 \\cdot 28 = 672$, not $96$."
+          },
+          {
+            "label": "D",
+            "text": "This sets the length, $w + 4$, equal to $96$ instead of setting width times length equal to $96$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-018",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What value of $x$ satisfies the equation $9^x = \\frac{1}{27}$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-3/2",
+          "-1.5"
+        ],
+        "explanation": "Write both sides as powers of the same base, $3$. Since $9 = 3^2$, the left side is $9^x = (3^2)^x = 3^{2x}$. Since $27 = 3^3$, the right side is $\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}$. The equation becomes $3^{2x} = 3^{-3}$. When the bases are equal, the exponents must be equal, so $2x = -3$. Dividing both sides by $2$ gives $x = -\\frac{3}{2}$, which is $-1.5$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "How many distinct real solutions does the equation $x^4 - 5x^2 - 36 = 0$ have?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$0$"
+          },
+          {
+            "label": "B",
+            "text": "$1$"
+          },
+          {
+            "label": "C",
+            "text": "$2$"
+          },
+          {
+            "label": "D",
+            "text": "$4$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The equation has only $x^4$ and $x^2$ terms, so let $u = x^2$. Then $x^4 = (x^2)^2 = u^2$, and the equation becomes $u^2 - 5u - 36 = 0$. Factor: $-9$ and $4$ multiply to $-36$ and add to $-5$, so $(u - 9)(u + 4) = 0$. This gives $u = 9$ or $u = -4$. Now replace $u$ with $x^2$. If $x^2 = 9$, then $x = 3$ or $x = -3$. If $x^2 = -4$, there is no real solution, because the square of a real number is never negative. So the equation has exactly $2$ distinct real solutions, $x = 3$ and $x = -3$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$x^2 = -4$ has no real solutions, but $x^2 = 9$ does: $x = 3$ and $x = -3$."
+          },
+          {
+            "label": "B",
+            "text": "This counts only $x = 3$. Since $(-3)^4 - 5(-3)^2 - 36 = 81 - 45 - 36 = 0$, $x = -3$ is also a solution."
+          },
+          {
+            "label": "D",
+            "text": "This counts two solutions for each value of $x^2$, but $x^2 = -4$ gives no real solutions."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-equations-and-systems-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$\\begin{aligned} y &= x^2 - 4 \\\\ y &= 3x \\end{aligned}$$ Which ordered pair $(x, y)$ is a solution to the system of equations above?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(4, 12)$"
+          },
+          {
+            "label": "B",
+            "text": "$(1, 3)$"
+          },
+          {
+            "label": "C",
+            "text": "$(-1, 3)$"
+          },
+          {
+            "label": "D",
+            "text": "$(-4, 12)$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Both equations are solved for $y$, so set the right sides equal: $x^2 - 4 = 3x$. Subtracting $3x$ from both sides gives $x^2 - 3x - 4 = 0$. Factor: $-4$ and $1$ multiply to $-4$ and add to $-3$, so $(x - 4)(x + 1) = 0$. This gives $x = 4$ or $x = -1$. Use $y = 3x$ to find each $y$: when $x = 4$, $y = 12$; when $x = -1$, $y = -3$. The solutions are $(4, 12)$ and $(-1, -3)$. Only $(4, 12)$ is a choice. Check it in the first equation: $4^2 - 4 = 16 - 4 = 12$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This pair satisfies $y = 3x$, but in the first equation $1^2 - 4 = -3$, not $3$."
+          },
+          {
+            "label": "C",
+            "text": "This pair has the wrong sign on $y$. When $x = -1$, the second equation gives $y = 3(-1) = -3$, not $3$."
+          },
+          {
+            "label": "D",
+            "text": "This pair satisfies $y = x^2 - 4$, since $16 - 4 = 12$, but $3(-4) = -12$, not $12$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

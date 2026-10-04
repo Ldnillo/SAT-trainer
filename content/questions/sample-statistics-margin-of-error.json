@@ -655,6 +655,686 @@
           }
         ]
       }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A wildlife biologist weighed a random sample of rainbow trout from a large lake. Based on the sample, the mean mass of all rainbow trout in the lake is estimated to be $1.4$ kilograms, with a margin of error of $0.2$ kilogram. Which of the following is NOT a plausible value for the mean mass, in kilograms, of all rainbow trout in the lake?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1.25$"
+          },
+          {
+            "label": "B",
+            "text": "$1.35$"
+          },
+          {
+            "label": "C",
+            "text": "$1.55$"
+          },
+          {
+            "label": "D",
+            "text": "$1.65$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The plausible values for the mean mass of all the trout are the values within one margin of error of the estimate. Subtracting the margin of error from the estimate gives the lower end: $1.4 - 0.2 = 1.2$ kilograms. Adding the margin of error to the estimate gives the upper end: $1.4 + 0.2 = 1.6$ kilograms. So the plausible values run from $1.2$ to $1.6$ kilograms. Checking each choice: $1.25$, $1.35$ and $1.55$ are all between $1.2$ and $1.6$, so they are plausible. But $1.65$ is greater than the upper end, $1.6$, so it is NOT a plausible value.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$1.25$ is greater than the lower end of the range, $1.4 - 0.2 = 1.2$, so it is a plausible value."
+          },
+          {
+            "label": "B",
+            "text": "$1.35$ is between $1.2$ and $1.6$, so it is a plausible value."
+          },
+          {
+            "label": "C",
+            "text": "$1.55$ is less than the upper end of the range, $1.4 + 0.2 = 1.6$, so it is a plausible value."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A polling firm surveyed a random sample of $900$ adults in a state and estimated, at the $90\\%$ confidence level, that $44\\%$ of the state's adults own a houseplant. Using the same sample data, the firm then calculated a margin of error at the $99\\%$ confidence level. How does the margin of error at the $99\\%$ confidence level compare with the margin of error at the $90\\%$ confidence level?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It is smaller, because a higher confidence level means the estimate is more precise."
+          },
+          {
+            "label": "B",
+            "text": "It is larger, because being more confident that the range contains the population percent requires a wider range."
+          },
+          {
+            "label": "C",
+            "text": "It is the same, because the sample size did not change."
+          },
+          {
+            "label": "D",
+            "text": "It cannot be compared, because a margin of error can be calculated at only one confidence level."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "A confidence level describes how sure we are that the range of plausible values (the estimate plus or minus the margin of error) contains the true population value. To be more sure, the range has to be wider, so it has a better chance of catching the true value. With the same sample of $900$ adults, raising the confidence level from $90\\%$ to $99\\%$ therefore makes the margin of error larger.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This reverses the relationship. A higher confidence level does not make the estimate more precise; it makes the range wider so that we can be more sure it contains the population percent."
+          },
+          {
+            "label": "C",
+            "text": "Sample size is only one thing that affects the margin of error. With the same sample, a higher confidence level still gives a larger margin of error."
+          },
+          {
+            "label": "D",
+            "text": "The same sample data can be used to find a margin of error at any confidence level; higher levels simply give larger margins of error."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-013",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher measured the body lengths of a random sample of $50$ green frogs from a pond. The mean length of the frogs in the sample was $6.2$ centimeters. Based on the sample, the researcher estimated the mean length of all green frogs in the pond to be $6.2$ centimeters, with a margin of error of $0.4$ centimeter. Which statement must be true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The mean length of the $50$ frogs in the sample is $6.2$ centimeters."
+          },
+          {
+            "label": "B",
+            "text": "The mean length of all green frogs in the pond is $6.2$ centimeters."
+          },
+          {
+            "label": "C",
+            "text": "Every green frog in the pond is between $5.8$ and $6.6$ centimeters long."
+          },
+          {
+            "label": "D",
+            "text": "The mean length of all green frogs in the pond is between $5.8$ and $6.6$ centimeters."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The researcher actually measured the $50$ frogs in the sample, so their mean length, $6.2$ centimeters, is known exactly. The margin of error describes uncertainty about the population (all the frogs in the pond), not about the sample. Subtracting and adding the margin of error gives $6.2 - 0.4 = 5.8$ and $6.2 + 0.4 = 6.6$, so the population mean is plausibly between $5.8$ and $6.6$ centimeters, but this is not guaranteed. The only statement that must be true is the one about the sample.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The sample mean is only an estimate of the population mean. The population mean could be a different value, which is why there is a margin of error."
+          },
+          {
+            "label": "C",
+            "text": "The margin of error is about the mean length, not about individual frogs. Individual frogs can be much shorter or longer than the mean."
+          },
+          {
+            "label": "D",
+            "text": "The range from $5.8$ to $6.6$ centimeters contains the plausible values for the population mean, but it is not certain to contain it, so this statement does not have to be true."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A city surveyed two independent random samples of residents about whether they support extending library hours. In the sample of residents ages $18$ to $29$, $64\\%$ supported the change, with a margin of error of $5$ percentage points. In the sample of residents ages $65$ and older, $41\\%$ supported the change, with a margin of error of $4$ percentage points. Which conclusion is most appropriate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Exactly $23\\%$ more residents ages $18$ to $29$ than residents ages $65$ and older support the change."
+          },
+          {
+            "label": "B",
+            "text": "The surveys do not give convincing evidence of a difference, because each estimate has a margin of error."
+          },
+          {
+            "label": "C",
+            "text": "The percent of all city residents ages $18$ to $29$ who support the change is likely greater than the percent of all city residents ages $65$ and older who support it."
+          },
+          {
+            "label": "D",
+            "text": "A majority of all city residents ages $65$ and older likely support the change."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Find the range of plausible values for each group by subtracting and adding its margin of error. For ages $18$ to $29$: $64\\% - 5\\% = 59\\%$ and $64\\% + 5\\% = 69\\%$, so the plausible range is $59\\%$ to $69\\%$. For ages $65$ and older: $41\\% - 4\\% = 37\\%$ and $41\\% + 4\\% = 45\\%$, so the plausible range is $37\\%$ to $45\\%$. The lowest plausible value for the younger group, $59\\%$, is greater than the highest plausible value for the older group, $45\\%$. Because the ranges do not overlap, it is reasonable to conclude that the percent of all younger residents who support the change is likely greater than the percent of all older residents who support it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$64 - 41 = 23$ is the difference between the sample percents, but the population percents are uncertain, so the difference is not known exactly. (It is also a difference in percentage points, not \"$23\\%$ more residents.\")"
+          },
+          {
+            "label": "B",
+            "text": "Having a margin of error does not rule out a conclusion. Here the two ranges, $59\\%$ to $69\\%$ and $37\\%$ to $45\\%$, do not overlap, so the data do give convincing evidence of a difference."
+          },
+          {
+            "label": "D",
+            "text": "For residents ages $65$ and older, every plausible value from $37\\%$ to $45\\%$ is below $50\\%$, so a majority likely does not support the change."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker picked a different answer, key re-checked and confirmed: the plausible ranges 59-69% and 37-45% do not overlap, and choice D contradicts the 37-45% range"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A forest contains $6{,}500$ ash trees. Foresters inspected a random sample of $200$ of these trees and found that $18\\%$ of them were infested with a beetle. The margin of error for this estimate is $5$ percentage points. Which of the following gives the most plausible range for the number of ash trees in the forest that are infested?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$26$ to $46$"
+          },
+          {
+            "label": "B",
+            "text": "$845$ to $1{,}495$"
+          },
+          {
+            "label": "C",
+            "text": "$1{,}165$ to $1{,}175$"
+          },
+          {
+            "label": "D",
+            "text": "$1{,}170$ to $1{,}495$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "First, find the range of plausible percents for the whole forest. Subtracting the margin of error from the sample percent gives $18\\% - 5\\% = 13\\%$. Adding it gives $18\\% + 5\\% = 23\\%$. So between $13\\%$ and $23\\%$ of all $6{,}500$ ash trees are plausibly infested. Next, convert each percent to a number of trees by multiplying by $6{,}500$. For the lower end, $13\\% = 0.13$, and $0.13 \\times 6{,}500 = 845$. For the upper end, $23\\% = 0.23$, and $0.23 \\times 6{,}500 = 1{,}495$. So the most plausible range is $845$ to $1{,}495$ infested trees.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This applies the percents to the $200$ sampled trees ($0.13 \\times 200 = 26$ and $0.23 \\times 200 = 46$) instead of to all $6{,}500$ trees in the forest."
+          },
+          {
+            "label": "C",
+            "text": "This finds the point estimate $0.18 \\times 6{,}500 = 1{,}170$ and then subtracts and adds $5$ trees. The margin of error is $5$ percentage points, which is $0.05 \\times 6{,}500 = 325$ trees, not $5$ trees."
+          },
+          {
+            "label": "D",
+            "text": "This uses the point estimate, $1{,}170$, as the lower end. The lower end should be found by subtracting the margin of error: $0.13 \\times 6{,}500 = 845$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-016",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A news report about a random survey of a county's high school seniors states, \"It is plausible that between $38\\%$ and $46\\%$ of all seniors in the county plan to attend college outside the state.\" The range of plausible values was found by subtracting the margin of error from, and adding it to, the percent found in the sample. What were the sample percent and the margin of error?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Sample percent: $38\\%$; margin of error: $8$ percentage points"
+          },
+          {
+            "label": "B",
+            "text": "Sample percent: $46\\%$; margin of error: $8$ percentage points"
+          },
+          {
+            "label": "C",
+            "text": "Sample percent: $42\\%$; margin of error: $4$ percentage points"
+          },
+          {
+            "label": "D",
+            "text": "Sample percent: $42\\%$; margin of error: $8$ percentage points"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The sample percent is in the middle of the range, so it is the average of the two ends. Adding the ends gives $38 + 46 = 84$, and dividing by $2$ gives $84 \\div 2 = 42$, so the sample percent is $42\\%$. The margin of error is the distance from the middle to either end: $46 - 42 = 4$ (and also $42 - 38 = 4$). So the margin of error is $4$ percentage points. Check: $42\\% - 4\\% = 38\\%$ and $42\\% + 4\\% = 46\\%$, which matches the report.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$38\\%$ is the lower end of the range, not the sample percent, and $8$ is the width of the whole range ($46 - 38 = 8$), which is twice the margin of error."
+          },
+          {
+            "label": "B",
+            "text": "$46\\%$ is the upper end of the range, not the sample percent, and $8$ is the full width of the range rather than the margin of error."
+          },
+          {
+            "label": "D",
+            "text": "The sample percent is correct, but $8$ is the full width of the range. The margin of error is half of that, $8 \\div 2 = 4$, because it is added on one side and subtracted on the other."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A company claims that the mean battery life of its wireless earbuds is $10$ hours. An independent lab tested a random sample of $40$ pairs of the earbuds and found a mean battery life of $9.4$ hours, with a margin of error of $0.3$ hour. Which conclusion is best supported by the lab's results?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The company's claim is likely too high, because $10$ hours is outside the range of plausible values for the mean battery life of all the earbuds."
+          },
+          {
+            "label": "B",
+            "text": "The company's claim is supported, because $9.4$ hours is close to $10$ hours."
+          },
+          {
+            "label": "C",
+            "text": "The company's claim is likely too low, because some pairs in the sample lasted longer than $10$ hours."
+          },
+          {
+            "label": "D",
+            "text": "No conclusion about the claim can be drawn, because only $40$ pairs of earbuds were tested."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Find the range of plausible values for the mean battery life of all the earbuds. Subtracting the margin of error gives $9.4 - 0.3 = 9.1$ hours, and adding it gives $9.4 + 0.3 = 9.7$ hours. So the plausible values are from $9.1$ to $9.7$ hours. The claimed mean, $10$ hours, is greater than the highest plausible value, $9.7$ hours. So the lab's results suggest that the true mean is less than $10$ hours, which means the claim is likely too high.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Being close is not enough. The plausible values run only from $9.1$ to $9.7$ hours, and $10$ hours is outside that range."
+          },
+          {
+            "label": "C",
+            "text": "The claim is about the mean battery life. Individual pairs lasting longer than $10$ hours does not change the fact that every plausible value for the mean is below $10$."
+          },
+          {
+            "label": "D",
+            "text": "A random sample of $40$ pairs is enough to give an estimate with a margin of error; the margin of error already accounts for the sample size, and it shows that $10$ hours is not plausible."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "To estimate the percent of a city's households that compost food scraps, researchers randomly selected $2{,}000$ households from a complete list of the city's households and mailed each one a survey. Only $400$ of the selected households returned the survey. Of those, $31\\%$ said they compost, and the researchers reported a margin of error of $5$ percentage points. Which statement best describes a limitation of this estimate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The margin of error should be $0$, because the households were chosen at random from a complete list."
+          },
+          {
+            "label": "B",
+            "text": "The estimate cannot apply to the city, because $400$ households is less than $1\\%$ of all households in a large city."
+          },
+          {
+            "label": "C",
+            "text": "The true percent must be between $26\\%$ and $36\\%$, because the households were chosen at random."
+          },
+          {
+            "label": "D",
+            "text": "Households that chose to return the survey may differ from those that did not, and the margin of error does not account for that possible bias."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A margin of error measures only the uncertainty that comes from random sampling: the chance that a random sample does not perfectly match the population. It does not measure bias. Here, only $400$ of the $2{,}000$ selected households responded. Dividing, $400 \\div 2{,}000 = 0.2$, so only $20\\%$ of the selected households responded. Households that care about composting may be more likely to return a survey about it, so the people who responded may not represent all households. If so, the true percent could be outside the reported range of $31\\% - 5\\% = 26\\%$ to $31\\% + 5\\% = 36\\%$, and the margin of error would not reveal that.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Random selection does not make an estimate exact. Any sample has some sampling error, so the margin of error is greater than $0$."
+          },
+          {
+            "label": "B",
+            "text": "A random sample can be a small fraction of a population and still give a useful estimate. The problem here is who responded, not the fraction of the city that was sampled."
+          },
+          {
+            "label": "C",
+            "text": "Even with perfect random sampling, the range of plausible values is not guaranteed to contain the true value. And here, because so many households did not respond, the estimate may also be biased."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A random sample of $1{,}200$ adults in a country was surveyed, and $61\\%$ said they read the news online daily, with a margin of error of $3$ percentage points. Among the $150$ adults in the sample who are teachers, $70\\%$ said they read the news online daily. Which statement about an estimate for all teachers in the country, based only on the $150$ teachers in the sample, is most likely true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Its margin of error would be $3$ percentage points, the same as for the whole survey."
+          },
+          {
+            "label": "B",
+            "text": "Its margin of error would be less than $3$ percentage points, because teachers are a more similar group."
+          },
+          {
+            "label": "C",
+            "text": "Its margin of error would be greater than $3$ percentage points, because it is based on a smaller number of people."
+          },
+          {
+            "label": "D",
+            "text": "It would have no margin of error, because the $150$ teachers are a subgroup rather than a random sample."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The margin of error depends on how many people an estimate is based on: smaller samples give less precise estimates and so larger margins of error. The estimate for the whole adult population uses all $1{,}200$ people, and its margin of error is $3$ percentage points. The estimate for teachers uses only the $150$ teachers, which is $\\frac{150}{1{,}200} = \\frac{1}{8}$ of the sample. With far fewer people, the estimate for teachers is less precise, so its margin of error would be greater than $3$ percentage points.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The $3$-point margin of error goes with the estimate based on all $1{,}200$ adults. An estimate based on only $150$ people is less precise."
+          },
+          {
+            "label": "B",
+            "text": "Even if teachers' answers were somewhat similar, the much smaller number of people would make the estimate less precise, not more."
+          },
+          {
+            "label": "D",
+            "text": "The teachers in a random sample of adults are a random sample of teachers, so an estimate for teachers still has sampling uncertainty and a margin of error."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two polling firms each surveyed a different random sample of the registered voters in the same state, using the same question, during the same week. Firm X found that $52\\%$ supported a proposed tax, with a margin of error of $3$ percentage points. Firm Y found that $47\\%$ supported the tax, with a margin of error of $3$ percentage points. Which statement best explains how both results could be accurate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Because the ranges of plausible values overlap, both results are consistent with the same population percent, such as $49.5\\%$; the difference can be explained by random variation between samples."
+          },
+          {
+            "label": "B",
+            "text": "Both results cannot be accurate, because the two sample percents are different."
+          },
+          {
+            "label": "C",
+            "text": "Both results are accurate only if exactly $49.5\\%$ of the state's registered voters support the tax."
+          },
+          {
+            "label": "D",
+            "text": "Both results could be accurate only if the two firms surveyed different populations."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Find each firm's range of plausible values. For Firm X: $52\\% - 3\\% = 49\\%$ and $52\\% + 3\\% = 55\\%$, so its range is $49\\%$ to $55\\%$. For Firm Y: $47\\% - 3\\% = 44\\%$ and $47\\% + 3\\% = 50\\%$, so its range is $44\\%$ to $50\\%$. The ranges overlap from $49\\%$ to $50\\%$. Any population percent in that overlap, such as $49.5\\%$, is plausible according to both polls. Different random samples from the same population naturally give somewhat different results, so the two polls do not contradict each other.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Different random samples from the same population almost always give different sample percents. That is why each estimate has a margin of error."
+          },
+          {
+            "label": "C",
+            "text": "$49.5\\%$ is just one value in the overlap. Any value from $49\\%$ to $50\\%$ would be consistent with both polls."
+          },
+          {
+            "label": "D",
+            "text": "Both firms sampled the same population. Their results differ because of random sampling variation, which the overlapping ranges allow for."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

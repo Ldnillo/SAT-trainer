@@ -571,6 +571,603 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-inequalities-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A photographer charges a session fee of $\\$150$ plus $\\$40$ for each edited photo. A client wants to spend no more than $\\$630$ in total. Which inequality represents the number of edited photos, $p$, the client can order?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$150 + 40p \\le 630$"
+          },
+          {
+            "label": "B",
+            "text": "$150 + 40p \\ge 630$"
+          },
+          {
+            "label": "C",
+            "text": "$150p + 40 \\le 630$"
+          },
+          {
+            "label": "D",
+            "text": "$40(150 + p) \\le 630$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The total cost is the one-time session fee, $\\$150$, plus $\\$40$ for each of the $p$ photos, which is $40p$ dollars. So the total cost is $150 + 40p$. The phrase 'no more than $\\$630$' means the total cost must be less than or equal to $630$. This gives $150 + 40p \\le 630$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This says the total cost is at least $\\$630$. The phrase 'no more than' means less than or equal to, so the symbol should be $\\le$."
+          },
+          {
+            "label": "C",
+            "text": "This switches the two amounts, charging $\\$150$ per photo and $\\$40$ once. The session fee is charged once, and $\\$40$ is charged per photo."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies the session fee by $40$ as well. Only the photos cost $\\$40$ each, so the cost is $150 + 40p$, not $40(150 + p) = 6{,}000 + 40p$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which of the following describes all solutions to the inequality $-5 < 3 - 2x \\le 11$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-4 < x \\le 4$"
+          },
+          {
+            "label": "B",
+            "text": "$-7 \\le x < 1$"
+          },
+          {
+            "label": "C",
+            "text": "$x \\le -4$ or $x > 4$"
+          },
+          {
+            "label": "D",
+            "text": "$-4 \\le x < 4$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Work on all three parts of the compound inequality at once. Subtracting $3$ from each part gives $-5 - 3 < -2x \\le 11 - 3$, which is $-8 < -2x \\le 8$. Next divide each part by $-2$. Dividing by a negative number reverses both inequality symbols: $\\frac{-8}{-2} > x \\ge \\frac{8}{-2}$, which is $4 > x \\ge -4$. Reading this from smallest to largest gives $-4 \\le x < 4$. Check an endpoint: $x = -4$ gives $3 - 2(-4) = 3 + 8 = 11$, and $11 \\le 11$ is true, so $-4$ is included; $x = 4$ gives $3 - 8 = -5$, and $-5 < -5$ is false, so $4$ is not included.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This reverses the order of the endpoints but keeps the symbols in their original places. From $4 > x \\ge -4$, the strict symbol belongs with $4$ and the $\\le$ belongs with $-4$, so the solution is $-4 \\le x < 4$."
+          },
+          {
+            "label": "B",
+            "text": "This adds $3$ to each part instead of subtracting it, giving $-2 < -2x \\le 14$ and then $-7 \\le x < 1$. To remove the $+3$, subtract $3$ from each part."
+          },
+          {
+            "label": "C",
+            "text": "This describes the values outside the interval. Dividing by a negative number reverses the inequality symbols, but $x$ is still between the two endpoints, $-4 \\le x < 4$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A community theater has $150$ seats. Adult tickets cost $\\$15$ each and child tickets cost $\\$9$ each. For one performance, the theater wants to sell no more than $150$ tickets and bring in at least $\\$1{,}820$ from ticket sales. What is the least number of adult tickets the theater can sell and still meet its goal?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "79"
+        ],
+        "explanation": "Let $a$ be the number of adult tickets and $c$ the number of child tickets. The constraints are $a + c \\le 150$ and $15a + 9c \\ge 1{,}820$. To make $a$ as small as possible, sell as many child tickets as the seats allow, so take $c = 150 - a$. Substitute this into the money inequality: $15a + 9(150 - a) \\ge 1{,}820$. Distributing gives $15a + 1{,}350 - 9a \\ge 1{,}820$, and combining like terms gives $6a + 1{,}350 \\ge 1{,}820$. Subtracting $1{,}350$ from both sides gives $6a \\ge 470$. Dividing both sides by $6$ gives $a \\ge \\frac{470}{6}$, which is about $78.33$. The number of tickets must be a whole number, so the least possible value is $a = 79$. Check: $79$ adult and $71$ child tickets bring in $15(79) + 9(71) = 1{,}185 + 639 = 1{,}824$ dollars, which meets the goal, while $78$ adult and $72$ child tickets bring in $1{,}170 + 648 = 1{,}818$ dollars, which falls short.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$2x - 5y > 4$$ $$x + 4y < 23$$ The point $(a, 3)$ is a solution to the given system of inequalities. Which of the following could be the value of $a$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$9$"
+          },
+          {
+            "label": "B",
+            "text": "$9.5$"
+          },
+          {
+            "label": "C",
+            "text": "$10$"
+          },
+          {
+            "label": "D",
+            "text": "$11$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $x = a$ and $y = 3$ into both inequalities. The first becomes $2a - 5(3) > 4$, which is $2a - 15 > 4$. Adding $15$ to both sides gives $2a > 19$, and dividing both sides by $2$ gives $a > 9.5$. The second becomes $a + 4(3) < 23$, which is $a + 12 < 23$. Subtracting $12$ from both sides gives $a < 11$. So $a$ must satisfy $9.5 < a < 11$. Of the choices, only $10$ is in this range. Check: $2(10) - 15 = 5 > 4$ and $10 + 12 = 22 < 23$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "With $a = 9$, the first inequality gives $2(9) - 15 = 3$, and $3 > 4$ is false."
+          },
+          {
+            "label": "B",
+            "text": "With $a = 9.5$, the first inequality gives $2(9.5) - 15 = 4$, and $4 > 4$ is false because the symbol is strict. This value would work only if the symbol were $\\ge$."
+          },
+          {
+            "label": "D",
+            "text": "With $a = 11$, the second inequality gives $11 + 12 = 23$, and $23 < 23$ is false because the symbol is strict."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which of the following is the solution to the inequality $4x + 9 \\le 2x + 21$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$x \\le 2$"
+          },
+          {
+            "label": "B",
+            "text": "$x \\le 6$"
+          },
+          {
+            "label": "C",
+            "text": "$x \\le 15$"
+          },
+          {
+            "label": "D",
+            "text": "$x \\ge 6$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Subtracting $2x$ from both sides gives $2x + 9 \\le 21$. Subtracting $9$ from both sides gives $2x \\le 12$. Dividing both sides by $2$, a positive number, keeps the symbol the same and gives $x \\le 6$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This adds $2x$ to the left side instead of subtracting it, giving $6x + 9 \\le 21$, then $6x \\le 12$ and $x \\le 2$. To move $2x$ off the right side, subtract it from both sides."
+          },
+          {
+            "label": "C",
+            "text": "This adds $9$ to the right side instead of subtracting it, giving $2x \\le 30$ and $x \\le 15$. To move the $+9$ off the left side, subtract $9$ from both sides: $21 - 9 = 12$."
+          },
+          {
+            "label": "D",
+            "text": "This reverses the inequality symbol. The symbol flips only when both sides are multiplied or divided by a negative number; here both sides are divided by $2$, which is positive."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-016",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The point $(4, y)$ lies in the solution region of the inequality $3x - 2y \\ge -5$ in the $xy$-plane. What is the greatest possible value of $y$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "17/2",
+          "8.5"
+        ],
+        "explanation": "Substitute $x = 4$ into the inequality: $3(4) - 2y \\ge -5$, which is $12 - 2y \\ge -5$. Subtracting $12$ from both sides gives $-2y \\ge -17$. Dividing both sides by $-2$ reverses the inequality symbol, giving $y \\le \\frac{-17}{-2}$, which is $y \\le \\frac{17}{2}$, or $y \\le 8.5$. The greatest possible value of $y$ is $\\frac{17}{2}$, or $8.5$. Check: $3(4) - 2(8.5) = 12 - 17 = -5$, and $-5 \\ge -5$ is true.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$y \\ge 2x + 1$$ $$y \\le -x + c$$ In the given system of inequalities, $c$ is a constant. In the $xy$-plane, the greatest $x$-coordinate of any point in the solution region of the system is $3$. What is the value of $c$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4$"
+          },
+          {
+            "label": "B",
+            "text": "$7$"
+          },
+          {
+            "label": "C",
+            "text": "$8$"
+          },
+          {
+            "label": "D",
+            "text": "$10$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A point is in the solution region when it lies on or above the line $y = 2x + 1$ and on or below the line $y = -x + c$. That can only happen where $2x + 1 \\le -x + c$. Adding $x$ to both sides gives $3x + 1 \\le c$. Subtracting $1$ from both sides gives $3x \\le c - 1$, and dividing both sides by $3$ gives $x \\le \\frac{c - 1}{3}$. So the greatest $x$-coordinate in the region is $\\frac{c - 1}{3}$, where the two boundary lines meet. Setting $\\frac{c - 1}{3} = 3$ and multiplying both sides by $3$ gives $c - 1 = 9$. Adding $1$ to both sides gives $c = 10$. Check: at $x = 3$, the first line gives $y = 2(3) + 1 = 7$ and the second gives $y = -3 + 10 = 7$, so the lines meet at $(3, 7)$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This drops the negative sign on $-x$, solving $2(3) + 1 = 3 + c$ to get $c = 4$. The second boundary line is $y = -x + c$, so at $x = 3$ it is $-3 + c$."
+          },
+          {
+            "label": "B",
+            "text": "This is the $y$-coordinate of the point where the boundary lines meet, $(3, 7)$, not the value of $c$. Substituting into $y = -x + c$ gives $7 = -3 + c$, so $c = 10$."
+          },
+          {
+            "label": "C",
+            "text": "This makes a sign error when moving the $1$: from $2x + 1 = -x + c$ it writes $3x = c + 1$, so $9 = c + 1$ and $c = 8$. Subtracting $1$ from both sides correctly gives $3x = c - 1$, so $c = 10$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-018",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A water tank holds $900$ liters. Water drains from the tank at a constant rate of $35$ liters per hour, and the tank must always hold at least $180$ liters. What is the greatest number of whole hours the water can drain before the tank falls below this level?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "After $h$ hours, $35h$ liters have drained, so the tank holds $900 - 35h$ liters. It must hold at least $180$ liters, so $900 - 35h \\ge 180$. Subtracting $900$ from both sides gives $-35h \\ge -720$. Dividing both sides by $-35$ reverses the symbol, giving $h \\le \\frac{720}{35}$, which is about $20.57$. The greatest whole number of hours is $20$. Check: after $20$ hours the tank holds $900 - 700 = 200$ liters, which is enough, but after $21$ hours it would hold $900 - 735 = 165$ liters, which is too little.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A ferry can carry at most $36{,}000$ kilograms of vehicles on each trip. Each car weighs about $1{,}500$ kilograms and each truck weighs about $6{,}000$ kilograms. The inequality $1{,}500c + 6{,}000t \\le 36{,}000$ represents this limit, where $c$ is the number of cars and $t$ is the number of trucks. If the ferry carries $3$ trucks on a trip, what is the greatest number of cars it can also carry?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6$"
+          },
+          {
+            "label": "B",
+            "text": "$12$"
+          },
+          {
+            "label": "C",
+            "text": "$21$"
+          },
+          {
+            "label": "D",
+            "text": "$24$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $t = 3$ into the inequality: $1{,}500c + 6{,}000(3) \\le 36{,}000$, which is $1{,}500c + 18{,}000 \\le 36{,}000$. Subtracting $18{,}000$ from both sides gives $1{,}500c \\le 18{,}000$. Dividing both sides by $1{,}500$ gives $c \\le 12$. The greatest number of cars is $12$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the greatest number of trucks the ferry could carry with no cars, $\\frac{36{,}000}{6{,}000} = 6$, not the number of cars with $3$ trucks."
+          },
+          {
+            "label": "C",
+            "text": "This uses the weight of a car for the trucks: $36{,}000 - 3(1{,}500) = 31{,}500$, and $\\frac{31{,}500}{1{,}500} = 21$. Each truck weighs $6{,}000$ kilograms, so the trucks use $18{,}000$ kilograms."
+          },
+          {
+            "label": "D",
+            "text": "This is the greatest number of cars with no trucks, $\\frac{36{,}000}{1{,}500} = 24$. It ignores the $18{,}000$ kilograms used by the $3$ trucks."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-inequalities-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the inequality $kx + 6 < 3x + 2$, $k$ is a constant. For which value of $k$ does the inequality have no solution?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-3$"
+          },
+          {
+            "label": "B",
+            "text": "$0$"
+          },
+          {
+            "label": "C",
+            "text": "$3$"
+          },
+          {
+            "label": "D",
+            "text": "$6$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Subtracting $3x$ from both sides gives $kx - 3x + 6 < 2$, and subtracting $6$ from both sides gives $kx - 3x < -4$. Factoring out $x$ gives $(k - 3)x < -4$. If $k - 3$ is not zero, you can divide both sides by $k - 3$ and get a range of $x$-values that works, so the inequality has solutions. If $k = 3$, then $k - 3 = 0$, and the inequality becomes $0 \\cdot x < -4$, which is $0 < -4$. That is false for every value of $x$, so the inequality has no solution. Checking in the original: with $k = 3$ it reads $3x + 6 < 3x + 2$, and subtracting $3x$ from both sides gives $6 < 2$, which is never true.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "With $k = -3$, the inequality becomes $-6x < -4$. Dividing both sides by $-6$ reverses the symbol and gives $x > \\frac{2}{3}$, so there are solutions, such as $x = 1$."
+          },
+          {
+            "label": "B",
+            "text": "With $k = 0$, the inequality becomes $6 < 3x + 2$. Subtracting $2$ from both sides gives $4 < 3x$, so $x > \\frac{4}{3}$, and there are solutions, such as $x = 2$."
+          },
+          {
+            "label": "D",
+            "text": "With $k = 6$, the inequality becomes $3x < -4$, so $x < -\\frac{4}{3}$, and there are solutions, such as $x = -2$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

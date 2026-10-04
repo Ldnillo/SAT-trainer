@@ -685,6 +685,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "words-in-context-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Engineers designed the new pedestrian bridge to be ______. In strong winds it bends and sways slightly instead of rigidly resisting the force, which keeps its steel cables from snapping under the strain."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "flexible"
+          },
+          {
+            "label": "B",
+            "text": "fragile"
+          },
+          {
+            "label": "C",
+            "text": "decorative"
+          },
+          {
+            "label": "D",
+            "text": "temporary"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence explains what the blank describes: the bridge \"bends and sways slightly\" rather than resisting the wind, and this keeps it from snapping. Something that bends without breaking is \"flexible.\" Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Fragile\" means easily broken, but the text says the bridge's design keeps it from snapping. That is the opposite of fragile."
+          },
+          {
+            "label": "C",
+            "text": "\"Decorative\" is about appearance, and the text says nothing about how the bridge looks; it describes how the bridge responds to wind."
+          },
+          {
+            "label": "D",
+            "text": "\"Temporary\" means lasting only a short time. Nothing in the text says the bridge will be taken down."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Each spring, meltwater rushing down Harlan Creek tore soil away from its banks and clouded the water downstream. To check the erosion, volunteers planted rows of willows along the creek; within a few years the trees' dense roots were holding the banks firmly in place."
+          }
+        ],
+        "table": null,
+        "stem": "As used in the text, what does the word \"check\" most nearly mean?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "inspect"
+          },
+          {
+            "label": "B",
+            "text": "restrain"
+          },
+          {
+            "label": "C",
+            "text": "mark"
+          },
+          {
+            "label": "D",
+            "text": "confirm"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The volunteers planted willows whose roots ended up \"holding the banks firmly in place.\" So the purpose of planting the trees was to stop or hold back the erosion. In this sense, \"check\" means \"restrain,\" as in \"to keep something from advancing.\" Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Check\" can mean \"inspect\" (as in checking your work), but planting trees doesn't inspect erosion; it holds it back, as the roots holding the banks show."
+          },
+          {
+            "label": "C",
+            "text": "\"Check\" can mean \"put a mark beside,\" but that sense makes no sense with erosion and doesn't fit what the willows did."
+          },
+          {
+            "label": "D",
+            "text": "\"Confirm\" is close to \"check\" in the sense of verifying a fact, but the volunteers weren't verifying that erosion existed; they were trying to stop it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Botanist Ruth Kemble's field notebooks are famously terse, yet they are seldom ______: a single line typically records a plant's exact location, the species growing beside it, and the texture of the soil around its roots."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "laconic"
+          },
+          {
+            "label": "B",
+            "text": "meticulous"
+          },
+          {
+            "label": "C",
+            "text": "candid"
+          },
+          {
+            "label": "D",
+            "text": "vacuous"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "\"Yet\" sets up a contrast with \"terse\" (using few words): the notes are short, but they are not lacking in something. The colon explains what: each short line is packed with information (location, neighboring species, soil texture). So the notes are seldom empty of content, or \"vacuous.\" Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Laconic\" means using very few words, which is what \"terse\" already means. Saying the notes are terse \"yet seldom laconic\" would contradict itself."
+          },
+          {
+            "label": "B",
+            "text": "\"Meticulous\" means very careful and precise. The detailed lines show the notes ARE meticulous, so saying they are \"seldom meticulous\" contradicts the evidence after the colon."
+          },
+          {
+            "label": "C",
+            "text": "\"Candid\" means frank or honest. Nothing in the text concerns honesty, and the colon's evidence (how much information each line holds) has nothing to do with frankness."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The science museum's new gallery was built to be ______ to young children. Its displays hang at a toddler's eye level, its labels use short, simple words, and nearly every object can be picked up and handled."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "unfamiliar"
+          },
+          {
+            "label": "B",
+            "text": "hazardous"
+          },
+          {
+            "label": "C",
+            "text": "accessible"
+          },
+          {
+            "label": "D",
+            "text": "expensive"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence lists features that make the gallery easy for young children to see, read and touch: low displays, simple labels and objects they can handle. Something designed to be easy to reach and use is \"accessible.\" Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Unfamiliar\" means strange or not known. The features described make the gallery easier for children, not stranger to them."
+          },
+          {
+            "label": "B",
+            "text": "\"Hazardous\" means dangerous. Nothing in the text suggests danger; the gallery was built with children's needs in mind."
+          },
+          {
+            "label": "D",
+            "text": "\"Expensive\" concerns cost, and the text says nothing about what the gallery costs children or their families."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When astronomer Teodor Brask first presented his theory about the comet's origin, the response from other researchers was largely ______. Most called the idea intriguing but untested, and almost no one offered either strong praise or harsh criticism until new observations arrived two years later."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "enthusiastic"
+          },
+          {
+            "label": "B",
+            "text": "scathing"
+          },
+          {
+            "label": "C",
+            "text": "noncommittal"
+          },
+          {
+            "label": "D",
+            "text": "belated"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence describes the response: researchers called the idea \"intriguing but untested\" and offered neither \"strong praise\" nor \"harsh criticism.\" A response that avoids taking a clear position for or against something is \"noncommittal.\" Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Enthusiastic\" means eagerly approving, but the text says almost no one offered strong praise."
+          },
+          {
+            "label": "B",
+            "text": "\"Scathing\" means harshly critical, but the text says almost no one offered harsh criticism."
+          },
+          {
+            "label": "D",
+            "text": "\"Belated\" means coming late. The researchers did respond right away (they called the idea intriguing but untested); what came later were the new observations, not the response."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "After weeks of debate, the planning committee gave the community garden proposal its qualified approval. Members endorsed the plan's goals and its proposed location, but they insisted that the budget be cut by a third and that a water-use plan be submitted before any digging begins."
+          }
+        ],
+        "table": null,
+        "stem": "As used in the text, what does the word \"qualified\" most nearly mean?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "conditional"
+          },
+          {
+            "label": "B",
+            "text": "certified"
+          },
+          {
+            "label": "C",
+            "text": "skilled"
+          },
+          {
+            "label": "D",
+            "text": "eligible"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence explains the committee's approval: members supported the plan \"but\" insisted on two requirements (a smaller budget and a water-use plan) before work could start. Approval that comes with requirements attached is limited or \"conditional.\" Here \"qualified\" is used in that sense, not in its more common sense of \"competent.\" Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Certified\" fits \"qualified\" in the sense of officially approved as competent, as in a qualified electrician. But the text stresses the conditions attached to the approval, not any official certification."
+          },
+          {
+            "label": "C",
+            "text": "\"Skilled\" is the most common meaning of \"qualified,\" but it describes people, not an approval. Nothing in the text concerns anyone's skill."
+          },
+          {
+            "label": "D",
+            "text": "\"Eligible\" (meeting the requirements for something) describes the proposal or a person, not the approval itself, and it ignores the conditions the committee attached."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Archaeologist Lena Okafor's analysis of tooth enamel from a Bronze Age cemetery ______ the long-held assumption that the people buried there had spent their whole lives nearby. Chemical signatures in the enamel showed that nearly a third of them had grown up in regions hundreds of kilometers away."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "confirmed"
+          },
+          {
+            "label": "B",
+            "text": "undermined"
+          },
+          {
+            "label": "C",
+            "text": "anticipated"
+          },
+          {
+            "label": "D",
+            "text": "restated"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The assumption was that the people \"had spent their whole lives nearby.\" Okafor's evidence showed that nearly a third had grown up far away, which contradicts that assumption. Evidence that weakens a belief \"undermines\" it. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Confirmed\" means supported, but the finding that many people grew up far away goes against the assumption that they all lived nearby."
+          },
+          {
+            "label": "C",
+            "text": "\"Anticipated\" means expected or came before. A long-held assumption already existed, and the analysis challenged it rather than predicting it."
+          },
+          {
+            "label": "D",
+            "text": "\"Restated\" means said again. The analysis didn't repeat the assumption; it produced evidence against it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Hikers rarely get lost on the Cedar Ridge Trail, even in fog. Volunteers have ______ marked the route, painting bright orange blazes on trees and rocks every few dozen meters along its entire length."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "rarely"
+          },
+          {
+            "label": "B",
+            "text": "recently"
+          },
+          {
+            "label": "C",
+            "text": "carelessly"
+          },
+          {
+            "label": "D",
+            "text": "thoroughly"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text explains why hikers rarely get lost: blazes appear \"every few dozen meters along its entire length.\" Marks placed this often, over the whole trail, show that the route was marked completely, or \"thoroughly.\" Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Rarely\" contradicts the text: marks every few dozen meters along the entire trail are frequent, not rare."
+          },
+          {
+            "label": "B",
+            "text": "\"Recently\" says when the trail was marked, not how well. It doesn't explain why hikers almost never get lost, which is the point of the sentence."
+          },
+          {
+            "label": "C",
+            "text": "\"Carelessly\" contradicts the text: frequent, bright marks along the whole route show care, and careless marking wouldn't keep hikers from getting lost."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Critics who praise the poet's final collection as ______ overlook how much it borrows: nearly every image in the book reworks a line from the folk ballads she transcribed in mountain villages as a young woman."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "derivative"
+          },
+          {
+            "label": "B",
+            "text": "sentimental"
+          },
+          {
+            "label": "C",
+            "text": "unprecedented"
+          },
+          {
+            "label": "D",
+            "text": "fragmentary"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The critics \"overlook how much it borrows,\" so their praise must describe the collection as something that its borrowing contradicts. The colon shows the borrowing: nearly every image reworks an older ballad line. A collection built on earlier material is not without precedent, so the critics are wrongly calling it \"unprecedented\" (never done or seen before). Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Derivative\" means copied from or based on other work. Critics who called it derivative would be pointing out the borrowing, not overlooking it, and the word is not praise."
+          },
+          {
+            "label": "B",
+            "text": "\"Sentimental\" describes emotional tone. The evidence after the colon, about borrowed images, neither supports nor contradicts a claim about sentiment."
+          },
+          {
+            "label": "D",
+            "text": "\"Fragmentary\" means incomplete or in pieces, and it isn't praise. The borrowing described after the colon has nothing to do with whether the book is complete."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Before approving the loan, the bank's analysts spent a month reviewing the bakery's records. They concluded that the business was financially sound: it had earned steady profits for six years, carried very little debt, and had enough savings to survive a slow season."
+          }
+        ],
+        "table": null,
+        "stem": "As used in the text, what does the word \"sound\" most nearly mean?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "logical"
+          },
+          {
+            "label": "B",
+            "text": "stable"
+          },
+          {
+            "label": "C",
+            "text": "complete"
+          },
+          {
+            "label": "D",
+            "text": "resonant"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The colon introduces the evidence for the analysts' conclusion: steady profits, little debt and enough savings for a slow season. These describe a business in good, secure condition that is unlikely to fail. So \"financially sound\" means financially \"stable.\" Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Logical\" fits \"sound\" in phrases like \"sound reasoning,\" but the text is describing the health of a business, not an argument."
+          },
+          {
+            "label": "C",
+            "text": "\"Complete\" (whole, with nothing missing) doesn't match the evidence, which is about profits, debt and savings, not about the business having all its parts."
+          },
+          {
+            "label": "D",
+            "text": "\"Resonant\" relates to \"sound\" as noise, which has nothing to do with the bakery's finances."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

@@ -748,6 +748,726 @@
           }
         ]
       }
+    },
+    {
+      "id": "probability-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A spinner is divided into $8$ equal sections numbered $1$ through $8$. If the spinner is spun once, what is the probability that it lands on a number that is prime or greater than $6$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{4}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{1}{2}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{5}{8}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{3}{4}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "There are $8$ equally likely outcomes. The prime numbers from $1$ to $8$ are $2$, $3$, $5$, and $7$ (the number $1$ is not prime). The numbers greater than $6$ are $7$ and $8$. Combining the two lists without counting $7$ twice gives $2$, $3$, $5$, $7$, and $8$, which is $5$ outcomes. The probability is $\\frac{5}{8}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$\\frac{2}{8} = \\frac{1}{4}$ counts only the numbers greater than $6$ ($7$ and $8$) and leaves out the primes."
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{4}{8} = \\frac{1}{2}$ counts only the primes ($2$, $3$, $5$, $7$) and leaves out $8$, which is greater than $6$."
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{6}{8} = \\frac{3}{4}$ adds $4$ primes and $2$ numbers greater than $6$, counting $7$ twice even though it is in both groups."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-012",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Events last season",
+          "columns": [
+            "Type of event",
+            "Sold out",
+            "Did not sell out",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Concert",
+              "14",
+              "21",
+              "35"
+            ],
+            [
+              "Lecture",
+              "6",
+              "39",
+              "45"
+            ],
+            [
+              "Total",
+              "20",
+              "60",
+              "80"
+            ]
+          ]
+        },
+        "stem": "The table shows the events held at a performing arts center last season and whether each event sold out. If one of the concerts is selected at random, what is the probability that it sold out?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2/5",
+          ".4",
+          "0.4"
+        ],
+        "explanation": "Because a concert is selected, only the Concert row matters. There were $35$ concerts in all, and $14$ of them sold out. The probability is $\\frac{14}{35}$. Dividing the numerator and denominator by $7$ simplifies this to $\\frac{2}{5}$, which is $0.4$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-013",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Favorite exhibit by age group",
+          "columns": [
+            "Age group",
+            "Fossils",
+            "Space",
+            "Art",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Child",
+              "48",
+              "36",
+              "16",
+              "100"
+            ],
+            [
+              "Adult",
+              "62",
+              "54",
+              "84",
+              "200"
+            ],
+            [
+              "Total",
+              "110",
+              "90",
+              "100",
+              "300"
+            ]
+          ]
+        },
+        "stem": "A science museum asked $300$ visitors which of three exhibits they liked best. The table shows the results by age group. If one of the visitors who chose the Space exhibit is selected at random, what is the probability that the visitor is a child?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{2}{5}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{9}{25}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{3}{25}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{3}{10}$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The person is selected from the visitors who chose Space, so the Space column is the group to use. That column has a total of $90$ visitors, and $36$ of them are children. The probability is $\\frac{36}{90}$. Dividing the numerator and denominator by $18$ simplifies this to $\\frac{2}{5}$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "$\\frac{36}{100} = \\frac{9}{25}$ is the probability that a child chose Space. It divides by the number of children instead of the number of visitors who chose Space."
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{36}{300} = \\frac{3}{25}$ is the probability that a visitor chosen from all $300$ is a child who chose Space."
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{90}{300} = \\frac{3}{10}$ is the probability that a visitor chosen from all $300$ chose Space."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-014",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A weather forecast gives a $30\\%$ chance of rain on Saturday and a $40\\%$ chance of rain on Sunday. Assume that whether it rains on one day does not affect whether it rains on the other. According to the forecast, what is the probability that it does not rain on either day?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          ".42",
+          "0.42",
+          "21/50"
+        ],
+        "explanation": "First find the probability of no rain on each day. For Saturday it is $1 - 0.30 = 0.70$. For Sunday it is $1 - 0.40 = 0.60$. Because the two days are independent, the probability of no rain on both days is the product of these probabilities: $0.70 \\times 0.60 = 0.42$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A company makes phone chargers at two plants. Plant X makes $35\\%$ of the chargers, and Plant Y makes the rest. Of the chargers made at Plant X, $4\\%$ are defective, and of the chargers made at Plant Y, $2\\%$ are defective. If a defective charger made by the company is selected at random, what is the probability that it was made at Plant X?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{7}{500}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{13}{27}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{2}{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{14}{27}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Imagine the company makes $10{,}000$ chargers. Plant X makes $35\\%$ of them: $0.35 \\times 10{,}000 = 3{,}500$. Plant Y makes the rest: $10{,}000 - 3{,}500 = 6{,}500$. The defective chargers from Plant X are $4\\%$ of $3{,}500$: $0.04 \\times 3{,}500 = 140$. The defective chargers from Plant Y are $2\\%$ of $6{,}500$: $0.02 \\times 6{,}500 = 130$. In all there are $140 + 130 = 270$ defective chargers, and $140$ of them came from Plant X. The probability is $\\frac{140}{270}$. Dividing the numerator and denominator by $10$ simplifies this to $\\frac{14}{27}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$0.35 \\times 0.04 = 0.014$, which is $\\frac{7}{500}$, is the probability that a charger chosen from all the chargers is both from Plant X and defective. The question selects only from the defective chargers, so this must be divided by the probability of a charger being defective, $0.027$."
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{130}{270} = \\frac{13}{27}$ is the probability that a defective charger came from Plant Y, not Plant X."
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{4\\%}{4\\% + 2\\%} = \\frac{2}{3}$ compares only the defect rates and ignores that Plant X makes far fewer chargers than Plant Y."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-016",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Practice course and road test results",
+          "columns": [
+            "Practice course",
+            "Passed",
+            "Did not pass",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Took course",
+              "72",
+              "18",
+              "90"
+            ],
+            [
+              "Did not take course",
+              "84",
+              "46",
+              "130"
+            ],
+            [
+              "Total",
+              "156",
+              "64",
+              "220"
+            ]
+          ]
+        },
+        "stem": "A driving school recorded whether each of its students took an optional practice course and whether the student passed the road test on the first try. The results are shown in the table. If a student who passed on the first try is selected at random, what is the probability that the student took the practice course?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{4}{5}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{6}{13}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{18}{55}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{9}{22}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The student is selected from those who passed, so the Passed column is the group to use. That column has a total of $156$ students, and $72$ of them took the practice course. The probability is $\\frac{72}{156}$. Dividing the numerator and denominator by $12$ simplifies this to $\\frac{6}{13}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$\\frac{72}{90} = \\frac{4}{5}$ is the probability that a student who took the course passed. It reverses the condition."
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{72}{220} = \\frac{18}{55}$ is the probability that a student chosen from all $220$ both took the course and passed."
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{90}{220} = \\frac{9}{22}$ is the probability that a student chosen from all $220$ took the course."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-017",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school club has $5$ juniors and $4$ seniors. Two different members of the club will be chosen at random to attend a conference. What is the probability that one junior and one senior are chosen?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5/9",
+          ".5555",
+          ".5556",
+          "0.555",
+          "0.556"
+        ],
+        "explanation": "Think of choosing the two members one at a time without replacement. There are two ways to get one of each. Junior first, then senior: the probability of a junior first is $\\frac{5}{9}$, and then $4$ of the remaining $8$ members are seniors, so the probability is $\\frac{5}{9} \\cdot \\frac{4}{8} = \\frac{20}{72}$. Senior first, then junior: the probability of a senior first is $\\frac{4}{9}$, and then $5$ of the remaining $8$ members are juniors, so the probability is $\\frac{4}{9} \\cdot \\frac{5}{8} = \\frac{20}{72}$. Adding the two cases gives $\\frac{20}{72} + \\frac{20}{72} = \\frac{40}{72}$. Dividing the numerator and denominator by $8$ simplifies this to $\\frac{5}{9}$, which is about $0.5556$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-018",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two fair six-sided dice, each with faces numbered $1$ through $6$, are rolled. Given that the sum of the two numbers rolled is $8$, what is the probability that at least one of the dice shows a $3$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{18}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{2}{5}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{1}{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{5}{36}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Since we are told the sum is $8$, only the rolls with a sum of $8$ matter. Writing each roll as (first die, second die), these are $(2, 6)$, $(3, 5)$, $(4, 4)$, $(5, 3)$, and $(6, 2)$, which is $5$ equally likely outcomes. The outcomes with a $3$ are $(3, 5)$ and $(5, 3)$, which is $2$ outcomes. The probability is $\\frac{2}{5}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$\\frac{2}{36} = \\frac{1}{18}$ is the probability, out of all $36$ rolls, that the sum is $8$ and a die shows $3$. It ignores the given condition that the sum is $8$."
+          },
+          {
+            "label": "C",
+            "text": "This treats $(3, 5)$ and $(5, 3)$ as one outcome and $(2, 6)$ and $(6, 2)$ as one outcome, leaving $3$ outcomes. But those rolls are different, equally likely outcomes, so there are $5$ in all."
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{5}{36}$ is the probability that the sum is $8$, not the probability of a $3$ given that the sum is $8$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Bike-share trips in one week",
+          "columns": [
+            "Rider type",
+            "Weekday",
+            "Weekend",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Member",
+              "340",
+              "110",
+              "450"
+            ],
+            [
+              "Casual rider",
+              "90",
+              "160",
+              "250"
+            ],
+            [
+              "Total",
+              "430",
+              "270",
+              "700"
+            ]
+          ]
+        },
+        "stem": "The table shows the trips taken on a city's bike-share system during one week, by type of rider and day of the week. If one of these trips is selected at random, what is the probability that it was taken on a weekend?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{16}{25}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{11}{45}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{16}{27}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{27}{70}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "All $700$ trips are possible, so divide by the grand total. The Weekend column has a total of $270$ trips. The probability is $\\frac{270}{700}$. Dividing the numerator and denominator by $10$ simplifies this to $\\frac{27}{70}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$\\frac{160}{250} = \\frac{16}{25}$ is the probability that a trip by a casual rider was on a weekend. It uses only the casual riders' row."
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{110}{450} = \\frac{11}{45}$ is the probability that a trip by a member was on a weekend. It uses only the members' row."
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{160}{270} = \\frac{16}{27}$ is the probability that a weekend trip was taken by a casual rider."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A jar contains $12$ red beads and some blue beads, and no other beads. If $4$ more red beads were added to the jar, the probability of selecting a red bead at random would be $\\frac{1}{2}$. What is the probability of selecting a red bead at random from the jar before any beads are added?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{2}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{3}{4}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{3}{7}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{4}{7}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Let $b$ be the number of blue beads. After $4$ red beads are added, there are $12 + 4 = 16$ red beads and $16 + b$ beads in all. The probability of red would be $\\frac{16}{16 + b}$, and this equals $\\frac{1}{2}$: $\\frac{16}{16 + b} = \\frac{1}{2}$. Cross-multiplying gives $2 \\cdot 16 = 16 + b$, which is $32 = 16 + b$. Subtracting $16$ from both sides gives $b = 16$. Before any beads are added, the jar has $12$ red beads and $12 + 16 = 28$ beads in all. The probability of red is $\\frac{12}{28}$. Dividing the numerator and denominator by $4$ simplifies this to $\\frac{3}{7}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{2}$ is the probability after the $4$ red beads are added, not before."
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{12}{16} = \\frac{3}{4}$ divides the red beads by the blue beads instead of by the total number of beads."
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{16}{28} = \\frac{4}{7}$ is the probability of selecting a blue bead before any beads are added."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }
