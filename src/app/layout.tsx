@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
 import "katex/dist/katex.min.css";
 import { Logo } from "@/components/Logo";
+import { NavLink } from "@/components/NavLink";
 import { currentUser } from "@/lib/auth/session";
 import { signOut } from "./auth-actions";
 import "./globals.css";
@@ -20,7 +21,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     // Browser extensions (one sec, Grammarly...) add attributes to <html> before React loads; ignore those.
     <html lang="en" className={font.variable} suppressHydrationWarning>
       <body>
-        <header className="site-header">
+        <header className="site-header" data-signed-in={user ? "" : undefined}>
           <div className="site-header-inner">
             <Link href={user ? "/dashboard" : "/"} className="brand" aria-label="NextScore home">
               <Logo />
@@ -28,8 +29,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             <nav>
               {user ? (
                 <>
-                  <Link href="/dashboard">Dashboard</Link>
-                  <Link href="/pass">Season pass</Link>
+                  <NavLink href="/dashboard">Dashboard</NavLink>
+                  <NavLink href="/pass">Season pass</NavLink>
                   <form action={signOut}>
                     <span className="who">{user.name}</span>
                     <button type="submit" className="link-button">

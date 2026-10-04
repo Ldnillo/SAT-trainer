@@ -26,13 +26,15 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
     const { question, attempt } = items[reviewed];
     const done = answered === items.length;
     return (
-      <main>
+      <main className={styles.page}>
         <Header index={reviewed} done={answered} total={items.length} skill={question.skill} difficulty={question.difficulty} />
         <QuestionBody content={question.content} />
         <AnswerReview content={question.content} answer={attempt!.answer} correct={attempt!.correct} />
-        <Link href={`/practice/${set.id}`} className="button">
-          {done ? "See results" : "Next question"}
-        </Link>
+        <div className={styles.actionBar}>
+          <Link href={`/practice/${set.id}`} className="button large">
+            {done ? "See results" : "Next question"}
+          </Link>
+        </div>
       </main>
     );
   }
@@ -41,14 +43,16 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
   if (next >= 0) {
     const { question } = items[next];
     return (
-      <main>
+      <main className={styles.page}>
         <Header index={next} done={answered} total={items.length} skill={question.skill} difficulty={question.difficulty} />
         <form action={answerQuestion.bind(null, set.id, question.id)}>
           <QuestionBody content={question.content} />
           <AnswerInputs content={question.content} />
-          <button type="submit" className="button">
-            Check answer
-          </button>
+          <div className={styles.actionBar}>
+            <button type="submit" className="button large">
+              Check answer
+            </button>
+          </div>
         </form>
       </main>
     );
@@ -56,19 +60,33 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
 
   // Set finished: results.
   const correct = items.filter((i) => i.attempt?.correct).length;
+  const pct = Math.round((correct / items.length) * 100);
   return (
-    <main>
-      <h1>
-        Set complete: {correct} of {items.length} correct
-      </h1>
-      <p className={styles.muted}>Your skill mastery and score estimates on the dashboard now include these answers.</p>
+    <main className={styles.page}>
+      <section className={`${styles.summary} surface`}>
+        <div className={styles.ring} style={{ "--pct": `${pct}%` } as React.CSSProperties} aria-hidden>
+          <span>{pct}%</span>
+        </div>
+        <div>
+          <p className="eyebrow">Set complete</p>
+          <h1 className={styles.summaryTitle}>
+            {correct} of {items.length} correct
+          </h1>
+          <p className={styles.muted}>Your skill mastery and score estimates on the dashboard now include these answers.</p>
+        </div>
+      </section>
+      <h2 className={styles.reviewTitle}>Review your answers</h2>
       <ol className={styles.results}>
-        {items.map(({ question, attempt }) => (
+        {items.map(({ question, attempt }, i) => (
           <li key={question.id}>
-            <details>
+            <details className="surface">
               <summary>
-                <span className={attempt?.correct ? styles.right : styles.wrong}>{attempt?.correct ? "Correct" : "Missed"}</span>{" "}
-                {getSkill(question.skill).skill.name} · {question.difficulty}
+                <span className={styles.resultNumber}>{i + 1}</span>
+                <span className={styles.resultSkill}>
+                  {getSkill(question.skill).skill.name}
+                  <span className={styles.muted}> · {question.difficulty}</span>
+                </span>
+                <span className={`badge ${attempt?.correct ? "ok" : "bad"}`}>{attempt?.correct ? "Correct" : "Missed"}</span>
               </summary>
               <div className={styles.reviewCard}>
                 <QuestionBody content={question.content} />
@@ -81,11 +99,11 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
       <div className={styles.actions}>
         <form action={startPractice}>
           <input type="hidden" name="focus" value="tailored" />
-          <button type="submit" className="button">
+          <button type="submit" className="button large">
             Start another set
           </button>
         </form>
-        <Link href="/dashboard" className="button secondary">
+        <Link href="/dashboard" className="button large secondary">
           Back to dashboard
         </Link>
       </div>
@@ -98,12 +116,31 @@ function Header(props: { index: number; done: number; total: number; skill: stri
   const ref = getSkill(skill);
   return (
     <div className={styles.header}>
-      <div className={styles.progress} aria-hidden>
+      <div className={styles.headerTop}>
+        <span className={styles.counter}>
+          Question {index + 1} <span className={styles.muted}>of {total}</span>
+        </span>
+        <Link href="/dashboard" className={styles.exit}>
+          Save and exit
+        </Link>
+      </div>
+      <div
+        className={styles.progress}
+        role="progressbar"
+        aria-label="Questions answered"
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-valuenow={done}
+      >
         <div style={{ width: `${(done / total) * 100}%` }} />
       </div>
-      <p className={styles.muted}>
-        Question {index + 1} of {total} · {ref.domain.name}: {ref.skill.name} · {difficulty}
-      </p>
+      <div className={styles.meta}>
+        <span className="badge plain">{ref.domain.name}</span>
+        <span className="badge accent plain">{ref.skill.name}</span>
+        <span className={`badge ${DIFFICULTY_TONE[difficulty] ?? ""}`}>{difficulty}</span>
+      </div>
     </div>
   );
 }
+
+const DIFFICULTY_TONE: Record<string, string> = { easy: "ok", medium: "warn", hard: "bad" };

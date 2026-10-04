@@ -34,45 +34,56 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
   }
 
   const access = await practiceAccess(db, user.id);
-  const price = formatPrice(config.priceCents, config.currency);
+  const price = formatPrice(config.priceCents, config.currency).replace(/\.00$/, "");
 
   return (
-    <main>
-      <h1>Season pass</h1>
-      {notice && <p className={styles.notice}>{notice}</p>}
-      {params.canceled && <p className={styles.muted}>Checkout was canceled. You haven&apos;t been charged.</p>}
-      {params.required && !access.allowed && (
-        <p className={styles.notice}>You&apos;ve used your free practice. Get a season pass to keep practicing.</p>
-      )}
-      {params.error === "not-configured" && <p className={styles.error}>Payments aren&apos;t set up on this site yet.</p>}
-      {params.error === "checkout" && <p className={styles.error}>We couldn&apos;t start checkout. Please try again.</p>}
+    <main className={styles.page}>
+      <div className={styles.intro}>
+        <p className="eyebrow">Season pass</p>
+        <h1 className={styles.title}>Unlimited practice for the whole season</h1>
+        {notice && <p className="notice ok">{notice}</p>}
+        {params.canceled && <p className="notice info">Checkout was canceled. You haven&apos;t been charged.</p>}
+        {params.required && !access.allowed && (
+          <p className="notice warn">You&apos;ve used your free practice. Get a season pass to keep practicing.</p>
+        )}
+        {params.error === "not-configured" && <p className="notice bad">Payments aren&apos;t set up on this site yet.</p>}
+        {params.error === "checkout" && <p className="notice bad">We couldn&apos;t start checkout. Please try again.</p>}
 
-      {access.pass.active ? (
-        <p>
-          Your pass is active until <strong>{access.pass.activeUntil!.toLocaleDateString("en-US", dateFormat)}</strong>.
+        <p className={styles.status}>
+          {access.pass.active ? (
+            <>
+              <span className="badge ok">Active</span> Your pass runs until{" "}
+              <strong>{access.pass.activeUntil!.toLocaleDateString("en-US", dateFormat)}</strong>.
+            </>
+          ) : access.freeSetsLeft > 0 ? (
+            <>
+              <span className="badge accent">Free</span> You have {access.freeSetsLeft} free practice{" "}
+              {access.freeSetsLeft === 1 ? "set" : "sets"} left.
+            </>
+          ) : (
+            <>
+              <span className="badge">No pass</span> You don&apos;t have a season pass yet.
+            </>
+          )}
         </p>
-      ) : (
-        <p>
-          {access.freeSetsLeft > 0
-            ? `You have ${access.freeSetsLeft} free practice ${access.freeSetsLeft === 1 ? "set" : "sets"} left.`
-            : "You don't have a season pass."}
-        </p>
-      )}
-
-      <div className={styles.card}>
-        <div className={styles.price}>{price}</div>
-        <div className={styles.muted}>one payment, {config.days} days of access, no subscription</div>
-        <ul>
+        <ul className="check-list">
           <li>Unlimited tailored practice sets across all 30 SAT skills</li>
           <li>Skill mastery tracking and estimated section scores</li>
           <li>Explanations for every answer</li>
         </ul>
+      </div>
+
+      <div className={`${styles.card} surface`}>
+        <div className={styles.price}>{price}</div>
+        <div className={styles.terms}>One payment for {config.days} days of access. No subscription.</div>
         <form action={buyPass}>
-          <button type="submit" className="button" disabled={!paymentsConfigured()}>
-            {access.pass.active ? `Add ${config.days} more days for ${price}` : `Buy season pass for ${price}`}
+          <button type="submit" className="button large" disabled={!paymentsConfigured()}>
+            {access.pass.active ? `Add ${config.days} more days` : "Buy season pass"}
           </button>
         </form>
-        <p className={styles.muted}>Payments are handled securely by Stripe. Buying while a pass is active adds the days on after it ends.</p>
+        <p className={styles.muted}>
+          Payments are handled securely by Stripe. Buying while a pass is active adds the days on after it ends.
+        </p>
       </div>
     </main>
   );
