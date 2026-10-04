@@ -97,6 +97,12 @@
 
 .topTools {
   justify-self: end;
+  display: flex;
+  gap: 16px;
+}
+
+.reviewTools {
+  margin-bottom: 12px;
 }
 
 .reference {

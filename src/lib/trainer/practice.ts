@@ -7,6 +7,7 @@ import { allSkills } from "../sat/taxonomy";
 import { isCorrect } from "./answers";
 import { computeMastery } from "./mastery";
 import { planPracticeSet, type SeenQuestion } from "./plan";
+import { loadFlagged, mistakesFrom, questionsInOrder } from "./review";
 
 export const DEFAULT_SET_SIZE = 10;
 
@@ -18,7 +19,7 @@ export async function loadAttempts(db: Db, userId: string): Promise<Attempt[]> {
   return db.select().from(attempts).where(eq(attempts.userId, userId)).orderBy(asc(attempts.createdAt));
 }
 
-function skillsFor(focus: PracticeFocus): string[] {
+function skillsFor(focus: Exclude<PracticeFocus, { kind: "mistakes" | "flagged" }>): string[] {
   if (focus.kind === "skill") return [focus.skill];
   return allSkills()
     .filter((s) => focus.kind === "tailored" || s.section === focus.section)
@@ -37,11 +38,7 @@ export async function startPracticeSet(
   random: () => number = Math.random,
 ): Promise<PracticeSet | undefined> {
   const history = await loadAttempts(db, userId);
-  const seen = new Map<string, SeenQuestion>();
-  for (const a of history) seen.set(a.questionId, { correct: a.correct, at: a.createdAt });
-
-  const candidates = await findQuestions(db, { skills: skillsFor(focus), limit: 5000 });
-  const picked = planPracticeSet({ candidates, mastery: computeMastery(history), seen, size, random });
+  const picked = await pickFor(db, userId, focus, history, size, random);
   if (picked.length === 0) return undefined;
 
   const [set] = await db
@@ -49,6 +46,28 @@ export async function startPracticeSet(
     .values({ userId, focus, questionIds: picked.map((q) => q.id) })
     .returning();
   return set;
+}
+
+async function pickFor(
+  db: Db,
+  userId: string,
+  focus: PracticeFocus,
+  history: Attempt[],
+  size: number,
+  random: () => number,
+): Promise<{ id: string }[]> {
+  // Retry sets: the oldest mistakes or flags first, so everything comes round in turn.
+  if (focus.kind === "mistakes") {
+    return (await questionsInOrder(db, mistakesFrom(history).map((m) => m.questionId))).slice(0, size);
+  }
+  if (focus.kind === "flagged") {
+    return (await loadFlagged(db, userId)).slice(0, size).map((f) => f.question);
+  }
+  const seen = new Map<string, SeenQuestion>();
+  for (const a of history) seen.set(a.questionId, { correct: a.correct, at: a.createdAt });
+
+  const candidates = await findQuestions(db, { skills: skillsFor(focus), limit: 5000 });
+  return planPracticeSet({ candidates, mastery: computeMastery(history), seen, size, random });
 }
 
 export async function getPracticeSet(db: Db, userId: string, setId: string): Promise<PracticeSet | undefined> {

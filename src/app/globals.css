@@ -86,6 +86,21 @@ body {
   padding: 40px 16px 64px;
 }
 
+/* The graphing calculator panel is open on the right: keep the page clear of it. */
+@media (max-width: 720px) {
+  /* On phones it covers the bottom of the screen: leave room to scroll the question above it. */
+  :root[data-calculator="docked"] .content {
+    padding-bottom: 72vh;
+  }
+}
+
+@media (min-width: 1100px) {
+  :root[data-calculator="docked"] .content {
+    max-width: none;
+    padding-right: 448px;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -507,9 +522,13 @@ select:focus {
   }
 }
 
-/* Signed in, the nav has three links: keep only the logo mark so they fit on one line. */
+/* Signed in, the nav has four links: keep only the logo mark, and leave Season pass to the dashboard, so they fit on one line. */
 @media (max-width: 480px) {
   .site-header[data-signed-in] .brand .wordmark {
+    display: none;
+  }
+
+  .site-header .nav-wide-only {
     display: none;
   }
 }

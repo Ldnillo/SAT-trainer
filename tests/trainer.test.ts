@@ -18,6 +18,7 @@ import {
 } from "../src/lib/trainer/mastery";
 import { pickQuestion, planPracticeSet, skillPriority, type Candidate } from "../src/lib/trainer/plan";
 import { loadAttempts, loadSetQuestions, startPracticeSet, submitAnswer } from "../src/lib/trainer/practice";
+import { flaggedIds, loadFlagged, mistakesFrom, setFlag } from "../src/lib/trainer/review";
 import { rwQuestion, sprQuestion } from "./fixtures";
 
 /** Deterministic random numbers for repeatable plans. */
@@ -215,6 +216,43 @@ describe("accounts and practice (database)", () => {
     expect(await submitAnswer(db, other.ok ? other.user.id : "", set!.id, spr.id, "1")).toEqual({ ok: false, error: "not-found" });
 
     expect(await startPracticeSet(db, userId, { kind: "skill", skill: "boundaries" })).toBeUndefined();
+  });
+
+  it("retries mistakes until they're answered right, and keeps flags until unflagged", async () => {
+    const [a, b, c] = await insertQuestions(db, [
+      row("transitions", "medium", rwQuestion()),
+      row("linear-equations-one-variable", "easy", sprQuestion()),
+      row("boundaries", "easy", rwQuestion()),
+    ]);
+    const r = await createUser(db, { email: "m@b.co", name: "M", password: "password1" });
+    const userId = r.ok ? r.user.id : "";
+
+    expect(await startPracticeSet(db, userId, { kind: "mistakes" })).toBeUndefined();
+    expect(await startPracticeSet(db, userId, { kind: "flagged" })).toBeUndefined();
+
+    const first = await startPracticeSet(db, userId, { kind: "tailored" }, 10, seeded());
+    await submitAnswer(db, userId, first!.id, a.id, "B");
+    await submitAnswer(db, userId, first!.id, b.id, "2");
+    await submitAnswer(db, userId, first!.id, c.id, "A");
+    expect(mistakesFrom(await loadAttempts(db, userId)).map((m) => m.questionId).sort()).toEqual([a.id, b.id].sort());
+
+    const retry = await startPracticeSet(db, userId, { kind: "mistakes" });
+    expect(retry!.questionIds.sort()).toEqual([a.id, b.id].sort());
+    await submitAnswer(db, userId, retry!.id, a.id, "A");
+    await submitAnswer(db, userId, retry!.id, b.id, "3");
+    const left = mistakesFrom(await loadAttempts(db, userId));
+    expect(left).toMatchObject([{ questionId: b.id, answer: "3", timesMissed: 2 }]);
+
+    expect(await setFlag(db, userId, c.id, true)).toBe(true);
+    expect(await setFlag(db, userId, c.id, true)).toBe(true);
+    expect(await setFlag(db, userId, "not-a-question", true)).toBe(false);
+    expect([...(await flaggedIds(db, userId))]).toEqual([c.id]);
+    const flaggedSet = await startPracticeSet(db, userId, { kind: "flagged" });
+    expect(flaggedSet!.questionIds).toEqual([c.id]);
+    await submitAnswer(db, userId, flaggedSet!.id, c.id, "A");
+    expect((await loadFlagged(db, userId)).map((f) => f.question.id)).toEqual([c.id]);
+    await setFlag(db, userId, c.id, false);
+    expect(await loadFlagged(db, userId)).toEqual([]);
   });
 });
 

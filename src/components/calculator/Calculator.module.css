@@ -1,0 +1,362 @@
+.openButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Panel: floats over the page on the right; a bottom sheet on phones. */
+.panel {
+  position: fixed;
+  z-index: 50;
+  top: 84px;
+  right: 16px;
+  width: 400px;
+  height: min(600px, calc(100vh - 100px));
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-lift);
+  overflow: hidden;
+}
+
+.wide {
+  width: min(860px, calc(100vw - 32px));
+  height: min(640px, calc(100vh - 100px));
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px 6px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--accent-soft);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.panelHead:active {
+  cursor: grabbing;
+}
+
+.panelTitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.panelButtons {
+  display: flex;
+  gap: 2px;
+}
+
+.headButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: var(--foreground);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.headButton:hover {
+  background: var(--surface);
+}
+
+.panelBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.loading {
+  margin: auto;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.desmos {
+  flex: 1;
+}
+
+/* Calculator: expression list above the graph, or beside it when wide. */
+.calc {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wide .calc {
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 44%;
+  border-bottom: 1px solid var(--border);
+}
+
+.wide .list {
+  max-height: none;
+  width: 300px;
+  flex-shrink: 0;
+  border-bottom: none;
+  border-right: 1px solid var(--border);
+}
+
+.listTools {
+  display: flex;
+  gap: 4px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tool {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.tool:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tool:last-child {
+  margin-left: auto;
+}
+
+.rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 48px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 4px 6px 8px;
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid transparent;
+}
+
+.rowActive {
+  border-left-color: var(--accent);
+  background: color-mix(in srgb, var(--accent-soft) 60%, var(--surface));
+}
+
+.swatch {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 6px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.swatch[style*="transparent"] {
+  color: var(--muted);
+}
+
+.rowMain {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+input.input {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  padding: 6px 6px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 16px;
+}
+
+input.input:focus {
+  box-shadow: none;
+  background: var(--surface);
+  outline: 2px solid color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.value {
+  padding: 0 6px 2px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.fraction {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.error {
+  padding: 0 6px 2px;
+  font-size: 12.5px;
+  color: var(--warn);
+}
+
+.remove {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--muted);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px 8px;
+  border-top: 1px solid var(--border);
+}
+
+.key {
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.key:hover {
+  border-color: var(--accent);
+}
+
+/* Graph */
+.graph {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.canvas {
+  display: block;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.pointLabel {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 10px));
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.pointKind {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.zoom {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zoom button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--foreground);
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.zoom button:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .panel,
+  .wide {
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0;
+    width: 100%;
+    height: 68vh;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  .wide .calc {
+    flex-direction: column;
+  }
+
+  .wide .list {
+    width: auto;
+    max-height: 44%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .panelHead {
+    cursor: default;
+  }
+
+  .expand {
+    display: none;
+  }
+}

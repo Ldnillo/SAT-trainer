@@ -197,7 +197,8 @@ ul.choices .choice {
 }
 
 .feedbackRight,
-.feedbackWrong {
+.feedbackWrong,
+.feedbackKey {
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 20px;
@@ -274,4 +275,14 @@ ul.choices .choice {
   .tags {
     align-self: flex-start;
   }
+}
+
+.feedbackKey {
+  background: var(--accent-soft);
+  border-color: var(--border);
+  border-left-color: var(--accent);
+}
+
+.feedbackKey p {
+  margin: 0;
 }
