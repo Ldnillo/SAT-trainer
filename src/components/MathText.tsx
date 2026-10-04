@@ -1,7 +1,7 @@
 import katex from "katex";
 import { splitMath } from "@/lib/sat/math-text";
 
-/** Question text with $...$ math (and $$...$$ displayed equations) rendered by KaTeX on the server. */
+/** Question text with $...$ math rendered by KaTeX on the server. */
 export function MathText({ text }: { text: string }) {
   return (
     <>
@@ -9,7 +9,7 @@ export function MathText({ text }: { text: string }) {
         part.kind === "text" ? (
           <span key={i}>{part.value}</span>
         ) : (
-          <span key={i} dangerouslySetInnerHTML={{ __html: katex.renderToString(part.value, { throwOnError: false, displayMode: part.display === true }) }} />
+          <span key={i} dangerouslySetInnerHTML={{ __html: katex.renderToString(part.value, { throwOnError: false }) }} />
         ),
       )}
     </>

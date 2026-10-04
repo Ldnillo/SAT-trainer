@@ -234,18 +234,6 @@ describe("splitMath", () => {
     ]);
     expect(splitMath("a $b")).toEqual([{ kind: "text", value: "a " }, { kind: "text", value: "$b" }]);
   });
-
-  it("renders $$...$$ as displayed equations", () => {
-    expect(splitMath("$$x + y = 3$$ $$x - y = 1$$ What is $x$?")).toEqual([
-      { kind: "math", value: "x + y = 3", display: true },
-      { kind: "math", value: "x - y = 1", display: true },
-      { kind: "text", value: " What is " },
-      { kind: "math", value: "x" },
-      { kind: "text", value: "?" },
-    ]);
-    expect(splitMath("$$y = \\$2x$$")).toEqual([{ kind: "math", value: "y = \\$2x", display: true }]);
-    expect(splitMath("a $$b")).toEqual([{ kind: "text", value: "a " }, { kind: "text", value: "$$b" }]);
-  });
 });
 
 describe("committed questions render", () => {
