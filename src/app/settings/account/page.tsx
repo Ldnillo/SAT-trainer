@@ -71,7 +71,7 @@ export default async function AccountPage({ searchParams }: PageProps<"/settings
       <section className={`${styles.section} surface`}>
         <h2>Your data</h2>
         <p className={styles.muted}>
-          Download everything NextScore stores about you: your account details, practice sets, practice tests, answers and season passes.
+          Download everything NextScore stores about you: your account details, practice sets, practice tests, answers, score reports and season passes.
           See the <Link href="/privacy">privacy policy</Link> for how it&apos;s used.
         </p>
         {/* A plain link: the route sends a file download, which client-side navigation can't do. */}

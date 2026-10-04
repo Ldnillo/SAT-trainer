@@ -1,5 +1,5 @@
 import { allSkills, type Difficulty } from "../sat/taxonomy";
-import { chanceCorrect, emptyMastery, targetDifficulty, type SkillMastery } from "./mastery";
+import { chanceCorrect, emptyMastery, evidence, targetDifficulty, type SkillMastery } from "./mastery";
 
 /**
  * Picks the questions for a practice set.
@@ -41,7 +41,7 @@ const IMPORTANCE: ReadonlyMap<string, number> = new Map(
 /** How useful practicing this skill is right now. */
 export function skillPriority(m: SkillMastery): number {
   const room = 1 - chanceCorrect(m.rating, "medium");
-  const uncertainty = 1 / (1 + m.attempts);
+  const uncertainty = 1 / (1 + evidence(m));
   return (IMPORTANCE.get(m.skill) ?? 0.05) * (room + 0.5 * uncertainty);
 }
 

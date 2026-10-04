@@ -8,6 +8,7 @@ import { isCorrect } from "./answers";
 import { computeMastery } from "./mastery";
 import { planPracticeSet, type SeenQuestion } from "./plan";
 import { loadFlagged, mistakesFrom, questionsInOrder } from "./review";
+import { loadPriors } from "./score-report";
 
 export const DEFAULT_SET_SIZE = 10;
 
@@ -66,8 +67,8 @@ async function pickFor(
   const seen = new Map<string, SeenQuestion>();
   for (const a of history) seen.set(a.questionId, { correct: a.correct, at: a.createdAt });
 
-  const candidates = await findQuestions(db, { skills: skillsFor(focus), limit: 5000 });
-  return planPracticeSet({ candidates, mastery: computeMastery(history), seen, size, random });
+  const [candidates, priors] = await Promise.all([findQuestions(db, { skills: skillsFor(focus), limit: 5000 }), loadPriors(db, userId)]);
+  return planPracticeSet({ candidates, mastery: computeMastery(history, priors), seen, size, random });
 }
 
 export async function getPracticeSet(db: Db, userId: string, setId: string): Promise<PracticeSet | undefined> {

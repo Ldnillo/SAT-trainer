@@ -247,3 +247,33 @@ export const seasonPasses = pgTable(
     index("season_passes_payment_intent_idx").on(t.stripePaymentIntentId),
   ],
 );
+
+/** How a student did in one content domain, read off a score report (filled boxes, 1-7). */
+export type DomainBands = Partial<Record<string, number>>;
+/** Per-skill results from a test's question review, e.g. { "transitions": { correct: 3, total: 4 } }. */
+export type SkillResults = Partial<Record<string, { correct: number; total: number }>>;
+
+/**
+ * Scores a student typed in from an official SAT or a Bluebook practice test.
+ * Bluebook has no export, so these are entered by hand. The trainer uses the
+ * latest one as a starting point for each skill (see src/lib/trainer/score-report.ts).
+ */
+export const scoreReports = pgTable(
+  "score_reports",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    /** "official" (a real SAT, PSAT or school day test) or "bluebook-practice". */
+    kind: text("kind").$type<"official" | "bluebook-practice">().notNull(),
+    /** The day the test was taken, YYYY-MM-DD. */
+    testDate: text("test_date").notNull(),
+    readingWriting: integer("reading_writing"),
+    math: integer("math"),
+    domainBands: jsonb("domain_bands").$type<DomainBands>().notNull().default({}),
+    skillResults: jsonb("skill_results").$type<SkillResults>().notNull().default({}),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("score_reports_user_idx").on(t.userId, t.testDate)],
+);

@@ -1,0 +1,290 @@
+.page {
+  max-width: 760px;
+}
+
+.lead {
+  font-size: 17px;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.card {
+  padding: 24px 28px;
+  margin: 20px 0;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+.form > button {
+  align-self: flex-start;
+}
+
+.step {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 0;
+  min-width: 0;
+}
+
+.step legend,
+.step summary {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+.step summary {
+  cursor: pointer;
+  padding: 0;
+}
+
+.step h3 {
+  font-size: 15px;
+  margin: 16px 0 6px;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 8px 0 12px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+  flex: 1 1 160px;
+  max-width: 220px;
+}
+
+.sectionScores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+/* Content area boxes */
+.bandGroup + .bandGroup {
+  margin-top: 8px;
+}
+
+.bandRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+
+.bandName {
+  font-weight: 600;
+}
+
+.bands {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.band {
+  cursor: pointer;
+  position: relative;
+}
+
+.band input,
+.bandSkip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.band > span[aria-hidden] {
+  display: block;
+  width: 26px;
+  height: 18px;
+  border: 2px solid var(--accent);
+  border-radius: 3px;
+  background: var(--surface);
+}
+
+/* Fill every box up to and including the checked one. */
+.bands:has(input:checked) .band > span[aria-hidden] {
+  background: var(--accent);
+}
+
+.band:has(input:checked) ~ .band > span[aria-hidden] {
+  background: var(--surface);
+}
+
+.bands:has(.bandSkip input:checked) .band > span[aria-hidden] {
+  background: var(--surface);
+}
+
+.band:has(input:focus-visible) > span[aria-hidden],
+.bandSkip:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.bandSkip {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 13px;
+  white-space: nowrap;
+  color: var(--muted);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.bandSkip:has(input:checked) {
+  border-color: var(--border);
+  color: var(--foreground);
+}
+
+/* Skill by skill */
+.skillGroup h3 {
+  margin-bottom: 2px;
+}
+
+.skillRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 16px;
+  padding: 6px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.skillInputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skillInputs input {
+  width: 64px;
+}
+
+/* Saved reports */
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summaryScores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 15px;
+}
+
+.bandList {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4px 24px;
+  font-size: 14px;
+}
+
+.bandList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.bandMeter {
+  display: flex;
+  gap: 3px;
+}
+
+.bandMeter i {
+  width: 14px;
+  height: 10px;
+  border: 1.5px solid var(--accent);
+  border-radius: 2px;
+}
+
+.bandMeter i[data-on] {
+  background: var(--accent);
+}
+
+.reports {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reports li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 16px;
+  }
+
+  .step {
+    padding: 14px 12px;
+  }
+
+  .band > span[aria-hidden] {
+    width: 22px;
+  }
+
+  .bandSkip {
+    margin-left: 4px;
+  }
+}
