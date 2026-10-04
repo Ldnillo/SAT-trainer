@@ -14,6 +14,13 @@ const nextConfig: NextConfig = {
   // PGlite ships a WebAssembly build of Postgres; load it from node_modules at runtime.
   serverExternalPackages: ["@electric-sql/pglite"],
   poweredByHeader: false,
+  // Account settings moved under Settings; keep old links and bookmarks working (query strings carry over).
+  async redirects() {
+    return [
+      { source: "/account", destination: "/settings/account", permanent: true },
+      { source: "/account/export", destination: "/settings/account/export", permanent: true },
+    ];
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
