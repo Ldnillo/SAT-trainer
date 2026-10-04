@@ -16,7 +16,7 @@
           ".8",
           "0.8"
         ],
-        "explanation": "The hypotenuse is opposite the right angle: $PR = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15} = \\frac{4}{5}$, or $0.8$.",
+        "explanation": "The hypotenuse is $PR$, opposite the right angle. By the Pythagorean theorem, $PR^2 = 9^2 + 12^2 = 81 + 144 = 225$, and taking the square root of both sides gives $PR = 15$. The side opposite angle $P$ is $QR = 12$, so $\\sin(P) = \\frac{12}{15}$. Dividing the numerator and denominator by $3$ simplifies this to $\\frac{4}{5}$, or $0.8$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -34,6 +34,530 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A $13$-foot ladder leans against a vertical wall. The bottom of the ladder is on level ground $5$ feet from the base of the wall. How high up the wall, in feet, does the top of the ladder reach?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$8$"
+          },
+          {
+            "label": "B",
+            "text": "$12$"
+          },
+          {
+            "label": "C",
+            "text": "$18$"
+          },
+          {
+            "label": "D",
+            "text": "$\\sqrt{194}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The wall, the ground and the ladder form a right triangle with the right angle where the wall meets the ground, and the ladder is the hypotenuse. If the height is $h$, then $h^2 + 5^2 = 13^2$, which is $h^2 + 25 = 169$. Subtracting $25$ from both sides gives $h^2 = 144$, and taking the square root of both sides (a height is positive) gives $h = 12$ feet.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts the lengths, $13 - 5$, instead of using the Pythagorean theorem."
+          },
+          {
+            "label": "C",
+            "text": "This adds the lengths, $13 + 5$."
+          },
+          {
+            "label": "D",
+            "text": "This adds the squares, $13^2 + 5^2$, treating the ladder as a leg instead of the hypotenuse."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $XYZ$, angle $Z$ is a right angle, $XZ = 8$, $YZ = 15$ and $XY = 17$. What is the value of $\\cos(X)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{8}{15}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{8}{17}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{15}{17}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{15}{8}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Cosine is adjacent over hypotenuse. The leg next to angle $X$ is $XZ = 8$, and the hypotenuse (opposite the right angle) is $XY = 17$. So $\\cos(X) = \\frac{8}{17}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is adjacent over opposite, which is $\\frac{1}{\\tan(X)}$, not cosine."
+          },
+          {
+            "label": "C",
+            "text": "This is opposite over hypotenuse, which is $\\sin(X)$."
+          },
+          {
+            "label": "D",
+            "text": "This is opposite over adjacent, which is $\\tan(X)$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-004",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "An isosceles right triangle has a hypotenuse of length $10\\sqrt{2}$. What is the length of each leg?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "10"
+        ],
+        "explanation": "In a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle, the hypotenuse is $\\sqrt{2}$ times a leg. If each leg has length $\\ell$, then $\\ell\\sqrt{2} = 10\\sqrt{2}$. Dividing both sides by $\\sqrt{2}$ gives $\\ell = 10$. (Check: $10^2 + 10^2 = 200 = (10\\sqrt{2})^2$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $JKL$, angle $K$ is a right angle, the measure of angle $J$ is $60^\\circ$, and $JK = 7$. What is the length of $KL$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{7\\sqrt{3}}{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$7\\sqrt{2}$"
+          },
+          {
+            "label": "C",
+            "text": "$7\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$14$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Angle $L$ measures $180^\\circ - 90^\\circ - 60^\\circ = 30^\\circ$, so this is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle. Side $JK$ is opposite the $30^\\circ$ angle, so it is the short leg. The long leg, $KL$, is opposite the $60^\\circ$ angle and is $\\sqrt{3}$ times the short leg: $KL = 7\\sqrt{3}$. (Equivalently, $\\tan(J) = \\frac{KL}{JK}$, so $\\tan 60^\\circ = \\frac{KL}{7}$. Multiplying both sides by $7$ gives $KL = 7\\tan 60^\\circ = 7\\sqrt{3}$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides by $\\sqrt{3}$, treating $JK$ as the long leg instead of the short leg."
+          },
+          {
+            "label": "B",
+            "text": "This uses the $45^\\circ$-$45^\\circ$-$90^\\circ$ ratio, but the angles here are $30^\\circ$, $60^\\circ$ and $90^\\circ$."
+          },
+          {
+            "label": "D",
+            "text": "This is the hypotenuse $JL$, which is twice the short leg."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $DEF$, angle $F$ is a right angle and $\\sin(D) = \\frac{5}{13}$. What is the value of $\\tan(E)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "12/5",
+          "2.4"
+        ],
+        "explanation": "$\\sin(D)$ is the side opposite $D$ over the hypotenuse, so we can take $EF = 5$ and $DE = 13$. By the Pythagorean theorem, $DF^2 + 5^2 = 13^2$, which is $DF^2 + 25 = 169$. Subtracting $25$ from both sides gives $DF^2 = 144$, and taking the square root of both sides gives $DF = 12$. For angle $E$, the opposite side is $DF = 12$ and the adjacent leg is $EF = 5$, so $\\tan(E) = \\frac{12}{5} = 2.4$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A surveyor stands on level ground $40$ meters from the base of a vertical tower. The angle of elevation from the ground where the surveyor stands to the top of the tower is $30^\\circ$. What is the height, in meters, of the tower?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$20$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{40\\sqrt{3}}{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$40\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$80$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The ground, the tower and the line of sight form a right triangle with the right angle at the base of the tower. The tower's height $h$ is opposite the $30^\\circ$ angle and the $40$-meter distance is adjacent to it, so $\\tan 30^\\circ = \\frac{h}{40}$. Multiplying both sides by $40$ gives $h = 40\\tan 30^\\circ$. Since $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$, which is $\\frac{\\sqrt{3}}{3}$ after multiplying the numerator and denominator by $\\sqrt{3}$, substituting gives $h = 40 \\cdot \\frac{\\sqrt{3}}{3} = \\frac{40\\sqrt{3}}{3}$ meters (about $23.1$ meters).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses $\\sin 30^\\circ = \\frac{1}{2}$ times $40$, but $40$ is the adjacent leg, not the hypotenuse."
+          },
+          {
+            "label": "C",
+            "text": "This uses $\\tan 60^\\circ = \\sqrt{3}$, the tangent of the angle at the top of the tower."
+          },
+          {
+            "label": "D",
+            "text": "This is the length of the line of sight if $40$ were the side opposite $30^\\circ$; it doubles the distance instead of finding the height."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For an angle $x^\\circ$ with $0 < x < 90$, $\\sin(x^\\circ) = \\cos((2x - 30)^\\circ)$, where $0 < 2x - 30 < 90$. What is the value of $x$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$30$"
+          },
+          {
+            "label": "B",
+            "text": "$40$"
+          },
+          {
+            "label": "C",
+            "text": "$50$"
+          },
+          {
+            "label": "D",
+            "text": "$70$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "For two acute angles, the sine of one equals the cosine of the other exactly when the angles are complementary (they are the two acute angles of the same right triangle). So $x + (2x - 30) = 90$. Combining like terms gives $3x - 30 = 90$, and adding $30$ to both sides gives $3x = 120$. Dividing both sides by $3$ simplifies this to $x = 40$. Check: $\\sin 40^\\circ = \\cos 50^\\circ$, and $2(40) - 30 = 50$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This sets the two angles equal, $x = 2x - 30$, but sine and cosine of the same angle are generally not equal."
+          },
+          {
+            "label": "C",
+            "text": "This is the value of $2x - 30$, the other angle, not $x$."
+          },
+          {
+            "label": "D",
+            "text": "This makes the angles supplementary, $x + (2x - 30) = 180$, instead of complementary."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "Asked for the explanation to show how 3x = 120 simplifies to x = 40. Explanation now shows each step."
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, the measure of angle $A$ is $45^\\circ$ and the measure of angle $B$ is $30^\\circ$. Point $D$ lies on side $AB$ so that segment $CD$ is perpendicular to $AB$, and $CD = 6$. What is the length of $AB$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12$"
+          },
+          {
+            "label": "B",
+            "text": "$6 + 2\\sqrt{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$6 + 6\\sqrt{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$12 + 6\\sqrt{2}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The altitude $CD$ splits triangle $ABC$ into two right triangles with right angles at $D$. Triangle $ADC$ has a $45^\\circ$ angle at $A$, so it is isosceles and $AD = CD = 6$. Triangle $BDC$ has a $30^\\circ$ angle at $B$, so $CD$ is the short leg and $BD$, the long leg, is $6\\sqrt{3}$. Then $AB = AD + BD = 6 + 6\\sqrt{3}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes $BD = 6$ as well, treating both smaller triangles as $45^\\circ$-$45^\\circ$-$90^\\circ$ triangles."
+          },
+          {
+            "label": "B",
+            "text": "This divides by $\\sqrt{3}$ to get $BD = 2\\sqrt{3}$, treating $CD$ as the long leg of triangle $BDC$."
+          },
+          {
+            "label": "D",
+            "text": "This adds the hypotenuses $BC = 12$ and $AC = 6\\sqrt{2}$ instead of the segments of $AB$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "right-triangles-trigonometry-010",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, angle $C$ is a right angle and $\\sin(A) = \\frac{3}{5}$. The perimeter of triangle $ABC$ is $72$. What is the area of triangle $ABC$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "216"
+        ],
+        "explanation": "Since $\\sin(A) = \\frac{3}{5}$, the side opposite $A$ and the hypotenuse are in the ratio $3 : 5$, and by the Pythagorean theorem the three sides are $3k$, $4k$ and $5k$ for some $k > 0$. The perimeter is $3k + 4k + 5k = 72$, and combining like terms gives $12k = 72$. Dividing both sides by $12$ gives $k = 6$, so the legs are $3(6) = 18$ and $4(6) = 24$. The area is $\\frac{1}{2} \\times 18 \\times 24 = 216$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

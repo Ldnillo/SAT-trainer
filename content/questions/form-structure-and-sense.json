@@ -68,6 +68,623 @@
           }
         ]
       }
+    },
+    {
+      "id": "form-structure-and-sense-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For years, Westfield High School's marching band had come close but never quite managed to bring home a trophy. Last October, the band ______ first place at the regional competition, the school's first win in more than twenty years."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "wins"
+          },
+          {
+            "label": "B",
+            "text": "will win"
+          },
+          {
+            "label": "C",
+            "text": "won"
+          },
+          {
+            "label": "D",
+            "text": "has been winning"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The phrase \"Last October\" shows that the event happened at a specific time in the past. The simple past tense \"won\" fits a completed past action.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Wins\" is present tense, but the competition took place last October."
+          },
+          {
+            "label": "B",
+            "text": "\"Will win\" is future tense, but the competition has already happened."
+          },
+          {
+            "label": "D",
+            "text": "\"Has been winning\" describes an ongoing action, but the band won one competition at a specific past time, and the passage says this was its first win."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Each spring, the town of Oak Ridge holds a festival celebrating local craftspeople. This year, visitors crowded around the stalls to watch several ______ demonstrations of glassblowing, basket weaving, and woodcarving."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "artisan's"
+          },
+          {
+            "label": "B",
+            "text": "artisans"
+          },
+          {
+            "label": "C",
+            "text": "artisans's"
+          },
+          {
+            "label": "D",
+            "text": "artisans'"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The demonstrations belong to several artisans, so the word must be both plural and possessive. For a plural noun ending in s, the possessive is formed by adding an apostrophe after the s: \"artisans'.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Artisan's\" is singular possessive, but \"several\" signals more than one artisan."
+          },
+          {
+            "label": "B",
+            "text": "\"Artisans\" is plural but not possessive, so it doesn't show that the demonstrations belong to the artisans."
+          },
+          {
+            "label": "C",
+            "text": "\"Artisans's\" is not a standard form; a plural noun ending in s takes only an apostrophe."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When a honeybee discovers a rich patch of flowers, it returns to the hive and performs a \"waggle dance.\" The angle of the dance tells the other bees in which direction the flowers lie, and the length of the dance tells them how far ______ must fly to reach them."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "it"
+          },
+          {
+            "label": "B",
+            "text": "he"
+          },
+          {
+            "label": "C",
+            "text": "they"
+          },
+          {
+            "label": "D",
+            "text": "this"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The bees who must fly to the flowers are \"the other bees,\" a plural noun. The plural pronoun \"they\" correctly refers to them.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"It\" is singular and doesn't agree with the plural antecedent \"the other bees.\""
+          },
+          {
+            "label": "B",
+            "text": "\"He\" is singular and doesn't agree with the plural antecedent \"the other bees.\""
+          },
+          {
+            "label": "D",
+            "text": "\"This\" is singular and has no clear antecedent; it doesn't refer to the bees who will fly."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Divers exploring a seventeenth-century shipwreck off the coast of Sweden last summer found that the cold, low-oxygen water had preserved much of the cargo. Among the artifacts they recovered ______ a brass navigational instrument and several ceramic jars still sealed with wax."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "was"
+          },
+          {
+            "label": "B",
+            "text": "were"
+          },
+          {
+            "label": "C",
+            "text": "is"
+          },
+          {
+            "label": "D",
+            "text": "has been"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "This sentence is inverted: the subject comes after the verb. The subject is \"a brass navigational instrument and several ceramic jars,\" a compound (plural) subject, so it takes the plural verb \"were.\" Past tense fits the passage's past-tense narration.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Was\" is singular, but the subject joins two things with \"and,\" making it plural."
+          },
+          {
+            "label": "C",
+            "text": "\"Is\" is singular and present tense, but the subject is plural and the passage describes a past event."
+          },
+          {
+            "label": "D",
+            "text": "\"Has been\" is singular and doesn't agree with the plural compound subject."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Coral reefs in the region have lost nearly half of their living coral since 1990. Having spent six months diving at the reef and measuring water conditions, ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the conclusion that rising water temperatures were the main cause was reached by the marine biologist."
+          },
+          {
+            "label": "B",
+            "text": "the marine biologist concluded that rising water temperatures were the main cause."
+          },
+          {
+            "label": "C",
+            "text": "rising water temperatures, the marine biologist concluded, were the main cause."
+          },
+          {
+            "label": "D",
+            "text": "the main cause, the marine biologist concluded, was rising water temperatures."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The opening phrase \"Having spent six months diving at the reef and measuring water conditions\" describes a person. The words right after it must name that person, so the sentence must continue with \"the marine biologist.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This places \"the conclusion\" right after the opening phrase, illogically suggesting that the conclusion spent six months diving."
+          },
+          {
+            "label": "C",
+            "text": "This places \"rising water temperatures\" right after the opening phrase, illogically suggesting that the temperatures did the diving."
+          },
+          {
+            "label": "D",
+            "text": "This places \"the main cause\" right after the opening phrase, illogically suggesting that the cause did the diving and measuring."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The hikers had planned an easy two-day trip, but heavy rain on the second afternoon left them stranded on a ridge. By the time the rescue team reached them the next morning, the storm ______ away the only trail leading down the mountain."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "washes"
+          },
+          {
+            "label": "B",
+            "text": "had washed"
+          },
+          {
+            "label": "C",
+            "text": "will have washed"
+          },
+          {
+            "label": "D",
+            "text": "is washing"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The trail was washed away before the rescue team arrived, and both events are in the past. The past perfect \"had washed\" shows an action completed before another past action (\"By the time the rescue team reached them\").",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Washes\" is present tense, but the passage narrates past events."
+          },
+          {
+            "label": "C",
+            "text": "\"Will have washed\" refers to the future, but the rescue already happened."
+          },
+          {
+            "label": "D",
+            "text": "\"Is washing\" is present progressive, which doesn't fit a story told in the past."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Historians have long puzzled over how a small 1850s survey party crossed the region's mountains without losing a single member. The journal kept by the party's two naturalists, together with dozens of pressed plant specimens and hand-drawn maps found alongside it, ______ new light on the route the team followed."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "shed"
+          },
+          {
+            "label": "B",
+            "text": "have shed"
+          },
+          {
+            "label": "C",
+            "text": "sheds"
+          },
+          {
+            "label": "D",
+            "text": "are shedding"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the sentence is \"the journal,\" which is singular. The phrases \"kept by the party's two naturalists\" and \"together with dozens of pressed plant specimens and hand-drawn maps\" describe or add to the subject but don't make it plural. A singular subject takes the singular verb \"sheds.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Shed\" is the plural present form, which would agree with \"naturalists\" or \"maps,\" but neither is the subject."
+          },
+          {
+            "label": "B",
+            "text": "\"Have shed\" is plural; a phrase beginning with \"together with\" does not create a compound subject the way \"and\" does."
+          },
+          {
+            "label": "D",
+            "text": "\"Are shedding\" is plural and doesn't agree with the singular subject \"journal.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The renovated concert hall was designed with musicians' needs in mind. Each of the orchestra's four string sections now has ______ own rehearsal room, soundproofed so that the violinists, violists, cellists, and bassists can practice at the same time without disturbing one another."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "their"
+          },
+          {
+            "label": "B",
+            "text": "its"
+          },
+          {
+            "label": "C",
+            "text": "it's"
+          },
+          {
+            "label": "D",
+            "text": "they're"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The pronoun refers to \"each,\" which is singular (each single section has a room). The singular possessive pronoun \"its\" agrees with it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Their\" is plural; it agrees with \"sections,\" but the true antecedent is the singular \"each.\""
+          },
+          {
+            "label": "C",
+            "text": "\"It's\" is a contraction of \"it is\" or \"it has\"; \"now has it is own rehearsal room\" makes no sense."
+          },
+          {
+            "label": "D",
+            "text": "\"They're\" is a contraction of \"they are\" and is also plural, so it is wrong in both form and number."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A team led by botanist Yusuf Adeyemi recently tested whether seeds recovered from an abandoned medieval storehouse could still grow. The seeds, ______ in a sealed clay jar for roughly eight hundred years, sprouted within two weeks of planting, surprising even the researchers who had proposed the experiment."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "had been stored"
+          },
+          {
+            "label": "B",
+            "text": "were stored"
+          },
+          {
+            "label": "C",
+            "text": "having been stored"
+          },
+          {
+            "label": "D",
+            "text": "store"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The main clause is \"The seeds ... sprouted within two weeks of planting.\" The words between the commas add extra information about the seeds, so they must form a modifying phrase, not a second main verb. The participle phrase \"having been stored in a sealed clay jar\" does this correctly.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Had been stored\" is a main verb; it would give the subject \"The seeds\" two separate verbs with no conjunction (\"had been stored ... sprouted\")."
+          },
+          {
+            "label": "B",
+            "text": "\"Were stored\" is also a main verb, creating the same problem: two verbs for one subject with nothing joining them."
+          },
+          {
+            "label": "D",
+            "text": "\"Store\" is a present-tense main verb that makes the seeds the ones doing the storing and leaves the sentence with two unconnected verbs."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

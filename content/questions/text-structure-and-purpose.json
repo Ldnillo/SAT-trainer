@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "text-structure-and-purpose-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In kintsugi, a Japanese method of repairing broken pottery, craftspeople join the fragments with lacquer mixed with powdered gold or another metal. Rather than hiding the cracks, the repair makes them shine. Practitioners describe the visible seams as part of the object's history, something to be displayed rather than concealed."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To argue that kintsugi produces stronger repairs than modern glues"
+          },
+          {
+            "label": "B",
+            "text": "To describe a repair technique and the attitude toward damage that it reflects"
+          },
+          {
+            "label": "C",
+            "text": "To trace how kintsugi spread from Japan to other countries"
+          },
+          {
+            "label": "D",
+            "text": "To explain why gold is the only material used in kintsugi"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text first explains how kintsugi works (lacquer mixed with metal joins the pieces) and then explains the idea behind it: cracks are part of the object's history and should be shown. Choice B covers both parts.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text never compares kintsugi with modern glues or discusses strength."
+          },
+          {
+            "label": "C",
+            "text": "The text doesn't discuss kintsugi spreading anywhere."
+          },
+          {
+            "label": "D",
+            "text": "The text says the lacquer is mixed with \"gold or another metal,\" so gold isn't the only material, and explaining materials isn't the text's purpose."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Octopuses can change the color of their skin in a fraction of a second to match their surroundings. Oddly, most octopuses have only one type of light-sensitive cell in their eyes, an arrangement that in humans would mean being unable to tell colors apart. Some researchers suspect the animals sense color in another way, perhaps through light-sensitive proteins found in their skin."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the second sentence in the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It provides evidence that supports the claim made in the first sentence."
+          },
+          {
+            "label": "B",
+            "text": "It explains how octopuses change color so quickly."
+          },
+          {
+            "label": "C",
+            "text": "It presents a puzzle that the third sentence offers a possible explanation for."
+          },
+          {
+            "label": "D",
+            "text": "It questions the researchers' suggestion in the third sentence."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence says octopuses match the colors around them. The second, introduced by \"Oddly,\" points out a puzzle: their eyes seem unable to tell colors apart. The third sentence offers a possible solution, that they sense color through their skin. So the second sentence sets up a puzzle the third tries to explain (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The second sentence makes the first sentence's fact more surprising; it doesn't support it."
+          },
+          {
+            "label": "B",
+            "text": "The second sentence is about the octopus's eyes, not the mechanism of changing color."
+          },
+          {
+            "label": "D",
+            "text": "The second sentence comes before the researchers' suggestion and is what prompts it; it doesn't question it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For much of the age of sail, navigators could find their latitude by measuring the sun's height at noon, but determining longitude at sea was largely guesswork, and ships were wrecked as a result. In 1714 the British government offered a large prize for a practical solution. The clockmaker John Harrison spent decades building ever more precise timekeepers: by carrying the time of its home port, a ship could compare that time with local noon and calculate how far east or west it had traveled."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It compares two competing solutions to a problem and argues that one was superior."
+          },
+          {
+            "label": "B",
+            "text": "It describes an invention and then discusses the unexpected consequences of its use."
+          },
+          {
+            "label": "C",
+            "text": "It presents a widely held claim and then offers evidence that the claim is mistaken."
+          },
+          {
+            "label": "D",
+            "text": "It identifies a problem, notes an incentive offered for solving it, and describes one approach to a solution."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence lays out the problem (finding longitude at sea). The second describes the government's prize, an incentive. The third describes Harrison's approach: precise clocks that let sailors calculate longitude. Choice D follows that order.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Only one solution, Harrison's timekeepers, is described, so there is no comparison."
+          },
+          {
+            "label": "B",
+            "text": "The text doesn't discuss any consequences of using Harrison's clocks, expected or unexpected."
+          },
+          {
+            "label": "C",
+            "text": "The text doesn't present a claim and then disprove it; the first sentence describes a real problem."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Chefs often choose plates and bowls for appearance alone. Food scientist Hana Mireles wondered whether color might also change how food tastes. In her study, volunteers rated identical portions of a lightly salted soup as noticeably saltier when it was served in blue bowls than when it was served in white ones. Mireles suggests that restaurants hoping to cut back on salt might be able to do so without customers noticing, simply by changing their tableware."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To argue that restaurants should stop serving food on white plates"
+          },
+          {
+            "label": "B",
+            "text": "To present a study suggesting that a visual factor can affect taste and to note a possible practical use of the finding"
+          },
+          {
+            "label": "C",
+            "text": "To explain the biological process by which color changes the way the tongue detects salt"
+          },
+          {
+            "label": "D",
+            "text": "To question whether studies of taste can produce reliable results"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text describes Mireles's study, which found that bowl color changed how salty the soup seemed, and ends with her suggestion that restaurants could use this to reduce salt. Choice B describes both the study and the practical use.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Mireles only suggests that changing tableware might help reduce salt; the text doesn't argue that white plates should be abandoned."
+          },
+          {
+            "label": "C",
+            "text": "The text reports what volunteers experienced but doesn't explain any biological process."
+          },
+          {
+            "label": "D",
+            "text": "The text presents the study's results without questioning their reliability."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Mrs. Albright had kept the shop for forty years, and she could name each customer by the way they opened the door. When the new owners installed an electric bell, she complained for a week that it rang the same for everyone. \"Now I have to look up,\" she said, as though this were a great injustice. By spring she had stopped complaining, but she still glanced toward the door before the bell finished ringing."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the second sentence (\"When the new owners . . . for everyone\") in the text as a whole?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It introduces a change that reveals how much Mrs. Albright relied on her familiarity with her customers."
+          },
+          {
+            "label": "B",
+            "text": "It suggests that the new owners were trying to force Mrs. Albright to retire."
+          },
+          {
+            "label": "C",
+            "text": "It explains why customers stopped visiting the shop."
+          },
+          {
+            "label": "D",
+            "text": "It shows that Mrs. Albright welcomed modern improvements to the shop."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence says Mrs. Albright recognized each customer by how they opened the door. The second sentence introduces the electric bell, which \"rang the same for everyone\" and so erased the differences she relied on. Her complaints and later habits follow from that change. Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Nothing in the text suggests the owners wanted her to leave; they simply installed a bell."
+          },
+          {
+            "label": "C",
+            "text": "The text never says customers stopped coming to the shop."
+          },
+          {
+            "label": "D",
+            "text": "She complained about the bell for a week, which is the opposite of welcoming it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Visitors to medieval cathedrals often assume that the stone interiors were always bare and gray. In fact, traces of pigment show that many walls, columns and statues were once brightly painted. Some conservators argue that this color should be restored so that visitors can see the buildings as their builders intended. Others counter that centuries of fading and weathering are themselves part of the buildings' history and should be preserved."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It describes a debate among conservators and then explains why the debate has been resolved."
+          },
+          {
+            "label": "B",
+            "text": "It explains how medieval pigments were made and why they faded."
+          },
+          {
+            "label": "C",
+            "text": "It corrects a common assumption and then presents two opposing views about how to respond to the correction."
+          },
+          {
+            "label": "D",
+            "text": "It argues that medieval cathedrals should be repainted and addresses an objection to that position."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The first two sentences correct a mistaken belief (that cathedral interiors were always gray). The last two present opposing positions on what to do about it: restore the color or preserve the weathered surfaces. Choice C matches that structure.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text presents the two sides but never says the debate has been settled."
+          },
+          {
+            "label": "B",
+            "text": "The text doesn't explain how pigments were made or why they faded."
+          },
+          {
+            "label": "D",
+            "text": "The author reports both sides without taking a position, so the text isn't arguing for repainting."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Some popular histories describe the arrival of the printing press in fifteenth-century Europe as an overnight revolution. Yet for decades after the first printed books appeared, scribes kept producing handwritten manuscripts in large numbers, and many readers prized them over printed volumes; scribes even copied printed books by hand for wealthy patrons. None of this means that printing was unimportant. It means that printing's effects unfolded gradually, alongside older practices rather than immediately in place of them."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main purpose of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To argue that the printing press had little real effect on European culture"
+          },
+          {
+            "label": "B",
+            "text": "To explain why wealthy readers preferred manuscripts to printed books"
+          },
+          {
+            "label": "C",
+            "text": "To describe the technical improvements that made printing faster than copying by hand"
+          },
+          {
+            "label": "D",
+            "text": "To qualify a common characterization of printing's impact by showing that the new technology coexisted with older methods"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text starts with a popular view (printing was an \"overnight revolution\"), gives evidence that handwritten manuscripts remained common for decades, and then clarifies that printing still mattered but changed things gradually. That is a qualification of the popular view, not a rejection of it. Choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The author explicitly says \"None of this means that printing was unimportant,\" so this misreads the author's stance."
+          },
+          {
+            "label": "B",
+            "text": "The preference of some readers for manuscripts is one piece of evidence, not the text's main purpose, and the text doesn't explain the reasons for it."
+          },
+          {
+            "label": "C",
+            "text": "The text says nothing about how printing worked or how fast it was."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many of the first planets discovered around other stars were \"hot Jupiters,\" giant planets that orbit very close to their stars. That early abundance might suggest that such planets are common. However, the most widely used detection methods favor large planets on tight orbits, because these produce stronger and more frequent signals. Surveys designed to correct for this bias indicate that hot Jupiters orbit only about one percent of Sun-like stars."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the function of the third sentence in the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It provides additional evidence that hot Jupiters are common."
+          },
+          {
+            "label": "B",
+            "text": "It identifies a reason that an apparent pattern may be misleading."
+          },
+          {
+            "label": "C",
+            "text": "It explains how hot Jupiters come to orbit so close to their stars."
+          },
+          {
+            "label": "D",
+            "text": "It introduces a detection method that replaced older, less accurate ones."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence says the many early discoveries \"might suggest\" hot Jupiters are common. The third sentence, beginning with \"However,\" explains why that impression may be wrong: detection methods find these planets more easily. The last sentence then gives the corrected estimate. So the third sentence gives a reason the pattern may be misleading (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The third sentence undercuts the idea that hot Jupiters are common rather than supporting it."
+          },
+          {
+            "label": "C",
+            "text": "The text never discusses how hot Jupiters form or move into close orbits."
+          },
+          {
+            "label": "D",
+            "text": "The sentence describes a bias in existing methods; it doesn't introduce a new method."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-structure-and-purpose-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Linguist Oren Batista studied a coastal town where older residents speak a regional dialect and younger residents mostly do not. His early surveys led him to expect that the dialect would disappear within a generation. When he returned a decade later, however, he found that many young adults had begun using dialect words deliberately, especially online, as a way of signaling pride in where they came from. Batista now argues that the loss of a dialect is not always a one-way process."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best describes the overall structure of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It compares two communities and explains why a dialect survived in only one of them."
+          },
+          {
+            "label": "B",
+            "text": "It describes the decline of a dialect and then recommends ways to reverse that decline."
+          },
+          {
+            "label": "C",
+            "text": "It presents a prediction and then offers evidence confirming that prediction."
+          },
+          {
+            "label": "D",
+            "text": "It describes a researcher's initial expectation, presents later observations that contradicted it, and states the conclusion the researcher drew."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text gives Batista's early expectation (the dialect would vanish), then his later finding (young adults were bringing dialect words back), and finally his revised view that dialect loss can reverse. Choice D follows that sequence.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Only one town is discussed."
+          },
+          {
+            "label": "B",
+            "text": "Batista observes a partial revival but doesn't recommend any steps to bring one about."
+          },
+          {
+            "label": "C",
+            "text": "The later evidence contradicted Batista's prediction rather than confirming it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

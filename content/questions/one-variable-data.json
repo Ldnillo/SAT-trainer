@@ -63,6 +63,552 @@
           }
         ]
       }
+    },
+    {
+      "id": "one-variable-data-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The daily high temperatures, in degrees Fahrenheit, recorded in a town over one week were $68$, $75$, $71$, $80$, $66$, $73$, and $71$. What is the median of these temperatures?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$71$"
+          },
+          {
+            "label": "B",
+            "text": "$72$"
+          },
+          {
+            "label": "C",
+            "text": "$80$"
+          },
+          {
+            "label": "D",
+            "text": "$14$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "To find the median, first put the values in order: $66, 68, 71, 71, 73, 75, 80$. There are $7$ values, so the median is the 4th value, $71$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the mean: $\\frac{504}{7} = 72$."
+          },
+          {
+            "label": "C",
+            "text": "This is the middle value of the list as written, before it was put in order."
+          },
+          {
+            "label": "D",
+            "text": "This is the range, $80 - 66 = 14$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-003",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Maya's mean score on five quizzes is $84$. Her scores on four of the quizzes are $80$, $90$, $78$, and $85$. What is her score on the fifth quiz?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "87"
+        ],
+        "explanation": "A mean of $84$ over $5$ quizzes means the scores add up to $5 \\times 84 = 420$. The four known scores add up to $80 + 90 + 78 + 85 = 333$. Calling the fifth score $x$ gives the equation $333 + x = 420$. Subtracting $333$ from both sides gives $x = 420 - 333$, which simplifies to $x = 87$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Pets per household",
+          "columns": [
+            "Number of pets",
+            "Number of households"
+          ],
+          "rows": [
+            [
+              "0",
+              "5"
+            ],
+            [
+              "1",
+              "8"
+            ],
+            [
+              "2",
+              "4"
+            ],
+            [
+              "3",
+              "3"
+            ]
+          ]
+        },
+        "stem": "The frequency table shows the number of pets owned by each of $20$ households on a street. What is the median number of pets per household?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1$"
+          },
+          {
+            "label": "B",
+            "text": "$1.25$"
+          },
+          {
+            "label": "C",
+            "text": "$1.5$"
+          },
+          {
+            "label": "D",
+            "text": "$8$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "There are $20$ households, so the median is the average of the 10th and 11th values when they are listed in order. The first $5$ values are $0$, and the next $8$ (the 6th through 13th) are $1$. Both the 10th and 11th values are $1$, so the median is $1$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the mean: $\\frac{0(5) + 1(8) + 2(4) + 3(3)}{20} = \\frac{25}{20} = 1.25$."
+          },
+          {
+            "label": "C",
+            "text": "This is the middle of the possible values $0$ through $3$, not the middle of the $20$ data values."
+          },
+          {
+            "label": "D",
+            "text": "This is the largest frequency in the table, not a number of pets."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-005",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Books read over the summer",
+          "columns": [
+            "Number of books",
+            "Number of students"
+          ],
+          "rows": [
+            [
+              "0",
+              "3"
+            ],
+            [
+              "1",
+              "6"
+            ],
+            [
+              "2",
+              "7"
+            ],
+            [
+              "3",
+              "5"
+            ],
+            [
+              "4",
+              "4"
+            ]
+          ]
+        },
+        "stem": "The frequency table shows how many books each of $25$ students read over the summer. What is the mean number of books read per student?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2.04",
+          "51/25"
+        ],
+        "explanation": "Multiply each number of books by its frequency and add: $0(3) + 1(6) + 2(7) + 3(5) + 4(4) = 0 + 6 + 14 + 15 + 16 = 51$ books in all. Divide by the $25$ students: $\\frac{51}{25} = 2.04$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Data set $P$ consists of the values $10$, $20$, $30$, $40$, and $50$. Data set $Q$ is made by adding $15$ to each value in data set $P$. Which statement correctly compares the two data sets?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The mean of $Q$ is greater than the mean of $P$, and the standard deviations are equal."
+          },
+          {
+            "label": "B",
+            "text": "The means are equal, and the standard deviation of $Q$ is greater than the standard deviation of $P$."
+          },
+          {
+            "label": "C",
+            "text": "The mean and the standard deviation of $Q$ are both greater than those of $P$."
+          },
+          {
+            "label": "D",
+            "text": "The means are equal, and the standard deviations are equal."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Adding $15$ to every value shifts the whole data set up by $15$, so the mean goes from $30$ to $45$. But the values are spread out exactly as before (each is still $10$ apart from the next), so the standard deviation, which measures spread, does not change.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Shifting every value up raises the mean; it does not change how spread out the values are."
+          },
+          {
+            "label": "C",
+            "text": "Adding the same number to every value doesn't change the distances between values, so the spread stays the same."
+          },
+          {
+            "label": "D",
+            "text": "Every value of $Q$ is $15$ more than in $P$, so the mean of $Q$ is $15$ more."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A box plot summarizes the heights, in inches, of the students in a dance class. The minimum is $52$, the first quartile is $58$, the median is $61$, the third quartile is $66$, and the maximum is $75$. Which statement must be true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The interquartile range of the heights is $8$ inches."
+          },
+          {
+            "label": "B",
+            "text": "The range of the heights is $14$ inches."
+          },
+          {
+            "label": "C",
+            "text": "The mean height is $61$ inches."
+          },
+          {
+            "label": "D",
+            "text": "About half of the students are taller than $66$ inches."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The interquartile range is the third quartile minus the first quartile: $66 - 58 = 8$ inches. The box plot gives this directly, so it must be true.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The range is the maximum minus the minimum, $75 - 52 = 23$; $14$ is the maximum minus the median."
+          },
+          {
+            "label": "C",
+            "text": "A box plot shows the median, $61$, but not the mean, which could be different."
+          },
+          {
+            "label": "D",
+            "text": "About one quarter of the students are taller than the third quartile, $66$; about half are taller than the median, $61$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The test scores of $20$ students have a mean of $75$ and a standard deviation of $8$. A 21st student takes the test and scores exactly $75$. Which statement about the mean and standard deviation of all $21$ scores is true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The mean stays the same, and the standard deviation decreases."
+          },
+          {
+            "label": "B",
+            "text": "The mean stays the same, and the standard deviation stays the same."
+          },
+          {
+            "label": "C",
+            "text": "The mean stays the same, and the standard deviation increases."
+          },
+          {
+            "label": "D",
+            "text": "The mean increases, and the standard deviation decreases."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The new score equals the mean, so the total grows by exactly $75$ for one more student and the mean stays $75$. Standard deviation measures how far scores typically are from the mean. The new score is $0$ away from the mean, so adding it doesn't add any distance but does add one more score to average over. The typical distance from the mean gets smaller, so the standard deviation decreases.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The new score adds a score with distance $0$ from the mean, which pulls the typical distance from the mean down."
+          },
+          {
+            "label": "C",
+            "text": "A score far from the mean would increase the spread; a score exactly at the mean decreases it."
+          },
+          {
+            "label": "D",
+            "text": "Adding a score equal to the mean leaves the mean unchanged."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A data set consists of the six values $3$, $8$, $8$, $12$, $15$, and $x$, where $x > 15$. The mean of the data set is $3$ greater than the median of the data set. What is the value of $x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "32"
+        ],
+        "explanation": "Since $x > 15$, the values in order are $3, 8, 8, 12, 15, x$. With six values, the median is the average of the 3rd and 4th values: $\\frac{8 + 12}{2} = \\frac{20}{2} = 10$. The mean is $3$ greater than the median, so the mean is $10 + 3 = 13$. Six values with a mean of $13$ add up to $6 \\times 13 = 78$. The five known values add up to $3 + 8 + 8 + 12 + 15 = 46$, which gives the equation $46 + x = 78$. Subtracting $46$ from both sides gives $x = 78 - 46$, which simplifies to $x = 32$. Check: $32 > 15$, as required.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-variable-data-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Each of two data sets contains $20$ whole numbers from $1$ to $5$. In data set $X$, the values $1$, $2$, $3$, $4$, and $5$ occur $2$, $3$, $10$, $3$, and $2$ times, respectively. In data set $Y$, the same values occur $6$, $2$, $4$, $2$, and $6$ times, respectively. Which statement correctly compares the data sets?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The means are equal, and the standard deviation of $Y$ is greater."
+          },
+          {
+            "label": "B",
+            "text": "The means are equal, and the standard deviation of $X$ is greater."
+          },
+          {
+            "label": "C",
+            "text": "The means are equal, and the standard deviations are equal."
+          },
+          {
+            "label": "D",
+            "text": "The mean of $Y$ is greater, and the standard deviation of $Y$ is greater."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Both frequency patterns are symmetric around $3$ ($2, 3, 10, 3, 2$ and $6, 2, 4, 2, 6$ read the same forward and backward), so both means are $3$. In $X$, half the values are exactly $3$ and most of the rest are only $1$ away. In $Y$, $12$ of the $20$ values are at the extremes, $1$ or $5$, which are $2$ away from the mean. Values in $Y$ are farther from the mean, so $Y$ has the greater standard deviation.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Data set $X$ has most of its values at or near the mean of $3$, so its spread is smaller."
+          },
+          {
+            "label": "C",
+            "text": "The data sets use the same values but with different frequencies; $Y$ has many more values at the extremes."
+          },
+          {
+            "label": "D",
+            "text": "Both distributions are symmetric about $3$, so both means are $3$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

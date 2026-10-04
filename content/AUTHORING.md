@@ -14,6 +14,15 @@ Every question in `content/questions/` follows these rules, whether a person or 
 
 Match the digital SAT: the skill descriptions and guidance in `src/lib/sat/taxonomy.ts`, passages of 25 to 150 words, four answer choices with exactly one correct, and grid-in answers that fit the answer grid. Every question has an explanation and, for multiple choice, a rationale for each wrong choice. `npm run check:questions` enforces the mechanical rules.
 
+## Explanations
+
+Write explanations for a student who got the question wrong. Show every algebra step and say what was done, rather than jumping from one equation to its answer (Justine, 2026-10-04):
+
+- Not: "$3x = 120$ and $x = 40$."
+- Instead: "This gives $3x = 120$. Dividing both sides by $3$ simplifies this to $x = 40$."
+
+The same goes for decimals, fractions and percents: "$0.45s = 18$. Divide both sides by $0.45$ to get $s = \frac{18}{0.45}$, which simplifies to $s = 40$."
+
 ## Authorship record (required)
 
 Each question carries an `authorship` object. `npm run import` and CI reject any question without it.

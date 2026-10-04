@@ -63,6 +63,514 @@
           }
         ]
       }
+    },
+    {
+      "id": "percentages-002",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What is $35\\%$ of $240$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "84"
+        ],
+        "explanation": "Write $35\\%$ as a decimal, $0.35$, and multiply: $0.35 \\cdot 240 = 84$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A hiking club has $72$ members, and $18$ of them have climbed a mountain taller than $4{,}000$ meters. What percent of the club's members have climbed such a mountain?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$25\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$54\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$400\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Divide the part by the whole: $\\frac{18}{72} = 0.25$. As a percent, $0.25 = 25\\%$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This computes $72 \\div 18 = 4$ and writes it as a percent; the part goes on top."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts $72 - 18 = 54$, which is the number of members who have not climbed such a mountain, not a percent."
+          },
+          {
+            "label": "D",
+            "text": "This divides the whole by the part ($\\frac{72}{18} = 4 = 400\\%$)."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school library had $1{,}250$ books at the start of the year. During the year, the number of books increased by $8\\%$. How many books did the library have at the end of the year?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1{,}258$"
+          },
+          {
+            "label": "B",
+            "text": "$1{,}350$"
+          },
+          {
+            "label": "C",
+            "text": "$1{,}150$"
+          },
+          {
+            "label": "D",
+            "text": "$2{,}250$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "An $8\\%$ increase adds $0.08 \\cdot 1{,}250 = 100$ books, so the library had $1{,}250 + 100 = 1{,}350$ books. (Equivalently, $1{,}250 \\cdot 1.08 = 1{,}350$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This adds $8$ books instead of $8\\%$ of $1{,}250$."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts the $100$ books instead of adding them."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies by $1.8$, which is an $80\\%$ increase, not $8\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-005",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "After a $15\\%$ discount, the price of a pair of headphones is $\\$68$. What was the original price, in dollars?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "80"
+        ],
+        "explanation": "A $15\\%$ discount leaves $100\\% - 15\\% = 85\\%$ of the original price. If $p$ is the original price, then $0.85p = 68$. Divide both sides by $0.85$ to get $p = \\frac{68}{0.85}$, which simplifies to $p = 80$. Check: $15\\%$ of $80$ is $12$, and $80 - 12 = 68$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a survey of $640$ students, $45\\%$ said their favorite sport to play is soccer. Of the students who chose soccer, $25\\%$ said they also play on a basketball team. How many of the surveyed students chose soccer and play on a basketball team?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$72$"
+          },
+          {
+            "label": "B",
+            "text": "$128$"
+          },
+          {
+            "label": "C",
+            "text": "$160$"
+          },
+          {
+            "label": "D",
+            "text": "$448$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "First find the soccer group: $0.45 \\cdot 640 = 288$ students. Then take $25\\%$ of that group: $0.25 \\cdot 288 = 72$ students.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This subtracts the percents ($45\\% - 25\\% = 20\\%$) and takes $20\\%$ of $640$."
+          },
+          {
+            "label": "C",
+            "text": "This takes $25\\%$ of all $640$ students instead of $25\\%$ of the soccer group."
+          },
+          {
+            "label": "D",
+            "text": "This adds the percents ($45\\% + 25\\% = 70\\%$) and takes $70\\%$ of $640$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A community garden's membership fell from $480$ members to $408$ members. By what percent did the membership decrease?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$15\\%$"
+          },
+          {
+            "label": "B",
+            "text": "about $17.6\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$72\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$85\\%$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The decrease is $480 - 408 = 72$ members. Percent change compares the change to the original amount: $\\frac{72}{480} = 0.15 = 15\\%$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This divides the change by the new amount, $\\frac{72}{408}$, instead of the original amount."
+          },
+          {
+            "label": "C",
+            "text": "This reports the number of members lost as if it were a percent."
+          },
+          {
+            "label": "D",
+            "text": "This is the new membership as a percent of the original ($\\frac{408}{480} = 85\\%$), not the percent decrease."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The positive number $p$ is $40\\%$ greater than the number $q$, and $q$ is $25\\%$ less than the number $r$. The value of $p$ is what percent of the value of $r$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$30\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$75\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$105\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$115\\%$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Being $40\\%$ greater means $p = 1.40q$. Being $25\\%$ less means $q = 0.75r$. Substitute $0.75r$ for $q$ in the first equation: $p = 1.40(0.75r)$. Multiplying $1.40 \\cdot 0.75 = 1.05$ simplifies this to $p = 1.05r$. So $p$ is $105\\%$ of $r$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This multiplies the percents themselves ($0.40 \\cdot 0.75$) instead of the multipliers $1.40$ and $0.75$."
+          },
+          {
+            "label": "B",
+            "text": "This is $q$ as a percent of $r$; it leaves out the step from $q$ to $p$."
+          },
+          {
+            "label": "D",
+            "text": "This adds the percent changes ($+40\\% - 25\\% = +15\\%$), but successive percent changes multiply."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The value of a share of stock increased by $25\\%$ in January. In February, the value decreased by $x\\%$. At the end of February, the value was $10\\%$ less than it was at the start of January. What is the value of $x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "28"
+        ],
+        "explanation": "Let the starting value be $V$. After January it is $1.25V$. After February it is $1.25V\\left(1 - \\frac{x}{100}\\right)$, and this equals $0.90V$: $1.25V\\left(1 - \\frac{x}{100}\\right) = 0.90V$. Divide both sides by $1.25V$: $1 - \\frac{x}{100} = \\frac{0.90}{1.25}$, which simplifies to $1 - \\frac{x}{100} = 0.72$. Subtract $0.72$ from both sides and add $\\frac{x}{100}$ to both sides to get $\\frac{x}{100} = 0.28$. Multiplying both sides by $100$ gives $x = 28$. (A tempting wrong answer is $35$, from adding $25\\%$ and $10\\%$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "percentages-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A chemist has $200$ grams of a salt solution that is $30\\%$ salt by mass. How many grams of pure water must be added so that the solution is $24\\%$ salt by mass?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12$"
+          },
+          {
+            "label": "B",
+            "text": "$48$"
+          },
+          {
+            "label": "C",
+            "text": "$50$"
+          },
+          {
+            "label": "D",
+            "text": "$250$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The amount of salt does not change when water is added: $0.30 \\cdot 200 = 60$ grams. After adding $w$ grams of water, the total mass is $200 + w$, and salt must be $24\\%$ of it: $\\frac{60}{200 + w} = 0.24$. Multiply both sides by $200 + w$: $60 = 0.24(200 + w)$. Divide both sides by $0.24$: $200 + w = \\frac{60}{0.24}$, which simplifies to $200 + w = 250$. Subtracting $200$ from both sides gives $w = 50$ grams.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes the drop in percent, $30\\% - 24\\% = 6\\%$, of $200$ grams; the percent is not a percent of the water added."
+          },
+          {
+            "label": "B",
+            "text": "This computes $24\\%$ of $200$, the salt a $200$-gram solution would hold at the new concentration, not the water to add."
+          },
+          {
+            "label": "D",
+            "text": "This is the total mass of the new solution; the original $200$ grams must be subtracted to find the water added."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
     }
   ]
 }

@@ -29,7 +29,7 @@
         ],
         "correctChoice": "D",
         "acceptedAnswers": [],
-        "explanation": "Substitute $x = 6$: $y = 4.5(6) + 62 = 27 + 62 = 89$.",
+        "explanation": "Substitute $x = 6$ into the equation of the line: $y = 4.5(6) + 62$. Multiplying $4.5$ by $6$ gives $y = 27 + 62$, and adding gives $y = 89$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -60,6 +60,537 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A café owner recorded the outdoor temperature and the number of cups of hot cocoa sold on each of $30$ days. In a scatterplot of the data, with temperature on the horizontal axis, the points fall from upper left to lower right and lie close to a straight line. Which statement best describes the relationship?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "A strong negative linear association"
+          },
+          {
+            "label": "B",
+            "text": "A strong positive linear association"
+          },
+          {
+            "label": "C",
+            "text": "A weak positive nonlinear association"
+          },
+          {
+            "label": "D",
+            "text": "No association"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Points that fall from upper left to lower right show that as temperature increases, cocoa sales tend to decrease: a negative association. Because the points lie close to a straight line, the association is strong and linear.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A positive association would rise from lower left to upper right."
+          },
+          {
+            "label": "C",
+            "text": "The points fall rather than rise, and they lie close to a straight line, so the association is negative, strong, and linear."
+          },
+          {
+            "label": "D",
+            "text": "The points follow a clear downward pattern, so there is an association."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-003",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A botanist models the height $h$, in centimeters, of a seedling $t$ weeks after planting with the equation $h = 1.8t + 12$. According to the model, how many weeks after planting will the seedling's height be $30$ centimeters?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "10"
+        ],
+        "explanation": "Set $h = 30$ to get the equation $30 = 1.8t + 12$. Subtracting $12$ from both sides gives $18 = 1.8t$. Dividing both sides by $1.8$ gives $t = \\frac{18}{1.8}$, which simplifies to $t = 10$ weeks.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For a set of weather stations, the line of best fit $y = 31.2 - 0.0035x$ models the average July temperature $y$, in degrees Celsius, at a station with elevation $x$ meters. Which statement is the best interpretation of $0.0035$ in this context?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The predicted average July temperature at an elevation of $0$ meters is $0.0035$ degrees Celsius."
+          },
+          {
+            "label": "B",
+            "text": "For each increase of $1$ meter in elevation, the predicted average July temperature decreases by $0.0035$ degrees Celsius."
+          },
+          {
+            "label": "C",
+            "text": "For each decrease of $1$ degree Celsius in average July temperature, the predicted elevation increases by $0.0035$ meters."
+          },
+          {
+            "label": "D",
+            "text": "For each increase of $1$ meter in elevation, the predicted average July temperature decreases by $31.2$ degrees Celsius."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "In $y = 31.2 - 0.0035x$, the slope is $-0.0035$. The slope tells how much the predicted $y$ (temperature) changes when $x$ (elevation) goes up by $1$. Since the slope is negative, the predicted temperature drops by $0.0035$ degrees Celsius for each additional meter of elevation.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The predicted temperature at elevation $0$ is the $y$-intercept, $31.2$."
+          },
+          {
+            "label": "C",
+            "text": "This reverses the roles of the variables; the slope gives the change in temperature per meter, not the change in elevation per degree."
+          },
+          {
+            "label": "D",
+            "text": "$31.2$ is the $y$-intercept, the predicted temperature at sea level, not a rate of change."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A line of best fit for a data set is $y = 2.5x + 10$. One of the data points is $(8, 27)$. What is the residual for this data point (the actual $y$-value minus the $y$-value predicted by the line)?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-3$"
+          },
+          {
+            "label": "B",
+            "text": "$3$"
+          },
+          {
+            "label": "C",
+            "text": "$27$"
+          },
+          {
+            "label": "D",
+            "text": "$30$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $x = 8$ into the equation of the line to find the predicted value: $2.5(8) + 10$. Multiplying gives $20 + 10$, and adding gives $30$. The actual value is $27$. The residual is actual minus predicted: $27 - 30 = -3$. The point lies $3$ units below the line.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is predicted minus actual; the residual is actual minus predicted."
+          },
+          {
+            "label": "C",
+            "text": "This is the actual $y$-value of the point."
+          },
+          {
+            "label": "D",
+            "text": "This is the predicted $y$-value at $x = 8$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A biologist counted the bacteria in a culture every hour. An exponential model that fits the data is $y = 250(2)^{\\frac{x}{3}}$, where $y$ is the number of bacteria $x$ hours after the first count. According to the model, how many bacteria will there be $9$ hours after the first count?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "2000"
+        ],
+        "explanation": "Substitute $x = 9$: the exponent is $\\frac{9}{3} = 3$, so $y = 250(2)^3 = 250(8) = 2000$. (The model says the count doubles every $3$ hours: $250 \\to 500 \\to 1000 \\to 2000$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": null,
+          "columns": [
+            "$x$ (hours)",
+            "$y$ (milligrams)"
+          ],
+          "rows": [
+            [
+              "0",
+              "400"
+            ],
+            [
+              "1",
+              "205"
+            ],
+            [
+              "2",
+              "98"
+            ],
+            [
+              "3",
+              "51"
+            ],
+            [
+              "4",
+              "24"
+            ]
+          ]
+        },
+        "stem": "The table shows the amount $y$, in milligrams, of a medicine remaining in a patient's bloodstream $x$ hours after a dose. Which equation best models the data?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$y = 400(0.5)^x$"
+          },
+          {
+            "label": "B",
+            "text": "$y = 400(2)^x$"
+          },
+          {
+            "label": "C",
+            "text": "$y = 400 - 100x$"
+          },
+          {
+            "label": "D",
+            "text": "$y = 400 - 95x$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Look at how $y$ changes each hour: $400$ to $205$ to $98$ to $51$ to $24$. Each value is about half the one before, so the amount is cut roughly in half each hour, which is exponential decay with factor $0.5$. The model $y = 400(0.5)^x$ gives $400, 200, 100, 50, 25$, very close to the data.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A factor of $2$ would double the amount each hour, but the amount decreases."
+          },
+          {
+            "label": "C",
+            "text": "This linear model predicts $300$, $200$, $100$, and $0$, which does not match the halving pattern (for example, $300$ vs. $205$ at $x = 1$)."
+          },
+          {
+            "label": "D",
+            "text": "This linear model predicts $305$ at $x = 1$ and $210$ at $x = 2$, far from the data values $205$ and $98$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Data on a car model's resale value are fit by the model $v = 24{,}500(0.86)^{\\frac{t}{2}}$, where $v$ is the predicted value, in dollars, of a car that is $t$ years old. Which statement is the best interpretation of $0.86$ in this context?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The predicted value decreases by $14\\%$ every year."
+          },
+          {
+            "label": "B",
+            "text": "The predicted value decreases by $14\\%$ every $2$ years."
+          },
+          {
+            "label": "C",
+            "text": "The predicted value decreases by $86\\%$ every $2$ years."
+          },
+          {
+            "label": "D",
+            "text": "The predicted value decreases by $14\\%$ every half year."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The exponent $\\frac{t}{2}$ goes up by $1$ each time $t$ goes up by $2$. So every $2$ years, the predicted value is multiplied by $0.86$. Multiplying by $0.86$ keeps $86\\%$ of the value, which is a decrease of $100\\% - 86\\% = 14\\%$. So the predicted value drops by $14\\%$ every $2$ years.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The exponent is $\\frac{t}{2}$, not $t$, so the factor $0.86$ applies once every $2$ years, not every year."
+          },
+          {
+            "label": "C",
+            "text": "Multiplying by $0.86$ keeps $86\\%$ of the value; the decrease is $14\\%$."
+          },
+          {
+            "label": "D",
+            "text": "This treats the exponent as $2t$; with $\\frac{t}{2}$, it takes $2$ years, not half a year, for the exponent to increase by $1$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher fits two models to the number of members $y$ of an online group $x$ months after it launched: the linear model $y = 120 + 30x$ and the exponential model $y = 120(1.2)^x$. Both models predict $120$ members at $x = 0$. What is the smallest positive whole number $x$ for which the exponential model predicts more members than the linear model?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "4"
+        ],
+        "explanation": "Compare the predictions month by month. $x = 1$: linear $150$, exponential $144$. $x = 2$: linear $180$, exponential $172.8$. $x = 3$: linear $210$, exponential $207.36$. $x = 4$: linear $240$, exponential $120(1.2)^4 = 248.832$. The exponential model first predicts more members at $x = 4$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "two-variable-data-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A store models its weekly revenue $R$, in thousands of dollars, from a product sold at price $p$ dollars with the quadratic equation $R = -2p^2 + 48p + 50$, for $5 \\le p \\le 20$. According to the model, which price gives the greatest predicted weekly revenue, and what is that revenue?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$p = 12$; $R = 338$"
+          },
+          {
+            "label": "B",
+            "text": "$p = 24$; $R = 50$"
+          },
+          {
+            "label": "C",
+            "text": "$p = 12$; $R = 482$"
+          },
+          {
+            "label": "D",
+            "text": "$p = 12$; $R = 914$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The graph of $R$ is a parabola that opens downward (the coefficient of $p^2$ is negative), so its maximum is at the vertex. Here $a = -2$ and $b = 48$, so the vertex is at $p = -\\frac{b}{2a} = -\\frac{48}{2(-2)} = -\\frac{48}{-4} = 12$. This price is in the allowed range $5 \\le p \\le 20$. Substitute $p = 12$ into the equation: $R = -2(12)^2 + 48(12) + 50$. Squaring first, $(12)^2 = 144$, so $R = -2(144) + 48(12) + 50$. Multiplying gives $R = -288 + 576 + 50$, and adding gives $R = 338$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This uses $p = -\\frac{b}{a} = 24$ instead of $-\\frac{b}{2a}$; $p = 24$ is where revenue falls back to $50$, and it is outside the allowed range."
+          },
+          {
+            "label": "C",
+            "text": "This uses $-(12)^2 = -144$ and forgets to multiply by the coefficient $2$."
+          },
+          {
+            "label": "D",
+            "text": "This adds $2(12)^2 = 288$ instead of subtracting it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }

@@ -68,6 +68,623 @@
           }
         ]
       }
+    },
+    {
+      "id": "words-in-context-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The new reading room on the library's top floor has quickly become a favorite place to study. Even when dozens of students fill its long tables, the room stays remarkably ______: the only sounds are pages turning and the soft hum of the ventilation."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "crowded"
+          },
+          {
+            "label": "B",
+            "text": "tranquil"
+          },
+          {
+            "label": "C",
+            "text": "ornate"
+          },
+          {
+            "label": "D",
+            "text": "dim"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The colon introduces an explanation of what the room is like: the only sounds are pages turning and a soft hum. A room that stays calm and quiet is \"tranquil,\" so choice B fits.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The room is full of students, but the sentence describes what it \"stays\" like despite being full, and the sounds that follow describe quiet, not crowding."
+          },
+          {
+            "label": "C",
+            "text": "\"Ornate\" describes elaborate decoration, but the explanation after the colon is about sound, not appearance."
+          },
+          {
+            "label": "D",
+            "text": "\"Dim\" refers to lighting, which the text never mentions; the detail after the colon is about how quiet the room is."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Hummingbirds burn energy faster, for their size, than almost any other animal with a backbone. To ______ their enormous energy needs, many hummingbirds visit hundreds of flowers each day, drinking nectar almost constantly from dawn to dusk."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ignore"
+          },
+          {
+            "label": "B",
+            "text": "reduce"
+          },
+          {
+            "label": "C",
+            "text": "meet"
+          },
+          {
+            "label": "D",
+            "text": "measure"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The birds have \"enormous energy needs,\" and visiting hundreds of flowers to drink nectar is how they get enough energy. Satisfying a need is to \"meet\" it, so choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Feeding all day is a response to the birds' energy needs, the opposite of ignoring them."
+          },
+          {
+            "label": "B",
+            "text": "Drinking nectar supplies energy; it doesn't make the birds need less of it."
+          },
+          {
+            "label": "D",
+            "text": "Visiting flowers is a way of getting food, not a way of measuring how much energy the birds need."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Critics who visited the gallery expected the painter's new work to resemble her earlier street scenes, which were crowded with people, signs and bright colors. Instead, they found canvases that were strikingly ______: each showed a single gray figure against a pale, empty background."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "chaotic"
+          },
+          {
+            "label": "B",
+            "text": "vibrant"
+          },
+          {
+            "label": "C",
+            "text": "familiar"
+          },
+          {
+            "label": "D",
+            "text": "sparse"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "\"Instead\" signals a contrast with the crowded, colorful earlier work, and the colon explains that each new canvas held only one gray figure on an empty background. Paintings with very little in them are \"sparse,\" so choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Chaotic\" would describe the busy earlier street scenes, not the new, nearly empty canvases."
+          },
+          {
+            "label": "B",
+            "text": "\"Vibrant\" suggests bright, lively color, but the new canvases are gray and pale."
+          },
+          {
+            "label": "C",
+            "text": "\"Instead\" shows the new work was not what critics expected, so it was not familiar to them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the city council proposed closing the riverside market, the vendors were quick to marshal support. Within a week they had gathered petitions signed by thousands of shoppers, letters from nearby restaurants and a statement from the neighborhood association."
+          }
+        ],
+        "table": null,
+        "stem": "As used in the text, what does the word \"marshal\" most nearly mean?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "command"
+          },
+          {
+            "label": "B",
+            "text": "assemble"
+          },
+          {
+            "label": "C",
+            "text": "escort"
+          },
+          {
+            "label": "D",
+            "text": "restrain"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The second sentence shows what marshaling support looked like: the vendors gathered petitions, letters and a statement. Bringing together support from many sources is assembling it, so choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A marshal can command troops, but the vendors were collecting support from others, not giving orders."
+          },
+          {
+            "label": "C",
+            "text": "To escort is to accompany someone; the vendors were not guiding anyone anywhere."
+          },
+          {
+            "label": "D",
+            "text": "\"Restrain\" means to hold back, the opposite of what the vendors did in gathering as much support as possible."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The expedition's journals are often treated as straightforward day-by-day records of the journey. Historian Tomas Reyes cautions that they are more ______ than they appear: the expedition's leaders revised many entries years afterward, once they had decided how they wanted the journey to be remembered."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "spontaneous"
+          },
+          {
+            "label": "B",
+            "text": "incomplete"
+          },
+          {
+            "label": "C",
+            "text": "curated"
+          },
+          {
+            "label": "D",
+            "text": "illegible"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Reyes says the leaders went back and revised entries to shape how the journey would be remembered. Material that has been deliberately selected and arranged for a purpose is \"curated,\" which contrasts with \"straightforward day-by-day records.\" Choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Revising entries years later is the opposite of spontaneous writing done in the moment."
+          },
+          {
+            "label": "B",
+            "text": "The text says entries were revised, not that parts are missing."
+          },
+          {
+            "label": "D",
+            "text": "Nothing suggests the journals are hard to read; the issue is that they were reshaped after the fact."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Several small early studies reported that the supplement improved memory, but none of them compared the people taking it with a group taking a placebo. When larger, carefully controlled trials were finally conducted, they failed to ______ the early results: people taking the supplement did no better on memory tests than people taking the placebo."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "publicize"
+          },
+          {
+            "label": "B",
+            "text": "exaggerate"
+          },
+          {
+            "label": "C",
+            "text": "replicate"
+          },
+          {
+            "label": "D",
+            "text": "predict"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The later trials found no difference between the supplement and the placebo, so they did not reproduce the improvement the early studies reported. Reproducing a study's result is \"replicating\" it, so choice C is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Whether the trials publicized anything is beside the point; the colon explains that their results differed from the early ones."
+          },
+          {
+            "label": "B",
+            "text": "Saying the trials \"failed to exaggerate\" the results doesn't make sense with the explanation that they found no effect at all."
+          },
+          {
+            "label": "D",
+            "text": "The early results came first, so the later trials could not have predicted them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The narrator of the novel is unfailingly polite to his neighbors, yet his courtesy is ______: he praises their gardens to their faces while privately recording every weed and overgrown hedge in a notebook he intends to hand to the town council."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "disingenuous"
+          },
+          {
+            "label": "B",
+            "text": "effusive"
+          },
+          {
+            "label": "C",
+            "text": "reticent"
+          },
+          {
+            "label": "D",
+            "text": "impeccable"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "\"Yet\" signals that something undercuts the narrator's politeness, and the colon explains what: he praises his neighbors while secretly collecting complaints to report them. Politeness that hides a different intention is insincere, or \"disingenuous.\" Choice A is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Effusive\" means gushing or overly enthusiastic. It could describe his praise, but it misses the contrast \"yet\" sets up between his courtesy and his secret notebook."
+          },
+          {
+            "label": "C",
+            "text": "\"Reticent\" means reserved or unwilling to speak, but the narrator openly praises his neighbors."
+          },
+          {
+            "label": "D",
+            "text": "\"Impeccable\" (flawless) would only restate that he is polite; it doesn't fit the contrast introduced by \"yet.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Economist Ines Halvorsen's model of rural credit markets has been praised for its elegance, but critics note that its predictions are troublingly ______. Because the model contains so many adjustable parameters, it can be tuned to fit almost any outcome, which makes it nearly impossible to show that the model is wrong."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "precise"
+          },
+          {
+            "label": "B",
+            "text": "malleable"
+          },
+          {
+            "label": "C",
+            "text": "counterintuitive"
+          },
+          {
+            "label": "D",
+            "text": "provisional"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The critics' complaint is that the model \"can be tuned to fit almost any outcome.\" Predictions that can be reshaped to match whatever happens are \"malleable,\" and that flexibility is what makes the model impossible to disprove. Choice B is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Precise predictions would be easy to test against outcomes, the opposite of the critics' complaint."
+          },
+          {
+            "label": "C",
+            "text": "\"Counterintuitive\" means surprising, but the problem described is flexibility, not surprise."
+          },
+          {
+            "label": "D",
+            "text": "\"Provisional\" means temporary or awaiting confirmation. The issue isn't that the predictions are tentative but that they can be adjusted to fit anything, so they can never be disproved."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "words-in-context-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The documentary opens with an arresting image: a single glass sculpture, lit from below, turning slowly in an otherwise dark room. Viewers who expect the film to begin with an interview with the artist instead find themselves held in silence for nearly a minute, unable to look away."
+          }
+        ],
+        "table": null,
+        "stem": "As used in the text, what does the word \"arresting\" most nearly mean?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "detaining"
+          },
+          {
+            "label": "B",
+            "text": "halting"
+          },
+          {
+            "label": "C",
+            "text": "alarming"
+          },
+          {
+            "label": "D",
+            "text": "striking"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text says viewers are \"held in silence\" and \"unable to look away.\" An image that grabs and holds attention is \"striking,\" so choice D is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Detaining\" is the meaning of \"arrest\" in a legal sense, as in holding a suspect, which doesn't apply to an image."
+          },
+          {
+            "label": "B",
+            "text": "\"Halting\" means stopping or hesitant; the sculpture keeps turning and nothing is stopped."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text suggests the image is frightening; viewers are captivated, not alarmed."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

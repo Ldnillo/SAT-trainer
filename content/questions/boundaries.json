@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "boundaries-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The town's oldest bakery opened in 1921 and still uses its original brick oven. Every morning before dawn, the bakers build a wood fire inside ______ by six o'clock, the first loaves of rye bread are cooling on racks by the front window."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "it,"
+          },
+          {
+            "label": "B",
+            "text": "it"
+          },
+          {
+            "label": "C",
+            "text": "it."
+          },
+          {
+            "label": "D",
+            "text": "it, then"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "\"Every morning before dawn, the bakers build a wood fire inside it\" and \"by six o'clock, the first loaves ... are cooling\" are both independent clauses. A period correctly separates them into two sentences.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A comma alone between two independent clauses creates a comma splice."
+          },
+          {
+            "label": "B",
+            "text": "With no punctuation, the two independent clauses run together into a run-on sentence."
+          },
+          {
+            "label": "D",
+            "text": "\"Then\" is not a conjunction, so a comma followed by \"then\" still joins two independent clauses with only a comma, creating a comma splice."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Over a single weekend, residents of Millbrook turned out in large numbers to restore the river that runs through town. The volunteers who cleaned up the riverbank last ______ more than four hundred pounds of trash, including old tires and a rusted bicycle."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Saturday, collected"
+          },
+          {
+            "label": "B",
+            "text": "Saturday collected"
+          },
+          {
+            "label": "C",
+            "text": "Saturday; collected"
+          },
+          {
+            "label": "D",
+            "text": "Saturday: collected"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the sentence is \"the volunteers who cleaned up the riverbank last Saturday,\" and the verb is \"collected.\" No punctuation should separate a subject from its verb.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A single comma between the subject and its verb incorrectly separates them."
+          },
+          {
+            "label": "C",
+            "text": "A semicolon must join two independent clauses, but \"the volunteers who cleaned up the riverbank last Saturday\" is not an independent clause."
+          },
+          {
+            "label": "D",
+            "text": "A colon must follow an independent clause, but the words before it are only the subject of the sentence."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For decades, the mural in the old train station was hidden under layers of grime and gray paint. After nearly ten years of careful ______ the conservation team reopened the restored mural to the public last May, revealing its bright original colors."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "work;"
+          },
+          {
+            "label": "B",
+            "text": "work."
+          },
+          {
+            "label": "C",
+            "text": "work:"
+          },
+          {
+            "label": "D",
+            "text": "work,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "\"After nearly ten years of careful work\" is an introductory phrase, not a complete sentence. A comma correctly separates it from the main clause, \"the conservation team reopened the restored mural.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A semicolon must join two independent clauses, but \"After nearly ten years of careful work\" cannot stand alone as a sentence."
+          },
+          {
+            "label": "B",
+            "text": "A period would leave \"After nearly ten years of careful work\" as a sentence fragment."
+          },
+          {
+            "label": "C",
+            "text": "A colon must follow an independent clause, but the introductory phrase before it is not one."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Roman engineers built their major roads to last for centuries. Rather than simply flattening the ground, they constructed each road in ______ a base of large stones, middle courses of gravel and rubble bound with lime mortar, and a surface of tightly fitted paving slabs."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "layers:"
+          },
+          {
+            "label": "B",
+            "text": "layers;"
+          },
+          {
+            "label": "C",
+            "text": "layers"
+          },
+          {
+            "label": "D",
+            "text": "layers, they were"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The words before the blank form an independent clause that ends by mentioning \"layers.\" What follows is a list naming those layers. A colon correctly introduces a list or explanation after an independent clause.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A semicolon must join two independent clauses, but the list that follows (\"a base of large stones ...\") is not an independent clause."
+          },
+          {
+            "label": "C",
+            "text": "With no punctuation, the list runs directly into \"layers,\" making the sentence confusing and ungrammatical."
+          },
+          {
+            "label": "D",
+            "text": "Adding \"they were\" turns the list into an independent clause joined to the first one with only a comma, creating a comma splice."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The axolotl—a salamander found in the wild only in the canals and lakes around Mexico ______ can regrow lost limbs, damaged parts of its heart, and even portions of its brain. Scientists study the animal in hopes of learning how such regeneration works."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "City, can"
+          },
+          {
+            "label": "B",
+            "text": "City; can"
+          },
+          {
+            "label": "C",
+            "text": "City—can"
+          },
+          {
+            "label": "D",
+            "text": "City can"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The phrase \"a salamander found in the wild only in the canals and lakes around Mexico City\" interrupts the main clause to describe the axolotl. It opens with a dash, so it must close with a matching dash before the verb \"can regrow.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A nonessential phrase must begin and end with the same punctuation; it opens with a dash, so closing it with a comma is inconsistent."
+          },
+          {
+            "label": "B",
+            "text": "A semicolon must join two independent clauses, but it would separate the subject \"The axolotl\" from its verb \"can regrow.\""
+          },
+          {
+            "label": "D",
+            "text": "Without closing punctuation, the interrupting phrase runs into the rest of the sentence and is never set off."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The traveling exhibition of West African textiles will visit three cities next year. Its schedule is now final: Lisbon, Portugal, in March; Accra, Ghana, in ______ and Montreal, Canada, in October. Each stop will also feature weaving demonstrations by guest artists."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "July,"
+          },
+          {
+            "label": "B",
+            "text": "July:"
+          },
+          {
+            "label": "C",
+            "text": "July;"
+          },
+          {
+            "label": "D",
+            "text": "July"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The list items already contain commas (\"Lisbon, Portugal, in March\"), so semicolons are used between items to keep them distinct. The earlier items are separated by a semicolon, so a semicolon must also follow \"Accra, Ghana, in July.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Because the list items contain internal commas, separating them with a comma makes it unclear where one item ends and the next begins; the list uses semicolons elsewhere."
+          },
+          {
+            "label": "B",
+            "text": "A colon introduces a list or explanation; it cannot be used to separate items within a list."
+          },
+          {
+            "label": "D",
+            "text": "With no punctuation, the third item runs into the second, breaking the semicolon pattern of the list."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The wheat variety developed by agronomist Kwame Asante was bred to survive drought, so his team expected it to outperform standard wheat only in dry years. In a five-year field trial, the variety did produce larger harvests in the three driest ______ it also matched the yield of standard wheat in the two wettest seasons, a result the team had not anticipated."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "seasons; however,"
+          },
+          {
+            "label": "B",
+            "text": "seasons, however,"
+          },
+          {
+            "label": "C",
+            "text": "seasons; however"
+          },
+          {
+            "label": "D",
+            "text": "seasons however,"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "\"The variety did produce larger harvests in the three driest seasons\" and \"it also matched the yield ...\" are both independent clauses. \"However\" is a transition word, not a conjunction, so a semicolon must come before it to separate the clauses, and a comma follows it.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Using only commas around \"however\" joins two independent clauses with commas, creating a comma splice."
+          },
+          {
+            "label": "C",
+            "text": "An introductory transition like \"however\" at the start of a clause should be followed by a comma."
+          },
+          {
+            "label": "D",
+            "text": "With no punctuation before \"however,\" the two independent clauses run together."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Before her 1962 book Silent Spring drew national attention to the dangers of pesticides, marine ______ had already written three popular books about the sea, including The Sea Around Us, which spent more than a year on bestseller lists."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "biologist, Rachel Carson,"
+          },
+          {
+            "label": "B",
+            "text": "biologist, Rachel Carson"
+          },
+          {
+            "label": "C",
+            "text": "biologist Rachel Carson,"
+          },
+          {
+            "label": "D",
+            "text": "biologist Rachel Carson"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "\"Marine biologist\" works as a title placed directly before the name \"Rachel Carson,\" so no commas belong between them. And because \"marine biologist Rachel Carson\" is the subject of the sentence, no comma should separate it from the verb \"had already written.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Commas around \"Rachel Carson\" would treat the name as extra information, implying she was the only marine biologist; the name is essential to identify who is meant."
+          },
+          {
+            "label": "B",
+            "text": "A comma between the title \"marine biologist\" and the name wrongly separates them, and a single comma cannot set off the name."
+          },
+          {
+            "label": "C",
+            "text": "A comma after \"Rachel Carson\" incorrectly separates the subject from its verb, \"had already written.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundaries-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Fireflies glow because of a chemical reaction in which an enzyme acts on a compound called luciferin. The energy released by this reaction, which biologists consider one of the most efficient light-producing processes ______ is given off almost entirely as light rather than heat, so a firefly's lantern stays cool to the touch."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "known—"
+          },
+          {
+            "label": "B",
+            "text": "known;"
+          },
+          {
+            "label": "C",
+            "text": "known,"
+          },
+          {
+            "label": "D",
+            "text": "known"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The clause \"which biologists consider one of the most efficient light-producing processes known\" interrupts the main clause to give extra information about \"this reaction.\" It begins with a comma, so it must end with a comma before the verb \"is given off.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The nonessential clause opens with a comma, so closing it with a dash is inconsistent punctuation."
+          },
+          {
+            "label": "B",
+            "text": "A semicolon must join two independent clauses, but here it would separate the subject \"The energy\" from its verb \"is given off.\""
+          },
+          {
+            "label": "D",
+            "text": "Without a closing comma, the nonessential clause is never set off and runs into the main verb."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

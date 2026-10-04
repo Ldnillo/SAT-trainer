@@ -68,6 +68,623 @@
           }
         ]
       }
+    },
+    {
+      "id": "rhetorical-synthesis-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• The kalimba is a small handheld instrument related to the mbira, a family of African instruments.\n• A kalimba has a row of thin metal tines attached to a wooden board or box.\n• Kalimba players pluck the tines with their thumbs.\n• The marimba is a large percussion instrument with wooden bars arranged like a piano keyboard.\n• Marimba players strike the bars with mallets."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize a difference in how players make sound on the two instruments. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The kalimba is related to the mbira, a family of African instruments."
+          },
+          {
+            "label": "B",
+            "text": "The kalimba has thin metal tines attached to a wooden board or box, while the marimba has wooden bars."
+          },
+          {
+            "label": "C",
+            "text": "While kalimba players pluck metal tines with their thumbs, marimba players strike wooden bars with mallets."
+          },
+          {
+            "label": "D",
+            "text": "The marimba is a large percussion instrument whose wooden bars are arranged like a piano keyboard."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to contrast how players make sound on the two instruments. Choice C does this directly: kalimba players pluck tines with their thumbs, while marimba players strike bars with mallets. The word \"while\" signals the contrast.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This gives background on the kalimba only and says nothing about how either instrument is played."
+          },
+          {
+            "label": "B",
+            "text": "This contrasts what the instruments are made of, not how players make sound on them."
+          },
+          {
+            "label": "D",
+            "text": "This describes only the marimba and doesn't say how it is played."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• In 2021, archaeologist Leila Haddad led an excavation at a site near the village of Korvel.\n• Her team uncovered the remains of a bakery about 1,800 years old.\n• The bakery contained three large clay ovens.\n• Charred remains of wheat and barley were found near the ovens.\n• Haddad believes the bakery supplied bread to much of the surrounding settlement."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to indicate when and where Haddad's excavation took place. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "In 2021, Leila Haddad led an excavation near the village of Korvel, where her team uncovered an ancient bakery."
+          },
+          {
+            "label": "B",
+            "text": "Leila Haddad's team uncovered a bakery that contained three large clay ovens."
+          },
+          {
+            "label": "C",
+            "text": "The bakery uncovered by Haddad's team is about 1,800 years old and may have supplied bread to much of its settlement."
+          },
+          {
+            "label": "D",
+            "text": "Charred wheat and barley were found near the ovens of an ancient bakery uncovered by Haddad's team."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The goal asks for when and where the excavation happened. Choice A gives both: in 2021, near the village of Korvel.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This describes what the team found but not when or where the excavation took place."
+          },
+          {
+            "label": "C",
+            "text": "This gives the age of the bakery, not the year of the excavation, and it doesn't say where the site is."
+          },
+          {
+            "label": "D",
+            "text": "This describes evidence found at the site but not when or where the excavation took place."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Biomimicry is the practice of designing products by imitating structures or processes found in nature.\n• Swiss engineer George de Mestral noticed burrs clinging to his dog's fur after a walk.\n• Burrs are covered with tiny hooks that catch on loops of fur or fabric.\n• De Mestral used this hook-and-loop idea to invent Velcro.\n• Japanese engineer Eiji Nakatsu redesigned the nose of a high-speed train based on the shape of a kingfisher's beak."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to present the invention of Velcro as an example of biomimicry. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Biomimicry, the practice of imitating nature in design, led Eiji Nakatsu to base a high-speed train's nose on the shape of a kingfisher's beak."
+          },
+          {
+            "label": "B",
+            "text": "Velcro is an example of biomimicry, the practice of imitating nature in design: George de Mestral based its hooks and loops on burrs that clung to his dog's fur."
+          },
+          {
+            "label": "C",
+            "text": "Swiss engineer George de Mestral noticed burrs clinging to his dog's fur after a walk."
+          },
+          {
+            "label": "D",
+            "text": "Burrs are covered with tiny hooks that catch on loops of fur or fabric."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The goal has two parts: talk about Velcro and present it as biomimicry. Choice B names biomimicry, defines it, and explains how Velcro imitated burrs, so it does both.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This presents an example of biomimicry, but it is the train, not Velcro."
+          },
+          {
+            "label": "C",
+            "text": "This describes what inspired de Mestral but doesn't mention Velcro or biomimicry."
+          },
+          {
+            "label": "D",
+            "text": "This describes burrs but doesn't mention Velcro or biomimicry."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Psychologist Hana Mori studied 60 college students learning a list of words.\n• Students who slept for eight hours after learning the list recalled more words the next day than students who stayed awake.\n• Neuroscientist Daniel Reyes studied 45 adults learning a short piano melody.\n• Participants who took a 90-minute nap after practicing played the melody more accurately later than those who did not nap.\n• Mori's study tested memory for words, while Reyes's tested memory for a physical skill."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize a similarity between the findings of the two studies. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Mori's study tested memory for words, while Reyes's study tested memory for a physical skill."
+          },
+          {
+            "label": "B",
+            "text": "Mori studied 60 college students, and Reyes studied 45 adults."
+          },
+          {
+            "label": "C",
+            "text": "Reyes found that adults who napped for 90 minutes after practicing a melody later played it more accurately than those who did not nap."
+          },
+          {
+            "label": "D",
+            "text": "In both Mori's and Reyes's studies, participants who slept after learning something performed better later than those who did not sleep."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to stress what the two studies found in common. Choice D states the shared result: in both studies, sleeping after learning led to better performance later.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This points out a difference between the studies, not a similarity."
+          },
+          {
+            "label": "B",
+            "text": "This describes who took part in each study, not what either study found."
+          },
+          {
+            "label": "C",
+            "text": "This reports the finding of only one study, so it can't show a similarity between them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Rammed earth walls are made by packing damp soil, sand, and clay into a frame and compacting it in layers.\n• The finished walls are thick and dense.\n• Thick, dense walls absorb heat during the day and release it slowly at night.\n• This can reduce a building's need for heating and air conditioning.\n• Building with rammed earth takes a lot of labor and can cost more than building with wood framing.\n• Architect Sofia Varga used rammed earth walls for a school she designed in a desert region in 2022."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to explain why rammed earth walls can lower a building's energy use. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Rammed earth walls are made by packing damp soil, sand, and clay into a frame and compacting it in layers."
+          },
+          {
+            "label": "B",
+            "text": "Although rammed earth walls can reduce the need for heating and air conditioning, they take a lot of labor and can cost more than wood framing."
+          },
+          {
+            "label": "C",
+            "text": "Because rammed earth walls are thick and dense, they absorb heat during the day and release it slowly at night, which can reduce the need for heating and air conditioning."
+          },
+          {
+            "label": "D",
+            "text": "In 2022, architect Sofia Varga used rammed earth walls for a school she designed in a desert region."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to explain why the walls can save energy. Choice C gives the reason (the thick, dense walls absorb heat by day and release it slowly at night) and connects it to the result (less need for heating and air conditioning).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This explains how the walls are built, not why they save energy."
+          },
+          {
+            "label": "B",
+            "text": "This mentions the energy benefit but gives no reason for it, and it puts the emphasis on the drawbacks."
+          },
+          {
+            "label": "D",
+            "text": "This gives an example of a building that uses rammed earth but doesn't explain the energy savings."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Marine biologist Tavita Leota studies ways to restore damaged coral reefs.\n• She wanted to know whether corals grown in underwater nurseries survive heat waves as well as wild corals do.\n• Her team grew coral fragments in an underwater nursery for 18 months.\n• They then transplanted 400 of the fragments onto a damaged reef.\n• After a 2023 heat wave, 62% of the transplanted fragments survived, compared with 58% of nearby wild corals."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to present the aim and method of Leota's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "To learn whether nursery-grown corals survive heat waves as well as wild corals, Leota's team grew coral fragments in an underwater nursery for 18 months and then transplanted 400 of them onto a damaged reef."
+          },
+          {
+            "label": "B",
+            "text": "After a 2023 heat wave, 62% of Leota's transplanted coral fragments survived, compared with 58% of nearby wild corals."
+          },
+          {
+            "label": "C",
+            "text": "Leota, a marine biologist who studies reef restoration, wanted to know whether nursery-grown corals survive heat waves as well as wild corals."
+          },
+          {
+            "label": "D",
+            "text": "Leota's team transplanted 400 coral fragments that had been grown in an underwater nursery onto a damaged reef."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The goal has two parts: the aim (what Leota wanted to find out) and the method (what her team did). Choice A gives the aim in its opening phrase and then describes how the corals were grown and transplanted.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This reports the study's results, not its aim or method."
+          },
+          {
+            "label": "C",
+            "text": "This gives the aim but not the method."
+          },
+          {
+            "label": "D",
+            "text": "This gives part of the method but not the aim."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Most bees forage only during daylight.\n• Researchers had assumed that a sand bee species native to coastal deserts also foraged only in daylight.\n• In 2024, ecologist Ruth Okonjo placed infrared cameras near the bees' nests.\n• The cameras recorded the bees leaving their nests to forage on moonlit nights.\n• Night foraging was most common after days when temperatures rose above 40°C.\n• Okonjo suggests that foraging at night helps the bees avoid extreme heat."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize that Okonjo's finding contradicted an earlier assumption. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Okonjo's cameras showed that the sand bees foraged at night most often after days above 40°C, suggesting that night foraging helps them avoid extreme heat."
+          },
+          {
+            "label": "B",
+            "text": "Most bees forage only in daylight, but Okonjo suggests that foraging at night may help some bees avoid extreme heat."
+          },
+          {
+            "label": "C",
+            "text": "Although researchers had assumed that the sand bee foraged only in daylight, as most bees do, Okonjo's infrared cameras recorded the bees foraging on moonlit nights."
+          },
+          {
+            "label": "D",
+            "text": "In 2024, Okonjo placed infrared cameras near the nests of a sand bee species native to coastal deserts."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "To show a finding contradicted an assumption, the sentence must state both the assumption and the finding that overturned it. Choice C does: researchers assumed the sand bee foraged only by day, but Okonjo's cameras caught it foraging at night. \"Although\" marks the contradiction.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This explains when and why the bees forage at night, but it never mentions what researchers had assumed."
+          },
+          {
+            "label": "B",
+            "text": "This contrasts most bees with Okonjo's explanation, but it doesn't state the earlier assumption about this species or that the cameras actually recorded night foraging."
+          },
+          {
+            "label": "D",
+            "text": "This describes the method only; it gives neither the assumption nor the finding."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Amara Selden was a novelist known for books set in small fishing towns.\n• Her first novel, The Salt Ledger (1962), follows a family that runs a harbor shop.\n• Her last novel, Low Tide at Mirrow (1998), is narrated by a retired lighthouse keeper.\n• Low Tide at Mirrow is told entirely through the keeper's logbook entries.\n• Critics have called Low Tide at Mirrow Selden's most experimental book."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to introduce Low Tide at Mirrow to an audience already familiar with Amara Selden and her work. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Amara Selden, a novelist known for books set in small fishing towns, published Low Tide at Mirrow in 1998."
+          },
+          {
+            "label": "B",
+            "text": "Selden's last novel, Low Tide at Mirrow (1998), is told entirely through the logbook entries of a retired lighthouse keeper, a form that has led critics to call it her most experimental book."
+          },
+          {
+            "label": "C",
+            "text": "Selden's first novel, The Salt Ledger (1962), follows a family that runs a harbor shop."
+          },
+          {
+            "label": "D",
+            "text": "Novelist Amara Selden, whose last book was narrated by a retired lighthouse keeper, is known for books set in small fishing towns."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Readers who already know Selden don't need to be told who she is; they need to learn about this particular novel. Choice B refers to her simply as \"Selden\" and spends the sentence on the novel itself: when it appeared, how it is told, and why critics call it experimental.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This spends much of the sentence explaining who Selden is, which suits readers who don't know her, and it says little about the novel beyond its date."
+          },
+          {
+            "label": "C",
+            "text": "This introduces a different novel, The Salt Ledger."
+          },
+          {
+            "label": "D",
+            "text": "This sentence is mainly an introduction to Selden herself, which this audience doesn't need, and it doesn't even name Low Tide at Mirrow."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Many animals can sense Earth's magnetic field.\n• Young loggerhead sea turtles use magnetic cues to stay on course during their long migrations in the Atlantic Ocean.\n• Homing pigeons rely partly on Earth's magnetic field to find their way home.\n• Some salmon appear to use magnetic cues to return to the river where they hatched.\n• Scientists are still debating exactly how animals detect magnetic fields."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to make a generalization about how animals use their ability to sense Earth's magnetic field. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Young loggerhead sea turtles use magnetic cues during their migrations in the Atlantic Ocean, and homing pigeons rely partly on Earth's magnetic field to find their way home."
+          },
+          {
+            "label": "B",
+            "text": "Scientists are still debating exactly how animals such as sea turtles, pigeons, and salmon detect Earth's magnetic field."
+          },
+          {
+            "label": "C",
+            "text": "Many animals can sense Earth's magnetic field."
+          },
+          {
+            "label": "D",
+            "text": "A range of animals, from sea turtles to pigeons to salmon, use Earth's magnetic field to help them find their way."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A generalization makes a broad statement that covers many cases. The goal is a generalization about how animals use the magnetic sense. Choice D makes a broad claim (a range of animals use the field to find their way) and backs it with the examples from the notes.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This lists two specific examples but never draws the general conclusion they point to."
+          },
+          {
+            "label": "B",
+            "text": "This is general, but it is about how animals detect the field, not how they use it."
+          },
+          {
+            "label": "C",
+            "text": "This is general, but it says only that animals can sense the field, not how they use that ability."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

@@ -63,6 +63,515 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-functions-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = 7 - 2x$. What is the value of $f(-3)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1$"
+          },
+          {
+            "label": "B",
+            "text": "$-15$"
+          },
+          {
+            "label": "C",
+            "text": "$13$"
+          },
+          {
+            "label": "D",
+            "text": "$4$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $x = -3$: $f(-3) = 7 - 2(-3) = 7 + 6 = 13$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This treats $-2(-3)$ as $-6$ instead of $+6$."
+          },
+          {
+            "label": "B",
+            "text": "This combines $7 - 2$ first and multiplies by $-3$, which ignores the order of operations."
+          },
+          {
+            "label": "D",
+            "text": "This adds $-3$ to 7 and leaves out the coefficient 2."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For the linear function $g$, $g(0) = 5$, $g(1) = 8$, $g(2) = 11$, and $g(3) = 14$. Which equation defines $g$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$g(x) = 5x + 3$"
+          },
+          {
+            "label": "B",
+            "text": "$g(x) = 3x + 5$"
+          },
+          {
+            "label": "C",
+            "text": "$g(x) = 3x + 8$"
+          },
+          {
+            "label": "D",
+            "text": "$g(x) = x + 5$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Each time $x$ increases by 1, $g(x)$ increases by 3, so the slope is 3. When $x = 0$, $g(x) = 5$, so the $y$-intercept is 5. Therefore $g(x) = 3x + 5$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This swaps the slope and the $y$-intercept; it gives $g(1) = 8$ but $g(0) = 3$, not 5."
+          },
+          {
+            "label": "C",
+            "text": "This uses $g(1)$ as the starting value; it gives $g(0) = 8$, not 5."
+          },
+          {
+            "label": "D",
+            "text": "This has the right starting value but a slope of 1; it gives $g(1) = 6$, not 8."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-004",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The cost, in dollars, to rent a kayak for $h$ hours is given by $C(h) = 12h + 20$. What is the cost, in dollars, to rent a kayak for $3.5$ hours?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "62"
+        ],
+        "explanation": "Substitute $h = 3.5$: $C(3.5) = 12(3.5) + 20 = 42 + 20 = 62$. The cost is $\\$62$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A liquid is placed in a cooler, and its temperature, in degrees Celsius, $m$ minutes later is modeled by $T(m) = 84 - 2.5m$. What is the best interpretation of $2.5$ in this context?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The temperature of the liquid when it was placed in the cooler"
+          },
+          {
+            "label": "B",
+            "text": "The number of minutes it takes the liquid to cool by 1 degree Celsius"
+          },
+          {
+            "label": "C",
+            "text": "The number of degrees Celsius the temperature decreases each minute"
+          },
+          {
+            "label": "D",
+            "text": "The number of minutes the liquid stays in the cooler"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In $T(m) = 84 - 2.5m$, the coefficient of $m$ is the rate of change. Each additional minute subtracts 2.5 from the temperature, so the liquid cools by 2.5 degrees Celsius per minute.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The starting temperature is the value when $m = 0$, which is 84 degrees Celsius."
+          },
+          {
+            "label": "B",
+            "text": "This flips the rate. Cooling by 1 degree takes $\\frac{1}{2.5} = 0.4$ minute, not 2.5 minutes."
+          },
+          {
+            "label": "D",
+            "text": "The model does not say how long the liquid stays in the cooler; $m$ is any number of minutes after it is placed there."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a line passes through the points $(-2, 9)$ and $(4, -3)$. What is the $x$-coordinate of the line's $x$-intercept?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5/2",
+          "2.5"
+        ],
+        "explanation": "The slope is $\\frac{-3 - 9}{4 - (-2)} = \\frac{-12}{6} = -2$. Using the point $(-2, 9)$ in point-slope form: $y - 9 = -2(x + 2)$. Distribute the $-2$: $y - 9 = -2x - 4$. Add 9 to both sides: $y = -2x + 5$. The $x$-intercept is where $y = 0$: $0 = -2x + 5$. Add $2x$ to both sides: $2x = 5$. Divide both sides by 2: $x = \\frac{5}{2}$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, line $k$ has equation $y = \\frac{3}{4}x - 2$. Line $j$ is perpendicular to line $k$ and passes through the point $(6, 1)$. What is the $y$-coordinate of the $y$-intercept of line $j$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-7$"
+          },
+          {
+            "label": "B",
+            "text": "$-\\frac{7}{2}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{11}{2}$"
+          },
+          {
+            "label": "D",
+            "text": "$9$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Perpendicular lines have slopes that are negative reciprocals, so the slope of line $j$ is $-\\frac{4}{3}$. Write $y = -\\frac{4}{3}x + b$ and substitute $(6, 1)$: $1 = -\\frac{4}{3}(6) + b$. Multiplying $-\\frac{4}{3}(6) = -8$ gives $1 = -8 + b$. Adding 8 to both sides gives $b = 9$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses the reciprocal slope $\\frac{4}{3}$ without changing its sign, so $1 = 8 + b$."
+          },
+          {
+            "label": "B",
+            "text": "This uses the same slope as line $k$, $\\frac{3}{4}$, which gives a parallel line, not a perpendicular one."
+          },
+          {
+            "label": "C",
+            "text": "This changes the sign of the slope to $-\\frac{3}{4}$ but does not take the reciprocal."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For the linear function $f$, $f(x + 3) = f(x) + 12$ for all values of $x$, and $f(5) = 7$. What is the value of $f(-1)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-17$"
+          },
+          {
+            "label": "B",
+            "text": "$-11$"
+          },
+          {
+            "label": "C",
+            "text": "$-5$"
+          },
+          {
+            "label": "D",
+            "text": "$31$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Increasing $x$ by 3 increases $f(x)$ by 12, so the slope of $f$ is $\\frac{12}{3} = 4$. Going from $x = 5$ to $x = -1$ decreases $x$ by 6, so $f$ decreases by $6 \\cdot 4 = 24$: $f(-1) = 7 - 24 = -17$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This uses 3 as the slope instead of $\\frac{12}{3} = 4$, giving $7 - 6 \\cdot 3$."
+          },
+          {
+            "label": "C",
+            "text": "This subtracts 12 only once, which moves $x$ back by 3 instead of by 6."
+          },
+          {
+            "label": "D",
+            "text": "This adds 24 instead of subtracting it, moving in the wrong direction along the line."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The linear function $f$ has a slope of $\\frac{3}{5}$, and $f(4) = 10$. For what value of $x$ is $f(x) = x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "19"
+        ],
+        "explanation": "In point-slope form, $f(x) = 10 + \\frac{3}{5}(x - 4)$. Set $f(x) = x$ and distribute the $\\frac{3}{5}$: $10 + \\frac{3}{5}x - \\frac{12}{5} = x$. Multiply every term on both sides by 5: $50 + 3x - 12 = 5x$. Combining the constants on the left gives $38 + 3x = 5x$. Subtract $3x$ from both sides: $38 = 2x$. Divide both sides by 2: $x = 19$. Check: $f(19) = 10 + \\frac{3}{5}(15) = 10 + 9 = 19$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-functions-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two candles are lit at the same time. Candle A is $30$ centimeters tall and burns down at a constant rate of $1.2$ centimeters per hour. Candle B is $24$ centimeters tall and burns down at a constant rate of $0.8$ centimeter per hour. When the two candles are the same height, what is that height, in centimeters?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6$"
+          },
+          {
+            "label": "B",
+            "text": "$12$"
+          },
+          {
+            "label": "C",
+            "text": "$15$"
+          },
+          {
+            "label": "D",
+            "text": "$18$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "After $t$ hours, candle A is $30 - 1.2t$ centimeters tall and candle B is $24 - 0.8t$ centimeters tall. Set them equal: $30 - 1.2t = 24 - 0.8t$. Add $1.2t$ to both sides: $30 = 24 + 0.4t$. Subtract 24 from both sides: $6 = 0.4t$. Divide both sides by 0.4: $t = \\frac{6}{0.4}$, which simplifies to $t = 15$ hours. Substitute $t = 15$ to find the height: $30 - 1.2(15) = 30 - 18 = 12$ centimeters. Check candle B: $24 - 0.8(15) = 24 - 12 = 12$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the difference between the starting heights, not the height when they match."
+          },
+          {
+            "label": "C",
+            "text": "This is the number of hours until the candles are the same height, not the height."
+          },
+          {
+            "label": "D",
+            "text": "This is how much candle A has burned down after 15 hours, not how tall it still is."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
     }
   ]
 }

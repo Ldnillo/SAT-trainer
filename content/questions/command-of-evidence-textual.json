@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "command-of-evidence-textual-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many farmers plant strips of wildflowers along the edges of their fields. Entomologist Kofi Asante hypothesizes that these strips increase honey production, because honeybee colonies kept close to the strips have more flowers to feed on than colonies kept farther away."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Asante's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Wildflower strips attract many butterfly species in addition to honeybees."
+          },
+          {
+            "label": "B",
+            "text": "Honey from farms with wildflower strips tends to be darker in color than honey from other farms."
+          },
+          {
+            "label": "C",
+            "text": "Honeybees often visit several different kinds of flowers during a single foraging trip."
+          },
+          {
+            "label": "D",
+            "text": "Within one farming region, colonies placed within 200 meters of wildflower strips produced about 30% more honey than colonies placed more than a kilometer away."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Asante's hypothesis is that being close to wildflower strips leads colonies to produce more honey. Choice D compares colonies in the same region that differ only in their distance from the strips and shows that the closer colonies produced more honey. That is exactly the pattern the hypothesis predicts.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This shows that the strips attract other insects, but it says nothing about how much honey bee colonies produce."
+          },
+          {
+            "label": "B",
+            "text": "This is about the color of the honey, not the amount produced."
+          },
+          {
+            "label": "C",
+            "text": "This describes how bees forage in general; it doesn't connect wildflower strips to honey production."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In recent years, a number of rural school districts have switched from a five-day to a four-day school week. Economist Lena Ortiz argues that most of these districts made the change mainly to save money on busing students, since rural buses must travel long distances each day."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Ortiz's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Students in four-day districts score about the same on state tests as students in nearby five-day districts."
+          },
+          {
+            "label": "B",
+            "text": "In a survey of leaders of rural districts that adopted a four-day week, most named lower transportation costs as their main reason for the switch."
+          },
+          {
+            "label": "C",
+            "text": "Many teachers in four-day districts say they prefer the new schedule."
+          },
+          {
+            "label": "D",
+            "text": "Some districts that adopted a four-day week later returned to a five-day week."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Ortiz's argument is about why districts made the change: mainly to save on busing. Choice B reports that most leaders of districts that switched named lower transportation costs as their main reason, which directly supports her account of their motive.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is about the effect of the change on test scores, not the reason districts made the change."
+          },
+          {
+            "label": "C",
+            "text": "Teachers' preferences don't show why the districts decided to switch."
+          },
+          {
+            "label": "D",
+            "text": "This shows that some districts reversed the change, but it says nothing about why they adopted it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Psychologist Elena Varga is studying how toddlers learn new words. She hypothesizes that toddlers learn a word faster when an adult makes a gesture showing the word's meaning (for example, flapping arms while saying \"flap\") because the gesture gives the child extra information about what the word refers to."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly weaken Varga's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Toddlers who were taught words with meaningful gestures later used more gestures themselves when talking."
+          },
+          {
+            "label": "B",
+            "text": "Toddlers who were taught words with meaningful gestures remembered the words for longer than toddlers taught without gestures."
+          },
+          {
+            "label": "C",
+            "text": "Toddlers who were taught words with meaningful gestures learned them no faster than toddlers who heard the same words the same number of times without gestures."
+          },
+          {
+            "label": "D",
+            "text": "Adults learning words in a foreign language also benefit from seeing gestures that show the words' meanings."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Varga predicts that meaningful gestures speed up word learning. Choice C describes a fair comparison (same words, same number of exposures) in which the gesture group learned no faster. If the gestures made no difference, the hypothesis that they help is weakened.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This shows a side effect of the gestures, but it says nothing about how fast the words were learned."
+          },
+          {
+            "label": "B",
+            "text": "This suggests gestures help memory, which fits with the hypothesis rather than weakening it."
+          },
+          {
+            "label": "D",
+            "text": "This is about adults, and it points in the same direction as the hypothesis, so it doesn't weaken it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In a story, the narrator, Ines, keeps a detailed notebook about her grandmother's vegetable garden after her grandmother moves to another city. A critic argues that Ines's record keeping is less about the garden itself than about staying close to her absent grandmother."
+          }
+        ],
+        "table": null,
+        "stem": "Which quotation from the story would most directly support the critic's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "\"The beans climbed the fence faster than I expected, nearly reaching the top by July.\""
+          },
+          {
+            "label": "B",
+            "text": "\"I bought a second notebook in August, because the first one had filled up.\""
+          },
+          {
+            "label": "C",
+            "text": "\"The neighbor's cat slept in the shade of the squash leaves most afternoons.\""
+          },
+          {
+            "label": "D",
+            "text": "\"Each morning I wrote down which tomatoes had ripened, just as Abuela always had, and then I read the list aloud to the empty kitchen as if she might answer.\""
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The critic claims the notebook is really a way for Ines to stay close to her grandmother. In choice D, Ines copies her grandmother's habit and reads the list aloud \"as if she might answer,\" which shows that the record keeping is tied to her feelings about her grandmother, not just to the plants.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is a detail about the garden's growth; it doesn't connect the record keeping to the grandmother."
+          },
+          {
+            "label": "B",
+            "text": "This shows Ines writes a lot, but not that the notebook is about her grandmother."
+          },
+          {
+            "label": "C",
+            "text": "This is a detail about the garden and a cat; it has nothing to do with the grandmother."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Stalagmites grow upward from cave floors as water drips from the ceiling and leaves behind thin layers of minerals. Geologist Amara Okafor proposes that the stalagmites in one cave grew fastest during the region's wet periods, since more rainfall would mean more water dripping into the cave."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Okafor's proposal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The stalagmites in the cave are taller than those in several nearby caves."
+          },
+          {
+            "label": "B",
+            "text": "Water dripping into the cave today contains dissolved minerals such as calcium."
+          },
+          {
+            "label": "C",
+            "text": "The mineral layers in the stalagmites that date to periods known from other records to be wet are thicker than the layers that date to dry periods."
+          },
+          {
+            "label": "D",
+            "text": "The temperature inside the cave has stayed nearly constant for thousands of years."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Okafor's proposal links fast growth to wet periods. Thicker layers mean more growth in a given time, so if the layers from known wet periods are thicker than those from dry periods (choice C), the stalagmites did grow faster when it was wetter.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Comparing heights with other caves doesn't show when the stalagmites in this cave grew fastest."
+          },
+          {
+            "label": "B",
+            "text": "This explains where the minerals come from, but it doesn't link growth rate to wet or dry periods."
+          },
+          {
+            "label": "D",
+            "text": "A steady temperature says nothing about whether growth sped up during wet periods."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-007",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "After the premiere of his second symphony, composer Teodor Lisz revised the score. Musicologist Hana Brandt argues that the hall where the work premiered caused the revision: its sound made the brass instruments overpower the strings whenever the two groups played together, and Lisz changed the score to correct that imbalance."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding about the revised score, if true, would most directly support Brandt's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The revised score is about four minutes shorter than the original."
+          },
+          {
+            "label": "B",
+            "text": "In the revised score, the brass parts are marked to be played more softly only in passages where the strings are also playing; passages for brass alone are unchanged."
+          },
+          {
+            "label": "C",
+            "text": "In the revised score, the volume markings for every instrument are lowered throughout the symphony."
+          },
+          {
+            "label": "D",
+            "text": "Lisz also revised two of his other symphonies after their premieres, which took place in different halls."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Brandt's argument is specific: the problem was the brass covering the strings when both played together, and the revision fixed that. Choice B shows Lisz softened the brass only where they play alongside the strings and left solo brass passages alone, which is exactly the targeted change her argument predicts.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A shorter score shows that Lisz made changes, but not that they addressed the balance between brass and strings."
+          },
+          {
+            "label": "C",
+            "text": "Lowering every instrument's volume would not change the balance between brass and strings, so this doesn't point to the specific problem Brandt describes."
+          },
+          {
+            "label": "D",
+            "text": "This suggests Lisz often revised after premieres, which if anything makes a habit, rather than this hall's sound, a possible explanation."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The water in Lake Marren became noticeably clearer after 2015. Ecologist Jun Park claims that the change was caused by an invasive mussel species that reached the lake that year. Because these mussels filter tiny algae out of the water as they feed, Park argues, their arrival explains the lake's improved clarity."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly weaken Park's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The amount of algae in Lake Marren's water decreased after 2015."
+          },
+          {
+            "label": "B",
+            "text": "Water clarity improved the most in the parts of Lake Marren where the invasive mussels are most densely packed."
+          },
+          {
+            "label": "C",
+            "text": "Since arriving in Lake Marren, the invasive mussels have crowded out several native mussel species."
+          },
+          {
+            "label": "D",
+            "text": "Over the same period, water clarity improved by a similar amount in nearby lakes that the invasive mussels never reached, following a 2014 regional ban on fertilizer runoff."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Park says the mussels caused the clearer water. Choice D shows that lakes without the mussels became just as much clearer at the same time, after a regional change (the fertilizer ban) that could explain the improvement everywhere. If clarity improved by the same amount without mussels, the mussels are not needed to explain Lake Marren's change, which weakens Park's claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Less algae is what you would expect if the mussels were filtering it out, so this fits Park's claim; it is also consistent with other explanations, so it doesn't weaken the claim."
+          },
+          {
+            "label": "B",
+            "text": "Clearer water where the mussels are densest supports Park's claim rather than weakening it."
+          },
+          {
+            "label": "C",
+            "text": "This describes another effect of the mussels but says nothing about what caused the change in water clarity."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Pots excavated from an ancient settlement are strikingly similar in shape and size. Archaeologist Rosa Mendel argues that they were made by specialists working in a single workshop rather than by individual households. Critics reply that the similarity alone is not decisive, since separate households following a shared tradition could also have produced very similar pots."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Mendel's argument while addressing the critics' objection?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Pots from nearly every house in the settlement have the same shape and are almost exactly the same size."
+          },
+          {
+            "label": "B",
+            "text": "Pots of this style have been found in nearly every house in the settlement."
+          },
+          {
+            "label": "C",
+            "text": "The remains of pottery kilns were found in only one area of the settlement, surrounded by piles of broken pots that had cracked during firing."
+          },
+          {
+            "label": "D",
+            "text": "Pots of a similar style have been found at another settlement about 50 kilometers away."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The critics accept that the pots are similar but say households could have made similar pots on their own. To answer them, Mendel needs evidence about where the pots were made. Choice C shows that pots were fired in only one place, which also holds the waste from making many pots. That points to a single production site rather than many households.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is just more evidence of similarity, which is the very evidence the critics say is not decisive."
+          },
+          {
+            "label": "B",
+            "text": "Households all owning the pots fits either view: pots could be made at home or obtained from a workshop."
+          },
+          {
+            "label": "D",
+            "text": "A similar style at another settlement could reflect a shared tradition, which is the critics' alternative; it doesn't show where the pots were made."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-010",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The striped reef goby, a small fish, can lighten or darken its body within minutes. Marine biologist Talia Moreno hypothesizes that the goby changes color to match its background, which makes it harder for predators to spot."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Moreno's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Gobies placed against a background matching their color were attacked by predators less often than gobies placed against a contrasting background."
+          },
+          {
+            "label": "B",
+            "text": "Gobies can change their color in less than two minutes."
+          },
+          {
+            "label": "C",
+            "text": "Male gobies are usually slightly larger than female gobies."
+          },
+          {
+            "label": "D",
+            "text": "Gobies are found on reefs in several different oceans."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Moreno's hypothesis says color matching protects the goby from predators. Choice A shows that gobies that matched their background were attacked less often than those that did not, which is exactly what the hypothesis predicts.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This shows how fast the color change happens, but not whether it helps the goby avoid predators."
+          },
+          {
+            "label": "C",
+            "text": "This is about the size of males and females, not color or predators."
+          },
+          {
+            "label": "D",
+            "text": "This is about where gobies live, not how color change affects predation."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

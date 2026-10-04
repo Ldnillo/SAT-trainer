@@ -35,6 +35,491 @@
           }
         ]
       }
+    },
+    {
+      "id": "ratios-rates-proportions-units-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A car traveled $195$ miles and used $6.5$ gallons of gasoline. What was the car's average fuel economy, in miles per gallon?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$30$"
+          },
+          {
+            "label": "B",
+            "text": "$32.5$"
+          },
+          {
+            "label": "C",
+            "text": "$0.03$"
+          },
+          {
+            "label": "D",
+            "text": "$1{,}267.5$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Miles per gallon is miles divided by gallons: $\\frac{195}{6.5} = 30$ miles per gallon.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This divides by $6$ instead of $6.5$ gallons."
+          },
+          {
+            "label": "C",
+            "text": "This divides gallons by miles, which gives gallons per mile."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies miles by gallons; the units would be mile-gallons, not miles per gallon."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "On a trail map, $1$ inch represents $15$ miles. Two campsites are $4.2$ inches apart on the map. What is the actual distance between the campsites, in miles?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$0.28$"
+          },
+          {
+            "label": "B",
+            "text": "$3.57$"
+          },
+          {
+            "label": "C",
+            "text": "$19.2$"
+          },
+          {
+            "label": "D",
+            "text": "$63$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Each inch stands for $15$ miles, so $4.2$ inches stands for $4.2 \\cdot 15 = 63$ miles.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides $4.2$ by $15$ instead of multiplying."
+          },
+          {
+            "label": "B",
+            "text": "This divides $15$ by $4.2$ instead of multiplying."
+          },
+          {
+            "label": "C",
+            "text": "This adds $4.2 + 15$ instead of multiplying."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-004",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A pump moves water at a constant rate of $18$ liters per minute. At this rate, how many hours will it take the pump to move $3{,}240$ liters of water?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "3"
+        ],
+        "explanation": "Time equals amount divided by rate: $\\frac{3{,}240}{18} = 180$ minutes. Since $1$ hour is $60$ minutes, $180$ minutes is $\\frac{180}{60} = 3$ hours.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A cheetah runs at a speed of $24$ meters per second. What is this speed in kilometers per hour? ($1$ kilometer $= 1{,}000$ meters)",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1.44$"
+          },
+          {
+            "label": "B",
+            "text": "$6.67$"
+          },
+          {
+            "label": "C",
+            "text": "$86.4$"
+          },
+          {
+            "label": "D",
+            "text": "$400$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In one hour there are $60 \\cdot 60 = 3{,}600$ seconds, so the cheetah covers $24 \\cdot 3{,}600 = 86{,}400$ meters per hour. Divide by $1{,}000$ to convert to kilometers: $86.4$ kilometers per hour.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This converts seconds to minutes only ($24 \\cdot 60 = 1{,}440$ meters per minute) and then to kilometers, giving kilometers per minute."
+          },
+          {
+            "label": "B",
+            "text": "This divides by $3.6$ instead of multiplying, which converts the wrong way."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies by $1{,}000$ and divides by $60$, flipping both conversion factors."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a robotics club, the ratio of members who are seniors to members who are not seniors is $5 : 7$. The club has $84$ members. How many more members are not seniors than are seniors?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2$"
+          },
+          {
+            "label": "B",
+            "text": "$12$"
+          },
+          {
+            "label": "C",
+            "text": "$14$"
+          },
+          {
+            "label": "D",
+            "text": "$49$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The ratio has $5 + 7 = 12$ parts, so each part is $\\frac{84}{12} = 7$ members. There are $5 \\cdot 7 = 35$ seniors and $7 \\cdot 7 = 49$ non-seniors. The difference is $49 - 35 = 14$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the difference in ratio parts ($7 - 5$); it must be multiplied by $7$ members per part."
+          },
+          {
+            "label": "B",
+            "text": "This is the total number of parts in the ratio, not a number of members."
+          },
+          {
+            "label": "D",
+            "text": "This is the number of non-seniors, not how many more non-seniors there are than seniors."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-007",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A $1.5$-pound bag of almonds costs $\\$9.60$. At the same price per ounce, what is the cost, in dollars, of $10$ ounces of almonds? ($1$ pound $= 16$ ounces)",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "4",
+          "4.0",
+          "4.00"
+        ],
+        "explanation": "Convert the bag to ounces: $1.5 \\cdot 16 = 24$ ounces. The price per ounce is $\\frac{9.60}{24} = 0.40$ dollars. So $10$ ounces cost $10 \\cdot 0.40 = 4$ dollars.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Printer A prints $42$ pages per minute. Printer B prints $3$ pages every $5$ seconds. If both printers work at the same time at these rates, about how many minutes will it take them to print a total of $2{,}340$ pages?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$30$"
+          },
+          {
+            "label": "B",
+            "text": "$55$"
+          },
+          {
+            "label": "C",
+            "text": "$60$"
+          },
+          {
+            "label": "D",
+            "text": "$65$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Convert Printer B's rate to pages per minute: $3$ pages every $5$ seconds is $3 \\cdot \\frac{60}{5} = 36$ pages per minute. Together the printers produce $42 + 36 = 78$ pages per minute. The time is $\\frac{2{,}340}{78} = 30$ minutes.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This treats Printer B's rate as $\\frac{3}{5} = 0.6$ pages per minute without converting seconds, giving $\\frac{2{,}340}{42.6} \\approx 55$."
+          },
+          {
+            "label": "C",
+            "text": "This averages the times each printer would need alone (about $55.7$ and $65$ minutes); working together takes less time than either alone."
+          },
+          {
+            "label": "D",
+            "text": "This is the time for Printer B alone ($\\frac{2{,}340}{36} = 65$) and ignores Printer A."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A rectangular pool is $12$ feet long, $8$ feet wide, and $2.5$ feet deep. A hose fills the empty pool at a constant rate of $6$ gallons per minute. If $1$ cubic foot holds $7.5$ gallons, how many hours will it take to fill the pool completely?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5"
+        ],
+        "explanation": "Volume: $12 \\cdot 8 \\cdot 2.5 = 240$ cubic feet. Convert to gallons: $240 \\cdot 7.5 = 1{,}800$ gallons. Time: $\\frac{1{,}800}{6} = 300$ minutes. Convert to hours: $\\frac{300}{60} = 5$ hours.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ratios-rates-proportions-units-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a city park, the ratio of oak trees to maple trees is $3 : 5$, and the ratio of maple trees to pine trees is $2 : 7$. If the park has $140$ pine trees, how many oak trees does it have?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$24$"
+          },
+          {
+            "label": "B",
+            "text": "$40$"
+          },
+          {
+            "label": "C",
+            "text": "$60$"
+          },
+          {
+            "label": "D",
+            "text": "$294$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Make the maple numbers match. Oak : maple $= 3 : 5 = 6 : 10$ and maple : pine $= 2 : 7 = 10 : 35$. So oak : maple : pine $= 6 : 10 : 35$. With $140$ pines, each part is $\\frac{140}{35} = 4$ trees, so there are $6 \\cdot 4 = 24$ oaks. (Check: $40$ maples, and $24 : 40 = 3 : 5$, $40 : 140 = 2 : 7$.)",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the number of maple trees ($140 \\cdot \\frac{2}{7}$); it stops one step early."
+          },
+          {
+            "label": "C",
+            "text": "This uses $3 : 7$ for oak to pine, combining the two ratios without matching the maple numbers."
+          },
+          {
+            "label": "D",
+            "text": "This flips the maple-to-pine ratio, using $7 : 2$, which makes the maples outnumber the pines."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

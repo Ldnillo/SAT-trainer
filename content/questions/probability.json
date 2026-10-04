@@ -44,7 +44,7 @@
           ".625",
           "0.625"
         ],
-        "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80} = \\frac{5}{8}$, or $0.625$.",
+        "explanation": "Only 10th graders are being considered, so use the 10th-grade row: $50$ of the $80$ 10th graders chose a packed lunch. The probability is $\\frac{50}{80}$. Dividing the numerator and denominator by $10$ simplifies this to $\\frac{5}{8}$, or $0.625$.",
         "distractorRationales": []
       },
       "authorship": {
@@ -62,6 +62,689 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A bag contains $6$ red marbles, $9$ blue marbles, and $5$ green marbles. If one marble is chosen at random, what is the probability that it is not blue?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{9}{20}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{11}{20}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{9}{11}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{1}{3}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "There are $6 + 9 + 5 = 20$ marbles. The marbles that are not blue are the $6$ red and $5$ green ones, $11$ in all. The probability is $\\frac{11}{20}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the probability that the marble is blue."
+          },
+          {
+            "label": "C",
+            "text": "This compares blue marbles to marbles that are not blue instead of dividing by the total of $20$."
+          },
+          {
+            "label": "D",
+            "text": "This treats each of the three colors as equally likely, but there are different numbers of each color."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-003",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Pet preference by age",
+          "columns": [
+            "Age group",
+            "Dogs",
+            "Cats",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Under 40",
+              "58",
+              "42",
+              "100"
+            ],
+            [
+              "40 or older",
+              "46",
+              "54",
+              "100"
+            ],
+            [
+              "Total",
+              "104",
+              "96",
+              "200"
+            ]
+          ]
+        },
+        "stem": "The table shows the results of a survey of $200$ people about whether they prefer dogs or cats. If one of the people surveyed is selected at random, what is the probability that the person is age $40$ or older and prefers cats?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          ".27",
+          "0.27"
+        ],
+        "explanation": "The person must be in the \\\"40 or older\\\" row and the \\\"Cats\\\" column: $54$ people. Out of all $200$ people, the probability is $\\frac{54}{200}$. Dividing the numerator and denominator by $2$ simplifies this to $\\frac{27}{100}$, which is $0.27$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Club members",
+          "columns": [
+            "Grade",
+            "Plays an instrument",
+            "Does not play",
+            "Total"
+          ],
+          "rows": [
+            [
+              "11th",
+              "24",
+              "66",
+              "90"
+            ],
+            [
+              "12th",
+              "36",
+              "54",
+              "90"
+            ],
+            [
+              "Total",
+              "60",
+              "120",
+              "180"
+            ]
+          ]
+        },
+        "stem": "The table shows whether the 11th- and 12th-grade students in a school club play a musical instrument. If a student who plays an instrument is selected at random, what is the probability that the student is in 12th grade?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{5}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{1}{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{2}{5}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{3}{5}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The student is chosen only from those who play an instrument, so use the \\\"Plays an instrument\\\" column: $60$ students. Of these, $36$ are in 12th grade. The probability is $\\frac{36}{60}$. Dividing the numerator and denominator by $12$ simplifies this to $\\frac{3}{5}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $\\frac{36}{180}$, the probability that a student chosen from the whole club is a 12th grader who plays an instrument."
+          },
+          {
+            "label": "B",
+            "text": "This is $\\frac{60}{180}$, the probability that any club member plays an instrument."
+          },
+          {
+            "label": "C",
+            "text": "This is $\\frac{36}{90}$, the probability that a 12th grader plays an instrument, which reverses the condition."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-005",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Commute method by distance",
+          "columns": [
+            "Distance from work",
+            "Car",
+            "Bus",
+            "Bike",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Less than 5 miles",
+              "40",
+              "35",
+              "45",
+              "120"
+            ],
+            [
+              "5 miles or more",
+              "85",
+              "40",
+              "5",
+              "130"
+            ],
+            [
+              "Total",
+              "125",
+              "75",
+              "50",
+              "250"
+            ]
+          ]
+        },
+        "stem": "The table shows how $250$ employees of a company commute and how far they live from work. If one of these employees is selected at random, what is the probability that the employee bikes to work or lives less than $5$ miles from work?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "1/2",
+          ".5",
+          "0.5"
+        ],
+        "explanation": "Count everyone in the \\\"Bike\\\" column or the \\\"Less than 5 miles\\\" row, without counting anyone twice. The \\\"Less than 5 miles\\\" row has $120$ employees. The only bikers not already counted are the $5$ who live $5$ miles or more away. That gives $120 + 5 = 125$ employees, so the probability is $\\frac{125}{250}$. Dividing the numerator and denominator by $125$ simplifies this to $\\frac{1}{2}$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A fair six-sided die, with faces numbered $1$ through $6$, is rolled twice. What is the probability that the sum of the two rolls is $10$ or greater?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{1}{12}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{1}{9}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{1}{6}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{3}{11}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "There are $6 \\times 6 = 36$ equally likely ordered outcomes. The ones with a sum of $10$ or more are $(4,6)$, $(5,5)$, $(6,4)$, $(5,6)$, $(6,5)$, and $(6,6)$: $6$ outcomes. The probability is $\\frac{6}{36}$. Dividing the numerator and denominator by $6$ simplifies this to $\\frac{1}{6}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $\\frac{3}{36}$, which counts only sums greater than $10$ and leaves out the three ways to get exactly $10$."
+          },
+          {
+            "label": "B",
+            "text": "This is $\\frac{4}{36}$, which counts $(4,6)$ and $(6,4)$ as one outcome and $(5,6)$ and $(6,5)$ as one outcome; order matters when listing the $36$ outcomes."
+          },
+          {
+            "label": "D",
+            "text": "This treats the $11$ possible sums, $2$ through $12$, as equally likely, but they are not."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A box contains $8$ batteries, $3$ of which are dead. Two batteries are selected at random without replacement. What is the probability that both selected batteries work?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{25}{64}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{5}{14}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{15}{28}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{5}{8}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "$5$ of the $8$ batteries work. The probability that the first battery works is $\\frac{5}{8}$. If it does, $4$ working batteries remain among $7$, so the probability that the second also works is $\\frac{4}{7}$. Multiply the two probabilities: $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{5 \\times 4}{8 \\times 7} = \\frac{20}{56}$. Dividing the numerator and denominator by $4$ simplifies this to $\\frac{5}{14}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $\\frac{5}{8} \\times \\frac{5}{8}$, which assumes the first battery is put back before the second is drawn."
+          },
+          {
+            "label": "C",
+            "text": "This is the probability that exactly one of the two batteries works: $2 \\times \\frac{5}{8} \\times \\frac{3}{7} = \\frac{30}{56}$. Dividing the numerator and denominator by $2$ simplifies this to $\\frac{15}{28}$."
+          },
+          {
+            "label": "D",
+            "text": "This is the probability that only the first battery works, ignoring the second draw."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a certain town, $40\\%$ of households own a dog, $25\\%$ own a cat, and $10\\%$ own both a dog and a cat. If a household that owns at least one of these pets is selected at random, what is the probability that it owns a dog?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{2}{5}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{6}{11}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{8}{13}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{8}{11}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "First find the share of households that own at least one of the pets. Adding $40\\% + 25\\%$ counts the $10\\%$ that own both twice, so subtract it once: $40\\% + 25\\% - 10\\% = 55\\%$. All $40\\%$ of dog owners are in this group. The probability is $\\frac{40}{55}$. Dividing the numerator and denominator by $5$ simplifies this to $\\frac{8}{11}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the probability that any household in the town owns a dog; the selection is only among households with at least one of the pets."
+          },
+          {
+            "label": "C",
+            "text": "This uses $40\\% + 25\\% = 65\\%$ for households with at least one pet, counting the households that own both pets twice."
+          },
+          {
+            "label": "B",
+            "text": "This is $\\frac{30}{55}$, which counts only households that own a dog but no cat; households that own both also own a dog."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Student council",
+          "columns": [
+            "Class",
+            "Owns a car",
+            "Does not own a car",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Juniors",
+              "12",
+              "18",
+              "30"
+            ],
+            [
+              "Seniors",
+              "18",
+              "",
+              ""
+            ],
+            [
+              "Total",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        "stem": "The partially completed table shows the juniors and seniors in a school's student council and whether each owns a car. For a senior on the council selected at random, the probability of owning a car is $0.45$. If a member of the council is selected at random, what is the probability that the member owns a car?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "3/7",
+          ".4285",
+          ".4286"
+        ],
+        "explanation": "Let $s$ be the number of seniors. The $18$ seniors who own a car are $45\\%$ of the seniors, which gives the equation $0.45s = 18$. Divide both sides by $0.45$ to get $s = \\frac{18}{0.45}$, which simplifies to $s = 40$. (As a check, $0.45 \\cdot 40 = 18$.) The council has $30 + 40 = 70$ members, and $12 + 18 = 30$ of them own a car. The probability is $\\frac{30}{70}$, which simplifies to $\\frac{3}{7} \\approx 0.4286$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "Justine",
+            "date": "2026-10-04",
+            "edits": "Asked for the step from 0.45s = 18 to s = 40 to be explained. Explanation now shows dividing both sides by 0.45."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probability-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": "Inspection results",
+          "columns": [
+            "Factory",
+            "Defective",
+            "Not defective",
+            "Total"
+          ],
+          "rows": [
+            [
+              "A",
+              "12",
+              "588",
+              "600"
+            ],
+            [
+              "B",
+              "18",
+              "382",
+              "400"
+            ],
+            [
+              "C",
+              "15",
+              "485",
+              "500"
+            ],
+            [
+              "Total",
+              "45",
+              "1,455",
+              "1,500"
+            ]
+          ]
+        },
+        "stem": "The table shows the results of a quality inspection of $1{,}500$ items made at three factories. If an item that was not made at Factory A is selected at random, what is the probability that it is defective?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{11}{500}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{11}{300}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{3}{40}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{11}{15}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Only items from Factories B and C count: $400 + 500 = 900$ items. Of these, $18 + 15 = 33$ are defective. The probability is $\\frac{33}{900}$. Dividing the numerator and denominator by $3$ simplifies this to $\\frac{11}{300}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $\\frac{33}{1500}$, which divides by all $1{,}500$ items instead of only the $900$ not made at Factory A."
+          },
+          {
+            "label": "C",
+            "text": "This adds the defect rates of the two factories, $\\frac{18}{400} + \\frac{15}{500}$; probabilities for different groups can't be added this way."
+          },
+          {
+            "label": "D",
+            "text": "This is $\\frac{33}{45}$, the probability that a defective item was not made at Factory A, which reverses the condition."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
+            "date": "2026-10-04",
+            "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
           }
         ]
       }
