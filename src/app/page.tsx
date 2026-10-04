@@ -138,7 +138,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             </h2>
             <p className={styles.muted}>One payment, no subscription. Try it free before you buy.</p>
           </div>
-          <ul>
+          <ul className="check-list">
             <li>Unlimited tailored practice across all 30 skills</li>
             <li>Skill mastery tracking and estimated section scores</li>
             <li>Explanations for every answer</li>

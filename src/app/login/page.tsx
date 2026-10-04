@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { LogoMark } from "@/components/Logo";
 import { currentUser } from "@/lib/auth/session";
 import { signIn } from "../auth-actions";
 import styles from "../auth.module.css";
@@ -14,9 +15,13 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
   return (
     <main className={styles.page}>
       <div className={`${styles.card} surface`}>
+        <div className={styles.mark}>
+          <LogoMark size={40} />
+        </div>
         <h1>Sign in</h1>
+        <p className={styles.subtitle}>Welcome back. Pick up where you left off.</p>
         {params.error === "invalid" && (
-          <p className={styles.error}>That email and password don&apos;t match an account.</p>
+          <p className={`${styles.error} notice bad`}>That email and password don&apos;t match an account.</p>
         )}
         {params.error === "too-many" && (
           <p className={styles.error}>

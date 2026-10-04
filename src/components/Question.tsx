@@ -66,9 +66,9 @@ export function AnswerInputs({ content }: { content: QuestionContent }) {
       <legend className={styles.hidden}>Choices</legend>
       {content.choices.map((c) => (
         <label key={c.label} className={styles.choice}>
-          <input type="radio" name="answer" value={c.label} required />
+          <input type="radio" name="answer" value={c.label} required className={styles.radio} />
           <span className={styles.letter}>{c.label}</span>
-          <span>
+          <span className={styles.choiceText}>
             <MathText text={c.text} />
           </span>
         </label>
@@ -93,21 +93,32 @@ export function AnswerReview({ content, answer, correct }: { content: QuestionCo
                 className={`${styles.choice} ${isKey ? styles.right : ""} ${isPicked && !isKey ? styles.wrong : ""}`}
               >
                 <span className={styles.letter}>{c.label}</span>
-                <span>
+                <span className={styles.choiceText}>
                   <MathText text={c.text} />
                 </span>
-                {isPicked && <span className={styles.tag}>your answer</span>}
+                {(isKey || isPicked) && (
+                  <span className={styles.tags}>
+                    {isPicked && <span className="badge plain">Your answer</span>}
+                    {isKey && <span className="badge ok plain">Correct answer</span>}
+                  </span>
+                )}
               </li>
             );
           })}
         </ul>
       ) : (
-        <p>
-          Your answer: <strong>{answer}</strong>. Accepted answers: {content.acceptedAnswers.join(", ")}
+        <p className={styles.sprReview}>
+          Your answer: <strong>{answer}</strong>
+          <span className={styles.muted}> · Accepted answers: {content.acceptedAnswers.join(", ")}</span>
         </p>
       )}
       <div className={correct ? styles.feedbackRight : styles.feedbackWrong}>
-        <strong>{correct ? "Correct." : "Not quite."}</strong>
+        <strong className={styles.verdict}>
+          <span aria-hidden className={styles.verdictIcon}>
+            {correct ? "✓" : "✕"}
+          </span>
+          {correct ? "Correct." : "Not quite."}
+        </strong>
         {!correct && rationale && (
           <p>
             <MathText text={rationale.text} />

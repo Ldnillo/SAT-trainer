@@ -24,13 +24,14 @@ export default async function TestHomePage({ searchParams }: PageProps<"/test">)
 
   return (
     <main>
-      <h1>Full-length practice test</h1>
+      <p className="eyebrow">Practice test</p>
+      <h1 className={styles.title}>Full-length practice test</h1>
       <p className={styles.lead}>
         A timed, adaptive practice test laid out like the digital SAT: {TOTAL_QUESTIONS} questions in {duration(TOTAL_MINUTES)}, plus
         a {BREAK_MINUTES}-minute break. You get a score for each section and a full review with explanations at the end.
       </p>
       {params.error === "no-questions" && (
-        <p className={styles.error}>There aren&apos;t enough questions in the bank to build a full test yet.</p>
+        <p className="notice bad">There aren&apos;t enough questions in the bank to build a full test yet.</p>
       )}
 
       <table className={styles.formatTable}>
@@ -65,12 +66,12 @@ export default async function TestHomePage({ searchParams }: PageProps<"/test">)
       </ul>
 
       {unfinished ? (
-        <Link href={`/test/${unfinished.id}`} className="button">
+        <Link href={`/test/${unfinished.id}`} className="button large">
           Resume your test
         </Link>
       ) : access.allowed ? (
-        <form action={startPracticeTest}>
-          <button type="submit" className="button">
+        <form action={startPracticeTest} className={styles.start}>
+          <button type="submit" className="button large">
             Start a practice test
           </button>
           <p className={styles.muted}>
@@ -79,9 +80,14 @@ export default async function TestHomePage({ searchParams }: PageProps<"/test">)
           </p>
         </form>
       ) : (
-        <p className={styles.passNeeded}>
-          Full-length practice tests come with the season pass. <Link href="/pass">Get a season pass</Link>
-        </p>
+        <div className="notice warn">
+          <p>
+            <strong>Full-length practice tests come with the season pass.</strong>
+          </p>
+          <Link href="/pass" className="button small">
+            Get a season pass
+          </Link>
+        </div>
       )}
 
       {tests.length > 0 && (

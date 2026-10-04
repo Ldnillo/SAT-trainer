@@ -154,7 +154,7 @@ export function ModuleRunner({ testId, index, title, remainingMs, items, initial
       </div>
 
       {showReference && reference && <div className={styles.reference}>{reference}</div>}
-      {saveError && <p className={styles.saveError}>Your last answer didn&apos;t save. Check your connection; it will retry when you change an answer.</p>}
+      {saveError && <p className="notice bad">Your last answer didn&apos;t save. Check your connection; it will retry when you change an answer.</p>}
 
       {reviewing ? (
         <section className={styles.reviewPage}>
@@ -197,9 +197,10 @@ export function ModuleRunner({ testId, index, title, remainingMs, items, initial
                     value={c.label}
                     checked={response.answer === c.label}
                     onChange={() => update(item.id, { answer: c.label })}
+                    className={questionStyles.radio}
                   />
                   <span className={questionStyles.letter}>{c.label}</span>
-                  <span>{c.text}</span>
+                  <span className={questionStyles.choiceText}>{c.text}</span>
                 </label>
               ))}
             </fieldset>
