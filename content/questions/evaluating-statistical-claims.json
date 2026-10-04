@@ -63,6 +63,573 @@
           }
         ]
       }
+    },
+    {
+      "id": "evaluating-statistical-claims-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Researchers surveyed $1{,}000$ adults selected at random from a city. They found that adults who drank more coffee per day also tended to work more hours per week. Which conclusion is best supported by the survey?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Drinking more coffee causes adults in the city to work more hours."
+          },
+          {
+            "label": "B",
+            "text": "Working more hours causes adults in the city to drink more coffee."
+          },
+          {
+            "label": "C",
+            "text": "Among adults in the city, there is an association between coffee drinking and hours worked."
+          },
+          {
+            "label": "D",
+            "text": "No conclusion can be drawn about adults in the city, because not every adult was surveyed."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The adults were randomly selected from the city, so the results can be generalized to adults in the city. But the researchers only observed coffee drinking and work hours; they didn't assign anyone to drink more coffee. An observational study like this shows an association, not cause and effect.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The study was observational, with no random assignment, so it can't show that coffee causes longer work hours."
+          },
+          {
+            "label": "B",
+            "text": "Without random assignment, the study can't show cause and effect in either direction."
+          },
+          {
+            "label": "D",
+            "text": "A random sample allows conclusions about the whole population without surveying everyone."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A gardener wants to find out whether a new fertilizer increases the number of tomatoes a plant produces. Which study design would best allow the gardener to conclude that the fertilizer causes an increase?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Compare the yields of gardeners who chose to use the fertilizer with the yields of gardeners who did not"
+          },
+          {
+            "label": "B",
+            "text": "Randomly assign $60$ similar tomato plants to receive either the fertilizer or no fertilizer, then compare the yields of the two groups"
+          },
+          {
+            "label": "C",
+            "text": "Survey local farmers about whether they think the fertilizer works"
+          },
+          {
+            "label": "D",
+            "text": "Apply the fertilizer to all $60$ plants in the garden and count the tomatoes"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "To show cause and effect, the plants getting the fertilizer and the plants not getting it should be alike in every other way. Randomly assigning plants to the two groups balances other factors, such as sunlight and soil, so a difference in yield can be credited to the fertilizer.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Gardeners who choose the fertilizer may differ in other ways, such as experience or soil quality, that also affect yield."
+          },
+          {
+            "label": "C",
+            "text": "Opinions about the fertilizer are not measurements of its effect."
+          },
+          {
+            "label": "D",
+            "text": "With no group left unfertilized, there is nothing to compare the yields against."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A cooking website posted a poll asking visitors whether they eat breakfast every day. Of the $3{,}000$ visitors who chose to respond, $82\\%$ said yes. Which statement about the poll is most appropriate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The poll shows that about $82\\%$ of all adults in the country eat breakfast every day."
+          },
+          {
+            "label": "B",
+            "text": "Because so many people responded, the result applies to all adults in the country."
+          },
+          {
+            "label": "C",
+            "text": "Because the respondents chose to take part, the result may not represent any larger group."
+          },
+          {
+            "label": "D",
+            "text": "The poll shows that visiting the cooking website causes people to eat breakfast."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The respondents were visitors to a cooking website who decided on their own to answer. People who visit cooking sites and choose to answer a breakfast poll may differ from other people, so the result can't be reliably generalized beyond the respondents.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The sample wasn't chosen at random from all adults in the country, so it can't be generalized to them."
+          },
+          {
+            "label": "B",
+            "text": "A large sample doesn't fix bias; a self-selected sample can be large and still unrepresentative."
+          },
+          {
+            "label": "D",
+            "text": "The poll didn't assign anyone to visit the website, so it can't show cause and effect."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A study of $2{,}000$ randomly selected students in a school district found that students who regularly eat breakfast have higher average grades than students who don't. Which of the following, if true, would most weaken the claim that eating breakfast causes higher grades?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Students who regularly eat breakfast also tend to get more sleep, and getting more sleep is linked to higher grades."
+          },
+          {
+            "label": "B",
+            "text": "The study included students from every school in the district."
+          },
+          {
+            "label": "C",
+            "text": "The breakfasts that students reported eating included cereal, eggs, and fruit."
+          },
+          {
+            "label": "D",
+            "text": "The students' grades were taken from school records instead of being reported by the students."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "If breakfast eaters also get more sleep, then sleep could be what raises their grades. This other factor, a confounding variable, offers a different explanation for the link between breakfast and grades, so the causal claim is weaker.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Including every school makes the sample more representative of the district; it doesn't provide another explanation for the grade difference."
+          },
+          {
+            "label": "C",
+            "text": "The kinds of breakfast eaten don't offer an alternative explanation for higher grades."
+          },
+          {
+            "label": "D",
+            "text": "Using school records makes the grade data more reliable, which doesn't weaken the claim."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A gym selected $120$ of its members at random. Half of these members were randomly assigned to do a $15$-minute stretching routine before each workout, and the other half did not stretch. After six months, the stretching group had significantly fewer workout injuries. Which conclusion is best supported?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Stretching before workouts likely reduces injuries for members of this gym."
+          },
+          {
+            "label": "B",
+            "text": "Stretching before workouts likely reduces injuries for all adults who exercise."
+          },
+          {
+            "label": "C",
+            "text": "Stretching is associated with fewer injuries for members of this gym, but no cause-and-effect conclusion can be drawn."
+          },
+          {
+            "label": "D",
+            "text": "Stretching before workouts likely reduces injuries for people at all gyms in the country."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Members were randomly selected from the gym, so the results can be generalized to the gym's members. They were also randomly assigned to stretch or not, so the difference in injuries can be attributed to stretching. Together, these support a cause-and-effect conclusion for this gym's members.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The sample was drawn only from one gym's members, so the result can't be generalized to all adults who exercise."
+          },
+          {
+            "label": "C",
+            "text": "Random assignment to the stretching and non-stretching groups does support a cause-and-effect conclusion."
+          },
+          {
+            "label": "D",
+            "text": "The members came from only one gym, which may not represent other gyms."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "To estimate the percent of a city's adults who use public transit at least once a week, a researcher surveyed $500$ adults chosen at random from the people waiting at the city's bus stations. Of these, $78\\%$ said they use public transit at least once a week. Which is the best reason this estimate is likely unreliable for all adults in the city?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "People waiting at bus stations are more likely than other adults to use public transit, so the sample is not representative."
+          },
+          {
+            "label": "B",
+            "text": "A sample of $500$ adults is too small to estimate a percent for a whole city."
+          },
+          {
+            "label": "C",
+            "text": "The researcher should have run an experiment instead of a survey."
+          },
+          {
+            "label": "D",
+            "text": "The estimate wasn't reported with a margin of error."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The people were chosen at random, but only from bus stations, where nearly everyone is using transit. That group is very different from the city's adults as a whole, so the sample is biased and $78\\%$ likely overstates transit use.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "A random sample of $500$ from the right population would be large enough; the problem is where the sample was drawn from."
+          },
+          {
+            "label": "C",
+            "text": "Estimating a percent of a population calls for a survey, not an experiment."
+          },
+          {
+            "label": "D",
+            "text": "A margin of error wouldn't fix a biased sample; it only describes random sampling variation."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A company allowed its employees to choose either a standing desk or a regular desk. After a year, employees who chose standing desks reported less back pain, on average, than those who chose regular desks. Which statement best explains why this study does not show that standing desks reduce back pain?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The employees chose their own desks, so the two groups may differ in other ways that affect back pain."
+          },
+          {
+            "label": "B",
+            "text": "The employees were not randomly selected from all workers in the country."
+          },
+          {
+            "label": "C",
+            "text": "Back pain was reported by the employees themselves."
+          },
+          {
+            "label": "D",
+            "text": "The study lasted only one year."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "To show cause and effect, employees would need to be randomly assigned to desk types. Here they chose for themselves. For example, people who already exercise more, or who have less back pain to begin with, might be more likely to pick a standing desk. Those differences, not the desk, could explain the result.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Random selection from a population affects whom the results can be generalized to, not whether cause and effect can be shown."
+          },
+          {
+            "label": "C",
+            "text": "Self-reported data can be less precise, but the main problem is that there was no random assignment."
+          },
+          {
+            "label": "D",
+            "text": "A longer study would still not show cause and effect, because the employees chose their own desks."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In a random sample of $600$ adults in Region R, those who keep their phone in their bedroom at night were twice as likely to report insomnia as those who don't. A news headline about the study read, \"Keeping Your Phone in the Bedroom Causes Insomnia.\" Which statement best evaluates the headline?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The headline is supported, because the adults were randomly selected."
+          },
+          {
+            "label": "B",
+            "text": "The headline is supported for adults in Region R, but not for adults elsewhere."
+          },
+          {
+            "label": "C",
+            "text": "The headline is not supported, because the study only observed an association; for example, people who already have insomnia might keep their phones nearby."
+          },
+          {
+            "label": "D",
+            "text": "The headline is not supported, because a sample of $600$ adults is too small to show any association."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The researchers did not assign anyone to keep a phone in the bedroom; they only observed people's habits. Random sampling lets the association be generalized to adults in Region R, but it doesn't rule out other explanations. Insomnia could lead people to use their phones at night, or another factor could cause both. Only random assignment would support a causal claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Random selection lets the results be generalized to Region R, but it doesn't support a cause-and-effect conclusion."
+          },
+          {
+            "label": "B",
+            "text": "Without random assignment, a causal claim isn't supported even for Region R; only the association can be generalized there."
+          },
+          {
+            "label": "D",
+            "text": "The study did find an association in its random sample; the problem with the headline is the lack of random assignment, not the sample size."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluating-statistical-claims-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher recruited $90$ volunteers who regularly get mild headaches and randomly assigned them to take either Drug A or Drug B when their next headache began. Pain relief was slightly greater in the Drug A group, on average, but the difference was not statistically significant. Which conclusion is best supported by the study?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Drug A is more effective than Drug B, because its group had greater average pain relief."
+          },
+          {
+            "label": "B",
+            "text": "Drug A and Drug B are equally effective for all people."
+          },
+          {
+            "label": "C",
+            "text": "Neither Drug A nor Drug B relieves headache pain."
+          },
+          {
+            "label": "D",
+            "text": "The study does not give convincing evidence that one drug is more effective than the other for people similar to the volunteers."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Because the difference was not statistically significant, it could easily be due to chance, so the study doesn't show that either drug works better. The participants were volunteers rather than a random sample, so even this conclusion applies only to people similar to them.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A difference that isn't statistically significant could be due to random chance in who was assigned to each group."
+          },
+          {
+            "label": "B",
+            "text": "Failing to find a difference doesn't prove the drugs are equally effective, and volunteers can't be generalized to all people."
+          },
+          {
+            "label": "C",
+            "text": "There was no group that received no drug, so the study can't tell whether either drug relieves pain at all."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

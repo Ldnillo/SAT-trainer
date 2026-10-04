@@ -63,6 +63,573 @@
           }
         ]
       }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A university has $12{,}000$ students. In a random sample of $150$ of these students, $36$ said they ride a bike to campus. Based on the sample, which is the best estimate of the number of students at the university who ride a bike to campus?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$36$"
+          },
+          {
+            "label": "B",
+            "text": "$240$"
+          },
+          {
+            "label": "C",
+            "text": "$2{,}880$"
+          },
+          {
+            "label": "D",
+            "text": "$9{,}120$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In the sample, $\\frac{36}{150} = 0.24$, or $24\\%$, ride a bike. Because the sample is random, apply this to all students: $0.24 \\times 12{,}000 = 2{,}880$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the number of bikers in the sample, not in the whole university."
+          },
+          {
+            "label": "B",
+            "text": "This applies $24\\%$ to $1{,}000$ students instead of $12{,}000$."
+          },
+          {
+            "label": "D",
+            "text": "This is the estimated number of students who do not ride a bike: $12{,}000 - 2{,}880$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A town council wants to estimate the percent of all town residents who would use a new dog park. Which survey method is most likely to give an estimate that can be applied to all town residents?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Surveying $300$ people at a pet store in the town"
+          },
+          {
+            "label": "B",
+            "text": "Surveying $300$ residents chosen at random from a complete list of town residents"
+          },
+          {
+            "label": "C",
+            "text": "Posting a survey on the town's website and using the first $300$ responses"
+          },
+          {
+            "label": "D",
+            "text": "Surveying $300$ people walking dogs in the town's largest park"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "To apply a sample's results to a whole population, the sample should be chosen at random from that population, so every resident has the same chance of being picked. Choosing at random from a complete list of residents does that.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "People at a pet store are more likely than typical residents to own pets and want a dog park."
+          },
+          {
+            "label": "C",
+            "text": "People who choose to answer an online survey may care more about the issue than other residents."
+          },
+          {
+            "label": "D",
+            "text": "People walking dogs are much more likely than typical residents to use a dog park."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A random sample of voters in a district was surveyed. Based on the survey, $48\\%$ of the district's voters are estimated to favor a proposal, with a margin of error of $3$ percentage points. Which of the following is a plausible value for the percent of all voters in the district who favor the proposal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$44\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$46\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$52\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$55\\%$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The plausible values run from $48\\% - 3\\% = 45\\%$ to $48\\% + 3\\% = 51\\%$. Of the choices, only $46\\%$ is in that range.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$44\\%$ is below the lowest plausible value, $45\\%$."
+          },
+          {
+            "label": "C",
+            "text": "$52\\%$ is above the highest plausible value, $51\\%$."
+          },
+          {
+            "label": "D",
+            "text": "$55\\%$ is well above the highest plausible value, $51\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A researcher surveyed a random sample of $400$ adults in a state about their exercise habits and reported a margin of error for the estimate. The researcher plans to repeat the survey using a random sample of $1{,}600$ adults from the same state, with the same method. Compared with the first survey, the margin of error for the second survey will most likely be",
+        "choices": [
+          {
+            "label": "A",
+            "text": "larger, because more people means more variety in the answers."
+          },
+          {
+            "label": "B",
+            "text": "smaller, because a larger random sample tends to give a more precise estimate."
+          },
+          {
+            "label": "C",
+            "text": "the same, because the samples come from the same population."
+          },
+          {
+            "label": "D",
+            "text": "zero, because $1{,}600$ adults is enough to know the population value exactly."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Larger random samples give estimates that tend to land closer to the true population value, so the margin of error shrinks as the sample size grows (with the same method and confidence level).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Although a larger sample includes more people, its estimate varies less from sample to sample, so the margin of error is smaller."
+          },
+          {
+            "label": "C",
+            "text": "The margin of error depends on the sample size, not only on the population."
+          },
+          {
+            "label": "D",
+            "text": "Any sample smaller than the whole population leaves some uncertainty, so the margin of error is greater than zero."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two towns each surveyed a random sample of working adults about their one-way commute times. In Town A, the sample mean was $24$ minutes, with a margin of error of $3$ minutes. In Town B, the sample mean was $28$ minutes, with a margin of error of $3$ minutes. Which conclusion is most appropriate?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The mean commute time of all working adults in Town B is greater than that in Town A."
+          },
+          {
+            "label": "B",
+            "text": "The mean commute time of all working adults in Town B is exactly $4$ minutes greater than that in Town A."
+          },
+          {
+            "label": "C",
+            "text": "Because the ranges of plausible values overlap, the surveys do not give convincing evidence that the mean commute times of all working adults in the two towns differ."
+          },
+          {
+            "label": "D",
+            "text": "The mean commute time of all working adults in Town A is between $24$ and $27$ minutes."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The plausible values for Town A's mean are $21$ to $27$ minutes, and for Town B's mean, $25$ to $31$ minutes. These ranges overlap from $25$ to $27$, so it's possible that the two population means are equal (or even that Town A's is greater). The surveys don't support concluding that they differ.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Town B's sample mean is greater, but the plausible ranges overlap, so the population means could be equal."
+          },
+          {
+            "label": "B",
+            "text": "The $4$-minute difference is between the sample means; the population means are not known exactly."
+          },
+          {
+            "label": "D",
+            "text": "The plausible range for Town A is $24 - 3$ to $24 + 3$, or $21$ to $27$ minutes, not $24$ to $27$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A random sample of $500$ students was selected from all the high school students in one county. Of those surveyed, $70\\%$ said they would prefer a later school start time, with a margin of error of $4$ percentage points. To which group can the survey's conclusion most reasonably be applied?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "All high school students in the county"
+          },
+          {
+            "label": "B",
+            "text": "All high school students in the country"
+          },
+          {
+            "label": "C",
+            "text": "Only the $500$ students who were surveyed"
+          },
+          {
+            "label": "D",
+            "text": "All residents of the county"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "A random sample represents the population it was drawn from. The students were chosen from all high school students in the county, so the estimate ($66\\%$ to $74\\%$) applies to that group.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The sample came only from one county, so it may not represent students elsewhere."
+          },
+          {
+            "label": "C",
+            "text": "The point of a random sample is to estimate a larger population; for the $500$ students themselves, the percent is known exactly."
+          },
+          {
+            "label": "D",
+            "text": "Only high school students were sampled, so the result doesn't represent adults or other residents."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Based on a random sample of adults in a city, the mean nightly sleep of the city's adults is estimated to be $6.8$ hours, with a margin of error of $0.3$ hour at the $95\\%$ confidence level. Which statement is the best interpretation of these results?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "About $95\\%$ of the adults in the city sleep between $6.5$ and $7.1$ hours per night."
+          },
+          {
+            "label": "B",
+            "text": "It is plausible that the mean nightly sleep of all adults in the city is between $6.5$ and $7.1$ hours."
+          },
+          {
+            "label": "C",
+            "text": "Every adult in the city sleeps between $6.5$ and $7.1$ hours per night."
+          },
+          {
+            "label": "D",
+            "text": "The mean nightly sleep of the adults in the sample is between $6.5$ and $7.1$ hours, but its exact value is unknown."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The margin of error describes uncertainty about a population mean, not about individuals. Plausible values for the mean sleep of all adults in the city are $6.8 - 0.3 = 6.5$ to $6.8 + 0.3 = 7.1$ hours.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The interval is about the mean of the population, not about where individual adults' sleep falls; individual sleep times vary much more."
+          },
+          {
+            "label": "C",
+            "text": "Individual adults can sleep far more or less than the mean; the interval says nothing about each person."
+          },
+          {
+            "label": "D",
+            "text": "The sample mean is known exactly: $6.8$ hours. The uncertainty is about the population mean."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A ballot measure needs more than $50\\%$ of the vote to pass. In a poll of a random sample of likely voters, $53\\%$ said they support the measure, with a margin of error of $4$ percentage points. Assuming the likely voters vote as the poll indicates, which conclusion is best supported by the poll?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The measure will certainly pass."
+          },
+          {
+            "label": "B",
+            "text": "A majority of likely voters support the measure, because $53\\%$ is greater than $50\\%$."
+          },
+          {
+            "label": "C",
+            "text": "The poll results are consistent both with a majority supporting the measure and with less than half supporting it, so the poll does not show that a majority supports it."
+          },
+          {
+            "label": "D",
+            "text": "Fewer than half of likely voters most likely support the measure."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The plausible range for support among all likely voters is $53\\% - 4\\% = 49\\%$ to $53\\% + 4\\% = 57\\%$. This range includes values above $50\\%$ and values below $50\\%$, so the poll can't establish that a majority supports the measure.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Values as low as $49\\%$ are plausible, so passage is not certain."
+          },
+          {
+            "label": "B",
+            "text": "$53\\%$ is the sample estimate; the true support could be as low as $49\\%$."
+          },
+          {
+            "label": "D",
+            "text": "Most of the plausible range, $49\\%$ to $57\\%$, is above $50\\%$; the poll gives no reason to think support is most likely below half."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-statistics-margin-of-error-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A town has $8{,}000$ households. In a random sample of $250$ of these households, $30\\%$ had solar panels. The margin of error for this estimate is $5.5$ percentage points. Which of the following is the most plausible number of households in the town that have solar panels?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$75$"
+          },
+          {
+            "label": "B",
+            "text": "$1{,}600$"
+          },
+          {
+            "label": "C",
+            "text": "$2{,}600$"
+          },
+          {
+            "label": "D",
+            "text": "$3{,}000$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The plausible percent of all households with solar panels runs from $30\\% - 5.5\\% = 24.5\\%$ to $30\\% + 5.5\\% = 35.5\\%$. For $8{,}000$ households, that is $0.245 \\times 8{,}000 = 1{,}960$ to $0.355 \\times 8{,}000 = 2{,}840$ households. Only $2{,}600$ (which is $32.5\\%$) is in this range.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $30\\%$ of the $250$ sampled households, not an estimate for the whole town."
+          },
+          {
+            "label": "B",
+            "text": "$1{,}600$ is $20\\%$ of the households, below the lowest plausible value of $24.5\\%$."
+          },
+          {
+            "label": "D",
+            "text": "$3{,}000$ is $37.5\\%$ of the households, above the highest plausible value of $35.5\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

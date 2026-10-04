@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "inferences-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "To find out why some loaves of their bread were collapsing, bakers at a small shop prepared two batches of dough with identical ingredients and baked them at the same oven temperature. The first batch rose for one hour before baking and the second for three hours. Only loaves from the second batch collapsed in the oven. Because the batches differed in only one way, the bakers concluded that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the oven temperature was too high for this kind of bread."
+          },
+          {
+            "label": "B",
+            "text": "some of the ingredients had spoiled."
+          },
+          {
+            "label": "C",
+            "text": "one hour was too short a time for the dough to rise."
+          },
+          {
+            "label": "D",
+            "text": "the longer rising time was likely causing the loaves to collapse."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The only difference between the batches was rising time, and only the batch that rose for three hours collapsed. So the longer rising time is the likely cause (choice D).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Both batches were baked at the same temperature, yet only one collapsed, so temperature can't explain the difference."
+          },
+          {
+            "label": "B",
+            "text": "Both batches used identical ingredients, so spoiled ingredients would have affected both."
+          },
+          {
+            "label": "C",
+            "text": "The one-hour loaves didn't collapse, so nothing suggests that rising time was too short."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Biologist Amara Osei placed motion-triggered cameras throughout a city park to study red foxes. Over a full year, the cameras recorded foxes almost entirely between midnight and dawn, even though rabbits and other prey animals were active in the park at all hours. Osei also noted that the park was busy with people and dogs from early morning until late evening. These observations suggest that the foxes ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "hunt only animals that are active at night."
+          },
+          {
+            "label": "B",
+            "text": "are active at times when they are least likely to encounter people and dogs."
+          },
+          {
+            "label": "C",
+            "text": "cannot see well in daylight."
+          },
+          {
+            "label": "D",
+            "text": "find most of their food outside the park."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Prey was available all day, so food timing doesn't explain why foxes appear only after midnight. The other detail given is that people and dogs fill the park from morning to late evening. Foxes active only when the park is empty are likely avoiding people and dogs (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says prey was active at all hours and doesn't say foxes hunt only nighttime animals."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text concerns the foxes' eyesight."
+          },
+          {
+            "label": "D",
+            "text": "The text says nothing about where foxes find food."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Historian Grace Achterberg examined shop records from a river town before and after its only bridge was destroyed by a flood in 1871. The flood did not damage any shops, the number of people living on each bank changed little in the following years, and before the flood, shops on both banks had similar sales. During the six years it took to rebuild the bridge, sales at shops on the east bank, where most residents lived, stayed steady, while sales at shops on the west bank fell by more than half. This pattern suggests that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the flood caused more damage on the west bank than on the east bank."
+          },
+          {
+            "label": "B",
+            "text": "shops on the east bank raised their prices after the flood."
+          },
+          {
+            "label": "C",
+            "text": "many customers of west-bank shops had been east-bank residents who crossed the bridge to shop."
+          },
+          {
+            "label": "D",
+            "text": "most west-bank residents moved to the east bank after the flood."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Most residents lived on the east bank, and only west-bank sales fell once the bridge was gone. The likely explanation is that west-bank shops had depended on east-bank residents who could no longer cross the river (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says the flood didn't damage any shops."
+          },
+          {
+            "label": "B",
+            "text": "Nothing in the text concerns prices, and east-bank sales stayed steady."
+          },
+          {
+            "label": "D",
+            "text": "The text says the number of people living on each bank changed little after the flood, so residents did not move from one bank to the other in large numbers."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The nectar of a certain desert shrub contains a bitter compound in concentrations too low for bees to taste. In laboratory experiments, entomologist Rhea Castellanos found that bees fed nectar containing the compound were more likely than other bees to return to the same flower scent days later. Because a plant benefits when bees carry pollen between flowers of its own species, Castellanos's findings suggest that the compound ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "may help the shrub by making bees more likely to keep visiting its flowers."
+          },
+          {
+            "label": "B",
+            "text": "discourages bees from visiting the shrub because of its bitter taste."
+          },
+          {
+            "label": "C",
+            "text": "protects the shrub's nectar from drying out in desert heat."
+          },
+          {
+            "label": "D",
+            "text": "makes the shrub's nectar taste better to bees than other nectar does."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Bees given the compound were more likely to return to the same scent, and the shrub benefits when bees move pollen among its own flowers. So the compound likely helps the shrub by encouraging repeat visits (choice A).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The compound is too dilute for bees to taste, and it made them more likely to return, not less."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text links the compound to keeping nectar moist."
+          },
+          {
+            "label": "D",
+            "text": "Bees can't taste the compound at these concentrations, so it can't make the nectar taste better to them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For decades, a portrait in a regional museum was assumed to be a copy of a more famous painting in a national collection. When conservators examined it with infrared imaging, they found an underdrawing beneath the paint in which the sitter's head faced a different direction and the hands had been redrawn several times. Copyists typically reproduce a finished composition directly, without such changes. The imaging therefore suggests that the regional museum's portrait ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "is a copy of a different painting from the one in the national collection."
+          },
+          {
+            "label": "B",
+            "text": "was damaged and then repainted by later conservators."
+          },
+          {
+            "label": "C",
+            "text": "was painted from memory by someone who had once seen the famous version."
+          },
+          {
+            "label": "D",
+            "text": "may be an original work in which the artist was still working out the composition."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Copyists usually reproduce a finished design without changes, but this portrait's underdrawing shows the artist changing the head and redrawing the hands. That is what an artist does while developing a composition, so the portrait may be an original rather than a copy (choice D).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The evidence counts against the portrait being a copy at all, not in favor of it copying something else."
+          },
+          {
+            "label": "B",
+            "text": "The changes are in the underdrawing beneath the paint, made while the work was created, not later repairs."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text points to painting from memory, and repeated reworking of the design fits an artist developing a composition better than someone copying."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When a city library began lending e-books, some staff members worried that people would stop borrowing printed books. Over the next three years, e-book loans grew steadily, yet print loans stayed nearly constant. A survey found that most e-book borrowers had not held a library card before the e-book program began. These findings suggest that the e-book program ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "caused a gradual decline in print borrowing."
+          },
+          {
+            "label": "B",
+            "text": "attracted new library users rather than drawing existing borrowers away from print books."
+          },
+          {
+            "label": "C",
+            "text": "was used mostly by people who had previously borrowed many printed books."
+          },
+          {
+            "label": "D",
+            "text": "will eventually replace the library's collection of printed books."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Print loans stayed nearly constant while e-book loans grew, and most e-book borrowers were new cardholders. So the program brought in new users instead of pulling people away from print (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says print loans stayed nearly constant."
+          },
+          {
+            "label": "C",
+            "text": "Most e-book borrowers had no library card before, so they weren't previous print borrowers."
+          },
+          {
+            "label": "D",
+            "text": "Nothing in the text supports predicting that print books will be replaced, and print loans held steady."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many rivers and hills in a mountain region have names that come from a language no longer spoken there. The region's town names, however, come almost entirely from the language spoken there today. Linguist Tobias Renn notes that names for natural features tend to last for centuries, because newcomers to an area usually adopt the names already in use for them. Taken together, these observations suggest that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "speakers of the older language once lived in the region, and most of its towns received their present names after speakers of today's language arrived."
+          },
+          {
+            "label": "B",
+            "text": "speakers of the older language never lived in the region but named its rivers and hills from a distance."
+          },
+          {
+            "label": "C",
+            "text": "the newcomers renamed the region's rivers and hills but kept the existing names of its towns."
+          },
+          {
+            "label": "D",
+            "text": "the older language and today's language are closely related."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Rivers and hills carry names from the older language, and Renn explains that newcomers usually keep existing names for such features, so the older language's speakers were likely there first. Town names, by contrast, come from today's language, which suggests the towns got their names after the newer speakers arrived. Choice A combines both points.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Names that newcomers adopt from people already living there point to the older language's speakers having lived in the region."
+          },
+          {
+            "label": "C",
+            "text": "This reverses the evidence: the rivers and hills kept older names, while the town names are from today's language."
+          },
+          {
+            "label": "D",
+            "text": "The text gives no information about how the two languages are related."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "On a chain of islands, populations of one lizard species differ in an unexpected way: lizards on islands with ground-hunting predators have shorter legs than lizards on predator-free islands. Longer legs help lizards sprint across open ground, while shorter legs help them grip narrow branches. Ecologist Farah Leclerc observed that on the islands with ground-hunting predators, the lizards spend most of their time high in shrubs. If her observations are accurate, the shorter legs most likely ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "allow these lizards to outrun ground-hunting predators across open ground."
+          },
+          {
+            "label": "B",
+            "text": "show that predators have little effect on where lizards spend their time."
+          },
+          {
+            "label": "C",
+            "text": "suit a life spent climbing in vegetation, a habit that keeps the lizards away from ground-hunting predators."
+          },
+          {
+            "label": "D",
+            "text": "developed because the predators prefer to hunt lizards in shrubs."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The pattern seems surprising because longer legs would help a lizard sprint away. But Leclerc found that lizards on predator islands live high in shrubs, and shorter legs help with gripping branches. So the shorter legs fit a climbing lifestyle that keeps the lizards out of reach of ground hunters (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says longer legs, not shorter ones, help with sprinting on open ground."
+          },
+          {
+            "label": "B",
+            "text": "Lizards behave differently on islands with predators, spending their time in shrubs, so predators do seem to affect where they live."
+          },
+          {
+            "label": "D",
+            "text": "The predators are described as ground hunters, so it doesn't follow that they prefer hunting in shrubs."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Account books from a medieval monastery record both the grain it harvested each year and the grain it gave to the poor. Historian Ruth Calloway found that in years of poor harvests, the monastery gave away more grain, not less, even though it had less to spare. In those same years, it also bought extra grain from distant markets at high prices. Some historians have argued that monastic charity was mainly symbolic, a token gesture that cost little. Calloway's findings suggest that, at least for this monastery, ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the view that monastic charity was mainly symbolic is accurate for most other monasteries."
+          },
+          {
+            "label": "B",
+            "text": "the monastery gave grain to the poor only in years of poor harvests."
+          },
+          {
+            "label": "C",
+            "text": "charity was a substantial commitment that the monastery kept up even when doing so was costly."
+          },
+          {
+            "label": "D",
+            "text": "poor harvests made the monastery wealthier by raising the price of grain."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The monastery gave away more grain in bad years and paid high prices for extra grain at the same time. Charity that grows when resources shrink and requires costly purchases is not a cheap token gesture; it was a real commitment kept up at significant expense (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Calloway's findings concern one monastery and say nothing about whether the symbolic view holds elsewhere."
+          },
+          {
+            "label": "B",
+            "text": "The text says the monastery gave more grain in bad years, which implies it also gave grain in other years."
+          },
+          {
+            "label": "D",
+            "text": "The monastery was buying grain at high prices, which would cost it money, not make it wealthier."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

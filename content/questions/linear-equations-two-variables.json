@@ -35,6 +35,489 @@
           }
         ]
       }
+    },
+    {
+      "id": "linear-equations-two-variables-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which of the following points lies on the graph of $2x + 5y = 30$ in the $xy$-plane?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(4, 5)$"
+          },
+          {
+            "label": "B",
+            "text": "$(5, 4)$"
+          },
+          {
+            "label": "C",
+            "text": "$(10, 3)$"
+          },
+          {
+            "label": "D",
+            "text": "$(3, 6)$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Substitute each point into $2x + 5y$. For $(5, 4)$: $2(5) + 5(4) = 10 + 20 = 30$, so the point lies on the line.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$2(4) + 5(5) = 33$, not 30. This point swaps the coordinates of the correct point."
+          },
+          {
+            "label": "C",
+            "text": "$2(10) + 5(3) = 35$, not 30."
+          },
+          {
+            "label": "D",
+            "text": "$2(3) + 5(6) = 36$, not 30."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Jordan earns $\\$15$ per hour working at a café and $\\$22$ per hour tutoring. The equation $15c + 22t = 410$ represents a month in which Jordan earned a total of $\\$410$ from working $c$ hours at the café and $t$ hours tutoring. What does the number $22$ represent in this equation?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The number of hours Jordan tutored"
+          },
+          {
+            "label": "B",
+            "text": "The amount Jordan earned per hour of tutoring"
+          },
+          {
+            "label": "C",
+            "text": "The total amount Jordan earned from tutoring"
+          },
+          {
+            "label": "D",
+            "text": "The number of hours Jordan worked at the café"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "In $22t$, the variable $t$ is the number of hours tutoring, and multiplying by 22 gives the money earned from tutoring. So 22 is the number of dollars Jordan earns for each hour of tutoring.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The number of hours Jordan tutored is represented by the variable $t$, not by 22."
+          },
+          {
+            "label": "C",
+            "text": "The total amount earned from tutoring is the whole term $22t$, not the coefficient 22 alone."
+          },
+          {
+            "label": "D",
+            "text": "The number of hours at the café is the variable $c$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-004",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "If $3x - 2y = 19$ and $y = 4$, what is the value of $x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "9"
+        ],
+        "explanation": "Substitute $y = 4$: $3x - 2(4) = 19$, so $3x - 8 = 19$. Add 8 to both sides: $3x = 27$. Divide by 3: $x = 9$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "What is the $y$-intercept of the graph of $6x - 4y = 36$ in the $xy$-plane?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(0, -9)$"
+          },
+          {
+            "label": "B",
+            "text": "$(0, 9)$"
+          },
+          {
+            "label": "C",
+            "text": "$(6, 0)$"
+          },
+          {
+            "label": "D",
+            "text": "$(0, -6)$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The $y$-intercept is where $x = 0$. Substitute: $6(0) - 4y = 36$, so $-4y = 36$ and $y = -9$. The $y$-intercept is $(0, -9)$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This drops the negative sign when dividing 36 by $-4$."
+          },
+          {
+            "label": "C",
+            "text": "This is the $x$-intercept, found by setting $y = 0$."
+          },
+          {
+            "label": "D",
+            "text": "This divides 36 by the coefficient of $x$ instead of the coefficient of $y$, and uses that as the $y$-coordinate."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A caterer spends exactly $\\$360$ on chicken, which costs $\\$6$ per pound, and beef, which costs $\\$9$ per pound. If the caterer instead buys $15$ more pounds of chicken and still spends exactly $\\$360$ in total, how many fewer pounds of beef must the caterer buy?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$10$"
+          },
+          {
+            "label": "B",
+            "text": "$15$"
+          },
+          {
+            "label": "C",
+            "text": "$22.5$"
+          },
+          {
+            "label": "D",
+            "text": "$90$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The spending satisfies $6c + 9b = 360$. Buying 15 more pounds of chicken costs $6 \\cdot 15 = \\$90$ more. To keep the total at $\\$360$, beef spending must drop by $\\$90$, which is $\\frac{90}{9} = 10$ pounds of beef.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This assumes each extra pound of chicken replaces one pound of beef, but the two meats have different prices."
+          },
+          {
+            "label": "C",
+            "text": "This multiplies 15 by $\\frac{9}{6}$ instead of $\\frac{6}{9}$, swapping the roles of the two prices."
+          },
+          {
+            "label": "D",
+            "text": "This is the extra amount spent on chicken in dollars, not the change in pounds of beef."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-007",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $\\frac{x}{4} + \\frac{y}{6} = 1$ passes through the point $(a, 9)$. What is the value of $a$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-2"
+        ],
+        "explanation": "Substitute $y = 9$: $\\frac{a}{4} + \\frac{9}{6} = 1$, so $\\frac{a}{4} + \\frac{3}{2} = 1$. Subtract $\\frac{3}{2}$: $\\frac{a}{4} = -\\frac{1}{2}$. Multiply by 4: $a = -2$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $kx + 3y = 12$, where $k$ is a positive constant, has an $x$-intercept whose $x$-coordinate is twice the $y$-coordinate of its $y$-intercept. What is the value of $k$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{2}{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{3}{2}$"
+          },
+          {
+            "label": "C",
+            "text": "$3$"
+          },
+          {
+            "label": "D",
+            "text": "$6$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Set $x = 0$ to find the $y$-intercept: $3y = 12$, so $y = 4$. The $x$-intercept must then be at $x = 2 \\cdot 4 = 8$. Set $y = 0$ and $x = 8$: $8k = 12$, so $k = \\frac{12}{8} = \\frac{3}{2}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "With $k = \\frac{2}{3}$, the $x$-intercept is at $x = 18$, which is not twice 4."
+          },
+          {
+            "label": "C",
+            "text": "With $k = 3$, the $x$-intercept is at $x = 4$, equal to the $y$-intercept value rather than twice it."
+          },
+          {
+            "label": "D",
+            "text": "With $k = 6$, the $x$-intercept is at $x = 2$, which is half of 4 rather than twice it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school spent exactly $\\$2{,}400$ on laptops that cost $\\$300$ each and tablets that cost $\\$180$ each. The school bought at least one laptop and at least one tablet. What is the greatest possible total number of devices the school bought?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "12"
+        ],
+        "explanation": "Let $L$ be the number of laptops and $T$ the number of tablets. Then $300L + 180T = 2{,}400$. Divide by 60: $5L + 3T = 40$. Both must be whole numbers. Solve for $T$: $T = \\frac{40 - 5L}{3}$, which is a whole number only when $40 - 5L$ is a multiple of 3. Trying $L = 1, 2, 3, \\ldots$ gives the pairs $(L, T) = (2, 10)$ and $(5, 5)$ (the pair $(8, 0)$ has no tablets, so it is not allowed). The totals are $12$ and $10$, so the greatest total is 12. This makes sense: tablets are cheaper, so buying more of them gives more devices.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "linear-equations-two-variables-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the points $(2, 7)$ and $(p, p)$ both lie on the graph of $3x - 2y = c$, where $c$ is a constant. What is the value of $p$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-8$"
+          },
+          {
+            "label": "B",
+            "text": "$-\\frac{8}{5}$"
+          },
+          {
+            "label": "C",
+            "text": "$8$"
+          },
+          {
+            "label": "D",
+            "text": "$20$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Since $(2, 7)$ is on the line, $c = 3(2) - 2(7) = 6 - 14 = -8$. The line is $3x - 2y = -8$. Substitute $(p, p)$: $3p - 2p = -8$, so $p = -8$. Check: $3(-8) - 2(-8) = -24 + 16 = -8$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This adds the terms instead of subtracting, solving $3p + 2p = -8$."
+          },
+          {
+            "label": "C",
+            "text": "This drops the negative sign on $c$, solving $3p - 2p = 8$."
+          },
+          {
+            "label": "D",
+            "text": "This computes $c$ as $6 + 14 = 20$, adding instead of subtracting $2(7)$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

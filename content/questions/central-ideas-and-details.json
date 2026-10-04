@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "central-ideas-and-details-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Tardigrades, microscopic animals often called water bears, are famous for surviving conditions that would kill most living things. When their surroundings dry out, they pull in their legs, lose nearly all of their body water and enter a dormant state. In this form, some tardigrades have survived extreme cold, high doses of radiation and even several days of exposure to outer space."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Tardigrades are the smallest animals known to science."
+          },
+          {
+            "label": "B",
+            "text": "Some tardigrades live permanently in outer space."
+          },
+          {
+            "label": "C",
+            "text": "Tardigrades can survive extreme conditions, largely by entering a dried-out, dormant state."
+          },
+          {
+            "label": "D",
+            "text": "Scientists study tardigrades mainly to develop new treatments for radiation exposure."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence states that tardigrades survive conditions that kill most living things. The rest explains how (a dried-out dormant state) and lists examples of what they survive. Choice C sums this up.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text calls tardigrades microscopic but never says they are the smallest animals."
+          },
+          {
+            "label": "B",
+            "text": "The text says some survived several days of exposure to space, not that they live there."
+          },
+          {
+            "label": "D",
+            "text": "The text doesn't say why scientists study tardigrades."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the town of Marlow Creek turned an empty parking lot into a community garden, organizers expected that most residents would want to grow vegetables. Instead, the most requested plots went to people who wanted to grow flowers for local events: weddings, school graduations and the town's summer fair. The organizers have since added a shared cutting garden to meet the demand."
+          }
+        ],
+        "table": null,
+        "stem": "According to the text, what surprised the garden's organizers?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Few residents wanted plots in the garden."
+          },
+          {
+            "label": "B",
+            "text": "Many residents wanted plots for growing flowers rather than vegetables."
+          },
+          {
+            "label": "C",
+            "text": "The soil in the old parking lot was too poor for growing vegetables."
+          },
+          {
+            "label": "D",
+            "text": "The town's summer fair was canceled the year the garden opened."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Organizers expected residents to grow vegetables, but \"Instead\" the most requested plots were for growing flowers for local events. Choice B states this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says plots were in demand, enough that organizers added a shared cutting garden."
+          },
+          {
+            "label": "C",
+            "text": "The text says nothing about the soil."
+          },
+          {
+            "label": "D",
+            "text": "The summer fair is mentioned as one use for the flowers; nothing says it was canceled."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In 1843 Ada Lovelace published an English translation of an article about Charles Babbage's Analytical Engine, a proposed calculating machine that was never completed. The notes she added were roughly three times as long as the article itself. In them, she laid out a step-by-step method for the machine to calculate a series of numbers and suggested that such a machine might one day work with symbols other than numbers, perhaps even composing music."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Lovelace helped Babbage finish building the Analytical Engine."
+          },
+          {
+            "label": "B",
+            "text": "Lovelace's most important contribution was translating Babbage's ideas accurately into English."
+          },
+          {
+            "label": "C",
+            "text": "Lovelace used the Analytical Engine to compose music."
+          },
+          {
+            "label": "D",
+            "text": "Lovelace's notes went far beyond a translation, offering both a detailed procedure for the machine and a broad vision of what such machines could do."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text stresses that Lovelace's notes were much longer than the article and describes what was in them: a step-by-step method for calculating and the idea that machines could work with symbols such as music. Choice D captures this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says the Analytical Engine was never completed."
+          },
+          {
+            "label": "B",
+            "text": "The translation is mentioned, but the text emphasizes her added notes, which went well beyond translating."
+          },
+          {
+            "label": "C",
+            "text": "Lovelace only suggested that such a machine might someday compose music; the engine was never built."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Ecologist Marisol Quintero wanted to know why a certain wildflower grows densely along hiking trails but sparsely in nearby meadows. She first suspected that hikers' boots were carrying its seeds, but seed counts in trailside soil and in meadow soil turned out to be similar. She then found that the trailside soil, packed down by foot traffic, held moisture longer after rain, and that the flower's seedlings survived far better in moist soil."
+          }
+        ],
+        "table": null,
+        "stem": "According to the text, what led Quintero to reject her first explanation?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Trailside soil held moisture longer after rain than meadow soil did."
+          },
+          {
+            "label": "B",
+            "text": "The flower's seedlings survived better in moist soil."
+          },
+          {
+            "label": "C",
+            "text": "Seed counts were similar in trailside soil and meadow soil."
+          },
+          {
+            "label": "D",
+            "text": "Hikers rarely stepped off the trails into the meadows."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Quintero first thought boots carried seeds to the trails, which would mean more seeds there. But seed counts were similar in both places, so extra seeds couldn't explain the difference. That finding (choice C) is what ruled out her first idea.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This finding supports her second explanation; it isn't why she dropped the first one."
+          },
+          {
+            "label": "B",
+            "text": "This also supports the second explanation about soil moisture."
+          },
+          {
+            "label": "D",
+            "text": "The text says nothing about where hikers stepped."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Folklorists have long noted that in many traditional tales, a task is attempted three times, often by three siblings, and only the third attempt succeeds. Scholar Eamon Pryce argues that this pattern is not merely decorative. In stories passed down by word of mouth, he notes, repetition helps listeners keep track of the plot, and the first two failures establish what is at stake, so the third attempt carries more suspense."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Pryce argues that the pattern of three attempts in traditional tales serves both practical and dramatic purposes."
+          },
+          {
+            "label": "B",
+            "text": "In traditional tales, the youngest of three siblings is always the one who succeeds."
+          },
+          {
+            "label": "C",
+            "text": "Written versions of traditional tales have abandoned the pattern of three attempts."
+          },
+          {
+            "label": "D",
+            "text": "Folklorists disagree about how many traditional tales use the pattern of three attempts."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "After introducing the pattern, the text presents Pryce's argument that it \"is not merely decorative\": repetition helps listeners remember (a practical purpose) and the failures build suspense (a dramatic purpose). Choice A sums up that argument.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text says the attempts are \"often\" by three siblings and doesn't say the youngest always succeeds; this overstates the text."
+          },
+          {
+            "label": "C",
+            "text": "The text doesn't discuss written versions of the tales."
+          },
+          {
+            "label": "D",
+            "text": "The text says folklorists \"have long noted\" the pattern; it describes no disagreement about it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When a new variety of millet that produced larger harvests was introduced in one farming region, agricultural economist Jonas Ekberg expected farmers to adopt it quickly. Many did not. Interviews revealed that the new variety yielded more in good years but failed badly in droughts, while the traditional variety produced smaller but more dependable harvests. For families with no savings to fall back on, Ekberg concluded, avoiding a disastrous year mattered more than raising the average harvest."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The new millet variety produced smaller harvests than the traditional variety."
+          },
+          {
+            "label": "B",
+            "text": "Farmers' reluctance to adopt the new variety reflected a reasonable preference for reliable harvests over higher average ones."
+          },
+          {
+            "label": "C",
+            "text": "Farmers in the region were unaware that a new millet variety was available."
+          },
+          {
+            "label": "D",
+            "text": "Ekberg recommends that the new millet variety be withdrawn from the region."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The text explains why many farmers didn't switch: the new millet yields more on average but fails in droughts, and families without savings can't risk a disastrous year. Choice B states this central point.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says the new variety produced larger harvests in good years."
+          },
+          {
+            "label": "C",
+            "text": "The farmers' choice was based on how the varieties performed, which implies they knew about the new one."
+          },
+          {
+            "label": "D",
+            "text": "Ekberg explains the farmers' choice; he doesn't recommend withdrawing the variety."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Every Sunday, Theo's grandfather fixed something in the house that was not broken. He tightened hinges that did not squeak, oiled a clock that kept perfect time and replaced a light bulb that had months of life left in it. Once, Theo asked him why. His grandfather looked at the clock for a long moment before answering. \"Your grandmother used to give me a list,\" he said, and went back to work."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Theo's grandfather is a skilled craftsman who takes pride in keeping the house in perfect condition."
+          },
+          {
+            "label": "B",
+            "text": "Theo is frustrated that his grandfather wastes his Sundays on unnecessary chores."
+          },
+          {
+            "label": "C",
+            "text": "Theo's grandfather keeps up his Sunday repairs, though they are unneeded, as a way of holding on to a routine he once shared with his wife."
+          },
+          {
+            "label": "D",
+            "text": "Theo's grandfather worries that the house will fall apart if he stops working on it."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The repairs are clearly unnecessary: nothing he fixes is broken. When asked why, the grandfather pauses and explains that his wife \"used to give me a list,\" which suggests she no longer does and that the Sunday repairs carry on a habit tied to her. Choice C captures this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text shows he does repairs, but it emphasizes that they are unneeded and connects them to his wife, not to pride in his skill."
+          },
+          {
+            "label": "B",
+            "text": "Theo asks a question, but nothing shows he is frustrated."
+          },
+          {
+            "label": "D",
+            "text": "Everything he fixes already works, so the repairs aren't about preventing the house from falling apart."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "It is often said that the human brain is fully developed by early adulthood. Neuroscientist Hye-jin Park argues that this claim is misleading, less because of any single fact it gets wrong than because \"fully developed\" implies a finished state. Her imaging studies show that while some brain regions stop growing by the mid-twenties, the connections among regions continue to be reorganized throughout life in response to new skills and experiences. Development, Park suggests, is better understood as ongoing change than as a final product."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Park's research shows that brain regions keep growing larger throughout life."
+          },
+          {
+            "label": "B",
+            "text": "Park argues that brain development actually ends in adolescence rather than early adulthood."
+          },
+          {
+            "label": "C",
+            "text": "Park's research shows that people learn new skills most easily in their mid-twenties."
+          },
+          {
+            "label": "D",
+            "text": "Park argues that because the brain keeps reorganizing throughout life, calling it fully developed by early adulthood gives a misleading picture."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Park's objection is to the idea of a finished brain. Her studies show connections among brain regions keep reorganizing throughout life, so she sees development as ongoing. Choice D states that main point.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says some regions stop growing by the mid-twenties; what continues is the reorganization of connections."
+          },
+          {
+            "label": "B",
+            "text": "Park doesn't move the endpoint earlier; she questions whether there is an endpoint at all."
+          },
+          {
+            "label": "C",
+            "text": "The text says new skills cause reorganization throughout life but doesn't say when learning is easiest."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "central-ideas-and-details-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In the 1950s, some scholars argued that the islands of Polynesia were settled largely by accident, as canoes blown off course drifted to new shores. Later work challenged this view. Computer simulations of drifting canoes found that drift alone was very unlikely to carry voyagers to distant islands such as Hawaii and New Zealand. And in 1976, the voyaging canoe Hōkūleʻa sailed from Hawaii to Tahiti using traditional navigation methods, without instruments, showing that deliberate long-distance voyages were possible."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice best states the main idea of the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Evidence from computer simulations and a modern voyage undermined the view that Polynesia was settled mainly through accidental drift."
+          },
+          {
+            "label": "B",
+            "text": "Computer simulations proved that no drifting canoe could ever have reached Hawaii."
+          },
+          {
+            "label": "C",
+            "text": "The voyage of Hōkūleʻa showed that the first settlers of Hawaii came from Tahiti."
+          },
+          {
+            "label": "D",
+            "text": "Modern voyagers have retraced every route used by the first settlers of Polynesia."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The text presents an older view (accidental settlement by drift) and then two pieces of evidence that \"challenged this view\": simulations showing drift was very unlikely to reach distant islands, and a modern voyage showing deliberate navigation was possible. Choice A sums up this main idea.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This overstates the text, which says drift was \"very unlikely\" to reach such islands, not impossible; it's also just one detail."
+          },
+          {
+            "label": "C",
+            "text": "The voyage showed that deliberate voyages were possible, not where Hawaii's first settlers came from."
+          },
+          {
+            "label": "D",
+            "text": "The text describes one modern voyage, not the retracing of every route."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

@@ -92,6 +92,873 @@
           }
         ]
       }
+    },
+    {
+      "id": "command-of-evidence-quantitative-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "City planner Omar Hassan studied average daily ridership at four bike-share stations. He found that Riverside station stands out from the others because it is busier on weekends than on weekdays, probably because it sits beside a popular park. For example, ______"
+          }
+        ],
+        "table": {
+          "title": "Average daily riders at four bike-share stations",
+          "columns": [
+            "Station",
+            "Weekday riders",
+            "Weekend riders"
+          ],
+          "rows": [
+            [
+              "Central Market",
+              "410",
+              "220"
+            ],
+            [
+              "Riverside",
+              "150",
+              "340"
+            ],
+            [
+              "University",
+              "380",
+              "120"
+            ],
+            [
+              "Hilltop",
+              "90",
+              "80"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Central Market station averaged 410 riders per weekday, the most of any station."
+          },
+          {
+            "label": "B",
+            "text": "Riverside station averaged 340 riders per weekend day, compared with 150 riders per weekday."
+          },
+          {
+            "label": "C",
+            "text": "University station averaged 380 riders per weekday but only 120 riders per weekend day."
+          },
+          {
+            "label": "D",
+            "text": "Hilltop station had the fewest riders of the four stations on both weekdays and weekends."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs an example showing that Riverside is busier on weekends than on weekdays. The table shows Riverside averaged 340 riders per weekend day and only 150 per weekday, so choice B completes the statement. Every other station had more riders on weekdays.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it is about Central Market's weekday ridership, not Riverside's weekend ridership."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it describes University station, which is busier on weekdays, the opposite of the pattern at Riverside."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it is about Hilltop and doesn't show Riverside being busier on weekends."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For a science fair project, a student grew bean seedlings under lamps of four different colors, giving every seedling the same amount of water and the same soil. She predicted that the seedlings grown under blue light would grow the tallest. Her results supported this prediction: ______"
+          }
+        ],
+        "table": {
+          "title": "Average seedling height after three weeks",
+          "columns": [
+            "Light color",
+            "Average height (cm)"
+          ],
+          "rows": [
+            [
+              "Red",
+              "11.2"
+            ],
+            [
+              "Blue",
+              "14.8"
+            ],
+            [
+              "Green",
+              "6.5"
+            ],
+            [
+              "White",
+              "13.1"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "seedlings grown under green light averaged 6.5 centimeters, the shortest of any group."
+          },
+          {
+            "label": "B",
+            "text": "seedlings grown under white light averaged 13.1 centimeters, taller than those grown under red light."
+          },
+          {
+            "label": "C",
+            "text": "seedlings grown under blue light averaged 14.8 centimeters, taller than those in any other group."
+          },
+          {
+            "label": "D",
+            "text": "seedlings grown under red light and under white light both averaged more than 10 centimeters."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The prediction was that blue light would produce the tallest seedlings. The table shows the blue-light seedlings averaged 14.8 cm, more than the red (11.2 cm), green (6.5 cm), and white (13.1 cm) groups. Choice C states this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it identifies the shortest group, not whether the blue group was tallest."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it compares white and red light and leaves out the blue group."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it doesn't mention blue light at all."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Historian Grace Whitlock studies how work changed in Alder County during the twentieth century. As farming employed a smaller and smaller share of the county's workers, other kinds of jobs grew. Whitlock argues that between 1900 and 1960, the decline in farm jobs was offset mainly by growth in service jobs, not manufacturing jobs."
+          }
+        ],
+        "table": {
+          "title": "Share of jobs in Alder County by sector (%)",
+          "columns": [
+            "Year",
+            "Agriculture",
+            "Manufacturing",
+            "Services"
+          ],
+          "rows": [
+            [
+              "1900",
+              "52",
+              "21",
+              "27"
+            ],
+            [
+              "1930",
+              "34",
+              "33",
+              "33"
+            ],
+            [
+              "1960",
+              "12",
+              "35",
+              "53"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Whitlock's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "From 1900 to 1930, manufacturing's share of jobs grew by 12 percentage points, while the share of service jobs grew by only 6 points."
+          },
+          {
+            "label": "B",
+            "text": "In 1930, the shares of jobs in manufacturing and in services were nearly equal, at 33% each."
+          },
+          {
+            "label": "C",
+            "text": "Agriculture's share of jobs was smaller in each year shown than in the year before."
+          },
+          {
+            "label": "D",
+            "text": "From 1900 to 1960, agriculture's share of jobs fell by 40 percentage points, while the share of service jobs rose by 26 points and manufacturing's share rose by 14 points."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Whitlock's argument covers 1900 to 1960 and says service jobs, more than manufacturing jobs, replaced farm jobs. Over that whole period, agriculture fell from 52% to 12% (40 points), services rose from 27% to 53% (26 points), and manufacturing rose from 21% to 35% (14 points). Services gained nearly twice as much as manufacturing, so choice D supports the argument.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it covers only 1900 to 1930, when manufacturing grew faster than services. It points away from Whitlock's argument."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it describes a single year and shows no change over time."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it shows only that farm jobs declined, not which kind of job grew more to replace them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In 2018, a drained wetland was restored by blocking the ditches that had carried its water away. Volunteer surveyor Dana Whitfield compared bird counts from before and after the restoration. She concluded that the restoration has favored some species while others have fared worse since then: ______"
+          }
+        ],
+        "table": {
+          "title": "Bird counts at a restored wetland",
+          "columns": [
+            "Species",
+            "2015 count",
+            "2024 count"
+          ],
+          "rows": [
+            [
+              "Great egret",
+              "48",
+              "112"
+            ],
+            [
+              "Mallard",
+              "310",
+              "295"
+            ],
+            [
+              "Red-winged blackbird",
+              "520",
+              "260"
+            ],
+            [
+              "Wood duck",
+              "35",
+              "70"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "great egret counts more than doubled, from 48 to 112, while red-winged blackbird counts fell by half, from 520 to 260."
+          },
+          {
+            "label": "B",
+            "text": "great egret and wood duck counts both roughly doubled between 2015 and 2024."
+          },
+          {
+            "label": "C",
+            "text": "the mallard count fell slightly, from 310 in 2015 to 295 in 2024."
+          },
+          {
+            "label": "D",
+            "text": "red-winged blackbirds were the most numerous of the four species in 2015."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Whitfield's conclusion has two parts: some species did better and others did worse. Choice A shows both: great egrets went from 48 to 112 (more than double), while red-winged blackbirds dropped from 520 to 260 (half). The other choices show only one side or neither.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is true, but it shows only species that increased, not any that fared worse."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it shows only one species that declined slightly, not any species that was favored."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it describes only the 2015 count and shows no change at all."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Sociologist Ana Petrovic surveyed commuters in one city about how they would most like to get to work. She reports that a preference for cycling was far more common among younger respondents than older ones. But she cautions that this does not make cycling the younger group's top choice: ______"
+          }
+        ],
+        "table": {
+          "title": "Preferred way to commute, by age group (% of respondents)",
+          "columns": [
+            "Preferred mode",
+            "Ages 18-34",
+            "Ages 55 and older"
+          ],
+          "rows": [
+            [
+              "Driving",
+              "38",
+              "61"
+            ],
+            [
+              "Public transit",
+              "27",
+              "24"
+            ],
+            [
+              "Cycling",
+              "22",
+              "5"
+            ],
+            [
+              "Walking",
+              "13",
+              "10"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "22% of respondents aged 18 to 34 preferred cycling, compared with only 5% of respondents aged 55 and older."
+          },
+          {
+            "label": "B",
+            "text": "61% of respondents aged 55 and older preferred driving."
+          },
+          {
+            "label": "C",
+            "text": "among respondents aged 18 to 34, 22% preferred cycling, while 38% preferred driving."
+          },
+          {
+            "label": "D",
+            "text": "public transit was preferred by similar shares of the two age groups, 27% and 24%."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The blank follows Petrovic's caution that cycling is not the younger group's top choice, so the data must show another option that more younger respondents preferred. Among those aged 18 to 34, 38% preferred driving and only 22% preferred cycling, as choice C says.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it supports Petrovic's first point (cycling is more popular with younger people), not her caution that it isn't their top choice."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it is about the older group, while the caution is about the younger group."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it doesn't compare cycling with any other option for the younger group."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Musicologist Imani Brooks analyzed a sample of popular songs from four decades, measuring each song's tempo (in beats per minute) and length. Brooks argues that, across the decades in her sample, the length of popular songs changed far more than their tempo did."
+          }
+        ],
+        "table": {
+          "title": "Average tempo and length of popular songs in a sample",
+          "columns": [
+            "Decade",
+            "Average tempo (beats per minute)",
+            "Average length (minutes)"
+          ],
+          "rows": [
+            [
+              "1960s",
+              "118",
+              "2.8"
+            ],
+            [
+              "1980s",
+              "121",
+              "4.3"
+            ],
+            [
+              "2000s",
+              "117",
+              "4.1"
+            ],
+            [
+              "2010s",
+              "120",
+              "3.5"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Brooks's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The average song length was greatest in the 1980s, at 4.3 minutes."
+          },
+          {
+            "label": "B",
+            "text": "The average tempo stayed between 117 and 121 beats per minute in every decade, while the average length ranged from 2.8 to 4.3 minutes."
+          },
+          {
+            "label": "C",
+            "text": "The average tempo was slightly higher in the 2010s (120 beats per minute) than in the 2000s (117 beats per minute)."
+          },
+          {
+            "label": "D",
+            "text": "Songs from the 2010s were shorter on average than songs from the 2000s, at 3.5 minutes compared with 4.1 minutes."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Brooks compares how much two things changed: length and tempo. Choice B gives both ranges. Tempo varied by only 4 beats per minute (about 3%), while length varied from 2.8 to 4.3 minutes (an increase of more than 50%). That shows length changed far more than tempo.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it describes only length and doesn't compare it with tempo."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it describes only tempo, in two decades, and doesn't compare it with length."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it describes only length, in two decades, and doesn't compare it with tempo."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-008",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A student measured the vitamin C content of four fruits she bought at a local market. Oranges are often thought of as the best fruit source of vitamin C, so she was surprised to find that, among the fruits she tested, oranges were not the richest source: ______"
+          }
+        ],
+        "table": {
+          "title": "Vitamin C in fruit samples",
+          "columns": [
+            "Fruit",
+            "Vitamin C (mg per 100 g)"
+          ],
+          "rows": [
+            [
+              "Apple",
+              "5"
+            ],
+            [
+              "Kiwi",
+              "93"
+            ],
+            [
+              "Orange",
+              "53"
+            ],
+            [
+              "Strawberry",
+              "47"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "her strawberry samples contained 47 milligrams of vitamin C per 100 grams."
+          },
+          {
+            "label": "B",
+            "text": "her apple samples contained the least vitamin C of the four fruits, 5 milligrams per 100 grams."
+          },
+          {
+            "label": "C",
+            "text": "her orange samples contained 53 milligrams of vitamin C per 100 grams, far more than her apple samples did."
+          },
+          {
+            "label": "D",
+            "text": "her kiwi samples contained 93 milligrams of vitamin C per 100 grams, compared with 53 milligrams in her orange samples."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "To show oranges were not the richest source, the student needs a fruit with more vitamin C than oranges. Kiwi had 93 mg per 100 g, compared with 53 mg for oranges, so choice D completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but strawberries (47 mg) had less vitamin C than oranges (53 mg), so this doesn't show oranges were beaten."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it is about the poorest source, not about whether oranges were the richest."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but showing oranges beat apples doesn't show that some fruit beat oranges."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Engineer Yusuf Demir tested four insulation panels by measuring how much heat passed through each one under identical conditions; less heat lost means better insulation. Demir claims that the choice of material can matter more than thickness, since a thin layer of a good insulating material can outperform a much thicker layer of a poorer one."
+          }
+        ],
+        "table": {
+          "title": "Heat lost through four insulation panels",
+          "columns": [
+            "Panel",
+            "Material",
+            "Thickness (cm)",
+            "Heat lost (watts)"
+          ],
+          "rows": [
+            [
+              "1",
+              "Fiberglass",
+              "10",
+              "18"
+            ],
+            [
+              "2",
+              "Fiberglass",
+              "5",
+              "34"
+            ],
+            [
+              "3",
+              "Aerogel",
+              "2",
+              "16"
+            ],
+            [
+              "4",
+              "Foam",
+              "5",
+              "22"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Demir's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Panel 1, with 10 centimeters of fiberglass, lost about half as much heat as panel 2, with 5 centimeters of fiberglass."
+          },
+          {
+            "label": "B",
+            "text": "Panel 4, with 5 centimeters of foam, lost less heat than panel 2, with 5 centimeters of fiberglass."
+          },
+          {
+            "label": "C",
+            "text": "Panel 3 lost less heat than any of the other panels."
+          },
+          {
+            "label": "D",
+            "text": "Panel 3, with only 2 centimeters of aerogel, lost less heat than panel 1, with 10 centimeters of fiberglass."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Demir's claim is that a thin layer of a good material can beat a much thicker layer of a poorer one. Panel 3 (2 cm of aerogel) lost 16 watts, while panel 1 (10 cm of fiberglass, five times as thick) lost 18 watts. The thinner panel insulated better, which is exactly what choice D says.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true (18 watts vs. 34 watts), but it shows that thickness matters for the same material, which doesn't support the claim that material can matter more than thickness."
+          },
+          {
+            "label": "B",
+            "text": "This is true and shows that material matters when thickness is equal, but it doesn't show a thin panel beating a much thicker one."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it doesn't mention thickness, so it doesn't show that panel 3 beat a thicker panel."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A library that serves a large population can record many loans even if each resident borrows relatively little. Librarian Rosa Quint therefore argues that ranking libraries by their total number of loans can be misleading, and she points to four libraries in her region, where the library with the most loans is not the one whose residents borrow the most per person."
+          }
+        ],
+        "table": {
+          "title": "Population served and annual loans at four libraries",
+          "columns": [
+            "Library",
+            "Population served",
+            "Annual loans"
+          ],
+          "rows": [
+            [
+              "Northgate",
+              "80,000",
+              "240,000"
+            ],
+            [
+              "Elm Park",
+              "20,000",
+              "110,000"
+            ],
+            [
+              "Westfield",
+              "50,000",
+              "175,000"
+            ],
+            [
+              "Cedar Hill",
+              "35,000",
+              "70,000"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Quint's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Northgate recorded 240,000 loans, more than any of the other three libraries."
+          },
+          {
+            "label": "B",
+            "text": "Westfield and Cedar Hill together served more people than Northgate did."
+          },
+          {
+            "label": "C",
+            "text": "Elm Park, which serves 20,000 people, recorded 110,000 loans, while Northgate, which serves four times as many people, recorded only about twice as many loans."
+          },
+          {
+            "label": "D",
+            "text": "Cedar Hill recorded 70,000 loans, the fewest of the four libraries, and served 35,000 people."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Quint's point is that the library with the most loans is not the one whose residents borrow the most per person. Northgate serves 4 times as many people as Elm Park (80,000 vs. 20,000) but records only about 2.2 times as many loans (240,000 vs. 110,000). So Elm Park residents borrow far more per person (5.5 loans each vs. 3 at Northgate), even though Northgate has the highest total. Choice C presents this comparison.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true and shows Northgate has the highest total, but it says nothing about population, so it can't show that the total is misleading."
+          },
+          {
+            "label": "B",
+            "text": "This is true (85,000 vs. 80,000 people), but it compares populations only and says nothing about loans."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but Cedar Hill has both the fewest loans and the fewest loans per person (2 each), so its total is not misleading."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

@@ -72,6 +72,654 @@
           }
         ]
       }
+    },
+    {
+      "id": "cross-text-connections-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Several rural school districts have switched to a four-day school week, making each remaining day longer. Administrators in these districts report that the change saves money on buses and heating and makes it easier to hire teachers, who value the extra day off. Many see the schedule as an appealing option for small districts with tight budgets."
+          },
+          {
+            "label": "Text 2",
+            "text": "Education researcher Kendra Sloane acknowledges that four-day weeks can cut costs. But in her analysis of districts that adopted the schedule, students' math scores grew more slowly than in similar districts that kept five-day weeks. Sloane argues that districts should weigh the savings against these academic effects before switching."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Sloane (Text 2) most likely respond to the administrators' view described in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would dispute their claim that a four-day week saves money."
+          },
+          {
+            "label": "B",
+            "text": "She would argue that hiring teachers is a more important goal than saving money."
+          },
+          {
+            "label": "C",
+            "text": "She would urge every district with a tight budget to adopt the schedule."
+          },
+          {
+            "label": "D",
+            "text": "She would agree that the schedule can save money but caution that it may slow students' learning."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Sloane \"acknowledges that four-day weeks can cut costs,\" so she agrees with the administrators on savings. But she found slower growth in math scores and says the savings should be weighed against that. Choice D captures both parts.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Sloane explicitly accepts that the schedule can cut costs."
+          },
+          {
+            "label": "B",
+            "text": "Sloane doesn't discuss teacher hiring at all; her concern is student achievement."
+          },
+          {
+            "label": "C",
+            "text": "Sloane urges caution, not adoption, because of the effects on math scores."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Over the past fifty years, many ensembles have begun performing music from the 1700s on instruments built as they were at the time, such as violins strung with gut rather than steel. Critic Martin Ehrlich praises this approach, arguing that only period instruments let listeners hear the music as its composers intended it to sound."
+          },
+          {
+            "label": "Text 2",
+            "text": "Musicologist Ayesha Grant points out that composers of the 1700s often rearranged their own works for whatever instruments were available, replacing a violin with a flute when needed. To Grant, this suggests that these composers cared less about exact sounds than modern purists assume, and that performances on modern instruments can be just as faithful to their intentions."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Grant (Text 2) most likely respond to Ehrlich's argument in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would say it assumes that composers were more attached to particular instrument sounds than they actually were."
+          },
+          {
+            "label": "B",
+            "text": "She would agree that period instruments are the only faithful way to perform this music."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that modern audiences dislike the sound of gut strings."
+          },
+          {
+            "label": "D",
+            "text": "She would claim that composers of the 1700s never wrote music for specific instruments."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Ehrlich's argument depends on the idea that composers intended a specific sound that only period instruments can produce. Grant notes that composers freely swapped instruments, which suggests they cared less about exact sounds. So she would say Ehrlich's argument overstates how attached composers were to particular sounds (choice A).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Grant says modern instruments \"can be just as faithful,\" so she would not agree that period instruments are the only faithful option."
+          },
+          {
+            "label": "C",
+            "text": "Grant says nothing about what modern audiences like."
+          },
+          {
+            "label": "D",
+            "text": "This goes too far. Grant says composers often rearranged works, not that they never wrote for specific instruments."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Green roofs, which are covered with soil and plants, are increasingly popular in cities. In one city, office buildings with green roofs used noticeably less energy for summer air-conditioning than similar buildings with ordinary roofs. Supporters say every city should require green roofs on all new buildings."
+          },
+          {
+            "label": "Text 2",
+            "text": "Engineer Tomasz Wilk notes that green roofs perform best where summers are hot and rain falls regularly. In dry climates, the plants need frequent watering, which can cancel out the savings, and in cool climates the cooling benefit is small. Wilk recommends that cities study their local conditions before adopting any rules."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Wilk (Text 2) most likely respond to the supporters' proposal in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "He would argue that green roofs never reduce energy use."
+          },
+          {
+            "label": "B",
+            "text": "He would say that one requirement for every city ignores how much the results depend on local climate."
+          },
+          {
+            "label": "C",
+            "text": "He would claim that the study of office buildings measured energy use incorrectly."
+          },
+          {
+            "label": "D",
+            "text": "He would recommend requiring green roofs only on office buildings."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The supporters want every city to require green roofs. Wilk says the benefits depend on climate: they shrink in dry or cool places, so cities should study local conditions first. He would object that a single rule for all cities overlooks those differences (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Wilk says green roofs \"perform best\" in some climates, so he doesn't think they never help."
+          },
+          {
+            "label": "C",
+            "text": "Wilk doesn't question how the study was done; he questions applying it everywhere."
+          },
+          {
+            "label": "D",
+            "text": "Wilk's concern is climate, not building type."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Popular accounts often present major inventions as the work of lone geniuses. In this telling, Thomas Edison invented the electric light bulb in 1879 through sheer persistence, testing material after material until he found one that worked. Such stories are inspiring, and they reflect a widespread belief that progress depends on exceptional individuals."
+          },
+          {
+            "label": "Text 2",
+            "text": "Historians of technology tell a more crowded story. Inventors including Joseph Swan in England had built working incandescent lamps before Edison did. Edison's team improved on these designs, producing a longer-lasting bulb, and developed a system of generators and wiring to power it. Invention, in this view, is usually cumulative and collaborative."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would the historians described in Text 2 most likely respond to the popular accounts in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "By agreeing that Edison's persistence was the main reason electric lighting succeeded"
+          },
+          {
+            "label": "B",
+            "text": "By arguing that Joseph Swan, not Edison, deserves to be remembered as the lone genius behind the light bulb"
+          },
+          {
+            "label": "C",
+            "text": "By arguing that crediting Edison alone overlooks earlier inventors and the work of his team"
+          },
+          {
+            "label": "D",
+            "text": "By denying that Edison made any real contribution to electric lighting"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Text 1 describes accounts that credit Edison alone. Text 2 says other inventors built lamps first and that Edison's team improved them and built a power system, so invention is \"cumulative and collaborative.\" The historians would say the lone-genius story leaves out these other contributors (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Text 2 doesn't single out Edison's persistence; it stresses earlier inventors and teamwork."
+          },
+          {
+            "label": "B",
+            "text": "Text 2 rejects the lone-genius idea altogether, so replacing Edison with Swan would contradict its point."
+          },
+          {
+            "label": "D",
+            "text": "Text 2 credits Edison's team with a longer-lasting bulb and a power system, so it doesn't deny his contribution."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "When a travel company let half of its customer-service staff work from home for nine months, economist Rafael Ortiz found that the remote employees handled about 10 percent more calls per day than those who stayed in the office. Ortiz concludes that working from home makes employees more productive."
+          },
+          {
+            "label": "Text 2",
+            "text": "Studies of remote work often measure productivity by counting tasks that are easy to count, such as calls answered. Management scholar Yuki Tanabe argues that much valuable work, such as mentoring new colleagues or trading ideas that lead to new products, happens in informal conversations and never shows up in such tallies. Conclusions based only on countable output, she warns, may miss what remote work costs."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Tanabe (Text 2) most likely respond to Ortiz's conclusion in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would claim that the remote employees actually answered fewer calls than the office employees."
+          },
+          {
+            "label": "B",
+            "text": "She would say the conclusion rests on a narrow measure that may leave out valuable work that is hard to count."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that customer-service jobs should never be done from home."
+          },
+          {
+            "label": "D",
+            "text": "She would agree with the conclusion and add that remote work also improves mentoring."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Ortiz measured productivity by calls handled. Tanabe warns that conclusions based only on countable output like \"calls answered\" can miss informal work such as mentoring and sharing ideas. She would say his conclusion relies on too narrow a measure (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Tanabe doesn't dispute the call counts; she questions what they leave out."
+          },
+          {
+            "label": "C",
+            "text": "Tanabe warns that some costs may be missed but doesn't say any job must be done in an office."
+          },
+          {
+            "label": "D",
+            "text": "Tanabe suggests mentoring is the kind of work remote studies may miss, implying it may suffer, not improve."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Readers of novelist Ilse Moravec often remark on her spare style: short sentences, few adjectives and almost no description of what her characters feel. Critic Paul Danner argues that this restraint leaves her novels emotionally cold, keeping readers at a distance from characters they are never allowed to know."
+          },
+          {
+            "label": "Text 2",
+            "text": "Critic Noor Haddad finds Moravec's restraint anything but cold. Because her characters rarely name their feelings, readers must infer grief or longing from small gestures: a coat left on a chair, a letter never answered. Haddad contends that this effort draws readers more deeply into the characters' inner lives than direct statement could."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Haddad (Text 2) most likely respond to Danner's claim in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would dispute that Moravec's writing is restrained."
+          },
+          {
+            "label": "B",
+            "text": "She would agree that the novels are emotionally cold but argue that the coldness is intentional."
+          },
+          {
+            "label": "C",
+            "text": "She would point out that Moravec's characters often describe their feelings directly."
+          },
+          {
+            "label": "D",
+            "text": "She would argue that the restraint Danner describes actually increases readers' engagement with the characters' emotions."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Both critics agree that Moravec rarely describes her characters' feelings. Danner thinks this keeps readers at a distance; Haddad thinks the effort of inferring feelings draws readers \"more deeply into the characters' inner lives.\" So she would argue the same restraint has the opposite effect from the one Danner claims (choice D).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Haddad accepts that the style is restrained; she disagrees about its effect."
+          },
+          {
+            "label": "B",
+            "text": "Haddad says the restraint is \"anything but cold,\" so she wouldn't agree that the novels are cold."
+          },
+          {
+            "label": "C",
+            "text": "Haddad says the characters \"rarely name their feelings,\" which contradicts this choice."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Because feathers are essential to flight in modern birds, scientists long assumed that feathers first evolved to help the ancestors of birds fly. On this view, feathers were an adaptation for gliding or flapping from their very beginning."
+          },
+          {
+            "label": "Text 2",
+            "text": "Since the 1990s, paleontologists have described many dinosaurs that had simple, hairlike feathers but could not fly, such as Sinosauropteryx, a small predator with short arms. These finds suggest that feathers appeared well before flight, perhaps for warmth or display, and were only later put to use in flying."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would the author of Text 2 most likely respond to the assumption described in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "By arguing that fossil evidence indicates feathers first served other purposes and were later adapted for flight"
+          },
+          {
+            "label": "B",
+            "text": "By arguing that feathers are not actually necessary for flight in modern birds"
+          },
+          {
+            "label": "C",
+            "text": "By suggesting that Sinosauropteryx used its feathers to glide"
+          },
+          {
+            "label": "D",
+            "text": "By agreeing that feathers evolved for flight but questioning when that happened"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Text 1 describes the assumption that feathers evolved for flight from the start. Text 2 cites feathered dinosaurs that couldn't fly and concludes that feathers came first, perhaps for warmth or display, and were \"only later put to use in flying.\" Choice A states that response.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Text 2 says nothing to challenge the role of feathers in modern birds' flight."
+          },
+          {
+            "label": "C",
+            "text": "Text 2 presents Sinosauropteryx as a dinosaur that could not fly."
+          },
+          {
+            "label": "D",
+            "text": "Text 2 rejects the idea that feathers evolved for flight, not just its timing."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Urban planner Celia Novak compared fifty cities and found that those with the most kilometers of protected bike lanes also had the highest shares of residents who commute by bicycle. Novak concludes that building protected lanes leads more people to cycle, and she urges cities to expand their networks."
+          },
+          {
+            "label": "Text 2",
+            "text": "Transportation researcher Idris Mensah notes that cities often build bike lanes in response to demand: where many people already cycle, officials face pressure to add lanes. A comparison of cities at a single moment therefore can't show which came first. Mensah points instead to cities that built large networks within a few years; cycling rose sharply afterward in several of them, which he considers far stronger evidence that lanes increase cycling."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Mensah (Text 2) most likely respond to Novak's conclusion in Text 1?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "He would reject it, arguing that bike lanes are built only where many people already cycle."
+          },
+          {
+            "label": "B",
+            "text": "He would accept the conclusion but argue that her comparison of cities does not, on its own, establish it."
+          },
+          {
+            "label": "C",
+            "text": "He would argue that her finding is better explained by differences in the cities' sizes."
+          },
+          {
+            "label": "D",
+            "text": "He would agree with it and consider her comparison the strongest available evidence for it."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Mensah believes lanes do increase cycling; he cites cities where cycling rose after large networks were built. But he argues that a single-moment comparison like Novak's \"can't show which came first,\" because cities also build lanes where people already cycle. So he would accept her conclusion while saying her evidence alone doesn't prove it (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Mensah says cities \"often\" build lanes in response to demand, not \"only,\" and he thinks lanes do increase cycling, so he wouldn't reject the conclusion."
+          },
+          {
+            "label": "C",
+            "text": "Mensah never mentions city size; his concern is which came first, the lanes or the cyclists."
+          },
+          {
+            "label": "D",
+            "text": "Mensah agrees with the conclusion but considers the before-and-after evidence far stronger than a single-moment comparison."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cross-text-connections-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": "Text 1",
+            "text": "Vervet monkeys give different alarm calls for leopards, eagles and snakes, and each call triggers a different response: monkeys hearing the leopard call run up into trees, while those hearing the eagle call look up or dive into bushes. Because each call corresponds to a specific kind of predator, some researchers argue that the calls function much like words, naming the danger."
+          },
+          {
+            "label": "Text 2",
+            "text": "Animal behaviorist Selin Arslan agrees that vervet alarm calls are remarkably specific but questions what they are specific about. Each predator requires a different escape, she observes, so a call could just as well mean \"climb!\" or \"hide!\" as \"leopard\" or \"eagle.\" Arslan argues that the monkeys' responses alone cannot tell these possibilities apart."
+          }
+        ],
+        "table": null,
+        "stem": "Based on the texts, how would Arslan (Text 2) most likely respond to the argument in Text 1 that the calls function like words naming dangers?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "She would argue that the calls are not specific enough to distinguish one predator from another."
+          },
+          {
+            "label": "B",
+            "text": "She would argue that vervet monkeys respond to every alarm call in the same way."
+          },
+          {
+            "label": "C",
+            "text": "She would argue that the monkeys' reactions are equally consistent with the calls being instructions about how to escape."
+          },
+          {
+            "label": "D",
+            "text": "She would argue that the calls name predators but give no indication of what the monkeys should do."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Text 1 reasons that because each call matches a predator and triggers a matching response, the call names the predator. Arslan accepts that the calls are specific, but notes that each predator also requires a different escape, so a call could mean \"climb!\" rather than \"leopard.\" She says the responses can't tell these apart. Choice C states this.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Arslan says the calls are \"remarkably specific,\" so she doesn't think they fail to distinguish predators."
+          },
+          {
+            "label": "B",
+            "text": "Both texts describe different responses to different calls."
+          },
+          {
+            "label": "D",
+            "text": "Arslan raises the possibility that the calls are instructions, not that they are names; she doesn't conclude that they name predators."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

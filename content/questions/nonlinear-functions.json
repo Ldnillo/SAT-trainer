@@ -35,6 +35,513 @@
           }
         ]
       }
+    },
+    {
+      "id": "nonlinear-functions-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = 3 \\cdot 2^x$. What is the value of $f(4)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$24$"
+          },
+          {
+            "label": "B",
+            "text": "$48$"
+          },
+          {
+            "label": "C",
+            "text": "$96$"
+          },
+          {
+            "label": "D",
+            "text": "$1{,}296$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $x = 4$: $2^4 = 16$, so $f(4) = 3 \\cdot 16 = 48$. Evaluate the power before multiplying by $3$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This computes $3 \\cdot 2 \\cdot 4$, multiplying by the exponent instead of raising $2$ to it."
+          },
+          {
+            "label": "C",
+            "text": "This uses $2^5 = 32$ instead of $2^4 = 16$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies $3 \\cdot 2 = 6$ first and then computes $6^4$, but the exponent applies only to $2$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $g$ is defined by $g(x) = (x - 5)(x + 1)$. For which values of $x$ is $g(x) = 0$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-5$ and $1$"
+          },
+          {
+            "label": "B",
+            "text": "$5$ and $-1$"
+          },
+          {
+            "label": "C",
+            "text": "$-5$ and $-1$"
+          },
+          {
+            "label": "D",
+            "text": "$5$ and $1$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "A product is zero when one of its factors is zero. $x - 5 = 0$ gives $x = 5$, and $x + 1 = 0$ gives $x = -1$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This reads the numbers in the factors with the signs switched; $g(-5) = (-10)(-4) = 40$."
+          },
+          {
+            "label": "C",
+            "text": "$x = -5$ makes $x + 5$ zero, not $x - 5$; $g(-5) = 40$."
+          },
+          {
+            "label": "D",
+            "text": "$x = 1$ makes $x - 1$ zero, not $x + 1$; $g(1) = (-4)(2) = -8$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-004",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $h$ is defined by $h(x) = x^2 - 3x + 10$. What is the value of $h(-2)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Substitute $x = -2$: $(-2)^2 - 3(-2) + 10 = 4 + 6 + 10 = 20$. Note that $(-2)^2 = 4$ and $-3 \\cdot (-2) = +6$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The population of a small town is modeled by $P(t) = 18{,}500(0.97)^t$, where $t$ is the number of years after 2020. Which statement best describes what the model says about the population?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "It decreases by $3\\%$ each year."
+          },
+          {
+            "label": "B",
+            "text": "It decreases by $97\\%$ each year."
+          },
+          {
+            "label": "C",
+            "text": "It increases by $3\\%$ each year."
+          },
+          {
+            "label": "D",
+            "text": "It decreases by $970$ people each year."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Each year the population is multiplied by $0.97$, meaning it keeps $97\\%$ of the previous year's value. Losing $100\\% - 97\\% = 3\\%$ each year is a $3\\%$ yearly decrease.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "$0.97$ is the fraction that remains each year, not the fraction lost. A $97\\%$ decrease would multiply by $0.03$."
+          },
+          {
+            "label": "C",
+            "text": "A growth factor less than $1$ means decrease; a $3\\%$ increase would use $1.03$."
+          },
+          {
+            "label": "D",
+            "text": "The model is exponential, so the change is a constant percent, not a constant number of people."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $y = 2x^2 - 12x + 23$ is a parabola with vertex $(h, k)$. What is the value of $h + k$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "8"
+        ],
+        "explanation": "The $x$-coordinate of the vertex is $h = -\\frac{b}{2a} = -\\frac{-12}{2(2)} = 3$. Then $k = 2(3)^2 - 12(3) + 23 = 18 - 36 + 23 = 5$. So $h + k = 3 + 5 = 8$. (Completing the square gives the same result: $y = 2(x - 3)^2 + 5$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": null,
+          "columns": [
+            "$x$",
+            "$f(x)$"
+          ],
+          "rows": [
+            [
+              "$0$",
+              "$5$"
+            ],
+            [
+              "$1$",
+              "$15$"
+            ],
+            [
+              "$2$",
+              "$45$"
+            ],
+            [
+              "$3$",
+              "$135$"
+            ]
+          ]
+        },
+        "stem": "The table shows four values of $x$ and the corresponding values of $f(x)$ for an exponential function $f$. Which equation defines $f$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$f(x) = 3 \\cdot 5^x$"
+          },
+          {
+            "label": "B",
+            "text": "$f(x) = 5 + 10x$"
+          },
+          {
+            "label": "C",
+            "text": "$f(x) = 5 \\cdot 3^{x + 1}$"
+          },
+          {
+            "label": "D",
+            "text": "$f(x) = 5 \\cdot 3^x$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "When $x = 0$, $f(0) = 5$, so the starting value is $5$. Each time $x$ goes up by $1$, $f(x)$ is multiplied by $3$ ($15 \\div 5 = 3$, $45 \\div 15 = 3$, $135 \\div 45 = 3$). An exponential function with starting value $5$ and growth factor $3$ is $f(x) = 5 \\cdot 3^x$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This switches the starting value and the growth factor; it gives $f(0) = 3$ and $f(2) = 75$."
+          },
+          {
+            "label": "B",
+            "text": "This linear rule matches the first two rows but gives $f(2) = 25$, not $45$."
+          },
+          {
+            "label": "C",
+            "text": "The extra $+1$ in the exponent gives $f(0) = 15$, not $5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A ball is thrown upward from the top of a building. Its height above the ground, in feet, $t$ seconds after it is thrown is modeled by $h(t) = -16t^2 + 64t + 80$. According to the model, how many seconds after it is thrown does the ball hit the ground?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1$"
+          },
+          {
+            "label": "B",
+            "text": "$2$"
+          },
+          {
+            "label": "C",
+            "text": "$5$"
+          },
+          {
+            "label": "D",
+            "text": "$144$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The ball hits the ground when $h(t) = 0$: $-16t^2 + 64t + 80 = 0$. Divide by $-16$: $t^2 - 4t - 5 = 0$, so $(t - 5)(t + 1) = 0$. Time cannot be negative, so $t = 5$ seconds.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes the root $t = -1$ and drops its negative sign; $h(1) = 128$, so the ball is still in the air."
+          },
+          {
+            "label": "B",
+            "text": "This is the time of the maximum height, $t = -\\frac{64}{2(-16)} = 2$, not when the height is $0$."
+          },
+          {
+            "label": "D",
+            "text": "This is the maximum height in feet, $h(2) = 144$, not a time."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $y = x^2 + bx + c$, where $b$ and $c$ are constants, crosses the $x$-axis at two points that are $8$ units apart. The vertex of the graph is $(5, k)$. What is the value of $c + k$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-7"
+        ],
+        "explanation": "A parabola is symmetric about the vertical line through its vertex, $x = 5$. The two $x$-intercepts are $8$ units apart, so each is $4$ units from $x = 5$: they are $x = 1$ and $x = 9$. Because the leading coefficient is $1$, $y = (x - 1)(x - 9) = x^2 - 10x + 9$, so $c = 9$. The vertex height is $k = 5^2 - 10(5) + 9 = -16$. So $c + k = 9 + (-16) = -7$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The number of bacteria in a lab culture is modeled by $N(t) = 400(1.21)^t$, where $t$ is the time in hours since the start of an experiment. According to the model, by what percent does the number of bacteria increase every $30$ minutes?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$10\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$10.5\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$21\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$42\\%$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Thirty minutes is $\\frac{1}{2}$ hour, so the growth factor for a half hour is $(1.21)^{\\frac{1}{2}} = \\sqrt{1.21} = 1.1$. Check: $N(t) = 400(1.1^2)^t = 400(1.1)^{2t}$, and $2t$ counts half hours. Multiplying by $1.1$ every half hour is a $10\\%$ increase.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This halves the hourly rate ($21\\% \\div 2$), but percent growth compounds; two $10.5\\%$ increases give about $22.1\\%$ per hour, not $21\\%$."
+          },
+          {
+            "label": "C",
+            "text": "This is the increase per hour, not per $30$ minutes."
+          },
+          {
+            "label": "D",
+            "text": "This doubles the hourly rate, which would describe a longer period, not a shorter one."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

@@ -63,6 +63,489 @@
           }
         ]
       }
+    },
+    {
+      "id": "equivalent-expressions-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which expression is equivalent to $3(2x - 4) - 2(x - 5)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4x - 22$"
+          },
+          {
+            "label": "B",
+            "text": "$4x - 2$"
+          },
+          {
+            "label": "C",
+            "text": "$8x - 2$"
+          },
+          {
+            "label": "D",
+            "text": "$4x - 17$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Distribute each factor: $3(2x - 4) = 6x - 12$ and $-2(x - 5) = -2x + 10$. Combine like terms: $6x - 2x = 4x$ and $-12 + 10 = -2$. The result is $4x - 2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This distributes $-2$ to $-5$ as $-10$ instead of $+10$."
+          },
+          {
+            "label": "C",
+            "text": "This treats $-2(x)$ as $+2x$, adding the $x$-terms instead of subtracting."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies only $x$ by $-2$ and writes the $-5$ unchanged, giving $6x - 12 - 2x - 5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which expression is equivalent to $\\frac{12a^6b^3}{4a^2b}$, where $a \\neq 0$ and $b \\neq 0$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3a^3b^3$"
+          },
+          {
+            "label": "B",
+            "text": "$8a^4b^2$"
+          },
+          {
+            "label": "C",
+            "text": "$3a^4b^2$"
+          },
+          {
+            "label": "D",
+            "text": "$3a^8b^4$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Divide the coefficients: $12 \\div 4 = 3$. When dividing powers with the same base, subtract the exponents: $a^{6-2} = a^4$ and $b^{3-1} = b^2$. The result is $3a^4b^2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides the exponents ($6 \\div 2$ and $3 \\div 1$) instead of subtracting them."
+          },
+          {
+            "label": "B",
+            "text": "This subtracts the coefficients ($12 - 4$) instead of dividing them."
+          },
+          {
+            "label": "D",
+            "text": "This adds the exponents, which is the rule for multiplying powers, not dividing."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-004",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The expression $(x + 7)(x - 3)$ is equivalent to $x^2 + bx - 21$ for all values of $x$, where $b$ is a constant. What is the value of $b$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "4"
+        ],
+        "explanation": "Multiply using FOIL: $x \\cdot x = x^2$, $x \\cdot (-3) = -3x$, $7 \\cdot x = 7x$ and $7 \\cdot (-3) = -21$. The $x$-terms combine to $-3x + 7x = 4x$, so the product is $x^2 + 4x - 21$ and $b = 4$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which expression is equivalent to $\\frac{x^2 - 9}{x^2 + 5x + 6}$ for $x \\neq -2$ and $x \\neq -3$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{x + 3}{x + 2}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{x - 3}{x + 2}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{-9}{5x + 6}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\frac{x - 3}{x + 3}$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Factor the top as a difference of squares: $x^2 - 9 = (x - 3)(x + 3)$. Factor the bottom: $x^2 + 5x + 6 = (x + 2)(x + 3)$, since $2 \\cdot 3 = 6$ and $2 + 3 = 5$. Cancel the common factor $(x + 3)$ to get $\\frac{x - 3}{x + 2}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This factors $x^2 - 9$ as $(x + 3)^2$ or cancels the wrong factor, leaving $x + 3$ on top."
+          },
+          {
+            "label": "C",
+            "text": "This cancels the $x^2$ terms as if they were common factors, but $x^2$ is a term, not a factor, of the top and bottom."
+          },
+          {
+            "label": "D",
+            "text": "This cancels $(x + 2)$ instead of $(x + 3)$; $x + 2$ is not a factor of the numerator."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which expression is equivalent to $8^x \\cdot 2^{x + 3}$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$16^{x + 3}$"
+          },
+          {
+            "label": "B",
+            "text": "$10^{2x + 3}$"
+          },
+          {
+            "label": "C",
+            "text": "$8 \\cdot 16^x$"
+          },
+          {
+            "label": "D",
+            "text": "$16^x + 8$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Write everything as a power of 2: $8^x = (2^3)^x = 2^{3x}$. Then $2^{3x} \\cdot 2^{x + 3} = 2^{4x + 3}$. Split the exponent: $2^{4x + 3} = 2^3 \\cdot 2^{4x} = 8 \\cdot (2^4)^x = 8 \\cdot 16^x$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$16^{x + 3} = 2^{4x + 12}$, which is not $2^{4x + 3}$; the $+3$ in the exponent belongs to base 2, not base 16."
+          },
+          {
+            "label": "B",
+            "text": "This adds the bases $8 + 2$ and the exponents, but you can only combine exponents when the bases are the same."
+          },
+          {
+            "label": "D",
+            "text": "This splits $2^{4x + 3}$ into $2^{4x} + 2^3$; a sum in the exponent gives a product of powers, not a sum."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-007",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For $x \\neq -2$ and $x \\neq 1$, the expression $\\frac{6}{x + 2} - \\frac{3}{x - 1}$ can be written as $\\frac{ax + b}{(x + 2)(x - 1)}$, where $a$ and $b$ are constants. What is the value of $a + b$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-9"
+        ],
+        "explanation": "Use the common denominator $(x + 2)(x - 1)$. The numerator is $6(x - 1) - 3(x + 2) = 6x - 6 - 3x - 6 = 3x - 12$. So $a = 3$ and $b = -12$, and $a + b = 3 + (-12) = -9$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "For $x > 0$, which expression is equivalent to $\\frac{\\sqrt[3]{x^2} \\cdot x^{\\frac{1}{2}}}{\\sqrt{x^3}}$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\sqrt[3]{x}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\sqrt{x}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{1}{\\sqrt[3]{x}}$"
+          },
+          {
+            "label": "D",
+            "text": "$\\sqrt[9]{x^2}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Rewrite the radicals as fractional exponents: $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$ and $\\sqrt{x^3} = x^{\\frac{3}{2}}$. Multiply in the numerator by adding exponents: $\\frac{2}{3} + \\frac{1}{2} = \\frac{7}{6}$. Divide by subtracting: $\\frac{7}{6} - \\frac{3}{2} = \\frac{7}{6} - \\frac{9}{6} = -\\frac{2}{6} = -\\frac{1}{3}$. So the expression is $x^{-\\frac{1}{3}} = \\frac{1}{\\sqrt[3]{x}}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This gets the exponent $\\frac{1}{3}$ instead of $-\\frac{1}{3}$, a sign error when subtracting $\\frac{3}{2}$."
+          },
+          {
+            "label": "B",
+            "text": "This rewrites $\\sqrt[3]{x^2}$ as $x^{\\frac{3}{2}}$ (flipping the fraction), which gives $\\frac{3}{2} + \\frac{1}{2} - \\frac{3}{2} = \\frac{1}{2}$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies and divides the exponents ($\\frac{2}{3} \\cdot \\frac{1}{2} \\div \\frac{3}{2} = \\frac{2}{9}$) instead of adding and subtracting them."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The expression $\\frac{4x^2 + 10x - 7}{2x - 1}$ is equivalent to $2x + 6 + \\frac{A}{2x - 1}$ for $x \\neq \\frac{1}{2}$, where $A$ is a constant. What is the value of $A$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-1"
+        ],
+        "explanation": "Multiply both forms by $2x - 1$: $4x^2 + 10x - 7 = (2x + 6)(2x - 1) + A$. Expand: $(2x + 6)(2x - 1) = 4x^2 - 2x + 12x - 6 = 4x^2 + 10x - 6$. So $4x^2 + 10x - 7 = 4x^2 + 10x - 6 + A$, which gives $A = -7 - (-6) = -1$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equivalent-expressions-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Which of the following is equivalent to $x^4 - 13x^2 + 36$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(x - 2)^2(x - 3)^2$"
+          },
+          {
+            "label": "B",
+            "text": "$(x^2 + 4)(x^2 + 9)$"
+          },
+          {
+            "label": "C",
+            "text": "$(x - 2)(x + 2)(x - 3)(x + 3)$"
+          },
+          {
+            "label": "D",
+            "text": "$(x - 4)(x + 4)(x - 9)(x + 9)$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Treat $x^2$ as a single quantity $u$: $u^2 - 13u + 36$. Two numbers that multiply to $36$ and add to $-13$ are $-4$ and $-9$, so this factors as $(u - 4)(u - 9) = (x^2 - 4)(x^2 - 9)$. Each factor is a difference of squares: $x^2 - 4 = (x - 2)(x + 2)$ and $x^2 - 9 = (x - 3)(x + 3)$. The result is $(x - 2)(x + 2)(x - 3)(x + 3)$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$(x - 2)^2(x - 3)^2 = (x^2 - 5x + 6)^2$, which has odd-power terms such as $-10x^3$; the factors $x + 2$ and $x + 3$ are needed instead."
+          },
+          {
+            "label": "B",
+            "text": "This uses $+4$ and $+9$, which multiply to $36$ but add to $+13$, giving $x^4 + 13x^2 + 36$."
+          },
+          {
+            "label": "D",
+            "text": "This factors $x^2 - 4$ and $x^2 - 9$ as if they were $x^2 - 16$ and $x^2 - 81$; the square roots of $4$ and $9$ are $2$ and $3$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

@@ -35,6 +35,489 @@
           }
         ]
       }
+    },
+    {
+      "id": "systems-of-linear-equations-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$y = 2x - 1$$ $$x + y = 11$$ What is the solution $(x, y)$ to the given system of equations?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(2, 3)$"
+          },
+          {
+            "label": "B",
+            "text": "$(4, 7)$"
+          },
+          {
+            "label": "C",
+            "text": "$(5, 6)$"
+          },
+          {
+            "label": "D",
+            "text": "$(7, 4)$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $y = 2x - 1$ into the second equation: $x + (2x - 1) = 11$, so $3x = 12$ and $x = 4$. Then $y = 2(4) - 1 = 7$. Check: $4 + 7 = 11$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$(2, 3)$ satisfies $y = 2x - 1$ but not $x + y = 11$, since $2 + 3 = 5$."
+          },
+          {
+            "label": "C",
+            "text": "$(5, 6)$ satisfies $x + y = 11$ but not $y = 2x - 1$, since $2(5) - 1 = 9$."
+          },
+          {
+            "label": "D",
+            "text": "This swaps the values of $x$ and $y$; $2(7) - 1 = 13$, not 4."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-003",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$x + y = 30$$ $$x - y = 8$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "19"
+        ],
+        "explanation": "Add the two equations to eliminate $y$: $(x + y) + (x - y) = 30 + 8$, so $2x = 38$ and $x = 19$. (Then $y = 11$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A school play sold $40$ tickets for a total of $\\$375$. Adult tickets cost $\\$12$ each and child tickets cost $\\$7$ each. Which system of equations can be used to find the number of adult tickets, $a$, and the number of child tickets, $c$, that were sold?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$a + c = 40$ and $12a + 7c = 375$"
+          },
+          {
+            "label": "B",
+            "text": "$a + c = 375$ and $12a + 7c = 40$"
+          },
+          {
+            "label": "C",
+            "text": "$a + c = 40$ and $7a + 12c = 375$"
+          },
+          {
+            "label": "D",
+            "text": "$a + c = 40$ and $19(a + c) = 375$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The total number of tickets is 40, so $a + c = 40$. Adult tickets bring in $12a$ dollars and child tickets bring in $7c$ dollars, so $12a + 7c = 375$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This switches the totals: 375 is the amount of money, and 40 is the number of tickets."
+          },
+          {
+            "label": "C",
+            "text": "This switches the prices, charging $\\$7$ for adult tickets and $\\$12$ for child tickets."
+          },
+          {
+            "label": "D",
+            "text": "This charges $\\$19$, the sum of both prices, for every ticket."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$3x + 2y = 7$$ $$5x - 2y = 17$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $x + y$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-1$"
+          },
+          {
+            "label": "B",
+            "text": "$2$"
+          },
+          {
+            "label": "C",
+            "text": "$3$"
+          },
+          {
+            "label": "D",
+            "text": "$4$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Add the equations to eliminate $y$: $8x = 24$, so $x = 3$. Substitute into the first equation: $9 + 2y = 7$, so $2y = -2$ and $y = -1$. Then $x + y = 3 + (-1) = 2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $y$ alone."
+          },
+          {
+            "label": "C",
+            "text": "This is the value of $x$ alone."
+          },
+          {
+            "label": "D",
+            "text": "This is $x - y$, not $x + y$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A chemist mixes a $10\\%$ salt solution with a $25\\%$ salt solution to make $30$ liters of a $20\\%$ salt solution. How many liters of the $25\\%$ solution does the chemist use?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Let $a$ be the liters of 10% solution and $b$ the liters of 25% solution. The total volume gives $a + b = 30$. The amount of salt gives $0.10a + 0.25b = 0.20(30) = 6$. Substitute $a = 30 - b$: $0.10(30 - b) + 0.25b = 6$, so $3 + 0.15b = 6$, $0.15b = 3$, and $b = 20$. The chemist uses 20 liters of the 25% solution (and 10 liters of the 10% solution).",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$y = \\frac{2}{3}x + 4$$ $$2x - 3y = -12$$ How many solutions does the given system of equations have?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Zero"
+          },
+          {
+            "label": "B",
+            "text": "Exactly one"
+          },
+          {
+            "label": "C",
+            "text": "Exactly two"
+          },
+          {
+            "label": "D",
+            "text": "Infinitely many"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Solve the second equation for $y$: $-3y = -2x - 12$, so $y = \\frac{2}{3}x + 4$. This is the same as the first equation, so the two equations describe the same line. Every point on that line is a solution, so there are infinitely many solutions.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "A system has no solution only when the lines are parallel and distinct; here the lines have the same slope and the same $y$-intercept, so they are the same line."
+          },
+          {
+            "label": "B",
+            "text": "Exactly one solution requires different slopes, but both lines have slope $\\frac{2}{3}$."
+          },
+          {
+            "label": "C",
+            "text": "Two distinct lines can meet at most once, so a system of two linear equations never has exactly two solutions."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Gym A charges a $\\$45$ joining fee plus $\\$30$ per month. Gym B has no joining fee and charges $\\$39$ per month. After a certain number of months, the total cost of membership is the same at both gyms. What is that total cost, in dollars?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$5$"
+          },
+          {
+            "label": "B",
+            "text": "$150$"
+          },
+          {
+            "label": "C",
+            "text": "$195$"
+          },
+          {
+            "label": "D",
+            "text": "$240$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "After $m$ months, Gym A costs $45 + 30m$ and Gym B costs $39m$. Set them equal: $45 + 30m = 39m$, so $45 = 9m$ and $m = 5$. The total cost is $39(5) = 195$ dollars. Check Gym A: $45 + 30(5) = 195$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the number of months, not the total cost."
+          },
+          {
+            "label": "B",
+            "text": "This is only Gym A's monthly charges for 5 months, $30 \\cdot 5$, without the joining fee."
+          },
+          {
+            "label": "D",
+            "text": "This adds Gym A's joining fee to Gym B's cost, $45 + 39 \\cdot 5$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$0.5x + 1.5y = 4$$ $$ax + 6y = b$$ In the given system of equations, $a$ and $b$ are constants. If the system has infinitely many solutions, what is the value of $a + b$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "18"
+        ],
+        "explanation": "A system of two linear equations has infinitely many solutions when one equation is a constant multiple of the other. The $y$ coefficient changes from 1.5 to 6, so the second equation must be the first multiplied by 4: $4(0.5x + 1.5y) = 4(4)$ gives $2x + 6y = 16$. So $a = 2$ and $b = 16$, and $a + b = 18$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$y = 3x - 7$$ $$y = ax + b$$ In the given system of equations, $a$ and $b$ are constants. If the system has exactly one solution, which of the following must be true?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$a \\ne 3$"
+          },
+          {
+            "label": "B",
+            "text": "$b \\ne -7$"
+          },
+          {
+            "label": "C",
+            "text": "$a = 3$ and $b \\ne -7$"
+          },
+          {
+            "label": "D",
+            "text": "$a = -\\frac{1}{3}$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Two lines meet in exactly one point when they have different slopes. The first line has slope 3 and the second has slope $a$, so the system has exactly one solution exactly when $a \\ne 3$. The value of $b$ does not matter once the slopes differ.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "If $a = 3$ and $b \\ne -7$, the lines are parallel and never meet, so $b \\ne -7$ alone does not guarantee one solution; and when $a \\ne 3$, $b$ can be $-7$."
+          },
+          {
+            "label": "C",
+            "text": "These conditions make the lines parallel and distinct, so the system has no solution."
+          },
+          {
+            "label": "D",
+            "text": "This value makes the lines perpendicular, which does give one solution, but it is not required: any slope other than 3 also works."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

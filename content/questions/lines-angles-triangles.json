@@ -63,6 +63,489 @@
           }
         ]
       }
+    },
+    {
+      "id": "lines-angles-triangles-002",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two lines intersect at a point, forming two pairs of vertical angles. One angle measures $(3x + 10)^\\circ$ and the angle vertical to it measures $(5x - 30)^\\circ$. What is the value of $x$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "20"
+        ],
+        "explanation": "Vertical angles are equal, so $3x + 10 = 5x - 30$. Subtracting $3x$ from both sides and adding $30$ gives $40 = 2x$, so $x = 20$. (Check: each angle measures $70^\\circ$.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In isosceles triangle $DEF$, $DE = DF$ and the measure of angle $D$ is $40^\\circ$. What is the measure of angle $E$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$40^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$50^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$70^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$140^\\circ$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Because $DE = DF$, the angles opposite those sides, angles $F$ and $E$, are equal. They share the remaining $180^\\circ - 40^\\circ = 140^\\circ$ equally, so angle $E$ measures $\\frac{140^\\circ}{2} = 70^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This assumes angle $E$ equals angle $D$, but the equal angles are the ones opposite the equal sides, $E$ and $F$."
+          },
+          {
+            "label": "B",
+            "text": "This is the complement of $40^\\circ$, which would apply only if the angles summed to $90^\\circ$."
+          },
+          {
+            "label": "D",
+            "text": "This is the combined measure of angles $E$ and $F$, not the measure of angle $E$ alone."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Lines $\\ell$ and $m$ are parallel, and line $t$ crosses both of them. Two of the angles formed lie between $\\ell$ and $m$ and on the same side of $t$; one measures $(2x + 15)^\\circ$ and the other measures $(3x - 5)^\\circ$. What is the measure of the larger of these two angles?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$34^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$55^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$83^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$97^\\circ$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Angles between two parallel lines on the same side of a transversal (same-side interior angles) are supplementary. So $(2x + 15) + (3x - 5) = 180$, which gives $5x + 10 = 180$ and $x = 34$. The angles measure $2(34) + 15 = 83^\\circ$ and $3(34) - 5 = 97^\\circ$, so the larger is $97^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $x$, not an angle measure."
+          },
+          {
+            "label": "B",
+            "text": "This sets the two angles equal ($x = 20$), but same-side interior angles are supplementary, not equal."
+          },
+          {
+            "label": "C",
+            "text": "This is the smaller of the two angles."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-005",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, point $D$ lies on side $AB$ and point $E$ lies on side $AC$ so that segment $DE$ is parallel to side $BC$. If $AD = 6$, $DB = 4$ and $DE = 9$, what is the length of $BC$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "15"
+        ],
+        "explanation": "Because $DE$ is parallel to $BC$, triangle $ADE$ is similar to triangle $ABC$ (they share angle $A$, and the corresponding angles at $D$ and $B$ are equal). The side $AB$ is $6 + 4 = 10$, so the scale factor from triangle $ADE$ to triangle $ABC$ is $\\frac{10}{6} = \\frac{5}{3}$. Then $BC = 9 \\times \\frac{5}{3} = 15$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, side $BC$ is extended past $C$ to point $D$, and the measure of angle $ACD$ is $126^\\circ$. If the measure of angle $A$ is twice the measure of angle $B$, what is the measure of angle $A$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$42^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$54^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$63^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$84^\\circ$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "An exterior angle of a triangle equals the sum of the two interior angles that are not next to it. Angle $ACD$ is exterior at $C$, so $m\\angle A + m\\angle B = 126^\\circ$. With $m\\angle A = 2\\,m\\angle B$, this gives $3\\,m\\angle B = 126^\\circ$, so $m\\angle B = 42^\\circ$ and $m\\angle A = 84^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the measure of angle $B$, not angle $A$."
+          },
+          {
+            "label": "B",
+            "text": "This is the measure of interior angle $ACB$, $180^\\circ - 126^\\circ$."
+          },
+          {
+            "label": "C",
+            "text": "This is half of $126^\\circ$, which treats angles $A$ and $B$ as equal."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Two sides of a triangle have lengths $7$ and $12$. The length of the third side is a whole number. How many different lengths are possible for the third side?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12$"
+          },
+          {
+            "label": "B",
+            "text": "$13$"
+          },
+          {
+            "label": "C",
+            "text": "$14$"
+          },
+          {
+            "label": "D",
+            "text": "$19$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "By the triangle inequality, the third side $s$ must be greater than the difference of the other two sides and less than their sum: $12 - 7 < s < 12 + 7$, or $5 < s < 19$. The whole numbers from $6$ through $18$ work, and there are $18 - 6 + 1 = 13$ of them.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This leaves out one of the endpoints $6$ or $18$, which are both allowed."
+          },
+          {
+            "label": "C",
+            "text": "This includes $5$ or $19$, but a side equal to the difference or the sum of the other two sides would make a flat, degenerate triangle."
+          },
+          {
+            "label": "D",
+            "text": "This is the sum of the two sides, the upper bound for the third side, not a count of possible lengths."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $PQR$, angle $Q$ is a right angle. Point $S$ lies on hypotenuse $PR$ so that segment $QS$ is perpendicular to $PR$. If $PS = 4$ and $SR = 9$, what is the area of triangle $PQR$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$12$"
+          },
+          {
+            "label": "B",
+            "text": "$27$"
+          },
+          {
+            "label": "C",
+            "text": "$39$"
+          },
+          {
+            "label": "D",
+            "text": "$78$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The altitude $QS$ splits triangle $PQR$ into two triangles, $PSQ$ and $QSR$, that are similar to each other (each has a right angle at $S$, and angle $P$ in one matches angle $SQR$ in the other). Matching sides gives $\\frac{PS}{QS} = \\frac{QS}{SR}$, so $QS^2 = 4 \\times 9 = 36$ and $QS = 6$. The hypotenuse is $PR = 4 + 9 = 13$, and $QS$ is the height to it, so the area is $\\frac{1}{2} \\times 13 \\times 6 = 39$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the area of the smaller piece, triangle $PSQ$: $\\frac{1}{2} \\times 4 \\times 6$."
+          },
+          {
+            "label": "B",
+            "text": "This is the area of the larger piece, triangle $QSR$: $\\frac{1}{2} \\times 9 \\times 6$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies base by height but forgets the factor $\\frac{1}{2}$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-009",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, the measure of angle $A$ is $52^\\circ$. The bisector of angle $B$ and the bisector of angle $C$ meet at point $I$ inside the triangle. What is the measure, in degrees, of angle $BIC$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "116"
+        ],
+        "explanation": "Angles $B$ and $C$ together measure $180^\\circ - 52^\\circ = 128^\\circ$. The bisectors cut each in half, so in triangle $BIC$ the angles at $B$ and $C$ add to $\\frac{128^\\circ}{2} = 64^\\circ$. Therefore angle $BIC$ measures $180^\\circ - 64^\\circ = 116^\\circ$. This works no matter how the $128^\\circ$ is split between angles $B$ and $C$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, point $D$ is on side $AB$ and point $E$ is on side $AC$ so that segment $DE$ is parallel to side $BC$. The ratio $AD : DB$ is $2 : 3$. If the area of quadrilateral $DBCE$ is $84$ square units, what is the area, in square units, of triangle $ADE$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$16$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{168}{5}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{112}{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$56$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Since $DE \\parallel BC$, triangle $ADE$ is similar to triangle $ABC$ with $\\frac{AD}{AB} = \\frac{2}{2 + 3} = \\frac{2}{5}$. Areas of similar figures scale by the square of the ratio, so triangle $ADE$ has $\\frac{4}{25}$ of the area of triangle $ABC$, and quadrilateral $DBCE$ has the other $\\frac{21}{25}$. Then $\\frac{21}{25}\\,[ABC] = 84$ gives $[ABC] = 100$, and $[ADE] = \\frac{4}{25} \\times 100 = 16$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This multiplies $84$ by $\\frac{2}{5}$, using a length ratio for areas and applying it to the quadrilateral instead of the whole triangle."
+          },
+          {
+            "label": "C",
+            "text": "This multiplies $84$ by $\\left(\\frac{2}{3}\\right)^2$, squaring $AD : DB$ instead of $AD : AB$."
+          },
+          {
+            "label": "D",
+            "text": "This multiplies $84$ by $\\frac{2}{3}$, treating the ratio $AD : DB$ as a ratio of areas."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

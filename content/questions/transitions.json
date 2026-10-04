@@ -68,6 +68,618 @@
           }
         ]
       }
+    },
+    {
+      "id": "transitions-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Many people believe that bats are blind, an idea reflected in the familiar phrase \"blind as a bat.\" ______ every known species of bat can see, and some fruit bats rely heavily on their keen eyesight to find food at dusk."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Similarly,"
+          },
+          {
+            "label": "B",
+            "text": "For instance,"
+          },
+          {
+            "label": "C",
+            "text": "However,"
+          },
+          {
+            "label": "D",
+            "text": "Therefore,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence presents a common belief (bats are blind). The second sentence contradicts it (all bats can see). \"However\" signals that the next idea contrasts with the one before it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Similarly\" signals a comparable idea, but the second sentence contradicts the first rather than resembling it."
+          },
+          {
+            "label": "B",
+            "text": "\"For instance\" introduces an example of the previous claim, but bats' ability to see is not an example of the belief that they are blind."
+          },
+          {
+            "label": "D",
+            "text": "\"Therefore\" signals a result, but the fact that bats can see does not follow from people believing they are blind."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-003",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The community garden on Elm Street received nearly three times its usual rainfall in June, and the soil stayed soggy for weeks. ______ the garden's tomato plants, which are prone to fungal disease in damp conditions, developed brown spots on their leaves by early July."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Nevertheless,"
+          },
+          {
+            "label": "B",
+            "text": "As a result,"
+          },
+          {
+            "label": "C",
+            "text": "In comparison,"
+          },
+          {
+            "label": "D",
+            "text": "For example,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence describes a cause (heavy rain and soggy soil). The second describes an effect: tomato plants, which get fungal disease in damp conditions, became diseased. \"As a result\" signals that the second event was caused by the first.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Nevertheless\" signals something that happened despite the previous point, but the disease is a consequence of the wet conditions, not something that happened in spite of them."
+          },
+          {
+            "label": "C",
+            "text": "\"In comparison\" sets up a contrast between two things, but nothing is being compared here."
+          },
+          {
+            "label": "D",
+            "text": "\"For example\" introduces an example of a general claim, but the first sentence makes no general claim that the diseased tomatoes illustrate."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-004",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Architect Lena Okafor designs buildings that respond to the climate around them rather than relying mainly on machines for heating and cooling. ______ her public library in a hot, dry region uses thick earthen walls that absorb heat during the day and slowly release it during the cool desert nights."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Even so,"
+          },
+          {
+            "label": "B",
+            "text": "By contrast,"
+          },
+          {
+            "label": "C",
+            "text": "In addition,"
+          },
+          {
+            "label": "D",
+            "text": "For example,"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence states a general approach: Okafor designs buildings that respond to climate. The second describes one specific building that follows this approach (earthen walls that manage heat naturally). \"For example\" introduces a specific case that illustrates a general claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Even so\" signals that what follows happens despite the previous point, but the library fits Okafor's approach rather than going against it."
+          },
+          {
+            "label": "B",
+            "text": "\"By contrast\" signals a difference, but the library is consistent with Okafor's climate-based design, not different from it."
+          },
+          {
+            "label": "C",
+            "text": "\"In addition\" introduces a separate, new point, but the library is not a new point; it is an illustration of the approach already described."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Novelist Ruth Achterberg's first book sold fewer than five hundred copies, and the only two reviews it received were harshly negative. ______ she began work on a second novel the following spring, and that book went on to win a regional literary prize."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Accordingly,"
+          },
+          {
+            "label": "B",
+            "text": "Even so,"
+          },
+          {
+            "label": "C",
+            "text": "That is,"
+          },
+          {
+            "label": "D",
+            "text": "Similarly,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first sentence describes a discouraging outcome: poor sales and harsh reviews. The second says Achterberg kept writing anyway. \"Even so\" signals that an action happened despite the circumstances just described.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Accordingly\" signals a fitting or expected consequence, but starting another novel is not the expected response to failure; it happens in spite of it."
+          },
+          {
+            "label": "C",
+            "text": "\"That is\" introduces a clarification or restatement, but beginning a second novel does not restate the first book's failure."
+          },
+          {
+            "label": "D",
+            "text": "\"Similarly\" signals a comparable situation, but the second novel's success is the opposite of the first book's reception."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-006",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Ecologist Tomas Reyes compared two populations of the same species of wildflower growing on a mountain in Colorado. Plants on the exposed, windy ridge rarely grew taller than 10 centimeters. ______ plants in the sheltered valley just below often reached 40 centimeters, even though the soil in both locations was nearly identical."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Furthermore,"
+          },
+          {
+            "label": "B",
+            "text": "As a result,"
+          },
+          {
+            "label": "C",
+            "text": "By contrast,"
+          },
+          {
+            "label": "D",
+            "text": "For instance,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The passage compares two groups: short plants on the windy ridge and much taller plants in the sheltered valley. \"By contrast\" signals that the second sentence describes a group that differs from the first.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Furthermore\" adds another point in the same direction, but the valley plants' height contrasts with the ridge plants' small size."
+          },
+          {
+            "label": "B",
+            "text": "\"As a result\" signals a consequence, but the ridge plants' short height does not cause the valley plants to grow tall."
+          },
+          {
+            "label": "D",
+            "text": "\"For instance\" introduces an example of the previous claim, but tall valley plants are not an example of short ridge plants."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Making a woodcut print takes several steps. An artist first draws a design on a smooth block of wood and carves away every area that should remain blank. Next, the artist rolls a thin layer of ink across the raised surface that remains. ______ the artist presses a sheet of paper firmly onto the inked block, transferring the design."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Previously,"
+          },
+          {
+            "label": "B",
+            "text": "Finally,"
+          },
+          {
+            "label": "C",
+            "text": "Instead,"
+          },
+          {
+            "label": "D",
+            "text": "Regardless,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The passage walks through a process in order: first carving, next inking. The last sentence describes the step that completes the process, pressing paper onto the block. \"Finally\" signals the last step in a sequence.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Previously\" signals something that happened earlier, but pressing the paper must come after inking, not before it."
+          },
+          {
+            "label": "C",
+            "text": "\"Instead\" signals a replacement for something just mentioned, but pressing the paper is an additional step, not a substitute for inking."
+          },
+          {
+            "label": "D",
+            "text": "\"Regardless\" signals that something happens no matter what came before, but pressing the paper depends on the block having been inked."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-008",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the city of Harlow Falls replaced street parking on Main Avenue with protected bike lanes, many shop owners warned that customers would stop coming. Economist Priya Natarajan tracked sales at those shops. In the first two months, sales dipped slightly, much as the owners had feared. ______ by the end of the first year, sales at the shops had risen 9 percent, outpacing sales at shops on similar streets that had kept their parking."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Predictably,"
+          },
+          {
+            "label": "B",
+            "text": "Accordingly,"
+          },
+          {
+            "label": "C",
+            "text": "Ultimately, though,"
+          },
+          {
+            "label": "D",
+            "text": "In the same way,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The early dip matched the owners' fears, but the final sentence describes a later outcome that goes the other way: sales rose and beat comparable streets. \"Ultimately, though\" signals both a later point in time and a reversal of the earlier trend.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Predictably\" suggests the rise was expected, but the owners had predicted losses, so a 9 percent gain was the opposite of what they predicted."
+          },
+          {
+            "label": "B",
+            "text": "\"Accordingly\" signals a consequence that fits what came before, but rising sales do not follow from an early dip; they reverse it."
+          },
+          {
+            "label": "D",
+            "text": "\"In the same way\" signals a parallel to the previous sentence, but a rise in sales is not parallel to a dip in sales."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Literary scholar Ana Brandt argues that the letters of nineteenth-century field naturalists deserve to be read as literature, not merely mined as scientific records. ______ she acknowledges that most of the letters were dashed off in haste and lack the careful polish of published essays; her point is that their vivid, unplanned descriptions of wildlife have an artistry of their own."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Consequently,"
+          },
+          {
+            "label": "B",
+            "text": "To be sure,"
+          },
+          {
+            "label": "C",
+            "text": "For example,"
+          },
+          {
+            "label": "D",
+            "text": "Moreover,"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "After stating Brandt's claim, the passage notes a weakness she admits (the letters are hasty and unpolished) before explaining why her claim still holds. \"To be sure\" introduces a concession: a point granted that seems to work against the main argument.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Consequently\" signals a result, but Brandt's admission that the letters lack polish does not follow from her argument that they are literature."
+          },
+          {
+            "label": "C",
+            "text": "\"For example\" introduces support for the previous claim, but hasty, unpolished writing is a limitation, not an example of the letters' literary value."
+          },
+          {
+            "label": "D",
+            "text": "\"Moreover\" adds a point that strengthens the previous claim, but the admission that the letters lack polish cuts against Brandt's claim before she answers it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transitions-010",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In the 1500s, many European scholars believed that comets were weather events in Earth's upper atmosphere. In 1577, the Danish astronomer Tycho Brahe tested this view by comparing observations of a bright comet made from different locations. If the comet were that close to Earth, its position against the background stars should have looked noticeably different from each location. ______ the comet's position barely differed at all, indicating that it lay far beyond the Moon."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text with the most logical transition?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Accordingly,"
+          },
+          {
+            "label": "B",
+            "text": "Likewise,"
+          },
+          {
+            "label": "C",
+            "text": "However,"
+          },
+          {
+            "label": "D",
+            "text": "In short,"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The third sentence describes what should have happened if the comet were close (a noticeable shift). The last sentence reports that this did not happen: the position barely changed. \"However\" signals that the actual result contrasts with the expected one.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Accordingly\" signals a result consistent with the previous sentence, but the observation went against the prediction for a nearby comet rather than matching it."
+          },
+          {
+            "label": "B",
+            "text": "\"Likewise\" signals a similar point, but a tiny shift is the opposite of the noticeable shift described in the previous sentence."
+          },
+          {
+            "label": "D",
+            "text": "\"In short\" introduces a summary, but the last sentence reports a new finding instead of summarizing what came before."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }

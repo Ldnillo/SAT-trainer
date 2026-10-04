@@ -63,6 +63,490 @@
           }
         ]
       }
+    },
+    {
+      "id": "circles-002",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has the equation $(x - 4)^2 + (y + 1)^2 = 49$. What are the center and the radius of the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Center $(4, -1)$, radius $7$"
+          },
+          {
+            "label": "B",
+            "text": "Center $(-4, 1)$, radius $7$"
+          },
+          {
+            "label": "C",
+            "text": "Center $(4, -1)$, radius $49$"
+          },
+          {
+            "label": "D",
+            "text": "Center $(-4, 1)$, radius $49$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "A circle with center $(h, k)$ and radius $r$ has equation $(x - h)^2 + (y - k)^2 = r^2$. Writing $(y + 1)$ as $(y - (-1))$ shows $h = 4$ and $k = -1$, and $r^2 = 49$ gives $r = 7$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This flips the signs of the center's coordinates; the equation subtracts the center's coordinates, so $(x - 4)$ means $x = 4$."
+          },
+          {
+            "label": "C",
+            "text": "This gives $r^2$ as the radius instead of $r = \\sqrt{49}$."
+          },
+          {
+            "label": "D",
+            "text": "This flips the signs of the center and also gives $r^2$ instead of $r$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-003",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A circular tabletop has a circumference of $18\\pi$ inches. The area of the tabletop is $k\\pi$ square inches. What is the value of $k$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "81"
+        ],
+        "explanation": "The circumference is $2\\pi r = 18\\pi$, so the radius is $r = 9$ inches. The area is $\\pi r^2 = \\pi(9)^2 = 81\\pi$ square inches, so $k = 81$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-004",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Points $A$, $B$ and $C$ lie on a circle with center $O$. Central angle $AOB$ measures $110^\\circ$, and point $C$ is on the part of the circle that does not lie between $A$ and $B$ on the $110^\\circ$ arc. What is the measure of inscribed angle $ACB$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$55^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$70^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$110^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$220^\\circ$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Angle $ACB$ is inscribed and intercepts the same arc $AB$ as central angle $AOB$. An inscribed angle measures half of the central angle that intercepts the same arc, so angle $ACB$ measures $\\frac{110^\\circ}{2} = 55^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is $180^\\circ - 110^\\circ$, as if the angles were supplementary."
+          },
+          {
+            "label": "C",
+            "text": "This makes the inscribed angle equal to the central angle instead of half of it."
+          },
+          {
+            "label": "D",
+            "text": "This doubles the central angle instead of halving it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-005",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A circle has a radius of $12$ centimeters. What is the length, in centimeters, of an arc of this circle that is intercepted by a central angle of $150^\\circ$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$5\\pi$"
+          },
+          {
+            "label": "B",
+            "text": "$10\\pi$"
+          },
+          {
+            "label": "C",
+            "text": "$24\\pi$"
+          },
+          {
+            "label": "D",
+            "text": "$60\\pi$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The arc is $\\frac{150}{360} = \\frac{5}{12}$ of the whole circle. The circumference is $2\\pi(12) = 24\\pi$, so the arc length is $\\frac{5}{12} \\times 24\\pi = 10\\pi$ centimeters.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses $\\pi r = 12\\pi$ (half the circumference) as the whole circle before taking $\\frac{5}{12}$ of it."
+          },
+          {
+            "label": "C",
+            "text": "This is the circumference of the entire circle."
+          },
+          {
+            "label": "D",
+            "text": "This is the area of the sector, $\\frac{5}{12} \\times 144\\pi$, not the arc length."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-006",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A circle has a radius of $6$ meters. A central angle of the circle intercepts an arc of length $15$ meters. What is the measure, in radians, of the central angle?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "5/2",
+          "2.5"
+        ],
+        "explanation": "For an angle measured in radians, arc length $= r\\theta$. So $15 = 6\\theta$, and $\\theta = \\frac{15}{6} = \\frac{5}{2} = 2.5$ radians.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-007",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has its center at $(2, -3)$ and passes through the point $(5, 1)$. Which of the following is an equation of the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(x + 2)^2 + (y - 3)^2 = 25$"
+          },
+          {
+            "label": "B",
+            "text": "$(x - 2)^2 + (y + 3)^2 = 5$"
+          },
+          {
+            "label": "C",
+            "text": "$(x - 2)^2 + (y + 3)^2 = 25$"
+          },
+          {
+            "label": "D",
+            "text": "$(x - 5)^2 + (y - 1)^2 = 25$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The radius is the distance from the center to the point: $\\sqrt{(5 - 2)^2 + (1 - (-3))^2} = \\sqrt{9 + 16} = 5$. With center $(2, -3)$, the equation is $(x - 2)^2 + (y + 3)^2 = 5^2 = 25$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This has the right radius but the signs inside the parentheses are reversed, giving center $(-2, 3)$."
+          },
+          {
+            "label": "B",
+            "text": "This sets the right side equal to $r = 5$ instead of $r^2 = 25$."
+          },
+          {
+            "label": "D",
+            "text": "This uses the point on the circle, $(5, 1)$, as the center."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-008",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A round pizza has a diameter of $16$ inches. One slice is a sector of the pizza with a central angle of $45^\\circ$. What is the area, in square inches, of the top of the slice?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2\\pi$"
+          },
+          {
+            "label": "B",
+            "text": "$8\\pi$"
+          },
+          {
+            "label": "C",
+            "text": "$16\\pi$"
+          },
+          {
+            "label": "D",
+            "text": "$32\\pi$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The radius is $\\frac{16}{2} = 8$ inches, so the whole pizza has area $\\pi(8)^2 = 64\\pi$ square inches. A $45^\\circ$ sector is $\\frac{45}{360} = \\frac{1}{8}$ of the circle, so the slice has area $\\frac{1}{8} \\times 64\\pi = 8\\pi$ square inches.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This takes $\\frac{1}{8}$ of the circumference, $16\\pi$, which gives the length of the crust edge, not the area."
+          },
+          {
+            "label": "C",
+            "text": "This takes $\\frac{1}{4}$ of the area, treating $45^\\circ$ as a quarter of the circle."
+          },
+          {
+            "label": "D",
+            "text": "This uses the diameter, $16$, as the radius: $\\frac{1}{8} \\times 256\\pi$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-009",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Point $P$ lies outside a circle with center $O$ and radius $9$. A line through $P$ is tangent to the circle at point $T$, and $PT = 12$. What is the shortest distance from $P$ to any point on the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$6$"
+          },
+          {
+            "label": "C",
+            "text": "$15$"
+          },
+          {
+            "label": "D",
+            "text": "$24$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "A tangent line is perpendicular to the radius at the point of tangency, so triangle $OTP$ has a right angle at $T$. Then $OP = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. The closest point on the circle to $P$ lies on segment $OP$, one radius from $O$, so the shortest distance is $15 - 9 = 6$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This subtracts the radius from the tangent length, $12 - 9$, but the tangent segment does not point toward the center."
+          },
+          {
+            "label": "C",
+            "text": "This is the distance from $P$ to the center $O$, not to the circle."
+          },
+          {
+            "label": "D",
+            "text": "This is $OP + 9$, the distance from $P$ to the farthest point on the circle."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-010",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $x^2 + y^2 + 8x - 2y + k = 0$ is a circle with radius $5$, where $k$ is a constant. What is the value of $k$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-8"
+        ],
+        "explanation": "Complete the square in $x$ and in $y$. Since $x^2 + 8x = (x + 4)^2 - 16$ and $y^2 - 2y = (y - 1)^2 - 1$, the equation becomes $(x + 4)^2 + (y - 1)^2 - 17 + k = 0$, or $(x + 4)^2 + (y - 1)^2 = 17 - k$. The right side is $r^2 = 25$, so $17 - k = 25$ and $k = -8$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked to grow the bank to about 10 questions per skill (project thread, 2026-10-04); batch 2, nine more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          }
+        ]
+      }
     }
   ]
 }
