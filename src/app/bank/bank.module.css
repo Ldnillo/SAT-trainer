@@ -57,3 +57,16 @@
 .rejected {
   color: var(--bad);
 }
+
+.authorship {
+  font-size: 14px;
+}
+
+.authorship dt {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.authorship dd {
+  margin: 0 0 0 12px;
+}
