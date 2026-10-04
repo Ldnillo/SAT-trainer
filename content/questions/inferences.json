@@ -685,6 +685,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "inferences-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Ecologist Mara Lindqvist hung two identical feeders side by side in a meadow. One held a solution that was 20 percent sugar, and the other held a solution that was 10 percent sugar. Hummingbirds visited the 20 percent feeder far more often. The next morning, Lindqvist swapped the solutions between the two feeders, and the hummingbirds switched too, now favoring the feeder on the other side. These results suggest that the hummingbirds chose between the feeders based on ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the position of each feeder in the meadow."
+          },
+          {
+            "label": "B",
+            "text": "how much sugar each feeder's solution contained."
+          },
+          {
+            "label": "C",
+            "text": "the color of each feeder."
+          },
+          {
+            "label": "D",
+            "text": "which feeder they had visited the day before."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "On the first day, the birds preferred the feeder with the 20 percent solution. When that solution was moved to the other feeder, the birds moved with it. The one thing that followed the birds' preference was the sugar solution, so the birds were most likely choosing based on how much sugar each feeder held (choice B).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "After the swap, the birds abandoned the position they had favored and went to the other side, so position was not what they were choosing by."
+          },
+          {
+            "label": "C",
+            "text": "The feeders were identical, so color could not explain why the birds preferred one over the other."
+          },
+          {
+            "label": "D",
+            "text": "On the second day the birds switched away from the feeder they had favored the day before, which is the opposite of returning to the same feeder."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Astronomers monitoring a distant star found that its brightness dips by the same small amount every 12.4 days, and each dip lasts almost exactly three hours. Dark patches on a star's surface, called starspots, can also dim a star, but starspots form and fade unpredictably and vary in size, so the dimming they cause is irregular in both timing and depth. Because the dips the astronomers recorded are so regular, they are most likely caused by ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "starspots that appear on the star every 12.4 days."
+          },
+          {
+            "label": "B",
+            "text": "a fault in the instruments used to monitor the star."
+          },
+          {
+            "label": "C",
+            "text": "a single cloud of dust that drifted between the star and Earth."
+          },
+          {
+            "label": "D",
+            "text": "an object that passes between the star and Earth at regular intervals, such as an orbiting planet."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The text rules out starspots because their dimming is irregular, while the recorded dips repeat on an exact schedule with the same depth and length. Something that passes in front of the star on a fixed cycle, such as a planet completing an orbit every 12.4 days, would block the same amount of light for the same length of time each pass. That is the explanation that fits the regularity (choice D).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says starspots form and fade unpredictably, so they would not appear on a precise 12.4-day schedule."
+          },
+          {
+            "label": "B",
+            "text": "Nothing in the text suggests the instruments were faulty, and the text's reasoning is about what in space could cause such regular dips."
+          },
+          {
+            "label": "C",
+            "text": "A single drifting cloud would dim the star once, not over and over at a fixed interval."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Two versions survive of a piano sonata by the nineteenth-century composer Elise Marrow. Scholars have long assumed that the shorter version is an early draft and the longer version her final revision. However, the shorter version contains several notes higher than any that could be played on the piano Marrow owned until 1831, when she bought an instrument with an extended keyboard. The longer version uses none of those notes, and Marrow is not known to have composed for any piano but her own. These details suggest that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the shorter version may have been written after the longer one, not before it."
+          },
+          {
+            "label": "B",
+            "text": "Marrow wrote the longer version for a piano that she did not own."
+          },
+          {
+            "label": "C",
+            "text": "both versions of the sonata were composed after 1831."
+          },
+          {
+            "label": "D",
+            "text": "Marrow stopped composing for the piano after she bought her new instrument."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Because Marrow composed for her own piano, the high notes in the shorter version point to a date after 1831, when she had the extended keyboard. The longer version fits her older piano, so it could date from before 1831. That reverses the usual assumption: the shorter version may be the later one rather than an early draft (choice A). The word \"may\" matters, because the evidence makes this likely without proving it.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "Marrow is not known to have composed for any piano but her own, and the longer version's notes fit the piano she owned, so nothing suggests a different instrument."
+          },
+          {
+            "label": "C",
+            "text": "Only the shorter version requires the post-1831 keyboard. The longer version uses no such notes, so nothing shows it was written after 1831."
+          },
+          {
+            "label": "D",
+            "text": "The shorter version is evidence that she did compose for the new instrument, which contradicts this choice."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When the town of Belford began charging shoppers ten cents for each plastic grocery bag, the number of bags handed out at its grocery stores fell by about 80 percent within a year. Economist Lucia Ferraz noticed, however, that over the same period, sales of small plastic trash bags at those stores roughly tripled. A survey found that before the fee, most Belford households had reused their grocery bags to line kitchen trash cans. Ferraz's findings suggest that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the fee had no effect on how many grocery bags shoppers took."
+          },
+          {
+            "label": "B",
+            "text": "most Belford households stopped lining their trash cans after the fee began."
+          },
+          {
+            "label": "C",
+            "text": "the fee reduced the town's overall use of plastic bags by less than the drop in grocery bags alone would indicate."
+          },
+          {
+            "label": "D",
+            "text": "Belford's grocery stores raised the price of trash bags to make up for money lost on grocery bags."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Grocery bags fell by about 80 percent, but households had been reusing those bags as trash can liners. When the free liners disappeared, many households bought plastic trash bags instead, and those sales tripled. Some of the plastic saved at the checkout was therefore used again as trash bags, so total plastic bag use fell by less than the 80 percent figure suggests (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Grocery bags handed out fell by about 80 percent, so the fee clearly affected how many bags shoppers took."
+          },
+          {
+            "label": "B",
+            "text": "Trash bag sales tripled, which suggests households kept lining their trash cans but switched to bought trash bags."
+          },
+          {
+            "label": "D",
+            "text": "The text says nothing about the price of trash bags, and a price increase would not explain why sales tripled."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "An apple grower placed beehives along the edge of one half of her orchard but not the other. Both halves had the same variety of tree, received the same amount of water, and were planted in the same kind of soil. That fall, trees in the half with the beehives produced about 40 percent more apples than trees in the other half. Because apple blossoms must be pollinated to produce fruit, the grower concluded that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the half without beehives had poorer soil."
+          },
+          {
+            "label": "B",
+            "text": "trees in the half without beehives received too little water."
+          },
+          {
+            "label": "C",
+            "text": "apple trees produce more fruit when they are planted farther from beehives."
+          },
+          {
+            "label": "D",
+            "text": "the bees most likely increased the harvest by pollinating more of the blossoms."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The two halves matched in tree variety, water and soil. The only difference was the beehives, and the half with hives produced more apples. Since blossoms need pollination to become fruit, the likely explanation is that the bees pollinated more blossoms in that half (choice D).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The text says both halves were planted in the same kind of soil."
+          },
+          {
+            "label": "B",
+            "text": "The text says both halves received the same amount of water."
+          },
+          {
+            "label": "C",
+            "text": "This is the opposite of the result: the trees near the hives produced more apples, not fewer."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-016",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Researchers studying an old barn used tree rings to date its wooden beams. On several beams the bark was still attached, meaning that the outermost ring beneath it was the last ring the tree grew before it was cut down. On every one of these beams, that outermost ring formed in 1794. Builders in the region at the time typically used timber within a year of felling it, while the wood was still green and easy to shape. The evidence therefore suggests that the barn was most likely built ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "soon after the trees were cut down, around 1794 or 1795."
+          },
+          {
+            "label": "B",
+            "text": "several decades before 1794."
+          },
+          {
+            "label": "C",
+            "text": "from beams taken out of a much older building."
+          },
+          {
+            "label": "D",
+            "text": "by builders who let their timber dry for many years before using it."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The outermost ring under the bark shows when each tree stopped growing, which is when it was cut down: in 1794 for every beam with bark. Builders at the time usually used timber within a year of cutting it. Putting these together, the barn was most likely built shortly after the trees were felled, around 1794 or 1795 (choice A).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The trees were still growing in 1794, so the beams could not have been used in a barn built decades earlier."
+          },
+          {
+            "label": "C",
+            "text": "Nothing suggests the beams were reused, and the usual practice described in the text was to build with freshly cut timber."
+          },
+          {
+            "label": "D",
+            "text": "The text says builders typically used timber within a year, while it was still green, which contradicts letting it dry for many years."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A magazine devoted to growing vegetables at home asked its readers to complete a survey about their gardens. Of the 4,000 readers who responded, 72 percent said they grow tomatoes, and the magazine announced that tomatoes are \"the favorite crop of American gardeners.\" Sociologist Nadia Brennan points out that many people garden only with flowers or ornamental shrubs, and such people are unlikely to read a magazine about vegetables. Brennan's point implies that the magazine's survey ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "shows that tomatoes are not, in fact, the favorite crop of American gardeners."
+          },
+          {
+            "label": "B",
+            "text": "is not a reliable basis for the magazine's claim about American gardeners in general."
+          },
+          {
+            "label": "C",
+            "text": "would have found a higher percentage of tomato growers if more readers had responded."
+          },
+          {
+            "label": "D",
+            "text": "shows that most of the magazine's readers grow flowers rather than vegetables."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Brennan's point is about who answered the survey. The respondents were readers of a vegetable magazine, and gardeners who grow only flowers or shrubs are unlikely to be among them. So the respondents do not represent American gardeners as a whole, and the survey cannot support a claim about all American gardeners (choice B). Notice that this does not prove the claim false; it only means the survey is the wrong evidence for it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is too strong. A survey that doesn't represent all gardeners can't prove the magazine's claim, but it can't disprove it either."
+          },
+          {
+            "label": "C",
+            "text": "Nothing in the text suggests that more responses would raise the percentage. Brennan's concern is about which kinds of gardeners were surveyed, not how many."
+          },
+          {
+            "label": "D",
+            "text": "The respondents were readers of a vegetable magazine, and most said they grow tomatoes, so nothing suggests most readers grow flowers instead."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-018",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "At one fossil site, paleontologists found footprints left by a single species of plant-eating dinosaur. The prints come in two sizes, large and small, and all of them were pressed into the same layer of mud, which hardened within a few days. The trackways run side by side in the same direction, and none of the small prints cross or overlap the large ones. The researchers concluded that the prints were most likely left by ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "two different species that crossed the site years apart."
+          },
+          {
+            "label": "B",
+            "text": "a single large animal that walked across the mud several times."
+          },
+          {
+            "label": "C",
+            "text": "young and adult animals of the same species moving together as a group."
+          },
+          {
+            "label": "D",
+            "text": "small predators following the large animals' trail in order to hunt them."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "All the prints belong to one species, so the two sizes most likely reflect younger and older animals. The prints were made within a few days in the same mud, they run side by side in the same direction, and they don't cross. Together these details point to young and adult animals traveling together as a group (choice C).",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The prints belong to a single species and were made within a few days, not years apart."
+          },
+          {
+            "label": "B",
+            "text": "One animal would leave prints of only one size, but the prints come in two sizes."
+          },
+          {
+            "label": "D",
+            "text": "All the prints come from a single plant-eating species, so none were left by predators."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Botanist Kofi Mensah studied a mountain wildflower that, in the wild, blooms only in springs that follow a long, cold winter. In a greenhouse, he kept groups of plants at near-freezing temperatures for eight weeks and then warmed them. Every plant older than two years bloomed within a month. Plants younger than two years, given exactly the same cold treatment, produced leaves but no flowers. Plants of any age that were never chilled did not bloom at all. Mensah's results suggest that for this species, ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "a long period of cold is enough on its own to make a plant bloom."
+          },
+          {
+            "label": "B",
+            "text": "plants older than two years can bloom without being exposed to cold."
+          },
+          {
+            "label": "C",
+            "text": "cold temperatures prevent young plants from producing leaves."
+          },
+          {
+            "label": "D",
+            "text": "a period of cold is needed for blooming but works only once a plant has reached a certain age."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Two findings must fit together. First, no unchilled plant bloomed, so cold is needed. Second, chilled plants younger than two years still did not bloom, so cold alone is not enough; the plant also has to be old enough. Choice D states both parts: cold is necessary, but it works only for older plants.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Young plants received the same cold treatment and did not bloom, so cold is not enough on its own."
+          },
+          {
+            "label": "B",
+            "text": "Plants of any age that were never chilled did not bloom, so older plants also need the cold."
+          },
+          {
+            "label": "C",
+            "text": "The young plants did produce leaves after the cold treatment; they just didn't flower."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inferences-020",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Using a sound meter, a student measured the noise level on her street at the same time each evening for two weeks. The amount of traffic on the street stayed about the same throughout. On the one evening after a heavy snowfall, when fresh snow covered the ground and rooftops, the street was noticeably quieter than on any other evening. Fresh snow is full of tiny air pockets that absorb sound waves. The student's measurements therefore suggest that ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice most logically completes the text?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the fresh snow likely absorbed much of the sound on the street."
+          },
+          {
+            "label": "B",
+            "text": "there was much less traffic on the street that evening."
+          },
+          {
+            "label": "C",
+            "text": "her sound meter stopped working properly in the cold."
+          },
+          {
+            "label": "D",
+            "text": "snow makes sound travel farther than usual."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Traffic stayed about the same, so the amount of noise being made didn't change much. The one difference on the quiet evening was the fresh snow, and the text says fresh snow absorbs sound waves. So the snow most likely absorbed much of the sound (choice A).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The text says traffic stayed about the same throughout the two weeks."
+          },
+          {
+            "label": "C",
+            "text": "Nothing suggests the meter malfunctioned, and the text offers a direct explanation for the quieter reading: snow absorbs sound."
+          },
+          {
+            "label": "D",
+            "text": "The text says snow absorbs sound, which would make the street quieter, not carry sound farther."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

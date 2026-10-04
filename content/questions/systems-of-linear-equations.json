@@ -558,6 +558,597 @@
           }
         ]
       }
+    },
+    {
+      "id": "systems-of-linear-equations-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$3x - 2y = 5$$ One equation of a system of two linear equations is given. Which of the following could be the second equation of the system so that the system has no solution?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$6x - 4y = 10$"
+          },
+          {
+            "label": "B",
+            "text": "$6x + 4y = 5$"
+          },
+          {
+            "label": "C",
+            "text": "$2x - 3y = 5$"
+          },
+          {
+            "label": "D",
+            "text": "$-9x + 6y = 15$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A system of two linear equations has no solution when the two lines are parallel but different: the $x$ and $y$ coefficients of one equation are the same multiple of the other's, but the constant is not. Check choice D. Dividing every term of $-9x + 6y = 15$ by $-3$ gives $3x - 2y = -5$. The left side, $3x - 2y$, matches the given equation exactly, but the right side is $-5$ instead of $5$. The expression $3x - 2y$ can't equal both $5$ and $-5$ at once, so no pair $(x, y)$ satisfies both equations, and the system has no solution.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Dividing every term of $6x - 4y = 10$ by $2$ gives $3x - 2y = 5$, the same equation as the given one. The two equations describe the same line, so the system has infinitely many solutions, not none."
+          },
+          {
+            "label": "B",
+            "text": "The $x$ coefficients have ratio $\\frac{6}{3} = 2$, but the $y$ coefficients have ratio $\\frac{4}{-2} = -2$. The ratios differ, so the lines have different slopes and cross at exactly one point."
+          },
+          {
+            "label": "C",
+            "text": "This swaps the coefficients. The $x$ coefficients have ratio $\\frac{2}{3}$ and the $y$ coefficients have ratio $\\frac{-3}{-2} = \\frac{3}{2}$. The ratios differ, so the lines intersect at exactly one point."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$x = 3y$$ $$2x + y = 21$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $x$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$9$"
+          },
+          {
+            "label": "C",
+            "text": "$10.5$"
+          },
+          {
+            "label": "D",
+            "text": "$12$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The first equation says $x = 3y$, so substitute $3y$ for $x$ in the second equation. This gives $2(3y) + y = 21$. Multiplying gives $6y + y = 21$, and combining like terms gives $7y = 21$. Dividing both sides by $7$ gives $y = 3$. Now substitute $y = 3$ into $x = 3y$: $x = 3(3)$, so $x = 9$. Check: $2(9) + 3 = 18 + 3 = 21$. The value of $x$ is $9$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $y$, not $x$. Since $x = 3y$, $x$ is $3(3) = 9$."
+          },
+          {
+            "label": "C",
+            "text": "This comes from substituting but dropping the $+ y$ term: $2(3y) = 21$ gives $6y = 21$, so $y = 3.5$ and $x = 10.5$. The $y$ term must be kept, which gives $7y = 21$."
+          },
+          {
+            "label": "D",
+            "text": "This is the value of $x + y = 9 + 3$, not the value of $x$ alone."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-013",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$7x + 4y = 3$$ $$4x + 7y = 30$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $x^2 - y^2$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-27"
+        ],
+        "explanation": "The expression $x^2 - y^2$ factors as $(x + y)(x - y)$, so find $x + y$ and $x - y$. Adding the two equations gives $(7x + 4x) + (4y + 7y) = 3 + 30$, which is $11x + 11y = 33$. Dividing both sides by $11$ gives $x + y = 3$. Subtracting the second equation from the first gives $(7x - 4x) + (4y - 7y) = 3 - 30$, which is $3x - 3y = -27$. Dividing both sides by $3$ gives $x - y = -9$. So $x^2 - y^2 = (x + y)(x - y) = (3)(-9) = -27$. Check by solving fully: adding $x + y = 3$ and $x - y = -9$ gives $2x = -6$, so $x = -3$, and then $y = 3 - (-3) = 6$. Then $x^2 - y^2 = 9 - 36 = -27$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "At a farmers market, every pound of apples costs the same amount and every pound of pears costs the same amount. Three pounds of apples and $2$ pounds of pears cost $\\$11.00$. Two pounds of apples and $5$ pounds of pears cost $\\$13.75$. What is the price of one pound of pears?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\$1.75$"
+          },
+          {
+            "label": "B",
+            "text": "$\\$2.50$"
+          },
+          {
+            "label": "C",
+            "text": "$\\$3.50$"
+          },
+          {
+            "label": "D",
+            "text": "$\\$4.25$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Let $a$ be the price of one pound of apples and $p$ the price of one pound of pears, in dollars. The first purchase gives the equation $3a + 2p = 11$, and the second gives $2a + 5p = 13.75$. To eliminate $a$, make its coefficients match. Multiplying both sides of the first equation by $2$ gives $6a + 4p = 22$. Multiplying both sides of the second equation by $3$ gives $6a + 15p = 41.25$. Subtracting the first new equation from the second gives $(6a + 15p) - (6a + 4p) = 41.25 - 22$, which simplifies to $11p = 19.25$. Dividing both sides by $11$ gives $p = 1.75$. So one pound of pears costs $\\$1.75$. Check: substituting $p = 1.75$ into $3a + 2p = 11$ gives $3a + 3.5 = 11$. Subtracting $3.5$ from both sides gives $3a = 7.5$, and dividing both sides by $3$ gives $a = 2.5$. Then $2(2.5) + 5(1.75) = 5 + 8.75 = 13.75$, which matches the second purchase.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the price of one pound of apples, $a = 2.5$, not pears."
+          },
+          {
+            "label": "C",
+            "text": "This is the cost of $2$ pounds of pears, $2(1.75) = 3.5$, not the price of one pound."
+          },
+          {
+            "label": "D",
+            "text": "This is the combined price of one pound of apples and one pound of pears, $2.50 + 1.75 = 4.25$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none (this question replaced a two-candles item that the import check flagged as a near-duplicate of linear-functions-010)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-015",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$4x - y = 10$$ $$2x + y = 14$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $y$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "6"
+        ],
+        "explanation": "The $y$ terms are $-y$ and $+y$, so adding the equations eliminates $y$. Adding gives $(4x + 2x) + (-y + y) = 10 + 14$, which is $6x = 24$. Dividing both sides by $6$ gives $x = 4$. Substitute $x = 4$ into the second equation: $2(4) + y = 14$, so $8 + y = 14$. Subtracting $8$ from both sides gives $y = 6$. Check in the first equation: $4(4) - 6 = 16 - 6 = 10$. The value of $y$ is $6$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$kx - 3y = 4$$ $$4x - 6y = k$$ In the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-2$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{1}{2}$"
+          },
+          {
+            "label": "C",
+            "text": "$2$"
+          },
+          {
+            "label": "D",
+            "text": "$8$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "A system of two linear equations has no solution when the $x$ and $y$ coefficients are proportional (the lines are parallel) but the constants are not (the lines are different). The $y$ coefficients are $-3$ and $-6$, with ratio $\\frac{-3}{-6} = \\frac{1}{2}$. So the $x$ coefficients must have the same ratio: $\\frac{k}{4} = \\frac{1}{2}$. Multiplying both sides by $4$ gives $k = 2$. Now check the constants when $k = 2$: the equations are $2x - 3y = 4$ and $4x - 6y = 2$. Dividing the second equation by $2$ gives $2x - 3y = 1$. The left sides match but $4 \\ne 1$, so the lines are parallel and different, and the system has no solution. The value of $k$ is $2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "With $k = -2$, the $x$ coefficients have ratio $\\frac{-2}{4} = -\\frac{1}{2}$ while the $y$ coefficients have ratio $\\frac{1}{2}$. The lines have different slopes, so they intersect at exactly one point."
+          },
+          {
+            "label": "B",
+            "text": "This is the ratio of the $y$ coefficients, $\\frac{1}{2}$, not the value of $k$. Setting $\\frac{k}{4} = \\frac{1}{2}$ and multiplying both sides by $4$ gives $k = 2$."
+          },
+          {
+            "label": "D",
+            "text": "This makes the constants proportional ($\\frac{4}{k} = \\frac{1}{2}$ gives $k = 8$) instead of the coefficients. With $k = 8$, the $x$ coefficients have ratio $\\frac{8}{4} = 2$, which does not match $\\frac{1}{2}$, so the lines intersect at one point."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-017",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$\\frac{x}{2} + \\frac{y}{3} = 4$$ $$x - y = 3$$ If $(x, y)$ is the solution to the given system of equations, what is the value of $x + y$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "9"
+        ],
+        "explanation": "First clear the fractions. Multiplying every term of the first equation by $6$ gives $3x + 2y = 24$. The second equation, $x - y = 3$, can be solved for $x$ by adding $y$ to both sides: $x = y + 3$. Substitute $y + 3$ for $x$ in $3x + 2y = 24$: $3(y + 3) + 2y = 24$. Distributing gives $3y + 9 + 2y = 24$, and combining like terms gives $5y + 9 = 24$. Subtracting $9$ from both sides gives $5y = 15$. Dividing both sides by $5$ gives $y = 3$. Then $x = 3 + 3 = 6$. Check the first equation: $\\frac{6}{2} + \\frac{3}{3} = 3 + 1 = 4$. So $x + y = 6 + 3 = 9$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A florist sells roses for $\\$3$ each and tulips for $\\$2$ each. A customer buys $18$ flowers, all roses and tulips, and pays $\\$46$. How many roses did the customer buy?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$8$"
+          },
+          {
+            "label": "B",
+            "text": "$10$"
+          },
+          {
+            "label": "C",
+            "text": "$14$"
+          },
+          {
+            "label": "D",
+            "text": "$23$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Let $r$ be the number of roses and $t$ the number of tulips. The customer bought $18$ flowers, so $r + t = 18$. The roses cost $3r$ dollars and the tulips cost $2t$ dollars, so $3r + 2t = 46$. Solving the first equation for $t$ by subtracting $r$ from both sides gives $t = 18 - r$. Substitute this into the second equation: $3r + 2(18 - r) = 46$. Distributing gives $3r + 36 - 2r = 46$, and combining like terms gives $r + 36 = 46$. Subtracting $36$ from both sides gives $r = 10$. Check: $t = 18 - 10 = 8$, and $3(10) + 2(8) = 30 + 16 = 46$. The customer bought $10$ roses.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the number of tulips, $t = 18 - 10 = 8$, not the number of roses."
+          },
+          {
+            "label": "C",
+            "text": "This comes from subtracting the number of flowers from the total cost and dividing by $2$: $\\frac{46 - 18}{2} = 14$. That isn't a valid step; check: $14$ roses and $4$ tulips would cost $3(14) + 2(4) = 50$ dollars, not $46$."
+          },
+          {
+            "label": "D",
+            "text": "This divides the total cost by the price of a tulip, $\\frac{46}{2} = 23$, as if every flower were a tulip. It also gives more than $18$ flowers."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, line $\\ell$ passes through the points $(2, 5)$ and $(6, 13)$. The system of equations formed by the equation of line $\\ell$ and the equation $ax + 3y = b$, where $a$ and $b$ are constants, has infinitely many solutions. What is the value of $b$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-6$"
+          },
+          {
+            "label": "B",
+            "text": "$-3$"
+          },
+          {
+            "label": "C",
+            "text": "$1$"
+          },
+          {
+            "label": "D",
+            "text": "$3$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A system has infinitely many solutions when both equations describe the same line. First find the equation of line $\\ell$. Its slope is $\\frac{13 - 5}{6 - 2} = \\frac{8}{4} = 2$. Using the point $(2, 5)$ in $y = 2x + c$ gives $5 = 2(2) + c$, so $5 = 4 + c$, and subtracting $4$ from both sides gives $c = 1$. So line $\\ell$ is $y = 2x + 1$. Subtracting $2x$ from both sides puts it in the same form as the other equation: $-2x + y = 1$. For $ax + 3y = b$ to be the same line, its coefficients must be a multiple of these. The $y$ coefficient is $3$, which is $3$ times $1$, so multiply every term of $-2x + y = 1$ by $3$: $-6x + 3y = 3$. Matching terms gives $a = -6$ and $b = 3$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $a$, the coefficient of $x$, not the constant $b$."
+          },
+          {
+            "label": "B",
+            "text": "This comes from writing line $\\ell$ as $2x - y = -1$ and multiplying by $3$ to get $6x - 3y = -3$. But that equation has $-3y$, not $+3y$; to match $ax + 3y = b$, multiply $-2x + y = 1$ by $3$ instead, which gives $b = 3$."
+          },
+          {
+            "label": "C",
+            "text": "This is the constant in $-2x + y = 1$ before it is scaled. Because the $y$ coefficient in $ax + 3y = b$ is $3$, every term, including the constant, must be multiplied by $3$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "systems-of-linear-equations-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "$$a + s = 250$$ $$14a + 8s = 2{,}780$$ A science museum used the given system of equations to describe one day's visitors, where $a$ is the number of adult visitors and $s$ is the number of student visitors. According to the system, how many more adult visitors than student visitors were there that day?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$10$"
+          },
+          {
+            "label": "B",
+            "text": "$120$"
+          },
+          {
+            "label": "C",
+            "text": "$130$"
+          },
+          {
+            "label": "D",
+            "text": "$250$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Solve the first equation for $s$ by subtracting $a$ from both sides: $s = 250 - a$. Substitute this into the second equation: $14a + 8(250 - a) = 2{,}780$. Distributing gives $14a + 2{,}000 - 8a = 2{,}780$, and combining like terms gives $6a + 2{,}000 = 2{,}780$. Subtracting $2{,}000$ from both sides gives $6a = 780$. Dividing both sides by $6$ gives $a = 130$. Then $s = 250 - 130 = 120$. Check: $14(130) + 8(120) = 1{,}820 + 960 = 2{,}780$. There were $130 - 120 = 10$ more adult visitors than student visitors.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is the number of student visitors, $s = 120$, not the difference between adults and students."
+          },
+          {
+            "label": "C",
+            "text": "This is the number of adult visitors, $a = 130$, not how many more adults there were than students."
+          },
+          {
+            "label": "D",
+            "text": "This is the total number of visitors, $a + s = 250$, not the difference $a - s$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

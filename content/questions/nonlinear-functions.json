@@ -562,6 +562,630 @@
           }
         ]
       }
+    },
+    {
+      "id": "nonlinear-functions-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = x^3 - 3x$. What is the value of $f(-2)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2$"
+          },
+          {
+            "label": "B",
+            "text": "$-14$"
+          },
+          {
+            "label": "C",
+            "text": "$14$"
+          },
+          {
+            "label": "D",
+            "text": "$-2$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Substitute $-2$ for $x$: $f(-2) = (-2)^3 - 3(-2)$. First, $(-2)^3 = (-2)(-2)(-2) = -8$. Next, $-3(-2) = 6$. So $f(-2) = -8 + 6 = -2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This uses $(-2)^3 = 8$ instead of $-8$. A negative number raised to an odd power stays negative."
+          },
+          {
+            "label": "B",
+            "text": "This treats $-3(-2)$ as $-6$. A negative times a negative is positive, so $-3(-2) = 6$."
+          },
+          {
+            "label": "C",
+            "text": "This makes both sign errors: it uses $(-2)^3 = 8$ and $-3(-2) = 6$, giving $8 + 6$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-012",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $g$ is defined by $g(x) = 3(2)^x - 7$. The graph of $y = g(x)$ in the $xy$-plane crosses the $y$-axis at the point $(0, b)$. What is the value of $b$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "-4"
+        ],
+        "explanation": "The graph crosses the $y$-axis where $x = 0$, so $b = g(0)$. Substitute $0$ for $x$: $g(0) = 3(2)^0 - 7$. Any nonzero number raised to the power $0$ equals $1$, so $(2)^0 = 1$. Then $g(0) = 3(1) - 7 = 3 - 7 = -4$. So $b = -4$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-013",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = \\frac{2x + 6}{x - 4}$. At what point does the graph of $y = f(x)$ cross the $x$-axis in the $xy$-plane?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(-3, 0)$"
+          },
+          {
+            "label": "B",
+            "text": "$\\left(0, -\\frac{3}{2}\\right)$"
+          },
+          {
+            "label": "C",
+            "text": "$(4, 0)$"
+          },
+          {
+            "label": "D",
+            "text": "$(3, 0)$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The graph crosses the $x$-axis where $f(x) = 0$. A fraction equals $0$ when its numerator is $0$ and its denominator is not. Set the numerator equal to $0$: $2x + 6 = 0$. Subtracting $6$ from both sides gives $2x = -6$. Dividing both sides by $2$ gives $x = -3$. At $x = -3$ the denominator is $-3 - 4 = -7$, which is not $0$, so $f(-3) = \\frac{0}{-7} = 0$. The graph crosses the $x$-axis at $(-3, 0)$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is where the graph crosses the $y$-axis: $f(0) = \\frac{6}{-4} = -\\frac{3}{2}$. The $x$-intercept needs $f(x) = 0$."
+          },
+          {
+            "label": "C",
+            "text": "At $x = 4$ the denominator is $0$, so $f(4)$ is undefined. The graph has no point at $x = 4$."
+          },
+          {
+            "label": "D",
+            "text": "This has a sign error: $2(3) + 6 = 12$, not $0$. Solving $2x + 6 = 0$ gives $x = -3$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-014",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In an experiment, a scientist adds $80$ milligrams of a tracer chemical to a tank of water. The amount of tracer left in the water is cut in half every $6$ hours. Which function gives the amount of tracer $A(d)$, in milligrams, left in the water $d$ days after it was added?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$A(d) = 80\\left(\\frac{1}{2}\\right)^{\\frac{d}{4}}$"
+          },
+          {
+            "label": "B",
+            "text": "$A(d) = 80\\left(\\frac{1}{2}\\right)^{6d}$"
+          },
+          {
+            "label": "C",
+            "text": "$A(d) = 80\\left(\\frac{1}{2}\\right)^{4d}$"
+          },
+          {
+            "label": "D",
+            "text": "$A(d) = 80\\left(\\frac{1}{2}\\right)^{\\frac{d}{6}}$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The amount starts at $80$ milligrams and is multiplied by $\\frac{1}{2}$ once every $6$ hours. The variable $d$ counts days, so find how many $6$-hour periods are in one day: $24 \\div 6 = 4$. The amount is halved $4$ times per day, so in $d$ days it is halved $4d$ times. That gives $A(d) = 80\\left(\\frac{1}{2}\\right)^{4d}$. Check: after $1$ day, $A(1) = 80\\left(\\frac{1}{2}\\right)^4 = 80 \\cdot \\frac{1}{16} = 5$, which matches halving $4$ times: $80 \\to 40 \\to 20 \\to 10 \\to 5$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides by $4$ instead of multiplying. It halves the amount once every $4$ days, not $4$ times each day."
+          },
+          {
+            "label": "B",
+            "text": "This halves the amount $6$ times per day, which means once every $4$ hours, not once every $6$ hours."
+          },
+          {
+            "label": "D",
+            "text": "This would be correct if $d$ were measured in hours. With $d$ in days, it halves the amount only once every $6$ days."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A theater models its weekly revenue $R$, in dollars, from ticket sales by $R(p) = -20p^2 + 800p$, where $p$ is the price of one ticket, in dollars. According to the model, what ticket price gives the greatest weekly revenue?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\$400$"
+          },
+          {
+            "label": "B",
+            "text": "$\\$20$"
+          },
+          {
+            "label": "C",
+            "text": "$\\$40$"
+          },
+          {
+            "label": "D",
+            "text": "$\\$8{,}000$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The graph of $R$ is a parabola that opens downward because the coefficient of $p^2$, $-20$, is negative. So the greatest revenue occurs at the vertex. For $ap^2 + bp + c$, the vertex is at $p = -\\frac{b}{2a}$. Here $a = -20$ and $b = 800$, so $p = -\\frac{800}{2(-20)} = -\\frac{800}{-40} = 20$. Another way to see it: factoring gives $R(p) = -20p(p - 40)$, so the zeros are $p = 0$ and $p = 40$, and the vertex is halfway between them at $p = \\frac{0 + 40}{2} = 20$. The greatest revenue comes from a ticket price of $\\$20$. (That revenue is $R(20) = -20(400) + 800(20) = -8{,}000 + 16{,}000 = 8{,}000$ dollars.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This divides $800$ by $2$ but leaves out $a = -20$ in $-\\frac{b}{2a}$."
+          },
+          {
+            "label": "C",
+            "text": "At $p = 40$ the revenue is $R(40) = -32{,}000 + 32{,}000 = 0$. That is a zero of $R$, not its maximum."
+          },
+          {
+            "label": "D",
+            "text": "$8{,}000$ dollars is the greatest weekly revenue itself, $R(20)$, not the ticket price that produces it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-016",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The polynomial function $p$ is defined by $p(x) = x^3 - 4x^2 - 9x + 36$. What is the positive difference between the greatest zero and the least zero of $p$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "7"
+        ],
+        "explanation": "Factor by grouping. Group the first two terms and the last two terms: $(x^3 - 4x^2) + (-9x + 36)$. Factor $x^2$ out of the first group to get $x^2(x - 4)$, and factor $-9$ out of the second group to get $-9(x - 4)$. Now $p(x) = x^2(x - 4) - 9(x - 4)$, and both parts share the factor $(x - 4)$, so $p(x) = (x^2 - 9)(x - 4)$. The factor $x^2 - 9$ is a difference of squares, $(x - 3)(x + 3)$, so $p(x) = (x - 3)(x + 3)(x - 4)$. Setting each factor equal to $0$ gives the zeros $x = 3$, $x = -3$ and $x = 4$. The greatest zero is $4$ and the least is $-3$, so the difference is $4 - (-3) = 4 + 3 = 7$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-017",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The function $f$ is defined by $f(x) = a \\cdot b^x$, where $a$ and $b$ are positive constants. If $f(1) = 12$ and $f(3) = 108$, what is the value of $f(0)$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "4"
+        ],
+        "explanation": "Write the two facts as equations: $f(1) = ab = 12$ and $f(3) = ab^3 = 108$. Dividing the second equation by the first cancels $a$: $\\frac{ab^3}{ab} = \\frac{108}{12}$, which simplifies to $b^2 = 9$. Since $b$ is positive, $b = 3$. Substitute $b = 3$ into $ab = 12$ to get $3a = 12$, and divide both sides by $3$ to get $a = 4$. Then $f(0) = 4 \\cdot 3^0 = 4 \\cdot 1 = 4$. Check: $f(3) = 4 \\cdot 3^3 = 4 \\cdot 27 = 108$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of the quadratic function $f$ has $x$-intercepts at $(-1, 0)$ and $(5, 0)$ and a $y$-intercept at $(0, -10)$. What is the $y$-coordinate of the vertex of the graph?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$-18$"
+          },
+          {
+            "label": "B",
+            "text": "$-9$"
+          },
+          {
+            "label": "C",
+            "text": "$-10$"
+          },
+          {
+            "label": "D",
+            "text": "$18$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Because the zeros are $x = -1$ and $x = 5$, the function can be written as $f(x) = a(x + 1)(x - 5)$ for some constant $a$. Use the $y$-intercept to find $a$: $f(0) = a(0 + 1)(0 - 5) = -5a$. Setting $-5a = -10$ and dividing both sides by $-5$ gives $a = 2$. So $f(x) = 2(x + 1)(x - 5)$. The vertex is on the axis of symmetry, halfway between the zeros: $x = \\frac{-1 + 5}{2} = \\frac{4}{2} = 2$. Find the $y$-coordinate: $f(2) = 2(2 + 1)(2 - 5) = 2(3)(-3) = -18$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This assumes $a = 1$, giving $(3)(-3) = -9$. With $a = 1$, the $y$-intercept would be $-5$, not $-10$."
+          },
+          {
+            "label": "C",
+            "text": "$-10$ is the $y$-intercept, $f(0)$. The vertex is at $x = 2$, not $x = 0$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $a = -2$, a sign error when dividing $-10$ by $-5$. With $a = -2$, $f(0)$ would be $10$, not $-10$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The number of subscribers $S$ to a library's email newsletter is modeled by $S(m) = 1{,}500(1.08)^m$, where $m$ is the number of months since the newsletter started. According to the model, by what percent does the number of subscribers increase each month?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$1.08\\%$"
+          },
+          {
+            "label": "B",
+            "text": "$108\\%$"
+          },
+          {
+            "label": "C",
+            "text": "$8\\%$"
+          },
+          {
+            "label": "D",
+            "text": "$80\\%$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "In a model of the form $a(1 + r)^m$, the number is multiplied by $1 + r$ each month, and $r$ is the growth rate as a decimal. Here $1 + r = 1.08$. Subtracting $1$ from both sides gives $r = 0.08$. To change a decimal to a percent, multiply by $100$: $0.08 \\times 100 = 8$. The number of subscribers increases by $8\\%$ each month.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "$1.08$ is the growth factor, not a percent. Multiplying by $1.08$ means adding $0.08$, or $8\\%$, of the current amount."
+          },
+          {
+            "label": "B",
+            "text": "Each month's count is $108\\%$ of the previous month's count, so the increase is $108\\% - 100\\% = 8\\%$."
+          },
+          {
+            "label": "D",
+            "text": "This misreads $0.08$ as $0.8$. As a percent, $0.08$ is $8\\%$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nonlinear-functions-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": {
+          "title": null,
+          "columns": [
+            "$x$",
+            "$f(x)$"
+          ],
+          "rows": [
+            [
+              "$-1$",
+              "$7$"
+            ],
+            [
+              "$0$",
+              "$2$"
+            ],
+            [
+              "$1$",
+              "$-1$"
+            ],
+            [
+              "$2$",
+              "$-2$"
+            ],
+            [
+              "$3$",
+              "$-1$"
+            ]
+          ]
+        },
+        "stem": "The table shows five values of $x$ and the corresponding values of $f(x)$ for a quadratic function $f$. Which equation defines $f$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$f(x) = x^2 + 4x + 2$"
+          },
+          {
+            "label": "B",
+            "text": "$f(x) = x^2 - 4x + 2$"
+          },
+          {
+            "label": "C",
+            "text": "$f(x) = -x^2 + 4x + 2$"
+          },
+          {
+            "label": "D",
+            "text": "$f(x) = (x - 2)^2 + 2$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The values $f(1) = -1$ and $f(3) = -1$ are equal, so the graph is symmetric about $x = \\frac{1 + 3}{2} = 2$, the line halfway between them. The vertex is therefore $(2, f(2)) = (2, -2)$, and $f$ can be written as $f(x) = a(x - 2)^2 - 2$. Use $f(3) = -1$ to find $a$: $a(3 - 2)^2 - 2 = -1$, which is $a - 2 = -1$. Adding $2$ to both sides gives $a = 1$. So $f(x) = (x - 2)^2 - 2$. Expanding, $(x - 2)^2 = x^2 - 4x + 4$, so $f(x) = x^2 - 4x + 4 - 2 = x^2 - 4x + 2$. Check with the other rows: $f(-1) = 1 + 4 + 2 = 7$ and $f(0) = 2$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This has the wrong sign on the $x$-term. It gives $f(-1) = 1 - 4 + 2 = -1$, not $7$."
+          },
+          {
+            "label": "C",
+            "text": "This parabola opens downward. It gives $f(1) = -1 + 4 + 2 = 5$, not $-1$."
+          },
+          {
+            "label": "D",
+            "text": "This has the right axis of symmetry, $x = 2$, but the wrong vertex: it gives $f(2) = 2$, not $-2$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

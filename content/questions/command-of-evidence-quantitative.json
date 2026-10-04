@@ -964,6 +964,1020 @@
           }
         ]
       }
+    },
+    {
+      "id": "command-of-evidence-quantitative-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Biologist Theresa Quill studied a small shorebird that nests on four beaches along one stretch of coast. Two of the beaches allow dogs and two ban them. Quill found that nests on the beaches where dogs are banned tended to be more successful: ______"
+          }
+        ],
+        "table": {
+          "title": "Shorebird nesting on four beaches",
+          "columns": [
+            "Beach",
+            "Dogs allowed?",
+            "Number of nests",
+            "Chicks fledged per nest"
+          ],
+          "rows": [
+            [
+              "Pell Point",
+              "Yes",
+              "14",
+              "0.6"
+            ],
+            [
+              "Gannet Cove",
+              "No",
+              "9",
+              "1.8"
+            ],
+            [
+              "Shoal Bay",
+              "Yes",
+              "22",
+              "0.9"
+            ],
+            [
+              "Marram Beach",
+              "No",
+              "17",
+              "1.5"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "at Gannet Cove and Marram Beach, which ban dogs, an average of 1.8 and 1.5 chicks per nest survived to fly, compared with 0.6 and 0.9 at the two beaches that allow dogs."
+          },
+          {
+            "label": "B",
+            "text": "Shoal Bay, which allows dogs, had 22 nests, the most of any beach."
+          },
+          {
+            "label": "C",
+            "text": "Gannet Cove had fewer nests than Marram Beach did."
+          },
+          {
+            "label": "D",
+            "text": "at Pell Point, which bans dogs, only 0.6 chicks per nest survived to fly."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs data showing that nests on dog-free beaches did better. The table shows the two beaches that ban dogs, Gannet Cove and Marram Beach, averaged 1.8 and 1.5 chicks fledged per nest. The two beaches that allow dogs, Pell Point and Shoal Bay, averaged only 0.6 and 0.9. Both dog-free beaches beat both dog-allowed beaches, so choice A completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is true, but the number of nests does not show how successful the nests were."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it compares two dog-free beaches with each other and gives no information about nest success."
+          },
+          {
+            "label": "D",
+            "text": "The table shows that Pell Point allows dogs, so this misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A volunteer counted monarch butterflies in a community garden on the first Saturday of each month from June through September. She noticed that the counts rose steadily over the summer and were highest in September, when monarchs pass through the region on their migration south: ______"
+          }
+        ],
+        "table": {
+          "title": "Monarch butterflies counted in a community garden",
+          "columns": [
+            "Month",
+            "Monarchs counted"
+          ],
+          "rows": [
+            [
+              "June",
+              "12"
+            ],
+            [
+              "July",
+              "31"
+            ],
+            [
+              "August",
+              "58"
+            ],
+            [
+              "September",
+              "140"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "12 monarchs were counted in June."
+          },
+          {
+            "label": "B",
+            "text": "more monarchs were counted in August than in July."
+          },
+          {
+            "label": "C",
+            "text": "the count climbed from 12 in June to 31 in July and 58 in August before reaching 140 in September."
+          },
+          {
+            "label": "D",
+            "text": "the July count of 58 was the highest of the four months."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The statement says the counts rose steadily and peaked in September. Choice C traces all four months, $12$, $31$, $58$ and then $140$, showing that each count is higher than the one before and that September's is the highest. That completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but a single month's count cannot show that the counts rose over the summer or peaked in September."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it covers only July and August. It doesn't show that September had the highest count."
+          },
+          {
+            "label": "D",
+            "text": "The table shows 31 for July and 58 for August, and the highest count, 140, came in September. This misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Agronomist Rafael Ibáñez tested a new drip-irrigation schedule on three crops. He reports that the schedule reduced water use for every crop he tested, but he warns that it is not suitable for all crops, since for one crop the greatest water savings came at a real cost: ______"
+          }
+        ],
+        "table": {
+          "title": "Results of a new irrigation schedule",
+          "columns": [
+            "Crop",
+            "Water used, old schedule (L/m²)",
+            "Water used, new schedule (L/m²)",
+            "Change in yield (%)"
+          ],
+          "rows": [
+            [
+              "Corn",
+              "520",
+              "410",
+              "+2"
+            ],
+            [
+              "Wheat",
+              "380",
+              "290",
+              "0"
+            ],
+            [
+              "Tomatoes",
+              "600",
+              "450",
+              "−12"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "corn used 520 liters of water per square meter under the old schedule but only 410 under the new one."
+          },
+          {
+            "label": "B",
+            "text": "tomatoes, which had the largest drop in water use, from 600 to 450 liters per square meter, also had their yield fall by 12 percent."
+          },
+          {
+            "label": "C",
+            "text": "wheat's yield did not change even though its water use fell from 380 to 290 liters per square meter."
+          },
+          {
+            "label": "D",
+            "text": "corn's yield rose by 2 percent, the largest gain of any crop."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs a crop whose water savings were the largest and also came with a cost. Find each crop's savings by subtracting. Corn: $520 - 410 = 110$ liters per square meter. Wheat: $380 - 290 = 90$. Tomatoes: $600 - 450 = 150$. So tomatoes saved the most water, and the table shows their yield changed by $-12\\%$, a 12 percent drop. That drop is the cost, so choice B completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but corn's yield rose, so its water savings came at no cost. Corn also did not have the largest savings."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it shows a crop that saved water with no loss in yield, the opposite of what the statement needs."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but a gain in yield is a benefit, not a cost, so it doesn't support Ibáñez's warning."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-014",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "For a health class project, a student surveyed her school about how many hours students sleep. She found that in every grade, students slept more on weekend nights than on school nights. For example, ______"
+          }
+        ],
+        "table": {
+          "title": "Average hours of sleep per night, by grade",
+          "columns": [
+            "Grade",
+            "School nights",
+            "Weekend nights"
+          ],
+          "rows": [
+            [
+              "9",
+              "7.4",
+              "9.1"
+            ],
+            [
+              "10",
+              "7.1",
+              "8.8"
+            ],
+            [
+              "11",
+              "6.8",
+              "8.9"
+            ],
+            [
+              "12",
+              "6.6",
+              "8.5"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "ninth graders slept an average of 7.4 hours on school nights, the most of any grade."
+          },
+          {
+            "label": "B",
+            "text": "twelfth graders slept less on school nights than tenth graders did."
+          },
+          {
+            "label": "C",
+            "text": "tenth graders slept an average of 8.8 hours on school nights and 7.1 hours on weekend nights."
+          },
+          {
+            "label": "D",
+            "text": "eleventh graders slept an average of 8.9 hours on weekend nights but only 6.8 hours on school nights."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs an example of one grade sleeping more on weekend nights than on school nights. The table shows eleventh graders averaged $8.9$ hours on weekend nights and $6.8$ hours on school nights, so they slept more on weekends. Choice D gives that example.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it compares school-night sleep across grades instead of comparing school nights with weekend nights."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it compares two grades on school nights only and says nothing about weekends."
+          },
+          {
+            "label": "C",
+            "text": "This swaps the columns. Tenth graders slept 7.1 hours on school nights and 8.8 hours on weekend nights."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-015",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Historian Wen Liang studied how grain reached the river city of Harwick in the nineteenth century. Liang argues that railroads replaced canals as the main route for grain shipments into the city during the 1860s: ______"
+          }
+        ],
+        "table": {
+          "title": "Grain shipped into Harwick (thousands of tons)",
+          "columns": [
+            "Year",
+            "By canal",
+            "By rail"
+          ],
+          "rows": [
+            [
+              "1850",
+              "410",
+              "35"
+            ],
+            [
+              "1860",
+              "380",
+              "150"
+            ],
+            [
+              "1870",
+              "290",
+              "310"
+            ],
+            [
+              "1880",
+              "160",
+              "520"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "canal shipments fell in every decade shown, from 410 thousand tons in 1850 to 160 thousand tons in 1880."
+          },
+          {
+            "label": "B",
+            "text": "in 1860 canals carried 380 thousand tons of grain into the city and railroads only 150 thousand, but by 1870 railroads carried 310 thousand tons and canals 290 thousand."
+          },
+          {
+            "label": "C",
+            "text": "rail shipments grew from 35 thousand tons in 1850 to 520 thousand tons in 1880."
+          },
+          {
+            "label": "D",
+            "text": "by 1860 railroads were already carrying more grain into the city than canals were."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "To show that railroads replaced canals during the 1860s, the data must show canals ahead at the start of the decade and railroads ahead at the end. In 1860, canals carried $380$ thousand tons and railroads $150$ thousand, so canals led. In 1870, railroads carried $310$ thousand tons and canals $290$ thousand, so railroads led. The switch happened between 1860 and 1870, so choice B completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but a steady decline in canal shipments doesn't show when railroads overtook canals."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it doesn't compare railroads with canals or show that the change happened in the 1860s."
+          },
+          {
+            "label": "D",
+            "text": "In 1860 canals carried 380 thousand tons and railroads only 150 thousand, so this misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Education researcher Hollis Grant evaluated an after-school math tutoring program. He compared students in the program with similar students who were not, grouping both by their starting test scores and recording each group's average gain in points over the year. Grant concludes that the program's benefit was concentrated among students who began with the lowest scores."
+          }
+        ],
+        "table": {
+          "title": "Average gain in math test score over one year (points)",
+          "columns": [
+            "Starting-score group",
+            "In tutoring program",
+            "Not in program"
+          ],
+          "rows": [
+            [
+              "Lowest third",
+              "14",
+              "3"
+            ],
+            [
+              "Middle third",
+              "6",
+              "4"
+            ],
+            [
+              "Highest third",
+              "3",
+              "2"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Grant's conclusion?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Students in the lowest third gained 14 points in the program versus 3 points without it, a difference of 11 points, while the differences for the middle and highest thirds were only 2 points and 1 point."
+          },
+          {
+            "label": "B",
+            "text": "Students in the program gained points in every starting-score group."
+          },
+          {
+            "label": "C",
+            "text": "Students in the highest third who were in the program gained only 3 points, the smallest gain of any program group."
+          },
+          {
+            "label": "D",
+            "text": "Students in the middle third who were not in the program gained 4 points, more than students not in the program in either of the other groups."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The program's benefit for a group is the program gain minus the gain for similar students without the program. Lowest third: $14 - 3 = 11$ points. Middle third: $6 - 4 = 2$ points. Highest third: $3 - 2 = 1$ point. The benefit was $11$ points for the lowest group but only $2$ and $1$ for the others, so it was concentrated among the lowest scorers. Choice A uses exactly these comparisons.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is true, but students without the program also gained points in every group, so gains alone don't show how much the program helped or where its benefit was concentrated."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it ignores the comparison group. To measure the program's benefit, each program gain must be compared with the gain of similar students outside the program."
+          },
+          {
+            "label": "D",
+            "text": "This is true, but it describes only students not in the program, so it says nothing about the program's benefit."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A consumer magazine measured the power use and brightness of four household light bulbs. Its writers report that an LED bulb can match the brightness of a traditional incandescent bulb while using only a small fraction of the power: ______"
+          }
+        ],
+        "table": {
+          "title": "Power use and brightness of four light bulbs",
+          "columns": [
+            "Bulb type",
+            "Power used (watts)",
+            "Brightness (lumens)"
+          ],
+          "rows": [
+            [
+              "Incandescent",
+              "60",
+              "800"
+            ],
+            [
+              "Halogen",
+              "43",
+              "750"
+            ],
+            [
+              "CFL",
+              "14",
+              "800"
+            ],
+            [
+              "LED",
+              "9",
+              "800"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the halogen bulb produced 750 lumens, the least light of any bulb tested."
+          },
+          {
+            "label": "B",
+            "text": "the CFL bulb used 14 watts, more than the 9 watts used by the LED bulb."
+          },
+          {
+            "label": "C",
+            "text": "the incandescent bulb used 60 watts to produce 800 lumens, more light than any other bulb produced."
+          },
+          {
+            "label": "D",
+            "text": "the LED bulb produced 800 lumens using 9 watts, while the incandescent bulb needed 60 watts to produce the same 800 lumens."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The statement compares the LED bulb with the incandescent bulb: same brightness, much less power. The table shows both produced $800$ lumens, but the LED used $9$ watts and the incandescent used $60$ watts. Since $\\frac{9}{60} = 0.15$, the LED used only $15\\%$ of the power. Choice D gives this comparison.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it is about the halogen bulb, not the LED or incandescent bulb."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it compares the LED with the CFL bulb, not with the incandescent bulb."
+          },
+          {
+            "label": "C",
+            "text": "The incandescent, CFL and LED bulbs all produced 800 lumens, so the incandescent bulb did not produce more light than every other bulb. This misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The manager of Lindell Park tracked rainfall and the number of park visitors on four weekend days in June. She noticed that attendance dropped sharply on rainy days. For example, ______"
+          }
+        ],
+        "table": {
+          "title": "Rainfall and visitors at Lindell Park",
+          "columns": [
+            "Date",
+            "Rainfall (mm)",
+            "Visitors"
+          ],
+          "rows": [
+            [
+              "June 3",
+              "0",
+              "1,240"
+            ],
+            [
+              "June 4",
+              "18",
+              "310"
+            ],
+            [
+              "June 10",
+              "2",
+              "1,100"
+            ],
+            [
+              "June 11",
+              "25",
+              "270"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the park had 1,100 visitors on June 10."
+          },
+          {
+            "label": "B",
+            "text": "more rain fell on June 11 than on June 4."
+          },
+          {
+            "label": "C",
+            "text": "on June 4, when 18 millimeters of rain fell, the park had 310 visitors, compared with 1,240 visitors on the dry day of June 3."
+          },
+          {
+            "label": "D",
+            "text": "on June 11, when 25 millimeters of rain fell, the park had 1,240 visitors."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs an example comparing attendance on a rainy day with attendance on a dry day. On June 4, $18$ millimeters of rain fell and $310$ people visited. On June 3, no rain fell and $1{,}240$ people visited. Attendance was far lower on the rainy day, so choice C is the example.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it gives one day's attendance without any comparison to show that rain lowered it."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it compares rainfall only and says nothing about attendance."
+          },
+          {
+            "label": "D",
+            "text": "The table shows the park had 270 visitors on June 11. The 1,240 visitors came on June 3, so this misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Book industry analyst Marguerite Oyelaran studied how readers in one country buy books in four genres. She found that the format readers prefer varies sharply by genre, and that romance stands apart from the others: ______"
+          }
+        ],
+        "table": {
+          "title": "Share of sales by format and genre (%)",
+          "columns": [
+            "Genre",
+            "Print",
+            "Ebook"
+          ],
+          "rows": [
+            [
+              "Romance",
+              "38",
+              "62"
+            ],
+            [
+              "Mystery",
+              "55",
+              "45"
+            ],
+            [
+              "Biography",
+              "71",
+              "29"
+            ],
+            [
+              "Children's",
+              "88",
+              "12"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to complete the statement?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "romance is the only genre in the table for which ebooks made up the majority of sales, at 62 percent."
+          },
+          {
+            "label": "B",
+            "text": "children's books had the highest share of print sales, at 88 percent."
+          },
+          {
+            "label": "C",
+            "text": "mystery's ebook share of 45 percent was higher than biography's ebook share of 29 percent."
+          },
+          {
+            "label": "D",
+            "text": "romance had the lowest ebook share of any genre, at 38 percent."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The statement needs data showing how romance differs from the other genres. Romance's ebook share is $62\\%$, which is more than half of its sales. Every other genre has an ebook share below $50\\%$ ($45\\%$, $29\\%$ and $12\\%$). So romance is the only genre where ebooks outsell print, and choice A completes the statement.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is true, but it is about children's books, not about how romance stands apart."
+          },
+          {
+            "label": "C",
+            "text": "This is true, but it compares mystery with biography and says nothing about romance."
+          },
+          {
+            "label": "D",
+            "text": "The table shows romance's print share is 38 percent and its ebook share is 62 percent, the highest of any genre. This misreads the table."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-quantitative-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "A city's express bus route skips many of the stops made by the local route along the same street. Transit planner Odile Marchetti argues that the express route's time advantage is real only outside rush hour; during the morning and evening rush, she says, traffic erases nearly all of it."
+          }
+        ],
+        "table": {
+          "title": "Average trip time from end to end (minutes)",
+          "columns": [
+            "Departure time",
+            "Local route",
+            "Express route"
+          ],
+          "rows": [
+            [
+              "6:00 a.m.",
+              "42",
+              "28"
+            ],
+            [
+              "8:00 a.m.",
+              "55",
+              "54"
+            ],
+            [
+              "12:00 p.m.",
+              "45",
+              "30"
+            ],
+            [
+              "5:00 p.m.",
+              "58",
+              "57"
+            ]
+          ]
+        },
+        "stem": "Which choice most effectively uses data from the table to support Marchetti's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The express trip was shorter than the local trip at every one of the four times measured."
+          },
+          {
+            "label": "B",
+            "text": "The local trip took longest at 5:00 p.m., when it lasted 58 minutes."
+          },
+          {
+            "label": "C",
+            "text": "At 8:00 a.m., the express trip took 54 minutes, 26 minutes longer than it took at 6:00 a.m."
+          },
+          {
+            "label": "D",
+            "text": "At 6:00 a.m. and 12:00 p.m., the express trip was 14 and 15 minutes shorter than the local trip, but at 8:00 a.m. and 5:00 p.m. it was only 1 minute shorter."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Marchetti's argument is about the express route's advantage, which is the local trip time minus the express trip time. At 6:00 a.m.: $42 - 28 = 14$ minutes. At 12:00 p.m.: $45 - 30 = 15$ minutes. At 8:00 a.m. (rush hour): $55 - 54 = 1$ minute. At 5:00 p.m. (rush hour): $58 - 57 = 1$ minute. The advantage is large outside rush hour and nearly gone during it, so choice D supports her argument.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is true, but it suggests the express route always has an advantage. It doesn't show that the advantage nearly disappears at rush hour."
+          },
+          {
+            "label": "B",
+            "text": "This is true, but it describes only the local route, so it says nothing about the express route's advantage."
+          },
+          {
+            "label": "C",
+            "text": "This is true ($54 - 28 = 26$), but it shows only that the express bus slows down at rush hour. The local bus slows down too, so this alone doesn't show that the express route's advantage over the local route disappears."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

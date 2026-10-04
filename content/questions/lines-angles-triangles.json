@@ -571,6 +571,602 @@
           }
         ]
       }
+    },
+    {
+      "id": "lines-angles-triangles-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Points $A$, $B$ and $C$ lie on a line in that order, and ray $BD$ starts at $B$ and goes up off the line, forming angle $ABD$ and angle $DBC$. The measure of angle $ABD$ is $(5x + 15)^\\circ$, and the measure of angle $DBC$ is $(3x + 5)^\\circ$. What is the measure, in degrees, of angle $ABD$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$20$"
+          },
+          {
+            "label": "B",
+            "text": "$65$"
+          },
+          {
+            "label": "C",
+            "text": "$100$"
+          },
+          {
+            "label": "D",
+            "text": "$115$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Angles $ABD$ and $DBC$ together make the straight angle $ABC$, so their measures add to $180^\\circ$. This gives $(5x + 15) + (3x + 5) = 180$. Combining like terms gives $8x + 20 = 180$. Subtracting $20$ from both sides gives $8x = 160$. Dividing both sides by $8$ gives $x = 20$. Substituting into the expression for angle $ABD$ gives $5(20) + 15 = 100 + 15 = 115$. The measure of angle $ABD$ is $115^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $x$, not the measure of angle $ABD$."
+          },
+          {
+            "label": "B",
+            "text": "This is the measure of angle $DBC$: $3(20) + 5 = 65$."
+          },
+          {
+            "label": "C",
+            "text": "This is $5x$ with $x = 20$, which leaves off the $+15$ in the expression for angle $ABD$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-012",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Lines $p$ and $q$ are parallel, and line $r$ crosses both of them. Two of the angles formed are alternate interior angles: one measures $(7x - 12)^\\circ$ and the other measures $(5x + 18)^\\circ$. What is the measure, in degrees, of each of these angles?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "93"
+        ],
+        "explanation": "When a line crosses two parallel lines, alternate interior angles are equal. So $7x - 12 = 5x + 18$. Subtracting $5x$ from both sides gives $2x - 12 = 18$. Adding $12$ to both sides gives $2x = 30$. Dividing both sides by $2$ gives $x = 15$. Substituting into $7x - 12$ gives $7(15) - 12 = 105 - 12 = 93$. As a check, $5(15) + 18 = 75 + 18 = 93$. Each angle measures $93^\\circ$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-013",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "At the same time of day, a person who is $1.8$ meters tall casts a shadow $2.4$ meters long, and a flagpole casts a shadow $14$ meters long. Each object stands straight up on level ground, and the sun's rays make the same angle with the ground for both, so the triangle formed by the person and its shadow is similar to the triangle formed by the flagpole and its shadow. What is the height, in meters, of the flagpole?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$10.5$"
+          },
+          {
+            "label": "B",
+            "text": "$13.4$"
+          },
+          {
+            "label": "C",
+            "text": "$18.\\overline{6}$"
+          },
+          {
+            "label": "D",
+            "text": "$25.2$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "In similar triangles, corresponding sides are proportional, so height divided by shadow length is the same for both objects. This gives $\\frac{1.8}{2.4} = \\frac{h}{14}$, where $h$ is the flagpole's height. The left side simplifies: $\\frac{1.8}{2.4} = 0.75$. So $0.75 = \\frac{h}{14}$. Multiplying both sides by $14$ gives $h = 0.75 \\cdot 14 = 10.5$. The flagpole is $10.5$ meters tall.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This subtracts the person's $0.6$-meter difference between shadow and height from the flagpole's shadow ($14 - 0.6$). Similar triangles keep the ratio of sides the same, not the difference."
+          },
+          {
+            "label": "C",
+            "text": "This inverts the ratio, using $\\frac{2.4}{1.8} = \\frac{h}{14}$, which compares shadow to height on one side and height to shadow on the other."
+          },
+          {
+            "label": "D",
+            "text": "This is $1.8 \\cdot 14$, which multiplies by the flagpole's shadow but never divides by the person's shadow length of $2.4$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-014",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, $AB = BC$. Side $AC$ is extended past $C$ to point $D$, and the measure of angle $BCD$ is $128^\\circ$. What is the measure, in degrees, of angle $ABC$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "76"
+        ],
+        "explanation": "Angles $BCA$ and $BCD$ lie along the straight line $AD$, so they add to $180^\\circ$. Subtracting gives angle $BCA = 180 - 128 = 52^\\circ$. Since $AB = BC$, the angles opposite those sides are equal. Side $AB$ is opposite angle $C$, and side $BC$ is opposite angle $A$, so angle $A$ also measures $52^\\circ$. The three angles of a triangle add to $180^\\circ$, so angle $ABC = 180 - 52 - 52$. First, $52 + 52 = 104$, and then $180 - 104 = 76$. Angle $ABC$ measures $76^\\circ$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-015",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Lines $\\ell$ and $m$ are parallel and horizontal, with $\\ell$ above $m$. Point $A$ is on line $\\ell$, and point $B$ is on line $m$. Point $P$ lies between the two lines and to the right of both $A$ and $B$. Point $C$ is on $\\ell$ to the right of $A$, and point $D$ is on $m$ to the right of $B$. The measure of angle $CAP$ is $34^\\circ$ and the measure of angle $DBP$ is $51^\\circ$. What is the measure of angle $APB$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$17^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$42.5^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$85^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$95^\\circ$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Draw a horizontal line through $P$, parallel to $\\ell$ and $m$, and let point $E$ be on it to the left of $P$ (the side where $A$ and $B$ are). This line splits angle $APB$ into angle $APE$ (above the new line) and angle $EPB$ (below it). Line $AP$ crosses the parallel lines $\\ell$ and $PE$, and angles $CAP$ and $APE$ are alternate interior angles, so angle $APE = 34^\\circ$. In the same way, line $BP$ crosses the parallel lines $m$ and $PE$, and angles $DBP$ and $EPB$ are alternate interior angles, so angle $EPB = 51^\\circ$. Adding the two parts gives angle $APB = 34 + 51 = 85^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $51 - 34$, the difference of the two given angles. The auxiliary line through $P$ splits angle $APB$ into two parts that add, not subtract."
+          },
+          {
+            "label": "B",
+            "text": "This is half of $85^\\circ$, as if angle $APB$ were the average of the two given angles rather than their sum."
+          },
+          {
+            "label": "D",
+            "text": "This is $180 - 85$, the supplement of the correct answer. The two alternate interior angles at $P$ together make up angle $APB$ itself, so their sum is the answer and nothing should be subtracted from $180^\\circ$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-016",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, $AB = AC$. Point $D$ lies on side $AC$ so that $AD = BD = BC$. What is the measure, in degrees, of angle $BAC$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "36"
+        ],
+        "explanation": "Let the measure of angle $BAC$ be $a$ degrees. In triangle $ABD$, $AD = BD$, so the angles opposite those sides are equal: angle $ABD = a$. Angle $BDC$ is an exterior angle of triangle $ABD$, so it equals the sum of the two remote interior angles: angle $BDC = a + a = 2a$. In triangle $BDC$, $BD = BC$, so the angles opposite those sides are equal: angle $BCD$ equals angle $BDC$, which is $2a$. Angle $BCD$ is the same as angle $C$ of triangle $ABC$, so angle $C = 2a$. Since $AB = AC$, angle $ABC$ equals angle $C$, so angle $ABC = 2a$. The angles of triangle $ABC$ add to $180^\\circ$: $a + 2a + 2a = 180$. Combining like terms gives $5a = 180$. Dividing both sides by $5$ gives $a = 36$. Angle $BAC$ measures $36^\\circ$.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-017",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "The measures of the three angles of a triangle are $x^\\circ$, $2x^\\circ$ and $(2x + 30)^\\circ$. What is the measure, in degrees, of the largest angle of the triangle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$30$"
+          },
+          {
+            "label": "B",
+            "text": "$90$"
+          },
+          {
+            "label": "C",
+            "text": "$60$"
+          },
+          {
+            "label": "D",
+            "text": "$102$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The angles of a triangle add to $180^\\circ$, so $x + 2x + (2x + 30) = 180$. Combining like terms gives $5x + 30 = 180$. Subtracting $30$ from both sides gives $5x = 150$. Dividing both sides by $5$ gives $x = 30$. The angles are $30^\\circ$, $2(30) = 60^\\circ$ and $2(30) + 30 = 90^\\circ$. The largest angle measures $90^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the value of $x$, which is the smallest angle, not the largest."
+          },
+          {
+            "label": "C",
+            "text": "This is $2x$, the middle angle. The angle $(2x + 30)^\\circ$ is $30^\\circ$ larger."
+          },
+          {
+            "label": "D",
+            "text": "This comes from solving $5x = 180$, which forgets the $+30$ term: $x = 36$ and $2(36) + 30 = 102$. Those angles would add to $210^\\circ$, not $180^\\circ$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-018",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, point $D$ lies on side $AB$ and point $E$ lies on side $AC$ so that angle $ADE$ is congruent to angle $ACB$. (Segment $DE$ is not parallel to side $BC$.) If $AD = 4$, $AE = 6$ and $AC = 8$, what is the length of $DB$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{4}{3}$"
+          },
+          {
+            "label": "C",
+            "text": "$12$"
+          },
+          {
+            "label": "D",
+            "text": "$8$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Triangles $ADE$ and $ACB$ share angle $A$, and angle $ADE$ is congruent to angle $ACB$, so the triangles are similar by angle-angle similarity. The matching vertices are $A \\leftrightarrow A$, $D \\leftrightarrow C$ and $E \\leftrightarrow B$. So side $AD$ corresponds to side $AC$, and side $AE$ corresponds to side $AB$. This gives the proportion $\\frac{AD}{AC} = \\frac{AE}{AB}$. Substituting gives $\\frac{4}{8} = \\frac{6}{AB}$. Cross-multiplying gives $4 \\cdot AB = 48$. Dividing both sides by $4$ gives $AB = 12$. Point $D$ is on $AB$, so $DB = AB - AD = 12 - 4 = 8$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $AC - AE = 8 - 6$, which is the length of $EC$, not $DB$."
+          },
+          {
+            "label": "B",
+            "text": "This pairs the sides as if $DE$ were parallel to $BC$, using $\\frac{AD}{AB} = \\frac{AE}{AC}$. That gives $AB = \\frac{16}{3}$ and $DB = \\frac{16}{3} - 4 = \\frac{4}{3}$, but the congruent angles make $D$ correspond to $C$, not $B$."
+          },
+          {
+            "label": "C",
+            "text": "This is the length of all of side $AB$. The question asks for $DB$, which is $AB - AD$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-019",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In right triangle $ABC$, the right angle is at $C$, $AC = 6$ and $BC = 8$. Square $CDEF$ is drawn inside the triangle so that point $D$ is on side $AC$, point $F$ is on side $BC$, and point $E$ is on hypotenuse $AB$. What is the side length of the square?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$2$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{24}{7}$"
+          },
+          {
+            "label": "C",
+            "text": "$\\frac{24}{5}$"
+          },
+          {
+            "label": "D",
+            "text": "$7$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Let $s$ be the side length of the square. Then $CD = DE = s$, and $AD = AC - CD = 6 - s$. Side $DE$ of the square is perpendicular to $AC$, just as $BC$ is, so $DE$ is parallel to $BC$. That makes triangle $ADE$ similar to triangle $ACB$, with $AD$ corresponding to $AC$ and $DE$ corresponding to $CB$. So $\\frac{AD}{AC} = \\frac{DE}{CB}$, which gives $\\frac{6 - s}{6} = \\frac{s}{8}$. Cross-multiplying gives $8(6 - s) = 6s$. Distributing gives $48 - 8s = 6s$. Adding $8s$ to both sides gives $48 = 14s$. Dividing both sides by $14$ gives $s = \\frac{48}{14}$, which simplifies to $\\frac{24}{7}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $8 - 6$, the difference of the legs, which is not related to the square's side by any similarity."
+          },
+          {
+            "label": "C",
+            "text": "This is $\\frac{6 \\cdot 8}{10}$, the length of the altitude from $C$ to the hypotenuse. The square's corner $E$ is on the hypotenuse, but $CE$ is the square's diagonal, not the altitude, and the side is shorter."
+          },
+          {
+            "label": "D",
+            "text": "This is the average of the legs, $\\frac{6 + 8}{2}$, which is larger than the leg $AC = 6$ and so could not fit inside the triangle."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lines-angles-triangles-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In triangle $ABC$, side $BC$ is horizontal with $B$ on the left and $C$ on the right, and vertex $A$ is above $BC$. Line $\\ell$ passes through $A$ and is parallel to $BC$. Point $P$ is on $\\ell$ to the left of $A$, and point $Q$ is on $\\ell$ to the right of $A$. The measure of angle $PAB$ is $58^\\circ$ and the measure of angle $QAC$ is $47^\\circ$. What is the measure of angle $BAC$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$11^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$105^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$75^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$122^\\circ$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Points $P$, $A$ and $Q$ lie on the straight line $\\ell$, so the three angles at $A$ on the triangle's side of $\\ell$, namely angle $PAB$, angle $BAC$ and angle $QAC$, add to $180^\\circ$. This gives $58 + \\angle BAC + 47 = 180$. Adding $58 + 47$ gives $105$, so $105 + \\angle BAC = 180$. Subtracting $105$ from both sides gives $\\angle BAC = 75^\\circ$. (As a check, alternate interior angles give $\\angle B = 58^\\circ$ and $\\angle C = 47^\\circ$, and $58 + 47 + 75 = 180$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is $58 - 47$, the difference of the two given angles, which does not describe any angle in the figure."
+          },
+          {
+            "label": "B",
+            "text": "This is $58 + 47$, the sum of the two given angles. That sum is the part of the straight angle not used by angle $BAC$."
+          },
+          {
+            "label": "D",
+            "text": "This is $180 - 58$, which subtracts only angle $PAB$ from the straight angle and leaves out angle $QAC$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

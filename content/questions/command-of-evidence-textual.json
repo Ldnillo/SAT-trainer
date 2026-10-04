@@ -680,6 +680,740 @@
           }
         ]
       }
+    },
+    {
+      "id": "command-of-evidence-textual-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The silverleaf saltbush, a shrub that grows in dry scrublands, often loses most of its leaves in midsummer. Plant biologist Nadia Farouk hypothesizes that the shrub drops its leaves during droughts because doing so reduces the amount of water the plant loses through its leaves."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Farouk's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Silverleaf saltbushes grow faster in years with heavy rainfall than in dry years."
+          },
+          {
+            "label": "B",
+            "text": "The leaves of the silverleaf saltbush are covered in tiny silver hairs that reflect sunlight."
+          },
+          {
+            "label": "C",
+            "text": "When water was withheld from saltbushes for a month, the shrubs shed most of their leaves, and afterward they lost water much more slowly than they had before."
+          },
+          {
+            "label": "D",
+            "text": "Animals in the region avoid eating saltbush leaves during droughts."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Farouk's hypothesis has two parts: the shrub drops its leaves when water is scarce, and dropping them reduces water loss. Choice C shows both. The shrubs shed their leaves when water was withheld, and then they lost water much more slowly. This directly supports the hypothesis.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is about how fast the shrub grows, not about whether dropping leaves reduces water loss."
+          },
+          {
+            "label": "B",
+            "text": "This describes the leaves' appearance but says nothing about dropping leaves during drought or about water loss."
+          },
+          {
+            "label": "D",
+            "text": "This is about animals' eating habits, not about how the shrub's leaf drop affects its water loss."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "People who move to a new region often begin to talk like the locals, but not all features of speech may change at the same pace. Sociolinguist Owen Tallis hypothesizes that adults who move to a new region pick up local vocabulary much more quickly than they pick up local pronunciation."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Tallis's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Among adults who moved to a new city, most were using the local words for common objects within a year, but the way they pronounced vowels had barely changed after five years."
+          },
+          {
+            "label": "B",
+            "text": "Adults who moved from a nearby region sounded more like locals after five years than adults who moved from a distant region did."
+          },
+          {
+            "label": "C",
+            "text": "Longtime residents of a city could usually tell from a newcomer's accent that the person had grown up somewhere else."
+          },
+          {
+            "label": "D",
+            "text": "Children who moved to a new region adopted both local words and local pronunciation faster than adults who moved there."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Tallis's hypothesis compares two things for adult newcomers: how fast they adopt local words and how fast they adopt local pronunciation. Choice A gives exactly that comparison. The newcomers used local words within a year, but their vowel sounds had barely changed after five years, so vocabulary changed much faster than pronunciation.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This compares newcomers from nearby and distant places. It does not compare vocabulary with pronunciation."
+          },
+          {
+            "label": "C",
+            "text": "This suggests newcomers keep their accents, but it says nothing about how fast they pick up local vocabulary, so it cannot show which changes faster."
+          },
+          {
+            "label": "D",
+            "text": "This compares children with adults. The hypothesis is about adults, and the finding does not compare vocabulary with pronunciation."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The number of households listed on the tax rolls of the medieval town of Wendmouth fell by about half between 1335 and 1350. Historian Lucia Ferrante attributes the decline to floods in 1338 and 1341 that buried much of the town's farmland in mud and sand, arguing that families left because they could no longer make a living from the land."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly weaken Ferrante's argument?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Records from the period describe the flood of 1341 as more destructive than the flood of 1338."
+          },
+          {
+            "label": "B",
+            "text": "Soil samples confirm that fields near Wendmouth were covered by a layer of flood sediment around 1340."
+          },
+          {
+            "label": "C",
+            "text": "Some families who left Wendmouth during this period resettled in villages on higher ground."
+          },
+          {
+            "label": "D",
+            "text": "Tax rolls from several nearby towns that sat on high ground and were never flooded show declines of similar size over the same years."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Ferrante argues that the floods caused Wendmouth's decline. If towns nearby that were never flooded lost a similar share of households over the same years, then something other than flooding (something that affected the whole region) likely caused the decline. Choice D therefore weakens her argument.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "Comparing the two floods does not challenge the claim that the floods caused the decline. If anything, it fits her argument."
+          },
+          {
+            "label": "B",
+            "text": "This confirms that the floods damaged the farmland, which supports Ferrante's argument rather than weakening it."
+          },
+          {
+            "label": "C",
+            "text": "Families moving to higher ground fits the idea that they were escaping flooded land, so this supports her argument."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In William Wordsworth's poem \"I Wandered Lonely as a Cloud\" (1815 version), the speaker describes coming upon a great mass of daffodils beside a lake. A literary critic argues that the poem presents the experience as most valuable not in the moment itself but as a memory the speaker can return to long afterward."
+          }
+        ],
+        "table": null,
+        "stem": "Which quotation from the poem would most directly support the critic's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "\"Beside the lake, beneath the trees, / Fluttering and dancing in the breeze.\""
+          },
+          {
+            "label": "B",
+            "text": "\"For oft, when on my couch I lie / In vacant or in pensive mood, / They flash upon that inward eye / Which is the bliss of solitude\""
+          },
+          {
+            "label": "C",
+            "text": "\"Continuous as the stars that shine / And twinkle on the milky way, / They stretched in never-ending line / Along the margin of a bay\""
+          },
+          {
+            "label": "D",
+            "text": "\"The waves beside them danced; but they / Out-did the sparkling waves in glee\""
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The critic claims the poem values the daffodils most as a memory the speaker returns to later. In choice B, the speaker is lying on his couch, often (\"oft\"), when the daffodils \"flash upon that inward eye,\" meaning his memory or imagination, and this brings him \"bliss.\" This shows the experience giving him joy long after it happened.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "These lines describe the daffodils as the speaker first saw them. They say nothing about remembering them later."
+          },
+          {
+            "label": "C",
+            "text": "These lines describe how many daffodils there were at the moment the speaker saw them, not his memory of them."
+          },
+          {
+            "label": "D",
+            "text": "These lines compare the daffodils with the waves during the original scene. They do not show the experience being valued as a memory."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": {
+          "title": "I Wandered Lonely as a Cloud",
+          "author": "William Wordsworth",
+          "year": 1815
+        },
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In many school cafeterias, students choose their own lunch items as they move along a serving line. School nutritionist Denise Okoro hypothesizes that students eat more vegetables when the vegetables are placed at the start of the line, where students see them first, instead of at the end."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Okoro's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "After one school moved its vegetables from the end of the serving line to the start, the amount of vegetables students ate rose by about a third, even though the menu stayed the same."
+          },
+          {
+            "label": "B",
+            "text": "When surveyed, most students at one school said they would rather eat fruit than vegetables."
+          },
+          {
+            "label": "C",
+            "text": "The cost of the vegetables served in school cafeterias has risen over the past five years."
+          },
+          {
+            "label": "D",
+            "text": "Students who bring their lunch from home eat more vegetables than students who buy lunch at school."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Okoro's hypothesis is that putting vegetables at the start of the line leads students to eat more of them. Choice A describes a school that made exactly that change with the same menu and saw vegetable eating rise by about a third, which directly supports the hypothesis.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This is about students' preferences, not about where the vegetables are placed in the line."
+          },
+          {
+            "label": "C",
+            "text": "The cost of vegetables has nothing to do with where they are placed or how much students eat."
+          },
+          {
+            "label": "D",
+            "text": "This compares home lunches with school lunches and says nothing about the order of items in the serving line."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-016",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Ridgeback lizard lives at elevations from sea level to high in the mountains, and individuals at higher elevations tend to be darker. Ecologist Mateo Rivas claims that this dark coloring benefits lizards in cold mountain air because dark skin absorbs more sunlight, allowing the lizards to warm up faster."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly weaken Rivas's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "At high elevations, a larger share of Ridgeback lizards are dark than at low elevations."
+          },
+          {
+            "label": "B",
+            "text": "Ridgeback lizards spend more time basking in the sun at high elevations than at low elevations."
+          },
+          {
+            "label": "C",
+            "text": "At high elevations, dark Ridgeback lizards become active earlier in the morning than light ones do."
+          },
+          {
+            "label": "D",
+            "text": "When placed side by side in the same cold, sunny conditions, dark and light Ridgeback lizards warmed up at nearly identical rates."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "Rivas's claim depends on the idea that dark lizards warm up faster than light ones. Choice D says that in the same cold, sunny conditions, dark and light lizards warmed at nearly the same rate. If that is true, dark coloring does not help the lizards warm faster, which weakens the claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This fits the pattern the text already describes and is consistent with dark coloring being helpful in the mountains, so it does not weaken the claim."
+          },
+          {
+            "label": "B",
+            "text": "This is about how long lizards bask at different elevations. It does not compare how fast dark and light lizards warm up."
+          },
+          {
+            "label": "C",
+            "text": "Dark lizards becoming active earlier would suggest they warm up faster, which supports the claim rather than weakening it."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-017",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Young male finches of a certain species learn their songs by listening to adult males. Neuroscientist Ingrid Haugen hypothesizes that what matters most for learning a song is when a young finch hears it, not how much of it the bird hears: in her view, song heard during a sensitive window early in life is learned well, while the same amount of song heard later is learned poorly."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Haugen's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Young finches raised without hearing any adult song produced abnormal songs as adults."
+          },
+          {
+            "label": "B",
+            "text": "Among young finches that heard adult song during their first 60 days, those that heard more hours of it produced more accurate copies."
+          },
+          {
+            "label": "C",
+            "text": "Young finches that heard 20 hours of adult song during their first 60 days copied it accurately, whereas finches that heard the same 20 hours of song only after day 90 copied it poorly."
+          },
+          {
+            "label": "D",
+            "text": "Adult finches can learn to recognize the songs of new neighbors that move into their territory."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Haugen claims that timing matters more than amount. To support this, a finding must hold the amount of song the same while changing when it is heard. Choice C does this: both groups heard 20 hours of song, but only the birds that heard it early learned it well. The difference must come from timing, which directly supports her hypothesis.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This shows that hearing song matters, but it does not separate timing from amount, since these birds heard no song at any time."
+          },
+          {
+            "label": "B",
+            "text": "This shows that the amount of song made a difference among birds of the same age, which points to amount mattering rather than timing."
+          },
+          {
+            "label": "D",
+            "text": "Recognizing neighbors' songs is not the same as learning to sing a song, and this finding says nothing about young birds or a sensitive window."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-018",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "In a short story, Marcus, a retired lighthouse keeper, moves into an apartment in a busy city after forty years on a remote island. A critic argues that although Marcus insists he is glad to have left his old life behind, the story shows that he still arranges his days around the habits of his former job."
+          }
+        ],
+        "table": null,
+        "stem": "Which quotation from the story would most directly support the critic's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "\"Marcus told his daughter that the city's noise did not bother him; after forty years of wind, he said, a few car horns were nothing.\""
+          },
+          {
+            "label": "B",
+            "text": "\"Each evening at exactly sunset, Marcus climbed to the roof of his building and stood there until the streetlights came on, as though checking that each one had been lit.\""
+          },
+          {
+            "label": "C",
+            "text": "\"'I don't miss it,' Marcus said when a neighbor asked about the lighthouse. 'Not for a minute.'\""
+          },
+          {
+            "label": "D",
+            "text": "\"The apartment was small, but its kitchen window looked out over a park where children played until dark.\""
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The critic claims that Marcus still organizes his days around his old job. A lighthouse keeper's work centers on lighting the lamp at dusk. In choice B, Marcus climbs to the roof \"at exactly sunset\" every evening and waits as though checking that the streetlights have been lit. This daily ritual mirrors his former duties, so it directly supports the claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This shows Marcus comparing the city to his old island, but it is about noise not bothering him, not about a habit from his job shaping his days."
+          },
+          {
+            "label": "C",
+            "text": "This shows Marcus insisting he does not miss his old life, which is the part of the critic's claim the story undercuts. It does not show any habit from his former job."
+          },
+          {
+            "label": "D",
+            "text": "This describes the apartment's view and says nothing about Marcus's habits."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Rosalind Baptiste owns a small café. This spring she added an outdoor seating area, and over the summer the café's weekend sales rose sharply compared with the previous summer. Baptiste claims that the new outdoor seating is the main reason for the increase."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly weaken Baptiste's claim?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Customers who sat outside ordered more desserts than customers who sat inside."
+          },
+          {
+            "label": "B",
+            "text": "The outdoor seating area was full on most sunny weekends."
+          },
+          {
+            "label": "C",
+            "text": "Several other cafés in the neighborhood also added outdoor seating this year."
+          },
+          {
+            "label": "D",
+            "text": "Weekend sales rose by the same amount on rainy weekends, when the outdoor seating area was closed, as on sunny weekends."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "If the outdoor seating caused the increase, sales should have risen more when the outdoor area was open. Choice D says sales rose by the same amount even on rainy weekends, when the outdoor area was closed. That means something else must explain the increase, which weakens Baptiste's claim.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This suggests outdoor customers spent more, which if anything supports the claim."
+          },
+          {
+            "label": "B",
+            "text": "A full outdoor area suggests it brought in customers, which supports the claim rather than weakening it."
+          },
+          {
+            "label": "C",
+            "text": "What other cafés did does not tell us whether the outdoor seating explains this café's increase in sales."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "command-of-evidence-textual-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Dust blown onto glaciers can darken the ice, causing it to absorb more sunlight. Glaciologist Sigrid Olafsdottir hypothesizes, however, that dust speeds melting only when it forms a thin layer; a thick layer, she argues, acts like a blanket that shields the ice beneath it from the sun and actually slows melting."
+          }
+        ],
+        "table": null,
+        "stem": "Which finding, if true, would most directly support Olafsdottir's hypothesis?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Ice beneath a dust layer a few millimeters thick melted faster than clean ice nearby, while ice beneath a layer several centimeters thick melted more slowly than the clean ice."
+          },
+          {
+            "label": "B",
+            "text": "On average, dust-covered ice on the glacier melted faster over the summer than clean ice did."
+          },
+          {
+            "label": "C",
+            "text": "The amount of dust reaching the glacier each year has increased over the past several decades."
+          },
+          {
+            "label": "D",
+            "text": "The thickest dust layers on the glacier were found near its lower edge, where air temperatures are highest."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Olafsdottir's hypothesis has two parts: a thin dust layer speeds melting, and a thick layer slows it. Choice A supports both. Ice under a thin layer melted faster than clean ice, and ice under a thick layer melted more slowly than clean ice.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This shows that dust speeds melting on average, but it does not separate thin layers from thick ones, so it says nothing about thick layers slowing melting."
+          },
+          {
+            "label": "C",
+            "text": "This is about how much dust arrives each year, not about how the thickness of a dust layer affects melting."
+          },
+          {
+            "label": "D",
+            "text": "This tells where thick dust layers are found but not how fast the ice under them melts compared with clean ice."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

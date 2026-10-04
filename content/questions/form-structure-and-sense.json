@@ -685,6 +685,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "form-structure-and-sense-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "When a farmer in rural Vermont found an unsigned oil painting of a harbor in her attic, she brought it to the county historical society. Neither the society's director nor its two volunteer curators ______ able to identify the artist, so the painting was sent to a conservation lab for testing."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "was"
+          },
+          {
+            "label": "B",
+            "text": "has been"
+          },
+          {
+            "label": "C",
+            "text": "were"
+          },
+          {
+            "label": "D",
+            "text": "is"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "When two subjects are joined by \"neither ... nor,\" the verb agrees with the subject closer to it. Here the closer subject is \"its two volunteer curators,\" which is plural, so the verb must be plural. The rest of the passage is in the past tense (\"found,\" \"brought,\" \"was sent\"), so the verb should also be past tense. The plural past-tense form is \"were.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Was\" is singular, but with \"neither ... nor\" the verb agrees with the nearer subject, \"curators,\" which is plural."
+          },
+          {
+            "label": "B",
+            "text": "\"Has been\" is singular, but the verb must agree with the nearer subject, \"curators,\" which is plural. It also shifts out of the passage's past tense."
+          },
+          {
+            "label": "D",
+            "text": "\"Is\" is singular and present tense, but the verb must agree with the plural \"curators\" and match the passage's past tense."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Since 2015, the city of Riverton ______ more than ten thousand street trees, and officials say the planting program will continue through 2030. Neighborhoods that once had little shade now have young oaks and maples lining their sidewalks."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "has planted"
+          },
+          {
+            "label": "B",
+            "text": "plants"
+          },
+          {
+            "label": "C",
+            "text": "will plant"
+          },
+          {
+            "label": "D",
+            "text": "had planted"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The phrase \"Since 2015\" describes an action that began in the past and continues up to the present; the passage also says the program will continue. The present perfect tense (\"has\" or \"have\" plus a past participle) expresses exactly this, so \"has planted\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "The simple present \"plants\" does not fit with \"Since 2015,\" which calls for a tense that connects a past starting point to the present."
+          },
+          {
+            "label": "C",
+            "text": "The future \"will plant\" does not fit with \"Since 2015\" and describes trees that have not yet been planted, though the passage says neighborhoods already have them."
+          },
+          {
+            "label": "D",
+            "text": "The past perfect \"had planted\" describes an action completed before another past event, but there is no later past event here; the action continues up to the present."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Clearwater Observatory launched an online database in 2018 so that hobbyists could share their observations. The number of amateur astronomers in the region who submit their telescope observations of comets and meteors to the observatory's database ______ tripled since then."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "have"
+          },
+          {
+            "label": "B",
+            "text": "are"
+          },
+          {
+            "label": "C",
+            "text": "were"
+          },
+          {
+            "label": "D",
+            "text": "has"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "To find the subject, strip away the phrases and clauses that describe it: \"in the region\" and \"who submit their telescope observations of comets and meteors to the observatory's database\" both describe \"amateur astronomers,\" and \"of amateur astronomers\" describes \"The number.\" The subject is \"The number,\" which is singular, so the verb must be singular. The phrase \"since then\" calls for the present perfect tense, so \"has\" (forming \"has tripled\") is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Have\" is plural. It agrees with \"astronomers\" (or \"observations\" or \"meteors\"), but those nouns are inside modifying phrases; the subject is the singular \"The number.\""
+          },
+          {
+            "label": "B",
+            "text": "\"Are\" is plural, but the subject \"The number\" is singular. \"Are tripled\" also does not fit with \"since then,\" which calls for the present perfect."
+          },
+          {
+            "label": "C",
+            "text": "\"Were\" is plural, but the subject \"The number\" is singular. \"Were tripled\" also does not fit with \"since then,\" which calls for the present perfect."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Each year, the Aldridge Foundation gives its top prize to a scientist ______ research has done the most to improve public health. This year's winner developed an inexpensive test that can detect contaminated drinking water in minutes."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "who's"
+          },
+          {
+            "label": "B",
+            "text": "whose"
+          },
+          {
+            "label": "C",
+            "text": "whom"
+          },
+          {
+            "label": "D",
+            "text": "who is"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The blank begins a clause that describes \"a scientist,\" and the word \"research\" right after the blank belongs to that scientist: it is the scientist's research. \"Whose\" is the possessive relative pronoun, so \"a scientist whose research has done the most\" means \"a scientist, and that scientist's research has done the most.\" So \"whose\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Who's\" is a contraction of \"who is\" or \"who has,\" and \"a scientist who is research has done...\" makes no sense. The sentence needs the possessive \"whose.\""
+          },
+          {
+            "label": "C",
+            "text": "\"Whom\" is an object pronoun and does not show possession, so \"a scientist whom research has done the most\" makes no sense."
+          },
+          {
+            "label": "D",
+            "text": "\"A scientist who is research has done the most...\" is ungrammatical; the sentence needs the possessive \"whose\" to show that the research belongs to the scientist."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Science classes at Lakeview High School follow a hands-on schedule. Every Friday, the students in Ms. Rivera's chemistry class ______ a new experiment, such as testing the acidity of fruit juices or growing salt crystals."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "conduct"
+          },
+          {
+            "label": "B",
+            "text": "conducts"
+          },
+          {
+            "label": "C",
+            "text": "has conducted"
+          },
+          {
+            "label": "D",
+            "text": "is conducting"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the sentence is \"the students,\" which is plural; the phrase \"in Ms. Rivera's chemistry class\" only describes the students. A plural subject needs a plural verb. \"Every Friday\" describes a regular, repeated action, which the simple present tense expresses. So the plural present form \"conduct\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Conducts\" is singular. It may seem to agree with \"class,\" but \"class\" is inside a modifying phrase; the subject is the plural \"students.\""
+          },
+          {
+            "label": "C",
+            "text": "\"Has conducted\" is singular, but the subject \"students\" is plural."
+          },
+          {
+            "label": "D",
+            "text": "\"Is conducting\" is singular, but the subject \"students\" is plural."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The idea for one of the twentieth century's most familiar inventions came from a walk in the Swiss countryside in 1941. Inspired by the burrs that clung to his dog's fur after the hike, ______"
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "the hook-and-loop fastener known as Velcro was invented by Swiss engineer George de Mestral."
+          },
+          {
+            "label": "B",
+            "text": "Swiss engineer George de Mestral's invention was the hook-and-loop fastener known as Velcro."
+          },
+          {
+            "label": "C",
+            "text": "Swiss engineer George de Mestral invented the hook-and-loop fastener known as Velcro."
+          },
+          {
+            "label": "D",
+            "text": "the invention of the hook-and-loop fastener known as Velcro was made by Swiss engineer George de Mestral."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The sentence begins with the modifying phrase \"Inspired by the burrs that clung to his dog's fur after the hike.\" A modifying phrase like this describes whatever noun comes right after the comma. The person who was inspired, and who owned the dog, is George de Mestral, so his name must come right after the comma. Choice C does this: \"Swiss engineer George de Mestral invented the hook-and-loop fastener known as Velcro.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "The noun right after the modifier is \"the hook-and-loop fastener,\" so the sentence says the fastener was inspired by burrs on \"his dog's fur,\" which makes no sense. The modifier must be followed by the person who was inspired."
+          },
+          {
+            "label": "B",
+            "text": "The noun right after the modifier is \"de Mestral's invention\" (the possessive \"de Mestral's\" only describes \"invention\"), so the sentence says the invention was inspired by the burrs. The modifier must be followed by de Mestral himself."
+          },
+          {
+            "label": "D",
+            "text": "The noun right after the modifier is \"the invention,\" so the sentence says the invention was inspired by the burrs. The modifier must be followed by the person who was inspired."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Marisol Vega began training for open-water races when she was twelve. By the time she reached the far shore of Lake Hollis last August, the twenty-two-year-old had ______ farther than any other swimmer in the race's forty-year history."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "swam"
+          },
+          {
+            "label": "B",
+            "text": "swims"
+          },
+          {
+            "label": "C",
+            "text": "swim"
+          },
+          {
+            "label": "D",
+            "text": "swum"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The helping verb \"had\" before the blank forms the past perfect tense, which uses the past participle of the main verb. The verb \"swim\" has three main forms: \"swim\" (present), \"swam\" (simple past), and \"swum\" (past participle). So the correct form after \"had\" is \"swum.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Swam\" is the simple past form. After the helping verb \"had,\" the past participle \"swum\" is needed."
+          },
+          {
+            "label": "B",
+            "text": "\"Swims\" is a present-tense form and cannot follow the helping verb \"had.\""
+          },
+          {
+            "label": "C",
+            "text": "\"Swim\" is the base form and cannot follow the helping verb \"had\"; the past participle \"swum\" is needed."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "The Pine Valley Youth Orchestra has spent the past year raising money for its first trip abroad. Next summer, the orchestra ______ a series of concerts in Austria and Hungary, including one in a historic hall in Vienna."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "performed"
+          },
+          {
+            "label": "B",
+            "text": "will perform"
+          },
+          {
+            "label": "C",
+            "text": "has performed"
+          },
+          {
+            "label": "D",
+            "text": "had performed"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The phrase \"Next summer\" tells you the concerts are in the future. The future tense, \"will\" plus the base form of the verb, describes actions that have not happened yet, so \"will perform\" is correct.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Performed\" is past tense, but \"Next summer\" shows the concerts have not happened yet."
+          },
+          {
+            "label": "C",
+            "text": "\"Has performed\" is present perfect, which describes something that has already happened, but \"Next summer\" refers to the future."
+          },
+          {
+            "label": "D",
+            "text": "\"Had performed\" is past perfect, which describes something completed before another past event, but \"Next summer\" refers to the future."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-019",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Engineers inspected the city's two oldest bridges after a winter of unusually heavy ice. Both were declared safe for traffic, but the inspectors recommended that ______ steel supports be repainted within the year to prevent rust."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "its"
+          },
+          {
+            "label": "B",
+            "text": "it's"
+          },
+          {
+            "label": "C",
+            "text": "their"
+          },
+          {
+            "label": "D",
+            "text": "they're"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The blank refers back to the steel supports of \"the city's two oldest bridges,\" also called \"Both\" in the second sentence. Because \"bridges\" is plural, the pronoun must be plural, and because the supports belong to the bridges, it must be possessive. The plural possessive pronoun is \"their.\"",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "\"Its\" is a singular possessive pronoun, but it refers back to \"bridges,\" which is plural."
+          },
+          {
+            "label": "B",
+            "text": "\"It's\" is a contraction of \"it is\" or \"it has,\" and \"recommended that it is steel supports be repainted\" makes no sense. The sentence also needs a plural possessive."
+          },
+          {
+            "label": "D",
+            "text": "\"They're\" is a contraction of \"they are,\" and \"recommended that they are steel supports be repainted\" makes no sense. The sentence needs the possessive \"their.\""
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "form-structure-and-sense-020",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "Monarch butterflies weigh less than a gram, too little to carry most tracking devices. Following the movements of individual monarchs across the thousands of miles of migration routes that link Canada, the United States, and Mexico ______ long been a challenge for researchers."
+          }
+        ],
+        "table": null,
+        "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "has"
+          },
+          {
+            "label": "B",
+            "text": "have"
+          },
+          {
+            "label": "C",
+            "text": "are"
+          },
+          {
+            "label": "D",
+            "text": "were"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The subject of the second sentence is the gerund phrase \"Following the movements of individual monarchs across the thousands of miles of migration routes that link Canada, the United States, and Mexico.\" A gerund phrase names a single activity (following), so it is singular and takes a singular verb, even though plural nouns such as \"movements,\" \"monarchs,\" \"miles,\" and \"routes\" appear inside it. The word \"long\" signals an ongoing situation from the past to the present, which the present perfect expresses. So \"has\" (forming \"has long been\") is correct.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "\"Have\" is plural. It may seem to agree with a plural noun inside the phrase, such as \"routes\" or \"monarchs,\" but the subject is the singular gerund phrase \"Following the movements....\""
+          },
+          {
+            "label": "C",
+            "text": "\"Are\" is plural, but the subject, a gerund phrase, is singular. \"Are long been\" is also not a valid verb form."
+          },
+          {
+            "label": "D",
+            "text": "\"Were\" is plural, but the subject, a gerund phrase, is singular. \"Were long been\" is also not a valid verb form."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

@@ -577,6 +577,602 @@
           }
         ]
       }
+    },
+    {
+      "id": "circles-011",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A circular garden has a radius of $10$ meters. One section of the garden is a sector with a central angle of $\\frac{2\\pi}{5}$ radians. What is the area, in square meters, of this section?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$4\\pi$"
+          },
+          {
+            "label": "B",
+            "text": "$20\\pi$"
+          },
+          {
+            "label": "C",
+            "text": "$40\\pi$"
+          },
+          {
+            "label": "D",
+            "text": "$2\\pi$"
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The area of a sector with radius $r$ and central angle $\\theta$ in radians is $\\frac{1}{2}r^2\\theta$. Substituting $r = 10$ and $\\theta = \\frac{2\\pi}{5}$ gives $\\frac{1}{2}(10)^2\\left(\\frac{2\\pi}{5}\\right)$. Squaring $10$ gives $\\frac{1}{2}(100)\\left(\\frac{2\\pi}{5}\\right)$. Multiplying $\\frac{1}{2}$ by $100$ gives $50 \\times \\frac{2\\pi}{5}$, and $\\frac{50 \\times 2\\pi}{5} = \\frac{100\\pi}{5} = 20\\pi$. (Another way: the sector is $\\frac{2\\pi/5}{2\\pi} = \\frac{1}{5}$ of the circle, and $\\frac{1}{5}$ of the full area $100\\pi$ is $20\\pi$.)",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the arc length of the sector, $r\\theta = 10 \\times \\frac{2\\pi}{5}$, not its area."
+          },
+          {
+            "label": "C",
+            "text": "This leaves out the $\\frac{1}{2}$ in the sector area formula, computing $r^2\\theta$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $r$ instead of $r^2$, computing $\\frac{1}{2} \\times 10 \\times \\frac{2\\pi}{5}$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-012",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "An angle has a measure of $\\frac{3\\pi}{4}$ radians. What is the measure of the angle in degrees?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$45^\\circ$"
+          },
+          {
+            "label": "B",
+            "text": "$240^\\circ$"
+          },
+          {
+            "label": "C",
+            "text": "$135^\\circ$"
+          },
+          {
+            "label": "D",
+            "text": "$270^\\circ$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "Since $\\pi$ radians equals $180^\\circ$, multiply the radian measure by $\\frac{180^\\circ}{\\pi}$ to convert. This gives $\\frac{3\\pi}{4} \\times \\frac{180^\\circ}{\\pi}$. The $\\pi$ in the numerator and the $\\pi$ in the denominator cancel, leaving $\\frac{3 \\times 180^\\circ}{4} = \\frac{540^\\circ}{4}$. Dividing gives $135^\\circ$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This converts only $\\frac{\\pi}{4}$, which is $45^\\circ$, and leaves out the factor of $3$."
+          },
+          {
+            "label": "B",
+            "text": "This flips the fraction, computing $\\frac{4}{3} \\times 180^\\circ$ instead of $\\frac{3}{4} \\times 180^\\circ$."
+          },
+          {
+            "label": "D",
+            "text": "This uses $\\pi$ radians $= 360^\\circ$, computing $\\frac{3}{4} \\times 360^\\circ$; a full turn of $360^\\circ$ is $2\\pi$ radians."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, the graph of $x^2 + y^2 - 4x + 6y - 12 = 0$ is a circle. The line $y = 1$ intersects the circle at two points. What is the distance between these two points?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$3$"
+          },
+          {
+            "label": "B",
+            "text": "$2\\sqrt{21}$"
+          },
+          {
+            "label": "C",
+            "text": "$6$"
+          },
+          {
+            "label": "D",
+            "text": "$10$"
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "First rewrite the equation by completing the square. Adding $12$ to both sides gives $x^2 - 4x + y^2 + 6y = 12$. Half of $-4$ is $-2$, and $(-2)^2 = 4$; half of $6$ is $3$, and $3^2 = 9$. Adding $4$ and $9$ to both sides gives $(x^2 - 4x + 4) + (y^2 + 6y + 9) = 12 + 4 + 9$. Factoring each group and adding on the right gives $(x - 2)^2 + (y + 3)^2 = 25$. Now substitute $y = 1$: $(x - 2)^2 + (1 + 3)^2 = 25$. Since $4^2 = 16$, this gives $(x - 2)^2 + 16 = 25$. Subtracting $16$ from both sides gives $(x - 2)^2 = 9$. Taking the square root of both sides gives $x - 2 = 3$ or $x - 2 = -3$. Adding $2$ to both sides gives $x = 5$ or $x = -1$. The two points are $(5, 1)$ and $(-1, 1)$, so the distance between them is $5 - (-1) = 6$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the distance from $x = 2$ to either intersection point, which is only half the distance between the two points."
+          },
+          {
+            "label": "B",
+            "text": "This uses $(y - 3)^2$ instead of $(y + 3)^2$, so substituting $y = 1$ gives $(x - 2)^2 + 4 = 25$ and $(x - 2)^2 = 21$."
+          },
+          {
+            "label": "D",
+            "text": "This is the diameter of the circle; the line $y = 1$ does not pass through the center $(2, -3)$, so the chord is shorter than a diameter."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-014",
+      "difficulty": "medium",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "Points $A$, $B$ and $C$ lie on a circle, and segment $AB$ is a diameter of the circle. The measure of angle $CAB$ is $28^\\circ$. What is the measure, in degrees, of minor arc $BC$, the arc from $B$ to $C$ that does not contain $A$?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "56"
+        ],
+        "explanation": "Angle $CAB$ is an inscribed angle: its vertex $A$ is on the circle and its sides pass through $B$ and $C$. It intercepts arc $BC$, the arc that does not contain $A$. The measure of an inscribed angle is half the measure of the arc it intercepts, so the arc is twice the angle. Multiplying $28^\\circ$ by $2$ gives $56^\\circ$. (Check: arc $BC$ plus arc $CA$ make up the $180^\\circ$ semicircle on that side of diameter $AB$, so arc $CA$ is $180^\\circ - 56^\\circ = 124^\\circ$, which is less than $180^\\circ$, so arc $BC$ is indeed the minor arc.)",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-015",
+      "difficulty": "easy",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A circular rug has an area of $49\\pi$ square feet. What is the diameter, in feet, of the rug?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "14"
+        ],
+        "explanation": "The area of a circle is $\\pi r^2$. Setting this equal to the rug's area gives $\\pi r^2 = 49\\pi$. Dividing both sides by $\\pi$ gives $r^2 = 49$. Taking the square root of both sides gives $r = 7$ (a radius must be positive). The diameter is twice the radius, so $2 \\times 7 = 14$ feet.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has its center at $(2, 3)$, and the point $(5, 7)$ lies on the circle. What is the slope of the line that is tangent to the circle at $(5, 7)$?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$\\frac{4}{3}$"
+          },
+          {
+            "label": "B",
+            "text": "$\\frac{3}{4}$"
+          },
+          {
+            "label": "C",
+            "text": "$-\\frac{4}{3}$"
+          },
+          {
+            "label": "D",
+            "text": "$-\\frac{3}{4}$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A tangent line to a circle is perpendicular to the radius drawn to the point of tangency. The slope of the radius from $(2, 3)$ to $(5, 7)$ is $\\frac{7 - 3}{5 - 2} = \\frac{4}{3}$. Perpendicular lines have slopes that are negative reciprocals of each other. The reciprocal of $\\frac{4}{3}$ is $\\frac{3}{4}$, and its negative is $-\\frac{3}{4}$. So the slope of the tangent line is $-\\frac{3}{4}$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the slope of the radius to $(5, 7)$; the tangent line is perpendicular to that radius, not along it."
+          },
+          {
+            "label": "B",
+            "text": "This takes the reciprocal of the radius's slope but not the negative, which gives a line that is not perpendicular to the radius."
+          },
+          {
+            "label": "C",
+            "text": "This takes the negative of the radius's slope but not the reciprocal."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has the equation $x^2 - 14x + y^2 + 4y = -28$. What are the coordinates of the center of the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(7, -2)$"
+          },
+          {
+            "label": "B",
+            "text": "$(-7, 2)$"
+          },
+          {
+            "label": "C",
+            "text": "$(14, -4)$"
+          },
+          {
+            "label": "D",
+            "text": "$(-14, 4)$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "Complete the square in $x$ and in $y$. Half of $-14$ is $-7$, and $(-7)^2 = 49$; half of $4$ is $2$, and $2^2 = 4$. Adding $49$ and $4$ to both sides gives $(x^2 - 14x + 49) + (y^2 + 4y + 4) = -28 + 49 + 4$. Factoring each group and adding on the right gives $(x - 7)^2 + (y + 2)^2 = 25$. A circle with equation $(x - h)^2 + (y - k)^2 = r^2$ has center $(h, k)$. Here $x - 7$ means $h = 7$, and $y + 2 = y - (-2)$ means $k = -2$. So the center is $(7, -2)$ (and the radius is $5$).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This has the right numbers but the wrong signs: $(x - 7)^2$ means the $x$-coordinate of the center is $+7$, and $(y + 2)^2$ means the $y$-coordinate is $-2$."
+          },
+          {
+            "label": "C",
+            "text": "This uses the coefficients $-14$ and $4$ with their signs switched instead of halving them; the center's coordinates are half of those coefficients, with opposite signs."
+          },
+          {
+            "label": "D",
+            "text": "This uses the coefficients of the $x$ and $y$ terms directly without halving them or changing their signs."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-018",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has its center at $(-3, 0)$ and a radius of $4$. Which of the following is an equation of the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(x + 3)^2 + y^2 = 16$"
+          },
+          {
+            "label": "B",
+            "text": "$(x - 3)^2 + y^2 = 16$"
+          },
+          {
+            "label": "C",
+            "text": "$(x + 3)^2 + y^2 = 4$"
+          },
+          {
+            "label": "D",
+            "text": "$x^2 + (y + 3)^2 = 16$"
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "A circle with center $(h, k)$ and radius $r$ has the equation $(x - h)^2 + (y - k)^2 = r^2$. Substituting $h = -3$, $k = 0$ and $r = 4$ gives $(x - (-3))^2 + (y - 0)^2 = 4^2$. Subtracting $-3$ is the same as adding $3$, and $y - 0$ is just $y$, so this simplifies to $(x + 3)^2 + y^2 = 16$.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This has the wrong sign: $(x - 3)^2$ gives a center with $x$-coordinate $3$, not $-3$."
+          },
+          {
+            "label": "C",
+            "text": "This uses the radius $4$ on the right side instead of the radius squared, $16$."
+          },
+          {
+            "label": "D",
+            "text": "This puts the $-3$ with $y$ instead of $x$, giving a center of $(0, -3)$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-019",
+      "difficulty": "hard",
+      "format": "student-produced-response",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "A sector of a circle has a central angle of $1.5$ radians. The perimeter of the sector, which is the sum of its two radii and its arc length, is $35$ centimeters. What is the area, in square centimeters, of the sector?",
+        "choices": [],
+        "correctChoice": null,
+        "acceptedAnswers": [
+          "75"
+        ],
+        "explanation": "Let $r$ be the radius in centimeters. The arc length of a sector with central angle $\\theta$ radians is $r\\theta$, so the arc length is $1.5r$. The perimeter is the two radii plus the arc: $r + r + 1.5r = 35$. Combining like terms gives $3.5r = 35$. Dividing both sides by $3.5$ gives $r = \\frac{35}{3.5} = 10$. The area of a sector is $\\frac{1}{2}r^2\\theta$. Substituting gives $\\frac{1}{2}(10)^2(1.5) = \\frac{1}{2}(100)(1.5)$. Multiplying $\\frac{1}{2}$ by $100$ gives $50$, and $50 \\times 1.5 = 75$. So the area is $75$ square centimeters.",
+        "distractorRationales": []
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "circles-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [],
+        "table": null,
+        "stem": "In the $xy$-plane, a circle has the equation $(x - 1)^2 + (y + 2)^2 = 20$. Which of the following points lies on the circle?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "$(1, -2)$"
+          },
+          {
+            "label": "B",
+            "text": "$(1, 6)$"
+          },
+          {
+            "label": "C",
+            "text": "$(21, -2)$"
+          },
+          {
+            "label": "D",
+            "text": "$(3, 2)$"
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "A point lies on the circle exactly when its coordinates make the equation true. Substitute $(3, 2)$: $(3 - 1)^2 + (2 + 2)^2 = 2^2 + 4^2$. Squaring gives $4 + 16$, and adding gives $20$, which matches the right side, so $(3, 2)$ is on the circle. For comparison, $(1, -2)$ gives $0^2 + 0^2 = 0$, $(1, 6)$ gives $0^2 + 8^2 = 64$, and $(21, -2)$ gives $20^2 + 0^2 = 400$; none of these equals $20$.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This is the center of the circle, which is at distance $0$ from itself, not at the radius $\\sqrt{20}$."
+          },
+          {
+            "label": "B",
+            "text": "This point satisfies $(x + 1)^2 + (y - 2)^2 = 20$, which has the signs of the center reversed; in the given equation it gives $64$, not $20$."
+          },
+          {
+            "label": "C",
+            "text": "This point is $20$ units from the center, treating $20$ as the radius; the radius is $\\sqrt{20}$, since $20$ is $r^2$."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }

@@ -685,6 +685,736 @@
           }
         ]
       }
+    },
+    {
+      "id": "rhetorical-synthesis-011",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• The Alder Creek Seed Library lends vegetable and flower seeds to local gardeners for free.\n• It was founded in 2016 inside the public library in the town of Alder Creek.\n• Borrowers plant the seeds, let some plants go to seed, and return new seeds at the end of the season.\n• Librarian Marisol Ortega started the program with seeds donated by twelve local gardeners.\n• The seed library now offers more than 200 varieties."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to indicate when and where the seed library was founded. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "The Alder Creek Seed Library was founded in 2016 inside the public library in the town of Alder Creek."
+          },
+          {
+            "label": "B",
+            "text": "Librarian Marisol Ortega started the Alder Creek Seed Library with seeds donated by twelve local gardeners."
+          },
+          {
+            "label": "C",
+            "text": "The Alder Creek Seed Library, which lends seeds to local gardeners for free, now offers more than 200 varieties."
+          },
+          {
+            "label": "D",
+            "text": "Borrowers from the Alder Creek Seed Library return new seeds at the end of the season."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The goal asks for two facts: when the seed library was founded and where. Choice A gives both: it was founded in 2016 (when) inside the public library in Alder Creek (where).",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This says who started the seed library and with what seeds, but not when or where it was founded."
+          },
+          {
+            "label": "C",
+            "text": "This describes what the seed library does and how many varieties it has now, with no founding date or location."
+          },
+          {
+            "label": "D",
+            "text": "This explains how borrowers return seeds, which says nothing about when or where the seed library was founded."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-012",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Shield volcanoes and stratovolcanoes are two common types of volcanoes.\n• Shield volcanoes are built mostly from runny lava that flows long distances before hardening.\n• As a result, shield volcanoes are broad with gentle slopes.\n• Stratovolcanoes are built from alternating layers of thick, sticky lava, ash, and rock fragments.\n• These materials pile up near the vent, giving stratovolcanoes steep sides.\n• Mauna Loa in Hawaii is a shield volcano; Mount Fuji in Japan is a stratovolcano."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize a difference in the shapes of the two types of volcanoes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Mauna Loa in Hawaii is a shield volcano, while Mount Fuji in Japan is a stratovolcano."
+          },
+          {
+            "label": "B",
+            "text": "Shield volcanoes are built mostly from runny lava, while stratovolcanoes are built from layers of thick lava, ash, and rock fragments."
+          },
+          {
+            "label": "C",
+            "text": "Shield volcanoes are broad with gentle slopes, whereas stratovolcanoes have steep sides."
+          },
+          {
+            "label": "D",
+            "text": "Stratovolcanoes have steep sides because the thick lava, ash, and rock fragments that build them pile up near the vent."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to contrast the shapes of the two types. Choice C describes the shape of each (broad with gentle slopes versus steep sides) and uses \"whereas\" to set them against each other.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This names an example of each type but says nothing about their shapes."
+          },
+          {
+            "label": "B",
+            "text": "This contrasts what the volcanoes are made of, not their shapes."
+          },
+          {
+            "label": "D",
+            "text": "This explains the shape of only one type, so it doesn't present a difference between the two."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-013",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• An urban heat island is a city area that is noticeably warmer than the surrounding countryside.\n• Pavement and rooftops absorb sunlight during the day and release the heat at night.\n• In 2025, researcher Daniel Okoro measured summer nighttime temperatures across the city of Westbrook.\n• Neighborhoods with the fewest trees were up to 4°C warmer at night than nearby rural areas.\n• Neighborhoods with the most trees were less than 1°C warmer than nearby rural areas."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to present Okoro's findings to an audience unfamiliar with urban heat islands. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Okoro found that the Westbrook neighborhoods with the fewest trees formed the strongest urban heat islands, up to 4°C warmer at night than nearby rural areas."
+          },
+          {
+            "label": "B",
+            "text": "Okoro found that some Westbrook neighborhoods are urban heat islands, areas noticeably warmer than the surrounding countryside: those with the fewest trees were up to 4°C warmer at night than nearby rural areas, while those with the most trees were less than 1°C warmer."
+          },
+          {
+            "label": "C",
+            "text": "An urban heat island is a city area that is noticeably warmer than the surrounding countryside, partly because pavement and rooftops absorb sunlight during the day and release the heat at night."
+          },
+          {
+            "label": "D",
+            "text": "In 2025, Okoro measured summer nighttime temperatures across Westbrook to study urban heat islands."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "The goal has two parts: present Okoro's findings, and do it for readers who don't know what an urban heat island is. Choice B explains the term (\"areas noticeably warmer than the surrounding countryside\") and then gives the findings, comparing neighborhoods with the fewest and the most trees.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This presents a finding but uses the term \"urban heat islands\" without explaining it, which would confuse an audience unfamiliar with it."
+          },
+          {
+            "label": "C",
+            "text": "This explains the term well but leaves out Okoro's findings entirely."
+          },
+          {
+            "label": "D",
+            "text": "This describes what Okoro measured, not what he found, and it doesn't explain the term."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-014",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Mary Anning (1799–1847) collected fossils along the coast near Lyme Regis, England.\n• In 1811 and 1812, she and her brother Joseph uncovered the skull and skeleton of an ichthyosaur, an extinct marine reptile.\n• In 1823, she found the first complete plesiosaur skeleton.\n• Leading scientists of her time bought her fossils and relied on her knowledge.\n• As a woman, she was not allowed to join the Geological Society of London."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize that Anning made important discoveries even though she was excluded from a leading scientific society. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Mary Anning, who lived from 1799 to 1847, collected fossils along the coast near Lyme Regis, England."
+          },
+          {
+            "label": "B",
+            "text": "Leading scientists of Anning's time bought her fossils and relied on her knowledge."
+          },
+          {
+            "label": "C",
+            "text": "As a woman, Mary Anning was not allowed to join the Geological Society of London."
+          },
+          {
+            "label": "D",
+            "text": "Although as a woman she could not join the Geological Society of London, Mary Anning made major discoveries, including the first complete plesiosaur skeleton in 1823."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The goal pairs two ideas: Anning was excluded from a scientific society, yet she made important discoveries. Choice D includes both and links them with \"although,\" which emphasizes that her achievements came despite the exclusion.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This gives background on Anning but mentions neither her discoveries nor her exclusion."
+          },
+          {
+            "label": "B",
+            "text": "This shows that scientists valued her work but doesn't mention her exclusion from the Geological Society."
+          },
+          {
+            "label": "C",
+            "text": "This states her exclusion but doesn't mention any of her discoveries."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-015",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Engineering student Priya Raman designed a device called the DripCheck.\n• The DripCheck clips onto an outdoor water faucet.\n• It measures how much water flows through the faucet each day.\n• Its purpose is to alert homeowners to slow leaks that could raise their water bills.\n• Raman built her first prototype in 2024 using parts that cost about \\$15."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to explain the purpose of the DripCheck. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Raman built the first DripCheck prototype in 2024 using parts that cost about \\$15."
+          },
+          {
+            "label": "B",
+            "text": "The DripCheck, designed by engineering student Priya Raman, clips onto an outdoor water faucet."
+          },
+          {
+            "label": "C",
+            "text": "The DripCheck measures daily water flow through an outdoor faucet in order to alert homeowners to slow leaks that could raise their water bills."
+          },
+          {
+            "label": "D",
+            "text": "Engineering student Priya Raman designed a device that clips onto an outdoor water faucet."
+          }
+        ],
+        "correctChoice": "C",
+        "acceptedAnswers": [],
+        "explanation": "A device's purpose is what it is meant to do. Choice C says the DripCheck measures water flow \"in order to alert homeowners to slow leaks,\" which states its purpose directly.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This gives the date and cost of the prototype, not what the device is for."
+          },
+          {
+            "label": "B",
+            "text": "This says who designed the device and where it attaches, but not what it is for."
+          },
+          {
+            "label": "D",
+            "text": "This describes the device's designer and where it attaches, but not its purpose."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-016",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Psychologist Elena Varga studied whether background music affects how quickly people solve puzzles.\n• She tested 30 university students, all of whom were music majors.\n• Students solved puzzles faster with instrumental music playing than in silence.\n• Students solved puzzles slowest when music with lyrics was playing.\n• Varga notes that because all the participants were trained musicians, the results may not apply to people without musical training."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to present one of Varga's results while acknowledging a limitation of her study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Varga found that students solved puzzles faster with instrumental music than in silence, though because all 30 participants were music majors, the result may not apply to people without musical training."
+          },
+          {
+            "label": "B",
+            "text": "Varga tested 30 university students, all of them music majors, to learn whether background music affects how quickly people solve puzzles."
+          },
+          {
+            "label": "C",
+            "text": "Students in Varga's study solved puzzles fastest with instrumental music and slowest with music that had lyrics."
+          },
+          {
+            "label": "D",
+            "text": "Varga notes that her results may not apply to people without musical training."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The goal needs both a result and a limitation. Choice A gives a result (puzzles were solved faster with instrumental music than in silence) and then, with \"though,\" acknowledges the limitation: all participants were music majors, so the result may not apply to everyone.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This describes who was tested and why but gives no result, and it doesn't point out that testing only music majors limits the findings."
+          },
+          {
+            "label": "C",
+            "text": "This presents results but doesn't acknowledge any limitation."
+          },
+          {
+            "label": "D",
+            "text": "This states the limitation but doesn't present any result."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-017",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• In the hot summer of 1858, the sewage-filled River Thames in London smelled so bad that the period became known as the \"Great Stink.\"\n• The stench prompted Parliament to approve a new sewer system for the city.\n• Engineer Joseph Bazalgette designed the system.\n• It included about 132 kilometers of large main sewers that carried waste away from central London.\n• Much of Bazalgette's system is still in use today."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to explain what led to the construction of London's new sewer system. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "London's sewer system, designed by engineer Joseph Bazalgette, included about 132 kilometers of large main sewers."
+          },
+          {
+            "label": "B",
+            "text": "Much of the sewer system that Joseph Bazalgette designed for London is still in use today."
+          },
+          {
+            "label": "C",
+            "text": "Joseph Bazalgette designed a sewer system that carried waste away from central London."
+          },
+          {
+            "label": "D",
+            "text": "After the \"Great Stink\" of 1858, when the sewage-filled Thames smelled terribly in the summer heat, Parliament approved a new sewer system for London."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The goal is to explain the cause of the sewer system. Choice D names that cause, the \"Great Stink\" of 1858, and connects it to Parliament's approval of the new system.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This describes the system's size and designer but not what led to its construction."
+          },
+          {
+            "label": "B",
+            "text": "This describes the system's lasting use today, not why it was built."
+          },
+          {
+            "label": "C",
+            "text": "This says what the system did, but not what event led to it being built."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-018",
+      "difficulty": "hard",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Teodora Vance is a muralist based in Tucson, Arizona.\n• She is known for large outdoor murals that depict desert plants and animals.\n• In 2023, she completed Night Bloom, a mural on the side of a city water tower.\n• Night Bloom shows a saguaro cactus flowering under a full moon.\n• Vance painted the mural with a reflective paint that glows faintly after dark."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to introduce Night Bloom to an audience unfamiliar with Teodora Vance. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Night Bloom, which Vance completed in 2023, shows a saguaro cactus flowering under a full moon."
+          },
+          {
+            "label": "B",
+            "text": "Teodora Vance, a Tucson-based muralist known for large outdoor murals of desert plants and animals, completed Night Bloom, a mural of a saguaro cactus flowering under a full moon, in 2023."
+          },
+          {
+            "label": "C",
+            "text": "Teodora Vance is a Tucson-based muralist known for large outdoor murals of desert plants and animals."
+          },
+          {
+            "label": "D",
+            "text": "Vance painted Night Bloom on a city water tower using a reflective paint that glows faintly after dark."
+          }
+        ],
+        "correctChoice": "B",
+        "acceptedAnswers": [],
+        "explanation": "Readers who don't know Vance need to learn who she is, and the goal also requires introducing Night Bloom. Choice B does both: it gives her full name and identifies her as a Tucson muralist known for desert scenes, and then describes the mural and when she completed it.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This introduces the mural but refers to \"Vance\" by last name only, without saying who she is, which assumes the audience already knows her."
+          },
+          {
+            "label": "C",
+            "text": "This introduces Vance but never mentions Night Bloom."
+          },
+          {
+            "label": "D",
+            "text": "This describes how the mural was painted but refers to \"Vance\" without any introduction, as if readers already knew her."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-019",
+      "difficulty": "easy",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Jupiter is the largest planet in our solar system.\n• Jupiter's diameter is about 140,000 kilometers.\n• Earth's diameter is about 12,700 kilometers.\n• Jupiter's diameter is about 11 times Earth's.\n• Jupiter is made mostly of hydrogen and helium."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to emphasize how much larger Jupiter is than Earth. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "With a diameter of about 140,000 kilometers, Jupiter is roughly 11 times as wide as Earth."
+          },
+          {
+            "label": "B",
+            "text": "Jupiter, the largest planet in our solar system, is made mostly of hydrogen and helium."
+          },
+          {
+            "label": "C",
+            "text": "Earth's diameter is about 12,700 kilometers."
+          },
+          {
+            "label": "D",
+            "text": "Jupiter is the largest planet in our solar system."
+          }
+        ],
+        "correctChoice": "A",
+        "acceptedAnswers": [],
+        "explanation": "The goal is a comparison between Jupiter and Earth. Choice A gives Jupiter's diameter and says it is about 11 times as wide as Earth, which shows exactly how much larger it is.",
+        "distractorRationales": [
+          {
+            "label": "B",
+            "text": "This describes what Jupiter is made of and doesn't compare its size with Earth's."
+          },
+          {
+            "label": "C",
+            "text": "This gives Earth's size alone, with nothing about Jupiter to compare it to."
+          },
+          {
+            "label": "D",
+            "text": "This says Jupiter is the largest planet but doesn't compare it with Earth or show how much larger it is."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rhetorical-synthesis-020",
+      "difficulty": "medium",
+      "format": "multiple-choice",
+      "content": {
+        "passages": [
+          {
+            "label": null,
+            "text": "While researching a topic, a student has taken the following notes:\n• Washi is a traditional Japanese paper.\n• It is often made from the inner bark of the kozo, or paper mulberry, shrub.\n• Kozo fibers are much longer than the wood-pulp fibers used in most modern paper.\n• Long fibers tangle tightly together, making the finished sheet strong and resistant to tearing.\n• Washi has been used for books, scrolls, lanterns, and sliding doors."
+          }
+        ],
+        "table": null,
+        "stem": "The student wants to explain why washi made from kozo resists tearing. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "choices": [
+          {
+            "label": "A",
+            "text": "Washi, a traditional Japanese paper, has been used for books, scrolls, lanterns, and sliding doors."
+          },
+          {
+            "label": "B",
+            "text": "Washi is often made from the inner bark of the kozo, or paper mulberry, shrub."
+          },
+          {
+            "label": "C",
+            "text": "Unlike most modern paper, washi is a traditional Japanese paper that is often made from the inner bark of a shrub."
+          },
+          {
+            "label": "D",
+            "text": "Because kozo fibers are much longer than the wood-pulp fibers in most modern paper, they tangle tightly together, making washi strong and resistant to tearing."
+          }
+        ],
+        "correctChoice": "D",
+        "acceptedAnswers": [],
+        "explanation": "The goal asks why kozo washi resists tearing, so the answer needs a cause. Choice D gives it: kozo fibers are long, long fibers tangle tightly, and that tangling makes the paper strong. \"Because\" signals the explanation.",
+        "distractorRationales": [
+          {
+            "label": "A",
+            "text": "This lists uses of washi but doesn't explain why it resists tearing."
+          },
+          {
+            "label": "B",
+            "text": "This names the material washi is made from but doesn't say why that material makes the paper strong."
+          },
+          {
+            "label": "C",
+            "text": "This contrasts washi with modern paper but gives no reason it resists tearing."
+          }
+        ]
+      },
+      "authorship": {
+        "writer": {
+          "name": "claude-opus-5-5",
+          "date": "2026-10-04"
+        },
+        "inputs": {
+          "instructions": "content/AUTHORING.md and the skill descriptions and guidance in src/lib/sat/taxonomy.ts. Request: Justine asked for more questions so practice repeats less (project thread, 2026-10-04); batch 3, ten more questions per skill.",
+          "examples": []
+        },
+        "passageSource": "original",
+        "reviews": [
+          {
+            "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
+            "date": "2026-10-04",
+            "edits": "none"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-04",
+            "edits": "none; checker's answer matched the key"
+          }
+        ]
+      }
     }
   ]
 }
