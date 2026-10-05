@@ -1,6 +1,6 @@
 {
-  "id": "200775f5-813a-460c-9cac-59f05a068a55",
-  "prevId": "2cebbdc6-3ddb-469c-b000-76e55cc3bb8b",
+  "id": "518775b3-6c45-4ac7-ae7f-a36ee0ebba8f",
+  "prevId": "200775f5-813a-460c-9cac-59f05a068a55",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -247,6 +247,86 @@
         "auth_sessions_user_id_users_id_fk": {
           "name": "auth_sessions_user_id_users_id_fk",
           "tableFrom": "auth_sessions",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.email_changes": {
+      "name": "email_changes",
+      "schema": "",
+      "columns": {
+        "token_hash": {
+          "name": "token_hash",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "new_email": {
+          "name": "new_email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expires_at": {
+          "name": "expires_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "used_at": {
+          "name": "used_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "email_changes_user_idx": {
+          "name": "email_changes_user_idx",
+          "columns": [
+            {
+              "expression": "user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "email_changes_user_id_users_id_fk": {
+          "name": "email_changes_user_id_users_id_fk",
+          "tableFrom": "email_changes",
           "tableTo": "users",
           "columnsFrom": [
             "user_id"

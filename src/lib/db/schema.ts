@@ -258,6 +258,10 @@ export const seasonPasses = pgTable(
     currency: text("currency").notNull(),
     /** Set when the payment is fully refunded; the pass then stops counting. */
     revokedAt: timestamp("revoked_at", { withTimezone: true }),
+    /** When the receipt email went out; null if it wasn't sent. */
+    receiptSentAt: timestamp("receipt_sent_at", { withTimezone: true }),
+    /** When the "your pass ends soon" email went out (src/lib/billing/notify.ts). */
+    reminderSentAt: timestamp("reminder_sent_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [

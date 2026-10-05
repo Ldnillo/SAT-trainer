@@ -1,6 +1,7 @@
 import Stripe from "stripe";
 import type { Db } from "../db/client";
 import { passConfig, type PassConfig } from "./config";
+import { sendReceipt } from "./notify";
 import { grantPass, revokePassForPayment, type SeasonPass } from "./pass";
 
 /** Marks checkout sessions this app created for a season pass. */
@@ -76,6 +77,8 @@ export async function fulfillCheckout(db: Db, session: Stripe.Checkout.Session, 
     currency: session.currency ?? "usd",
     days,
   });
+  // Only the call that created the pass sends the receipt, so the webhook and return page don't both email.
+  if (result.created) await sendReceipt(db, result.pass);
   return { ok: true, ...result };
 }
 
