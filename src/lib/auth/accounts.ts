@@ -1,7 +1,7 @@
 import { createHash, randomBytes } from "node:crypto";
 import { and, eq, gt, inArray, lt, ne } from "drizzle-orm";
 import type { Db } from "../db/client";
-import { attempts, authSessions, practiceSets, practiceTests, scoreReports, seasonPasses, testAnswers, users } from "../db/schema";
+import { attempts, authSessions, practiceSets, practiceTests, questionReports, scoreReports, seasonPasses, testAnswers, users } from "../db/schema";
 import { hashPassword, MIN_PASSWORD_LENGTH, verifyPassword } from "./password";
 
 export interface User {
@@ -122,7 +122,7 @@ export async function exportUserData(db: Db, userId: string) {
     .from(users)
     .where(eq(users.id, userId));
   if (!account) return undefined;
-  const [sets, tests, answers, passes, reports] = await Promise.all([
+  const [sets, tests, answers, passes, reports, problemReports] = await Promise.all([
     db.select().from(practiceSets).where(eq(practiceSets.userId, userId)).orderBy(practiceSets.createdAt),
     db.select().from(practiceTests).where(eq(practiceTests.userId, userId)).orderBy(practiceTests.createdAt),
     db.select().from(attempts).where(eq(attempts.userId, userId)).orderBy(attempts.createdAt),
@@ -139,6 +139,17 @@ export async function exportUserData(db: Db, userId: string) {
       .where(eq(seasonPasses.userId, userId))
       .orderBy(seasonPasses.createdAt),
     db.select().from(scoreReports).where(eq(scoreReports.userId, userId)).orderBy(scoreReports.testDate),
+    db
+      .select({
+        questionId: questionReports.questionId,
+        reason: questionReports.reason,
+        details: questionReports.details,
+        status: questionReports.status,
+        createdAt: questionReports.createdAt,
+      })
+      .from(questionReports)
+      .where(eq(questionReports.userId, userId))
+      .orderBy(questionReports.createdAt),
   ]);
   const testIds = tests.map((t) => t.id);
   const testAnswerRows = testIds.length
@@ -151,5 +162,6 @@ export async function exportUserData(db: Db, userId: string) {
     answers,
     seasonPasses: passes,
     scoreReports: reports,
+    problemReports,
   };
 }

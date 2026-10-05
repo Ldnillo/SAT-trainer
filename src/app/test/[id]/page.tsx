@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MathText } from "@/components/MathText";
-import { FlagButton } from "@/components/FlagButton";
 import { AnswerReview, QuestionBody } from "@/components/Question";
+import { QuestionActions } from "@/components/ReportButton";
 import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import type { TestModule } from "@/lib/db/schema";
@@ -213,7 +213,7 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
                   </summary>
                   <div className={styles.reviewCard}>
                     <div className={styles.reviewTools}>
-                      <FlagButton questionId={question.id} initial={flags.has(question.id)} />
+                      <QuestionActions questionId={question.id} flagged={flags.has(question.id)} />
                     </div>
                     <QuestionBody content={question.content} />
                     <AnswerReview content={question.content} answer={answer?.answer ?? ""} correct={answer?.correct ?? false} />
