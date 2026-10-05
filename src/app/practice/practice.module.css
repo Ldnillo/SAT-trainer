@@ -225,3 +225,8 @@
   gap: 8px;
   margin-bottom: 16px;
 }
+
+/* Flag on the left; the formula and calculator buttons share the right. */
+.tools > :first-child {
+  margin-right: auto;
+}
