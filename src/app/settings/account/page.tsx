@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MIN_PASSWORD_LENGTH } from "@/lib/auth/password";
 import { requireUser } from "@/lib/auth/session";
 import { siteConfig } from "@/lib/site";
-import { removeAccount, signOut, updatePassword } from "../../auth-actions";
+import { removeAccount, signOut, startEmailChange, updatePassword, updateProfileName } from "../../auth-actions";
 import styles from "./account.module.css";
 
 export const metadata: Metadata = { title: "Account settings" };
@@ -12,6 +12,13 @@ const ERRORS: Record<string, string> = {
   "wrong-password": "Your current password isn't right.",
   mismatch: "The two new passwords don't match.",
   "short-password": `Use a new password of at least ${MIN_PASSWORD_LENGTH} characters.`,
+  "missing-name": "Enter a name.",
+  "long-name": "That name is too long.",
+  "invalid-email": "That doesn't look like an email address.",
+  "same-email": "That's already your email.",
+  "email-taken": "That email already has a NextScore account.",
+  "email-link": "That confirmation link has expired or was already used. Ask for a new one below.",
+  "too-many": "Too many tries. Please wait a while and try again.",
   "delete-confirm": "Type your account's email exactly to confirm deleting it.",
   "delete-password": "That password isn't right, so your account wasn't deleted.",
 };
@@ -29,6 +36,15 @@ export default async function AccountPage({ searchParams }: PageProps<"/settings
         <p className={styles.notice}>Password changed. You&apos;ve been signed out on your other devices.</p>
       )}
 
+      {params.notice === "name-changed" && <p className={styles.notice}>Name updated.</p>}
+      {params.notice === "email-changed" && <p className={styles.notice}>Email changed. Use it to sign in from now on.</p>}
+      {params.notice === "email-sent" && (
+        <p className={styles.notice}>
+          We sent a confirmation link to {typeof params.to === "string" ? params.to : "your new address"}. Your email
+          changes once you open it.
+        </p>
+      )}
+
       <section className={`${styles.section} surface`}>
         <h2>Your details</h2>
         <p>
@@ -37,12 +53,46 @@ export default async function AccountPage({ searchParams }: PageProps<"/settings
           <span className={styles.muted}>{user.email}</span>
         </p>
         <p className={styles.muted}>
-          To change your name or email, write to <a href={`mailto:${supportEmail}`}>{supportEmail}</a>. Your season pass
-          is on the <Link href="/pass">season pass page</Link>.
+          Your season pass is on the <Link href="/pass">season pass page</Link>. Need something else? Write to{" "}
+          <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.
         </p>
         <form action={signOut}>
           <button type="submit" className="button secondary">
             Sign out
+          </button>
+        </form>
+      </section>
+
+      <section className={`${styles.section} surface`}>
+        <h2>Change name</h2>
+        <form action={updateProfileName} className={styles.form}>
+          <label>
+            Name
+            <input type="text" name="name" defaultValue={user.name} autoComplete="name" maxLength={100} required />
+          </label>
+          <button type="submit" className="button">
+            Save name
+          </button>
+        </form>
+      </section>
+
+      <section className={`${styles.section} surface`}>
+        <h2>Change email</h2>
+        <p className={styles.muted}>
+          We&apos;ll send a link to the new address. Your email only changes once you open it, and we&apos;ll let your old
+          address know.
+        </p>
+        <form action={startEmailChange} className={styles.form}>
+          <label>
+            New email
+            <input type="email" name="email" autoComplete="email" required />
+          </label>
+          <label>
+            Current password
+            <input type="password" name="password" autoComplete="current-password" required />
+          </label>
+          <button type="submit" className="button">
+            Send confirmation link
           </button>
         </form>
       </section>

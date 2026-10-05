@@ -1,3 +1,4 @@
+import { eq } from "drizzle-orm";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   changePassword,
@@ -10,6 +11,7 @@ import {
 } from "../src/lib/auth/accounts";
 import { clearHits, consume, isLimited, recordHit } from "../src/lib/auth/rate-limit";
 import { createPasswordReset, RESET_MINUTES, resetPassword, userForResetToken } from "../src/lib/auth/reset";
+import { confirmEmailChange, EMAIL_CHANGE_MINUTES, requestEmailChange, updateName } from "../src/lib/auth/profile";
 import { grantPass } from "../src/lib/billing/pass";
 import { openDb, type Db } from "../src/lib/db/client";
 import { seasonPasses, users } from "../src/lib/db/schema";
@@ -183,5 +185,61 @@ describe("site config", () => {
       operator: "X LLC",
       governingLaw: "Texas",
     });
+  });
+});
+
+describe("name and email changes", () => {
+  let db: Db;
+  let close: () => Promise<void>;
+  let userId: string;
+  beforeEach(async () => {
+    ({ db, close } = await openDb("memory://"));
+    const r = await createUser(db, { email: "sam@example.com", name: "Sam", password: "password1" });
+    if (!r.ok) throw new Error("setup");
+    userId = r.user.id;
+    await createUser(db, { email: "taken@example.com", name: "Other", password: "password1" });
+  });
+  afterEach(async () => close());
+
+  it("changes and validates the name", async () => {
+    expect(await updateName(db, userId, "  ")).toEqual({ ok: false, error: "missing-name" });
+    expect(await updateName(db, userId, "x".repeat(101))).toEqual({ ok: false, error: "long-name" });
+    expect(await updateName(db, userId, "  Samantha ")).toEqual({ ok: true });
+    expect((await db.select().from(users).where(eq(users.id, userId)))[0].name).toBe("Samantha");
+  });
+
+  it("refuses bad email requests", async () => {
+    const ask = (newEmail: string, password = "password1") => requestEmailChange(db, userId, { newEmail, password }, NOW);
+    expect(await ask("new@example.com", "nope")).toEqual({ ok: false, error: "wrong-password" });
+    expect(await ask("not-an-email")).toEqual({ ok: false, error: "invalid-email" });
+    expect(await ask(" SAM@example.com ")).toEqual({ ok: false, error: "same-email" });
+    expect(await ask("Taken@example.com")).toEqual({ ok: false, error: "email-taken" });
+  });
+
+  it("changes the email only after the link is used, once", async () => {
+    const req = await requestEmailChange(db, userId, { newEmail: " New@Example.com ", password: "password1" }, NOW);
+    if (!req.ok) throw new Error("request");
+    expect((await db.select().from(users).where(eq(users.id, userId)))[0].email).toBe("sam@example.com");
+
+    const done = await confirmEmailChange(db, req.token, NOW);
+    expect(done).toMatchObject({ ok: true, oldEmail: "sam@example.com", user: { email: "new@example.com" } });
+    expect(await checkCredentials(db, "new@example.com", "password1")).toMatchObject({ id: userId });
+    expect(await confirmEmailChange(db, req.token, NOW)).toEqual({ ok: false, error: "invalid-token" });
+  });
+
+  it("rejects expired links and replaced requests", async () => {
+    const first = await requestEmailChange(db, userId, { newEmail: "a@example.com", password: "password1" }, NOW);
+    const second = await requestEmailChange(db, userId, { newEmail: "b@example.com", password: "password1" }, NOW);
+    if (!first.ok || !second.ok) throw new Error("request");
+    expect(await confirmEmailChange(db, first.token, NOW)).toEqual({ ok: false, error: "invalid-token" });
+    const late = new Date(NOW.getTime() + (EMAIL_CHANGE_MINUTES + 1) * MINUTE);
+    expect(await confirmEmailChange(db, second.token, late)).toEqual({ ok: false, error: "invalid-token" });
+  });
+
+  it("won't take an address registered after the request", async () => {
+    const req = await requestEmailChange(db, userId, { newEmail: "late@example.com", password: "password1" }, NOW);
+    if (!req.ok) throw new Error("request");
+    await createUser(db, { email: "late@example.com", name: "Late", password: "password1" });
+    expect(await confirmEmailChange(db, req.token, NOW)).toEqual({ ok: false, error: "email-taken" });
   });
 });

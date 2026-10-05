@@ -19,6 +19,8 @@ export const LIMITS = {
   /** Reset emails sent to one address. */
   resetEmailsPerEmail: { max: 3, windowMs: 60 * MINUTE },
   resetRequestsPerIp: { max: 20, windowMs: 60 * MINUTE },
+  /** Email-change confirmations requested by one student. */
+  emailChangesPerUser: { max: 5, windowMs: 60 * MINUTE },
   signUpsPerIp: { max: 20, windowMs: 60 * MINUTE },
   /** "Report a problem" forms sent by one student. */
   reportsPerUser: { max: 20, windowMs: 60 * MINUTE },

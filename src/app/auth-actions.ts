@@ -2,13 +2,14 @@
 
 import { redirect } from "next/navigation";
 import { changePassword, checkCredentials, createUser, deleteAccount, normalizeEmail } from "@/lib/auth/accounts";
+import { confirmEmailChange, EMAIL_CHANGE_MINUTES, requestEmailChange, updateName } from "@/lib/auth/profile";
 import { MIN_PASSWORD_LENGTH } from "@/lib/auth/password";
 import { clearHits, consume, isLimited, LIMITS, recordHit } from "@/lib/auth/rate-limit";
 import { createPasswordReset, RESET_MINUTES, resetPassword } from "@/lib/auth/reset";
 import { currentSessionToken, endSession, requireUser, startSession } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import { sendEmail } from "@/lib/email/send";
-import { passwordChangedEmail, passwordResetEmail } from "@/lib/email/templates";
+import { emailChangeConfirmEmail, emailChangedEmail, passwordChangedEmail, passwordResetEmail } from "@/lib/email/templates";
 import { baseUrl, clientIp } from "@/lib/request";
 
 /** Only same-site paths, so a crafted ?next= can't send students elsewhere. */
@@ -119,4 +120,33 @@ export async function removeAccount(form: FormData) {
   if (!(await deleteAccount(await getDb(), user.id, field(form, "password")))) redirect("/settings/account?error=delete-password");
   await endSession();
   redirect("/?deleted=1");
+}
+
+export async function updateProfileName(form: FormData) {
+  const user = await requireUser("/settings/account");
+  const result = await updateName(await getDb(), user.id, field(form, "name"));
+  if (!result.ok) redirect(`/settings/account?error=${result.error}`);
+  redirect("/settings/account?notice=name-changed");
+}
+
+/** Emails a confirmation link to the new address; the email only changes once it's opened. */
+export async function startEmailChange(form: FormData) {
+  const user = await requireUser("/settings/account");
+  const db = await getDb();
+  if (!(await consume(db, [{ key: `email-change:user:${user.id}`, limit: LIMITS.emailChangesPerUser }]))) {
+    redirect("/settings/account?error=too-many");
+  }
+  const result = await requestEmailChange(db, user.id, { newEmail: field(form, "email"), password: field(form, "password") });
+  if (!result.ok) redirect(`/settings/account?error=${result.error}`);
+  const link = `${await baseUrl()}/settings/account/confirm-email?token=${encodeURIComponent(result.token)}`;
+  await sendEmail({ to: result.newEmail, ...emailChangeConfirmEmail({ name: user.name, link, minutes: EMAIL_CHANGE_MINUTES }) });
+  redirect(`/settings/account?notice=email-sent&to=${encodeURIComponent(result.newEmail)}`);
+}
+
+export async function completeEmailChange(form: FormData) {
+  await requireUser("/settings/account");
+  const result = await confirmEmailChange(await getDb(), field(form, "token"));
+  if (!result.ok) redirect(`/settings/account?error=${result.error === "email-taken" ? "email-taken" : "email-link"}`);
+  await sendEmail({ to: result.oldEmail, ...emailChangedEmail({ name: result.user.name, newEmail: result.user.email }) });
+  redirect("/settings/account?notice=email-changed");
 }
