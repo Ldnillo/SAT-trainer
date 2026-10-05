@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import Link from "next/link";
+import { DailyGoal } from "@/components/DailyGoal";
 import { ProgressChart } from "@/components/ProgressChart";
+import { TimeZoneSync } from "@/components/TimeZoneSync";
 import { requireUser } from "@/lib/auth/session";
 import { practiceAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { DOMAINS, getSkill, SECTION_NAMES } from "@/lib/sat/taxonomy";
+import { parseTimeZone, TIME_ZONE_COOKIE } from "@/lib/time-zone";
 import {
   computeMastery,
   estimateScores,
@@ -21,6 +25,7 @@ import { DEFAULT_SET_SIZE, loadAttempts, recentPracticeSets } from "@/lib/traine
 import { flaggedIds, mistakesFrom } from "@/lib/trainer/review";
 import { completedTests } from "@/lib/test/tests";
 import { listScoreReports, priorsFromReport, REPORT_KINDS, reportTotal } from "@/lib/trainer/score-report";
+import { dailyProgress, loadDailyGoal } from "@/lib/trainer/streak";
 import { startPractice } from "../practice/actions";
 import styles from "./dashboard.module.css";
 
@@ -30,15 +35,19 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets, access, reports, flags, tests] = await Promise.all([
+  const [history, sets, access, reports, flags, tests, goal, cookieStore] = await Promise.all([
     loadAttempts(db, user.id),
     recentPracticeSets(db, user.id),
     practiceAccess(db, user.id),
     listScoreReports(db, user.id),
     flaggedIds(db, user.id),
     completedTests(db, user.id),
+    loadDailyGoal(db, user.id),
+    cookies(),
   ]);
   const report = reports[0];
+  const timeZoneCookie = cookieStore.get(TIME_ZONE_COOKIE)?.value;
+  const daily = dailyProgress(history, goal, new Date(), parseTimeZone(timeZoneCookie));
   const mistakeCount = mistakesFrom(history).length;
   // Targeting and skill levels start from the student's score report, if they added one;
   // the estimated scores come from practice answers alone.
@@ -123,6 +132,9 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
           </div>
         </div>
       </section>
+
+      <DailyGoal progress={daily} />
+      <TimeZoneSync current={timeZoneCookie} />
 
       <section className={`${styles.testCard} surface`}>
         <div>

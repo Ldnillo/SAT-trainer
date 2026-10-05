@@ -118,6 +118,7 @@ export async function exportUserData(db: Db, userId: string) {
       name: users.name,
       createdAt: users.createdAt,
       termsAcceptedAt: users.termsAcceptedAt,
+      dailyGoal: users.dailyGoal,
     })
     .from(users)
     .where(eq(users.id, userId));
