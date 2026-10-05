@@ -41,6 +41,8 @@ export const users = pgTable("users", {
   passwordHash: text("password_hash").notNull(),
   /** When the student agreed to the terms and privacy policy and confirmed they are 13 or older (null for accounts made before that existed). */
   termsAcceptedAt: timestamp("terms_accepted_at", { withTimezone: true }),
+  /** Questions the student aims to answer each day (src/lib/trainer/streak.ts). */
+  dailyGoal: integer("daily_goal").notNull().default(10),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 

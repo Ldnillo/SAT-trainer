@@ -1,0 +1,204 @@
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px 32px;
+  padding: 20px 28px;
+  margin-top: 12px;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+
+.muted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.count {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.count strong {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.bar {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--border);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.bar div {
+  height: 100%;
+  border-radius: 5px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.barDone div {
+  background: var(--ok);
+}
+
+.streak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  text-align: center;
+}
+
+.streakValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: color-mix(in srgb, var(--muted) 60%, transparent);
+}
+
+.streakValue.lit {
+  color: var(--warn);
+}
+
+.streakLabel {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.week {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  list-style: none;
+  padding: 12px 0 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.week li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+.practiced .dot {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.met .dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.weekday {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.week li:last-child .weekday {
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.change {
+  grid-column: 1 / -1;
+  font-size: 14px;
+}
+
+.change summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  width: fit-content;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.choices fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.choice:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .streak {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px 10px;
+    text-align: left;
+  }
+
+  .streakValue {
+    font-size: 32px;
+  }
+
+  .streak .muted {
+    flex-basis: 100%;
+  }
+}

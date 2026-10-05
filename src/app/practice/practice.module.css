@@ -82,6 +82,11 @@
   margin: 0 0 6px;
 }
 
+.summary .daily {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 .ring {
   flex: none;
   display: grid;
