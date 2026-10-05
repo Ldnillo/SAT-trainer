@@ -93,6 +93,8 @@ Students sign up with a name, email and password (`/signup`), then practice from
 - **Graphing calculator** (`src/lib/calculator/engine.ts`, `src/components/calculator`): a "Calculator" button on every math question, in practice sets and in the math modules of the practice test. It works like the Desmos calculator on the digital SAT: an expression list (`y = 2x + 1`, `x^2 + y^2 = 25`, `y < 3x`, `a = 4`, `f(x) = x^2`, `(2, 5)`, or plain arithmetic with the answer shown as a decimal and a fraction) next to a graph you drag and zoom. Tapping a curve reads off a point; grey dots mark intercepts, minimums and maximums, and intersections. Radians or degrees. It's NextScore's own code, using mathjs (Apache-2.0) for the arithmetic, so there's no license fee. The Desmos calculator itself needs a paid commercial Desmos API plan on a paid site; set `DESMOS_API_KEY` to use Desmos instead.
 - **Flag for review**: a flag button on every practice question and on each question in practice test results (`question_flags` table, `src/lib/trainer/review.ts`). Flags stay until the student removes them. The in-test "Mark for review" checkbox is separate and only lasts for that module, as on the real test.
 - **My mistakes** (`/review`): every question whose latest answer was wrong, from practice or practice tests, with the question, the student's answer and the explanation. "Retry" starts a practice set of up to 10 of them, oldest first; a question leaves the list once it's answered correctly. Flagged questions can be practiced the same way. Retry sets count toward mastery like any other set and need a pass or a free set.
+- **Report a problem**: a button next to "Flag for review" on every practice question, on each question in practice test results and on the Review page. Students pick what's wrong (wrong answer key, unclear or two right answers, bad explanation, typo or display problem, something else) and can add a note; it saves without leaving the page, up to 20 reports per student per hour (`question_reports` table, `src/lib/trainer/reports.ts`). Not shown inside a timed test module, as on the real test.
+- **Problem reports** (`/admin/reports`, staff only): reports grouped by question, newest first, with the question's file id (e.g. `transitions-001`), who reported it, their note, and the question with its answer and explanation. Fix the question in `content/questions/<skill>.json`, run `npm run import`, then "Mark fixed"; "Dismiss" when nothing is wrong. Staff are the accounts listed in `ADMIN_EMAILS`; they also see a "Problem reports" tab in Settings. Without `ADMIN_EMAILS`, every signed-in account counts as staff in development and none in production.
 
 ## Full-length practice test
 
@@ -116,7 +118,7 @@ Students sign up with a name, email and password (`/signup`), then practice from
 ### Before launch
 
 1. Have a lawyer review `/privacy` and `/terms`, and confirm the refund policy and where data is stored.
-2. Set `SUPPORT_EMAIL`, `LEGAL_OPERATOR_NAME` and `LEGAL_GOVERNING_STATE`.
+2. Set `SUPPORT_EMAIL`, `LEGAL_OPERATOR_NAME` and `LEGAL_GOVERNING_STATE`, and `ADMIN_EMAILS` to the accounts that review problem reports.
 3. Create a Resend account, verify the site's domain, and set `RESEND_API_KEY` and `EMAIL_FROM`. Try a password reset on the live site.
 4. Set `APP_URL` to the site's address so links in emails always point to it.
 5. Switch Stripe to live keys and a live webhook (see Setting up Stripe below).

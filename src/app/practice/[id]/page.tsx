@@ -3,10 +3,10 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorPanel } from "@/components/calculator/CalculatorPanel";
-import { FlagButton } from "@/components/FlagButton";
 import { ReferencePanel } from "@/components/ReferencePanel";
 import { ReferenceSheet } from "@/components/ReferenceSheet";
 import { AnswerInputs, AnswerReview, QuestionBody } from "@/components/Question";
+import { QuestionActions } from "@/components/ReportButton";
 import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import { getSkill } from "@/lib/sat/taxonomy";
@@ -125,7 +125,7 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
               </summary>
               <div className={styles.reviewCard}>
                 <div className={styles.tools}>
-                  <FlagButton questionId={question.id} initial={flags.has(question.id)} />
+                  <QuestionActions questionId={question.id} flagged={flags.has(question.id)} />
                 </div>
                 <QuestionBody content={question.content} />
                 <AnswerReview content={question.content} answer={attempt!.answer} correct={attempt!.correct} />
@@ -155,11 +155,11 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
   );
 }
 
-/** Flag for review, and the formula sheet and calculator on math questions. */
+/** Flag for review, report a problem, and the formula sheet and calculator on math questions. */
 function Tools({ questionId, flagged, calculator }: { questionId: string; flagged: boolean; calculator: string | null }) {
   return (
     <div className={styles.tools}>
-      <FlagButton questionId={questionId} initial={flagged} />
+      <QuestionActions questionId={questionId} flagged={flagged} />
       {calculator && (
         <ReferencePanel>
           <ReferenceSheet />

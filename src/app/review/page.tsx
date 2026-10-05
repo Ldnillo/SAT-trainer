@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FlagButton } from "@/components/FlagButton";
+import { QuestionActions } from "@/components/ReportButton";
 import { AnswerReview, QuestionBody } from "@/components/Question";
 import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
@@ -142,7 +142,7 @@ function QuestionList(props: {
               </summary>
               <div className={styles.body}>
                 <div className={styles.tools}>
-                  <FlagButton questionId={q.id} initial={props.flags.has(q.id)} />
+                  <QuestionActions questionId={q.id} flagged={props.flags.has(q.id)} />
                 </div>
                 <QuestionBody content={q.content} />
                 <details className={styles.reveal}>

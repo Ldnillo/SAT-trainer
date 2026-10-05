@@ -53,7 +53,7 @@ export default function PrivacyPage() {
           <strong>Your consent:</strong> the time you agreed to our terms and confirmed you are 13 or older.
         </li>
         <li>
-          <strong>Messages you send us,</strong> for example support or refund requests.
+          <strong>Messages you send us,</strong> for example support or refund requests, and problems you report on a question.
         </li>
       </ul>
       <p>
