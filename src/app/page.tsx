@@ -1,6 +1,18 @@
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+import { MathText } from "@/components/MathText";
+import { QuestionBody } from "@/components/Question";
+import { currentUser } from "@/lib/auth/session";
 import { formatPrice, passConfig } from "@/lib/billing/config";
+import { sampleQuestions } from "@/lib/home/samples";
+import dashboardDark from "@/assets/home/dashboard-dark.png";
+import dashboardLight from "@/assets/home/dashboard-light.png";
+import practiceDark from "@/assets/home/practice-dark.png";
+import practiceLight from "@/assets/home/practice-light.png";
+import testDark from "@/assets/home/test-dark.png";
+import testLight from "@/assets/home/test-light.png";
 import styles from "./home.module.css";
+import { SampleQuestions, type RenderedSample } from "./SampleQuestions";
 
 const STEPS = [
   {
@@ -36,6 +48,41 @@ const FEATURES = [
   },
 ];
 
+// Real screenshots of the signed-in site, in both themes. Retake them when these pages change.
+const SCREENSHOTS: { title: string; body: string; alt: string; light: StaticImageData; dark: StaticImageData }[] = [
+  {
+    title: "Tailored practice sets",
+    body: "Answer a question and the explanation appears right away, including why the choice you picked is wrong.",
+    alt: "A NextScore practice question after answering, with the correct answer marked and a step-by-step explanation",
+    light: practiceLight,
+    dark: practiceDark,
+  },
+  {
+    title: "A dashboard that tracks every skill",
+    body: "Estimated section scores, your progress over time and your mastery of all 30 skills in one place.",
+    alt: "The NextScore dashboard showing estimated scores and skill mastery bars",
+    light: dashboardLight,
+    dark: dashboardDark,
+  },
+  {
+    title: "Full-length adaptive practice tests",
+    body: "Timed modules that adapt like the real digital test, with a calculator, a reference sheet and a question navigator.",
+    alt: "A NextScore full-length practice test question with the module timer and navigator",
+    light: testLight,
+    dark: testDark,
+  },
+];
+
+function renderSamples(): RenderedSample[] {
+  return sampleQuestions().map((s) => ({
+    ...s,
+    body: <QuestionBody content={s.content} />,
+    choices: s.content.choices.map((c) => ({ label: c.label, text: <MathText text={c.text} /> })),
+    rationales: Object.fromEntries(s.content.distractorRationales.map((r) => [r.label, <MathText key={r.label} text={r.text} />])),
+    explanation: <MathText text={s.content.explanation} />,
+  }));
+}
+
 // Example data for the hero preview; not a real student's results.
 const PREVIEW_SKILLS = [
   { name: "Transitions", pct: 86 },
@@ -46,6 +93,7 @@ const PREVIEW_SKILLS = [
 
 export default async function Home({ searchParams }: PageProps<"/">) {
   const params = await searchParams;
+  const user = await currentUser();
   const config = passConfig();
   const price = formatPrice(config.priceCents, config.currency).replace(/\.00$/, "");
   const freeSets =
@@ -64,14 +112,25 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             NextScore finds the skills where you can gain the most points and builds every practice set around them.
           </p>
           <div className={styles.ctas}>
-            <Link href="/signup" className="button large">
-              Start practicing free
-            </Link>
-            <Link href="/login" className="button large secondary">
-              Sign in
-            </Link>
+            {user ? (
+              <Link href="/dashboard" className="button large">
+                Go to your dashboard
+              </Link>
+            ) : (
+              <>
+                <Link href="/signup" className="button large">
+                  Start practicing free
+                </Link>
+                <Link href="/login" className="button large secondary">
+                  Sign in
+                </Link>
+              </>
+            )}
+            <a href="#try" className="button large secondary">
+              Try a question
+            </a>
           </div>
-          {config.freeSets > 0 && <p className={styles.note}>{freeSets}. No card needed.</p>}
+          {!user && config.freeSets > 0 && <p className={styles.note}>{freeSets}. No card needed.</p>}
         </div>
 
         <figure className={`${styles.preview} surface`} aria-label="Example of a NextScore dashboard">
@@ -104,6 +163,18 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         </figure>
       </section>
 
+      <section className={styles.section} id="try">
+        <h2>Try a real NextScore question</h2>
+        <p className={styles.sectionLede}>
+          These come straight from the question bank students practice with. Pick one, answer it, and see the explanation.
+        </p>
+        <SampleQuestions
+          samples={renderSamples()}
+          ctaHref={user ? "/dashboard" : "/signup"}
+          ctaLabel={user ? "Practice more" : "Practice more free"}
+        />
+      </section>
+
       <section className={styles.section}>
         <h2>How it works</h2>
         <ol className={styles.steps}>
@@ -115,6 +186,36 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className={styles.section}>
+        <h2>See what you get</h2>
+        <div className={styles.shots}>
+          {SCREENSHOTS.map((shot) => (
+            <figure key={shot.title} className={styles.shot}>
+              <div className={styles.shotFrame}>
+                <Image
+                  src={shot.light}
+                  alt={shot.alt}
+                  className={styles.shotLight}
+                  sizes="(max-width: 860px) 100vw, 640px"
+                  placeholder="blur"
+                />
+                <Image
+                  src={shot.dark}
+                  alt={shot.alt}
+                  className={styles.shotDark}
+                  sizes="(max-width: 860px) 100vw, 640px"
+                  placeholder="blur"
+                />
+              </div>
+              <figcaption>
+                <h3>{shot.title}</h3>
+                <p>{shot.body}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className={styles.section}>
@@ -143,8 +244,8 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             <li>Skill mastery tracking and estimated section scores</li>
             <li>Explanations for every answer</li>
           </ul>
-          <Link href="/signup" className="button large">
-            Start free
+          <Link href={user ? "/pass" : "/signup"} className="button large">
+            {user ? "Get the pass" : "Start free"}
           </Link>
         </div>
       </section>
