@@ -121,8 +121,8 @@ Students sign up with a name, email and password (`/signup`), then practice from
 2. Set `SUPPORT_EMAIL`, `LEGAL_OPERATOR_NAME` and `LEGAL_GOVERNING_STATE`, and `ADMIN_EMAILS` to the accounts that review problem reports.
 3. Create a Resend account, verify the site's domain, and set `RESEND_API_KEY` and `EMAIL_FROM`. Try a password reset on the live site.
 4. Set `CRON_SECRET` (any long random string). Vercel then runs `/api/cron/pass-reminders` daily (see `vercel.json`) to send the "your pass ends in 7 days" emails; on other hosts, call that URL daily with `Authorization: Bearer <CRON_SECRET>`.
-4. Set `APP_URL` to the site's address so links in emails always point to it.
-5. Switch Stripe to live keys and a live webhook (see Setting up Stripe below).
+5. Set `APP_URL` to the site's address so links in emails always point to it.
+6. Switch Stripe to live keys and a live webhook (see Setting up Stripe below).
 
 ## Season pass
 
