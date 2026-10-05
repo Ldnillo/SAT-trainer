@@ -1,0 +1,12 @@
+.openButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Takes its own full-width row under the question tools. */
+.panel {
+  order: 10;
+  flex-basis: 100%;
+  padding: 4px 16px 12px;
+}
