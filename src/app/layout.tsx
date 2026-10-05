@@ -35,6 +35,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
             </Link>
             <nav>
               <ThemeToggle />
+              <NavLink href="/">Home</NavLink>
               {user ? (
                 <>
                   <NavLink href="/dashboard">Dashboard</NavLink>

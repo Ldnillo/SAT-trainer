@@ -230,6 +230,204 @@
   padding-left: 0;
 }
 
+.sectionLede {
+  margin: -8px 0 20px;
+  color: var(--muted);
+  max-width: 40em;
+}
+
+/* Try a question */
+.samples {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sampleTabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.sampleTab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.sampleTab small {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.sampleTab:hover {
+  border-color: var(--accent);
+}
+
+.sampleTab[aria-selected="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+  color: var(--accent);
+}
+
+.samplePanel {
+  padding: 24px;
+}
+
+.sampleMeta {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.sampleChoice {
+  width: 100%;
+  font: inherit;
+  color: var(--foreground);
+  text-align: left;
+}
+
+.sampleChoice:not(:disabled):hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.sampleChoice:disabled {
+  cursor: default;
+}
+
+.sampleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 4px 16px;
+}
+
+.sampleGrid .button {
+  margin-top: 26px;
+}
+
+.sampleHint {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sampleActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Screenshots */
+.shots {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Screenshot and caption side by side, alternating sides so the page doesn't read as a list. */
+.shot {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.shot:nth-child(even) {
+  grid-template-columns: 1fr 1.7fr;
+}
+
+.shot:nth-child(even) .shotFrame {
+  order: 2;
+}
+
+.shotFrame {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+  background: var(--surface);
+}
+
+.shotFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shotDark {
+  display: none !important;
+}
+
+:global(:root[data-theme="dark"]) .shotLight {
+  display: none !important;
+}
+
+:global(:root[data-theme="dark"]) .shotDark {
+  display: block !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :global(:root:not([data-theme="light"])) .shotLight {
+    display: none !important;
+  }
+
+  :global(:root:not([data-theme="light"])) .shotDark {
+    display: block !important;
+  }
+}
+
+.shot h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.shot p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .sampleTabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shot,
+  .shot:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .shot:nth-child(even) .shotFrame {
+    order: 0;
+  }
+
+  .samplePanel {
+    padding: 18px;
+  }
+}
+
 @media (max-width: 860px) {
   .hero,
   .pricing {

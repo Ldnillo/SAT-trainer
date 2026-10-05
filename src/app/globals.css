@@ -198,8 +198,11 @@ th {
   gap: 20px;
 }
 
-.site-header nav a:not(.button) {
+.site-header nav a {
   white-space: nowrap;
+}
+
+.site-header nav a:not(.button) {
   color: var(--foreground);
   font-weight: 600;
   text-decoration: none;
@@ -653,7 +656,7 @@ select:focus {
 }
 
 /*
- * Signed in, the nav has four links plus the theme button: keep only the logo mark, move
+ * Signed in, the nav has five links plus the theme button: keep only the logo mark, move
  * "Sign out" to Settings > Account and leave Season pass to the dashboard so they fit on one line.
  */
 @media (max-width: 480px) {
@@ -666,8 +669,27 @@ select:focus {
     display: none;
   }
 
+  .site-header-inner {
+    padding: 10px 12px;
+  }
+
   .site-header nav {
-    gap: 10px;
+    gap: 9px;
+    font-size: 14px;
+  }
+}
+
+/* Phones: signed out, the logo mark alone names the site so Home, Sign in and Start free fit. */
+@media (max-width: 400px) {
+  .site-header .brand .wordmark {
+    display: none;
+  }
+}
+
+/* Small phones: signed in, the theme button gives way to the links (it is also in Settings). */
+@media (max-width: 374px) {
+  .site-header[data-signed-in] .theme-toggle {
+    display: none;
   }
 }
 
