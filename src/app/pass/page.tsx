@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUser } from "@/lib/auth/session";
-import { BEST_VALUE_PLAN_ID, formatPriceShort, PASS_PLANS, passConfig, percentOff } from "@/lib/billing/config";
+import { BEST_VALUE_PLAN_ID, formatPriceShort, PASS_PLANS, passConfig } from "@/lib/billing/config";
 import { practiceAccess } from "@/lib/billing/pass";
 import { fulfillCheckout, getStripe, paymentsConfigured } from "@/lib/billing/stripe";
 import { getDb } from "@/lib/db/client";
@@ -85,14 +85,13 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
             <input type="hidden" name="plan" value={plan.id} />
             <div className={styles.planHead}>
               <span className={styles.days}>{plan.days} days</span>
-              <span className="badge ok">{percentOff(plan)}% off</span>
+              <span className="badge ok">Launch price</span>
               {plan.id === BEST_VALUE_PLAN_ID && <span className="badge accent">Best value</span>}
             </div>
             <div className={styles.priceRow}>
               <span className={styles.price}>{formatPriceShort(plan.priceCents, config.currency)}</span>
-              <s className={styles.was}>{formatPriceShort(plan.listPriceCents, config.currency)}</s>
             </div>
-            <div className={styles.terms}>One payment. No subscription.</div>
+            <div className={styles.terms}>One payment. No subscription. Prices go up after launch.</div>
             <button type="submit" className="button large" disabled={!paymentsConfigured()}>
               {access.pass.active ? `Add ${plan.days} more days` : `Get ${plan.days} days`}
             </button>

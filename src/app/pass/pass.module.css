@@ -58,11 +58,6 @@
   margin-top: 8px;
 }
 
-.was {
-  color: var(--muted);
-  font-size: 20px;
-}
-
 .price {
   font-size: 48px;
   font-weight: 800;

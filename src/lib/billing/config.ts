@@ -9,25 +9,19 @@ export interface PassPlan {
   days: number;
   /** What the student pays, in the smallest currency unit (cents). */
   priceCents: number;
-  /** The "was" price shown crossed out next to the real one. */
-  listPriceCents: number;
 }
 
-/** Every pass is 40% off its list price. Shorter passes cost a little more per day. */
+/** Launch prices. Shorter passes cost a little more per day. */
 export const PASS_PLANS: readonly PassPlan[] = [
-  { id: "30d", days: 30, priceCents: 1200, listPriceCents: 2000 },
-  { id: "60d", days: 60, priceCents: 2100, listPriceCents: 3500 },
-  { id: "90d", days: 90, priceCents: 3000, listPriceCents: 5000 },
+  { id: "30d", days: 30, priceCents: 1200 },
+  { id: "60d", days: 60, priceCents: 2100 },
+  { id: "90d", days: 90, priceCents: 3000 },
 ];
 
 export const BEST_VALUE_PLAN_ID = "90d";
 
 export function findPlan(id: string | undefined): PassPlan | undefined {
   return PASS_PLANS.find((p) => p.id === id);
-}
-
-export function percentOff(plan: PassPlan): number {
-  return Math.round((1 - plan.priceCents / plan.listPriceCents) * 100);
 }
 
 export interface PassConfig {

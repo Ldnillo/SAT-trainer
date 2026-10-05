@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MathText } from "@/components/MathText";
 import { QuestionBody } from "@/components/Question";
 import { currentUser } from "@/lib/auth/session";
-import { BEST_VALUE_PLAN_ID, findPlan, formatPriceShort, PASS_PLANS, passConfig, percentOff } from "@/lib/billing/config";
+import { BEST_VALUE_PLAN_ID, findPlan, formatPriceShort, PASS_PLANS, passConfig } from "@/lib/billing/config";
 import { sampleQuestions } from "@/lib/home/samples";
 import dashboardDark from "@/assets/home/dashboard-dark.png";
 import dashboardLight from "@/assets/home/dashboard-light.png";
@@ -235,11 +235,10 @@ export default async function Home({ searchParams }: PageProps<"/">) {
           <div>
             <p className={styles.eyebrow}>Season pass</p>
             <h2 className={styles.pricingTitle}>
-              {formatPriceShort(best.priceCents, config.currency)} for {best.days} days{" "}
-              <s className={styles.muted}>{formatPriceShort(best.listPriceCents, config.currency)}</s>
+              {formatPriceShort(best.priceCents, config.currency)} for {best.days} days
             </h2>
             <p className={styles.muted}>
-              {percentOff(best)}% off. Or choose a shorter pass:{" "}
+              Launch pricing, so grab it before it goes up. Or choose a shorter pass:{" "}
               {PASS_PLANS.filter((p) => p.id !== best.id)
                 .map((p) => `${formatPriceShort(p.priceCents, config.currency)} for ${p.days} days`)
                 .join(", ")}

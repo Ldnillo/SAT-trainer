@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createUser } from "../src/lib/auth/accounts";
-import { DEFAULT_PASS_CONFIG, findPlan, formatPrice, PASS_PLANS, passConfig, percentOff } from "../src/lib/billing/config";
+import { DEFAULT_PASS_CONFIG, findPlan, formatPrice, PASS_PLANS, passConfig } from "../src/lib/billing/config";
 import { grantPass, passStatus, practiceAccess, revokePassForPayment } from "../src/lib/billing/pass";
 import { checkoutParams, fulfillCheckout, handleStripeEvent } from "../src/lib/billing/stripe";
 import { openDb, type Db } from "../src/lib/db/client";
@@ -22,10 +22,9 @@ describe("pass config", () => {
     expect(formatPrice(3000, "usd")).toBe("$30.00");
   });
 
-  it("offers 30, 60 and 90 day passes, all 40% off, with 90 days at $30", () => {
+  it("offers 30, 60 and 90 day passes, with 90 days at $30", () => {
     expect(PASS_PLANS.map((p) => [p.days, p.priceCents])).toEqual([[30, 1200], [60, 2100], [90, 3000]]);
-    expect(PASS_PLANS.map(percentOff)).toEqual([40, 40, 40]);
-    expect(findPlan("90d")?.listPriceCents).toBe(5000);
+    expect(findPlan("90d")?.priceCents).toBe(3000);
     expect(findPlan("nope")).toBeUndefined();
   });
 
