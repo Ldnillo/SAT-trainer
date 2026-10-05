@@ -71,6 +71,13 @@
       "when": 1791172555362,
       "tag": "0009_season_pass_emails",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791237372355,
+      "tag": "0010_email_changes",
+      "breakpoints": true
     }
   ]
 }

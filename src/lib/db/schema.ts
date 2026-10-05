@@ -75,6 +75,22 @@ export const passwordResets = pgTable(
   (t) => [index("password_resets_user_idx").on(t.userId)],
 );
 
+/** Pending email changes: the new address is only used once its owner opens the emailed link. */
+export const emailChanges = pgTable(
+  "email_changes",
+  {
+    tokenHash: text("token_hash").primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    newEmail: text("new_email").notNull(),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+    usedAt: timestamp("used_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("email_changes_user_idx").on(t.userId)],
+);
+
 /** Recent sign-in, sign-up and reset requests, counted per email or IP address to slow down password guessing and email spam. */
 export const rateLimitHits = pgTable(
   "rate_limit_hits",
