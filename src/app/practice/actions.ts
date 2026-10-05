@@ -1,12 +1,14 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { consume, LIMITS } from "@/lib/auth/rate-limit";
 import { requireUser } from "@/lib/auth/session";
 import { practiceAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { getSkill, SECTIONS, type SectionId } from "@/lib/sat/taxonomy";
 import { startPracticeSet, submitAnswer } from "@/lib/trainer/practice";
+import { submitReport, type SubmitReportResult } from "@/lib/trainer/reports";
 import { setFlag } from "@/lib/trainer/review";
 
 function parseFocus(form: FormData): PracticeFocus | undefined {
@@ -49,4 +51,16 @@ export async function answerQuestion(setId: string, questionId: string, form: Fo
 export async function flagQuestion(questionId: string, flagged: boolean): Promise<boolean> {
   const user = await requireUser("/dashboard");
   return setFlag(await getDb(), user.id, String(questionId), flagged === true);
+}
+
+/** Saves a "Report a problem" form. Called from the report button without leaving the page. */
+export async function reportQuestion(
+  questionId: string,
+  reason: string,
+  details: string,
+): Promise<SubmitReportResult | { ok: false; error: "too-many" }> {
+  const user = await requireUser("/dashboard");
+  const db = await getDb();
+  if (!(await consume(db, [{ key: `report:user:${user.id}`, limit: LIMITS.reportsPerUser }]))) return { ok: false, error: "too-many" };
+  return submitReport(db, user.id, { questionId: String(questionId), reason, details });
 }

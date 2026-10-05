@@ -41,6 +41,8 @@ export const users = pgTable("users", {
   passwordHash: text("password_hash").notNull(),
   /** When the student agreed to the terms and privacy policy and confirmed they are 13 or older (null for accounts made before that existed). */
   termsAcceptedAt: timestamp("terms_accepted_at", { withTimezone: true }),
+  /** Questions the student aims to answer each day (src/lib/trainer/streak.ts). */
+  dailyGoal: integer("daily_goal").notNull().default(10),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
@@ -276,4 +278,33 @@ export const scoreReports = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("score_reports_user_idx").on(t.userId, t.testDate)],
+);
+
+/** Why a student reported a question. */
+export type ReportReason = "wrong-answer" | "typo" | "unclear" | "explanation" | "other";
+/** open: not looked at yet. fixed: the question was corrected. dismissed: nothing wrong. */
+export type ReportStatus = "open" | "fixed" | "dismissed";
+
+/**
+ * Problems students report on a question ("the answer is wrong", a typo, ...),
+ * reviewed on /admin/reports (src/lib/trainer/reports.ts).
+ */
+export const questionReports = pgTable(
+  "question_reports",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    questionId: uuid("question_id")
+      .notNull()
+      .references(() => questions.id, { onDelete: "cascade" }),
+    reason: text("reason").$type<ReportReason>().notNull(),
+    /** What the student wrote, up to 1000 characters; empty when they wrote nothing. */
+    details: text("details").notNull().default(""),
+    status: text("status").$type<ReportStatus>().notNull().default("open"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    resolvedAt: timestamp("resolved_at", { withTimezone: true }),
+  },
+  (t) => [index("question_reports_status_idx").on(t.status, t.createdAt), index("question_reports_question_idx").on(t.questionId)],
 );

@@ -10,7 +10,7 @@ export interface Limit {
 
 const MINUTE = 60 * 1000;
 
-/** Limits for the account pages. Keys are per email address and per IP address. */
+/** Limits for the account pages (keys per email address and per IP address) and for question reports (per student). */
 export const LIMITS = {
   /** Wrong passwords for one account. */
   signInFailuresPerEmail: { max: 10, windowMs: 15 * MINUTE },
@@ -20,6 +20,8 @@ export const LIMITS = {
   resetEmailsPerEmail: { max: 3, windowMs: 60 * MINUTE },
   resetRequestsPerIp: { max: 20, windowMs: 60 * MINUTE },
   signUpsPerIp: { max: 20, windowMs: 60 * MINUTE },
+  /** "Report a problem" forms sent by one student. */
+  reportsPerUser: { max: 20, windowMs: 60 * MINUTE },
 } satisfies Record<string, Limit>;
 
 /** True when `key` already has `max` hits inside the window. */
