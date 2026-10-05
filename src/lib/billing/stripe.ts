@@ -1,6 +1,6 @@
 import Stripe from "stripe";
 import type { Db } from "../db/client";
-import { passConfig, type PassConfig } from "./config";
+import { passConfig, PASS_PLANS, type PassConfig, type PassPlan } from "./config";
 import { sendReceipt } from "./notify";
 import { grantPass, revokePassForPayment, type SeasonPass } from "./pass";
 
@@ -25,6 +25,7 @@ export function getStripe(): Stripe {
 export function checkoutParams(
   user: { id: string; email: string },
   baseUrl: string,
+  plan: PassPlan = PASS_PLANS[PASS_PLANS.length - 1],
   config: PassConfig = passConfig(),
 ): Stripe.Checkout.SessionCreateParams {
   return {
@@ -36,16 +37,16 @@ export function checkoutParams(
         quantity: 1,
         price_data: {
           currency: config.currency,
-          unit_amount: config.priceCents,
+          unit_amount: plan.priceCents,
           product_data: {
-            name: `NextScore season pass (${config.days} days)`,
+            name: `NextScore season pass (${plan.days} days)`,
             description: "Unlimited tailored SAT practice sets and score tracking.",
           },
         },
       },
     ],
     // Stored on the session so a pass keeps the length it was sold with if the setting changes later.
-    metadata: { purpose: PURPOSE, userId: user.id, days: String(config.days) },
+    metadata: { purpose: PURPOSE, userId: user.id, days: String(plan.days) },
     success_url: `${baseUrl}/pass?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${baseUrl}/pass?canceled=1`,
   };

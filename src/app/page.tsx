@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MathText } from "@/components/MathText";
 import { QuestionBody } from "@/components/Question";
 import { currentUser } from "@/lib/auth/session";
-import { formatPrice, passConfig } from "@/lib/billing/config";
+import { BEST_VALUE_PLAN_ID, findPlan, formatPriceShort, PASS_PLANS, passConfig } from "@/lib/billing/config";
 import { sampleQuestions } from "@/lib/home/samples";
 import dashboardDark from "@/assets/home/dashboard-dark.png";
 import dashboardLight from "@/assets/home/dashboard-light.png";
@@ -95,7 +95,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
   const params = await searchParams;
   const user = await currentUser();
   const config = passConfig();
-  const price = formatPrice(config.priceCents, config.currency).replace(/\.00$/, "");
+  const best = findPlan(BEST_VALUE_PLAN_ID)!;
   const freeSets =
     config.freeSets === 1 ? "Your first practice set is free" : `Your first ${config.freeSets} practice sets are free`;
 
@@ -235,9 +235,15 @@ export default async function Home({ searchParams }: PageProps<"/">) {
           <div>
             <p className={styles.eyebrow}>Season pass</p>
             <h2 className={styles.pricingTitle}>
-              {price} for {config.days} days
+              {formatPriceShort(best.priceCents, config.currency)} for {best.days} days
             </h2>
-            <p className={styles.muted}>One payment, no subscription. Try it free before you buy.</p>
+            <p className={styles.muted}>
+              Launch pricing, so grab it before it goes up. Or choose a shorter pass:{" "}
+              {PASS_PLANS.filter((p) => p.id !== best.id)
+                .map((p) => `${formatPriceShort(p.priceCents, config.currency)} for ${p.days} days`)
+                .join(", ")}
+              . One payment, no subscription. Try it free before you buy.
+            </p>
           </div>
           <ul className="check-list">
             <li>Unlimited tailored practice across all 30 skills</li>
