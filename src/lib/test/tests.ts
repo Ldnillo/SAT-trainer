@@ -1,4 +1,4 @@
-import { and, desc, eq, inArray, isNull } from "drizzle-orm";
+import { and, desc, eq, inArray, isNotNull, isNull } from "drizzle-orm";
 import type { Db } from "../db/client";
 import { findQuestions } from "../db/questions";
 import { attempts, practiceTests, questions, testAnswers, type ModuleTier, type TestModule, type TestScores } from "../db/schema";
@@ -71,6 +71,16 @@ export async function unfinishedTest(db: Db, userId: string): Promise<PracticeTe
 
 export async function recentTests(db: Db, userId: string, limit = 10): Promise<PracticeTest[]> {
   return db.select().from(practiceTests).where(eq(practiceTests.userId, userId)).orderBy(desc(practiceTests.createdAt)).limit(limit);
+}
+
+/** Finished tests, newest first. */
+export async function completedTests(db: Db, userId: string, limit = 10): Promise<PracticeTest[]> {
+  return db
+    .select()
+    .from(practiceTests)
+    .where(and(eq(practiceTests.userId, userId), isNotNull(practiceTests.completedAt)))
+    .orderBy(desc(practiceTests.completedAt))
+    .limit(limit);
 }
 
 /** Index of the module the student is on, or -1 once the test is finished. */
