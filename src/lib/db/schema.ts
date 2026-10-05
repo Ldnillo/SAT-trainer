@@ -101,7 +101,29 @@ export const practiceSets = pgTable(
   (t) => [index("practice_sets_user_idx").on(t.userId, t.createdAt)],
 );
 
-export type PracticeFocus = { kind: "tailored" } | { kind: "section"; section: SectionId } | { kind: "skill"; skill: string };
+export type PracticeFocus =
+  | { kind: "tailored" }
+  | { kind: "section"; section: SectionId }
+  | { kind: "skill"; skill: string }
+  /** Questions the student got wrong the last time they answered them. */
+  | { kind: "mistakes" }
+  /** Questions the student flagged for review. */
+  | { kind: "flagged" };
+
+/** Questions a student flagged to come back to later (src/lib/trainer/review.ts). Unflagging deletes the row. */
+export const questionFlags = pgTable(
+  "question_flags",
+  {
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    questionId: uuid("question_id")
+      .notNull()
+      .references(() => questions.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.questionId] })],
+);
 
 /**
  * Full-length timed practice tests (src/lib/test). A test holds up to four

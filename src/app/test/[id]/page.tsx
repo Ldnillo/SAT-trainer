@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MathText } from "@/components/MathText";
+import { FlagButton } from "@/components/FlagButton";
 import { AnswerReview, QuestionBody } from "@/components/Question";
 import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import type { TestModule } from "@/lib/db/schema";
 import { DOMAINS, getSkill, SECTION_NAMES, type SectionId } from "@/lib/sat/taxonomy";
 import { BREAK_MINUTES, sectionFormat } from "@/lib/test/format";
+import { flaggedIds } from "@/lib/trainer/review";
 import { closeExpiredModule, currentModuleIndex, getTest, loadModuleItems, timeLeft, type PracticeTest, type ReviewItem } from "@/lib/test/tests";
 import { beginTestModule } from "../actions";
 import { ReferenceSheet } from "../ReferenceSheet";
@@ -30,7 +32,13 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
   const test = await closeExpiredModule(db, user.id, found);
   const index = currentModuleIndex(test);
 
-  if (index < 0) return <Results test={test} items={await Promise.all(test.modules.map((_, i) => loadModuleItems(db, test, i)))} />;
+  if (index < 0) {
+    const [items, flags] = await Promise.all([
+      Promise.all(test.modules.map((_, i) => loadModuleItems(db, test, i))),
+      flaggedIds(db, user.id),
+    ]);
+    return <Results test={test} items={items} flags={flags} />;
+  }
 
   const m = test.modules[index];
   const format = sectionFormat(m.section);
@@ -60,8 +68,8 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
             <li>Each question has a short passage (or two) and four choices. Pick the single best answer.</li>
           ) : (
             <li>
-              Most questions have four choices; for the rest, type your answer. You may use a calculator, and the formula reference
-              is in the top bar.
+              Most questions have four choices; for the rest, type your answer. The graphing calculator and the formula reference
+              are in the top bar, or you can use your own calculator.
             </li>
           )}
           {m.stage === 2 && <li>This module was picked based on how you did in module 1.</li>}
@@ -86,6 +94,9 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
       title={title}
       remainingMs={remainingMs}
       reference={m.section === "math" ? <ReferenceSheet /> : undefined}
+      calculator={
+        m.section === "math" ? { storageKey: `calc:test:${test.id}:${index}`, desmosApiKey: process.env.DESMOS_API_KEY?.trim() || undefined } : undefined
+      }
       initial={Object.fromEntries(
         items.filter((i) => i.answer).map((i) => [i.question.id, { answer: i.answer!.answer, flagged: i.answer!.flagged }]),
       )}
@@ -99,7 +110,7 @@ export default async function TestPage({ params }: PageProps<"/test/[id]">) {
   );
 }
 
-function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] }) {
+function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem[][]; flags: Set<string> }) {
   const scores = test.scores!;
   const sections: SectionId[] = ["reading-writing", "math"];
   const all = items.flat();
@@ -174,7 +185,10 @@ function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] })
           })}
         </tbody>
       </table>
-      <p className={styles.muted}>Your answers here now count toward your skill levels and score estimates on the dashboard.</p>
+      <p className={styles.muted}>
+        Your answers here now count toward your skill levels and score estimates on the dashboard. Questions you missed are waiting
+        in <Link href="/review">Review</Link>, where you can retry them.
+      </p>
 
       <h2>Review every question</h2>
       {test.modules.map((m, i) => (
@@ -192,11 +206,15 @@ function Results({ test, items }: { test: PracticeTest; items: ReviewItem[][] })
                       {getSkill(question.skill).skill.name}
                       <span className={styles.muted}> · {question.difficulty}</span>
                     </span>
+                    {answer?.flagged && <span className="badge plain">Marked</span>}
                     <span className={`badge ${answer?.correct ? "ok" : answer?.answer ? "bad" : "warn"}`}>
                       {answer?.correct ? "Correct" : answer?.answer ? "Missed" : "Not answered"}
                     </span>
                   </summary>
                   <div className={styles.reviewCard}>
+                    <div className={styles.reviewTools}>
+                      <FlagButton questionId={question.id} initial={flags.has(question.id)} />
+                    </div>
                     <QuestionBody content={question.content} />
                     <AnswerReview content={question.content} answer={answer?.answer ?? ""} correct={answer?.correct ?? false} />
                   </div>

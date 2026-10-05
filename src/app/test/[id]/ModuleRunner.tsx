@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, useTransition, type ReactNode } from "react";
+import { CalculatorPanel } from "@/components/calculator/CalculatorPanel";
 import questionStyles from "@/components/Question.module.css";
 import { saveTestResponse, submitTestModule } from "../actions";
 import styles from "../test.module.css";
@@ -28,6 +29,8 @@ interface Props {
   initial: Record<string, Response>;
   /** Math reference sheet, shown on request. */
   reference?: ReactNode;
+  /** Math modules: the graphing calculator, remembered under this key for the module. */
+  calculator?: { storageKey: string; desmosApiKey?: string };
 }
 
 const WARN_MS = 5 * 60_000;
@@ -43,7 +46,7 @@ function clock(ms: number): string {
  * the server also enforces the clock. When time runs out the module is
  * submitted automatically.
  */
-export function ModuleRunner({ testId, index, title, remainingMs, items, initial, reference }: Props) {
+export function ModuleRunner({ testId, index, title, remainingMs, items, initial, reference, calculator }: Props) {
   const [current, setCurrent] = useState(0);
   const [reviewing, setReviewing] = useState(false);
   const [showNav, setShowNav] = useState(false);
@@ -145,6 +148,7 @@ export function ModuleRunner({ testId, index, title, remainingMs, items, initial
           </button>
         </div>
         <div className={styles.topTools}>
+          {calculator && <CalculatorPanel variant="link" storageKey={calculator.storageKey} desmosApiKey={calculator.desmosApiKey} />}
           {reference && (
             <button type="button" className="link-button" onClick={() => setShowReference((v) => !v)}>
               {showReference ? "Close reference" : "Reference"}

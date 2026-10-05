@@ -7,11 +7,12 @@ import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { getSkill, SECTIONS, type SectionId } from "@/lib/sat/taxonomy";
 import { startPracticeSet, submitAnswer } from "@/lib/trainer/practice";
+import { setFlag } from "@/lib/trainer/review";
 
 function parseFocus(form: FormData): PracticeFocus | undefined {
   const kind = form.get("focus");
   const value = form.get("value");
-  if (kind === "tailored") return { kind };
+  if (kind === "tailored" || kind === "mistakes" || kind === "flagged") return { kind };
   if (kind === "section" && SECTIONS.includes(value as SectionId)) return { kind, section: value as SectionId };
   if (kind === "skill" && typeof value === "string") {
     try {
@@ -31,7 +32,7 @@ export async function startPractice(form: FormData) {
   // The pass is enforced here, not just by hiding buttons: a new set needs a pass or a free set left.
   if (!(await practiceAccess(db, user.id)).allowed) redirect("/pass?required=1");
   const set = await startPracticeSet(db, user.id, focus);
-  if (!set) redirect("/dashboard?error=no-questions");
+  if (!set) redirect(focus.kind === "mistakes" || focus.kind === "flagged" ? "/review" : "/dashboard?error=no-questions");
   redirect(`/practice/${set.id}`);
 }
 
@@ -42,4 +43,10 @@ export async function answerQuestion(setId: string, questionId: string, form: Fo
   if (!result.ok && result.error === "not-found") redirect("/dashboard");
   if (!result.ok) redirect(`/practice/${setId}`);
   redirect(`/practice/${setId}?reviewed=${questionId}`);
+}
+
+/** Flags or unflags a question for later review. Called from the flag button without leaving the page. */
+export async function flagQuestion(questionId: string, flagged: boolean): Promise<boolean> {
+  const user = await requireUser("/dashboard");
+  return setFlag(await getDb(), user.id, String(questionId), flagged === true);
 }

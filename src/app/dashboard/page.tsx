@@ -17,6 +17,7 @@ import {
 } from "@/lib/trainer/mastery";
 import { skillPriority } from "@/lib/trainer/plan";
 import { DEFAULT_SET_SIZE, loadAttempts, recentPracticeSets } from "@/lib/trainer/practice";
+import { flaggedIds, mistakesFrom } from "@/lib/trainer/review";
 import { latestScoreReport, priorsFromReport, REPORT_KINDS, reportTotal } from "@/lib/trainer/score-report";
 import { startPractice } from "../practice/actions";
 import styles from "./dashboard.module.css";
@@ -27,12 +28,14 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets, access, report] = await Promise.all([
+  const [history, sets, access, report, flags] = await Promise.all([
     loadAttempts(db, user.id),
     recentPracticeSets(db, user.id),
     practiceAccess(db, user.id),
     latestScoreReport(db, user.id),
+    flaggedIds(db, user.id),
   ]);
+  const mistakeCount = mistakesFrom(history).length;
   // Targeting and skill levels start from the student's score report, if they added one;
   // the estimated scores come from practice answers alone.
   const mastery = computeMastery(history, report ? priorsFromReport(report) : undefined);
@@ -119,6 +122,21 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
           Take a practice test
         </Link>
       </section>
+
+      {(mistakeCount > 0 || flags.size > 0) && (
+        <section className={`${styles.testCard} surface`}>
+          <div>
+            <h2 className={styles.testTitle}>Review</h2>
+            <p className={styles.muted}>
+              {mistakeCount} {mistakeCount === 1 ? "mistake" : "mistakes"} to retry
+              {flags.size > 0 && ` · ${flags.size} flagged ${flags.size === 1 ? "question" : "questions"}`}
+            </p>
+          </div>
+          <Link href="/review" className="button secondary">
+            Review and retry
+          </Link>
+        </section>
+      )}
 
       <section className={`${styles.testCard} surface`}>
         {report ? (
@@ -300,5 +318,7 @@ function SkillPracticeButton({ skill, label }: { skill: string; label: string })
 function focusName(focus: PracticeFocus): string {
   if (focus.kind === "tailored") return "Tailored";
   if (focus.kind === "section") return SECTION_NAMES[focus.section];
+  if (focus.kind === "mistakes") return "My mistakes";
+  if (focus.kind === "flagged") return "Flagged questions";
   return getSkill(focus.skill).skill.name;
 }

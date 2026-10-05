@@ -88,6 +88,12 @@ Students sign up with a name, email and password (`/signup`), then practice from
 - **Score progress**: the dashboard shows an estimated 200-800 score per section (shown after 10 answers in that section), a chart of the estimates after each set, the five skills with the most to gain, every skill's level, and recent sets. The estimate maps the expected share of correct answers, weighted by domain, onto 200-800; the page says it is a guide, not a prediction of an official score.
 - Math is rendered with KaTeX on the server (`src/components/MathText.tsx`).
 
+## Practice tools
+
+- **Graphing calculator** (`src/lib/calculator/engine.ts`, `src/components/calculator`): a "Calculator" button on every math question, in practice sets and in the math modules of the practice test. It works like the Desmos calculator on the digital SAT: an expression list (`y = 2x + 1`, `x^2 + y^2 = 25`, `y < 3x`, `a = 4`, `f(x) = x^2`, `(2, 5)`, or plain arithmetic with the answer shown as a decimal and a fraction) next to a graph you drag and zoom. Tapping a curve reads off a point; grey dots mark intercepts, minimums and maximums, and intersections. Radians or degrees. It's NextScore's own code, using mathjs (Apache-2.0) for the arithmetic, so there's no license fee. The Desmos calculator itself needs a paid commercial Desmos API plan on a paid site; set `DESMOS_API_KEY` to use Desmos instead.
+- **Flag for review**: a flag button on every practice question and on each question in practice test results (`question_flags` table, `src/lib/trainer/review.ts`). Flags stay until the student removes them. The in-test "Mark for review" checkbox is separate and only lasts for that module, as on the real test.
+- **My mistakes** (`/review`): every question whose latest answer was wrong, from practice or practice tests, with the question, the student's answer and the explanation. "Retry" starts a practice set of up to 10 of them, oldest first; a question leaves the list once it's answered correctly. Flagged questions can be practiced the same way. Retry sets count toward mastery like any other set and need a pass or a free set.
+
 ## Full-length practice test
 
 `/test` runs a timed, adaptive mock exam laid out like the digital SAT (`src/lib/test`): Reading and Writing in two 32-minute modules of 27 questions, a suggested 10-minute break, then Math in two 35-minute modules of 22 questions. Our questions are all scored (the real test adds a few unscored pretest items).

@@ -77,8 +77,9 @@ export function AnswerInputs({ content }: { content: QuestionContent }) {
   );
 }
 
-/** After answering: the student's answer against the key, with explanations. */
-export function AnswerReview({ content, answer, correct }: { content: QuestionContent; answer: string; correct: boolean }) {
+/** After answering: the student's answer against the key, with explanations. With no answer, just the key and explanation. */
+export function AnswerReview({ content, answer, correct }: { content: QuestionContent; answer: string | null; correct: boolean }) {
+  if (answer === null) return <AnswerKey content={content} />;
   const rationale = content.distractorRationales.find((r) => r.label === answer.toUpperCase());
   return (
     <>
@@ -124,6 +125,40 @@ export function AnswerReview({ content, answer, correct }: { content: QuestionCo
             <MathText text={rationale.text} />
           </p>
         )}
+        <p>
+          <MathText text={content.explanation} />
+        </p>
+      </div>
+    </>
+  );
+}
+
+/** The correct answer and explanation, for a question the student hasn't answered. */
+function AnswerKey({ content }: { content: QuestionContent }) {
+  return (
+    <>
+      {content.choices.length > 0 ? (
+        <ul className={styles.choices}>
+          {content.choices.map((c) => (
+            <li key={c.label} className={`${styles.choice} ${c.label === content.correctChoice ? styles.right : ""}`}>
+              <span className={styles.letter}>{c.label}</span>
+              <span className={styles.choiceText}>
+                <MathText text={c.text} />
+              </span>
+              {c.label === content.correctChoice && (
+                <span className={styles.tags}>
+                  <span className="badge ok plain">Correct answer</span>
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className={styles.sprReview}>
+          Accepted answers: <strong>{content.acceptedAnswers.join(", ")}</strong>
+        </p>
+      )}
+      <div className={styles.feedbackKey}>
         <p>
           <MathText text={content.explanation} />
         </p>
