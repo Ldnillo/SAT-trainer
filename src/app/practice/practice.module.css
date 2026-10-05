@@ -82,6 +82,11 @@
   margin: 0 0 6px;
 }
 
+.summary .daily {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 .ring {
   flex: none;
   display: grid;
@@ -219,4 +224,9 @@
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 16px;
+}
+
+/* Flag on the left; the formula and calculator buttons share the right. */
+.tools > :first-child {
+  margin-right: auto;
 }

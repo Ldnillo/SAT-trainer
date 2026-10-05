@@ -12,7 +12,7 @@ import { BREAK_MINUTES, sectionFormat } from "@/lib/test/format";
 import { flaggedIds } from "@/lib/trainer/review";
 import { closeExpiredModule, currentModuleIndex, getTest, loadModuleItems, timeLeft, type PracticeTest, type ReviewItem } from "@/lib/test/tests";
 import { beginTestModule } from "../actions";
-import { ReferenceSheet } from "../ReferenceSheet";
+import { ReferenceSheet } from "@/components/ReferenceSheet";
 import styles from "../test.module.css";
 import { ModuleRunner } from "./ModuleRunner";
 

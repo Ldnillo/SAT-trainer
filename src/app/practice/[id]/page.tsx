@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CalculatorPanel } from "@/components/calculator/CalculatorPanel";
+import { ReferencePanel } from "@/components/ReferencePanel";
+import { ReferenceSheet } from "@/components/ReferenceSheet";
 import { AnswerInputs, AnswerReview, QuestionBody } from "@/components/Question";
 import { QuestionActions } from "@/components/ReportButton";
 import { requireUser } from "@/lib/auth/session";
 import { getDb } from "@/lib/db/client";
 import { getSkill } from "@/lib/sat/taxonomy";
-import { loadSetQuestions, getPracticeSet } from "@/lib/trainer/practice";
+import { parseTimeZone, TIME_ZONE_COOKIE } from "@/lib/time-zone";
+import { loadAttempts, loadSetQuestions, getPracticeSet } from "@/lib/trainer/practice";
 import { flaggedIds } from "@/lib/trainer/review";
+import { dailyProgress, loadDailyGoal } from "@/lib/trainer/streak";
 import { answerQuestion, startPractice } from "../actions";
 import styles from "../practice.module.css";
 
@@ -69,6 +74,8 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
   // Set finished: results.
   const correct = items.filter((i) => i.attempt?.correct).length;
   const pct = Math.round((correct / items.length) * 100);
+  const [history, goal, cookieStore] = await Promise.all([loadAttempts(db, user.id), loadDailyGoal(db, user.id), cookies()]);
+  const daily = dailyProgress(history, goal, new Date(), parseTimeZone(cookieStore.get(TIME_ZONE_COOKIE)?.value));
   return (
     <main className={styles.page}>
       <section className={`${styles.summary} surface`}>
@@ -81,6 +88,26 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
             {correct} of {items.length} correct
           </h1>
           <p className={styles.muted}>Your skill mastery and score estimates on the dashboard now include these answers.</p>
+          <p className={styles.daily}>
+            {daily.goalMet ? (
+              <>
+                <strong>Daily goal reached</strong> with {daily.today} questions today
+              </>
+            ) : (
+              <>
+                <strong>
+                  {daily.today} of {daily.goal}
+                </strong>{" "}
+                questions toward today&apos;s goal
+              </>
+            )}
+            {daily.streak > 0 && (
+              <>
+                {" "}
+                · <strong>{daily.streak}-day</strong> streak
+              </>
+            )}
+          </p>
         </div>
       </section>
       <h2 className={styles.reviewTitle}>Review your answers</h2>
@@ -128,11 +155,16 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
   );
 }
 
-/** Flag for review, report a problem, and the calculator on math questions. */
+/** Flag for review, report a problem, and the formula sheet and calculator on math questions. */
 function Tools({ questionId, flagged, calculator }: { questionId: string; flagged: boolean; calculator: string | null }) {
   return (
     <div className={styles.tools}>
       <QuestionActions questionId={questionId} flagged={flagged} />
+      {calculator && (
+        <ReferencePanel>
+          <ReferenceSheet />
+        </ReferencePanel>
+      )}
       {calculator && <CalculatorPanel storageKey={calculator} desmosApiKey={process.env.DESMOS_API_KEY?.trim() || undefined} />}
     </div>
   );
