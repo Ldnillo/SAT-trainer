@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { formatPrice, passConfig } from "@/lib/billing/config";
+import { formatPriceShort, PASS_PLANS, passConfig } from "@/lib/billing/config";
 import { LEGAL_UPDATED, REFUND_DAYS, siteConfig } from "@/lib/site";
 import styles from "../legal.module.css";
 
@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Terms of Service" };
 export default function TermsPage() {
   const { supportEmail, operator, governingLaw } = siteConfig();
   const config = passConfig();
-  const price = formatPrice(config.priceCents, config.currency);
+  const prices = PASS_PLANS.map((p) => `${formatPriceShort(p.priceCents, config.currency)} for ${p.days} days`).join(", ");
   const mail = <a href={`mailto:${supportEmail}`}>{supportEmail}</a>;
 
   return (
@@ -20,7 +20,7 @@ export default function TermsPage() {
       <div className={styles.summary}>
         <p>
           <strong>The short version:</strong> NextScore is SAT practice, not the SAT. A season pass is one payment for{" "}
-          {config.days} days of access, it never renews on its own, and you can get a full refund within {REFUND_DAYS}{" "}
+          30, 60 or 90 days of access, it never renews on its own, and you can get a full refund within {REFUND_DAYS}{" "}
           days of buying. Keep your account to yourself and don&apos;t copy our questions.
         </p>
       </div>
@@ -53,8 +53,8 @@ export default function TermsPage() {
           </li>
         )}
         <li>
-          A season pass costs {price} (plus any tax shown at checkout), paid once. It gives unlimited practice for{" "}
-          {config.days} days from purchase. The price shown at checkout is the price you pay.
+          Season passes cost {prices} (plus any tax shown at checkout), paid once. A pass gives unlimited practice for
+          the number of days you chose, counted from purchase. The price shown at checkout is the price you pay.
         </li>
         <li>
           <strong>No subscription:</strong> a pass never renews or charges you again. If you buy another pass while one

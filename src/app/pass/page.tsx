@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUser } from "@/lib/auth/session";
-import { formatPrice, passConfig } from "@/lib/billing/config";
+import { BEST_VALUE_PLAN_ID, formatPriceShort, PASS_PLANS, passConfig, percentOff } from "@/lib/billing/config";
 import { practiceAccess } from "@/lib/billing/pass";
 import { fulfillCheckout, getStripe, paymentsConfigured } from "@/lib/billing/stripe";
 import { getDb } from "@/lib/db/client";
@@ -35,7 +35,6 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
   }
 
   const access = await practiceAccess(db, user.id);
-  const price = formatPrice(config.priceCents, config.currency).replace(/\.00$/, "");
 
   return (
     <main className={styles.page}>
@@ -80,14 +79,25 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
         </ul>
       </div>
 
-      <div className={`${styles.card} surface`}>
-        <div className={styles.price}>{price}</div>
-        <div className={styles.terms}>One payment for {config.days} days of access. No subscription.</div>
-        <form action={buyPass}>
-          <button type="submit" className="button large" disabled={!paymentsConfigured()}>
-            {access.pass.active ? `Add ${config.days} more days` : "Buy season pass"}
-          </button>
-        </form>
+      <div className={styles.plans}>
+        {PASS_PLANS.map((plan) => (
+          <form key={plan.id} action={buyPass} className={`${styles.card} ${plan.id === BEST_VALUE_PLAN_ID ? styles.best : ""} surface`}>
+            <input type="hidden" name="plan" value={plan.id} />
+            <div className={styles.planHead}>
+              <span className={styles.days}>{plan.days} days</span>
+              <span className="badge ok">{percentOff(plan)}% off</span>
+              {plan.id === BEST_VALUE_PLAN_ID && <span className="badge accent">Best value</span>}
+            </div>
+            <div className={styles.priceRow}>
+              <span className={styles.price}>{formatPriceShort(plan.priceCents, config.currency)}</span>
+              <s className={styles.was}>{formatPriceShort(plan.listPriceCents, config.currency)}</s>
+            </div>
+            <div className={styles.terms}>One payment. No subscription.</div>
+            <button type="submit" className="button large" disabled={!paymentsConfigured()}>
+              {access.pass.active ? `Add ${plan.days} more days` : `Get ${plan.days} days`}
+            </button>
+          </form>
+        ))}
         <p className={styles.muted}>
           Payments are handled securely by Stripe. Buying while a pass is active adds the days on after it ends.
         </p>

@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createUser } from "../src/lib/auth/accounts";
-import { DEFAULT_PASS_CONFIG, formatPrice, passConfig } from "../src/lib/billing/config";
+import { DEFAULT_PASS_CONFIG, findPlan, formatPrice, PASS_PLANS, passConfig, percentOff } from "../src/lib/billing/config";
 import { grantPass, passStatus, practiceAccess, revokePassForPayment } from "../src/lib/billing/pass";
 import { checkoutParams, fulfillCheckout, handleStripeEvent } from "../src/lib/billing/stripe";
 import { openDb, type Db } from "../src/lib/db/client";
@@ -13,24 +13,28 @@ const NOW = new Date("2026-10-04T12:00:00Z");
 describe("pass config", () => {
   it("uses the defaults and reads overrides from the environment", () => {
     expect(passConfig({})).toEqual(DEFAULT_PASS_CONFIG);
-    expect(passConfig({ SEASON_PASS_PRICE_CENTS: "2500", SEASON_PASS_DAYS: "120", FREE_PRACTICE_SETS: "0", SEASON_PASS_CURRENCY: "EUR" })).toEqual({
-      priceCents: 2500,
-      days: 120,
+    expect(passConfig({ FREE_PRACTICE_SETS: "0", SEASON_PASS_CURRENCY: "EUR" })).toEqual({
       freeSets: 0,
       freeTests: 0,
       currency: "eur",
     });
-    expect(() => passConfig({ SEASON_PASS_PRICE_CENTS: "39.99" })).toThrow();
-    expect(() => passConfig({ SEASON_PASS_DAYS: "0" })).toThrow();
-    expect(formatPrice(3900, "usd")).toBe("$39.00");
+    expect(() => passConfig({ FREE_PRACTICE_SETS: "1.5" })).toThrow();
+    expect(formatPrice(3000, "usd")).toBe("$30.00");
+  });
+
+  it("offers 30, 60 and 90 day passes, all 40% off, with 90 days at $30", () => {
+    expect(PASS_PLANS.map((p) => [p.days, p.priceCents])).toEqual([[30, 1200], [60, 2100], [90, 3000]]);
+    expect(PASS_PLANS.map(percentOff)).toEqual([40, 40, 40]);
+    expect(findPlan("90d")?.listPriceCents).toBe(5000);
+    expect(findPlan("nope")).toBeUndefined();
   });
 
   it("builds a one-time Checkout session that carries the user and pass length", () => {
-    const p = checkoutParams({ id: "u1", email: "a@b.co" }, "https://example.com", { ...DEFAULT_PASS_CONFIG, days: 60 });
+    const p = checkoutParams({ id: "u1", email: "a@b.co" }, "https://example.com", findPlan("60d")!);
     expect(p.mode).toBe("payment");
     expect(p.client_reference_id).toBe("u1");
     expect(p.metadata).toEqual({ purpose: "season-pass", userId: "u1", days: "60" });
-    expect(p.line_items![0].price_data!.unit_amount).toBe(3900);
+    expect(p.line_items![0].price_data!.unit_amount).toBe(2100);
     expect(p.success_url).toBe("https://example.com/pass?session_id={CHECKOUT_SESSION_ID}");
   });
 });

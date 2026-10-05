@@ -24,8 +24,43 @@
 }
 
 .card {
-  padding: 28px;
+  padding: 22px 24px;
   border-top: 4px solid var(--accent);
+}
+
+.plans {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.best {
+  border-top-width: 6px;
+}
+
+.planHead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.days {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.was {
+  color: var(--muted);
+  font-size: 20px;
 }
 
 .price {
@@ -37,7 +72,7 @@
 
 .terms {
   color: var(--muted);
-  margin: 6px 0 24px;
+  margin: 4px 0 16px;
 }
 
 .card form button {
@@ -47,7 +82,7 @@
 .muted {
   color: var(--muted);
   font-size: 13px;
-  margin: 16px 0 0;
+  margin: 4px 0 0;
 }
 
 @media (max-width: 860px) {
