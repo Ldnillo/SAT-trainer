@@ -338,3 +338,121 @@
   background: var(--surface);
   padding: 10px 14px;
 }
+
+/* Predicted score */
+.predict {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 16px 32px;
+  padding: 20px 24px;
+  margin-bottom: 8px;
+}
+
+.predictEmpty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.predictEmpty p {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--muted);
+}
+
+.predictActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.predictTotal {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.predictRange {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.scale {
+  position: relative;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--border);
+  margin-top: 10px;
+}
+
+.scaleBand {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.scaleMark {
+  position: absolute;
+  top: -3px;
+  width: 4px;
+  height: 16px;
+  margin-left: -2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.scaleEnds {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.predictSections {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+.predictSections li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.predictSections li:first-child {
+  border-top: none;
+}
+
+.predictSections strong {
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.predictBasis {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .predict {
+    grid-template-columns: 1fr;
+    padding: 16px 20px;
+  }
+
+  .predictRange {
+    font-size: 34px;
+  }
+}

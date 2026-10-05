@@ -20,9 +20,11 @@ import {
   progressHistory,
 } from "@/lib/trainer/mastery";
 import { skillPriority } from "@/lib/trainer/plan";
+import { describeBasis, measurementsFrom, predictScore, type ScorePrediction } from "@/lib/trainer/prediction";
 import { DEFAULT_SET_SIZE, loadAttempts, recentPracticeSets } from "@/lib/trainer/practice";
 import { flaggedIds, mistakesFrom } from "@/lib/trainer/review";
-import { latestScoreReport, priorsFromReport, REPORT_KINDS, reportTotal } from "@/lib/trainer/score-report";
+import { completedTests } from "@/lib/test/tests";
+import { listScoreReports, priorsFromReport, REPORT_KINDS, reportTotal } from "@/lib/trainer/score-report";
 import { dailyProgress, loadDailyGoal } from "@/lib/trainer/streak";
 import { startPractice } from "../practice/actions";
 import styles from "./dashboard.module.css";
@@ -33,15 +35,17 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets, access, report, flags, goal, cookieStore] = await Promise.all([
+  const [history, sets, access, reports, flags, tests, goal, cookieStore] = await Promise.all([
     loadAttempts(db, user.id),
     recentPracticeSets(db, user.id),
     practiceAccess(db, user.id),
-    latestScoreReport(db, user.id),
+    listScoreReports(db, user.id),
     flaggedIds(db, user.id),
+    completedTests(db, user.id),
     loadDailyGoal(db, user.id),
     cookies(),
   ]);
+  const report = reports[0];
   const timeZoneCookie = cookieStore.get(TIME_ZONE_COOKIE)?.value;
   const daily = dailyProgress(history, goal, new Date(), parseTimeZone(timeZoneCookie));
   const mistakeCount = mistakesFrom(history).length;
@@ -52,6 +56,13 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const reportScore = report ? reportTotal(report) : null;
   const progress = progressHistory(history);
   const focusSkills = [...mastery.values()].sort((a, b) => skillPriority(b) - skillPriority(a)).slice(0, 5);
+  // The prediction counts each practice test once, from its own score, so its answers
+  // are left out of the everyday practice estimate it also uses.
+  const practiceOnly = history.filter((a) => !a.practiceTestId);
+  const now = new Date();
+  const measurements = measurementsFrom({ reports, tests, practice: estimateScores(computeMastery(practiceOnly)) }, now);
+  const prediction = predictScore(measurements, now);
+  const basis = describeBasis(measurements, practiceOnly.length, now);
   const total = scores.every((s) => s.score !== null) ? scores.reduce((n, s) => n + s.score!, 0) : null;
 
   const levelBadge = (m: (typeof focusSkills)[number]) => {
@@ -171,6 +182,9 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
           {report ? "Your scores" : "Add your scores"}
         </Link>
       </section>
+
+      <h2>Predicted score</h2>
+      <PredictionCard prediction={prediction} basis={basis} />
 
       <h2>Estimated scores</h2>
       <div className={styles.tiles}>
@@ -306,6 +320,87 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
       )}
     </main>
   );
+}
+
+const SCALE = { min: 400, max: 1600 };
+
+function PredictionCard({ prediction, basis }: { prediction: ScorePrediction; basis: string[] }) {
+  const sections = [prediction.readingWriting, prediction.math].filter((p) => p !== null);
+  if (!sections.length) {
+    return (
+      <section className={`${styles.predict} ${styles.predictEmpty} surface`}>
+        <p>
+          Take a full-length practice test, add a score you already have, or answer {MIN_ATTEMPTS_FOR_ESTIMATE} questions
+          in each section, and we&apos;ll predict the range your score is likely to fall in.
+        </p>
+        <div className={styles.predictActions}>
+          <Link href="/test" className="button small">
+            Take a practice test
+          </Link>
+          <Link href="/scores" className="button small secondary">
+            Add your scores
+          </Link>
+        </div>
+      </section>
+    );
+  }
+  const { total } = prediction;
+  const pct = (x: number) => `${((x - SCALE.min) / (SCALE.max - SCALE.min)) * 100}%`;
+  return (
+    <section className={`${styles.predict} surface`}>
+      <div className={styles.predictTotal}>
+        <div className={styles.tileLabel}>Total</div>
+        {total ? (
+          <>
+            <div className={styles.predictRange}>
+              {total.low}–{total.high}
+            </div>
+            <div className={styles.muted}>Most likely around {total.score}</div>
+            <div className={styles.scale} role="img" aria-label={`Predicted total ${total.low} to ${total.high} out of 1600`}>
+              <div className={styles.scaleBand} style={{ left: pct(total.low), width: `calc(${pct(total.high)} - ${pct(total.low)})` }} />
+              <div className={styles.scaleMark} style={{ left: pct(total.score) }} />
+            </div>
+            <div className={styles.scaleEnds} aria-hidden>
+              <span>{SCALE.min}</span>
+              <span>{SCALE.max}</span>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className={`${styles.predictRange} ${styles.tileValueEmpty}`}>–</div>
+            <div className={styles.tileEmpty}>Needs a prediction for both sections</div>
+          </>
+        )}
+      </div>
+      <ul className={styles.predictSections}>
+        {(["readingWriting", "math"] as const).map((key) => {
+          const p = prediction[key];
+          const section = key === "math" ? "math" : "reading-writing";
+          return (
+            <li key={key}>
+              <span>{SECTION_NAMES[section]}</span>
+              {p ? (
+                <strong>
+                  {p.low}–{p.high}
+                </strong>
+              ) : (
+                <span className={styles.tileEmpty}>Not enough results yet</span>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+      <p className={`${styles.muted} ${styles.predictBasis}`}>
+        Based on {joinList(basis)}. Recent results and official scores count the most. The range is where your score is
+        likely to land if you tested today; it&apos;s a practice guide, not an official prediction.
+      </p>
+    </section>
+  );
+}
+
+function joinList(parts: string[]): string {
+  if (parts.length <= 1) return parts.join("");
+  return `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}`;
 }
 
 const LEVEL_TONE: Record<MasteryLevel, string> = {
