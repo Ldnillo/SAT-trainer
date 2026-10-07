@@ -8,7 +8,7 @@ import { isCorrect } from "../trainer/answers";
 import type { SeenQuestion } from "../trainer/plan";
 import { loadAttempts } from "../trainer/practice";
 import { assembleModule } from "./assemble";
-import { GRACE_SECONDS, MODULE_ORDER, sectionFormat } from "./format";
+import { GRACE_SECONDS, MODULE_ORDER, sectionFormat, TRIAL_PER_MODULE } from "./format";
 import { routeFor, sectionScore, type ScoredResponse } from "./scoring";
 
 export type PracticeTest = typeof practiceTests.$inferSelect;
@@ -22,6 +22,19 @@ async function seenQuestions(db: Db, userId: string): Promise<Map<string, SeenQu
   return seen;
 }
 
+/** Chooses which of a module's questions are unscored trial questions. */
+export function pickTrial(ids: readonly string[], random: () => number = Math.random): string[] {
+  const pool = [...ids];
+  const out: string[] = [];
+  while (out.length < TRIAL_PER_MODULE && pool.length > 0) out.push(pool.splice(Math.floor(random() * pool.length), 1)[0]);
+  return out;
+}
+
+/** Whether a question is a trial (unscored) question in this module. */
+export function isTrial(m: Pick<TestModule, "trialIds">, questionId: string): boolean {
+  return m.trialIds?.includes(questionId) ?? false;
+}
+
 async function buildModule(
   db: Db,
   userId: string,
@@ -33,7 +46,9 @@ async function buildModule(
 ): Promise<TestModule> {
   const [candidates, seen] = await Promise.all([findQuestions(db, { section, limit: 5000 }), seenQuestions(db, userId)]);
   const picked = assembleModule({ section, tier, candidates, seen, exclude, random });
-  return { section, stage, tier, questionIds: picked.map((q) => q.id), startedAt: null, submittedAt: null };
+  const ids = picked.map((q) => q.id);
+  const trialIds = pickTrial(ids, random);
+  return { section, stage, tier, questionIds: ids, trialIds, startedAt: null, submittedAt: null };
 }
 
 /**
@@ -159,7 +174,7 @@ async function loadQuestions(db: Db, ids: readonly string[]): Promise<Map<string
 function moduleResponses(m: TestModule, qs: Map<string, QuestionRecord>, answers: Map<string, TestAnswer>): ScoredResponse[] {
   return m.questionIds.flatMap((id) => {
     const q = qs.get(id);
-    return q ? [{ difficulty: q.difficulty, correct: answers.get(id)?.correct ?? false }] : [];
+    return q && !isTrial(m, id) ? [{ difficulty: q.difficulty, correct: answers.get(id)?.correct ?? false }] : [];
   });
 }
 
@@ -246,6 +261,8 @@ export async function closeExpiredModule(db: Db, userId: string, test: PracticeT
 }
 
 export interface ReviewItem {
+  /** An unscored trial question. */
+  trial: boolean;
   question: QuestionRecord;
   answer: TestAnswer | undefined;
 }
@@ -256,6 +273,6 @@ export async function loadModuleItems(db: Db, test: PracticeTest, index: number)
   const [qs, answers] = await Promise.all([loadQuestions(db, m.questionIds), loadTestAnswers(db, test.id)]);
   return m.questionIds.flatMap((id) => {
     const question = qs.get(id);
-    return question ? [{ question, answer: answers.get(id) }] : [];
+    return question ? [{ trial: isTrial(m, id), question, answer: answers.get(id) }] : [];
   });
 }

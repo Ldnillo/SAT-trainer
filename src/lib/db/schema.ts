@@ -173,6 +173,8 @@ export interface TestModule {
   tier: ModuleTier;
   /** In the order the student sees them. */
   questionIds: string[];
+  /** Unscored trial questions among questionIds, as on the real test. Absent on tests taken before they existed. */
+  trialIds?: string[];
   /** ISO times. The clock starts when the student starts the module. */
   startedAt: string | null;
   submittedAt: string | null;
