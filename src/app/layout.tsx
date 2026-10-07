@@ -39,6 +39,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
               {user ? (
                 <>
                   <NavLink href="/dashboard">Dashboard</NavLink>
+                  <NavLink href="/tutor">Tutor</NavLink>
                   <NavLink href="/review">Review</NavLink>
                   <NavLink href="/pass" className="nav-wide-only">
                     Season pass
