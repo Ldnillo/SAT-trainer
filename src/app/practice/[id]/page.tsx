@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { CalculatorPanel } from "@/components/calculator/CalculatorPanel";
 import { ReferencePanel } from "@/components/ReferencePanel";
 import { ReferenceSheet } from "@/components/ReferenceSheet";
+import { LessonLink } from "@/components/LessonLink";
 import { AnswerInputs, AnswerReview, QuestionBody } from "@/components/Question";
 import { QuestionActions } from "@/components/ReportButton";
 import { requireUser } from "@/lib/auth/session";
@@ -42,6 +43,7 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
         {tools(question)}
         <QuestionBody content={question.content} />
         <AnswerReview content={question.content} answer={attempt!.answer} correct={attempt!.correct} />
+        {!attempt!.correct && <LessonLink skillId={question.skill} />}
         <div className={styles.actionBar}>
           <Link href={`/practice/${set.id}`} className="button large">
             {done ? "See results" : "Next question"}
@@ -129,6 +131,7 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
                 </div>
                 <QuestionBody content={question.content} />
                 <AnswerReview content={question.content} answer={attempt!.answer} correct={attempt!.correct} />
+                {!attempt!.correct && <LessonLink skillId={question.skill} />}
               </div>
             </details>
           </li>
