@@ -1,4 +1,5 @@
 import type { QuestionContent } from "@/lib/sat/question";
+import { GridInInput } from "./GridInInput";
 import { MathText } from "./MathText";
 import styles from "./Question.module.css";
 
@@ -56,7 +57,7 @@ export function AnswerInputs({ content }: { content: QuestionContent }) {
     return (
       <label className={styles.spr}>
         Your answer
-        <input type="text" name="answer" autoComplete="off" inputMode="decimal" maxLength={10} required autoFocus />
+        <GridInInput name="answer" required autoFocus />
         <span className={styles.hint}>Enter a number, fraction (like 7/4) or decimal. Negative answers start with -.</span>
       </label>
     );

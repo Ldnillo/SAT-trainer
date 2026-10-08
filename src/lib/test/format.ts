@@ -5,8 +5,8 @@ import { DOMAINS, type Difficulty, type SectionId } from "../sat/taxonomy";
  * The shape of a full-length practice test, following the public digital SAT
  * specifications: two sections, each in two timed modules. Module 1 mixes easy,
  * medium and hard questions; module 2 is easier or harder depending on how the
- * student did in module 1. The real test also includes a few unscored pretest
- * questions per module; ours are all scored.
+ * student did in module 1. Like the real test, a couple of questions in each
+ * module are unscored trial questions the student can't tell apart.
  */
 
 export interface SectionFormat {
@@ -44,6 +44,13 @@ export const TEST_FORMAT: readonly SectionFormat[] = [
 
 /** Suggested break between the sections. */
 export const BREAK_MINUTES = 10;
+
+/**
+ * Unscored trial questions in every module, which the real test uses to try out
+ * new items. They are among each module's questions, so a module's scored
+ * questions are 25 (Reading and Writing) or 20 (Math), as on the real test.
+ */
+export const TRIAL_PER_MODULE = 2;
 
 /**
  * Seconds of slack after the clock runs out, for an answer that was on its way
