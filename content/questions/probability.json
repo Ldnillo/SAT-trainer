@@ -67,6 +67,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -130,6 +135,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -199,6 +209,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -295,6 +310,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -369,6 +389,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -437,6 +462,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -505,6 +535,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -573,6 +608,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -618,7 +658,9 @@
         "acceptedAnswers": [
           "3/7",
           ".4285",
-          ".4286"
+          ".4286",
+          "0.428",
+          "0.429"
         ],
         "explanation": "Let $s$ be the number of seniors. The $18$ seniors who own a car are $45\\%$ of the seniors, which gives the equation $0.45s = 18$. Divide both sides by $0.45$ to get $s = \\frac{18}{0.45}$, which simplifies to $s = 40$. (As a check, $0.45 \\cdot 40 = 18$.) The council has $30 + 40 = 70$ members, and $12 + 18 = 30$ of them own a car. The probability is $\\frac{30}{70}$, which simplifies to $\\frac{3}{7} \\approx 0.4286$.",
         "distractorRationales": []
@@ -643,6 +685,16 @@
             "reviewer": "Justine",
             "date": "2026-10-04",
             "edits": "Asked for the step from 0.45s = 18 to s = 40 to be explained. Explanation now shows dividing both sides by 0.45."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Added 0.428 and 0.429 to the accepted answers, matching the other grid-in decimals that fill five characters."
           }
         ]
       }
@@ -745,6 +797,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -813,6 +870,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -883,6 +945,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -983,6 +1050,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1025,6 +1097,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1093,6 +1170,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1189,6 +1271,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1233,6 +1320,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1301,6 +1393,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1397,6 +1494,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1465,6 +1567,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }

@@ -65,6 +65,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -97,7 +102,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "In the sample, $\\frac{36}{150} = 0.24$, or $24\\%$, ride a bike. Because the sample is random, apply this to all students: $0.24 \\times 12{,}000 = 2{,}880$.",
+        "explanation": "Dividing the $36$ bikers by the $150$ students sampled gives $\\frac{36}{150} = 0.24$, so $24\\%$ of the sample ride a bike. Because the sample is random, apply this proportion to all students: multiplying $0.24$ by $12{,}000$ gives $0.24 \\times 12{,}000 = 2{,}880$.",
         "distractorRationales": [
           {
             "label": "A",
@@ -128,6 +133,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Explanation now names the division and multiplication steps."
           }
         ]
       }
@@ -191,6 +206,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -223,7 +243,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "The plausible values run from $48\\% - 3\\% = 45\\%$ to $48\\% + 3\\% = 51\\%$. Of the choices, only $46\\%$ is in that range.",
+        "explanation": "Subtracting the margin of error from the estimate gives the lower end, $48\\% - 3\\% = 45\\%$, and adding it gives the upper end, $48\\% + 3\\% = 51\\%$. So the plausible values run from $45\\%$ to $51\\%$. Of the choices, only $46\\%$ is in that range.",
         "distractorRationales": [
           {
             "label": "A",
@@ -254,6 +274,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Explanation now names the subtraction and addition steps."
           }
         ]
       }
@@ -317,6 +347,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -390,6 +425,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -458,6 +498,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -490,7 +535,7 @@
         ],
         "correctChoice": "B",
         "acceptedAnswers": [],
-        "explanation": "The margin of error describes uncertainty about a population mean, not about individuals. Plausible values for the mean sleep of all adults in the city are $6.8 - 0.3 = 6.5$ to $6.8 + 0.3 = 7.1$ hours.",
+        "explanation": "The margin of error describes uncertainty about a population mean, not about individuals. Subtracting the margin of error from the estimate gives $6.8 - 0.3 = 6.5$, and adding it gives $6.8 + 0.3 = 7.1$, so plausible values for the mean sleep of all adults in the city are $6.5$ to $7.1$ hours.",
         "distractorRationales": [
           {
             "label": "A",
@@ -521,6 +566,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Explanation now names the subtraction and addition steps."
           }
         ]
       }
@@ -553,7 +608,7 @@
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The plausible range for support among all likely voters is $53\\% - 4\\% = 49\\%$ to $53\\% + 4\\% = 57\\%$. This range includes values above $50\\%$ and values below $50\\%$, so the poll can't establish that a majority supports the measure.",
+        "explanation": "Subtracting the margin of error from the poll result gives $53\\% - 4\\% = 49\\%$, and adding it gives $53\\% + 4\\% = 57\\%$, so the plausible range for support among all likely voters is $49\\%$ to $57\\%$. This range includes values above $50\\%$ and values below $50\\%$, so the poll can't establish that a majority supports the measure.",
         "distractorRationales": [
           {
             "label": "A",
@@ -584,6 +639,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Explanation now names the subtraction and addition steps."
           }
         ]
       }
@@ -652,6 +717,11 @@
             "reviewer": "claude-opus-5-5 (edit following Justine's 2026-10-04 review: explanations show every algebra step)",
             "date": "2026-10-04",
             "edits": "Rewrote the explanation so each step names the operation used (for example, dividing both sides by 3). Math, answer and reasoning unchanged."
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -720,6 +790,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -788,6 +863,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -856,6 +936,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -924,6 +1009,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker picked a different answer, key re-checked and confirmed: the plausible ranges 59-69% and 37-45% do not overlap, and choice D contradicts the 37-45% range"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -992,6 +1082,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1060,6 +1155,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1128,6 +1228,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1196,6 +1301,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1264,6 +1374,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1332,6 +1447,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }

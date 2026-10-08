@@ -65,6 +65,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -133,6 +138,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -201,6 +211,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -221,7 +236,7 @@
         "choices": [
           {
             "label": "A",
-            "text": "it"
+            "text": "them"
           },
           {
             "label": "B",
@@ -242,7 +257,7 @@
         "distractorRationales": [
           {
             "label": "A",
-            "text": "\"It\" is singular and doesn't agree with the plural antecedent \"the other bees.\""
+            "text": "\"Them\" is an object pronoun, but the blank is the subject of \"must fly,\" so it needs the subject pronoun \"they.\""
           },
           {
             "label": "B",
@@ -269,6 +284,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Replaced choice A \"it\" with \"them\", because \"it\" could be read as the dancing bee and was arguably also correct; updated A's rationale."
           }
         ]
       }
@@ -337,6 +362,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -410,6 +440,11 @@
             "reviewer": "Justine",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -478,6 +513,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -498,36 +538,36 @@
         "choices": [
           {
             "label": "A",
-            "text": "shed"
+            "text": "throw"
           },
           {
             "label": "B",
-            "text": "have shed"
+            "text": "have thrown"
           },
           {
             "label": "C",
-            "text": "sheds"
+            "text": "throws"
           },
           {
             "label": "D",
-            "text": "are shedding"
+            "text": "are throwing"
           }
         ],
         "correctChoice": "C",
         "acceptedAnswers": [],
-        "explanation": "The subject of the sentence is \"the journal,\" which is singular. The phrases \"kept by the party's two naturalists\" and \"together with dozens of pressed plant specimens and hand-drawn maps\" describe or add to the subject but don't make it plural. A singular subject takes the singular verb \"sheds.\"",
+        "explanation": "The subject of the sentence is \"the journal,\" which is singular. The phrases \"kept by the party's two naturalists\" and \"together with dozens of pressed plant specimens and hand-drawn maps\" describe or add to the subject but don't make it plural. A singular subject takes the singular verb \"throws.\"",
         "distractorRationales": [
           {
             "label": "A",
-            "text": "\"Shed\" is the plural present form, which would agree with \"naturalists\" or \"maps,\" but neither is the subject."
+            "text": "\"Throw\" is the plural present form, which would agree with \"naturalists\" or \"maps,\" but neither is the subject."
           },
           {
             "label": "B",
-            "text": "\"Have shed\" is plural; a phrase beginning with \"together with\" does not create a compound subject the way \"and\" does."
+            "text": "\"Have thrown\" is plural; a phrase beginning with \"together with\" does not create a compound subject the way \"and\" does."
           },
           {
             "label": "D",
-            "text": "\"Are shedding\" is plural and doesn't agree with the singular subject \"journal.\""
+            "text": "\"Are throwing\" is plural and doesn't agree with the singular subject \"journal.\""
           }
         ]
       },
@@ -546,6 +586,16 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
+          },
+          {
+            "reviewer": "claude-opus-5-5 (question bank review: re-solved, checked distractors and explanation)",
+            "date": "2026-10-08",
+            "edits": "Changed the verb choices from forms of \"shed\" to forms of \"throw,\" because \"shed\" is also a correct singular past-tense form, making A a second right answer."
           }
         ]
       }
@@ -614,6 +664,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -682,6 +737,11 @@
             "reviewer": "claude-opus-5-5 (self-review: re-solved the question and checked the key, explanation and wrong-answer rationales)",
             "date": "2026-10-04",
             "edits": "none"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -755,6 +815,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -828,6 +893,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -901,6 +971,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -974,6 +1049,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1047,6 +1127,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1120,6 +1205,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1193,6 +1283,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1266,6 +1361,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1339,6 +1439,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
@@ -1412,6 +1517,11 @@
             "reviewer": "claude-opus-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
             "date": "2026-10-04",
             "edits": "none; checker's answer matched the key"
+          },
+          {
+            "reviewer": "claude-haiku-5-5 (blind re-solve by a separate checker that saw only the passage, question and choices, not the key)",
+            "date": "2026-10-08",
+            "edits": "none; matched the key"
           }
         ]
       }
