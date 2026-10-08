@@ -114,6 +114,8 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
   const scores = test.scores!;
   const sections: SectionId[] = ["reading-writing", "math"];
   const all = items.flat();
+  const scored = (list: ReviewItem[]) => list.filter((x) => !x.trial);
+  const hasTrial = all.some((x) => x.trial);
 
   return (
     <main>
@@ -138,6 +140,13 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
         an estimate from NextScore&apos;s own questions, not an official score.
       </p>
 
+      {hasTrial && (
+        <p className={styles.muted}>
+          Like the real test, each module had a couple of unscored trial questions. They don&apos;t count toward your score or the
+          tables below, and are marked &ldquo;Trial&rdquo; in the review.
+        </p>
+      )}
+
       <h2>By module</h2>
       <table className={styles.formatTable}>
         <thead>
@@ -155,7 +164,7 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
               </td>
               <td>{m.tier === "standard" ? "Mixed" : m.tier === "harder" ? "Harder" : "Easier"}</td>
               <td>
-                {items[i].filter((x) => x.answer?.correct).length} of {items[i].length}
+                {scored(items[i]).filter((x) => x.answer?.correct).length} of {scored(items[i]).length}
               </td>
             </tr>
           ))}
@@ -172,7 +181,7 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
         </thead>
         <tbody>
           {DOMAINS.map((d) => {
-            const inDomain = all.filter((x) => getSkill(x.question.skill).domain.id === d.id);
+            const inDomain = scored(all).filter((x) => getSkill(x.question.skill).domain.id === d.id);
             if (inDomain.length === 0) return null;
             return (
               <tr key={d.id}>
@@ -197,7 +206,7 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
             {SECTION_NAMES[m.section]}, module {m.stage}
           </h3>
           <ol className={styles.reviewList}>
-            {items[i].map(({ question, answer }, n) => (
+            {items[i].map(({ trial, question, answer }, n) => (
               <li key={question.id}>
                 <details className="surface">
                   <summary>
@@ -206,6 +215,7 @@ function Results({ test, items, flags }: { test: PracticeTest; items: ReviewItem
                       {getSkill(question.skill).skill.name}
                       <span className={styles.muted}> · {question.difficulty}</span>
                     </span>
+                    {trial && <span className="badge plain">Trial, not scored</span>}
                     {answer?.flagged && <span className="badge plain">Marked</span>}
                     <span className={`badge ${answer?.correct ? "ok" : answer?.answer ? "bad" : "warn"}`}>
                       {answer?.correct ? "Correct" : answer?.answer ? "Missed" : "Not answered"}

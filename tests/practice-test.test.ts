@@ -259,6 +259,24 @@ describe("practice tests (database)", () => {
     expect(graded.every((a) => a.correct !== null)).toBe(true);
   });
 
+  it("keeps trial questions out of routing and scores", async () => {
+    const test = (await startTest(db, userId, seeded()))!;
+    const m = test.modules[0];
+    expect(m.trialIds).toHaveLength(2);
+    expect(m.trialIds!.every((id) => m.questionIds.includes(id))).toBe(true);
+    await beginModule(db, userId, test.id, 0, NOW);
+    // Every scored question right, both trial questions wrong: still the harder module 2.
+    for (const { question, trial } of await loadModuleItems(db, test, 0)) {
+      const answer = question.content.choices.length ? (trial ? "B" : "A") : trial ? "2" : "7/4";
+      await saveTestAnswer(db, userId, test.id, question.id, { answer, flagged: false }, later(5));
+    }
+    await submitModule(db, userId, test.id, 0, later(10));
+    const t = (await getTest(db, userId, test.id))!;
+    expect(t.modules[1].tier).toBe("harder");
+    expect(t.modules[1].trialIds).toHaveLength(2);
+    expect((await loadModuleItems(db, t, 0)).filter((i) => i.trial)).toHaveLength(2);
+  });
+
   it("keeps each student's tests to themselves", async () => {
     const test = (await startTest(db, userId, seeded()))!;
     const other = await createUser(db, { email: "o@e.st", name: "O", password: "password1" });
