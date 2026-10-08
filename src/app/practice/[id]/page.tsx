@@ -9,6 +9,7 @@ import { LessonLink } from "@/components/LessonLink";
 import { AnswerInputs, AnswerReview, QuestionBody } from "@/components/Question";
 import { QuestionActions } from "@/components/ReportButton";
 import { requireUser } from "@/lib/auth/session";
+import { practiceAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import { getSkill } from "@/lib/sat/taxonomy";
 import { parseTimeZone, TIME_ZONE_COOKIE } from "@/lib/time-zone";
@@ -76,7 +77,12 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
   // Set finished: results.
   const correct = items.filter((i) => i.attempt?.correct).length;
   const pct = Math.round((correct / items.length) * 100);
-  const [history, goal, cookieStore] = await Promise.all([loadAttempts(db, user.id), loadDailyGoal(db, user.id), cookies()]);
+  const [history, goal, cookieStore, access] = await Promise.all([
+    loadAttempts(db, user.id),
+    loadDailyGoal(db, user.id),
+    cookies(),
+    practiceAccess(db, user.id),
+  ]);
   const daily = dailyProgress(history, goal, new Date(), parseTimeZone(cookieStore.get(TIME_ZONE_COOKIE)?.value));
   return (
     <main className={styles.page}>
@@ -141,6 +147,10 @@ export default async function PracticePage({ params, searchParams }: PageProps<"
         {set.focus.kind === "mistakes" || set.focus.kind === "flagged" ? (
           <Link href="/review" className="button large">
             Back to review
+          </Link>
+        ) : !access.allowed ? (
+          <Link href="/pass" className="button large">
+            Get a season pass to keep going
           </Link>
         ) : (
           <form action={startPractice}>
