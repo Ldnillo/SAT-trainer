@@ -1,5 +1,6 @@
 "use client";
 
+import { GridInInput } from "@/components/GridInInput";
 import { useCallback, useEffect, useRef, useState, useTransition, type ReactNode } from "react";
 import { CalculatorPanel } from "@/components/calculator/CalculatorPanel";
 import questionStyles from "@/components/Question.module.css";
@@ -211,14 +212,7 @@ export function ModuleRunner({ testId, index, title, remainingMs, items, initial
           ) : (
             <label className={questionStyles.spr}>
               Your answer
-              <input
-                type="text"
-                autoComplete="off"
-                inputMode="decimal"
-                maxLength={10}
-                value={response.answer}
-                onChange={(e) => update(item.id, { answer: e.target.value }, 600)}
-              />
+              <GridInInput value={response.answer} onValueChange={(v) => update(item.id, { answer: v }, 600)} />
               <span className={questionStyles.hint}>Enter a number, fraction (like 7/4) or decimal. Negative answers start with -.</span>
             </label>
           )}
