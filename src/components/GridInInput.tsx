@@ -19,7 +19,7 @@ export function GridInInput(props: {
       autoComplete="off"
       inputMode="text"
       maxLength={10}
-      pattern="[0-9./\-]*"
+      pattern="[0-9.\/\-]*"
       {...rest}
       {...(value !== undefined ? { value } : {})}
       onChange={(e) => {

@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, inArray } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, isNull } from "drizzle-orm";
 import type { Db } from "../db/client";
 import { findQuestions } from "../db/questions";
 import { attempts, practiceSets, questions, type PracticeFocus } from "../db/schema";
@@ -82,6 +82,17 @@ export async function getPracticeSet(db: Db, userId: string, setId: string): Pro
 
 export async function recentPracticeSets(db: Db, userId: string, limit = 10): Promise<PracticeSet[]> {
   return db.select().from(practiceSets).where(eq(practiceSets.userId, userId)).orderBy(desc(practiceSets.createdAt)).limit(limit);
+}
+
+/** The student's latest practice set that still has unanswered questions, if any. */
+export async function unfinishedPracticeSet(db: Db, userId: string): Promise<PracticeSet | undefined> {
+  const [set] = await db
+    .select()
+    .from(practiceSets)
+    .where(and(eq(practiceSets.userId, userId), isNull(practiceSets.completedAt)))
+    .orderBy(desc(practiceSets.createdAt))
+    .limit(1);
+  return set;
 }
 
 /** The set's questions in order, with the student's answer to each so far. */
