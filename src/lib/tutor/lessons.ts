@@ -1,5 +1,14 @@
 import { getSkill, SECTION_NAMES, type SectionId } from "../sat/taxonomy";
+import { colonsDashesLesson } from "./lessons/colons-dashes";
+import { commaSplicesLesson } from "./lessons/comma-splices";
+import { mainIdeaLesson } from "./lessons/main-idea";
+import { modifiersLesson } from "./lessons/modifiers";
+import { percentChangeLesson } from "./lessons/percent-change";
+import { quadraticsLesson } from "./lessons/quadratics";
+import { subjectVerbLesson } from "./lessons/subject-verb";
 import { systemsLesson } from "./lessons/systems";
+import { transitionsLesson } from "./lessons/transitions";
+import { wordsInContextLesson } from "./lessons/words-in-context";
 
 /** One line of a worked example. `text` may contain $...$ math. */
 export interface LessonStep {
@@ -37,7 +46,18 @@ export interface Lesson {
   authorship: { writer: { name: string; date: string }; reviews: { by: string; date: string; note: string }[] };
 }
 
-export const LESSONS: readonly Lesson[] = [systemsLesson];
+export const LESSONS: readonly Lesson[] = [
+  transitionsLesson,
+  commaSplicesLesson,
+  colonsDashesLesson,
+  subjectVerbLesson,
+  modifiersLesson,
+  wordsInContextLesson,
+  mainIdeaLesson,
+  systemsLesson,
+  percentChangeLesson,
+  quadraticsLesson,
+];
 
 export function getLesson(slug: string): Lesson | undefined {
   return LESSONS.find((l) => l.slug === slug);

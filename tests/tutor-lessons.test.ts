@@ -12,7 +12,13 @@ describe("tutor lessons", () => {
   it("looks lessons up by slug and by skill", () => {
     expect(getLesson("systems-of-equations")?.skills).toContain("systems-of-linear-equations");
     expect(lessonForSkill("systems-of-linear-equations")?.slug).toBe("systems-of-equations");
-    expect(lessonForSkill("transitions")).toBeUndefined();
+    expect(lessonForSkill("transitions")?.slug).toBe("transitions");
+    expect(lessonForSkill("circles")).toBeUndefined();
+  });
+
+  it("has the ten planned lessons, with only Transitions and Systems free", () => {
+    expect(LESSONS).toHaveLength(10);
+    expect(LESSONS.filter((l) => l.free).map((l) => l.slug).sort()).toEqual(["systems-of-equations", "transitions"]);
   });
 
   it("gives every lesson a trap, rule, steps and an authorship review", () => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./LessonSteps.module.css";
 
 export interface RenderedStep {
@@ -9,20 +9,10 @@ export interface RenderedStep {
   body: React.ReactNode;
 }
 
-/** Worked example that reveals one step at a time, with Next, Back and Play. */
+/** Worked example that reveals one step at a time, with Next, Back and Reveal all. */
 export function LessonSteps({ steps }: { steps: RenderedStep[] }) {
   const [shown, setShown] = useState(1);
-  const [playing, setPlaying] = useState(false);
   const last = steps.length;
-
-  // Playing stops by itself on the last step.
-  const running = playing && shown < last;
-
-  useEffect(() => {
-    if (!running) return;
-    const timer = setTimeout(() => setShown((n) => n + 1), 2800);
-    return () => clearTimeout(timer);
-  }, [running, shown]);
 
   return (
     <div className={styles.wrap}>
@@ -46,17 +36,8 @@ export function LessonSteps({ steps }: { steps: RenderedStep[] }) {
         <button type="button" className="button small" onClick={() => setShown((n) => Math.min(last, n + 1))} disabled={shown >= last}>
           Next step
         </button>
-        <button
-          type="button"
-          className="button secondary small"
-          onClick={() => {
-            if (shown >= last) {
-              setShown(1);
-              setPlaying(true);
-            } else setPlaying(!running);
-          }}
-        >
-          {running ? "Pause" : shown >= last ? "Replay" : "Play"}
+        <button type="button" className="button secondary small" onClick={() => setShown(shown >= last ? 1 : last)}>
+          {shown >= last ? "Start over" : "Reveal all steps"}
         </button>
         <span className={styles.count}>
           Step {shown} of {last}
