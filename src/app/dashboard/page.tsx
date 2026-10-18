@@ -5,7 +5,7 @@ import { DailyGoal } from "@/components/DailyGoal";
 import { ProgressChart } from "@/components/ProgressChart";
 import { TimeZoneSync } from "@/components/TimeZoneSync";
 import { requireUser } from "@/lib/auth/session";
-import { practiceAccess } from "@/lib/billing/pass";
+import { practiceAccess, testAccess } from "@/lib/billing/pass";
 import { getDb } from "@/lib/db/client";
 import type { PracticeFocus } from "@/lib/db/schema";
 import { DOMAINS, getSkill, SECTION_NAMES } from "@/lib/sat/taxonomy";
@@ -35,10 +35,11 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
   const params = await searchParams;
   const user = await requireUser("/dashboard");
   const db = await getDb();
-  const [history, sets, access, reports, flags, tests, goal, cookieStore] = await Promise.all([
+  const [history, sets, access, testsAccess, reports, flags, tests, goal, cookieStore] = await Promise.all([
     loadAttempts(db, user.id),
     recentPracticeSets(db, user.id),
     practiceAccess(db, user.id),
+    testAccess(db, user.id),
     listScoreReports(db, user.id),
     flaggedIds(db, user.id),
     completedTests(db, user.id),
@@ -46,6 +47,8 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
     cookies(),
   ]);
   const report = reports[0];
+  const unfinished = sets.find((s) => !s.completedAt);
+  const unfinishedAnswered = unfinished ? history.filter((a) => a.practiceSetId === unfinished.id).length : 0;
   const timeZoneCookie = cookieStore.get(TIME_ZONE_COOKIE)?.value;
   const daily = dailyProgress(history, goal, new Date(), parseTimeZone(timeZoneCookie));
   const mistakeCount = mistakesFrom(history).length;
@@ -105,6 +108,20 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
         </Link>
       </div>
 
+      {unfinished && (
+        <section className={`${styles.testCard} surface`}>
+          <div>
+            <h2 className={styles.testTitle}>Pick up where you left off</h2>
+            <p className={styles.muted}>
+              {focusName(unfinished.focus)} set: {unfinishedAnswered} of {unfinished.questionIds.length} answered.
+            </p>
+          </div>
+          <Link href={`/practice/${unfinished.id}`} className="button">
+            Continue your set
+          </Link>
+        </section>
+      )}
+
       <section className={`${styles.start} surface`}>
         <div>
           <h2 className={styles.cardTitle}>Your next set</h2>
@@ -139,7 +156,10 @@ export default async function DashboardPage({ searchParams }: PageProps<"/dashbo
       <section className={`${styles.testCard} surface`}>
         <div>
           <h2 className={styles.testTitle}>Full-length practice test</h2>
-          <p className={styles.muted}>Ready to try the whole thing? Timed, adaptive, and scored out of 1600.</p>
+          <p className={styles.muted}>
+            Ready to try the whole thing? Timed, adaptive, and scored out of 1600.
+            {!testsAccess.allowed && " Comes with the season pass."}
+          </p>
         </div>
         <Link href="/test" className="button secondary">
           Take a practice test

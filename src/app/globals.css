@@ -637,16 +637,7 @@ select:focus {
     font-size: 15px;
   }
 
-  .site-header .footer-links {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-links a {
-  color: var(--muted);
-}
-
-.who {
+  .who {
     display: none;
   }
 
@@ -686,8 +677,8 @@ select:focus {
   }
 }
 
-/* Small phones: signed in, the theme button gives way to the links (it is also in Settings). */
-@media (max-width: 374px) {
+/* Phones up to 400px wide: signed in, the theme button gives way to the links (it is also in Settings). */
+@media (max-width: 400px) {
   .site-header[data-signed-in] .theme-toggle {
     display: none;
   }

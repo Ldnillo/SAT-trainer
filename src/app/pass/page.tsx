@@ -5,6 +5,7 @@ import { BEST_VALUE_PLAN_ID, formatPriceShort, PASS_PLANS, passConfig } from "@/
 import { practiceAccess } from "@/lib/billing/pass";
 import { fulfillCheckout, getStripe, paymentsConfigured } from "@/lib/billing/stripe";
 import { getDb } from "@/lib/db/client";
+import { unfinishedPracticeSet } from "@/lib/trainer/practice";
 import { buyPass } from "./actions";
 import styles from "./pass.module.css";
 
@@ -34,14 +35,21 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
     }
   }
 
-  const access = await practiceAccess(db, user.id);
+  const [access, unfinished] = await Promise.all([practiceAccess(db, user.id), unfinishedPracticeSet(db, user.id)]);
 
   return (
     <main className={styles.page}>
       <div className={styles.intro}>
         <p className="eyebrow">Season pass</p>
         <h1 className={styles.title}>Unlimited practice for the whole season</h1>
-        {notice && <p className="notice ok">{notice}</p>}
+        {notice && (
+          <div className="notice ok">
+            <p>{notice}</p>
+            <Link href="/dashboard" className="button small">
+              Start practicing
+            </Link>
+          </div>
+        )}
         {params.canceled && <p className="notice info">Checkout was canceled. You haven&apos;t been charged.</p>}
         {params.required === "test" && !access.pass.active ? (
           <p className="notice warn">Full-length practice tests come with the season pass.</p>
@@ -51,7 +59,19 @@ export default async function PassPage({ searchParams }: PageProps<"/pass">) {
             <p className="notice warn">You&apos;ve used your free practice. Get a season pass to keep practicing.</p>
           )
         )}
-        {params.error === "not-configured" && <p className="notice bad">Payments aren&apos;t set up on this site yet.</p>}
+        {unfinished && !access.pass.active && (
+          <div className="notice info">
+            <p>
+              You still have a practice set in progress. You can finish it any time, with or without a pass.
+            </p>
+            <Link href={`/practice/${unfinished.id}`} className="button small">
+              Finish your set
+            </Link>
+          </div>
+        )}
+        {(params.error === "not-configured" || !paymentsConfigured()) && (
+          <p className="notice bad">Payments aren&apos;t set up on this site yet, so passes can&apos;t be bought right now.</p>
+        )}
         {params.error === "checkout" && <p className="notice bad">We couldn&apos;t start checkout. Please try again.</p>}
 
         <p className={styles.status}>
